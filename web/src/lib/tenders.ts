@@ -123,9 +123,28 @@ export interface Analysis {
   requirements: {
     requirement: TenderRequirement
     outcome: Outcome
-    checks: { need: string; outcome: Outcome; reason: string; evidence: CompanyDocument | null }[]
+    checks: {
+      need: string
+      outcome: Outcome
+      reason: string
+      evidence: CompanyDocument | null
+      ecertis: EcertisMatch | null
+      clarification: { language: string; text: string; translation: string } | null
+      alsoSubmit: CompanyDocument[] | null
+    }[]
   }[]
   lots: { lot: TenderLot; fit: 'Full' | 'Partial'; product: { name: string; unit: string } | null; capacity: number | null; gap: number | null; reason: string }[]
   notOffered: number
   verdict: Verdict
+}
+
+export interface EcertisEvidence { name: string; issuer: string | null; country: string; url: string | null; validity: string | null }
+export interface EcertisMatch {
+  criterionId: string
+  criterionName: string
+  url: string
+  buyerCountry: EcertisEvidence[]
+  companyCountry: EcertisEvidence[]
+  matched: EcertisEvidence | null
+  note: string | null
 }

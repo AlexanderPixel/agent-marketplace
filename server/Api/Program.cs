@@ -35,6 +35,7 @@ app.UseStaticFiles();
 app.MapCoreEndpoints();
 app.MapTenderEndpoints();
 app.MapQualificationEndpoints();
+app.MapEcertisEndpoints();
 app.MapFallbackToFile("index.html");
 
 app.Run();

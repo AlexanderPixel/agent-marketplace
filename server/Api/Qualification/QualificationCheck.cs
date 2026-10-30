@@ -1,12 +1,18 @@
 using System.Text.RegularExpressions;
 using Marketplace.Data;
+using Marketplace.Ecertis;
 
 namespace Marketplace.Qualification;
 
 public enum Outcome { Met, Equivalent, Missing, Unclear }
 
 /// <param name="Evidence">The company document that answers it, cited by id and title.</param>
-public record EvidenceCheck(string Need, Outcome Outcome, string Reason, CompanyDocument? Evidence);
+public record EvidenceCheck(
+    string Need, Outcome Outcome, string Reason, CompanyDocument? Evidence,
+    EcertisMatch? Ecertis = null, Clarification? Clarification = null, List<CompanyDocument>? AlsoSubmit = null);
+
+/// <summary>A question to the buyer, drafted in the notice language with a translation for the bidder. A human sends it.</summary>
+public record Clarification(string Language, string Text, string Translation);
 
 public record RequirementCheck(TenderRequirement Requirement, Outcome Outcome, List<EvidenceCheck> Checks);
 
@@ -93,12 +99,29 @@ public static partial class QualificationCheck
 
         if (rule.Kind == "competition-register")
         {
-            // Only Germany runs this register; a foreign bidder has no own extract. The national equivalent comes from eCertis.
-            return companyCountry == "DE" && valid is not null
-                ? new EvidenceCheck(rule.Need, Outcome.Met, "Your extract is on file.", valid)
-                : new EvidenceCheck(rule.Need, Outcome.Unclear,
-                    $"This is a German register. Companies from {companyCountry} cannot get an extract; the buyer must accept a national equivalent. Not confirmed yet, so it stays red.",
-                    profile.Documents.FirstOrDefault(d => d.Kind == "criminal-record"));
+            if (companyCountry == "DE" && valid is not null)
+            {
+                return new EvidenceCheck(rule.Need, Outcome.Met, "Your extract is on file.", valid);
+            }
+
+            // Only Germany runs this register. eCertis has no entry for it; the closest national evidence is the
+            // criminal-record extract (eCertis: participation in a criminal organisation) plus the trade register.
+            var krk = profile.Documents.FirstOrDefault(d => d.Kind == "criminal-record" && (d.ValidUntil is null || d.ValidUntil >= at));
+            var register = profile.Documents.FirstOrDefault(d => d.Kind == "trade-register");
+            if (krk is null)
+            {
+                return new EvidenceCheck(rule.Need, Outcome.Unclear,
+                    $"German register; companies from {companyCountry} cannot get an extract, and you hold no criminal-record extract to offer instead.", null);
+            }
+
+            return new EvidenceCheck(rule.Need, Outcome.Equivalent,
+                $"German register: companies from {companyCountry} are not in it and cannot get an extract. eCertis has no entry for it, " +
+                $"so we propose the closest {companyCountry} evidence, {krk.Title}" + (register is null ? "" : $" together with {register.Title}") +
+                ", and ask the buyer to confirm before the deadline. Amber until the buyer answers.",
+                krk,
+                EcertisCatalog.Match(krk, buyerCountry, "eCertis has no Wettbewerbsregister entry; this is the closest criterion it covers."),
+                WettbewerbsregisterQuestion(krk, register, companyCountry),
+                register is null ? null : [register]);
         }
 
         if (rule.Kind == "vadium")
@@ -116,12 +139,32 @@ public static partial class QualificationCheck
         if (rule.NationalNames is not null && valid.Country != buyerCountry)
         {
             var asked = rule.NationalNames.GetValueOrDefault(buyerCountry, rule.Need);
+            var match = EcertisCatalog.Match(valid, buyerCountry);
             return new EvidenceCheck(rule.Need, Outcome.Equivalent,
-                $"The buyer asks for a {asked}; you hold the {valid.Country} counterpart. Submit it as equivalent evidence.", valid);
+                match?.Matched is { } m
+                    ? $"The buyer asks for a {asked}. eCertis lists \"{m.Name}\" as the {valid.Country} evidence for the same criterion, and you hold it."
+                    : $"The buyer asks for a {asked}; you hold the {valid.Country} counterpart. Submit it as equivalent evidence.",
+                valid, match);
         }
 
         return new EvidenceCheck(rule.Need, Outcome.Met, "Valid on the submission deadline.", valid);
     }
+
+    private static Clarification WettbewerbsregisterQuestion(CompanyDocument krk, CompanyDocument? register, string country)
+    {
+        var docsDe = register is null ? $"„{krk.Title}“" : $"„{krk.Title}“ und „{register.Title}“";
+        var docsPl = register is null ? krk.Title : $"{krk.Title} oraz {register.Title}";
+        return new Clarification("de",
+            $"Sehr geehrte Damen und Herren, als Bieter mit Sitz in {CountryDe(country)} sind wir nicht im deutschen Wettbewerbsregister erfasst " +
+            $"und können keine Wettbewerbsregisterauskunft vorlegen. Wir beabsichtigen, als gleichwertigen Nachweis {docsDe} " +
+            "(jeweils aktuell, mit beglaubigter deutscher Übersetzung) einzureichen. Bitte bestätigen Sie, dass diese Nachweise akzeptiert werden. " +
+            "Mit freundlichen Grüßen",
+            $"Szanowni Państwo, jako wykonawca z siedzibą w kraju {country} nie figurujemy w niemieckim Wettbewerbsregister i nie możemy " +
+            $"przedstawić jego wyciągu. Jako dokument równoważny zamierzamy złożyć: {docsPl} (aktualne, z uwierzytelnionym tłumaczeniem " +
+            "na język niemiecki). Prosimy o potwierdzenie, że te dokumenty zostaną zaakceptowane. Z poważaniem");
+    }
+
+    private static string CountryDe(string c) => c switch { "PL" => "Polen", "CZ" => "Tschechien", "SK" => "der Slowakei", _ => c };
 
     public static LotCheck CheckLot(TenderLot lot, CompanyProfile profile)
     {

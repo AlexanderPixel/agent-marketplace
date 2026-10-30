@@ -110,6 +110,23 @@ def cmd_stats(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_enrich(args: argparse.Namespace) -> int:
+    from .enrich import enrich
+    store = Store(args.db)
+    row = store.db.execute("SELECT id FROM notices WHERE source=? AND source_id=?", (args.source, args.source_id)).fetchone()
+    if not row:
+        print("not found", file=sys.stderr)
+        return 1
+    res = enrich(store, row["id"])
+    for p in res.pages:
+        print(f"page  {len(p['markdown']):>7} chars  {p['url']}")
+    for a in res.attachments:
+        where = f"{a['folder']}/" if a["folder"] else ""
+        status = f"ERROR {a['error']}" if a["error"] else f"{a['size']:>9} B  {a['chars']:>7} chars text"
+        print(f"file  {status}  {where}{a['filename']}")
+    return 0
+
+
 def cmd_dedupe(args: argparse.Namespace) -> int:
     notices, clusters = Store(args.db).relink_all()
     print(f"{notices} notices -> {clusters} unique tenders ({notices - clusters} duplicates merged)")
@@ -170,6 +187,10 @@ def main(argv: list[str] | None = None) -> int:
     s.set_defaults(fn=cmd_search)
 
     sub.add_parser("stats", help="per-source counts and sync health").set_defaults(fn=cmd_stats)
+
+    s = sub.add_parser("enrich", help="capture the pages and attachments of one tender (and its copies on other sources)")
+    s.add_argument("source"); s.add_argument("source_id")
+    s.set_defaults(fn=cmd_enrich)
 
     sub.add_parser("dedupe", help="rebuild cross-source duplicate clusters for all stored notices").set_defaults(fn=cmd_dedupe)
 

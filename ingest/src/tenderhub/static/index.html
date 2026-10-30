@@ -57,7 +57,7 @@ td.t .buyer { color: var(--muted); font-size: 12.5px; }
 .pager button, .btn { font: inherit; padding: 6px 12px; border: 1px solid var(--line); background: var(--panel); color: var(--text); border-radius: 7px; cursor: pointer; }
 .pager button:disabled { opacity: .4; cursor: default; }
 .empty { padding: 40px; text-align: center; color: var(--muted); }
-#drawer { position: fixed; inset: 0 0 0 auto; width: min(720px, 100vw); background: var(--panel); border-left: 1px solid var(--line);
+#drawer { position: fixed; inset: 0 0 0 auto; width: min(960px, 100vw); background: var(--panel); border-left: 1px solid var(--line);
   transform: translateX(100%); transition: transform .18s ease; z-index: 10; overflow-y: auto; padding: 20px 24px 40px; box-shadow: -10px 0 30px rgba(0,0,0,.12); }
 #drawer.open { transform: none; }
 #drawer h2 { font-size: 17px; margin: 6px 0 12px; }
@@ -70,6 +70,24 @@ td.t .buyer { color: var(--muted); font-size: 12.5px; }
 a { color: var(--accent); }
 .bar { height: 6px; background: var(--accent); border-radius: 3px; }
 .err { color: var(--red); font-size: 12px; }
+.enrich { display: flex; gap: 10px; align-items: center; margin: 14px 0; flex-wrap: wrap; }
+.folder { font-weight: 600; font-size: 12.5px; color: var(--muted); margin: 10px 0 4px; }
+ul.att { list-style: none; padding: 0; margin: 0; }
+ul.att li { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; padding: 5px 0; border-bottom: 1px solid var(--line); }
+ul.att .aname { flex: 1 1 260px; word-break: break-word; }
+.preview { margin: 14px 0; border: 1px solid var(--line); border-radius: 10px; padding: 10px; background: var(--bg); }
+.preview .ptitle { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; margin-bottom: 8px; }
+.preview iframe { width: 100%; height: 70vh; border: 0; border-radius: 6px; background: #fff; }
+pre.atext { white-space: pre-wrap; max-height: 60vh; overflow: auto; font-size: 12px; }
+details.page { border: 1px solid var(--line); border-radius: 8px; margin-bottom: 8px; padding: 6px 10px; }
+details.page summary { cursor: pointer; font-weight: 500; }
+.page-meta { font-size: 12px; margin: 6px 0; word-break: break-all; }
+.md { font-size: 13.5px; }
+.md h3, .md h4, .md h5, .md h6 { margin: 14px 0 6px; font-size: 14px; }
+.md h3 { font-size: 15px; }
+.md p { margin: 4px 0; }
+table.mdt { font-size: 12.5px; margin: 8px 0; }
+table.mdt th, table.mdt td { padding: 4px 6px; }
 .also { font-size: 11px; color: var(--accent); margin-top: 2px; }
 .copies li { margin-bottom: 4px; }
 @media (max-width: 700px) { header, main { padding-left: 16px; padding-right: 16px; } td.t { min-width: 220px; } }
@@ -212,11 +230,86 @@ async function openNotice(id) {
     ${n.copies.length ? `<h3>Same tender elsewhere (${n.copies.length})</h3><ul class="copies">${n.copies.map(c =>
       `<li><a href="#" data-copy="${c.id}">${esc(c.source)}</a> · ${esc(c.notice_type)} · ${day(c.published_at)} · <span class="pill s-${c.status}">${c.status}</span>
        — <a href="${esc(c.url)}" target="_blank" rel="noopener">original ↗</a></li>`).join("")}</ul>` : ""}
+    <div class="enrich">
+      <button class="btn" id="enrich-btn" onclick="runEnrich(${n.id})">${n.pages.length || n.attachments.length ? "Re-fetch" : "Fetch"} tender page &amp; documents</button>
+      <span class="src" id="enrich-status">${n.pages.length || n.attachments.length
+        ? `captured ${when((n.pages[0] || n.attachments[0]).fetched_at)} · ${n.pages.length} pages · ${n.attachments.length} attachments` : "not captured yet"}</span>
+    </div>
+    ${n.attachments.length ? `<h3>Attachments (${n.attachments.length})</h3>${attachmentList(n.attachments)}
+      <div id="preview" class="preview" hidden></div>` : ""}
+    ${n.pages.length ? `<h3>Tender pages</h3>${n.pages.map((p, i) => `
+      <details class="page" ${i === 0 ? "open" : ""}><summary>${esc(p.title || p.url)} <span class="src">${esc(new URL(p.url).hostname)}</span></summary>
+        <div class="page-meta"><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.url)} ↗</a></div>
+        <div class="md">${md(p.markdown || "")}</div></details>`).join("")}` : ""}
     ${n.description ? `<h3>Description</h3><div class="desc">${esc(n.description)}</div>` : ""}
     ${n.documents.length ? `<h3>Documents (${n.documents.length})</h3><ul>${n.documents.map(d =>
       `<li><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title || d.url)}</a> ${d.kind ? `<span class="src">${esc(d.kind)}</span>` : ""}</li>`).join("")}</ul>` : ""}
     <h3>Raw source record</h3><pre>${esc(JSON.stringify(n.raw, null, 2))}</pre>`;
   $("drawer").classList.add("open");
+}
+function inl(t) {
+  return esc(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>")
+    .replace(/\[([^\]]+)\]\(((?:https?:|mailto:)[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+}
+function md(src) {
+  const lines = src.split("\n"), out = [];
+  for (let i = 0; i < lines.length;) {
+    const l = lines[i];
+    let m;
+    if (!l.trim()) { i++; continue; }
+    if ((m = l.match(/^(#{1,6}) (.*)/))) { const h = Math.min(6, m[1].length + 2); out.push(`<h${h}>${inl(m[2])}</h${h}>`); i++; continue; }
+    if (l.trim() === "---") { out.push("<hr>"); i++; continue; }
+    if ((m = l.match(/^_(.+)_$/))) { out.push(`<p class="src"><em>${inl(m[1])}</em></p>`); i++; continue; }
+    if (l.startsWith("|")) {
+      const rows = [];
+      while (i < lines.length && lines[i].startsWith("|")) { if (!/^\|(-+\|)+$/.test(lines[i])) rows.push(lines[i]); i++; }
+      const cells = (r) => r.slice(1, -1).split(/(?<!\\)\|/).map(c => c.trim().replace(/\\\|/g, "|"));
+      out.push(`<table class="mdt"><thead><tr>${cells(rows[0]).map(c => `<th>${inl(c)}</th>`).join("")}</tr></thead><tbody>${
+        rows.slice(1).map(r => `<tr>${cells(r).map(c => `<td>${inl(c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`);
+      continue;
+    }
+    if (/^(- |\d+\. )/.test(l)) {
+      const ordered = /^\d/.test(l), items = [];
+      while (i < lines.length && /^(- |\d+\. )/.test(lines[i])) { items.push(lines[i].replace(/^(- |\d+\. )/, "")); i++; }
+      out.push(`<${ordered ? "ol" : "ul"}>${items.map(x => `<li>${inl(x)}</li>`).join("")}</${ordered ? "ol" : "ul"}>`);
+      continue;
+    }
+    out.push(`<p>${inl(l)}</p>`); i++;
+  }
+  return out.join("");
+}
+const kb = (b) => b == null ? "" : b > 1048576 ? `${(b / 1048576).toFixed(1)} MB` : `${Math.max(1, Math.round(b / 1024))} KB`;
+function attachmentList(list) {
+  const groups = {};
+  for (const a of list) (groups[a.folder || ""] ||= []).push(a);
+  return Object.entries(groups).map(([folder, items]) => `
+    ${folder ? `<div class="folder">${esc(folder)}</div>` : ""}
+    <ul class="att">${items.map(a => `<li>
+      <span class="aname">${esc(a.filename)}</span>
+      <span class="src">${kb(a.size)}${a.pages ? ` · ${a.pages} p.` : ""}${a.chars ? ` · ${fmtN(a.chars)} chars` : ""}</span>
+      ${a.error ? `<span class="err">${esc(a.error)}</span>` : `
+        <a href="#" onclick="preview(${a.id}, ${/\.pdf$/i.test(a.filename)});return false">Preview</a>
+        <a href="/api/attachment/file?id=${a.id}&download=1">Download</a>`}
+    </li>`).join("")}</ul>`).join("");
+}
+async function preview(id, isPdf) {
+  const box = $("preview"); box.hidden = false;
+  const a = await (await fetch("/api/attachment?id=" + id)).json();
+  const text = `<pre class="atext">${esc(a.text || "(no text could be extracted)")}</pre>`;
+  box.innerHTML = `<div class="ptitle"><b>${esc(a.filename)}</b>
+      <span class="src">${esc(a.folder || "")}</span>
+      <a href="/api/attachment/file?id=${id}" target="_blank" rel="noopener">Open ↗</a>
+      <a href="#" onclick="$('preview').hidden=true;return false">Close</a></div>
+    ${isPdf ? `<iframe src="/api/attachment/file?id=${id}" title="${esc(a.filename)}"></iframe>
+      <details><summary>Extracted text</summary>${text}</details>` : text}`;
+  box.scrollIntoView({behavior: "smooth", block: "start"});
+}
+async function runEnrich(id) {
+  const btn = $("enrich-btn"), st = $("enrich-status");
+  btn.disabled = true; st.textContent = "fetching pages and downloading documents…";
+  const r = await (await fetch("/api/enrich?id=" + id, {method: "POST"})).json();
+  if (r.error) { st.textContent = r.error; btn.disabled = false; return; }
+  openNotice(id);
 }
 function closeDrawer() { $("drawer").classList.remove("open"); }
 

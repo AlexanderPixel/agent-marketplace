@@ -1,6 +1,7 @@
 using Marketplace.Activity;
 using Marketplace.Data;
 using Marketplace.Deals;
+using Marketplace.Documents;
 using Marketplace.Partners;
 using Marketplace.Tenancy;
 using Microsoft.EntityFrameworkCore;
@@ -78,6 +79,26 @@ public static class DealEndpoints
                 tender.Id, sharedWithOrgId: body.PartnerOrgId);
             runner.Start(deal.Id);
             return TypedResults.Ok(new { deal.Id });
+        });
+
+        api.MapPost("/deals/{id:guid}/documents", async Task<IResult> (Guid id, AppDb db, OrgContext org, ActivityLog log, TimeProvider clock) =>
+        {
+            var orgId = org.Require();
+            var d = await db.Deals.FirstOrDefaultAsync(x => x.Id == id);
+            if (d is null) return TypedResults.NotFound();
+            if (d.Status != DealStatus.Closed) return TypedResults.BadRequest("The deal is not closed yet.");
+            var tender = await db.Tenders.FindAsync(d.TenderId);
+            var orgs = await db.Organizations.Where(o => o.Id == d.BidderOrgId || o.Id == d.PartnerOrgId).ToDictionaryAsync(o => o.Id);
+            var now = clock.GetUtcNow();
+            d.Documents = AgreementDrafter.Draft(d, tender!, orgs[d.BidderOrgId], orgs[d.PartnerOrgId], DateOnly.FromDateTime(now.UtcDateTime));
+            d.DocumentsAt = now;
+            await db.SaveChangesAsync();
+            await log.WriteAsync(orgId, "Document agent",
+                $"Drafted {d.Documents.Count} documents in Polish and German: {string.Join(", ", d.Documents.Select(x => x.Title.GetValueOrDefault("de") ?? x.Title.First().Value))}",
+                "The deal closed. German tenders need a Nachunternehmervertrag plus the Verpflichtungserklärung, Unterauftragnehmerverzeichnis " +
+                "and Eigenerklärung. Built only from the agreed deal terms and both companies' names; drafts wait for human review and signature.",
+                d.TenderId, sharedWithOrgId: d.BidderOrgId == orgId ? d.PartnerOrgId : d.BidderOrgId);
+            return TypedResults.Ok(d.Documents);
         });
 
         api.MapPost("/deals/{id:guid}/approve", async Task<IResult> (Guid id, AppDb db, OrgContext org, ActivityLog log, TimeProvider clock) =>

@@ -44,7 +44,6 @@ const month = (m: string) => new Date(`${m}-01`).toLocaleString(session.language
     </div>
 
     <div class="kpis">
-      <div class="card kpi"><span class="muted">{{ t('intel.awards') }}</span><strong>{{ data.totals.awards }}</strong><span class="muted small">Rheinmetall · KNDS</span></div>
       <div class="card kpi"><span class="muted">{{ t('intel.awardValue') }}</span><strong>{{ bn(data.totals.awardValue) }}</strong><span class="muted small">{{ data.totals.withValue }} / {{ data.totals.awards }}</span></div>
       <div class="card kpi"><span class="muted">{{ t('intel.safe') }}</span><strong>{{ data.totals.safeTotal.toLocaleString(session.language) }} bn €</strong><span class="muted small">{{ data.safe.length }} {{ t('tenders.country').toLowerCase() }}</span></div>
       <div class="card kpi"><span class="muted">{{ t('intel.notices') }}</span><strong>{{ data.totals.notices }}</strong><span class="muted small">TED + BZP 2026</span></div>

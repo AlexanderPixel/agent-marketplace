@@ -1,4 +1,6 @@
 using Marketplace.Data;
+using Marketplace.Qualification;
+using Marketplace.Tenancy;
 using Marketplace.Tenders;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,19 +12,24 @@ public static class TenderEndpoints
         string Id, TenderSource Source, string SourceId, string? Reference, string Title, string Language,
         Dictionary<string, string> Titles, string BuyerName, string BuyerCountry, string? BuyerCity, string Cpv,
         Dictionary<string, string> CpvLabels, DateTimeOffset PublishedAt, DateTimeOffset? Deadline, bool IsDefence,
-        bool Featured, bool HasFullNotice, int LotCount, decimal? TotalQuantity);
+        bool Featured, bool HasFullNotice, int LotCount, decimal? TotalQuantity, string? Verdict);
 
     public static void MapTenderEndpoints(this WebApplication app)
     {
         var api = app.MapGroup("/api/tenders");
 
-        api.MapGet("/", async (AppDb db, string? q, string? country, string? cpv, string? source, bool? defence, bool? open) =>
+        api.MapGet("/", async (AppDb db, OrgContext org, string? q, string? country, string? cpv, string? source, bool? defence, bool? open) =>
         {
             var all = await db.Tenders
                 .Select(t => new { t.Id, t.Source, t.SourceId, t.Reference, t.Title, t.Language, t.Titles, t.BuyerName,
                     t.BuyerCountry, t.BuyerCity, t.Cpv, t.CpvLabels, t.PublishedAt, t.Deadline, t.IsDefence, t.Featured,
-                    t.HasFullNotice, t.Lots })
+                    t.HasFullNotice, t.Lots, t.Requirements })
                 .ToListAsync();
+
+            // "Can supply" badge for the company you act as: same rules as the full check, no AI, nothing logged per row.
+            var profile = org.OrgId is null ? null : await db.Profiles.FirstOrDefaultAsync();
+            var companyCountry = org.OrgId is { } oid ? (await db.Organizations.FindAsync(oid))?.Country ?? "" : "";
+            string? Verdict(Tender t) => profile is null ? null : QualificationCheck.Assess(t, profile, companyCountry).Verdict;
 
             var now = DateTimeOffset.UtcNow;
             var rows = all
@@ -40,7 +47,8 @@ public static class TenderEndpoints
                 .ThenByDescending(t => t.PublishedAt)
                 .Select(t => new TenderSummary(t.Id, t.Source, t.SourceId, t.Reference, t.Title, t.Language, t.Titles,
                     t.BuyerName, t.BuyerCountry, t.BuyerCity, t.Cpv, t.CpvLabels, t.PublishedAt, t.Deadline, t.IsDefence,
-                    t.Featured, t.HasFullNotice, t.Lots.Count, t.Lots.Sum(l => l.Quantity)))
+                    t.Featured, t.HasFullNotice, t.Lots.Count, t.Lots.Sum(l => l.Quantity),
+                    Verdict(new Tender { Title = t.Title, Cpv = t.Cpv, BuyerCountry = t.BuyerCountry, Deadline = t.Deadline, Lots = t.Lots, Requirements = t.Requirements })))
                 .ToList();
 
             return new { total = all.Count, rows };

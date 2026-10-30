@@ -18,6 +18,7 @@ public class AppDb(DbContextOptions<AppDb> options, OrgContext org) : DbContext(
     public DbSet<Organization> Organizations => Set<Organization>();
     public DbSet<ActivityEvent> ActivityEvents => Set<ActivityEvent>();
     public DbSet<Tender> Tenders => Set<Tender>();
+    public DbSet<CompanyProfile> Profiles => Set<CompanyProfile>();
 
     protected override void OnModelCreating(ModelBuilder b)
     {
@@ -42,6 +43,14 @@ public class AppDb(DbContextOptions<AppDb> options, OrgContext org) : DbContext(
             Json(e.Property(t => t.Lots));
             Json(e.Property(t => t.Requirements));
             Json(e.Property(t => t.ExclusionGrounds));
+        });
+
+        b.Entity<CompanyProfile>(e =>
+        {
+            e.HasKey(p => p.OrgId);
+            Json(e.Property(p => p.Documents));
+            Json(e.Property(p => p.Products));
+            e.HasQueryFilter(p => p.OrgId == CurrentOrgId);
         });
     }
 

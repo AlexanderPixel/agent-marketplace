@@ -38,6 +38,7 @@ export interface TenderSummary {
   featured: boolean
   hasFullNotice: boolean
   lotCount: number
+  verdict: Verdict | null
 }
 
 export interface Tender extends TenderSummary {
@@ -85,4 +86,46 @@ export const criteriaNames: Record<string, string> = {
   'slc-abil-qual-cert': 'Quality assurance certificates',
   'slc-stand-fin-turnover': 'Minimum turnover',
   'slc-stand-fin-insur': 'Professional risk insurance',
+}
+
+export type Verdict = 'can-supply' | 'partner-needed' | 'not-yet' | 'out-of-range'
+export type Outcome = 'Met' | 'Equivalent' | 'Missing' | 'Unclear'
+
+export const verdictSeverity: Record<Verdict, string> = {
+  'can-supply': 'success',
+  'partner-needed': 'info',
+  'not-yet': 'danger',
+  'out-of-range': 'secondary',
+}
+export const verdictIcon: Record<Verdict, string> = {
+  'can-supply': 'pi pi-check-circle',
+  'partner-needed': 'pi pi-users',
+  'not-yet': 'pi pi-times-circle',
+  'out-of-range': 'pi pi-minus-circle',
+}
+export const outcomeSeverity: Record<Outcome, string> = { Met: 'success', Equivalent: 'warn', Missing: 'danger', Unclear: 'danger' }
+export const outcomeIcon: Record<Outcome, string> = {
+  Met: 'pi pi-check', Equivalent: 'pi pi-arrow-right-arrow-left', Missing: 'pi pi-times', Unclear: 'pi pi-question',
+}
+
+export interface CompanyDocument {
+  id: string
+  kind: string
+  title: string
+  issuer: string
+  country: string
+  issuedOn: string | null
+  validUntil: string | null
+}
+
+export interface Analysis {
+  summary: { language: string; headline: string; points: { text: string; cite: string }[]; byAi: boolean }
+  requirements: {
+    requirement: TenderRequirement
+    outcome: Outcome
+    checks: { need: string; outcome: Outcome; reason: string; evidence: CompanyDocument | null }[]
+  }[]
+  lots: { lot: TenderLot; fit: 'Full' | 'Partial'; product: { name: string; unit: string } | null; capacity: number | null; gap: number | null; reason: string }[]
+  notOffered: number
+  verdict: Verdict
 }

@@ -10,11 +10,11 @@ import { api, post } from '@/lib/api'
 import { autopilotAt, pointAt, showSection, beat } from '@/lib/autopilot'
 import { flag } from '@/lib/flags'
 import { session } from '@/lib/session'
-import { dealSeverity, eur, formatDate, units, type Deal, type Party } from '@/lib/tenders'
+import { dealSeverity, eur, formatDate, units, type Deal, type Party, type TenderCertificate } from '@/lib/tenders'
 
 const { t } = useI18n()
 const route = useRoute()
-const data = ref<{ deal: Deal; bidder: Party; partner: Party }>()
+const data = ref<{ deal: Deal; bidder: Party; partner: Party; certificates: TenderCertificate[] }>()
 const approving = ref(false)
 let timer: ReturnType<typeof setInterval> | undefined
 
@@ -30,10 +30,22 @@ function start() {
 watch(() => [route.params.id, session.orgId], start, { immediate: true })
 onBeforeUnmount(() => clearInterval(timer))
 
+// Every deal the agents made for this tender, one per partner, so you can switch between them (e.g. a CZ and an SK partner).
+const siblings = ref<{ deal: Deal; partner: Party }[]>([])
+watch(() => [data.value?.deal.tenderId, data.value?.deal.status, session.orgId], async ([tenderId]) => {
+  if (!tenderId) return
+  const all = await api<{ deal: Deal; partner: Party }[]>('/deals', {}, true).catch(() => [])
+  siblings.value = all.filter((d) => d.deal.tenderId === tenderId).reverse()
+}, { immediate: true })
+
 const deal = computed(() => data.value?.deal)
 const unit = computed(() => (deal.value ? (units[deal.value.unit] ?? deal.value.unit) : ''))
 const mySide = computed(() => (deal.value?.bidderOrgId === session.orgId ? 'bidder' : 'partner'))
 const party = (side: string) => (side === 'bidder' ? data.value?.bidder : data.value?.partner)
+// What the document agent drafted, and the tender's certificates with who in the consortium provides each.
+const required = computed(() => (data.value?.certificates ?? []).filter((c) => c.demoRequirement))
+const titleOf = (d: { title: Record<string, string> }) => d.title[session.language] ?? d.title.pl ?? Object.values(d.title)[0]
+const docLink = (id: string) => ({ path: `/deals/${deal.value?.id}/documents`, query: { doc: id } })
 const value = computed(() => (deal.value?.unitPrice && deal.value.quantity ? deal.value.unitPrice * deal.value.quantity : null))
 
 // Autopilot, negotiation step: when the agents finish, show the outcome. The server drafts the documents next.
@@ -86,6 +98,17 @@ async function approve() {
     <BidSteps :current="deal.status === 'Closed' ? 5 : 4" :deal="deal.id" />
     <RouterLink to="/deals" class="back"><i class="pi pi-arrow-left" /> {{ t('deals.title') }}</RouterLink>
 
+    <nav v-if="siblings.length > 1" class="siblings" :aria-label="t('deals.onTender')">
+      <span class="muted">{{ t('deals.onTender') }}</span>
+      <RouterLink v-for="s in siblings" :key="s.deal.id" :to="`/deals/${s.deal.id}`" class="sibling"
+        :class="{ active: s.deal.id === deal.id }" :aria-current="s.deal.id === deal.id ? 'page' : undefined">
+        <span class="sflag">{{ flag(s.partner.country) }}</span>
+        <span class="sname">{{ s.partner.name }}</span>
+        <span v-if="s.deal.unitPrice && s.deal.quantity" class="mono small">{{ eur(s.deal.unitPrice * s.deal.quantity, 0) }}</span>
+        <Tag :severity="dealSeverity[s.deal.status]" :value="t(`deals.status.${s.deal.status}`)" />
+      </RouterLink>
+    </nav>
+
     <div class="card head" :class="{ negotiating: deal.status === 'Negotiating' }">
       <div class="parties">
         <div class="party"><span class="pflag">{{ flag(data.bidder.country) }}</span><div><strong>{{ data.bidder.name }}</strong><div class="muted">{{ data.bidder.city }}</div></div></div>
@@ -115,7 +138,7 @@ async function approve() {
           <div class="outcome-actions">
             <Button v-if="deal.status === 'AwaitingApproval'" :label="t('deals.approve')" icon="pi pi-check" :loading="approving" @click="approve" />
             <RouterLink v-if="deal.status === 'Closed'" :to="`/deals/${deal.id}/documents`">
-              <Button data-ap="documents" :label="t('deals.documents')" icon="pi pi-file-edit" />
+              <Button data-ap="documents" :label="deal.documents.length ? t('deals.openDocuments') : t('deals.documents')" icon="pi pi-file-edit" />
             </RouterLink>
           </div>
         </div>
@@ -128,6 +151,32 @@ async function approve() {
         </dl>
       </div>
     </Transition>
+
+    <div v-if="deal.documents.length" class="card bid-docs">
+      <div class="room-head">
+        <h2>{{ t('deals.docsReady') }}</h2>
+        <span class="ai-label"><i class="pi pi-sparkles" /> {{ t('docs.aiDraft') }}</span>
+      </div>
+      <p class="muted small"><i class="pi pi-language" /> {{ t('deals.docsHint') }}</p>
+      <div class="doc-cols">
+        <div>
+          <h3>{{ t('deals.docsAgreements') }} ({{ deal.documents.length }})</h3>
+          <RouterLink v-for="d in deal.documents" :key="d.id" :to="docLink(d.id)" class="doc-row">
+            <i class="pi pi-file" />
+            <span class="doc-name">{{ titleOf(d) }}</span>
+            <span class="langs">🇵🇱 PL · 🇩🇪 DE</span>
+          </RouterLink>
+        </div>
+        <div v-if="required.length">
+          <h3>{{ t('deals.docsCertificates') }} ({{ required.length }})</h3>
+          <RouterLink v-for="c in required" :key="c.id" :to="docLink(c.id)" class="doc-row">
+            <span class="sflag">{{ c.providedBy ? flag(c.providedBy.country) : '—' }}</span>
+            <span class="doc-name">{{ titleOf(c) }}<span class="muted small"> · {{ c.providedBy?.name ?? t('docs.matrixMissing') }}</span></span>
+            <span v-if="c.country && c.country !== 'DE'" class="langs">{{ flag(c.country) }} → 🇩🇪</span>
+          </RouterLink>
+        </div>
+      </div>
+    </div>
 
     <div class="layout">
       <div class="card room">
@@ -161,6 +210,20 @@ async function approve() {
 </template>
 
 <style scoped>
+.siblings { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 14px; }
+.sibling { display: inline-flex; gap: 8px; align-items: center; padding: 8px 12px; border: 1px solid var(--border); background: var(--surface); color: var(--text); text-decoration: none; }
+.sibling:hover { background: var(--ground); }
+.sibling.active { border-color: var(--accent); box-shadow: inset 0 -3px 0 var(--accent); font-weight: 600; }
+.sflag { font-size: 18px; line-height: 1; }
+.bid-docs { display: flex; flex-direction: column; gap: 10px; }
+.doc-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+.doc-cols h3 { font-size: 14px; font-weight: 600; margin: 0 0 6px; }
+.doc-row { display: flex; gap: 10px; align-items: center; padding: 9px 4px; border-bottom: 1px solid var(--border); color: var(--text); text-decoration: none; font-size: 14px; }
+.doc-row:hover { background: var(--ground); }
+.doc-row > .pi { color: var(--accent); }
+.doc-name { flex: 1; min-width: 0; }
+.langs { flex: none; font-size: 12px; color: var(--muted); white-space: nowrap; }
+.mono { font-family: var(--mono); }
 .back { display: inline-flex; gap: 6px; align-items: center; text-decoration: none; font-size: 14px; }
 .head { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
 .parties { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }

@@ -171,6 +171,8 @@ export default {
     privacy: 'Przeszukiwane są tylko publiczne profile: moce, certyfikaty i kraj. Dokumenty, ceny i limity negocjacyjne nie są udostępniane.',
   },
   deals: {
+    openDocuments: 'Otwórz dokumenty', docsReady: 'Dokumenty i certyfikaty do oferty', docsHint: 'Umowy przygotowane z uzgodnionych warunków i certyfikaty wymagane w przetargu, każdy po polsku i po niemiecku. Otwórz, aby porównać tłumaczenia obok siebie.', docsAgreements: 'Umowy', docsCertificates: 'Certyfikaty',
+    onTender: 'Partnerzy w tym przetargu',
     title: 'Umowy',
     subtitle: 'Umowy z partnerami wynegocjowane przez agenta w ramach Twoich zatwierdzonych limitów.',
     empty: 'Brak umów. Znajdź partnera dla luki w mocach, aby rozpocząć.',

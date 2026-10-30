@@ -25,7 +25,9 @@ const signed = ref<Record<string, boolean>>({})
 
 async function load() {
   data.value = await api(`/deals/${route.params.id}`)
-  selected.value ??= data.value?.deal.documents[0]?.id
+  // `?doc=` opens that agreement or certificate straight away (links from the deal room).
+  const wanted = typeof route.query.doc === 'string' ? route.query.doc : undefined
+  selected.value ??= wanted ?? data.value?.deal.documents[0]?.id
 }
 watch(() => [route.params.id, session.orgId], load, { immediate: true })
 

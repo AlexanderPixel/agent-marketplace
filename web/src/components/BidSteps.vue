@@ -32,6 +32,15 @@ const links = computed<(RouteLocationRaw | undefined)[]>(() => {
   ]
 })
 
+// How far the deal got: partner found (3), agents agreed (4), signed off or documents drafted (5). Those steps show as done
+// even when you look back at an earlier one.
+const reached = computed(() => {
+  const d = deal.value
+  if (!d) return 0
+  if (d.approvedBy || d.documentsAt) return 5
+  return d.status === 'Negotiating' ? 3 : 4
+})
+
 const steps = computed(() => {
   const names = tm('guide.steps') as unknown[]
   const hints = tm('guide.hints') as unknown[]
@@ -39,7 +48,7 @@ const steps = computed(() => {
     n: i + 1,
     name: rt(n as Parameters<typeof rt>[0]),
     hint: rt(hints[i] as Parameters<typeof rt>[0]),
-    state: i + 1 < props.current ? 'done' : i + 1 === props.current ? 'now' : 'next',
+    state: i + 1 === props.current ? 'now' : i + 1 < props.current || i + 1 <= reached.value ? 'done' : 'next',
     to: links.value[i],
   }))
 })

@@ -1,0 +1,30 @@
+:root {
+  --ground: #f4f5f8;
+  --surface: #ffffff;
+  --border: #e2e5ec;
+  --text: #121621;
+  --muted: #5a6273;
+  --accent: #1d4596;
+  --accent-soft: #e8eefa;
+  --eu-gold: #f2c200;
+  --nav: #0f1b36;
+  --good: #1b7a46;
+  --good-soft: #e5f4ea;
+  --warn: #9a6200;
+  --warn-soft: #fbf1dc;
+  --bad: #a3231a;
+  --bad-soft: #fbe9e7;
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  color: var(--text);
+  background: var(--ground);
+}
+html, body { margin: 0; background: var(--ground); }
+h1 { margin: 0; font-size: 24px; font-weight: 600; }
+h2 { margin: 0; font-size: 16px; font-weight: 600; }
+a { color: var(--accent); }
+.muted { color: var(--muted); font-size: 14px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+.page { display: flex; flex-direction: column; gap: 20px; }
+.page-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.ai-label { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; color: var(--muted); }

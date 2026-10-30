@@ -9,6 +9,6 @@ const { t } = useI18n()
 <template>
   <div class="page">
     <h1>{{ t(String(route.meta.title)) }}</h1>
-    <div class="card muted">{{ t('home.soon') }}</div>
+    <div class="card muted">{{ t('home.features') }}</div>
   </div>
 </template>

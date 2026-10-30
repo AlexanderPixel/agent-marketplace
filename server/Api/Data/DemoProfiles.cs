@@ -73,6 +73,26 @@ public static class DemoProfiles
                 new("Mazowsze Industrial Holding S.A.", "PL", 100, "parent"),
                 new("Jan i Anna Wróbel (osoby fizyczne)", "PL", 82, "ultimate"),
             ],
+            Staff =
+            [
+                new("s-kowalczyk", "mgr inż. Tomasz Kowalczyk", "Kierownik kontraktu", 18, "Politechnika Warszawska, Mechanika i Budowa Maszyn",
+                    ["pl", "en", "de"],
+                    [new("Pełnomocnik ds. AQAP 2110", "WCNJiK", new(2027, 5, 31)), new("PRINCE2 Practitioner", "PeopleCert", new(2027, 9, 30)),
+                     new("Poświadczenie bezpieczeństwa – Poufne", "ABW", new(2029, 2, 28))],
+                    ["Dostawy resorów dla 2. RBLog, 1 200 kpl. (2025)", "Program resorów Jelcz 442 (2024)"], "od 2026-11-15"),
+                new("s-nowak", "inż. Katarzyna Nowak", "Pełnomocnik ds. jakości", 12, "Politechnika Radomska, Inżynieria Materiałowa",
+                    ["pl", "en"],
+                    [new("Auditor wiodący ISO 9001", "TÜV NORD Akademie", new(2028, 3, 31)), new("Audytor AQAP 2110", "WCNJiK", new(2027, 5, 31))],
+                    ["Wdrożenie AQAP 2110 (2024)", "Kontrola jakości resorów dla Jelcz (2024)"], "od 2026-11-15"),
+                new("s-zielinski", "Marek Zieliński", "Technolog obróbki cieplnej", 21, "Technikum Mechaniczne w Radomiu",
+                    ["pl"],
+                    [new("Uprawnienia UDT – obsługa pieców hartowniczych", "UDT", new(2028, 6, 30))],
+                    ["Hartowanie resorów 51CrV4 dla 2. RBLog (2025)"], "od 2026-11-15"),
+                new("s-weber", "Anna Weber", "Specjalista ds. eksportu i przetargów", 7, "Uniwersytet Ekonomiczny w Krakowie",
+                    ["pl", "de", "en"],
+                    [new("Goethe-Zertifikat C1", "Goethe-Institut", null), new("Kontrola obrotu towarami o znaczeniu strategicznym", "MRiT", new(2026, 10, 1))],
+                    ["Oferty dla Bundeswehr (BAAINBw) 2025"], "od 2026-11-01"),
+            ],
             Products =
             [
                 new("leaf-spring", "Resory piórowe wielopiórowe (Blattfedern)", LeafSpringKeywords, "34320000", 480, "SE", 410m, 90),

@@ -54,6 +54,7 @@ public class AppDb(DbContextOptions<AppDb> options, OrgContext org) : DbContext(
             Json(e.Property(p => p.Documents));
             Json(e.Property(p => p.Products));
             Json(e.Property(p => p.Ownership));
+            Json(e.Property(p => p.Staff));
             e.HasQueryFilter(p => p.OrgId == CurrentOrgId);
         });
 

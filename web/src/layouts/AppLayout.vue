@@ -16,6 +16,7 @@ const health = ref<{ ai: boolean; model: string | null } | null>(null)
 
 const nav = computed(() => [
   { to: '/', icon: 'pi pi-home', label: t('nav.home') },
+  { to: '/profile', icon: 'pi pi-building', label: t('nav.profile') },
   { to: '/tenders', icon: 'pi pi-search', label: t('nav.tenders') },
   { to: '/evidence', icon: 'pi pi-id-card', label: t('nav.evidence') },
   { to: '/partners', icon: 'pi pi-users', label: t('nav.partners') },

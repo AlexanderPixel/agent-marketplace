@@ -25,6 +25,8 @@ public class TelegramBot(IOptions<TelegramOptions> options, IHttpClientFactory h
     : BackgroundService
 {
     private readonly TelegramOptions o = options.Value;
+    // Telegram rejects null fields (e.g. "reply_markup": null), so leave them out.
+    private static readonly JsonSerializerOptions Json = new() { DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull };
     private long? chatId = options.Value.ChatId;
 
     public bool Configured => !string.IsNullOrWhiteSpace(o.BotToken);
@@ -41,7 +43,7 @@ public class TelegramBot(IOptions<TelegramOptions> options, IHttpClientFactory h
 
     private async Task<JsonNode?> CallAsync(string method, object body, CancellationToken ct = default)
     {
-        using var response = await Client().PostAsJsonAsync(method, body, ct);
+        using var response = await Client().PostAsJsonAsync(method, body, Json, ct);
         var json = JsonNode.Parse(await response.Content.ReadAsStringAsync(ct));
         if (json?["ok"]?.GetValue<bool>() != true) log.LogWarning("Telegram {Method} failed: {Body}", method, json?.ToJsonString());
         return json?["result"];

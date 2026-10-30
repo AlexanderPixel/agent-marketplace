@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>tenderhub</title>
+<style>
+:root {
+  --bg: #f6f7f9; --panel: #fff; --text: #16191d; --muted: #5d6670; --line: #e3e6ea; --accent: #2457d6;
+  --accent-soft: #e8eefc; --red: #b3261e; --red-soft: #fbe9e7; --green: #1f7a3a; --green-soft: #e6f4ea;
+  --amber: #8a5a00; --amber-soft: #fff3d6; --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0f1114; --panel: #171a1f; --text: #e7eaee; --muted: #9aa3ad; --line: #2a2f36; --accent: #7aa2ff;
+    --accent-soft: #1d2740; --red: #ff8a80; --red-soft: #3a1f1d; --green: #7fd69a; --green-soft: #17301f;
+    --amber: #ffcf66; --amber-soft: #352a12; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.45 system-ui, -apple-system, Segoe UI, sans-serif; }
+header { position: sticky; top: 0; z-index: 5; background: var(--panel); border-bottom: 1px solid var(--line); padding: 12px 20px; }
+.top { display: flex; align-items: baseline; gap: 20px; flex-wrap: wrap; }
+h1 { font-size: 18px; margin: 0; letter-spacing: -.01em; }
+.kpis { display: flex; gap: 22px; flex-wrap: wrap; }
+.kpi b { font-size: 18px; font-variant-numeric: tabular-nums; display: block; }
+.kpi span { color: var(--muted); font-size: 12px; }
+.live { font-size: 12px; color: var(--muted); margin-left: auto; }
+.live .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--green); margin-right: 6px; animation: pulse 1.4s infinite; }
+.live.idle .dot { background: var(--muted); animation: none; }
+@keyframes pulse { 50% { opacity: .3; } }
+nav { display: flex; gap: 4px; margin-top: 10px; }
+nav button { border: 0; background: none; color: var(--muted); padding: 6px 10px; border-radius: 6px; font: inherit; cursor: pointer; }
+nav button.on { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+main { padding: 16px 20px 40px; }
+.filters { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+.filters input, .filters select { font: inherit; padding: 7px 9px; border: 1px solid var(--line); border-radius: 7px; background: var(--panel); color: var(--text); }
+.filters input[type=search] { flex: 1 1 280px; min-width: 200px; }
+.filters label { display: flex; gap: 6px; align-items: center; color: var(--muted); white-space: nowrap; }
+.count { color: var(--muted); margin: 4px 0 10px; }
+.table-wrap { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 12px; color: var(--muted); font-weight: 600; white-space: nowrap; background: var(--panel); position: sticky; top: 0; }
+tbody tr { cursor: pointer; }
+tbody tr:hover { background: var(--accent-soft); }
+td.t { min-width: 340px; }
+td.t .title { font-weight: 500; }
+td.t .buyer { color: var(--muted); font-size: 12.5px; }
+.num, .date { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.pill { display: inline-block; padding: 1px 7px; border-radius: 999px; font-size: 11.5px; font-weight: 600; white-space: nowrap; }
+.s-open { background: var(--green-soft); color: var(--green); }
+.s-closed, .s-unknown { background: var(--line); color: var(--muted); }
+.s-awarded { background: var(--accent-soft); color: var(--accent); }
+.s-cancelled { background: var(--red-soft); color: var(--red); }
+.def { background: var(--red-soft); color: var(--red); }
+.src { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.pager { display: flex; gap: 8px; align-items: center; justify-content: flex-end; margin-top: 10px; }
+.pager button, .btn { font: inherit; padding: 6px 12px; border: 1px solid var(--line); background: var(--panel); color: var(--text); border-radius: 7px; cursor: pointer; }
+.pager button:disabled { opacity: .4; cursor: default; }
+.empty { padding: 40px; text-align: center; color: var(--muted); }
+#drawer { position: fixed; inset: 0 0 0 auto; width: min(720px, 100vw); background: var(--panel); border-left: 1px solid var(--line);
+  transform: translateX(100%); transition: transform .18s ease; z-index: 10; overflow-y: auto; padding: 20px 24px 40px; box-shadow: -10px 0 30px rgba(0,0,0,.12); }
+#drawer.open { transform: none; }
+#drawer h2 { font-size: 17px; margin: 6px 0 12px; }
+#drawer dl { display: grid; grid-template-columns: 140px 1fr; gap: 6px 14px; margin: 0 0 16px; }
+#drawer dt { color: var(--muted); }
+#drawer dd { margin: 0; word-break: break-word; }
+#drawer pre { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 10px; overflow: auto; max-height: 360px; font-size: 12px; }
+#drawer .close { float: right; }
+.desc { white-space: pre-wrap; background: var(--bg); padding: 10px 12px; border-radius: 8px; max-height: 260px; overflow: auto; }
+a { color: var(--accent); }
+.bar { height: 6px; background: var(--accent); border-radius: 3px; }
+.err { color: var(--red); font-size: 12px; }
+.also { font-size: 11px; color: var(--accent); margin-top: 2px; }
+.copies li { margin-bottom: 4px; }
+@media (max-width: 700px) { header, main { padding-left: 16px; padding-right: 16px; } td.t { min-width: 220px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <h1>tenderhub</h1>
+    <div class="kpis" id="kpis"></div>
+    <div class="live idle" id="live"><span class="dot"></span><span id="livetext">—</span></div>
+  </div>
+  <nav><button data-tab="notices" class="on">Notices</button><button data-tab="sources">Sources</button></nav>
+</header>
+<main>
+  <section id="tab-notices">
+    <div class="filters">
+      <input type="search" id="q" placeholder="Search title, description, buyer — e.g. amunicja, drone, Bundeswehr">
+      <select id="source"><option value="">All sources</option></select>
+      <select id="country"><option value="">All countries</option></select>
+      <select id="status"><option value="">Any status</option><option>open</option><option>closed</option><option>awarded</option><option>cancelled</option><option>unknown</option></select>
+      <select id="type"><option value="">Any type</option><option>tender</option><option>plan</option><option>award</option><option>modification</option><option>cancellation</option><option>other</option></select>
+      <input id="cpv" placeholder="CPV prefix (35)" size="12">
+      <label><input type="checkbox" id="defence"> Defence only</label>
+      <label><input type="checkbox" id="upcoming"> Deadline ahead</label>
+      <label title="Show each tender once even when several sources published it"><input type="checkbox" id="merge" checked> Merge duplicates</label>
+      <select id="sort"><option value="published">Newest published</option><option value="deadline">Soonest deadline</option><option value="value">Highest value</option><option value="seen">Recently scraped</option></select>
+    </div>
+    <div class="count" id="count"></div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Published</th><th>Country</th><th>Source</th><th>Notice</th><th>Status</th><th>Deadline</th><th class="num">Value</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table></div>
+    <div class="pager"><button id="prev">← Prev</button><span id="pageinfo"></span><button id="next">Next →</button></div>
+  </section>
+  <section id="tab-sources" hidden>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Source</th><th class="num">Notices</th><th style="width:25%"></th><th class="num">Open</th><th class="num">Defence</th><th>Latest notice</th><th>Last successful sync</th><th>Next sync</th></tr></thead>
+      <tbody id="srcrows"></tbody>
+    </table></div>
+    <div id="failing"></div>
+  </section>
+</main>
+<aside id="drawer"></aside>
+<script>
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmtN = (n) => (n ?? 0).toLocaleString();
+const day = (s) => (s || "").slice(0, 10);
+const when = (s) => s ? s.replace("T", " ").slice(0, 16) : "";
+const money = (v, c) => v == null ? "" : `${Math.round(v).toLocaleString()} ${c || ""}`;
+const FILTERS = ["q", "source", "country", "status", "type", "cpv", "sort"];
+const TOGGLES = ["defence", "upcoming", "merge"];
+let page = 1, total = 0, size = 50, populated = false, timer;
+
+function params() {
+  const p = new URLSearchParams();
+  for (const f of FILTERS) if ($(f).value) p.set(f, $(f).value.trim());
+  for (const t of TOGGLES) p.set(t, $(t).checked ? "1" : "0");
+  p.set("page", page); p.set("size", size);
+  return p;
+}
+
+async function loadNotices() {
+  const p = params();
+  history.replaceState(null, "", "?" + p);
+  const res = await fetch("/api/notices?" + p);
+  const d = await res.json();
+  if (d.error) { $("rows").innerHTML = `<tr><td colspan="7" class="empty err">${esc(d.error)}</td></tr>`; return; }
+  total = d.total;
+  $("count").textContent = `${fmtN(total)} ${$("merge").checked ? "unique tenders" : "notices"} match`;
+  $("rows").innerHTML = d.rows.length ? d.rows.map(r => `
+    <tr data-id="${r.id}">
+      <td class="date">${day(r.published_at)}</td>
+      <td>${esc(r.buyer_country || "—")}</td>
+      <td class="src">${esc(r.source)}${r.also_on ? `<div class="also" title="Same tender also published on these sources">+ ${esc(r.also_on.split(",").join(", "))}</div>` : ""}</td>
+      <td class="t"><div class="title">${esc(r.title)} ${r.is_defence ? '<span class="pill def">DEFENCE</span>' : ""}</div>
+        <div class="buyer">${esc(r.buyer_name || "")}${r.buyer_city ? " · " + esc(r.buyer_city) : ""} · ${esc(r.notice_type)}</div></td>
+      <td><span class="pill s-${r.status}">${r.status}</span></td>
+      <td class="date">${when(r.deadline_at)}</td>
+      <td class="num">${money(r.value_amount, r.value_currency)}</td>
+    </tr>`).join("") : `<tr><td colspan="7" class="empty">No notices match these filters.</td></tr>`;
+  const pages = Math.max(1, Math.ceil(total / size));
+  $("pageinfo").textContent = `page ${page} of ${fmtN(pages)}`;
+  $("prev").disabled = page <= 1; $("next").disabled = page >= pages;
+}
+
+async function loadStats() {
+  const s = await (await fetch("/api/stats")).json();
+  const t = s.totals;
+  $("kpis").innerHTML = [["unique tenders", t.tenders], ["notices scraped", t.notices], ["sources", t.sources], ["countries", t.countries],
+    ["buyers", t.buyers], ["open now", t.open], ["defence", t.defence]]
+    .map(([k, v]) => `<div class="kpi"><b>${fmtN(v)}</b><span>${k}</span></div>`).join("");
+  const running = s.running.filter(r => r.kind === "sync");
+  $("live").classList.toggle("idle", !running.length);
+  $("livetext").textContent = running.length ? `syncing ${running.length}: ${running.map(r => r.source).join(", ")}` : "no sync running";
+  if (!populated) {
+    $("source").innerHTML += s.sources.map(x => `<option>${esc(x.source)}</option>`).join("");
+    $("country").innerHTML += s.countries.map(x => `<option value="${esc(x.country)}">${esc(x.country)} (${fmtN(x.notices)})</option>`).join("");
+    const q = new URLSearchParams(location.search);
+    for (const f of FILTERS) if (q.get(f)) $(f).value = q.get(f);
+    $("defence").checked = q.get("defence") === "1"; $("upcoming").checked = q.get("upcoming") === "1";
+    $("merge").checked = q.get("merge") !== "0";
+    page = +(q.get("page") || 1);
+    populated = true;
+    await loadNotices();
+  }
+  const max = Math.max(1, ...s.sources.map(x => x.notices));
+  $("srcrows").innerHTML = s.sources.map(x => `
+    <tr data-source="${esc(x.source)}"><td class="src">${esc(x.source)}</td><td class="num">${fmtN(x.notices)}</td>
+    <td><div class="bar" style="width:${(100 * x.notices / max).toFixed(1)}%"></div></td>
+    <td class="num">${fmtN(x.open)}</td><td class="num">${fmtN(x.defence)}</td><td class="date">${day(x.latest)}</td>
+    <td class="date">${when(x.last_success_at)}${x.last_error ? `<div class="err">${esc(x.last_error.slice(0, 120))}</div>` : ""}</td>
+    <td class="date">${when(x.next_run_at)}</td></tr>`).join("");
+  $("failing").innerHTML = s.failing.length ? `<h3>Sources with no data yet</h3><ul>${s.failing.map(f =>
+    `<li><span class="src">${esc(f.source)}</span> — <span class="err">${esc(f.last_error)}</span></li>`).join("")}</ul>` : "";
+}
+
+async function openNotice(id) {
+  const n = await (await fetch("/api/notice?id=" + id)).json();
+  const refs = Object.entries(n.refs || {}).map(([k, v]) => `${esc(k)}: ${esc(v)}`).join("<br>");
+  $("drawer").innerHTML = `
+    <button class="btn close" onclick="closeDrawer()">Close ✕</button>
+    <div class="src">${esc(n.source)} · ${esc(n.source_id)}</div>
+    <h2>${esc(n.title)}</h2>
+    <p><span class="pill s-${n.status}">${n.status}</span> ${n.is_defence ? `<span class="pill def">DEFENCE · ${esc((n.defence_reasons || []).join(", "))}</span>` : ""}</p>
+    <p><a href="${esc(n.url)}" target="_blank" rel="noopener">Open original notice ↗</a>
+       ${n.platform_url && n.platform_url !== n.url ? ` · <a href="${esc(n.platform_url)}" target="_blank" rel="noopener">Bid / documents platform ↗</a>` : ""}</p>
+    <dl>
+      <dt>Buyer</dt><dd>${esc(n.buyer_name || "—")}${n.buyer_id ? ` <span class="src">(${esc(n.buyer_id)})</span>` : ""}</dd>
+      <dt>Location</dt><dd>${esc([n.buyer_city, n.buyer_country].filter(Boolean).join(", ") || "—")}</dd>
+      <dt>Type</dt><dd>${esc(n.notice_type)}${n.procedure_type ? " · " + esc(n.procedure_type) : ""}${n.legal_basis ? " · " + esc(n.legal_basis) : ""}</dd>
+      <dt>Published</dt><dd>${when(n.published_at) || "—"}</dd>
+      <dt>Deadline</dt><dd>${when(n.deadline_at) || "—"}</dd>
+      <dt>Value</dt><dd>${money(n.value_amount, n.value_currency) || "—"}</dd>
+      <dt>CPV</dt><dd>${n.cpv_codes.map(c => `<span class="src">${c}</span>`).join(" ") || "—"}</dd>
+      <dt>References</dt><dd>${refs || "—"}</dd>
+      <dt>Scraped</dt><dd>first ${when(n.first_seen_at)} · last seen ${when(n.last_seen_at)} · version ${n.version}${n.versions.length > 1 ? ` (changed ${n.versions.length - 1}×)` : ""}</dd>
+    </dl>
+    ${n.copies.length ? `<h3>Same tender elsewhere (${n.copies.length})</h3><ul class="copies">${n.copies.map(c =>
+      `<li><a href="#" data-copy="${c.id}">${esc(c.source)}</a> · ${esc(c.notice_type)} · ${day(c.published_at)} · <span class="pill s-${c.status}">${c.status}</span>
+       — <a href="${esc(c.url)}" target="_blank" rel="noopener">original ↗</a></li>`).join("")}</ul>` : ""}
+    ${n.description ? `<h3>Description</h3><div class="desc">${esc(n.description)}</div>` : ""}
+    ${n.documents.length ? `<h3>Documents (${n.documents.length})</h3><ul>${n.documents.map(d =>
+      `<li><a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title || d.url)}</a> ${d.kind ? `<span class="src">${esc(d.kind)}</span>` : ""}</li>`).join("")}</ul>` : ""}
+    <h3>Raw source record</h3><pre>${esc(JSON.stringify(n.raw, null, 2))}</pre>`;
+  $("drawer").classList.add("open");
+}
+function closeDrawer() { $("drawer").classList.remove("open"); }
+
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeDrawer(); });
+$("drawer").addEventListener("click", (e) => {
+  const a = e.target.closest("a[data-copy]"); if (a) { e.preventDefault(); openNotice(a.dataset.copy); }
+});
+$("rows").addEventListener("click", (e) => { const tr = e.target.closest("tr[data-id]"); if (tr) openNotice(tr.dataset.id); });
+$("srcrows").addEventListener("click", (e) => {
+  const tr = e.target.closest("tr[data-source]"); if (!tr) return;
+  $("source").value = tr.dataset.source; page = 1; showTab("notices"); loadNotices();
+});
+for (const f of [...FILTERS, ...TOGGLES]) {
+  $(f).addEventListener(f === "q" || f === "cpv" ? "input" : "change", () => {
+    clearTimeout(timer); timer = setTimeout(() => { page = 1; loadNotices(); }, 250);
+  });
+}
+$("prev").onclick = () => { page--; loadNotices(); window.scrollTo(0, 0); };
+$("next").onclick = () => { page++; loadNotices(); window.scrollTo(0, 0); };
+function showTab(t) {
+  document.querySelectorAll("nav button").forEach(b => b.classList.toggle("on", b.dataset.tab === t));
+  $("tab-notices").hidden = t !== "notices"; $("tab-sources").hidden = t !== "sources";
+}
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => showTab(b.dataset.tab));
+
+// auto-refresh starts only after the first load has applied the URL's filters; starting it earlier let a
+// refresh run with empty filters and overwrite the URL
+(async () => {
+  await loadStats();
+  setInterval(() => { loadStats(); if (page === 1 && !$("drawer").classList.contains("open")) loadNotices(); }, 5000);
+})();
+</script>
+</body>
+</html>

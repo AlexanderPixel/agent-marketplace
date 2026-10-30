@@ -1,6 +1,38 @@
+# Python
 .venv/
 __pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Scraped data — local SQLite stores and their WAL/journal files
 *.db
 *.db-wal
 *.db-shm
-.pytest_cache/
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Logs and ad-hoc scraping dumps left in the repo root while exploring sources
+*.log
+/*.xml
+/*.html
+/*.jsonl
+/tmp/
+
+# Secrets (API keys for sources that need them, e.g. HILMA_API_KEY)
+.env
+.env.*
+!.env.example
+
+# Local tool / editor state
+.claude/settings.local.json
+.DS_Store
+.idea/
+.vscode/

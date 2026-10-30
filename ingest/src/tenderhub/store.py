@@ -9,6 +9,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, Literal
 
+from .dedupe import match_keys
 from .models import Notice
 
 SCHEMA = """
@@ -47,6 +48,8 @@ CREATE TABLE IF NOT EXISTS notices (
     last_seen_at    TEXT NOT NULL,
     last_changed_at TEXT NOT NULL,
     last_refreshed_at TEXT,
+    cluster_id      INTEGER,            -- same tender across sources/notices (see dedupe.py)
+    is_primary      INTEGER NOT NULL DEFAULT 0,  -- the one notice shown per cluster
     UNIQUE (source, source_id)
 );
 CREATE INDEX IF NOT EXISTS notices_published ON notices (published_at);
@@ -54,6 +57,13 @@ CREATE INDEX IF NOT EXISTS notices_deadline  ON notices (deadline_at);
 CREATE INDEX IF NOT EXISTS notices_country   ON notices (buyer_country, published_at);
 CREATE INDEX IF NOT EXISTS notices_defence   ON notices (is_defence, published_at);
 CREATE INDEX IF NOT EXISTS notices_changed   ON notices (last_changed_at);
+
+CREATE TABLE IF NOT EXISTS notice_keys (
+    key       TEXT NOT NULL,
+    notice_id INTEGER NOT NULL REFERENCES notices(id) ON DELETE CASCADE,
+    PRIMARY KEY (key, notice_id)
+);
+CREATE INDEX IF NOT EXISTS notice_keys_notice ON notice_keys (notice_id);
 
 CREATE TABLE IF NOT EXISTS notice_versions (
     notice_id    INTEGER NOT NULL REFERENCES notices(id) ON DELETE CASCADE,
@@ -147,9 +157,20 @@ class SourceState:
 class Store:
     def __init__(self, path: str | Path):
         self.path = str(path)
-        self.db = sqlite3.connect(self.path, isolation_level=None, check_same_thread=False)
+        # long busy timeout: the daemon, `dedupe` and the viewer can all have the file open at once
+        self.db = sqlite3.connect(self.path, isolation_level=None, check_same_thread=False, timeout=60)
         self.db.row_factory = sqlite3.Row
         self.db.executescript(SCHEMA)
+        self._migrate()
+
+    def _migrate(self) -> None:
+        cols = {r["name"] for r in self.db.execute("PRAGMA table_info(notices)")}
+        if "cluster_id" not in cols:
+            self.db.execute("ALTER TABLE notices ADD COLUMN cluster_id INTEGER")
+        if "is_primary" not in cols:
+            self.db.execute("ALTER TABLE notices ADD COLUMN is_primary INTEGER NOT NULL DEFAULT 0")
+        self.db.execute("CREATE INDEX IF NOT EXISTS notices_cluster ON notices (cluster_id)")
+        self.db.execute("CREATE INDEX IF NOT EXISTS notices_primary ON notices (is_primary, published_at)")
 
     def close(self) -> None:
         self.db.close()
@@ -191,11 +212,70 @@ class Store:
             self.db.executemany("INSERT OR IGNORE INTO notice_cpv VALUES (?,?)", [(nid, c) for c in n.cpv_codes])
             self.db.executemany("INSERT OR IGNORE INTO documents VALUES (?,?,?,?)",
                                 [(nid, d.url, d.title, d.kind) for d in n.documents])
+            self._link(nid, match_keys(n.source, n.source_id, n.refs, n.buyer_country, n.title,
+                                       values["deadline_at"]))
             self.db.execute("COMMIT")
             return result
         except BaseException:
             self.db.execute("ROLLBACK")
             raise
+
+    # ---------- cross-source duplicates ----------
+
+    def _link(self, nid: int, keys: set[str]) -> int:
+        """Attach notice `nid` to every cluster sharing one of its match keys, merging clusters. Returns cluster id."""
+        self.db.execute("DELETE FROM notice_keys WHERE notice_id=?", (nid,))
+        self.db.executemany("INSERT OR IGNORE INTO notice_keys VALUES (?,?)", [(k, nid) for k in keys])
+        own = self.db.execute("SELECT cluster_id FROM notices WHERE id=?", (nid,)).fetchone()[0] or nid
+        clusters = {own}
+        if keys:
+            marks = ",".join("?" * len(keys))
+            clusters |= {r[0] or r[1] for r in self.db.execute(
+                f"""SELECT DISTINCT n.cluster_id, n.id FROM notice_keys k JOIN notices n ON n.id = k.notice_id
+                    WHERE k.key IN ({marks}) AND k.notice_id != ?""", [*keys, nid])}
+        target = min(clusters)
+        others = sorted(clusters - {target})
+        self.db.execute("UPDATE notices SET cluster_id=? WHERE id=?", (target, nid))
+        if others:
+            marks = ",".join("?" * len(others))
+            self.db.execute(f"UPDATE notices SET cluster_id=? WHERE cluster_id IN ({marks}) OR id IN ({marks})",
+                            [target, *others, *others])
+        self._pick_primary(target)
+        return target
+
+    def _pick_primary(self, cluster_id: int) -> None:
+        """Newest notice wins (an award supersedes its tender); ties go to the most complete copy."""
+        self.db.execute(
+            """UPDATE notices SET is_primary = (id = (
+                   SELECT id FROM notices WHERE cluster_id = :c
+                   ORDER BY published_at IS NULL, published_at DESC,
+                            (description IS NOT NULL) + (deadline_at IS NOT NULL) + (value_amount IS NOT NULL)
+                              + (buyer_name IS NOT NULL) + (buyer_city IS NOT NULL) DESC, id
+                   LIMIT 1))
+               WHERE cluster_id = :c""", {"c": cluster_id})
+
+    def relink_all(self) -> tuple[int, int]:
+        """Rebuild every cluster from scratch (after changing match rules, or for notices stored before dedup).
+        Returns (notices, clusters). Commits in batches of 500 so a running sync is never blocked for long;
+        every notice starts as its own primary, so readers see an unmerged list rather than an empty one."""
+        self.db.execute("BEGIN")
+        self.db.execute("DELETE FROM notice_keys")
+        self.db.execute("UPDATE notices SET cluster_id = id, is_primary = 1")
+        self.db.execute("COMMIT")
+        rows = self.db.execute(
+            "SELECT id, source, source_id, refs, buyer_country, title, deadline_at FROM notices ORDER BY id").fetchall()
+        for start in range(0, len(rows), 500):
+            self.db.execute("BEGIN")
+            try:
+                for r in rows[start:start + 500]:
+                    self._link(r["id"], match_keys(r["source"], r["source_id"], json.loads(r["refs"]),
+                                                   r["buyer_country"], r["title"], r["deadline_at"]))
+                self.db.execute("COMMIT")
+            except BaseException:
+                self.db.execute("ROLLBACK")
+                raise
+        clusters = self.db.execute("SELECT COUNT(*) FROM notices WHERE is_primary = 1").fetchone()[0]
+        return len(rows), clusters
 
     def mark_refreshed(self, source: str, source_id: str) -> None:
         self.db.execute("UPDATE notices SET last_refreshed_at=? WHERE source=? AND source_id=?",

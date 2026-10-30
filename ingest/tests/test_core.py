@@ -156,3 +156,52 @@ def test_validate_and_cpv():
 def test_parse_since():
     assert abs(parse_since("3d") - (NOW - timedelta(days=3))) < timedelta(minutes=1)
     assert parse_since("2026-10-01") == datetime(2026, 10, 1, tzinfo=UTC)
+
+
+# ---------- cross-source duplicates ----------
+
+def _cluster(store, source, sid):
+    return store.db.execute("SELECT cluster_id, is_primary FROM notices WHERE source=? AND source_id=?",
+                            (source, sid)).fetchone()
+
+
+def test_same_tender_on_two_sources_is_one_cluster_via_shared_id(store):
+    uuid = "0004005b-167c-467c-9b68-5a64838d1f7d"
+    store.upsert(notice("745279-2026", source="ted", refs={"procedure": uuid}))
+    store.upsert(notice("x1", source="oeffentlichevergabe", refs={"procedure": uuid.upper()}))
+    a, b = _cluster(store, "ted", "745279-2026"), _cluster(store, "oeffentlichevergabe", "x1")
+    assert a["cluster_id"] == b["cluster_id"]
+    assert a["is_primary"] + b["is_primary"] == 1
+
+
+def test_ted_number_links_national_copy(store):
+    store.upsert(notice("745650-2026", source="ted"))
+    store.upsert(notice("446357", source="tenderned", refs={"ted": "00745650-2026"}))
+    assert _cluster(store, "ted", "745650-2026")["cluster_id"] == _cluster(store, "tenderned", "446357")["cluster_id"]
+
+
+def test_fingerprint_links_platform_and_bulletin(store):
+    deadline = NOW + timedelta(days=5)
+    t = "Dostawa opon do pojazdów osobowych i dostawczych"
+    store.upsert(notice("p1", source="platformazakupowa", title=t, buyer_country="PL", deadline_at=deadline))
+    store.upsert(notice("b1", source="bzp", title=t.upper() + ".", buyer_country="PL", deadline_at=deadline))
+    store.upsert(notice("b2", source="bzp", title=t, buyer_country="PL", deadline_at=deadline + timedelta(days=3)))
+    assert _cluster(store, "platformazakupowa", "p1")["cluster_id"] == _cluster(store, "bzp", "b1")["cluster_id"]
+    assert _cluster(store, "bzp", "b2")["cluster_id"] != _cluster(store, "bzp", "b1")["cluster_id"]
+
+
+def test_bridge_notice_merges_two_existing_clusters_and_relink_matches(store):
+    store.upsert(notice("a", source="s1", refs={"ocid": "ocds-1"}))
+    store.upsert(notice("b", source="s2", refs={"ted": "1-2026"}))
+    assert _cluster(store, "s1", "a")["cluster_id"] != _cluster(store, "s2", "b")["cluster_id"]
+    store.upsert(notice("c", source="s3", refs={"ocid": "ocds-1", "ted": "1-2026"}))
+    ids = {_cluster(store, s, i)["cluster_id"] for s, i in (("s1", "a"), ("s2", "b"), ("s3", "c"))}
+    assert len(ids) == 1
+    assert store.db.execute("SELECT SUM(is_primary) FROM notices").fetchone()[0] == 1
+    assert store.relink_all() == (3, 1)
+
+
+def test_short_generic_titles_are_not_fingerprinted(store):
+    store.upsert(notice("1", source="s1", title="Dostawa paliwa", buyer_country="PL"))
+    store.upsert(notice("2", source="s2", title="Dostawa paliwa", buyer_country="PL"))
+    assert _cluster(store, "s1", "1")["cluster_id"] != _cluster(store, "s2", "2")["cluster_id"]

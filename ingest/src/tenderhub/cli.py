@@ -110,6 +110,18 @@ def cmd_stats(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_dedupe(args: argparse.Namespace) -> int:
+    notices, clusters = Store(args.db).relink_all()
+    print(f"{notices} notices -> {clusters} unique tenders ({notices - clusters} duplicates merged)")
+    return 0
+
+
+def cmd_serve(args: argparse.Namespace) -> int:
+    from .web import serve
+    serve(args.db, args.host, args.port)
+    return 0
+
+
 def cmd_show(args: argparse.Namespace) -> int:
     store = Store(args.db)
     row = store.db.execute("SELECT * FROM notices WHERE source=? AND source_id=?", (args.source, args.source_id)).fetchone()
@@ -158,6 +170,12 @@ def main(argv: list[str] | None = None) -> int:
     s.set_defaults(fn=cmd_search)
 
     sub.add_parser("stats", help="per-source counts and sync health").set_defaults(fn=cmd_stats)
+
+    sub.add_parser("dedupe", help="rebuild cross-source duplicate clusters for all stored notices").set_defaults(fn=cmd_dedupe)
+
+    s = sub.add_parser("serve", help="browse stored notices in a local web viewer")
+    s.add_argument("--host", default="127.0.0.1"); s.add_argument("--port", type=int, default=8765)
+    s.set_defaults(fn=cmd_serve)
 
     s = sub.add_parser("show", help="print one stored notice with its version history")
     s.add_argument("source"); s.add_argument("source_id")

@@ -171,6 +171,8 @@ export default {
     privacy: 'Only public listings are searched: capacity, certificates and country. No documents, prices or negotiation limits are shared.',
   },
   deals: {
+    openDocuments: 'Open documents', docsReady: 'Documents and certificates for the bid', docsHint: 'Agreements drafted from the agreed terms and the certificates the tender needs, each in Polish and German. Open one to read the translations side by side.', docsAgreements: 'Agreements', docsCertificates: 'Certificates',
+    onTender: 'Partners on this tender',
     title: 'Deals',
     subtitle: 'Partner deals your agent negotiated within your pre-approved limits.',
     empty: 'No deals yet. Find a partner for a capacity gap to start one.',

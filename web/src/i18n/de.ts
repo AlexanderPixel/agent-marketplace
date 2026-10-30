@@ -171,6 +171,8 @@ export default {
     privacy: 'Durchsucht werden nur öffentliche Profile: Kapazität, Zertifikate und Land. Keine Dokumente, Preise oder Verhandlungslimits.',
   },
   deals: {
+    openDocuments: 'Dokumente öffnen', docsReady: 'Dokumente und Zertifikate für das Angebot', docsHint: 'Aus den vereinbarten Bedingungen entworfene Verträge und die von der Ausschreibung geforderten Zertifikate, jeweils auf Polnisch und Deutsch. Öffnen Sie eines, um die Übersetzungen nebeneinander zu lesen.', docsAgreements: 'Verträge', docsCertificates: 'Zertifikate',
+    onTender: 'Partner in dieser Ausschreibung',
     title: 'Deals',
     subtitle: 'Partner-Deals, die Ihr Agent innerhalb Ihrer freigegebenen Limits verhandelt hat.',
     empty: 'Noch keine Deals. Suchen Sie einen Partner für eine Kapazitätslücke.',

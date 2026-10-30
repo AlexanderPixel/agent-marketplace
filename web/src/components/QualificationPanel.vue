@@ -109,8 +109,9 @@ const unitName = (u: string | undefined | null) => (u ? (units[u] ?? u) : '')
                 <span v-if="l.gap" class="gap">{{ t('qual.short', { gap: `${l.gap} ${unitName(l.lot.unit)}` }) }}</span>
               </div>
             </div>
-            <Button v-if="l.gap" v-tooltip="t('qual.soon')" :label="t('qual.findPartner', { gap: l.gap, unit: unitName(l.lot.unit) })"
-              icon="pi pi-users" disabled />
+            <RouterLink v-if="l.gap" :to="{ path: '/partners', query: { tender: tender.id, lot: l.lot.id, gap: l.gap } }">
+              <Button :label="t('qual.findPartner', { gap: l.gap, unit: unitName(l.lot.unit) })" icon="pi pi-users" />
+            </RouterLink>
           </div>
           <p v-if="analysis.notOffered" class="muted">{{ t('qual.notOffered', { n: analysis.notOffered }) }}</p>
         </div>

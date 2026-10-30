@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1,
+  "filename": "_Hinweise von der e-Vergabe.txt",
+  "folder": null,
+  "size": 1127,
+  "pages": null,
+  "content_type": "text/plain",
+  "text_file": "text/Hinweise_von_der_e-Vergabe.txt.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/_Hinweise von der e-Vergabe.txt"
+ },
+ {
+  "id": 2,
+  "filename": "Leistungsverzeichnis.aidf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 70817,
+  "pages": null,
+  "content_type": "application/octet-stream",
+  "text_file": "text/Version_1_Leistungsverzeichnis.aidf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/Leistungsverzeichnis.aidf"
+ },
+ {
+  "id": 3,
+  "filename": "Leistungsverzeichnis.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 6958,
+  "pages": 6,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_Leistungsverzeichnis.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/Leistungsverzeichnis.pdf"
+ },
+ {
+  "id": 4,
+  "filename": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 200112,
+  "pages": 10,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_01_Aufforderung_zur_Angebotsabgabe_Version_1.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf"
+ },
+ {
+  "id": 5,
+  "filename": "VM191_02_Angebot.docx",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 52954,
+  "pages": null,
+  "content_type": "application/msword",
+  "text_file": "text/Version_1_VM191_02_Angebot.docx.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_02_Angebot.docx"
+ },
+ {
+  "id": 6,
+  "filename": "VM191_03_Entwurf_RV Tubus u. Katheter_ divers.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 254148,
+  "pages": 16,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_03_Entwurf_RV_Tubus_u._Katheter__divers.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_03_Entwurf_RV Tubus u. Katheter_ divers.pdf"
+ },
+ {
+  "id": 7,
+  "filename": "VM191_04_RV_Anlage 1_Leistungsbeschreibung_.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 196128,
+  "pages": 5,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_04_RV_Anlage_1_Leistungsbeschreibung_.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_04_RV_Anlage 1_Leistungsbeschreibung_.pdf"
+ },
+ {
+  "id": 8,
+  "filename": "VM191_05_Anlage 2_LOS 1_Preis- und Produktblatt_Endobronchialblocker-Set_ 9Fr.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 34930,
+  "pages": 1,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_05_Anlage_2_LOS_1_Preis-_und_Produktblatt_Endobronchialblocker-Set__9Fr.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_05_Anlage 2_LOS 1_Preis- und Produktblatt_Endobronchialblocker-Set_ 9Fr.pdf"
+ },
+ {
+  "id": 9,
+  "filename": "VM191_05_Anlage 2_LOS 2_Preis- und Produktblatt_Epistaxis-Ballonkatheter_Doppelballon.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 33232,
+  "pages": 1,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_05_Anlage_2_LOS_2_Preis-_und_Produktblatt_Epistaxis-Ballonkatheter_Doppelballon.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_05_Anlage 2_LOS 2_Preis- und Produktblatt_Epistaxis-Ballonkatheter_Doppelballon.pdf"
+ },
+ {
+  "id": 10,
+  "filename": "VM191_05_Anlage 2_LOS 3_Preis- und Produktblatt_Tubus_ Endotracheal-_ spiralverstärkt_ ID3_0.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 33152,
+  "pages": 1,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_05_Anlage_2_LOS_3_Preis-_und_Produktblatt_Tubus__Endotracheal-__spiralverstärkt__ID3_0.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_05_Anlage 2_LOS 3_Preis- und Produktblatt_Tubus_ Endotracheal-_ spiralverstärkt_ ID3_0.pdf"
+ },
+ {
+  "id": 11,
+  "filename": "VM191_06_RV_Anlage 3_TS-QMA Stand 10.03.2025.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 478004,
+  "pages": 22,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_06_RV_Anlage_3_TS-QMA_Stand_10.03.2025.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_06_RV_Anlage 3_TS-QMA Stand 10.03.2025.pdf"
+ },
+ {
+  "id": 12,
+  "filename": "VM191_07_RV_Anlage 4_ZVB_BMVg.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 870875,
+  "pages": 13,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_07_RV_Anlage_4_ZVB_BMVg.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_07_RV_Anlage 4_ZVB_BMVg.pdf"
+ },
+ {
+  "id": 13,
+  "filename": "VM191_08_RV_Anlage 5_Lieferantenhandbuch Katalogdaten (1).pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 1062762,
+  "pages": 20,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_08_RV_Anlage_5_Lieferantenhandbuch_Katalogdaten_1_.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_08_RV_Anlage 5_Lieferantenhandbuch Katalogdaten (1).pdf"
+ },
+ {
+  "id": 14,
+  "filename": "VM191_09_RV_Anlage 6_Anforderungen Katalogdaten.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 168515,
+  "pages": 4,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_09_RV_Anlage_6_Anforderungen_Katalogdaten.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_09_RV_Anlage 6_Anforderungen Katalogdaten.pdf"
+ },
+ {
+  "id": 15,
+  "filename": "VM191_10_RV_Anlage 7_Staatenliste BMI mit Hinweisen.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 80803,
+  "pages": 2,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_10_RV_Anlage_7_Staatenliste_BMI_mit_Hinweisen.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_10_RV_Anlage 7_Staatenliste BMI mit Hinweisen.pdf"
+ },
+ {
+  "id": 16,
+  "filename": "VM191_11_Vorlage-Katalogdaten_eClass10_1.xlsx",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 144677,
+  "pages": null,
+  "content_type": "application/excel",
+  "text_file": "text/Version_1_VM191_11_Vorlage-Katalogdaten_eClass10_1.xlsx.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_11_Vorlage-Katalogdaten_eClass10_1.xlsx"
+ },
+ {
+  "id": 17,
+  "filename": "VM191_12_B-V034_Eigenerklaerung Nichtvorliegen Ausschlussgruende.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 672211,
+  "pages": 4,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_12_B-V034_Eigenerklaerung_Nichtvorliegen_Ausschlussgruende.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_12_B-V034_Eigenerklaerung Nichtvorliegen Ausschlussgruende.pdf"
+ },
+ {
+  "id": 18,
+  "filename": "VM191_13_B-V047_Erklaerung Bietergemeinschaft.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 708075,
+  "pages": 1,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_13_B-V047_Erklaerung_Bietergemeinschaft.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_13_B-V047_Erklaerung Bietergemeinschaft.pdf"
+ },
+ {
+  "id": 19,
+  "filename": "VM191_14_B-V044_Erklaerung bevorzugte Beruecksichtigung.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 1306874,
+  "pages": 1,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_14_B-V044_Erklaerung_bevorzugte_Beruecksichtigung.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_14_B-V044_Erklaerung bevorzugte Beruecksichtigung.pdf"
+ },
+ {
+  "id": 20,
+  "filename": "VM191_15_Eigenerklaerung_RUS-Sanktionen.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 776885,
+  "pages": 2,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_15_Eigenerklaerung_RUS-Sanktionen.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_15_Eigenerklaerung_RUS-Sanktionen.pdf"
+ },
+ {
+  "id": 21,
+  "filename": "VM191_16_Information eRechnungsstellung.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 502169,
+  "pages": 14,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_16_Information_eRechnungsstellung.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_16_Information eRechnungsstellung.pdf"
+ },
+ {
+  "id": 22,
+  "filename": "VM191_17_Informationsblatt DSGVO .pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 19690,
+  "pages": 2,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_17_Informationsblatt_DSGVO_.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_17_Informationsblatt DSGVO .pdf"
+ },
+ {
+  "id": 23,
+  "filename": "VM191_18_Bewertungsmatrix.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 99025,
+  "pages": 2,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_18_Bewertungsmatrix.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_18_Bewertungsmatrix.pdf"
+ },
+ {
+  "id": 24,
+  "filename": "VM191_19_Angebotsdatenblatt Medizinprodukte.pdf",
+  "folder": "Vergabeunterlagen/Version 1",
+  "size": 132800,
+  "pages": 3,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_1_VM191_19_Angebotsdatenblatt_Medizinprodukte.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 1/VM191_19_Angebotsdatenblatt Medizinprodukte.pdf"
+ },
+ {
+  "id": 25,
+  "filename": "Leistungsverzeichnis.aidf",
+  "folder": "Vergabeunterlagen/Version 2",
+  "size": 70817,
+  "pages": null,
+  "content_type": "application/octet-stream",
+  "text_file": "text/Version_2_Leistungsverzeichnis.aidf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 2/Leistungsverzeichnis.aidf"
+ },
+ {
+  "id": 26,
+  "filename": "Leistungsverzeichnis.pdf",
+  "folder": "Vergabeunterlagen/Version 2",
+  "size": 6956,
+  "pages": 6,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_2_Leistungsverzeichnis.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 2/Leistungsverzeichnis.pdf"
+ },
+ {
+  "id": 27,
+  "filename": "VM191_1. Hinweisblatt.pdf",
+  "folder": "Vergabeunterlagen/Version 2",
+  "size": 112668,
+  "pages": 1,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_2_VM191_1._Hinweisblatt.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 2/VM191_1. Hinweisblatt.pdf"
+ },
+ {
+  "id": 28,
+  "filename": "Leistungsverzeichnis.aidf",
+  "folder": "Vergabeunterlagen/Version 3",
+  "size": 70818,
+  "pages": null,
+  "content_type": "application/octet-stream",
+  "text_file": "text/Version_3_Leistungsverzeichnis.aidf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 3/Leistungsverzeichnis.aidf"
+ },
+ {
+  "id": 29,
+  "filename": "Leistungsverzeichnis.pdf",
+  "folder": "Vergabeunterlagen/Version 3",
+  "size": 6954,
+  "pages": 6,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_3_Leistungsverzeichnis.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 3/Leistungsverzeichnis.pdf"
+ },
+ {
+  "id": 30,
+  "filename": "VM191_2. Hinweisblatt.pdf",
+  "folder": "Vergabeunterlagen/Version 3",
+  "size": 119561,
+  "pages": 2,
+  "content_type": "application/pdf",
+  "text_file": "text/Version_3_VM191_2._Hinweisblatt.pdf.txt",
+  "local_path": "/Users/nevvdevv/Development/hackathons/_october_2026/salespatriot/attachments/6780/Vergabeunterlagen_Version 3/VM191_2. Hinweisblatt.pdf"
+ }
+]

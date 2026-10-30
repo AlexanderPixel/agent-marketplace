@@ -110,6 +110,11 @@ class Viewer:
                 (row["cluster_id"], nid))] if row["cluster_id"] else []
         return d
 
+    def brief(self, nid: int) -> dict[str, Any]:
+        from .brief import build, load_context
+        with self.connect() as db:
+            return build(load_context(db, nid))
+
     def attachment(self, aid: int) -> dict[str, Any] | None:
         with self.connect() as db:
             row = db.execute("SELECT * FROM attachments WHERE id=?", (aid,)).fetchone()
@@ -194,6 +199,8 @@ def make_handler(viewer: Viewer) -> type[BaseHTTPRequestHandler]:
                     self.json(viewer.notices(q))
                 elif url.path == "/api/stats":
                     self.json(viewer.stats())
+                elif url.path == "/api/brief":
+                    self.json(viewer.brief(int(q.get("id", 0))))
                 elif url.path == "/api/attachment":
                     a = viewer.attachment(int(q.get("id", 0)))
                     self.json(a) if a else self.json({"error": "not found"}, 404)

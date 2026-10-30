@@ -1,0 +1,165 @@
+[page 1]
+Anforderungen an Katalogdaten 
+1 
+Geschäftsstelle Kaufhaus des Bundes   
+Stand: 05.09.2019 
+ 
+Der elektronische Katalog ist das Aushängeschild  unserer zentralen Einkaufsplattform und das 
+zentrale Medium, mit dem Sie Ihre Produkte präsentieren. Ausführliche Produktinformationen sind 
+beim Einkauf entscheidend. Um verkaufen zu können, müssen  Ihre Produkte gefunden werden. Ihre 
+Artikel sollten dabei eindeutig identifizierbar sein und sich deutlich von ähnlichen Artikeln 
+unterscheiden. Dabei ist ein e gute Beschreibung genauso wichtig, wie die eindeutigen Hersteller -
+angaben. Unser Suchalgorithmus greift auf die Kurzbezeichnung und die Langbeschreibung sowie auf 
+die Schlagwörter zu. Artikel, die aussagekräftige Inhalte haben, werden besser gefunden. 
+ 
+Welche inhaltlichen und technischen Anforderungen wir an die Daten - und Bildqualität stellen, ent -
+nehmen Sie bitte den nachfolgenden Regelungen. 
+ 
+Für Rückfragen bzw. Unterstützung stehen wir gerne unter der Telefonnummer 022899 -610-2289 
+oder per E-Mail: katalogdaten@kdbund.bund.de zur Verfügung. 
+ 
+ 
+1. Artikelkurzbezeichnung 
+ 
+Vergeben Sie eineindeutige Namen für Ihre Artikel und vermeiden Sie Abkürzungen. Die wichtigsten 
+Attribute und Unterscheidungsmerkmale sollten bereits in der Artikelkurzbezeichnung (BMEcat-Feld 
+DESCRIPTION_SHORT) enthalten sein. Fragen Sie sich, nach welchen Bezeichnungen Ihre Kunden 
+suchen würden und an hand von  welchen Merkmalen Kaufentscheidungen getroffen werden. So 
+werden dem Kunden bereits im Suchergebnis d ie wichtigsten Informationen zu dem  Produkt 
+angezeigt bzw. ermöglicht eine aussagekräftige Artikelkurzbezeichnung überhaupt erst, dass Ihr 
+Produkt vom Suchalgorithmus erfasst und im Suchergebnis angezeigt wird. 
+ 
+Schlecht Gut Besser 
+Sportschuh Sportschuh XYZ – weiß Sportschuh XYZ –  Größe 38 – Damen – Weiß 
+ 
+Beachten Sie bitte, dass die Länge des Artikelnamens auf 80 Zeichen begrenzt ist.    
+ 
+ 
+2. Artikellangbeschreibung 
+ 
+In der Langbeschreibung haben Sie die Möglichkeit, die Eigenschaften und Merkmale des angeboten-
+en Artikels ausführlicher zu erläutern. Sie  beinhaltet eine eindeutige Beschreibung mit präzisen 
+Informationen, die den Artikel oder die Dienstleistung näher erklären.  Stellen Sie Alleinstellungs -
+merkmale und Artikeleigenschaften heraus, wie  beispielsweise Farbe, Maße , Varianten oder Liefer-
+umfang. Eine gute Produktbeschreibung sollte alle wichtigen, verkaufsrelevanten Informationen in 
+verständlicher und ansprechender Form enthalten.  
+ 
+Die Länge der Artikellangbeschreibung ist auf 4.000 Zeichen begrenzt.
+
+[page 2]
+Anforderungen an Katalogdaten 
+2 
+Geschäftsstelle Kaufhaus des Bundes   
+Stand: 05.09.2019 
+ 
+2.1 Inhaltliche Anforderungen 
+ 
+• Bitte achten Sie auf korrekte Rechtschreibung und Interpunktion. 
+ 
+• Längere Texte sollen leserfreundlich formatiert und strukturiert werden. Dies kann mit einer 
+HTML-Formatierung erreicht werden (vgl. „2.2 Strukturierungsmöglichkeiten“).   
+ 
+• Geben Sie gebräuchliche Normen an, z.B. DIN- und ISO-Angaben. 
+ 
+• Achten Sie auf Vollständigkeit. Wichtig ist dabei die Selbsterklärbarkeit des Produktes. 
+ 
+• Ein guter Richtwert liegt bei 100 – 200 Wörtern. 
+ 
+• Achten Sie auf Eindeutigkeit. 
+ 
+• Informationen zur Verpackungseinheit sind nicht Bestandteil der Langbeschreibung. 
+Stattdessen sind d ie entsprechenden Werte in d en BMEcat -Feldern ORDER_UNIT und 
+CONTENT_UNIT zu hinterlegen . Weiterführende Informationen zu Verpackungseinheiten 
+erhalten Sie im Lieferantenhandbuch. 
+ 
+ 
+2.2 Strukturierungsmöglichkeiten  
+ 
+Die Strukturierung kann  über HTML  realisiert werden. Dafür können Sie die nachfolgend 
+beschriebenen HTML-Tags verwenden. 
+ 
+Tags zur Textformatierung: 
+ 
+ HTML-Tag  Bezeichnung 
+ <b>Text</b>    Der Text wird fett dargestellt 
+ <i>Text</i>    Der Text wird kursiv dargestellt 
+ <u>Text<u>  Der Text wird unterstrichen dargestellt 
+ <sub> Text<sub>  Der Text wird hochgestellt dargestellt 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Die HTML-Tags können auch verschaltet werden. Zum Beispiel erzeugt <u><b>Text<\b><\u> einen 
+Text, der fett und unterstrichen dargestellt wird.
+
+[page 3]
+Anforderungen an Katalogdaten 
+3 
+Geschäftsstelle Kaufhaus des Bundes   
+Stand: 05.09.2019 
+ 
+ 
+Tags zur Textausrichtung: 
+  
+HTML-Tag  Bezeichnung / Darstellung in der Langbeschreibung 
+ <p>Ihr Text</p>     Absatz im Text vornehmen 
+ <br>  Zeilenumbruch 
+ <ul> 
+    <li>Punkt 1 der Liste</li> 
+    <li>Punkt 2 der Liste</li> 
+    <li>Punkt 3 der Liste</li> 
+ </ul> 
+ 
+• Punkt 1 der Liste 
+• Punkt 2 der Liste 
+• Punkt 3 der Liste 
+ 
+ 
+3. Schlagworte / Synonyme 
+ 
+Schlagworte und Synonyme dienen dazu, den Artikel auffindbar zu machen. Dazu werden sie in den 
+Suchbegriffen hinterlegt, die dann später im Produktfindungsprozess vom Suchalgorithmus des KdB 
+mit ausgewertet werden.  
+ 
+• Jeder Suchbegriff wird in einem separaten Schlagwort angelegt. 
+ 
+• Verwenden Sie hier bitte  gängige Begriffe aus der Umgangssprache  und/oder Fachsprache. 
+Beispiele für Synonyme zum Begriff Kugelschreiber:  Kuli, Schreibgerät, Schreiber 
+ 
+• Es sollte n lediglich Synonyme verwendet werden , die nicht bereits in den Bezeichnungen 
+und/oder Beschreibungen enthalten sind. 
+ 
+• Beachten Sie bitte, dass die Länge auf 50 Zeichen begrenzt ist.    
+ 
+ 
+4. Produktabbildungen 
+ 
+4.1 Inhaltliche Anforderungen 
+ 
+• Gleiche Bilder dürfen nicht mit mehreren Namen geliefert werden. 
+ 
+• Es sollen keine Firmenlogos als Bilder verwendet werden. Stattdessen sollte das Bild eine 
+aussagekräftige Darstellung des Artikels beinhalten. 
+ 
+• Die Produktabbildung sollte immer genau die beschriebene Variante des Artikels wieder -
+geben. Nur auf diese Art kann sich der Kunde  einen realistischen Eindruck darüber machen, 
+ob der beschriebene Artikel dem angedachten Zweck entspricht.
+
+[page 4]
+Anforderungen an Katalogdaten 
+4 
+Geschäftsstelle Kaufhaus des Bundes   
+Stand: 05.09.2019 
+ 
+ 
+ 
+• Es dürfen keine Alternativabbildungen bzw. Platzhalter (z.B. „Keine Abbildung“ oder „No 
+Image“) verwendet werden. 
+ 
+ 
+4.2 Technische Anforderungen 
+ 
+• Die Bilder sind in einer Auflösung von mindestens 600 x 600 zu liefern.

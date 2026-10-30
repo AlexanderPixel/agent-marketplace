@@ -1,0 +1,838 @@
+[page 1]
+TS-QMA 
+Technische Spezifikation:  
+Qualitätssicherungsanforderungen zur Lieferung 
+von Medizinprodukten und Arzneimittel an die 
+ Bundeswehr 
+BAAINBw ZtQ1.3 
+BUNDESWEHR
+
+[page 2]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 1 von 21 
+ 
+Dokumentenhistorie TS-QMA 
+ 
+Version Bemerkungen 
+2019-08-01 Erstellung TS-QMA 
+2019-08-08 Kleine Änderung Design 
+2020-04-21 Einarbeitung rechtliche Änderungen 
+2020-05-07 Einarbeitung Verordnung (EU) 2020/561  
+2023-01-20 Einarbeitung rechtliche Änderungen 
+2025-03-10 Einarbeitung rechtliche Änderungen und Normen
+
+[page 3]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 2 von 21 
+ 
+Inhaltsverzeichnis 
+Dokumentenhistorie TS-QMA ................................................................................................................ 1 
+Begriffe / Definitionen: .......................................................................................................................... 3 
+Anwendungsbereich ............................................................................................................................... 4 
+Krisensituationen .................................................................................................................................... 4 
+Zweck ...................................................................................................................................................... 4 
+Amtliche Qualitätssicherung und Güteprüfung ..................................................................................... 5 
+Ansprechpartner(in) für Beauftragte des Auftraggebers ...................................................................... 8 
+Ansprechpartner(in) für die Qualitätssicherung .................................................................................. 8 
+Audit des Auftraggebers ......................................................................................................................... 8 
+Vertragliche Qualitätssicherungsanforderungen .................................................................................. 9 
+Für Medizinprodukte / (inkl. In-vitro-Diagnostikum) gilt: ................................................................... 9 
+Allgemeine Anforderungen für Händler und Hersteller .................................................................. 9 
+Qualitätssicherungsanforderungen Importeure, Bevollmächtigte ............................................... 10 
+Vertragliche Qualitätssicherungsanforderungen der Händler ...................................................... 10 
+Vertragliche Qualitätssicherungsanforderungen der Hersteller ................................................... 11 
+Für sonstige Produkte gilt: ................................................................................................................. 14 
+Allgemeine Anforderungen für Händler und Hersteller ................................................................ 14 
+Qualitätssicherungsanforderungen Importeure, Bevollmächtigte ............................................... 14 
+Für Arzneimittel (einschließlich Tierarzneimittel) gilt: ....................................................................... 15 
+Allgemein gültige Vorgaben: ......................................................................................................... 15 
+Anforderungen für Händler (Arzneimittel / Tierarzneimittel): ..................................................... 15 
+Anforderungen für Hersteller (Arzneimittel / Tierarzneimittel): .................................................. 15 
+Meldepflichten der Auftragnehmer ................................................................................................. 16 
+Normen und Gesetze / Verordnungen ............................................................................................ 16 
+Bezugsquellen ................................................................................................................................... 20 
+Änderungswesen .............................................................................................................................. 21
+
+[page 4]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 3 von 21 
+Begriffe / Definitionen: 
+Es gelten folgende Quellen zur Festlegung von Begriffen / Definitionen: 
+• Verordnung (EU) 2017 / 745   
+• Verordnung (EU) 2017 / 746   
+• Medizinprodukterecht - Durchführungsgesetz, gültige Fassung 
+• EU – GMP Leitfaden, gültige Fassung  
+Begriff Definition 
+Amtliche Qualitätssicherung Der Prozess, mit dem sich zuständige nationale Einkaufsorganisationen 
+(z.B. Beschaffungsbehörden) Vertrauen in das Einhalten vertraglich fest-
+gelegter Qualitätsanforderungen verschaffen.*). 
+In  nationalen (deutschen) Verträgen kann auf Grundlage von § 12 der 
+regelmäßig mitgeltenden VOL/B (Verdingungsordnung für Leistungen - 
+Teil B), amtliche Qualitätssicherung in Form  der "Güteprüfung" ergän-
+zend vertraglich vereinbart werden. 
+Auftraggeber Regierungs- und/oder NATO-Organisationen, die mit eine m Auftragneh-
+mer einen Vertrag schließen, in dem die Produkt - und Qualitätsanforde-
+rungen festgelegt sind. 
+Auftragnehmer Organisation (Unternehmen), die dem Auftraggeber im Rahmen eines 
+Vertrages Produkte liefert. 
+BfArM Bundesinstitut für Arzneimittel und Medizinprodukte 
+CAPA Corrective and Preventive Action, (deutsch: Korrektur - und Vorbeuge-
+maßnahmen)  
+DMIDS Deutsches Medizinprodukte-Informations- und Datenbanksystem 
+GQAR Verantwortliche Person für die amtliche Qualitätssicherung beim Auf-
+traggeber. (ggf. auch Güteprüfer) 
+Gute Herstellungspraxis (GMP) Gute Herstellungspraxis (Good Manufacturing Practice, GMP) ist der Teil 
+der Qualitätssicherung, die gewährleistet, dass Pr odukte gleichbleibend 
+nach den Qualitätsstandards produziert und geprüft werden, die der vor-
+gesehenen Verwendung nach der Zulassung, der Genehmigung für die 
+klinische Prüfung bzw. der Produktspezifikation entsprechen. 
+Gute Vertriebspraxis (GDP) Die gute V ertriebspraxis ist der Teil der Qualitätssicherung, mit dessen 
+Hilfe gewährleistet wird, dass die Qualität von Arzneimitteln während 
+sämtlicher Etappen der Lieferkette —  vom Herstellungsort bis zur Apo-
+theke oder zu der zur Abgabe von Arzneimitteln an die Ö ffentlichkeit er-
+mächtigten oder befugten Person — erhalten bleibt. 
+IVDR Verordnung (EU) 2017 / 746 
+MDR Verordnung (EU) 2017 / 745 
+NATO North Atlantic Treaty Organization 
+PEI Paul – Ehrlich - Institut  
+Sonstige Produkte  Produkte, die nicht zu  Medizinprodukten / Zube hör oder Arzneimitteln  
+gehören. 
+TS-QMA Technische Spezifikation: Qualitätssicherungsanforderungen zur Liefe-
+rung von Medizinprodukten und Arzneimittel an die Bundeswehr 
+Unterlieferanten / Unterauftrag-
+nehmer 
+Unterauftragnehmer oder Unterli eferanten beliefern den Auftragneh-
+mer mit Produkten und / oder Dienstleistungen. 
+Verwaltungshelfer Externer Mitarbeiter des Auftraggebers, der im Rahmen der amtlichen 
+Qualitätssicherung unterstützt.  
+ZLG Zentralstelle der Länder für Gesundheitsschutz 
+bei Arzneimitteln und Medizinprodukten
+
+[page 5]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 4 von 21 
+Anwendungsbereich  
+Die „Technische Spezifikation“ Qualitätssicherungsanforderungen zur Lieferung von M edizinproduk-
+ten und Arzneimittel an die Bundeswehr (TS-QMA) ist ein Dokument, das die Bundeswehr vertraglich 
+mit den Auftragnehmern / Lieferanten ergänzend zu den nationalen und EU - Rechtsnormen verein-
+bart, falls MDR / IVDR Produkte, sonstige Produkte, Arzneimittel eingekauft werden. Zusätzlich regelt 
+die TS-QMA auch Qualifikationsanforderungen für Auftragnehmer, die Instandhaltungen / Instandset-
+zungen bei MDR / IVDR Produkten durchführen.  
+Da Gesundheitseinrichtungen nicht nur MDR / IVDR Produkte oder Arzneimittel benötigen, 
+wurde die Produktgruppe der „sonstigen Produkte“ in der TS-QMA mit aufgenommen.    
+Als Teilleistung in Verträgen von Waffensystemen der Bundeswehr können im Sonderfall auch 
+MDR / IVDR Produkte, sonstige Produkte, Arzneimittel beschafft / integriert werden. In diesen 
+speziellen Anwendungsfall darf zur normalen vertraglich vereinbarten Qualitätssicherung die 
+TS-QMA ergänzend vereinbart werden.   
+Auftragnehmer der Bundeswehr dürfen dieses Dokument an Lieferanten als vertragliche Vorgabe wei-
+tergeben.  
+Krisensituationen   
+Grundsätzlich gelten für die Bundeswehr in der Beschaffung die gesetzlichen Vorgaben. In Krisensitu-
+ationen können sich gesetzliche Vorgaben oder andere Vorgaben sehr schnell ändern. Der Auftragneh-
+mer hat das in solchen Fällen mit zu berücksichtigen.  
+Zweck 
+Die TS-QMA legt für die Wirtschaftsakteure Händler oder Hersteller Mindestqualitätsanforderungen 
+fest, die über die gesamte Lieferkette aus Kundensicht (Bundeswehr) einzuhalten sind. Zusätzlich wer-
+den   Zutrittsrechte, Prüfrechte und Auditrechte für Beauftragte des Auftraggebers vertraglich verein-
+bart. Die vorliegende TS -QMA enthält die Anforderungen, deren ordnungsgemäße Anwendung Ver-
+trauen in die Fähigkeit des Auftragnehmers schafft, Produkte zu liefern, die den vertraglichen Anfor-
+derungen des Auftraggebers entsprechen.
+
+[page 6]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 5 von 21 
+ 
+Das Produktspektrum der TS-QMA umfasst: 
+Produkte Produktart Wo festgelegt 
+MDR Produkte und 
+IVDR Produkte 
+Medizinprodukte MDR – Artikel 2 
+Zubehör für Medizinprodukte MDR – Artikel 2 
+System und Behandlungseinheiten MDR – Artikel 2 
+Produkte, die im Verzeichnis der Gruppen 
+von Produkten ohne medizinischen Ver-
+wendungszweck aufgeführt sind. 
+MDR - Anhang 16 
+In-vitro-Diagnostika  IVDR – Artikel 2 
+Zubehör für In-vitro-Diagnostika IVDR – Artikel 2 
+Altprodukte, und nur für solche Produkte - 
+die auf Grundlage von Übergangsbestim-
+mungen auf Grundlage eines alten Konfor-
+mitätsbewertungsverfahrens noch in den 
+Verkehr gebracht werden dürfen.  Pro-
+dukte, die keine Benannte Stelle benötigen, 
+haben sofort der MDR / IVDR zu entspre-
+chen. (Oft Klasse 1 Produkte) 
+MDR – Artikel 120 und Verord-
+nung (EU) 2024 / 1860 
+IVDR – Artikel 110 und Verord-
+nung (EU) 2022/112 
+Sonstige Produkte Produkte, die nicht den MDR / IVDR Pro-
+duktarten oder Arzneimittel - Produktarten 
+zuzurechnen sind.   
+- 
+Arzneimittel Arzneimittel für den menschlichen Ge-
+brauch 
+Arzneimittelgesetz 
+Tierarzneimittel Verordnung ( EU) 2019/ 4, 
+2019/5, 2019/6 und Tierarznei-
+mittelgesetz  
+Veterinärmedizintechnische Produkte  Tierarzneimittelgesetz  
+ 
+Amtliche Qualitätssicherung und Güteprüfung 
+Grundsätzlich verzichtet der öffentliche Auftraggeber auf eine Güteprüfung, es sei denn, die Güteprü-
+fung wird im Vertrag gefordert. 
+Alle Produkte unterliegen aber dem vertraglichen Recht der amtlichen Qualitätssicherung. Der Auf-
+traggeber darf sich im angemessenen Umfang beim Auftragnehmer überzeugen, dass die Vorgaben
+
+[page 7]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 6 von 21 
+zur Qualitätssicherung eingehalten werden, z.B. durch ein Kundengespräch vor Ort oder auch durch 
+ein Audit.  
+Von diesen Recht kann der Auftraggeber nur dann Gebrauch machen, wenn: 
+• Gewährleistungsfälle, Vorkommnisse beim Auftraggeber eingetreten sind 
+• Der Auftragnehmer die zuständigen Behörden (oder den Auftraggeber) über Produktrisiken 
+Informiert hat. 
+• Die CE – Kennzeichnung auf Grundlage einer Baumusterprüfung erfolgte und im Ausnahme-
+fall kein Qualitätsmanagementsystem nach DIN EN ISO 13485 vorliegt. 
+• Proben von Produkten zur Qualitätskontrolle gezogen werden müssen, die in Prüfinstituten 
+der Bundeswehr untersucht werden sollen. 
+• Der Auftraggeber / Einkauf eine Potentialanalyse oder Lieferantenqualifizierung durchführen 
+möchte. Hier ist beidseitiges Einvernehmen erforderlich. 
+• Eine Sonderzulassung nach § 90 MPDG durch die zuständigen Stellen der Bundeswehr durch-
+geführt werden soll. 
+• Beauftragte des Auftraggebers der Bundeswehr vor Ort Produktinformationen einholen möch-
+ten.  
+• Beauftragte des Auftraggebers der Bundeswehr vor Ort Risikobewertungen aus Kundensicht 
+darlegen möchten. 
+• Eine vertraglich festgelegte amtliche Qualitätssicherung in Form einer Güteprüfung vereinbart 
+wurde. 
+Zutrittsrechte und Unterstützungsrechte  
+Die Bundeswehr vereinbart mit dem Auftragnehmer  die hier hinterlegten Zutritt srechte und Unter-
+stützungsrechte, auch wenn diese selten in der Praxis zur Anwendung kommen werden.  Es kann vor-
+kommen, dass Beauftragte des Auftraggebers sich vor Ort von der vertraglichen Qualit ätssicherung 
+überzeugen möchten, z.B. bei einer Lieferantenqualifizierung, amtlichen Qualitätssicherung etc. 
+Beauftragte des Auftraggebers können sein: 
+• Mitarbeiter Bundeswehr, z.B. Apotheker, Ärzte, Soldaten, Projektleiter, Einkäufer, Güteprüfer 
+/ Mitarbeiter Zentrum technisches Qualitätsmanagement 
+• Verwaltungshelfer 
+Der Auftraggeber hat sicherzustellen, dass Beauftragte des Auftraggebers fachlich kompetent sind, z.B. 
+in: 
+• Bewertung von Prozessen im Bereich der Qualitätssicherung (keine Produktbewertung) 
+• Fachliche Bewertungen aus Sicht des Auftraggebers / Kunde Bundeswehr 
+Informationen, die der Auftraggeber beim Auftragnehmer erhält, dürfen nicht an Dritte weitergegeben 
+werden, es sei denn -  Meldewege sind einzuhalten, z.B. Meldung an zuständige Behörden oder z.B. 
+auch an betroffene NATO Staaten, falls eine amtliche Qualitätssicherung - in Form einer internationa-
+len Güteprüfung, vereinbart wurde.
+
+[page 8]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 7 von 21 
+Der Auftragnehmer gewährt gegenüber Beauftragten  des Auftraggebers folgende Zutrittsrechte und 
+Unterstützungen: 
+1. Das Zutrittsrecht zu allen Einrichtungen, in denen die vertraglich vereinbarten Arbeiten 
+durchgeführt werden. 
+2. Bereitstellung von Informationen, die die Erfüllung der vertraglich festgelegten Anforderun-
+gen betreffen  
+3. Uneingeschränkte Möglichkeit, zur Überprüfung der Erfüllung der Anforderungen der TS -
+QMA 
+4. Die uneingeschränkte Möglichkeit, die Überprüfung der Erfüllung der Anforderungen der TS-
+QMA ist beim Unterlieferanten sicherzustellen. Der Auftragnehmer wird benachrichtigt, be-
+vor die Überprüfung stattfindet. 
+5. Unterstützungen für die  Teilnahme als Beobachter, um aus Kund ensicht zu bewerten, wie  
+der Auftragnehmer oder Unterauftragnehmer die Beurteilung, Verifizierung, Validierung, Te-
+stung, Prüfungen oder Freigabe von Produkten durchführen. 
+6. Bereitstellung von Räumlichkeiten. Räume müssen verschlossen werden können. 
+7. Zugang zu Informations- und Kommunikationseinrichtungen 
+8. Vorlage von Unterlagen des Auftragnehmers, die zur Bestätigung der Übereinstimmung des 
+Produkts mit den vertraglichen Anforderungen notwendig sind. 
+9. Ausfertigung von Unterlagen des Auftragnehmers, die zur Bestätigung der Übereinstimmung 
+des Produkts mit den vertraglichen Anforderungen notwendig sind. 
+10. Einsichtnahme in die Risikomanagementdokumentation und den CAPA Prozess  
+11. Einsichtnahme in die Medizinproduktakte.
+
+[page 9]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 8 von 21 
+Ansprechpartner(in) für Beauftragte des Auftraggebers 
+Ansprechpartner(in) für die Qualitätssicherung  
+Die oberste Leitung des Auftragnehmers ernennt aus der Managementorganisation eine(n) Manage-
+mentbeauftragte(n) für amtliche Qualitätssicherungsangelegenheiten, die/der unabhängig von ande-
+ren Aufgaben die erforderliche organisatorische Befugnis und Freiheit haben muss, Qualitätsprobleme 
+zu lösen. Sie/er ist der obersten Leitung direkt unterstellt. Bei kleinen Unternehmen darf der Ge-
+schäftsführer diese Funktion übernehmen. 
+Die/der Managementbeauftragte hat u.a. die Verantwortung und die Befugnis sicherzustellen, dass 
+die für das Qualitätsmanagementsystem erforderlichen Verfahren eingerichtet, umgesetzt und auf-
+rechterhalten werden und dies schließt auch die Zusammenarbeit mit dem GQAR und/oder dem Auf-
+traggeber bezüglich Qualität ein. Die/der Managementbeauftragte muss im Hinblick auf das Qualitäts-
+management über die nötige Kompetenz verfügen. 
+Audit des Auftraggebers  
+Liegt ein Recht des Auftragg ebers vor, eine amtliche Qualitätssicherung durchzuführen, so darf der 
+Auftraggeber über Beauftragte auch ein Lieferantenaudit, aus Sicht Auftragnehmer Kundenaudit,  
+durchführen. Das Audit kann sich aus verschiedenen Auditarten zu einem Gesamtaudit ergeben, z.B. 
+Systemaudit, Prozessaudit, Verfahrensaudit, CAPA Audit etc . Eine beiderseitig gewollte Lieferanten-
+qualifizierung kann ebenfalls ein Audit erfordern.  
+In welcher Form das Audit abläuft, wird im konkreten Einzelfall zwischen Auftraggeber und Auftrag-
+nehmer abgestimmt.
+
+[page 10]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 9 von 21 
+Vertragliche Qualitätssicherungsanforderungen 
+• MDR Produkte und IVDR Produkte  
+• Sonstige Produkte  
+• Arzneimittel inklusive Zubehöres 
+• Gesetzliche Vorgaben    
+ 
+Für MDR Produkte und IVDR Produkte gilt: 
+ 
+Hinweis zu gesetzlichen Vorgaben:  
+• EU – Recht: Verordnung (EU) 2017/745 in Kombination mit der Verordnun g (EU) 2023/607 
+und Verordnung (EU) 2024/1860 
+• EU – Recht: Verordnung (EU) 2017/746 in Kombination mit der Verordnung (EU) 2022/112  
+und Verordnung (EU) 2024/1860  
+• Zusätzlich zu den Verordnungen (EU) 2017/745 und (EU) 2017/746 hat der Gesetzgeber in 
+Deutschland über das Medizinprodukterecht – Durchführungsgesetz weitere nationale Be-
+sonderheiten in Ergänzung zum EU – Recht hinterlegt.  
+ 
+Allgemeine Anforderungen für Händler und Hersteller 
+• Alle MDR Produkte und alle IVDR Produkte müssen über ein gültiges CE Kennzeichen verfügen.  
+• Falls der Hersteller sich in einem Land befindet, wo die Verordnungen (EU) 2017/745 und (EU) 
+2017/746 nicht gelten, so ist zu prüfen, dass ein Bevollmächtigter, der innerhalb der EU seinen 
+Wohnsitz haben muss, die rechtliche Verantwortung übernimmt.  
+• Dem Lieferumfang liegt eine für MDR Produkte / IVDR Produkte gültige EU - Konformitätserklä-
+rung bei.  
+• Für System und Behandlungseinheiten ist grundsätzlich die Erklärung nach Verordnung (EU) 
+2017/745 – Artikel 22 beizulegen.  
+• Betroffene Wirts chaftsakteure (nicht die Händler) haben die Registrierungspflichten in der        
+EUDAMED Datenbank sicherzustellen. Gesetzliche Übergansvorschriften können beachtet wer-
+den. Händler können diese Datenbanken für Prüfungen im Rahmen der Händlerpflichten nut-
+zen. (z.B. SRN Nummer, BASIC UDI-DI etc.)  
+• Eine gesetzliche Unique Device Identifier (UDI) muss auf dem Medizinprodukte / (oder In-vitro-
+Diagnostikum) angebracht sein. Gesetzliche Übergansvorschriften können hierbei beachtet wer-
+den.
+
+[page 11]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 10 von 21 
+• Alle gesetzlichen Vorgaben zur Qualitätssicherung sind einzuhalten. MDCG Dokumente der Me-
+dical Device Coordination Group (MDCG) können als Leitfaden bei der Auslegung der Vorgaben 
+unterstützen.  
+• Falls vertraglich eine Installation / Inbetriebnahme von Medizinprodukten bereits ver einbart 
+wurde, sind die gesetzlichen Vorgaben der Medizinprodukte Betreiberverordnung zu beachten, 
+z.B. Einweisungen für Medizinprodukte durch den Hersteller, Eintragungen in das Medizinpro-
+duktebuch, Bestandsverzeichnis sowie Vorgaben zu Wartungen / messtechnische Kontrollen.   
+Qualitätssicherungsanforderungen Importeure, Bevollmächtigte 
+• Es gelten die gesetzlichen Vorgaben.  
+Vertragliche Qualitätssicherungsanforderungen der Händler 
+• Händler haben zu prüfen, dass für das jeweilige Medizinprodukt eine EU - Konformitätserklä-
+rung vorliegt und ein CE Kennzeichen angebracht ist.  
+• Händler haben zu prüfen, dass die Hersteller von Medizinprodukten eine Qualitätssicherung 
+durchgeführt haben, die mindestens den Vorgaben TS-QMA entspricht. Produkte, für die keine 
+entsprechende Qualitätssicherung durchgeführt wurde, dürfen nicht an die Bundeswehr ausge-
+liefert werden.  
+• Die Lagerungs- und Transportbedingungen des jeweiligen Medizinproduktes müssen den Vor-
+gaben des Herstellers entsprechen.  
+• Bei Produkten mit begrenzter Lagerz eit muss durch den Händler eine Kontrolle des Verfallda-
+tums erfolgen. Die verbleibende Lagerzeit ist zu ermitteln und dem Auftraggeber noch vor der 
+Auslieferung mitzuteilen. 
+• Vor Auslieferung von Medizinprodukten haben Händler zu prüfen, dass keine Risikoinformatio-
+nen, Produktrückrufe für das jeweilige Produkt anstehen. Neben den Herstellerinformationen 
+sind auch Informationen des BfArM und des PEI, zu berücksichtigen. Produkte, für die Rückruf-
+aktionen oder Risikoinformationen vorliegen, dürfen nicht an die Bundeswehr geliefert werden.  
+• Händler, denen Beschwerden und Berichte seitens Angehöriger der Gesundheitsberufe, der Pa-
+tienten oder Anwender über mutmaßliche Vorkommnisse im Zusammenhang mit einem Pro-
+dukt, das sie bereitgestellt haben, zugehen, leiten diese unverzüglich an den Hersteller und ge-
+gebenenfalls den Bevollmächtigten des Herstellers und den Importeur weiter. Sie führen ein 
+Register der Beschwerden, der nichtkonformen Produkte und der Rückrufe und Rücknahmen, 
+und sie halten den Hersteller und gegebenenfalls dessen Bevollmächtigten und den Importeur 
+über diese Überwachungsmaßnahme auf dem Laufenden und stellen ihnen auf deren Ersuchen 
+alle Informationen zur Verfügung.
+
+[page 12]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 11 von 21 
+• Händler händigen dem Auftraggeber auf Ersuchen alle Informationen und Unterlagen au s, die 
+ihnen vorliegen und die für den Nachweis der Konformität eines Produkts erforderlich sind. 
+• Händler haben ihre Lieferanten / Hersteller hinsichtlich Qualität zu bewerten. Diese Bewertung 
+muss nachvollziehbar Einfluss auf die zukünftige Auswahl aller Einkaufsquellen haben.   
+• Ist dem Händler bekannt, dass die vom Hersteller vorgesehene Zweckbestimmung  / Verwen-
+dung des Medizinproduktes nicht mit der tatsächlichen Anwendung der Bundeswehr überein-
+stimmt, wird der Händler dem Auftraggeber darüber in Kenntnis setzen und bei Notwendigkeit 
+Maßnahmen einleiten. Achtung: Händler, Importeure oder andere Personen können nach den 
+Verordnungen (EU) 2017/745 Artikel 16 und (EU) 2017/746 Artikel 16 Herstellerpflichten über-
+tragen bekommen.  
+ 
+Vertragliche Qualitätssicherungsanforderungen der Hersteller 
+Grundsätzlich fordert die Bundeswehr von Herstellern der Medizinprodukte, dass ein Qualitätsmana-
+gementsystem nach DIN EN ISO 13485 vorhanden sein muss und für Medizinprodukte der Bundeswehr 
+anzuwenden ist.  
+Gesetzliche Vorgaben zur Qualitätssicherung und dem Risikomanagement sind immer einzuhalten.  
+Der Hersteller hat, soweit möglich, seine an die Bundeswehr gelieferten Produkte zu überwachen . Er 
+muss bewerten, ob die jeweilige Zweckbestimmung eingehalten wird. In einigen Au snahmefällen 
+(muss vertraglich ersichtlich sein)  werden Medizinprodukte in Luftfahrzeugen, Schiffen, Panzer und 
+Zelte der Bundeswehr mit unterschiedlichen weltweiten klimatischen Bedingungen betrieben.: 
+• Vibrationen, z.B. beim Einbau im Panzer 
+• Salznebelbeständigkeit bei Verwendung bei der Marine 
+• Höhenlage, z.B. Einsatz in Flugzeugen –  mit dem Risiko, dass die Durchschlagsfestigkeit der 
+Elektronik abnimmt. 
+• Militärische Geräte (z.B. Funk) können die Funktion der Medizinprodukte stören.  
+Bei Notwendigkeit sind Härtungsmaßnahmen, unter Beteiligung Benannter Stellen, durch den Auftrag-
+nehmer einzuleiten, um einen sicheren Betrieb zu gewährleisten – Sicherheit für Patienten, Anwender 
+und Dritte. Die Zweckbestimmung ist nach Härtungsmaßnahme zu aktualisieren.  
+Für Medizinprodukte der Klasse 1, 1* und 2a oder In-vitro-Diagnostika – mit geringem Risiko sind Aus-
+nahmen zulässig, wenn der Hersteller als Voraussetzung für die CE Kennzeichnung eine Baumusterprü-
+fung verwendet. Mindestanforderungen zur Qualitätssicherung können aus der nachfolgenden Tabelle 
+entnommen werden. Ein Qualitätsmanagementsystem nach 21 CFR 820 wird durch die Bundeswehr 
+anerkannt.
+
+[page 13]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 12 von 21 
+Mindestvorgaben Qualitätssicherung für Hersteller 
+Medizinprodukte 
+Medizinprodukt Klasse 3 und 2b, invasiv  • DIN EN ISO 13485 
+• DIN EN ISO 14971 
+• DIN EN ISO 10993 
+Medizinprodukt Klasse 3 und aktive Medizin-
+produkte  
+• DIN EN ISO 13485 
+• DIN EN ISO 14971 
+Medizinprodukt Klasse 2b • DIN EN ISO 13485 
+Medizinprodukt Klasse 2a, 1* und 1 Grundsätzliche gilt als Mindestvorgabe: 
+• DIN EN ISO 13485.  
+ 
+Im Ausnahmefall: 
+• z.B. bei kleinen Unternehmen: CE - Kennzeichen 
+auf Grundlage Baumusterprüfung  
+ 
+Im Ausnahmefall toleriert der Auftraggeber, dass mindes-
+tens die Qualitätssicherung auf Grundlage der gesetzlichen 
+Vorgaben erfolgt. Der Auftragnehmer hat in diesen Fall qua-
+litätssichernde Maßnahmen durchzuführen, um die Sicher-
+heit von Patienten, Anwendern und Dritte n sicherzustellen. 
+Harmonisierte Normen sind anzuwenden, wo regulatorisch 
+sinnvoll. Der Auftraggeber ist berechtigt, sich vor Ort beim 
+Auftragnehmer zu überzeugen, wie die Qualitätssicherung 
+erfolgt. 
+In-vitro-Diagnostika 
+Achtung: Es gibt nach Verordnung (EU) 2017/746 neue IVD Medizinproduktklassen. (A, B, C, D)  
+In-vitro-Diagnostika  
+ 
+ 
+• DIN EN ISO 13485 
+• Bei hohem Risiko: DIN EN ISO 13485 und DIN EN 
+ISO 14971  
+In-vitro-Diagnostika, wo eine Baumusterprü-
+fung für das CE – Kennzeichen erfolgte. 
+ 
+• Im Ausnahmefall toleriert der Auftraggeber, dass 
+mindestens die Qualitätssicherung auf Grundlage 
+der gesetzlichen Vorgaben erfolgt. Der Auftrag-
+nehmer hat q ualitätssichernde Maßnahmen 
+durchzuführen, um die Sicherheit von Patienten, 
+Anwendern und Dritten sicherzustellen. Harmoni-
+sierte Normen sind anzuwenden, wo regulatorisch 
+sinnvoll. Der Auftraggeber ist berechtigt, sich vor 
+Ort beim Auftragnehmer zu überzeug en, wie die 
+Qualitätssicherung erfolgt.
+
+[page 14]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 13 von 21 
+ 
+Ergänzende Vorgaben für die Instandsetzung / Instandhaltung von MDR / IVDR Produk-
+ten 
+• Es gelten die nationalen Vorgaben der MPBetreibV.  
+• Instandhaltungsmaßnahmen sind unter Berücksichtigung der Angaben des Herstellers (MDR / 
+IVDR Produkt) durchzuführen. 
+• Die Kompetenz und Weisungsunabhängigkeit der an der Instandhaltung / Instandsetzung be-
+teiligten Personen ist durch den Auftragnehmer sicherzustellen.  
+• Bei Bedarf unterstützt der Auftragnehmer bei der Eintragung in das Medizinproduktebuch 
+(falls z.B. der Auftragnehmer die MTK oder STK auf Grundlage vertraglicher Vereinbarungen 
+durchführen soll). 
+Auszug aus § 5 MPBetreibV - Besondere Anforderungen: Sofern für eine Tätigkeit nach dieser Ver-
+ordnung (Hinweis zur Anwendung § 5: in MPBetreibV - § 7 Instandhaltung von Medizinprodukten 
+Nr. 2 wurde geregelt) besondere Anforderungen vorausgesetzt werden, darf diese Tätigkeit nur 
+durchführen, wer: 
+ 
+1. hinsichtlich der jeweiligen Tätigkeit über aktuelle Kenntnisse aufgrund einer geeigne-
+ten Ausbildung und einer einschlägigen beruflichen Tätigkeit verfügt, 
+2.  hinsichtlich der fachlichen Beurteilung keiner Weisung unterliegt und 
+3. über die Mittel, insbesondere Räume, Geräte und sonstige Arbeitsmittel, wie geeig-
+nete Mess- und Prüfeinrichtungen, verfügt, die erforderlich sind, die jeweilige Tätig-
+keit ordnungsgemäß und nachvollziehbar durchzuführen.
+
+[page 15]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 14 von 21 
+ 
+ 
+ 
+Für sonstige Produkte gilt: 
+Allgemeine Anforderungen für Händler und Hersteller 
+• Die Kundenanforderungen sind durch den Auftragnehmer zu er mitteln, zu erfüllen und zu do-
+kumentieren. 
+• Falls EU Rechtsnormen (z.B. EU PSA Verordnung) es festlegen, müssen sonstige Produkte über 
+ein gültiges CE Kennzeichen verfügen und für jede anzuwendende EU Rechtsnorm ist die EU / 
+EG Konformitätserklärung oder EU / EG Konformitätsbescheinigung (Baumusterprüfung) beizu-
+legen.  EU / EG Konformitätserklärungen und EU / EG Konformitätsbescheinigungen sind zusätz-
+lich durch Händler auf Richtigkeit zu bewerten.  
+• Alle gesetzlichen Vorgaben zur Qualitätssicherung sind einzuhalten. Das gilt auch für die „Gute 
+Laborpraxis“, wenn dies gesetzlich gefordert wird. (z.B. Biozidverordnung, Chemikaliengesetz 
+etc.) 
+• Die Qualitätssicherung muss mindestens den Vorgaben der DIN EN ISO 9001 (oder DIN EN 9120 
+als zusätzliche Option für Händler) genügen.   
+• Sonstige Produkte müssen in einen angemessenen sauberen Zustand geliefert werden.  
+• Auftragnehmer haben mit Lieferanten eine dem Risiko angemessene vertraglich e Qualitätssi-
+cherung zu vereinbaren.  
+• Die Lager und Transportbedingungen müssen mi ndestens den Vorgaben des Herstellers ent-
+sprechen - falls es diese Vorgaben gibt.   
+• Alle sonstigen Produkte sind am Standort der Fertigung, auf dem sonstigen Produkt oder im 
+Ausnahmefall nur auf der Verpackung, dauerhaft zu kennzeichnen, so dass über die gesamte 
+Lieferkette eine Identifizierung / Rückverfolgbarkeit möglich ist. Aus der Kennzeichnung muss 
+eine Aussage über den Konfigurationszustand des sonstigen Produktes ableitbar sein.  
+• Auftragnehmer haben ein Verzeichnis aller gemeldeten Reklamationen zu führen und wählen 
+ihre Lieferanten nur auf Grundlage positiver ermittelter Erfahrungswerte / Qualitätsfähigkeiten 
+aus.  
+• Sonstige Produkte, die Qualitätsmängel aufweisen, dürfen nicht an die Bundeswehr ausgeliefert 
+werden.  
+ 
+Qualitätssicherungsanforderungen Importeure, Bevollmächtigte 
+• Es gelten die gesetzlichen Vorgaben.
+
+[page 16]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 15 von 21 
+ 
+Für Arzneimittel (einschließlich Tierarzneimittel) gilt: 
+Allgemein gültige Vorgaben: 
+• Es sind nur zugelassene Arzneimittel zu vertreiben 
+• Gesetzliche Vorgaben sind einzuhalten, z.B.: 
+o Arzneimittelgesetz und Verordnungen zum Arzneimittelgesetz 
+o Verordnungen (EU) 2019/4, (EU) 2019/5, 2019/6, Tierarzneimittelgesetz, TAMKatV 
+o EU - GMP Leitfaden  
+•  „Gute Vertriebspraxis“ nach EC Leitlinie 2013/C 343/01  
+Sonderfall Vorgaben für veterinärmedizinische Produkte  
+• Freie verkäufliche Tierarzneimittel und veterinärmedizintechnischen Produkte (VMTPs) sind 
+in den Vorgaben der TAMKatV § 2 geregelt.  
+• Bei der Herstellung und den Handel von VMTPs gelten die Mindestvorgaben zur Qualitätssi-
+cherung nach der DIN EN ISO 9001. Das Tierwohl ist zu beachten. Eine veterinärmedizinische 
+Behandlung darf nicht zu einer Gefährdung von Tieren, Anwendern und Dritten führen.  
+• Händler haben VMTPs aus einer sicheren Einkaufsquelle zu beziehen und haben eine erwei-
+terte Wareneingangsprüfung und Warenausgangsprüfung durchzuführen, die sicherstellen 
+soll, dass bei der Verwendung der VMTPs keine Gefährdung von Tieren, Anwendern und Drit-
+ten besteht.   
+Anforderungen für Händler (Arzneimittel / Tierarzneimittel): 
+• Für Händler gelten die Anforderungen der „Guten Vertriebspraxis“ nach EC Leitlinie 2013/C 
+343/01. 
+• Händler haben in den Verträgen mit ihren Lieferanten vertraglich sicherzustellen: 
+1. Dass Unterauftragnehmer und Unterlieferanten die Vorgaben des EU GMP Leitfadens 
+umsetzen und die Weiterleitung dieser Anforderung bis zum Produktionsbetrieb sicher-
+stellen. Dies gilt auch für Länder außerhalb der EU.  
+2. Dass der Händler auf Anfrage die jeweilige Fertigungsstätte besichtigen darf, um sich von 
+der ordnungsgemäßen Umsetzung aller rechtlichen Vorgaben zu überzeugen. 
+• Gesetzliche Meldewege sind auch durch Händler über die gesamte Lieferkette sicherzustel-
+len. 
+Anforderungen für Hersteller (Arzneimittel / Tierarzneimittel): 
+• Der Hersteller hat ein pharmazeutisches Qualitätsmanagementsystem im Unternehmen zu be-
+treiben und weiter zu entwickeln.   
+• Eine „Gute Herstellungspraxis“ (Good Manufacturing Practice, GMP) ist der Teil der Qualitäts-
+sicherung, die gewährleistet, dass Produkte gleichbleibend nach den Qualitätsstandards pro-
+duziert und geprüft werden, die der  vorgesehenen Verwendung nach der Zulassung, der Ge-
+nehmigung für die klinische Prüfung bzw. der Produktspezifikation entsprechen. Der Hersteller 
+hat dies sicherzustellen und den gesetzlich geforderten EU – GPM - Leitfaden anzuwenden.
+
+[page 17]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 16 von 21 
+• Gesetzliche Vorgaben sind einzuhalten (z.B. Arzneimittelgesetz, Verordnungen zum Arzneimit-
+telgesetz). 
+Meldepflichten der Auftragnehmer 
+• Für Medizinprodukte inklusive Zubehör / In-vitro-Diagnostikum inklusive Zubehör hat der Auf-
+tragnehmer alle schwerwiegenden Vorkommnisse und Si cherheitskorrekturmaßnahmen an 
+die zuständigen Behörden zu melden.  
+• Für Arzneimittel und Tierarzneimittel sind die gesetzlichen Meldewege durch den Auftragneh-
+mer sicherzustellen.  
+Zusätzlich kann der Auftraggeber über folgende E -Mailadresse benachrichtigt werden, falls dies vom 
+Risiko her für erforderlich erachtet wird.  
+AMMPSicherheit@Bundeswehr.org 
+Normen und Gesetze / Verordnungen 
+Verzeichnis 
+Norm Bezeichnung Version 
+2013/C 343/01 Leitlinien vom 5. November 2013 für die gute Ver-
+triebspraxis von Humanarzneimitteln. Diese Leitli-
+nien beruhen auf Artikel 84 und Artikel 85b Absatz 3 
+der Richtlinie 2001/83/EG und EU Richtlinie 2011 / 
+62 EU 
+05.11.2013 
+AMWHV Arzneimittel- und Wirkstoffherstellungsverordnung 
+– AMWHV / Anmerkung: hier wird der EU GMP Leit-
+faden verbindlich gefordert 
+Jeweils aktuelle Ausgabe 
+Arzneimittelgesetz, inklusive 
+dazugehörigen Verordnungen 
+Nationales Gesetz über den Verkehr mit Arzneimit-
+teln (Arzneimittelgesetz - AMG) 
+Jeweils aktuelle Ausgabe 
+ChemG Gesetz zum Schutz vor gefährlichen Stoffen (Chemi-
+kaliengesetz - ChemG) 
+Jeweils aktuelle Ausgabe 
+ChemVwV-GLP Allgemeine Verwaltungsvorschrift zum Verfahren 
+der behördlichen Überwachung der Einhaltung der 
+Grundsätze der Guten Laborpraxis. (ChemVwV-GLP) 
+Jeweils aktuelle Ausgabe 
+DIN EN ISO 10993 Biologische Beurteilung von Medizinprodukten (Teil 
+1 – Teil xx) / Anmerkung: Die biologische Sicherheit 
+der Medizinprodukte ist auf Grundlage der Normen-
+reihe der DIN EN ISO 10993 zu bewerten und sicher-
+zustellen 
+Jeweils aktuelle Ausgabe 
+DIN EN ISO 13485 Medizinprodukte - Qualitätsmanagementsysteme - 
+Anforderungen für regulatorische Zwecke 
+Jeweils aktuelle Ausgabe
+
+[page 18]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 17 von 21 
+Verzeichnis 
+Norm Bezeichnung Version 
+DIN EN ISO 14971 Medizinprodukte - Anwendung des Risikomanage-
+ments auf Medizinprodukte  
+Jeweils aktuelle Ausgabe 
+DIN EN ISO 18562 
+Teil 1, Teil2, Teil 3 und Teil 4 
+Beurteilung der Biokompatibilität der Atemgaswege 
+bei medizinischen Anwendungen 
+Jeweils aktuelle Ausgabe 
+DIN EN ISO 20417 Medizinprodukte - Anforderungen an vom Hersteller 
+bereitzustellende Informationen (ISO 20417:2021, 
+korrigierte Fassung 2021-12); Deutsche Fassung EN 
+ISO 20417:2021 
+Jeweils aktuelle Ausgabe 
+DIN EN ISO 60601-1-12 Medizinische elektrische Geräte - Teil 1-12: Allge-
+meine Festlegungen für die Sicherheit einschließlich 
+der wesentlichen Leistungsmerkmale - Ergänzungs-
+norm: Anforderungen an medizinische elektrische 
+Geräte und medizinische elektrische Systeme in der 
+Umgebung für den Notfalleinsatz 
+Jeweils aktuelle Ausgabe 
+DIN EN 60601-1-2 Medizinische elektrische Geräte - Teil 1-2: Allge-
+meine Festlegungen für die Sicherheit einschließlich 
+der wesentlichen Leistungsmerkmale - Ergänzungs-
+norm: Elektromagnetische Störgrößen - Anforderun-
+gen und Prüfungen 
+Jeweils aktuelle Ausgabe 
+DIN EN 62353 
+(VDE 0751-1) 
+Medizinische elektrische Geräte -Wiederholungsprü-
+fungen und Prüfung nach Instandsetzung von medi-
+zinischen elektrischen Geräten 
+Jeweils aktuelle Ausgabe 
+DIN EN ISO 9001 Qualitätsmanagementsysteme - Anforderungen Jeweils aktuelle Ausgabe 
+DIN EN ISO 9120 Qualitätsmanagementsysteme - Anforderungen für 
+Händler und Lagerhalter der Luftfahrt 
+Jeweils aktuelle Ausgabe 
+EU GMP Leitfaden Die Regelung der Arzneimittel in der Europäischen 
+Union: EU Leitlinien für die Gute Herstellungspraxis, 
+Humanarzneimittel und Tierarzneimittel  
+Jeweils aktuelle Ausgabe 
+IPC/WHMA-A-620 Anforderungen und Abnahmekriterien für Kabel- 
+und Kabelbaum-Baugruppen (Klasse 3) 
+Jeweils aktuelle Ausgabe 
+Medizinprodukte EU Anpas-
+sungsgesetz (sobald gültig) 
+Nationales Gesetzes zur Anpassung des Medizinpro-
+dukterechts an die Verordnung (EU) 2017/745 und 
+die Verordnung (EU) 2017/746 
+Jeweils aktuelle Ausgabe
+
+[page 19]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 18 von 21 
+Verzeichnis 
+Norm Bezeichnung Version 
+MPBetreibV Nationale Verordnung über das Errichten, Betreiben 
+und Anwenden von Medizinprodukten (Medizinpro-
+dukte-Betreiberverordnung - MPBetreibV) 
+Jeweils aktuelle Ausgabe 
+MPDG 
+ 
+Gesetz zur Durchführung unionsrechtlicher Vor-
+schriften betreffend Medizinprodukte (Medizinpro-
+dukterecht-Durchführungsgesetz - MPDG) 
+Jeweils aktuelle Ausgabe 
+Richtlinie 2011/62/EU EU Richtlinie zur Änderung der Richtlinie 
+2001/83/EG zur Schaffung eines Gemeinschaftsko-
+dexes für Humanarzneimittel hinsichtlich der Ver-
+hinderung des Eindringens von gefälschten Arznei-
+mitteln in die legale Lieferkette 
+2011 
+RTCA-DO 160 Environmental Conditions and Test Procedures for 
+Airborne Equipment 
+Jeweils aktuelle Ausgabe 
+StrlSchG Nationales Gesetz zum Schutz vor der schädlichen 
+Wirkung ionisierender Strahlung (Strahlenschutzge-
+setz - StrlSchG) 
+Jeweils aktuelle Ausgabe 
+StrlSchV Nationale Verordnung zum Schutz vor der schädli-
+chen Wirkung ionisierender Strahlung (Strahlen-
+schutzverordnung - StrlSchV) 
+Jeweils aktuelle Ausgabe 
+TAMG Gesetz über den Verkehr mit Tierarzneimitteln und 
+zur Durchführung unionsrechtlicher Vorschriften be-
+treffend Tierarzneimittel1 (Tierarzneimittelgesetz - 
+TAMG) 
+Jeweils aktuelle Ausgabe 
+TAMKatV Verordnung über Einteilungskriterien für die Katego-
+rien der Apothekenpflicht oder Freiverkäuflichkeit 
+von Tierarzneimitteln und veterinärmedizintechni-
+schen Produkten (Tierarzneimittel-Kategorisierungs-
+verordnung - TAMKatV) 
+Jeweils aktuelle Ausgabe 
+Verordnung (EU) 2016/425 EU Verordnung über persönliche Schutzausrüstun-
+gen und zur Aufhebung der Richtlinie 89/686/EWG 
+des Rates 
+2016 
+Verordnung (EU) 2017/745 Verordnung der EU über Medizinprodukte, zur Än-
+derung der Richtlinie 2001/83/EG, der Verordnung 
+(EG) Nr. 178/2002 und der Verordnung (EG) Nr. 
+1223/2009 und zur Aufhebung der Richtlinien 
+90/385/EWG und 93/42/EWG des Rates 
+Jeweils aktuelle Ausgabe
+
+[page 20]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 19 von 21 
+Verzeichnis 
+Norm Bezeichnung Version 
+Verordnung (EU) 2017/746 EU Verordnung über In-vitro-Diagnostika und zur 
+Aufhebung der Richtlinie 98/79/EG und des Be-
+schlusses 2010/227/EU der Kommission 
+Jeweils aktuelle Ausgabe 
+Verordnung (EU) 2019/4 EU Verordnung über  die Herstellung, das Inverkehr-
+bringen und die Verwendung von Arzneifuttermit-
+teln, zur Änderung der Verordnung (EG) Nr. 183/2005 
+des Europäischen Parlaments und des Rates sowie 
+zur Aufhebung der Richtlinie 90/167/EWG des Rates 
+Jeweils aktuelle Ausgabe 
+Verordnung (EU) 2019/5 EU Verordnung zur Festlegung von Gemeinschafts-
+verfahren für die Genehmigung und Überwachung 
+von Human- und Tierarzneimitteln und zur Errichtung 
+einer Europäischen Arzneimittel -Agentur, der Ver-
+ordnung (EG) Nr. 1901/2006 über Kinderarzneimittel 
+und der Richtlinie 2001/83/EG zur Schaffung eines 
+Gemeinschaftskodexes für Humanarzneimittel. 
+Jeweils aktuelle Ausgabe 
+Verordnung (EU) 2019/6 EU Verordnung über Tierarzneimittel und zur Aufhe-
+bung der Richtlinie 2001/82/EG  (28.01.2022) 
+Jeweils aktuelle Ausgabe 
+Verordnung (EU) 2020/561 EU Verordnung zur Änderung der Verordnung (EU) 
+2017/745 über Medizinprodukte hinsichtlich des 
+Geltungsbeginns einiger ihrer Bestimmungen 
+Jeweils aktuelle Ausgabe 
+Durchführungsverordnung 
+(EU) 2021/2226 
+Durchführungsverordnung (EU) 2021/2226 der Kom-
+mission vom 14. Dezember 2021 mit Durchführungs-
+bestimmungen zur Verordnung (EU) 2017/745 des 
+Europäischen Parlaments und des Rates hinsichtlich 
+elektronischer Gebrauchsanweisungen für Medizin-
+produkte 
+Jeweils aktuelle Ausgabe 
+Verordnung (EU) 2022 /112 EU Verordnung zur Änderung der Verordnung (EU) 
+2017/746 hinsichtlich der Übergangsbestimmungen 
+für bestimmte In-vitro-Diagnostika und des späteren 
+Geltungsbeginns der Bedingungen für hausinterne 
+Produkte 
+Jeweils aktuelle Ausgabe 
+Verordnung (EU) 2023/607 EU Verordnung des Europäischen Parlaments und 
+des Rates vom 15. März 2023 zur Änderung der Ver-
+ordnungen (EU) 2017/745 und (EU) 2017/746 hin-
+sichtlich der Übergangsbestimmungen für be-
+stimmte Medizinprodukte und In-vitro-Diagnostika 
+Jeweils aktuelle Ausgabe 
+Verordnung (EU) 2024/1860 EU Verordnung des Europäischen Parlaments und 
+des Rates vom 13. Juni 2024 zur Änderung der Ver-
+Jeweils aktuelle Ausgabe
+
+[page 21]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 20 von 21 
+Verzeichnis 
+Norm Bezeichnung Version 
+ordnungen (EU) 2017/745 und (EU) 2017/746 hin-
+sichtlich der schrittweisen Einführung von Eudamed, 
+der Informationspflicht im Falle einer Unterbre-
+chung oder Beendigung der Versorgung und der 
+Übergangsbestimmungen für bestimmte In-vitro-Di-
+agnostika (Text von Bedeutung für den EWR) 
+Verordnung (EU) Nr. 528/2012 EU Verordnung über die Bereitstellung auf dem 
+Markt und die Verwendung von Biozidprodukten 
+Jeweils aktuelle Ausgabe 
+MPAMIV Nationale Verordnung über die Meldung von mut-
+maßlichen schwerwiegenden Vorkommnissen bei 
+Medizinprodukten sowie zum Informationsaus-
+tausch der zuständigen Behörden (Medizinpro-
+dukte-Anwendermelde- und Informationsverord-
+nung - MPAMIV) 
+Jeweils aktuelle Ausgabe 
+ 
+Bezugsquellen 
+Dokument Bezugsquelle(n) im Internet (Verlinkungen Internet im Dokument) 
+AQAP Normen http://nso.nato.int/nso/nsdd/listpromulg.html 
+DIN EN ISO Normen https://www.beuth.de 
+EU GMP Leitfaden https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/be-
+kanntmachungen.html 
+https://ec.europa.eu/health/documents/eudralex/vol-4_en 
+EU Verordnungen  https://eur-lex.europa.eu/ 
+EUDAMED Datenbank https://ec.europa.eu/tools/eudamed/#/screen/home 
+Europäische Arzneimittel-
+Agentur (EMA)  Doku-
+mente 
+https://www.ema.europa.eu/en 
+Harmonisierte Normen 
+der EU 
+http://ec.europa.eu/growth/single-market/european-standards/harmonised-standards/ 
+Leitfäden EU Verordnun-
+gen (EU) 2017/745 und 
+2017/746  
+https://ec.europa.eu/growth/sectors/medical-devices/new-regulations/guidance_en 
+Nationale Gesetze und 
+Verordnungen 
+https://www.gesetze-im-internet.de/
+
+[page 22]
+Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von Medizinprodukten und 
+Arzneimittel an die Bundeswehr (TS-QMA) 
+BAAINBw ZtQ1.3 Version: 2025-03-10 Seite 21 von 21 
+Änderungswesen 
+Die „Technische Spezifikation:    Qualitätssicherungsanforderungen zur Lieferung von Medizinproduk-
+ten und Arzneimittel an die Bundeswehr“ ist eine neue Vorgabe der Bundeswehr.  
+• Auftragnehmer der Bundeswehr, die Verbesserungsvorschläge einbringen möchten, wenden 
+sich bitte einmal jährlich im Januar, über Berufsverbände (Wehrtechnik, Medizintechnik oder 
+Arzneimittelbereich) an BAAINBw ZtQ1.3, um einen Termin abzustimmen.  
+• Mitarbeiter der Bundeswehr wenden sich bitte an BAAINBw ZtQ1.3, wenn Verbesserungen 
+eingearbeitet werden sollen.  
+E-Mail: BAAINBwZtQ1.3@Bundeswehr.org

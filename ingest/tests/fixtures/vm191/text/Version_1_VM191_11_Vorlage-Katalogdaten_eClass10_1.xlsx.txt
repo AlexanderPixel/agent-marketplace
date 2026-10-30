@@ -1,0 +1,271 @@
+## sheet1.xml
+Sprache 
+(ger oder deu) 
+(Mussfeld)	Hier RV-Nr. eintragen (Mussfeld)	Versionsnummer (Version 1 = 01.001, Version 2 = 01.002 usw.) (Mussfeld)	Erstelldatum Format yyyy-mm-dd (Mussfeld)
+LANGUAGE	CATALOG_ID	CATALOG_VERSION	DATE
+ger	xxxx-xx	01.001	xxxx-xx-xx
+## sheet2.xml
+Kürzel (bsp. BeschA, BWB, BAM, BFDSW ) (Mussfeld)	Name der Behörde 
+(bsp. Beschaffungsamt des BMI, Bundesamt für Wehrtechnik und Beschaffung etc.)
+ (Mussfeld)	Behördenname Teil 2	Ansprechpartner (Mussfeld)	Strasse (Mussfeld)	PLZ (Mussfeld)	Stadt (Mussfeld)	Tel.  Zentrale	Fax	Email Ansprechpartner (Mussfeld)	
+BUYER_NAME	NAME	NAME_2	CONTACT	STREET	ZIP	CITY	PHONE	FAX	EMAIL
+## sheet3.xml
+Kürzel (Mussfeld)	Firmenname komplett (Mussfeld)	Firmenname Teil 2	Ansprechpartner (Mussfeld)	Strasse (Mussfeld)	PLZ (Mussfeld)	Stadt (Mussfeld)	Tel.  Zentrale	Fax	Email Ansprechpartner (Mussfeld)	Webadresse Firma
+SUPPLIER_NAME	NAME	NAME_2	CONTACT	STREET	ZIP	CITY	PHONE	FAX	EMAIL	URL
+## sheet4.xml
+Rahmenvertragsnummer (Bsp. 9701) nicht VV-Nr.	Startdatum der Rahmenvereinbarung (Format YYYY-MM-TT)  Schreibweise beachten	Enddatum der Rahmenvereinbarung (Format YYYY-MM-TT) Schreibweise beachten
+AGREEMENT_ID	DATETIME START	DATETIME END
+xxxx	xxxx-xx-xx	xxxx-xx-xx
+## sheet5.xml
+Artikel-Nr.
+ (MUSS-FELD) 
+Ihre Artikelnummer, die den Artikel in ihren Systemen eineindeutig identifiziert. Wird im allgemeinen auch als Lieferanten-artikelnummer definiert	Kurzbeschreibung des Artikels  (MUSS-FELD)
+Kurze, prägnante Artikelbe-
+schreibung. Eindeutigkeit muss in den ersten 40 Zeichen erkennbar sein.
+Maximal 80 Zeichen pro Artikel (inklusive Leer- und Sonderzeichen).
+Bitte keine Zeilenumbrüche einfügen, nur Fließdext!	Langbeschreibung des Artikels (kann auch gleich der Kurzbeschreibung sein).  Textformatierung via HTML / CSS möglich.
+ (MUSS-FELD)
+Maximal 4000 Zeichen pro Artikel (inklusive Leer- und Sonderzeichen)
+keine Zeilenumbrüche. 
+Bitte keine Zeilenumbrüche einfügen, nur Fließtext!	Behördenspezifische Artikelnr.
+
+Wird Ihnen falls erforderlich durch die Auszuschreibende Behörde mitgeteilt, ansonsten bitte freilassen.
+z.B. 2032	Typ der Behördenspez. Artikelnummer
+
+Bitte keinen Punkt hinter Nr anfügen!
+
+erlaubte Werte: 
+- AP-Nr (Angebotspositionsnr)
+- Geraete-Nr (für Bpol)
+- STAN (THW), 
+- Versorgungsnr (BW)	Hersteller Art-Nr.	Hersteller-Name	Schlagwort 1
+
+(dient der besseren Auffindbarkeit Ihrer Produkte)
+
+Es können bei Bedarf weitere Spalten mit Schlagwörtern eingefügt werden. Die Überschrift der der 2. Zeile lautet dann KEYWORD_4 usw.	Schlagwort 2
+
+(dient der besseren Auffindbarkeit Ihrer Produkte)	Schlagwort 3
+
+(dient der besseren Auffindbarkeit Ihrer Produkte)	ECLASS Version
+(MUSS-FELD)
+
+Hier bitte die eClass Version eintragen. 
+Die ECLASS Klassennummer 
+in der ECLASS-10.1
+ECLASS-Suche (www.eclasscontent.com)
+
+Erlaubter Wert: 
+ECLASS-10.1	ECLASS-Nr.
+(MUSS-FELD) 
+
+Zu finden unter:
+ECLASS-Suche (www.eclasscontent.com)
+Bitte ECLASS-Version 10.1 auswählen und dann suchen.
+
+Erlaubter Wert:
+8-stellig ohne Bindestriche	Bestelleinheit
+(MUSS-FELD)
+
+erlaubte  Werte: 
+z.B. C62, PR, CT, PK, BO
+
+C62 = Stück
+PR = Paar
+CT = Karton
+PK = Pack
+BO = Flasche (Bottle)
+
+Hier bitte die Einheit eintragen, keine Zahl!
+
+siehe auch: Lieferantenhand-buch-Katalogdaten	Inhaltseinheit
+(MUSS-FELD)  
+erlaubte  Werte:
+siehe Spalte M
+
+Hier bitte die Einheit eintragen, keine Zahl!	Inhaltseinheit pro Bestelleinheit
+(MUSS-FELD)
+
+Bsp. 6 Flaschen in einer Kiste
+
+Zahlenformat,
+ohne "Tausender-Trennzeichen":	Preismenge
+ (MUSS-FELD)	Mindest-abnahmemenge 
+(MUSS-FELD)
+
+Zahlenformat,
+ohne "Tausender-Trennzeichen":	Abnahmestufe
+(MUSS-FELD)
+
+Hier wird eine Zahl eingetragen.
+z.B. 6 od. 12 od. 18
+
+dann kann der Artikel nur zu 6, 12 oder 18 etc. bestellt werden	Preis-Typ
+(MUSS-FELD)
+
+erlaubte Werte: 
+net_list
+net_customer	Preis 
+(MUSS-FELD)
+
+Zahlenformat,
+2 Dezimalstellen, ohne "Tausender-Trennzeichen": 
+
+####,##	Währung
+(MUSS-FELD)
+
+erlaubte Werte: 
+EUR	Mwst. 
+(MUSS-FELD)
+
+erlaubte Werte: 
+0.7 oder 0.19	Typ der Multimediainformation:
+(MUSS-FELD)
+
+erlaubte Werte: 
+image/jpg 
+oder 
+image/gif	Bildname 1
+(MUSS-FELD)
+
+Bitte ü,ä,ö,ß und Leerzeichen vermeiden! 
+(Statt Leerzeichen bitte Unterstrich "_" verwenden)
+
+Der Eintrag hier muss exakt mit dem Bilddateinamen übereinstimmen, einschließlich der Dateiendung
+z.B.  ".jpg".	Normalbild
+
+Hier einzutragen: normal	Art der Multimediainformation
+(MUSS-FELD)
+
+Gültige Werte: 
+image/jpg 
+oder 
+image/gif 
+(abhängig von Dateityp)	Bildname 2
+
+
+Bitte ü,ä,ö,ß und Leerzeichen vermeiden! 
+(Statt Leerzeichen bitte Unterstrich "_" verwenden)
+
+Der Eintrag hier muss exakt mit dem Bilddateinamen übereinstimmen, einschließlich der Dateiendung
+z.B.  ".jpg".	Vorschaubild
+
+Hier einzutragen: thumbnail	Produktgrupenzuordnung
+
+Artikel müssen zu mindestens einer Produktgruppe zugeordnet werden.
+Tragen  Sie hier die entsprechende Produktgruppe ein (siehe "Spalte A", Tabellenblatt "Produktgruppen").
+
+Ein Artikel kann auch mehrer Produktgruppen zugeordnet werden. In diesem Fall muss eine oder mehrere Spalten hinzugefügt werden.
+Die Spaltenüberschriften der Zeile 2 lauten in diesem Fall:
+CATALOG_GROUP_ID_1, CATALOG_GROUP_ID_2 usw.	
+SUPPLIER_AID	DESCRIPTION_SHORT	DESCRIPTION_LONG	BUYER_AID	BUYER_AID - type	MANUFACTURER_AID	MANUFACTURER_NAME	KEYWORD_1	KEYWORD_2	KEYWORD_3	REFERENCE_FEATURE_SYSTEM_NAME	REFERENCE_FEATURE_GROUP_ID	ORDER_UNIT	CONTENT_UNIT	NO_CU_PER_OU	PRICE_QUANTITY	QUANTITY_MIN	QUANTITY_INTERVAL	ARTICLE_PRICE - price_type	PRICE_AMOUNT	PRICE_CURRENCY	TAX	MIME_TYPE_1	MIME_SOURCE_1	MIME_PURPOSE_1	MIME_TYPE_2	MIME_SOURCE_2	MIME_PURPOSE_2	CATALOG_GROUP_ID
+1002001	Blechschraube, 4,8 x 32 mm	Blechschrauben, 4,8 x 32mm, Senkkopf TX Edelstahl	2032	Geraete-Nr	1002001	LOXX	selbstschneidend	wellenschliff	Bohrschrauben	ECLASS-10.1	23110112	PK	C62	50	1	1	1	net_list	44,99	EUR	0.19	image/jpg	blechschraube.jpg	normal	image/jpg	blechschraube.jpg	thumbnail	4
+1002002	Senkkopf Holzbauschrauben, 8 mm	Senkkopf Holzbauschrauben, 8 mm	1122	AP-Nr	1002002	Spax	Senkkopf	Teilgewinde	Gewindeschraube	ECLASS-10.1	23110111	C62	C62	1	1	100	100	net_list	0,75	EUR	0.19	image/jpg	holzschraube.jpg	normal	image/jpg	holzschraube.jpg	thumbnail	3
+				AP-Nr																								
+				AP-Nr																								
+				AP-Nr																								
+				AP-Nr																								
+## sheet6.xml
+GROUP_ID	GROUP_NAME	PARENT_ID	Beispiel:
+		Produktgruppe	Produktgruppenname	Hauptgruppe
+		GROUP_ID	GROUP_NAME	PARENT_ID
+		1	Schrauben & Nägel	0	Hier ist eine Hauptkategorie zu definieren "was wird angeboten". Der Hauptkategorie dürfen keine Artikel zugeordnet werden.
+			2	Schrauben	1	Unterkategorie 1
+			2_1	Holzschrauben	2	Unterkategorie 2 (hier können die entsprechenden Artikel zugeordnet werden)
+			2_2	Blechschrauben	2	Unterkategorie 2
+			3	Nägel	1	Unterkategorie1
+			3_1	Betonnagel	3	Unterkategorie 2
+			3_2	Holznagel	3	Unterkategorie 2
+## sheet7.xml
+Artikel-Nr.
+ (MUSS-FELD) 
+Ihre Artikelnummer, die den Artikel in ihren Systemen eineindeutig identifiziert. Wird im allgemeinen auch als Lieferanten-artikelnummer definiert	Angabe zur Nachhaltigkeit
+
+Hier einzutragen:
+NachhaltigkeitKriterium	Angabe zur Nachhaltigkeit
+
+Hier einzutragen:
+Nachhaltigkeit	Angabe der Abkürzung des Nachhaltigkeitskriterum
+
+siehe Tabellenblatt:
+"Übersicht Nachhaltigkeit"	Angabe der Abkürzung des Nachhaltigkeitskriterum
+
+siehe Tabellenblatt:
+"Übersicht Nachhaltigkeit"	Angabe der Abkürzung des Nachhaltigkeitskriterum
+
+siehe Tabellenblatt:
+"Übersicht Nachhaltigkeit"	Angabe der Abkürzung des Nachhaltigkeitskriterum
+
+siehe Tabellenblatt:
+"Übersicht Nachhaltigkeit"	Angabe der Abkürzung des Nachhaltigkeitskriterum
+
+siehe Tabellenblatt:
+"Übersicht Nachhaltigkeit"	Angabe der Abkürzung des Nachhaltigkeitskriterum
+
+siehe Tabellenblatt:
+"Übersicht Nachhaltigkeit"
+SUPPLIER_AID	REFERENCE_FEATURE_SYSTEM_NAME	REFERENCE_FEATURE_GROUP_NAME	FNAME_1	FVALUE_1	FNAME_2	FVALUE_2	FNAME_3	FVALUE_3
+NachhaltigkeitKriterium	Nachhaltigkeit
+## sheet8.xml
+Kriterien und Gütezeichen der Stufe 1 ( = weiche Kriterien)	
+Gütezeichen *)	Abkürzung (Katalog)	Beschreibung
+Grüner Knopf	GK	Der Grüne Knopf ist ein staatliches Siegel für nachhaltige Textilien. Berüksichtigt werden soziale und ökologische Nachhaltigkeitsaspekte.
+FSC 100%	FSC-100	Produkte müssen vollständig aus Material aus FSC-zertifizierten Wäldern bestehen
+FSC MIX	FSC-Mix	Produkte mit mindestens 70 %FSC-zertifizierten Holzanteilen
+FSC-Recycling	FSC-Recycling	Produkten, die weitgehend aus recyceltem Holz oder Papier bestehen
+PEFC	PEFC	Mit dem PEFC-Logo werden Produkte ausgezeichnet, die aus Forstbetrieben mit einer nachhaltigen und umwelt- und sozialverträglichen Waldbewirtschaftung stammen.
+Bio nach EG-Öko-Verordnung	EU-Bio	seit Juli 2010 für alle verpackten Bioprodukte, die in der EU hergestellt werden, verpflichtend vorgeschrieben; Voraussetzung für die Nutzung des Bio-Siegels ist eine Zertifizierung des Unternehmens gemäß den EU-Rechtsvorschriften für den ökologischen Landbau. Mit dem Bio-Siegel können folgende Produkte gekennzeichnet werden: Lebende oder unverarbeitete Erzeugnisse aus Landwirtschaft oder Aquakultur.
+Holz von hier	Hvh	Zertifiziertes Klima- und Umweltlabel für Holzprodukte der kurzen Wege. "Holz von Hier" ist ein Herkunftsnachweis, der bezogen auf das Produkt nachvollziehbar die Stoffströme entlang der gesamten Verarbeitungskette bis zum Produkt erfasst und dokumentiert.
+Rainforest Alliance	RFA	Das Label der Rainforest Alliance kennzeichnet landwirtschaftliche Produkte aus Betrieben, die nach Umwelt- und Sozialkriterien arbeiten.
+MSC	MSC	MSC (Marine Stewardship Council) ist eine internationale, unabhängige und gemeinnützige Organisation, die mithilfe eines Zertifizierungsprogramms für nachhaltige Fischerei einen Beitrag zu gesunden Weltmeeren leistet.
+GoodWeave (RUGMARK)	GW	Das Teppichsiegel GoodWeave ersetzt das seit 15 Jahren existierende RugMark-Siegel für Teppiche aus Indien, Nepal und Pakistan. RugMark International (RMI) ist eine internationale Initiative gegen illegale Kinderarbeit in der Teppichindustrie. Sie wurde von indischen Nichtregierungsorganisationen, deutschen und internationalen Hilfswerken und der GTZ (Gesellschaft für Technische Zusammenarbeit GmbH) initiiert.
+Faitrade (Lebensmittel)	FT	Das Fairtrade-Siegel steht für fair angebaute und gehandelte Produkte, bei dem alle Zutaten zu 100 Prozent unter Fairtrade-Bedingungen gehandelt sind und physisch rückverfolgbar sind, wie zum Beispiel bei Kaffee oder Bananen.
+*) Die §34VgV-Konformität ist für diese Gütezeichen noch nicht geprüft, eine Prüfung wird jedoch angestrebt.		
+gesetzlicher Bezug /                                           Vorgabe durch	Abkürzung	Kriterium / Beschreibung
+§ 45 Abs. 2 Nr. 1 KrWG	umweltfr-Produktionsverfahren	Produkte, die in rohstoffschonenden, energiesparenden, wassersparenden, schadstoffarmen oder abfallarmen Produktionsverfahren hergestellt worden sind
+§ 45 Abs. 2 Nr. 2 KrWG	Rezyklate-NaWaRo	Produkte, die aus Rezyklaten oder aus nachwachsenden Rohstoffen hergestellt worden sind
+§ 45 Abs. 2 Nr. 3 KrWG	Recyclingfähig	Produkte, die sich durch Recyclingfähigkeit auszeichnen
+§ 45 Abs. 2 Nr. 4 KrWG	umweltfr-Abfall	Produkte, die im Vergleich zu anderen Erzeugnissen zu weniger/schadstoffärmeren Abfällen führen oder sich besser zur umweltvertr. Abfallbewirtschaftung eignen
+§ 13 Abs. 2 KSG, § 13 Abs. 1 KSG,         § 10 Abs. 2 Brennstoff-Emissionshandelsgesetz (BEHG)	THG-Minderung	Bei für den Nutzungszweck gleichwertigen Alternativen:  Produkten, mit denen das Ziel der Minderung von Treibhausgasemissionen über die gesamte Nutzungsdauer des Investitionsguts oder Beschaffungsguts zu den geringsten Kosten erreicht werden kann (§ 13 Abs. 2 KSG,). Hierfür ist nach § 13 Abs. 1 KSG für die Verursachung oder Vermeidung von Treibhausgasemission ein CO2-Preis zu berücksichtigen, für den mindestens der nach § 10 Abs. 2 Brennstoff-Emissionshandelsgesetz (BEHG) Mindestpreis oder Festpreis zugrunde zu legen ist.
+AVV-Klima	THG-Minderung-LCC	Bevorzugung solcher Leistungen, mit denen das Ziel der Minderung von Treibhausgasemissionen über den gesamten Lebenszyklus der Leistung zu den geringsten Kosten erreicht werden kann (ohne Fahrzeuge)
+SaubFahrzeugBeschG	umweltfr.-Kfz	bei Fahrzeugen Berücksichtigung von Energieverbrauch, Emissionen von CO², Stickoxiden und Nichtmethan-Kohlenwasserstoffen, partikelförmige Abgasbestandteile
+MNP, SaubFahrzeugBeschG	emissionsarme-Kfz	Anschaffung von Fahrzeugen mit Emissionswerten unter 50 g CO²/km, höchsten Abgasstandards und geringster Lärmemission, Einbeziehung von alternativen bzw. Elektroantriebe
+MNP	IT-Zweitnutzung	IT-Hardware: Verankerung in Rahmenverträgen, dass nach Nutzungsende funktionstüchtige und reparierbare Elektrogeräte einer fachgerechten Aufbereitung zum Zweck der Zweitnutzung zugeführt werden, sofern gesetzliche Regelungen oder Belange des Geheimschutzes, des Datenschutzes oder der Informationssicherheit dem nicht entgegenstehen
+MNP	Tkartuschen-Zweitnutzung	IT-Zubehör: Leere Tonerkartuschen sollen der Wiederverwendung zugeführt und wiederverwendete Kartuschen eingesetzt werden.
+§ 67 VgV und MNP	LCC	Minimierte Lebenszykluskosten / Lebenszeitkosten
+§ 67 VgV, AVVEnEff/Klima	EEK	Bei energieverbrauchsrelevanten Liefer- und Dienstleistunge: Forderung des höchsten Leistungsniveaus an Energieeffizienz oder die höchste Energieeffizienzklasse
+§ 45 Abs. 2 Nr. 3 KrWG	Langlebigkeit	Produkte, die sich durch Langlebigkeit, Reparaturfreundlichkeit, Wiederverwendbarkeit auszeichnen
+Nationaler Aktionsplan Wirtschaft und Menschenrechte	ILO	Berücksichtigung von ILO-Kernarbeitsnormen / besondere Regelung zur Beachtung von Menschenrechten in der Lieferkette
+	Verpflichtungserklärung-IT	IT-Produkte/Dienstleistungen: Verpflichtungserklärung zur Einhaltung sozialer Kriterien bei der IT-Beschaffung (Version 2014 / 2019)
+u.a. § 224 SGB IX; Bevorzugten-VwV	Inklusion	Besondere Aspekte zur Inklusion / Bevorzugte  Berücksichtigung von  anerkannten  Werkstätten  für  behinderte  Menschen,  anerkannten Blindenwerkstätten  und  Inklusionsbetrieben
+	Barrierefreiheit	Produkte/Dienstleistungen, die Barrierefreiheit/ Zugänglichkeit beinhalten
+	Arbeitnehmerfreundlich	Produkte/Dienstleistungen, die Nachweise/Konzepte von Pausenzeiten/Arbeitszeitmodellen über die gesetzl. Vorgaben hinaus beinhalten
+	Gesundheit-Plus	Produkte/Dienstleistungen, die gesundheitsrelevante Aspekte über die gesetzlichen Vorgaben hinaus berücksichtigen, z.B.      >> Ausschluss schädlicher Substanzen: Ausschluss von Stoffen, die mit bestimmten Gefährlichkeitsmerkmalen ausgestattet sind, z.B. nach Verordnung (EG) Nr. 1272/2008   oder Einhaltung von nationalen und internationalen Grenzwerten für Ausrüstungen oder >>  Verar-beitung von sauberen textilen Fasern oder Geräuschemissionen: Unterschreitung der Vorgaben zur max. Geräuschentwicklung von Geräten, z.B. gem. EN ISO 7779:2001 i.V.m. ISO 9296:1988
+Lieferketten-sorgfaltspflichtengesetz (LkSG) (in Kraft ab 2023)	LkSG	Produkte, deren Lieferant die Anforderungen  gemäß LkSG nachweisen
+MNP	UM-EMAS	Produkte, deren Produzent Umweltmanagementsystem nach EMAS nachweisen
+MNP	UM-ISO14001	Produkte, deren Produzent Umweltmanagementsystems nach ISO 14001 nachweisen
+Gütezeichen der Stufe 2 ( = harte Kriterien)		
+(= §34 VgV-konform gem. Kompass Nachhaltigkeit)		
+Gütezeichen	Abkürzung	Beschreibung
+Blauer Engel	BE	Beim Blauen Engel handelt es sich um ein 
+staatliches Umweltzeichen, dessen Vergabekriterien vom Umweltbundesamt entwickelt werden. Siegelhalter ist das Bundesministerium für Umwelt,  Naturschutz, Bau- und Reaktorsicherheit (BMUB).
+Cradle-to-Cradle	CtoC	(„Von der Wiege zur Wiege“) ist ein Standard der gemeinnützigen Organisation Cradle to Cradle Products Innovation Institute. Ziel ist die Förderung eines Wirtschaftssystems ohne Abfall. Das heißt, dass alle Materialien, die in einem Produkt eingesetzt werden, wiederverwertet oder biologisch abgebaut werden können.
+EU Ecolabel	EU-Eco	Zeicheninhaber des EU Ecolabels ist die Europäische Kommission. Oberstes Gremium für die Entwicklung und Überarbeitung der Kriterien ist das European Union Ecolabelling Board (EUEB).
+Nordic Ecolabel	N-Eco	Beim Nordic Ecolabel handelt es sich um das offizielle Umweltsiegel der nordischen Länder (Dänemark, Schweden, Finnland, Norwegen, Island). Die Anforderungen werden durch das 
+Nordic Ecolabelling Board mit Vertretern aller Länder definiert. Jedes Land hat ein eigenes Büro, welches u.a. für die Lizenzvergabe und die Kontrollen zuständig ist. Die Anforderungen an zertifizierte Produkte sind in allen fünf 
+Ländern identisch. Das Gütezeichen hat zum Ziel, einen Beitrag zum nachhaltigen Konsum zu leisten.
+Österreichisches Umweltzeichen	OeUm	Das Österreichische Umweltzeichen ist ein staatliches Umweltsiegel. Siegelhalter ist das österreichische Bundesministerium für Land- und Forstwirtschaft, Umwelt und Wasserwirtschaft (BMLFUW). Die Vergabekriterien werden durch den Beirat Umweltzeichen (mit Vorsitz BMLFUW) und einem Fachausschuss (Vorsitz Verein für Konsumenteninformation) mit verschiedensten Vertretern und Experten 
+erarbeitet.
+Better Cotton Initiative	BCI	Die Better Cotton Initiative (BCI) ist eine gemeinnützige Organisation mit 
+dem Ziel, Umwelt- und Sozialbedingungen im Baumwollanbau zu verbessern. Das BCI Gütezeichen richtet sich nicht an Endverbraucher sondern wird vor allem im Einkauf zwischen Unternehmen (Business to Business, B2B) verwendet.
+Cotton made in Africa	CmiA	Cotton made in Africa (CmiA) ist eine Initiative der Aid by Trade Foundation, die sich zum Ziel gesetzt hat, die Lebensbedingungen afrikanischer 
+Baumwollproduzenten zu verbessern. CMiA ist teilweise als Siegel auf Produkten zu finden.
+Fairtrade Certified Cotton	FTCC	Fairtrade Certified Cotton ist das Siegel von Fairtrade International für den Baumwollanbau. Durch das Siegel möchte die Nichtregierungsorganisation Fairtrade International die Lebens- und Arbeitsbedingungen von Kleinbauern verbessern.
+Fairtrade Textile Production	FTTP	Das Siegel Fairtrade Textile Production wurde zusätzlich zum Siegel Fairtrade Certified Cotton entwickelt, um den Fairtrade-Ansatz auf die gesamte Wertschöpfungskette von Textilien ausweiten zu können. Das Siegel zielt darauf ab, die Lebens- und Arbeitsbedingungen der Arbeiterinnen und Arbeiter in der Textilindustrie zu verbessern. Außerdem unterstützt es eine umweltverträgliche Produktion.
+Global Organic Textile Standard	GOTS	Der Global Organic Textile Standard (GOTS) wird durch die Global Standard gGmbH vergeben. Ziel des Standards ist es, die Umwelt- und Sozialbedingungen in der Textilproduktion zu verbessern.
+Global Recycled Standard	GRS	Der Global Recycled Standard (GRS) ist ein Siegel von Textile Exchange. Diese gemeinnützige Organisation hat das Ziel, die Lieferkette der Textilherstellung nachhaltiger zu gestalten.
+Fair Wear Foundation	FWF	Die Fair Wear Foundation (FWF) ist eine gemeinnützige Organisation, die von Nichtregierungsorganisationen, Gewerkschaften und Unternehmensverbänden gesteuert wird. Sie verfolgt das Ziel, die Arbeitsbedingungen in der Textilindustrie zu verbessern. Unternehmen, die Mitglied in der Initiative sind, verpflichten sich zu einer schrittweisen Verbesserung der Arbeitsbedingungen in ihrer Lieferkette.
+TCO Certified	TCO	Das Siegel TCO Certified Siegel umfasst Umwelt- und Ressourcenaspekte wie beispielsweise die Langlebigkeit und die recyclinggerechte Konstruktion von IT-Geräten. Zusätzlich werden die Herkunft und die Abbaubedingungen 
+von Konfliktrohstoffe und die Einhaltung von Sozialstandards in der Endmontage der Geräte abgedeckt. Zertifiziert werden Monitore, Notebooks, Tablet-, Computer, Desktop-Computer, All-in-One-PCs, Projektoren, Headsets, Smartphones. Es handelt sich um eine Produktzertifizierung, die als Siegel am Endprodukt zu finden ist.
+IGEP Foundation	IGEP	Das Siegel wird von der IGEP Foundation vergeben. IGEP steht für „Indo German Export Promotion“ und fördert die wirtschaftliche Zusammenarbeit zwischen indischen und deutschen Unternehmen. IGEP ist sowohl Siegelinhaber als auch Kontrolleur. Ziel des Siegels ist es, Kinderarbeit in der Natursteinindustrie in Indien zu verhindern und zu beenden.
+XertifiX	X	XertifiX e.V. kämpft gegen Kinder- und Sklavenarbeit bei Abbau und Verarbeitung von Natursteinen in Indien, China und Vietnam. Das Siegel garantiert die Einhaltung sozialer Mindeststandards. Die Anforderungen beziehen sich auf die Steinbrüche und alle beteiligten Verarbeitungsbetriebe in den Herkunftsländern.
+XertifiX PLUS	X+	XertifiX e.V. kämpft gegen Kinder- und Sklavenarbeit bei Abbau und Verarbeitung von Natursteinen in Indien, China und Vietnam. Das Siegel garantiert die Einhaltung sozialer Mindeststandards. Die Anforderungen beziehen sich auf die Steinbrüche und alle beteiligten Verarbeitungsbetriebe in den Herkunftsländern. Um das anspruchsvollere XertifiX PLUS Siegel zu bekommen, müssen alle sogenannten Muss-Kriterien sowie zwei Drittel aller weiteren Kriterien erfüllt werden. Bei beiden Siegeln werden zweimal pro Jahr Kontrollen in allen Produktionsstätten durchgeführt.

@@ -1,0 +1,678 @@
+[page 1]
+Urheber: Bund - Schutzvermerk nach DIN ISO 16016 beachten 
+ 
+Weitergabe sowie Vervielfältigung dieser Unterlage, Verwertung und Mitteilung ihres Inhaltes sind nur mit ausdrücklicher 
+Zustimmung der Bundesrepublik Deutschland zulässig. Zuwiderhandlungen verpflichten zum Schadenersatz. 
+ 
+R A H M E N V E R E I N B A R U N G 
+ 
+ 
+Zwischen der 
+Bundesrepublik Deutschland, 
+vertreten durch das Bundesministerium der Verteidigung, 
+dieses vertreten durch das 
+Bundesamt für Infrastruktur, Umweltschutz und Dienstleistungen der Bundeswehr 
+Fontainengraben 200 
+53123 Bonn, 
+dieses vertreten durch 
+den Präsidenten  
+ 
+ 
+ 
+– Auftraggeber – 
+ 
+und 
+ 
+ 
+ 
+der Firma 
+      
+(vollständiger Firmenname) 
+      
+(Straße, Hausnummer) 
+     , 
+(PLZ, Ort) 
+ 
+vertreten durch 
+…………………………………………………………… 
+(Name(n) und Vertretungsstellung) 
+ 
+ 
+– Auftragnehmer – 
+ 
+ 
+ 
+wird unter der Vertragsnummer 1/BIUD/W0625 (VM191) des Auftraggebers 
+folgende Rahmenvereinbarung 
+ 
+über Tubus, divers und/oder Katheter, divers gemäß Los/e XXX geschlossen:
+
+[page 2]
+Rahmenvereinbarung 1/BIUD/W0625 
+S
+eite 2 | 16 
+BAIUDBw – Beschaffungsvertrag Lieferleistungen 
+Inhaltsverzeichnis 
+§ 1 Vertragsgegenstand ..................................................................................................... 3 
+§ 2 Vertragsbestandteile ..................................................................................................... 4 
+§ 3 Vertragsdurchführung .................................................................................................. 5 
+§ 4 Pflichten des Auftragnehmers ...................................................................................... 5 
+§ 5 Lieferung / Leistungserfüllung ..................................................................................... 7 
+§ 6 Mängelansprüche und deren Verjährung ..................................................................... 8 
+§ 7 Haftung ......................................................................................................................... 8 
+§ 8 Höhere Gewalt .............................................................................................................. 9 
+§ 9 Vergütung ..................................................................................................................... 9 
+§ 10 Zahlungsbedingungen, E-Rechnung ........................................................................ 10 
+§ 11 Vertragsstrafe ........................................................................................................... 11 
+§ 12 Laufzeit und Kündigung ........................................................................................... 13 
+§ 13 Vertraulichkeit .......................................................................................................... 14 
+§ 14 Qualitätssicherung .................................................................................................... 15 
+§ 15 Sonstige Vertragsbedingungen ................................................................................. 15
+
+[page 3]
+Rahmenvereinbarung 1/BIUD/W0625 
+                                                          
+ 
+Seite 3 | 16 
+ BAIUDBw – Beschaffungsvertrag Lieferleistungen 
+ 
+ 
+Präambel 
+ 
+Diese Rahmenvereinbarung (RV) regelt die Rechtsbeziehungen zwischen Auftraggeber  
+(AG) und Auftragnehmer (AN) untereinander. Er gilt für alle aufgrund dieser RV erteilten 
+Aufträge über die im Weiteren beschriebenen Vertragsgegenstände. Um auf die 
+Anforderungen der Zukunft vorbereitet zu sein (Zeitenwende) und etwaigen Krisen-  und 
+Spannungssituationen standhalten zu können, bedarf es starker und verlässlicher 
+Vertragspartner. Besonderes Augenmerk ist hierbei auf die Schaffung von Resilienz zu 
+richten. Die Vertragsgestaltung sowie die generelle Vertragsbeziehung sind insbesondere 
+auch auf die Landes - und Bündnisverteidigung (LV/BV) auszurichten. Dabei gewinnt eine 
+gewisse Agilität besondere Bedeutung. Eine schnelle und angemessene Reaktionsfähigkeit 
+auf sich ändernde Rahmenbedingungen, ein zielgerichtetes Informationsmanagement und 
+Transparenz entlang der Liefer - bzw. Leistungskette sind maßgebliche Voraussetzungen 
+für die Aufrechterhaltung der Funktionsfähigkeit der Bundeswehrverwaltung und damit 
+unmittelbar zusammenhängend der Einsatzbereitschaft der eigenen Streitkräfte sowie 
+unseren Bündnispartner. 
+§ 1 Vertragsgegenstand 
+(1) Der AN ist verpflichtet, die Vertragsgegenstände/Produkte gemäß der 
+Leistungsbeschreibung (samt ihrer Anlagen) zu liefern. 
+Bestandteile der Lieferung/Leistung sind auch – soweit zutreffend – sonstige für eine 
+sachgemäße Verwendung von Liefergegenständen erforderliche handelsübliche 
+Unterlagen wie Betriebs -, Bedienungs - und Gebrauchsanleitungen sowie regelmäßig 
+Aktualisierungen der darin genutzten Software. 
+(2) Der AN trägt die uneingeschränkte Gesamtverantwortung für die vertragsgerechte 
+Erbringung der vereinbarten Leistungen. Die Leistungen sind termin- und fachgerecht 
+nach den in der Leistungsbeschreibung angegebenen Qualitätsstandards, den 
+sonstigen technischen Vertragsbedingungen und im Übrigen nach den allgemein 
+anerkannten Regeln der Technik zu erbringen. 
+Auf § 4 Nr. 1 VOL/B wird ausdrücklich hingewiesen. 
+(3) Abweichungen von den in der Leistungsbeschreibung  aufgestellten 
+Leistungsanforderungen sind zulässig, wenn und soweit sie das Ergebnis einer 
+technischen Weiterentwicklung sind und die Funktion des Vertragsgegenstandes sowie 
+seine Sicherheit nicht beeinträchtigen. Der AG  ist vorab über geplante Abweichungen 
+zu informieren und die abweichenden Produkte dürfen nur nach ausdrücklicher 
+Zustimmung des AG geliefert werden. 
+(4) Die Höchstmenge für die in dieser RV sowie der Leistungsbeschreibung aufgeführten 
+Produkte und Dienstleistungen für den gesamten Leistungszeitraum inklusive aller
+
+[page 4]
+Rahmenvereinbarung 1/BIUD/W0625 
+                                                          
+ 
+Seite 4 | 16 
+ BAIUDBw – Beschaffungsvertrag Lieferleistungen 
+ 
+Optionen sind der Anlage 2 der Rahmenvereinbarung „Preis - und Produktblatt“ zu 
+entnehmen.  
+§ 2 Vertragsbestandteile 
+(1) Für die Durchführung dieser RV gelten folgende Grundlagen in der nachstehenden 
+Reihenfolge: 
+1. die Vereinbarungen dieser RV, 
+2. die Leistungsbeschreibung mit allen Anlagen, 
+3. die Technische Spezifikation: Qualitätssicherungsanforderungen zur Lieferung von 
+Medizinprodukten und Arzneimitteln an die Bundeswehr, 
+4. das Angebot des AN vom      , 
+5. die "Allgemeinen Vertragsbedingungen für die Ausführung von Leistungen" 
+(VOL/B) in der Fassung der Bekanntmachung vom 05. August 2003 (veröffentlicht 
+im Bundesanzeiger Nr. 178a vom 23.09.2003),  
+6. die Zusätzlichen Vertragsbedingungen des Bundesministeriums der Verteidigung 
+zur Verdingungsordnung für Leistungen Teil B (ZVB / BMVg) in der Fassung vom 
+05.06.2023 (veröffentlicht im Bundesanzeiger AT 13.07.2023 B1), 
+7. die Bestimmungen der "Verordnung PR 30/53 über die Preise bei öffentlichen 
+Aufträgen vom 21. November 1953" in der jeweils gültigen Fassung, 
+8. die Bestimmungen des Bürgerlichen Gesetzbuches (BGB). 
+(2) Die vorstehende Reihenfolge stellt im Falle von Widersprüchen zwischen den einzelnen 
+Bestandteilen dieser RV auch die Rangfolge der Vertragsbestandteile dar, soweit in 
+dieser RV nicht ausdrücklich etwas anderes geregelt ist.  Bei verbleibenden 
+Widersprüchen zwischen einzelnen Vertragsbestandteilen oder innerhalb desselben 
+Vertragsbestandteils ist die jeweils höhere Qualität, größere Menge, bessere 
+Funktionalität oder dergleichen geschuldet. Wird durch die Vertragsparteien keine 
+Einigung im Sinne der vorgenannten Regelungen erzielt, obliegt dem AG  das 
+Letztentscheidungsrecht. 
+(3) Die Unterlagen gelten in der bei Angebotsabgabe geltenden Fassung, soweit in dieser 
+RV dazu nichts Anderes geregelt ist. 
+(4) Folgende Anlagen sind Bestandteile der RV: 
+• Anlage 1: Leistungsbeschreibung Allgemeiner Teil  
+• Anlage 2: Preis- und Produktblatt Los/e XXX, 
+• Anlage 3: Technische Spezifikation: Qualitätssicherungsanforderungen zur 
+Lieferung von Medizinprodukten und Arzneimitteln an die Bundeswehr (TS-QMA), 
+Version: 10.03.2025 
+• Anlage 4: Zusätzliche Vertragsbedingungen des Bundesministeriums der 
+Verteidigung zur Verdingungsordnung für Leistungen Teil B (ZVB/BMVg) in der 
+Fassung vom 05.06.2023 (veröffentlicht im Bundesanzeiger Nr. 10285 vom 
+23.05.2023)
+
+[page 5]
+Rahmenvereinbarung 1/BIUD/W0625 
+                                                          
+ 
+Seite 5 | 16 
+ BAIUDBw – Beschaffungsvertrag Lieferleistungen 
+ 
+• Anlage 5: das Technische Angebot des ANs vom xx.xx.2026   
+• Anlage 6: Lieferantenhandbuch 
+• Anlage 7: Anforderung Katalogdaten 
+• Anlage 8: Staatenliste BMI 
+ 
+§ 3 Vertragsdurchführung 
+(1) Die Inanspruchnahme der Leistungen des AN  im Rahmen dieser RV erfolgt durch 
+schriftliche oder durch Textform (z. B. E-Mail) versandte Einzelaufträge der 
+bestellberechtigten Dienststellen des AG (nachfolgend „Besteller“). 
+Bestellberechtigt aus dieser RV sind: 
+• BAIUDBw DL II 6 
+• KdoGesVersBw BeschO 
+ 
+Die Benennung weiterer Besteller bleibt dem AG vorbehalten. 
+(2) Bestellungen bedürfen zu ihrer Rechtswirksamkeit nicht der Bestätigung durch den AN . 
+Dennoch hat der AN unverzüglich nach Eingang der Bestellung eine 
+Empfangsbestätigung an den AG zu übersenden. 
+(3) Eine Verpflichtung des AG, Einzelaufträge in einem bestimmten Umfang zu erteilen, 
+besteht durch diese RV nicht. 
+(4) Der Besteller ist berechtigt, einen Einzelauftrag im Vorfeld der Leistungserbringung (bis 
+zu drei Wochen vor dem vereinbarten Leistungstermin) zurückzunehmen. Ansprüche 
+des AN gegenüber dem AG und dem Besteller entstehen nicht. 
+(5) Alle Änderungen, Ergänzungen und Nebenabreden zu dieser RV bedürfen der 
+Schriftform (Änderungsvertrag). Dies gilt auch für die Aufhebung des 
+Schriftformerfordernisses. Der Abschluss von Änderungsverträgen ist ausschließlich der 
+jeweils für den Vertragsabschluss bzw. für das Vertragsmanagement zuständigen 
+Organisationseinheit des AG vorbehalten. 
+§ 4 Pflichten des Auftragnehmers 
+(1) Der AN sichert eine enge Zusammenarbeit mit dem AG  zu. Hierzu benennt er für den 
+Zeitraum von Montag bis Freitag, jeweils von 09:00 Uhr bis 15:00 Uhr, eine/n feste/n und 
+ständig erreichbare/n qualifizierte/n Ansprechpartner/in für die gesamte 
+Auftragsabwicklung und eine/n qualifizierte/n Stellvertreter/in.  
+(2) Der AN verpflichtet sich, die Besteller über den jeweiligen Sachstand der 
+Auftragsdurchführung auf Nachfrage zügig und umfassend in Textform zu unterrichten.
+
+[page 6]
+Rahmenvereinbarung 1/BIUD/W0625 
+                                                          
+ 
+Seite 6 | 16 
+ BAIUDBw – Beschaffungsvertrag Lieferleistungen 
+ 
+Hierzu ist neben BAIUDBw DL II 6 ( E -Mail: 
+Baiudbwdlii6einkaufsanitaetsmaterial@bundeswehr.org) auch das LogZBw  
+(BwDpNordSanMatLgrEPEAllgPosteingang@bundeswehr.org bzw. 
+BwDpOstSanMatLgrKRUAllgPosteingang@bundeswehr.org) über die geplante 
+Auslieferung schriftlich zu informieren. diesem Zusammenhang ist der AG  befugt, die 
+Durchführung der Leistung zu überwachen und eine sofortige Einstellung der Arbeiten 
+insoweit zu verlangen, als es für die Gewährleistung der Sicherheit und des 
+Arbeitsschutzes erforderlich ist. 
+(3) Der AN informiert den AG unverzüglich, wenn 100% der jeweiligen Höchstmenge 
+abgerufen wurde sowie innerhalb von 14 Kalendertagen unaufgefordert bei Erreichen 
+von 50 % sowie 75 % der jeweiligen Höchstmenge. 
+(4) Der AN verpflichtet sich, dem AG unter der E -Mail-Adresse 
+BAIUDBwDLII6EinkaufSanitaetsmaterial@bundeswehr.org unverzüglich nach 
+Abschluss der RV Daten zur Erstellung elektronischer Bestellkataloge entsprechend den 
+Vorgaben aus dem Lieferantenhandbuch des „Kaufhaus des Bundes“ (KdB) 
+bereitzustellen. Dies beinhaltet auch die Datenpflege bei Vertragsänderungen. Das 
+aktuelle Lieferantenhandbuch sowie die Anforderungen an Katalogdaten werden dieser 
+RV als Anlagen beigefügt. Für Bestellungen, die im elektronischen Verfahren ausgelöst 
+werden (Bestellungen über SASPF), gilt - soweit die technischen Voraussetzungen für 
+eine sichere elektronische Übermittlung der Bestelldaten vorliegen - das 
+Schriftformerfordernis der Nr. 3 ZVB/BMVg. Bei der elektronischen Übersendung an den 
+AN ist das Signaturgesetz zu beachten. 
+(5) Der AN verpflichtet sich, die zur sachgerechten Erfüllung des Auftrags –  und über die 
+durch den AG bereitgestellten sowie vorhandener eigener Informationen hinaus – 
+zusätzlich benötigten Informationen selbstständig aus einschlägigen bzw. frei 
+zugänglichen Quellen zu beziehen. 
+(6) Dem AN ist es untersagt, in der Werbung und sonstigen öffentlich zugänglichen, wie 
+seinen internen Veröffentlichungsmedien, auf diese RV  oder den AG  hinzuweisen. 
+Öffentliche Erklärungen oder Pressemitteilungen zu diesem RV  oder dem AG bedürfen 
+der vorherigen Zustimmung des AG  und sind zuvor schriftlich vorzulegen. Im Übrigen 
+gilt § 3 Abs. 2 VOL/B. 
+(7) Der AN verpflichtet sich, dem AG Änderungen des Firmennamens, der Rechtsform 
+sowie die Übertragung einzelner Verträge oder Geschäftsbereiche, soweit diese RV 
+hiervon betroffen ist, unverzüglich unter Vorlage entsprechender Nachweise 
+anzuzeigen. 
+(8) Der AN versichert , dass er seine für die Vertragserfüllung vorgesehenen 
+Erfüllungsgehilfen oder Unterauftragnehmer mit dem Inhalt dieser RV, soweit 
+erforderlich, vertraut macht und nur solche Personen entsenden wird, die mit einer 
+Verwendung nach Maßgabe dieser RV einverstanden sind.
+
+[page 7]
+Rahmenvereinbarung 1/BIUD/W0625 
+                                                          
+ 
+Seite 7 | 16 
+ BAIUDBw – Beschaffungsvertrag Lieferleistungen 
+ 
+§ 5 Lieferung / Leistungserfüllung 
+(1) Der AN verpflichtet sich, die in § 1 der RV genannten Lieferungen/Leistungen innerhalb 
+von 5 bis 14  Werktagen nach Zugang des Einzelauftrages auszuführen und den im 
+Einzelauftrag genannten Liefertermin/Leistungstermin einzuhalten, sofern nicht mit dem 
+Besteller ein anderer Termin vereinbart wurde. 
+(2) Erkennt der AN , dass er Lieferungen/Leistungen nicht fristgerecht erbringen kann, hat 
+er dies dem AG frühzeitig unter Darlegung der Gründe anzuzeigen. Der Besteller kann 
+in diesen Fällen einen neuen Liefertermin/Leistungstermin bestimmen. 
+ Im Übrigen wird auf § 8 dieser RV (Höhere Gewalt) sowie auf § 5 VOL/B (Behinderung 
+und Unterbrechung der Leistung) hingewiesen. 
+(3) Der Erfüllungsort für die zu erbringenden Lieferungen/Leistungen wird dem AN vom 
+Besteller mit dem jeweiligen Einzelauftrag mitgeteilt 
+(4) Die Lieferklausel für die Vertragsgegenstände lautet: 
+DPU - Incoterms® 2020 
+(= Delivered at place unloaded (Geliefert benannter Ort entladen)) . (Inländischer 
+Auftragnehmer)  
+oder (Anpassung nach Zuschlagserteilung)  
+DDP - Incoterms ® 2020 
+(= Delivered Duty Paid (Geliefert verzollt benannter Ort)) (Ausländischer 
+Auftragnehmer) zzgl. Entladen 
+Der Empfänger/der benannte Ort (Erfüllungsort) wird vom Besteller mit dem jeweiligen 
+Abruf aus der RV mitgeteilt. 
+(5) Der AN wird sich mit dem Empfänger der Lieferung/Leistung spätestens 10 Tage vor 
+dem vereinbarten Liefertermin abstimmen, um die Übernahme der Liefergegenstände 
+bzw. Durchführung der Leistungsgegenstände sicherzustellen. 
+(6) Auf §§ 3, 5, 6, 7 und 39 Verpackungsrecht-Durchführungsgesetz (VerpackDG) wird 
+hingewiesen. 
+(7) Aus Gründen der militärischen Sicherheit kann der AG verlangen, dass der AN einzelne 
+Personen nicht mit den für den AG durchzuführenden Arbeiten betraut oder sie 
+unverzüglich davon entbindet. Von einer Verweigerung des Zutrittsrechts ist bei 
+Personen aus Ländern der Staatenliste (im Sinne von § 13 Abs. 1, Satz 1 Nr. 17 
+Sicherheitsüberprüfungsgesetz in der jeweils aktuellen Fassung, veröffentlicht durch das 
+Bundesministerium des Innern und für Heimat, vgl. Anlage 10) regelmäßig auszugehen. 
+Kommt der AN dem Verlangen des AG  nicht nach, kann der AG  die RV mit sofortiger
+
+[page 8]
+Rahmenvereinbarung 1/BIUD/W0625 
+                                                          
+ 
+Seite 8 | 16 
+ BAIUDBw – Beschaffungsvertrag Lieferleistungen 
+ 
+Wirkung kündigen. Der AN hat Anspruch auf Vergütung der bis dahin ordnungsgemäß 
+erbrachte Leistungen. 
+§ 6 Mängelansprüche und deren Verjährung 
+(1) Die Verjährungsfrist für Mängelansprüche für die Produkte dieser RV beträgt 24 Monate 
+und beginnt mit dem Tag der Lieferung.  Im Übrigen gelten für Mängelansprüche die 
+gesetzlichen Vorschriften in Verbindung mit § 14 VOL/B  (Mängelansprüche und 
+Verjährung). 
+(2) Zeigt sich innerhalb von 12 Monaten seit Gefahrübergang ein Sachmangel, so wird 
+vermutet, dass die Sache bereits bei Gefahrübergang mangelhaft war, es sei denn, diese 
+Vermutung ist mit der Art der Sache oder des Mangels unvereinbar. 
+(3) Nacherfüllungsort ist der jeweilige Erfüllungsort. 
+(4) Die Abwicklung eines Mängelanspruchs erfolgt grundsätzlich direkt zwischen dem AN 
+und dem jeweiligen Besteller. 
+(5) Im Gewährleistungsfall entstehende sowie mit der Nacherfüllung unmittelbar 
+zusammenhängende Kosten trägt der AN. 
+§ 7 Haftung 
+(1) Der AN haftet im Rahmen der gesetzlichen Bestimmungen für alle Schäden, die durch 
+sein Verschulden oder das Verschulden seiner Erfüllungsgehilfen bzw. seines 
+Unterauftragnehmers dem AG , dessen Bediensteten oder anderen Personen sowie in 
+Liegenschaften der Bundeswehr entstehen. 
+(2) Eingetretene Schäden und besondere Vorkommnisse bei der Vertragsdurchführung sind 
+dem AG unverzüglich (möglichst in Textform) mitzuteilen. 
+(3) AG haftet nicht für Schäden, die dem AN, seinen Mitarbeitern oder Erfüllungs - und 
+Verrichtungsgehilfen bei Durchführung dieser RV entstehen. Dies gilt nicht für Schäden, 
+die vorsätzlich oder grob fahrlässig verursacht wurden oder die Leben, Leib und 
+Gesundheit von Personen betreffen. 
+(4) In dem Umfang, in dem der AN  gegenüber dem AG  haftet, stellt er den AG sowie die 
+von ihm eingesetzten Dritten von Ansprüchen Dritter, die diese gegen den AG und/oder 
+die von ihm eingesetzten Dritten geltend machen, frei. 
+(5) Der AN hat für die Dauer der Leistungserbringung eine Betriebshaftpflichtversicherung 
+mit einem im europäischen Wirtschaftsraum zugelassenen Unternehmen in Höhe von 
+• 5 Millionen € für Personenschäden und 
+• 10 Millionen € für Sach- und Vermögenschäden
+
+[page 9]
+Rahmenvereinbarung 1/BIUD/W0625 
+                                                          
+ 
+Seite 9 | 16 
+ BAIUDBw – Beschaffungsvertrag Lieferleistungen 
+ 
+abzuschließen und dem AG auf Anforderung nachzuweisen. 
+§ 8 Höhere Gewalt 
+(1) Der AN ist auch dann zur Erfüllung seiner vertraglichen Verpflichtungen verpflichtet, 
+wenn diese einen überdurchschnittlichen Aufwand erfordern. In Fällen höherer Gewalt 
+werden die Parteien von ihren Verpflichtungen aus dieser RV indes für die Zeit frei, die 
+das Ereignis 
+• andauert, oder 
+• auf die vertraglichen Verpflichtungen dahingehend einwirkt, dass diese nicht mehr 
+oder nicht mehr rechtzeitig erbracht werden können, 
+(2) Ergänzend zu § 5 Nr. 1 VOL/B (Mitteilung der Leistungsverhinderung) haben sich die 
+Parteien über das Ergreifen von angemessenen, die Auswirkungen auf die vertraglichen 
+Verpflichtungen nach Möglichkeit minimierenden, Maßnahmen abzustimmen. 
+(3) Nach Ende des Ereignisses höherer Gewalt leben die suspendierten Pflichten wieder 
+auf. Können die Pflichten aus Gründen, die nicht in der Verantwortung der betreffenden 
+Partei liegen, erst mit Verzögerung aufgenommen werden, so ist die Wiederaufnahme 
+abzustimmen. Gelingt die Abstimmung nicht, muss die Wiederaufnahme spätestens 
+innerhalb von 6 Monaten nach dem Ende der die Leistungsverpflichtung 
+unterbrechenden Auswirkungen des Ereignisses höherer Gewalt erfolgen. 
+(4) Ergänzend zu § 5 Nr. 2 Abs. 2 VOL/B (Kündigungsrecht bei dauerhafter Verhinderung) 
+sind Schadensersatzansprüche ausgeschlossen. 
+(5) Nicht als höhere Gewalt anzusehen sind insbesondere Gerichtsurteile, mangelnde 
+Rentabilität oder Engpässen bei Lieferanten des AN sowie Szenarien der Landes- und 
+Bündnisverteidigung (LV/BV). 
+§ 9 Vergütung 
+(1) Die Preise für die in der Leistungsbeschreibung beschriebenen Vertragsgegenstände  
+sind dem Preis- und Produktblatt (Anlage 2 zur Rahmenvereinbarung) zu entnehmen. 
+(2) Den Preisen ist, soweit erforderlich, die jeweils gültige gesetzliche Umsatzsteuer 
+(Mehrwertsteuer) hinzuzurechnen. Diese ist in der Rechnung gesondert auszuweisen. 
+(3) Die Preise für die gesamte Vertragslaufzeit  ergeben sich aus dem Preis - und 
+Produktblatt (Anlage 2 der Rahmenvereinbarung). In den Preisangaben sind sämtliche 
+Leistungen (Materialkosten/Verpackung/Lieferung/Zollgebühren) enthalten und somit 
+abgegolten. Preisanpassungen sind nur bei gesetzlichen oder behördlichen 
+Preisänderungen oder bei nachweisbaren, unvorhersehbaren Preisänderungen auf 
+Hersteller- oder Großhandelsebene aufgrund marktwirksamer Umstände zulässig
+
+[page 10]
+Rahmenvereinbarung 1/BIUD/W0625 
+                                                          
+ 
+Seite 10 | 16 
+ BAIUDBw – Beschaffungsvertrag Lieferleistungen 
+ 
+(4) Etwaige Preisänderungen sind rechtzeitig schriftlich oder in Textform geltend zu 
+machen. Ein Anspruch auf Einigung wird hierdurch nicht begründet. 
+§ 10 Zahlungsbedingungen, E-Rechnung 
+(1) Einzelaufträge werden mit dem jeweiligen Besteller gesondert abgerechnet. Wenn der 
+Besteller nicht selbst abrechnet, so benennt er die abrechnende Dienststelle im 
+Einzelauftrag. 
+(2) Zahlungen des AG aufgrund dieser RV werden auf das Konto mit  
+der IBAN:         
+des AN bei der:       (Bank, Ort) 
+BIC:         
+innerhalb von 30 Tagen nach Eingang der Rechnung angewiesen. 
+Die Regelungen der Verordnung über die elektronische Rechnungsstellung im öffent-
+lichen Auftragswesen des Bundes ( E-Rechnungsverordnung – ERechV) sind zu be-
+achten. Die Rechnung ist gemäß § 2 Abs. 2 i.V.m. § 5 ERechV als elektronische 
+Rechnung einzureichen. In ihr ist die Auftragsnummer sowie die zuständige Leitweg-
+Identifikationsnummer anzugeben.  Die Angaben sind dem jeweiligen Einzelabruf zu 
+entnehmen. Sie enthält zudem den Lieferschein, versehen mit dem Empfangs -
+/Vereinnahmungsvermerk des Empfängers, sowie alle sonstigen für die Abrechnung 
+erforderlichen, zahlungsbegründenden Unterlagen.  
+Soweit dem AN bei Rechnungslegung anzugebene Daten nicht vorliegen, hat er diese 
+beim AG zu erfragen.   
+Rechnungen, die dieser Form nicht genügen und keinen Ausnahmetatbestand gemäß   
+§ 3 Absatz 3, § 8 sowie § 9 ERechV erfüllen, gelten als nicht gestellt, insbesondere 
+begründen solche Rechnungen keinen Verzug nach § 286 Abs. 3 BGB. 
+Auf Nr. 17 ZVB/BMVg sowie §§ 15 und 17 VOL/B wird ausdrücklich hingewiesen. 
+(3) Stellt der AN  in berechtigten Ausnahmefällen (vergleiche § 3 Absatz 3, § 8  sowie § 9 
+ERechV) eine Rechnung in Papierform gegenüber dem AG, gilt Absatz 1 mit der 
+Maßgabe, dass die zahlungsbegründenden Unterlagen grundsätzlich auf postalischem 
+Weg in Papierform (in 2-facher Ausfertigung – Original und Rechnungsdoppel) 
+vorzulegen sind. Der AN  kann jedoch Rechnungen, Lieferscheine und sonstige 
+zahlungsbegründende Unterlagen auch elektronisch (z. B. per E -Mail oder Telefax) 
+übermitteln. Diese werden wie Originalunterlagen behandelt. 
+(4) Es wird kein Skonto gewährt. Zahlungen werden innerhalb von 30 Kalendertagen nach 
+Eingang folgender Unterlagen geleistet: 
+• Rechnung, 
+• Lieferschein,
+
+[page 11]
+Rahmenvereinbarung 1/BIUD/W0625 
+                                                          
+ 
+Seite 11 | 16 
+ BAIUDBw – Beschaffungsvertrag Lieferleistungen 
+ 
+• Durch den Empfänger bestätigte schriftliche Erklärung des AN über die erbrachten 
+Leistungen, 
+ 
+(5) Sind Teilleistungen zu einem Auftrag (z. B. Lieferung zu verschiedenen Zeiten) ver -
+einbart, darf für jede Teilleistung eine gesonderte Rechnung eingereicht werden. 
+(6) Fälligkeit tritt in jedem Fall erst nach vertragsgemäßer Leistungserbringung ein. 
+(7) Zahlungen des AG können mit schuldbefreiender Wirkung auch auf jedes in der 
+Rechnung angegebene Konto des AN geleistet werden. 
+§ 11 Vertragsstrafe  
+ 
+(1) Es wird eine Vertragsstrafe wegen schuldhaften Verstoßes gegen die Regelungen 
+dieser Vereinbarung –  insbesondere zur militärischen Sicherheit (Nr. 21 ZVB/BMVg), 
+Vertraulichkeit (Nr. 20 ZVB/BMVg) und zum Datenschutz (Nr. 27 ZVB/BMVg) sowie zum 
+Geheimschutz (Nr. 22 ZVB/BMVg) – vereinbart:  
+ 
+a. Der AN verwirkt eine Vertragsstrafe, wenn er oder sonstige Personen, für die 
+er gemäß §§ 31, 278, 831 BGB einzustehen hat, den genannten Regelungen 
+zuwiderhandelt, indem diesen Regelungen bspw. nicht oder nicht fristgemäß 
+nachgekommen wird.  
+ 
+b. Die Höhe der Vertragsstrafe beträgt für jeden Verstoß 5 % der 
+Abrechnungssumme in ihrer objektiv richtigen Höhe (Netto-
+Abrechnungspreis). 
+ 
+c. Der AN ist vor jedem Ausspruch einer Vertragsstrafe anzuhören. 
+ 
+(2) Es wird des Weiteren eine Vertragsstrafe wegen Verzögerung der Leistung sowie 
+Nichtleistung vereinbart.  
+ 
+a. Gerät der AN mit seiner Leistung ganz oder teilweise schuldhaft in Verzug, 
+beträgt die Vertragsstrafe für jeden Werktag des Verzugs 0,2 % des Netto-
+Abrechnungspreises. Die Gesamtsumme der zu zahlenden Vertragsstrafen 
+ist auf 5 % des Netto-Abrechnungspreises beschränkt. Die Vertragsstrafe 
+wird ab der ersten vollendeten Woche nach Ablauf des vereinbarten 
+Leistungstermins berechnet. 
+ 
+b. Steht dem AG wegen Verzugs ein Schadensersatzanspruch zu, so sind die 
+aus dem Überschreiten der Ausführungsfristen herrührenden gezahlten 
+Strafen hierauf anzurechnen.
+
+[page 12]
+Rahmenvereinbarung 1/BIUD/W0625 
+                                                          
+ 
+Seite 12 | 16 
+ BAIUDBw – Beschaffungsvertrag Lieferleistungen 
+ 
+c. Im Falle einer einvernehmlichen Änderung des Lieferungs - oder 
+Leistungstermins gerät der AN erst dann in Verzug, wenn die geänderte 
+Ausführungsfrist überschritten wird. Die Änderung des Lieferungs - bzw. 
+Leistungstermins muss in Textform zwischen dem Bestel ler und dem AN 
+erfolgen. 
+ 
+d. Der AN ist vor jedem Ausspruch einer Vertragsstrafe anzuhören. 
+ 
+ 
+Im Übrigen wird auf Nr. 32 ZVB/BMVg inklusive des dort enthaltenen Ausschlusses von 
+§ 11 Nr. 2 Satz 2 VOL/B verwiesen. 
+ 
+(3)  Im Hinblick auf Vertragsstrafen wegen Vorteilsgewährung bzw. Bestechung im Sinne 
+von § 331 ff. StGB gilt Nr. 33 ZVB/BMV. 
+ 
+(4) Die Gesamtsumme aller zu zahlenden Vertragsstrafen ist auf 5 % des Netto-
+Abrechnungspreises beschränkt. Die Geltendmachung von Schadensersatzansprüchen 
+bleibt von dieser Regelung unberührt. 
+ 
+(5) Der Vorbehalt der Vertragsstrafe kann vom AG ohne einen entsprechenden Vorbehalt 
+bei der Abnahme bis zur Bezahlung der letzten, diesen Vertrag betreffenden Rechnung 
+(Schlussrechnung)erklärt werden. 
+ 
+(6) Mit Verwirken der Vertragsstrafe wird diese zur Zahlung fällig. Der AN hat die verwirkte 
+Vertragsstrafe spätestens innerhalb von 14 Werktagen nach Zugang einer 
+Zahlungsaufforderung des AGs zu zahlen. 
+ 
+(7) Die Zahlungsaufforderung gilt am  vierten Tag nach der Aufgabe zur Post dem AN als 
+zugegangen; § 193 BGB gilt entsprechend. Wird die Zahlungsaufforderung per E -Mail 
+versendet, ist sie in dem Zeitpunkt zugegangen, in dem mit dem Abruf der E-Mail durch 
+den Empfänger üblicherweise gerechnet werden k ann. Die Zugangsfiktion gilt nicht, 
+wenn die Zahlungsaufforderung dem AN nicht oder zu einem späteren Zeitpunkt 
+zugegangen ist. Im Zweifel hat der AG den Zugang der Zahlungsaufforderung und den 
+Zeitpunkt des Zugangs zu beweisen. 
+ 
+(8) Der AN hat während des Verzugs mit der Bezahlung der Vertragsstrafe an den AG 
+Verzugszinsen gemäß § 288 BGB zu zahlen. 
+ 
+(9) Vertragsstrafen und Verzugszinsen sind auf das in der Zahlungsaufforderung benannte 
+Bankkonto unter Angabe des dort genannten Kassenzeichens einzuzahlen. 
+ 
+(10) Im Übrigen gilt § 11 VOL/B, wobei § 11 Nr. 2 Satz 2 VOL/B („Diese beträgt maximal 8 
+%“) keine Anwendung findet.
+
+[page 13]
+Rahmenvereinbarung 1/BIUD/W0625 
+                                                          
+ 
+Seite 13 | 16 
+ BAIUDBw – Beschaffungsvertrag Lieferleistungen 
+ 
+§ 12 Laufzeit und Kündigung 
+(1) Die RV tritt am       in Kraft und endet mit Ausschöpfung der Höchstmenge für die 
+jeweiligen Vertragsgegenstände/Produkte anteilmäßig, spätestens jedoch 2 Jahre nach 
+Inkrafttreten ohne, dass es einer Kündigung bedarf. 
+(2) Die RV kann von den Vertragsparteien jederzeit - insgesamt oder teilweise bzgl. 
+bestimmter Leistungen - schriftlich mit einer Frist von sechs Monaten zum Monatsende 
+ordentlich gekündigt werden. Bereits aufgegebene Einzelaufträge werden von 
+Kündigungen der RV nicht berührt. Bis zum Ablauf der gekündigten RV können weitere 
+Einzelaufträge aufgegeben werden. 
+ 
+(3) Die RV kann seitens des AG einmal um 1 Jahr (bis maximal 3 Jahre) verlängert werden. 
+Die Verlängerungsoption ist spätestens  sechs Monate vor Ablauf des 2 . Jahres 
+gegenüber dem AN schriftlich auszuüben. Eine Pflicht zur Ausübung der Option besteht 
+nicht. 
+ 
+(4) Ergänzend zu Nr. 34 ZVB/BMVg können die  Parteien die  RV – unbeschadet ihrer 
+Schadensersatzansprüche – fristlos kündigen, wenn: 
+a. der AN die vereinbarten Leistungen trotz schriftlicher Mahnung wiederholt nicht 
+vertragsgemäß erbringt, 
+b. der AN sich an einer unzulässigen Absprache / Wettbewerbsbeschränkung im Sinne 
+von § 1 GWB beteiligt hat, 
+c. Schadensersatzleistungen vertragswidrig verweigert. 
+(5) Die RV erlischt ohne Kündigung bei Insolvenz des AN mit der Stellung des Antrages auf 
+Eröffnung des Insolvenzverfahren. 
+(6) Im Falle der vorzeitigen Auflösung der RV oder der fristlosen Kündigung wird die 
+vereinbarte Vergütung nur bis zur Beendigung der RV, höchstens jedoch bis zu der 
+zuletzt erbrachten Leistung gezahlt. 
+(7) Sofern die vorzeitige Auflösung der RV in der Sphäre des AN, dessen Erfüllungsgehilfen 
+oder Unterauftragnehmer herrührt, haftet er für alle Kosten, die dem AG  dadurch 
+entstehen, dass die Leistung in anderer Weise sichergestellt werden muss, 
+insbesondere für Mehrkosten, die durch Inanspruchnahme eines anderen 
+Unternehmens entstehen. Mehrkosten werden grundsätzlich nur bis zum Ablauf der 
+Vertragslaufzeit geltend gemacht. 
+(8) Sofern sich Bestimmungen ändern oder neue Bestimmungen hinzukommen, die 
+Auswirkungen auf diese RV haben, verpflichten sich die Vertragsparteien, rechtzeitig vor 
+Eintritt der Rechtsänderung entsprechende Vertragsänderungen anzustreben. Kommen 
+solche nicht zustande, kann jede Seite d ie RV zum Eintritt der Rechtsänderung 
+außerordentlich kündigen.
+
+[page 14]
+Rahmenvereinbarung 1/BIUD/W0625 
+                                                          
+ 
+Seite 14 | 16 
+ BAIUDBw – Beschaffungsvertrag Lieferleistungen 
+ 
+(9) Die Geltendmachung weiterer Schadensersatzansprüche sowie allgemeiner 
+Kündigungs- und Rücktrittsrechte bleibt von dieser Regelung unberührt. 
+§ 13 Vertraulichkeit 
+(1) Die Vertragsparteien sind verpflichtet, alle Informationen, die ihnen bzw. den von ihnen 
+mit der Vertragserfüllung betrauten Personen im Zusammenhang mit Leistungen im 
+Rahmen dieser RV bekannt werden und deren Offenlegung nachteilige Auswirkungen 
+hätte (nachfolgend auch „Vertrauliche Informationen“ genannt), vertraulich zu 
+behandeln. 
+(2) Vertrauliche Informationen dürfen nicht ohne vorherige schriftliche Zustimmung des AG  
+an Dritte weitergegeben, verwertet oder verwendet werden. Sie sind zudem durch 
+besondere Sicherheitsmaßnahmen durch den Zugriff von Personen, die nicht mit der 
+Leistungserbringung befasst sind bzw. nicht b erechtigte Personen sind oder eine 
+Genehmigung haben, zu schützen. 
+(3) Vertrauliche Informationen sind vor allem: 
+• Alle mündlichen oder schriftlichen/textlichen Informationen und Materialien die der 
+AN direkt oder indirekt vom AG zur Abwicklung des Auftrages erhält und als 
+vertraulich gekennzeichnet sind oder deren Vertraulichkeit sich aus ihrem 
+Gegenstand oder sonstigen Umständen ergibt. 
+• Informationen über interne Belange wie ressortspezifische Abläufe und 
+geschäftliche Beziehungen des AG. 
+• Betriebs- und Geschäftsgeheimnisse des AN. 
+• Die beauftragten Leistungen und sonstige Arbeitsergebnisse. 
+Die Verpflichtung zur Vertraulichkeit gilt unabhängig davon, ob die betreffende 
+Information ausdrücklich als vertraulich gekennzeichnet ist oder nicht. 
+(4) Die Verpflichtung zur Vertraulichkeit gilt nicht gegenüber b erechtigten Personen. 
+Berechtigte Personen in diesem Sinne sind: Rechtsanwälte, 
+Steuerberater/Wirtschaftsprüfer, Gesellschafter, finanzierende Banken und 
+Unterauftragnehmer, sofern die entsprechenden Informationen für die jeweilige Tätigkeit 
+notwendig sind. Berechtigte Personen in diesem Sinne sind darüber hinaus der 
+Bundesrechnungshof sowie der Deutsche Bundestag –  einschließlich der von diesen 
+eingesetzten Ausschüssen – im Rahmen der diesen zustehenden Auskunfts - und 
+Informationsansprüche. 
+Die Verpflichtung zur Vertraulichkeit gilt auch dann nicht, wenn eine Verpflichtung zur 
+Offenlegung der vertraulichen Information durch Beschluss eines Gerichts, Anordnung 
+einer Behörde oder ein Gesetz besteht. 
+(5) Sofern die Vertragsparteien im Einzelfall darüber hinaus die Notwendigkeit der 
+Weitergabe von Informationen an Dritte für erforderlich halten, ist die vorherige
+
+[page 15]
+Rahmenvereinbarung 1/BIUD/W0625 
+                                                          
+ 
+Seite 15 | 16 
+ BAIUDBw – Beschaffungsvertrag Lieferleistungen 
+ 
+schriftliche Zustimmung der jeweils anderen Vertragspartei unter Darlegung der Gründe 
+einzuholen. 
+(6) Der AN versichert mit Vertragsschluss, im Rahmen der Leistungserbringung nur 
+Personen einzusetzen, die zur Vertraulichkeit und Geheimhaltung verpflichtet sind. 
+(7) Die Regelungen der vorstehenden Absätze gelten auch nach Beendigung der RV fort. 
+(8) Im Übrigen gilt Nr. 20 ZVB/BMVg. 
+§ 14 Qualitätssicherung 
+(1) Der zertifizierte AN hat ein Qualitätsmanagementsystem nach DIN EN ISO 13485 oder 
+DIN ISO 9001 oder vergleichbar (siehe Leistungsbeschreibung) nachzuweisen, die 
+Zertifizierung über den gesamten Leistungszeitraum aufrechtzuhalten und die 
+Leistungserbringung auf Grundlage der Qualitätsforderungen nach DIN EN ISO 13485 
+zu erbringen. Im Übrigen findet die TS-QMA Anwendung. 
+(2) Der AN legt dem AG mit dem Angebot eine Konformitätsbescheinigung vor, die ergibt, 
+dass alle Geräte eine CE -Zulassung aufweisen. Alle Geräte müssen über die 
+erforderliche Freiverkehrsfähigkeit im Europäischen Binnenmarkt (CE -Zulassung) 
+verfügen. 
+(3) Das Gerät muss die Sicherheitsstandards für medizinische elektrische Geräte in 
+Übereinstimmung mit der EN 60601-1 (in der jeweils aktuellen gültigen Fassung) 
+erfüllen. 
+(4) Der AN hat die Leistungen auf vertragsgemäße Beschaffenheit zu prüfen und das 
+Ergebnis zu dokumentieren. Der AN stellt sicher, dass nur vom AG annehmbare 
+Produkte zur Auslieferung gelangen. 
+(5) Der AN legt dem AG mit Lieferung der Vertragsgegenstände eine Prüf- und 
+Konformitätsbescheinigung vor. Dies erfolgt durch das Anbringen des folgenden 
+Vermerks auf allen Ausfertigungen des Lieferscheins, versehen mit Datum und 
+Unterschrift des ANs: „Wir bes tätigen, dass die erforderlichen Prüfungen durchgeführt 
+wurden und die Leistungen mit den vertraglichen Forderungen übereinstimmen“. 
+§ 15 Sonstige Vertragsbedingungen 
+(1) Sollten einzelne Bestimmungen dieser RV ungültig oder undurchführbar sein oder 
+werden, so bleiben d ie RV als Ganzes sowie die übrigen Bestimmungen wirksam. Die 
+Vertragsparteien verpflichten sich, eine unwirksame Bestimmung durch eine wirksame 
+Bestimmung zu ersetzen, die dem mit der unwirksamen Bestimmung gewollten 
+wirtschaftlichen Zweck möglichst nahekommt. Sollte in der RV ein regelungsbedürftiger 
+Punkt nicht oder nicht ausreichend geregelt worden sein, so verpflichten sich die
+
+[page 16]
+Rahmenvereinbarung 1/BIUD/W0625 
+                                                          
+ 
+Seite 16 | 16 
+ BAIUDBw – Beschaffungsvertrag Lieferleistungen 
+ 
+Vertragsparteien, die so entstandene Lücke im Sinne und Geiste dieser RV durch eine 
+ergänzende Vereinbarung zu schließen. 
+(2) Ausschließlicher Gerichtsstand ist Bonn. 
+ 
+ 
+Bonn, ………… …………………………, …………… 
+ (Ort) (Datum) 
+Bundesamt für Infrastruktur,       
+Umweltschutz und       
+Dienstleistungen der Bundeswehr D- 
+ (Auftragnehmer) 
+Im Auftrag 
+ 
+ 
+ 
+ 
+………………………………………                        ……………………………………… 
+(Unterschrift) (Unterschrift)

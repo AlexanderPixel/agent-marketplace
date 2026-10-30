@@ -1,0 +1,578 @@
+[page 1]
+Lieferantenhandbuch 
+(Stand: 18.11.2019)
+
+[page 2]
+Informationen für Lieferanten 
+ 
+2 
+Stand: 14.11.2019  
+Inhaltsverzeichnis 
+ 
+1 Einführung ............................................................................................................................ 3 
+2 Ihre Ansprechpartner ............................................................................................................ 3 
+3 Bereitstellung von Kataloginformationen ............................................................................. 4 
+3.1 Katalogdaten ohne Konfiguration.................................................................................. 4 
+3.1.1 Export aus bestehendem Katalogsystem .................................................................. 4 
+3.1.2 Softwaretools ........................................................................................................... 4 
+3.1.3 Per Excel-Tabelle ...................................................................................................... 4 
+3.2 Katalogdaten mit Konfigurationsartikeln ...................................................................... 6 
+3.3 Darstellung im KdB ....................................................................................................... 7 
+3.3.1 Artikel ohne Konfiguration ..................................................................................... 8 
+3.3.2 Artikel mit Konfiguration .......................................................................................... 8 
+4 Katalogdaten ......................................................................................................................... 9 
+4.1 Felddefinitionen ............................................................................................................. 9 
+4.2 BMEcat Felder ............................................................................................................. 11 
+4.2.1 Artikelnummer: SUPPLIER_AID ..............................................................................11 
+4.2.2 Artikelbeschreibung (kurz): DESCRIPTION_SHORT.................................................11 
+4.2.3 Artikelbeschreibung (lang): DESCRIPTION-LONG ...................................................12 
+4.2.4 Verpackungseinheiten ............................................................................................13 
+4.2.5 Schlagworte / Synonyme: KEYWORD .....................................................................14 
+4.3 e-Cl@ss ........................................................................................................................ 14 
+5 Produktabbildungen ............................................................................................................ 15 
+5.1 Inhaltliche Anforderungen ........................................................................................... 15 
+5.2 Technische Anforderungen .......................................................................................... 15 
+6 Bestell- und Lieferprozess im KdB ..................................................................................... 15 
+6.1 Kommunikation mit dem Bedarfsträger ...................................................................... 16 
+6.2 Abwicklung von Bestellungen ..................................................................................... 18 
+6.3 Bestellung über „Dummy-Produkt“ ............................................................................ 18 
+6.4 Bespielprozess für die Bestellabwicklung ................................................................... 20
+
+[page 3]
+Informationen für Lieferanten 
+ 
+3 
+Stand: 14.11.2019  
+1 Einführung 
+Der elektronische Katalog ist das Aushängeschild unserer zentralen Einkaufsplattform „Kaufhaus  des 
+Bundes“ (KdB) und das zentrale Medium, mit dem Sie Ihre Produkte  oder Dienstleistungen präsentie-
+ren. Ausführliche Produktinformationen sind beim Einkauf entscheidend. Um verkaufen zu können, 
+müssen  Ihre Produkte/Dienstleistungen gefunden werden. Ihre Artikel sollten dabei eindeutig identifi-
+zierbar sein und sich deutli ch von ähnlichen Artikeln unterscheiden. Dabei ist eine gute Beschreibung 
+genauso wichtig, wie die eindeutigen Herstellerangaben. Unser Suchalgorithmus greift auf die Kurzb e-
+zeichnung und die Langbeschreibung sowie auf die Schlagwörter zu. Artikel, die aussagekräftige Inhalte 
+haben, werden besser gefunden. 
+Es werden nur die in der Rahmenvereinbarung beauftragten Produkte und Dienstleistungen und keine 
+kompletten Lieferantenkataloge als Katalogdaten im KdB hinterlegt. 
+Des Weiteren ist der Lieferant verpflichtet eine E-Mailadresse für die Entgegennahme von elektroni-
+schen Aufträgen anzugeben. 
+Die Bestellplattform KdB basiert auf einer gängigen E-Commerce-Software und nutzt das Datenfor-
+mat BMEcat 1.2 für die Hinterlegung elektronischer Katalogdaten.  
+Weitere Informationen zum Kaufhaus des Bundes und den Zentralen Beschaffungsstellen erhalten 
+Sie auch auf der Internetseite: http://www.kdb.bund.de 
+2 Ihre Ansprechpartner 
+Die Einkaufsplattform „Kaufhaus des Bundes“ wird vom Beschaffungsamt des Bundesministeri-
+ums des Innern (BeschA) betrieben. Hierzu gehören die technische Weiterentwicklung sowie die 
+Integration von elektronischen Katalogdaten. Unabhängig von der vertragsführenden Zentralen Be-
+schaffungsstelle stehen Ihnen für Abstimmungen in Bezug auf elektronische Katalogdaten folgende 
+Mitarbeiter(-innen) gerne zur Verfügung: 
+Beschaffungsamt des Bundesministeriums des Innern 
+Brühler Straße 3 
+53119 Bonn 
+Technische Leiterin Kaufhaus des Bundes: 
+Frau Nicole Bremer 
+Tel.: 022899-610-1220 
+E-Mail: Nicole.Bremer@bescha.bund.de 
+Katalogmanagement Kaufhaus des Bundes: 
+Frau Monika Hüskes 
+Herr Reza Hamidi 
+Herr Manuel Kuhnke 
+Herr Dirk Wilke 
+Tel.: 022899-610-2289 
+E-Mail: katalogdaten@kdbund.bund.de
+
+[page 4]
+Informationen für Lieferanten 
+ 
+4 
+Stand: 14.11.2019  
+ 
+3 Bereitstellung von Kataloginformationen 
+Erfahrungen zeigen, dass ein strukturierter Aufbau der Katalogdaten, eine detaillierte Produktbe-
+schreibung sowie eine genaue Abbildung des Produkts dem Nutzer den Zugriff erleichtern und 
+eine schnellere Bestellung gestatten. Je nachdem, ob es sich bei den in der Rahmenvereinbarung 
+eingestellten Gütern und Dienstleistungen um Artikel mit oder ohne Konfigurationsmöglichkeiten 
+handelt, variieren die Katalogdaten sowie ggf. auch die Prozesse auf Lieferantenseite. Alle von 
+Ihnen erstellten elektronischen Katalogdaten sind als Dateianlage an folgende E-Mail- Adresse zu 
+übersenden: 
+katalogdaten@kdbund.bund.de 
+3.1 Katalogdaten ohne Konfiguration 
+3.1.1 Export aus bestehendem Katalogsystem 
+Die für das „Kaufhaus des Bundes“ benötigten elektronischen Katalogdaten können ggfs. aus einem 
+bei Ihnen bestehenden Bestellsystem/Onlineshop exportiert werden. Hierbei werden ausschließ-
+lich Daten für die Produkte  und Dienstleistungen akzeptiert, die in der Rahmenvereinbarung ent-
+halten sind. Die Katalogdaten müssen im Format BMECat 1.2 bereitgestellt werden. 
+Das Format deckt sowohl den Fall einer erstmaligen Katalogbereitstellung als auch den Fall einer 
+Katalogaktualisierung ab. Die erforderlichen Inhalte der Katalogdaten finden Sie in Kapitel 4  
+(Katalogdaten). 
+3.1.2 Softwaretools 
+Zur Bereitstellung von Katalogdaten im Format BMECat 1.2 stehen  alternativ kostenlose sowie 
+kostenpflichtige Softwaretools auf dem Markt zur Verfügung, die Sie nutzen können. 
+3.1.3 Per Excel-Tabelle 
+Sofern bei Ihnen kein eigenes Katalogsystem vorhanden ist, können Sie die erforderlichen Kata-
+loginhalte auch in eine vom Beschaffungsamt des BMI bereitgestellte Excel-Tabelle eintragen. Die-
+se steht als Download auf der Internetseite www.kdb.bund.de zur Verfügung. 
+Bei Ihren Eintragungen sollten Sie grundsätzlich  darauf achten, ausschließlich Fließtext zu verwen-
+den und auf Zeilenumbrüche oder Enter-Zeichen zu verzichten.
+
+[page 5]
+Informationen für Lieferanten 
+ 
+5 
+Stand: 14.11.2019  
+Beispiel: 
+ 
+In der Tabelle sind bereits die wichtigsten Hinweise enthalten, damit Sie Ihre Katalogdaten richtig 
+und vollständig eintragen können. Die als Muss-Felder gekennzeichneten Spalte sind zwingend aus-
+zufüllen. Kann-Felder sollten, soweit Sie über diese Informationen verfügen, ebenfalls ausgefüllt 
+werden. Bedenken Sie, dass Sie den Bedarfsträgern die Suche nach Ihrem Produkt oder Ihrer Dienst-
+leistung  erheblich erleichtern. 
+ 
+ 
+Gleiches gilt für die Schlagwörter: Wenn Sie zu den vorgegebenen Schlagwörtern noch z u-
+sätzliche eintragen möchten , verschieben Sie den nachfolgenden Teil der Tabelle um die benötig-
+te Spaltenanzahl, kopieren Sie die Schlagwortspalte und benennen Sie diese entsprechend der nu-
+merischer Reihenfolge um.
+
+[page 6]
+Informationen für Lieferanten 
+ 
+6 
+Stand: 14.11.2019  
+3.2 Katalogdaten mit Konfigurationsartikeln 
+Bei bestimmten Artikeln ist eine Konfigurierbarkeit möglich und erwünscht (z.B. KfZ, Möbel, IT-
+Produkte). Auf diese Art können verschiedene Optionen der Produkte im KdB dargestellt werden. 
+Für diesen Fall können Sie unter Verwendung der vom Beschaffungsamt des BMI bereit gestellten 
+Excel-Datei (vgl. Abschnitt 3.1.3) Katalogdateninhalte angeben. Damit die Konfigurationsregeln 
+durch das Beschaffungsamt des BMI geschrieben werden können, muss jeder mögliche Optionsarti-
+kel als Artikel in die Liste aufgenommen werden. Für das Basisprodukt KfZ könnten zum Beispiel die 
+Varianten in roter bzw. blauer Lackierung mögliche Optionsprodukte sein. 
+Zur Verarbeitung eines konfigurierbaren Katalogs durch das Katalogdatenmanagement stellt de r ge-
+naue Kenntnisstand aller möglichen Konfigurationskombinationen die Basis dar. Dies kann zum Be i-
+spiel in Form einer Matrix als Excel-Datei illustriert werden: 
+Optionsartikel Basisartikel 1 Basisartikel 2 
+ Limousine Transporter 
+Lackfarbe rot x x 
+Lackfarbe blau x  
+Lackfarbe schwarz  x 
+ 
+Die abgebildete Beispielmatrix führt zu diesen beiden Produktausprägungen: 
+1. Limousine in der Farbe blau oder rot:
+
+[page 7]
+Informationen für Lieferanten 
+ 
+7 
+Stand: 14.11.2019  
+ 
+2. Transporter in der Farbe rot oder schwarz: 
+ 
+Um die Regeln für eine Konfiguration korrekt abzubilden, benötigt das Katalogdatenmanage-
+ment die folgenden Angaben: 
+• Welche Optionsprodukte sind mit welchen Basisprodukten kombinierbar? 
+• Welche Kombinationen aus unterschiedlichen Optionsprodukten schließen sich gegenseitig aus 
+(z.B. sind nicht „Abholung im Werk“ und „Lieferung an Adresse“ gleichzeitig wählbar)? 
+• Welche Optionsprodukte sind nur in Kombination mit welchen anderen Optionsprodukten zu-
+sammen auswählbar? 
+Weitere Erläuterungen können Sie jederzeit beim Katalogmanagement erfragen. 
+3.3 Darstellung im KdB 
+Nachfolgend findet sich eine beispielhafte Darstellung der Detailansicht eines Artikels, wie sie 
+im Kaufhaus des Bundes umgesetzt wird.
+
+[page 8]
+Informationen für Lieferanten 
+ 
+8 
+Stand: 14.11.2019  
+3.3.1 Artikel ohne Konfiguration 
+ 
+ 
+3.3.2 Artikel mit Konfiguration
+
+[page 9]
+Informationen für Lieferanten 
+ 
+9 
+Stand: 18.11.2019  
+4 Katalogdaten 
+4.1 Felddefinitionen 
+Die in nachstehender Tabelle angegebenen Daten sind grundlegender Inhalt, den Sie zwin-
+gend angeben müssen. 
+ 
+  BMEcat - Element Anmerkung 
+Tabelle Blatt 1 (CATALOG) 
+Sprache LANGUAGE ger oder deu 
+Katalognr. CATALOG_ID RV-Nr. 
+Katalogversion CATALOG_VERSION 1.   Katalog = 01.001 2.   Katalog =01.002 
+Datum DATE yyyy-mm-dd 
+Tabelle Blatt 2 (BUYER) 
+Behörde Kürzel BUYER_NAME Kürzel Vergabestelle (BAM, BeschA, BWB, BABZV) 
+Name NAME Vollständiger Name der Vergabestelle 
+Name 2 NAME_2 Zeile 2 Name der Vergabestelle 
+Ansprechpartner CONTACT Name des RV-Verantwortlichen 
+Straße STREET   
+PLZ ZIP   
+Stadt CITY   
+Tel-Nr. PHONE   
+Fax-Nr. FAX   
+Emailadresse EMAIL E-Mail-Adresse des RV-Verantwortlichen 
+Tabelle Blatt 3 (SUPPLIER) 
+Lieferant Kürzel SUPPIER_NAME Kürzel Lieferant 
+Name NAME Vollständiger Firmenname 
+Name 2 NAME_2 Zeile 2 Firmenname 
+Ansprechpartner CONTACT Name des Katalogverantwortlichen 
+Strasse STREET   
+PLZ ZIP   
+Stadt CITY   
+Tel-Nr. PHONE   
+Fax-Nr. FAX   
+Emailadresse EMAIL E-Mail-Adresse des Katalogverantwortlichen 
+Tabelle Blatt 4 (AGREEMENT) 
+Rahmenvertragsnr. AGREEMENT_ID z.B.: 47111 
+Startdatum RV DATETIME YYYY-MM-DD 
+Enddatum RV DATETIME YYYY-MM-DD 
+Tabelle Blatt 5 (Katalogdateninhalte  
+Artikel-Nr. SUPPLIER_AID Ihre frei wählbare Artikel-Nr. OHNE Sonderzeichen 
+Artikelbeschreibung 
+(kurz) DESCRIPTION_SHORT 
+EINDEUTIGKEIT auf den ersten 40 Zeichen; max. 80 Zeichen 
+(bei Artikeln für die Bundespolizei betreffend bitte zwin-
+gend Geräte- Nr. angeben)
+
+[page 10]
+Informationen für Lieferanten 
+ 
+10 
+Stand: 18.11.2019  
+  BMEcat - Element Anmerkung 
+Artikelbeschreibung 
+(lang) DESCRIPTION_LONG maximal 4.000 Zeichen; HTML- Tags erlaubt 
+Tabelle Blatt 5 (Katalogdateninhalte  
+Behördeninterne 
+Numerik – 1 BUYER_AID Type AP-Nr. oder STAN-Nr. oder Geräte-Nr. oder Versorgungs-Nr. 
+Behördeninterne 
+Numerik – 2 BUYER_AID xx.xx.xxx.xx X wird ersetzt durch die entsprechende Nr. des im 1. Feld anzugebenden Typs (falls gefordert) 
+Stichwort/ Synonym KEYWORD-1 Lieferanteneigenes Schlagwort/Suchwort 1 
+Stichwort/ Synonym KEYWORD-2 Lieferanteneigenes Schlagwort/Suchwort 2 
+Stichwort/ Synonym KEYWORD-3 Lieferanteneigenes Schlagwort/Suchwort 3 
+eCl@ss-Version REFERENCE_FEATURE_ SYSTEM_NAME ECLASS-10.1 (bis zum 29.10.2019 ECLASS-5.1.4) 
+eCl@ss-Nr. REFERENCE_FEATURE_ GROUP_ID 8-stellig, ohne Bindestrich (siehe 4.3) 
+Bestelleinheit ORDER_UNIT (OU) (nach UNECE) z.B. C62, PK (siehe 4.2.4) 
+Inhaltseinheit CONTENT_UNIT (CU) Einheit des Artikels (nach UNECE) innerhalb einer Bestel-leinheit (z.B. Flasche), wie ORDER_UNIT 
+Inhaltseinheit pro Be-
+stelleinheit NO_CU_PER_OU Anzahl der Inhaltseinheiten in einer Bestelleinheit, z.B. 6 Flaschen (in einer Kiste) 
+Preismenge PRICE_QUANTITY 
+ein Vielfaches bzw. ein Bruchteil der Bestelleinheit (Ele-
+ment ORDER_UNIT), welches / welcher angibt, auf welche 
+Menge sich alle angegebenen Preise beziehen 
+Mindestabnahme- 
+menge QUANTITY_MIN Anzahl von Bestelleinheiten, die mindestens bestellt wer-den müssen 
+Abnahmestufe QUANTITY_INTERVAL 
+Zahl, die angibt, in welcher Staffelung der Artikel bestellt 
+werden kann. Die Zählung für diese Staffelung beginnt 
+stets mit der angegebenen Mindestbestellmenge. Die 
+Einheit für die Mengenstaffel ist die Bestelleinheit. Bei-
+spiel: 1 (d.h. 5, 6, 7, … Kisten) Beispiel: 2 (d.h. 5, 7, 9,... 
+Kisten) 
+Preis-Typ ARTICLE_PRICE - price_ type net_list: Listenpreis ohne Umsatzsteuer net_customer: kundenspezifischer Endpreis ohne Umsatz-steuer 
+Preis (netto) PRICE_AMOUNT Preis pro Bestelleinheit, Bsp.: steht in OU die Einheit CT (für Karton), ist der Kartonpreis anzugeben 
+Währung PRICE_CURRENCY Währung des Preises: EUR 
+Umsatzsteuersatz TAX z.B. 0.19 (= 19 Prozent) 
+Abbildungstyp MIME_TYPE ausschließlich als JPG (.jpg) oder GIF (.gif) 
+Bildname MIME_SOURCE Bezeichnung immer ohne Umlaute und Leerzeichen und Dateikürzel in Kleinbuchstaben
+
+[page 11]
+Informationen für Lieferanten 
+ 
+11 
+Stand: 18.11.2019  
+  BMEcat - Element Anmerkung 
+(z.B.: .jpg) 
+Gruppen-ID CATALOG_GROUP_ID Gruppennummer für das Tabellenblatt 6 (Produktgruppen) 
+Achtung: Sollten Sie Staffelpreise vereinbart haben, kommt das Element LOWER_BOUND hinzu und der 
+Preis-Typ muss auf net customer eingestellt werden. In diesen Fällen bitte mit der Katalogadministration 
+Kontakt aufnehmen. 
+Tabelle Blatt 6 (Produktgruppen) 
+Gruppen-ID GROUP_ID ID der Kataloggruppe (Gruppennummer) 
+Gruppenname GROUP_NAME 
+Gruppenname (z.B. Computer und Zubehör, Untergruppen 
+wären dann Soundkarten, Grafikkarten usw.) maximal 50 
+Zeichen 
+ID der übergeordneten 
+Gruppe PARENT_ID 
+Durch "PARENT_ID" wird die Position der Kataloggruppe 
+im System ergänzt. Die neue Kataloggruppe wird als Un-
+terkataloggruppe von "PARENT_ID" (Vater-Sohn- Bezie-
+hung) in den Baum eingefügt 
+Achtung: Werden konfigurierbare Kataloge (z.B. Fahrzeuge, Rollcontainer, Schränke etc.) angestrebt, dann 
+muss jeder Optionsartikel als Artikel aufgeführt werden. Die Konfigurationsregeln werden von der Kata-
+logadministration geschrieben. 
+ 
+4.2 BMEcat Felder 
+Im Folgenden  finden Sie nähere Ausführungen  zu einer Auswahl von BMEcat-Feldern aus der 
+vorangegangenen Tabelle. 
+4.2.1 Artikelnummer: SUPPLIER_AID 
+Dieses Feld beinhaltet Ihre frei wählbare und eindeutige Lieferantenartikelnummer. Diese darf keine 
+Sonderzeichen enthalten. Die Angabe ist zwingend erforderlich. 
+4.2.2 Artikelbeschreibung (kurz): DESCRIPTION_SHORT 
+Vergeben Sie eineindeutige Namen für Ihre Artikel und vermeiden Sie Abkürzungen. Die wichtigsten At-
+tribute und Unterscheidungsmerkmale sollten bereits in der Artikelkurzbezeichnung (BMEcat -Feld 
+DESCRIPTION_SHORT) enthalten sein. Fragen Sie sich, nach welchen Bezeichnungen Ihre Kunden s u-
+chen würden und anhand von welchen Merkmalen Kaufentscheidungen getroffen  werden. So werden 
+dem Kunden bereits im Suchergebnis die wichtigsten Informationen zu dem Produkt oder der Diens t-
+leistung angezeigt bzw. ermöglicht eine aussagekräftige Artikelkurzbezeichnung überhaupt erst, dass Ihr 
+Artikel vom Suchalgorithmus erfasst und im Suchergebnis angezeigt wird.
+
+[page 12]
+Informationen für Lieferanten 
+ 
+12 
+Stand: 18.11.2019  
+ 
+Schlecht Gut Besser 
+Sportschuh Sportschuh XYZ – weiß Sportschuh XYZ –  Größe 38 – Damen – Weiß 
+Beachten Sie bitte, dass die Länge des Artikelnamens auf 80 Zeichen begrenzt ist.  
+Hinweis: Achten Sie bitte wenn möglich auf eine Unterscheidbarkeit anhand der Kurzbezeichnung i n-
+nerhalb der ersten 40 Zeichen, da den über Schnittstelle angebundenen Behörden teilweise 
+nicht die vollen 80 Zeichen zur Verfügung stehen. 
+4.2.3 Artikelbeschreibung (lang): DESCRIPTION-LONG 
+In der Langbeschreibung haben Sie die Möglichkeit, die Eigenscha ften und Merkmale des angeboten en 
+Artikels ausführlicher zu erläutern. Sie beinhaltet eine eindeutige Beschreibung mit präzisen Informat i-
+onen, die den Artikel oder die Dienstle istung näher erklären. Stellen Sie A lleinstellungsmerkmale und 
+Artikeleigenschaften heraus, wie beispielsweise Farbe, Maße, Varianten oder Lieferumfang. Eine gute 
+Produktbeschreibung sollte alle wichtigen, verkaufsrelevanten Informationen in verständlicher und an-
+sprechender Form enthalten. 
+Die Länge der Artikellangbeschreibung ist auf 4.000 Zeichen begrenzt. 
+Inhaltliche Anforderungen 
+• Bitte achten Sie auf korrekte Rechtschreibung und Interpunktion. 
+• Längere Texte sollen leserfreundlich formatiert und struktur iert werden. Dies kann mit einer 
+HTML-Formatierung erreicht werden (vgl. „2.2 Strukturierungsmöglichkeiten“).   
+• Geben Sie gebräuchliche Normen an, z.B. DIN- und ISO-Angaben. 
+• Achten Sie auf Vollständigkeit. Wichtig ist dabei die Selbsterklärbarkeit des Produktes. 
+• Ein guter Richtwert liegt bei 100 – 200 Wörtern. 
+• Achten Sie auf Eindeutigkeit. 
+• Informationen zur Verpackungseinheit sind nicht Bestandteil der Langbeschreibung. Stattdessen 
+sind die entsprechenden Werte in den BMEcat -Feldern ORDER_UNIT und CONTENT_UNIT zu hin-
+terlegen. Weiterführende Informationen zu Verpackungseinheiten erhalten Sie im Abschnitt 
+4.2.4.
+
+[page 13]
+Informationen für Lieferanten 
+ 
+13 
+Stand: 18.11.2019  
+Strukturierungsmöglichkeiten 
+Die Strukturierung kann über HTML realisiert werden. Dafür können Sie die nachfolgend beschriebenen 
+HTML-Tags verwenden. 
+Tags zur Textformatierung: 
+HTML-Tag Bezeichnung 
+<b>Text</b>   Der Text wird fett dargestellt 
+<i>Text</i>   Der Text wird kursiv dargestellt 
+<u>Text<u> Der Text wird unterstrichen dargestellt 
+<sub> Text<sub> Der Text wird hochgestellt dargestellt 
+ 
+ 
+ 
+ 
+ 
+Die HTML-Tags können auch verschachtelt werden. Zum Beispiel erzeugt <u><b>Text<\b><\u> einen 
+Text, der fett und unterstrichen dargestellt wird. 
+ 
+Tags zur Textausrichtung: 
+HTML-Tag Bezeichnung / Darstellung in der Langbeschreibung 
+<p>Ihr Text</p>    Absatz im Text vornehmen 
+<br> Zeilenumbruch 
+<ul> 
+<li>Punkt 1 der Liste</li> 
+<li>Punkt 2 der Liste</li> 
+<li>Punkt 3 der Liste</li> 
+</ul> 
+ 
+• Punkt 1 der Liste 
+• Punkt 2 der Liste 
+• Punkt 3 der Liste 
+ 
+4.2.4 Verpackungseinheiten 
+Bestellmaßeinheit 
+Die Einteilung der Bestellmaßeinheit erfolgt nach UNECE. Auf diese Einheit beziehen sich die Artikelbe-
+stellung und der Preis. Die Bestellmaßeinheit wird im BMEcat-Feld ORDER_UNIT angegeben. Weiterfüh-
+rende Informationen zur Befüllung der BMEcat-Felder erhalten Sie im Lieferanten-handbuch. 
+Die nachfolgende Übersicht enthält die gängigsten Einheiten: 
+UNECE-Code Bezeichnung 
+CA Kanister 
+CT Karton 
+CR Kiste 
+PR Paar
+
+[page 14]
+Informationen für Lieferanten 
+ 
+14 
+Stand: 18.11.2019  
+UNECE-Code Bezeichnung 
+PK Pack 
+PF Palette 
+RO Rolle 
+C62 Stück 
+BG Beutel 
+BX Box 
+Eine vollständige Liste der aktuell abbildbaren Einheiten kann über katalogdaten@kdbund.bund.de ange-
+fragt werden. 
+Inhaltsmaßeinheit 
+Die Einteilung der Inhaltsmaßeinheit erfolgt ebenfalls nach UNECE. Die Inhaltsmaßeinheit gibt an, in wel-
+cher Maßeinheit die Einzelartikel in einer Bestellmaßeinheit enthalten sind. Dieses Feld hat rein infor-
+mativen Charakter und steht in keinem Bezug zum Preis. Die Inhaltsmaßeinheit wird im BMEcat-Feld 
+CONTENT_UNIT erfasst. 
+Inhaltsmenge pro Bestelleinheit 
+Das BMEcat-Feld NO_CU_PER_OU enthält eine ganze Zahl.  Diese gibt an, wie viele Inhaltsmaß-einheiten 
+in einer Bestellmaßeinheit enthalten sind. 
+4.2.5 Schlagworte / Synonyme: KEYWORD 
+Schlagworte und Synonyme dienen dazu, den Artikel auffindbar zu machen. Dazu werden sie in den 
+Suchbegriffen hinterlegt, die dann später im Produktfindungsprozess vom Suchalgorithmus des KdB mit 
+ausgewertet werden. 
+• Jeder Suchbegriff wird in einem separaten Schlagwortfeld angelegt. 
+• Verwenden Sie hier bitte gängige Begriffe aus der Umgangssprache und/oder Fachsprache. Be i-
+spiele für Synonyme zum Begriff Kugelschreiber:  Kuli, Schreibgerät, Schreiber 
+• Es sollten lediglich Synonyme verwendet werden, die nicht ber eits in den Bezeichnungen 
+und/oder Beschreibungen enthalten sind. 
+• Beachten Sie bitte, dass die Länge auf 50 Zeichen begrenzt ist. 
+4.3 e-Cl@ss 
+eCl@ss ist ein von führenden deutschen Unternehmen erarbeitete Klassifikationssystem. Dieser Stan-
+dard wird für den Informationsaustausch zwischen Lieferanten und Kunden angeboten. Das KdB 
+verwendet diese Klassifizierung anhand von eCl@ss, damit die eingestellten Produkte und Dienstleis-
+tungen von den Nutzern systematisch recherchiert werden können.
+
+[page 15]
+Informationen für Lieferanten 
+ 
+15 
+Stand: 18.11.2019  
+eCl@ss ist gekennzeichnet durch einen vierstufigen, hierarchischen Klassifikationsschlüssel mit ei-
+nem aus ca. 12.000 Begriffen bestehenden Schlagwortregister: 
+Beispiel: Bindemaschine XY, eCl@ass-Nummer: 24321301 
+Produktsegment: 24 Büromaterial 
+Produktfamilie: 2432 Bürotechnik 
+Produktklasse: 243213 Bindesystem 
+Produktgruppe: 24321301 Stanz- und Bindemaschinen 
+Jeder Artikel muss auf der letzten Ebene (Produktgruppe) eingeordnet werden. Die Klassifizierung 
+ist zwingend notwendig. Weitere Informationen sowie die Nutzungsbedingungen zur Verwendung 
+der eCl@ss Nummern können auf der Internetseite www.eclass.de eingesehen werden. 
+Ab dem 29. November 2019 bildet die Grundlage dafür eCl@ss in der Version 10.1.  
+Für Verträge, die bereits vor diesem Stichstand bestanden, müssen KEINE neuen Katalogdaten zug e-
+leitet werden. Diese können in der zuvor zugesendeten Version 5.1 weiter verwendet werden. 
+5 Produktabbildungen 
+5.1 Inhaltliche Anforderungen 
+• Gleiche Bilder dürfen nicht mit mehreren Namen geliefert werden. 
+• Es sollen keine Firmenlogos als Bilder verwendet werden. Stattdessen sollte das Bild eine auss a-
+gekräftige Darstellung des Artikels beinhalten. 
+• Die Produktabbildung sollte immer genau die beschriebene Variante des Artikels wieder -geben. 
+Nur auf diese Art kann sich der Kunde einen realistischen Eindruck darüber machen, ob der b e-
+schriebene Artikel dem angedachten Zweck entspricht. 
+• Es dürfen keine Alternativabbildungen bzw. Platzhalter (z.B. „Keine Abbildung“ oder „No Image“) 
+verwendet werden. 
+5.2 Technische Anforderungen 
+• Die Bilder sind in einer Auflösung von mindestens 600 x 600 zu liefern. 
+6 Bestell- und Lieferprozess im KdB 
+Nach Einstellung der Katalogdaten können die Bedarfsträger Ihre Produkte bzw. Dienstleistungen 
+im „Kaufhaus des Bundes“ ordern. Im Folgenden werden die Eigenheiten des Bestell - und Liefer-
+prozesses kurz erläutert.
+
+[page 16]
+Informationen für Lieferanten 
+ 
+16 
+Stand: 18.11.2019  
+6.1 Kommunikation mit dem Bedarfsträger 
+Die Kommunikation zwischen der Auftragnehmerin und den Bedarfsträgern erfolgt bei elektronischen 
+Bestellungen ausschließlich über das KdB. Hierzu erhalten Sie nach der Installation Ihrer elektroni-
+schen Katalogdaten ein Client-Zertifikat sowie eine Installationsanleitung, um sich mit einem vorgege-
+benem Passwort im Lieferantenbereich des KdB einloggen zu können. 
+Da das Kaufhaus des Bundes keine öffentliche Internetanwendung ist, muss das nicht personen-
+gebundene Zertifikat auf dem jeweiligen Arbeitsplatzcomputer des Lieferantenmitarbeiters/der 
+Lieferantenmitarbeiterin installiert werden, um einen Zugriff auf das Lieferantenportal des KdB zu 
+ermöglichen. 
+ 
+Startseite Lieferantenzugang:
+
+[page 17]
+Informationen für Lieferanten 
+ 
+17 
+Stand: 18.11.2019  
+Auftragseingang: 
+Unter dem Link Aufträge können Sie die neu eingegangene Bestellung mit allen relevanten In-
+formationen einsehen. Auch alle bereits bearbeiteten Aufträge finden Sie in dieser Auflistung. 
+Die Auftragsverwaltung dient Ihnen zum Informationsaustausch mit dem Bedarfsträger. Nach 
+dem Eingang einer Bestellung müssen Sie hier den Auftrag bestätigen bzw. ablehnen. Darüber 
+hinaus können Sie den Stand der Bearbeitung jederzeit aktualisieren. 
+Auftragsdetails:
+
+[page 18]
+Informationen für Lieferanten 
+ 
+18 
+Stand: 18.11.2019  
+ 
+6.2 Abwicklung von Bestellungen 
+Sobald eine Bestellung durch einen Bedarfsträger eingeht, werden Sie per E-Mail benachrichtigt. 
+In der Anlage sind zwei Dateien enthalten: In einer PDF-Datei sind alle wichtigen Auftragsinhalte 
+enthalten (vergleichbar mit einem Bestellschein). Das zusätzliche XML-Dokument können Sie in 
+ein ggf. bei Ihnen vorhandenes Lieferantenmanagementsystem einspeisen. In diesem Fall können 
+Sie die Erfassung von Auftragsinhalten automatisieren. 
+Beispiel E-Mail-Benachrichtigung: 
+ 
+Im Folgenden können Sie die Bestellung im Rahmen Ihrer eigenen Prozesse abwickeln und die Über-
+sendung der Waren an den Bedarfsträger vornehmen. Auch dieser hat die Möglichkeit, im KdB den 
+Wareneingang zu verfolgen und nach der Lieferung den Erhalt der Ware zu bestätigen. 
+6.3 Bestellung über „Dummy-Produkt“ 
+Im KdB können Produkte und Dienstleistungen, die aufgrund von speziellen Anforderungen, Größe oder 
+Komplexität besonders beratungsintensiv sind , mittels sogenannter Dummy-Produkte bestellt werden. 
+Die Bestellung erfolgt auf Grundlage eines zuvor durch Sie erstellten Kostenvorschlags oder durch einen 
+vom Bedarfsträger ausgefüllten EVB-IT-Vertrag.  
+Dazu nimmt der Bedarfsträger im ersten Schritt Kontakt zu Ihnen  auf, um seinen Bedarf de tailliert zu 
+beschreiben. Dabei beachten Sie bitte, dass sich die Bestellung ausschließlich auf solche Leistungen be-
+ziehen darf, die Gegenstand der Rahmenvereinbarung sind.  
+Sie erstellen und übermitteln das erforderliche Zusatzdokument (z.B. den Kostenvoranschlag) via E-Mail 
+an den Bedarfsträger.  
+Bei dem späteren Leistungsabruf des Bedarfsträgers über das KdB wird das Zusatzdokument im Ware n-
+korb hochgeladen und der entsprechende Nettopreis eingetragen. Die hochgeladenen Zusatzdokume n-
+te werden automatisch als Anhang der Bestell-E-Mail hinzugefügt.
+
+[page 19]
+Informationen für Lieferanten 
+ 
+19 
+Stand: 18.11.2019  
+ 
+Ansicht: Beispiel Kostenvoranschlag 
+ 
+ 
+Der Artikel wird über das Einkaufswagen-Symbol in den Warenkorb gelegt. 
+ 
+ 
+Alle weiteren Schritte des Bestellverfahrens laufen im KdB  wie bereits bekannt ab. Die Prüfung und B e-
+stätigung der Bestellung nehmen Sie ebenfalls im KdB vor.
+
+[page 20]
+Informationen für Lieferanten 
+ 
+20 
+Stand: 18.11.2019  
+6.4 Bespielprozess für die Bestellabwicklung 
+In der nachfolgenden Grafik wird beispielhaft ein Bestellprozess dargestellt, der ausgehend von 
+einem behördeninternen ERP-System über das Kaufhaus des Bundes zum Lieferanten weiterge-
+führt wird. 
+ 
+Der Nachrichtenfluss ausgehend von der Behörde zu einem Lieferanten wird ohne Medienbrü-
+che vollelektronisch umgesetzt. Die Bestätigungen oder Ablehnungen von Aufträgen durch den Liefe-
+ranten sowie ggf. gestellte Stornoanträge müssen einstweilen noch in der Weboberfläche des KdB  
+vorgenommen werden. 
+Impressum 
+Beschaffungsamt des BMI – Geschäftsstelle Kaufhaus des Bundes 
+Kontakt 
+Telefon: +49 228 99 610-2280 
+E-Mail: geschaeftsstelle@kdbund.de 
+Adresse 
+Beschaffungsamt des Bundesministeriums des Innern 
+Brühler Str. 3 
+53119 Bonn

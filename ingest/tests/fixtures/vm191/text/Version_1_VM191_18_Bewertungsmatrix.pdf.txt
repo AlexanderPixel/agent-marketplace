@@ -1,0 +1,117 @@
+[page 1]
+Wertung anhand der Preisquotientenmethode
+1. Formel: 
+S = w * L + (1-w) * Pmin/P * Lmax
+2. Erläuterungen zur Formel
+Symbol Bezeichnung Erläuterung
+S Score (Gesamtpunktzahl)
+Mithilfe der o. g. Formel wird der Score, also die Gesamtpunktzahl, ermittelt. 
+Das Angebot mit der höchsten Gesamtpunktzahl (mathematisch gerundet auf 
+zwei Nachkommastellen) erhält den Zuschlag. Bei übereinstimmenden 
+Gesamtpunktzahlen entscheidet das Los (Details: siehe Aufforderung zur 
+Angebotsabgabe).
+w Gewichtungsfaktor für die Leistung Der Gewichtungsfaktor für die Leistung muss einen Wert zwischen 0 und 1 haben.
+L Leistungspunktzahl
+Die Leistungspunktzahl entspricht den tatsächlich erreichten 
+Leistungspunkten des Bieters. Die Ermittlung der tatsächlich erreichten 
+Leistungspunkte erfolgt anhand der Matrix im Abschnitt 3. 
+Die tatsächlich erreichte Leistungspunktzahl des Bieters kann auch den Wert 
+NULL haben.
+Pmin Niedrigster Angebotspreis
+Der niedrigste Angebotspreis fließt als Bruttowert in die Berechnung ein; der 
+Bruttowert enthält keine Abzüge für Steuern, Rabatte, Skonto oder sonstige 
+Nachlässe. Der Wert muss größer als NULL sein.
+P Angebotspreis
+Der Angebotspreis des Bieters fließt als Bruttowert in die Berechnung ein; der 
+Bruttowert enthält keine Abzüge für Steuern, Rabatte, Skonto oder sonstige 
+Nachlässe. Der Wert muss größer als NULL sein.
+Lmax Maximal mögliche Leistungspunkte
+Der Wert enthält die maximal erreichbaren Leistungspunkte. 
+Die Festlegung der maximal möglichen Leistungspunkte erfolgt anhand der 
+Matrix im Abschnitt 3.
+(1-w) Gewichtungsfaktor für den Preis
+Der Gewichtungsfaktor für den Preis wird anhand des Gewichtungsfaktors für 
+die Leistung berechnet. In der Summe ergeben beide Faktoren immer den 
+Wert 1.
+3. Ermittlung der Leistungspunkte
+Lfd. Nr. Leistungskriterium Bewertungsmaßstab Zu erreichende Leistungspunkte Nachweisart 
+Tatsächlich erreichte 
+Leistungspunkte
+(Nicht vom Bieter 
+auszufüllen)
+1
+Das Verfalldatum übertrifft bei Auslieferung / zum 
+Auslieferungsdatum an den Warenempfänger die 
+Mindestanforderung gem. der Anlage 1 der 
+Leistungsbeschreibung (LB).
+Die Mindestanforderung gem. der Anlage 1 der LB wird
+a) erfüllt, aber nicht um mind. 1 Monat übertroffen. = 0 Leistungspunkte
+b) um 1 - 6 Monate übertroffen. = 4 Leistungspunkte 
+c) um 7 - 12 Monate übertroffen. = 12 Leistungspunkte 
+d) um mehr als 12 Monate übertroffen. = 20 Leistungspunkte
+20
+Eigenerklärung des 
+Bieters; hier: 
+Bieterangabe zu dem 
+Verfalldatum
+2 Nachweislich eingerichtetes und zertifiziertes Qualitätsmanagementsystem 
+Ein nachweislich eingerichtetes und zertifiziertes Qualitätsmanagementsystem 
+a) liegt nicht vor. = 0 Leistungspunkte
+b) liegt vor. = 10 Leistungspunkte
+10
+Eigenerklärung des 
+Bieters; hier: 
+Bieterangabe zu einem 
+nachweislich 
+eingerichteten und 
+zertifizierten 
+Qualitätsmanagement-
+system
+3
+Die Grundpackung erfüllt die Mindeststandards für die 
+Bemessung der Recyclingfähigkeit von 
+systembeteiligungspflichtigen Verpackungen gem. § 
+21 Abs. 3 VerpackG.
+Die Grundpackung 
+a) erfüllt diese Mindeststandards nicht. = 0 Leistungspunkte
+b) erfüllt diese Mindeststandards. = 10 Leistungspunkte
+10
+Eigenerklärung des 
+Bieters; hier: 
+Bieterangabe zu den 
+Mindeststandards gem. § 
+21 Abs. 3 VerpackG
+4. Fixe Werte für das Verfahren
+w 0,4
+Lmax 40
+(1-w) 60
+
+[page 2]
+Beispiele
+S = w * L + (1-w) * Pmin/P * Lmax
+Bieter 1 Bieter 2 Bieter 3
+S Score (Gesamtpunktzahl) siehe Formel 20,67 21 19,13
+w Gewichtungsfaktor für die Leistung (0 bis 1) 0,3 0,3 0,3 0,3
+L Leistungspunktzahl (größer 0) Bieterangabe 30 0 20
+Pmin Niedrigster Angebotspreis (größer 0) Bieterangabe 25.000 25.000 25.000
+P Angebotspreis (Brutto, größer 0) Bieterangabe 45.000 25.000 40.000
+Lmax Maximal mögliche Leistungspunkte (größer 1) 30 30 30 30
+(1-w) Gewichtungsfaktor für den Preisterm 0,7 0,7 0,7 0,7
+S = w * L + (1-w) * Pmin/P * Lmax
+Bieter 1 Bieter 2 Bieter 3
+S Score (Gesamtpunktzahl) siehe Formel 22,00 18 19,25
+w Gewichtungsfaktor für die Leistung (0 bis 1) 0,4 0,4 0,4 0,4
+L Leistungspunktzahl (größer 0) Bieterangabe 30 0 20
+Pmin Niedrigster Angebotspreis (größer 0) Bieterangabe 25.000 25.000 25.000
+P Angebotspreis (Brutto, größer 0) Bieterangabe 45.000 25.000 40.000
+Lmax Maximal mögliche Leistungspunkte (größer 1) 30 30 30 30
+(1-w) Gewichtungsfaktor für den Preisterm 0,6 0,6 0,6 0,6
+S = w * L + (1-w) * Pmin/P * Lmax
+Bieter 1 Bieter 2 Bieter 3
+S Score (Gesamtpunktzahl) siehe Formel 19,33 24 19
+w Gewichtungsfaktor für die Leistung (0 bis 1) 0,2 0,2 0,2 0,2
+L Leistungspunktzahl (größer 0) Bieterangabe 30 0 20
+Pmin Niedrigster Angebotspreis (größer 0) Bieterangabe 25.000 25.000 25.000
+P Angebotspreis (Brutto, größer 0) Bieterangabe 45.000 25.000 40.000
+Lmax Maximal mögliche Leistungspunkte (größer 1) 30 30 30 30
+(1-w) Gewichtungsfaktor für den Preisterm 0,8 0,8 0,8 0,8

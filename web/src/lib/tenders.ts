@@ -173,4 +173,5 @@ export interface AgreementDocument {
 export interface TenderCertificate {
   id: string; kind: string; title: Record<string, string>; body: Record<string, string>; need: string; why: string
   issuer: string; validUntil: string | null; validAtDeadline: boolean; demoRequirement: boolean
+  providedBy: { orgId: string; name: string; country: string; role: 'bidder' | 'partner' } | null; equivalence: string | null; country: string | null
 }

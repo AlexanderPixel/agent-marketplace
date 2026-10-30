@@ -14,6 +14,7 @@ export default {
     intelligence: 'Demand intelligence',
   },
   session: { actAs: 'Acting as', language: 'Language', chooseOrg: 'Choose a company to continue' },
+  demo: { reset: 'Reset demo', confirm: 'Reset the demo? Deals, auto-bid runs, signed supplier changes and the activity log are deleted, and the three companies go back to their starting data.', done: 'Demo reset' },
 
   activity: {
     title: 'Agent activity log',
@@ -202,6 +203,7 @@ export default {
     open: 'Open',
   },
   docs: {
+    matrixTitle: 'Certificates the tender requires', matrixHint: '{n} certificates, covered by the consortium together: {split}.', matrixNeed: 'Requirement (BAAINBw)', matrixBy: 'Provided by', matrixCert: 'Certificate', matrixWhy: 'Why it counts', matrixMissing: 'Nobody in the consortium holds it yet', matrixPending: 'Partner not contracted yet', you: 'you',
     title: 'Agreement documents',
     subtitle: 'Drafted from the agreed deal terms in Polish and German. You review, sign and submit.',
     generate: 'Generate documents',

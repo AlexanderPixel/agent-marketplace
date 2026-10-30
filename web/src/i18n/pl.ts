@@ -14,6 +14,7 @@ export default {
     intelligence: 'Prognozy popytu',
   },
   session: { actAs: 'Działasz jako', language: 'Język', chooseOrg: 'Wybierz firmę, aby kontynuować' },
+  demo: { reset: 'Resetuj demo', confirm: 'Zresetować demo? Umowy, przebiegi auto-oferty, podpisane zmiany dostawców i dziennik aktywności zostaną usunięte, a trzy firmy wrócą do danych startowych.', done: 'Demo zresetowane' },
 
   activity: {
     title: 'Dziennik działań agentów',
@@ -202,6 +203,7 @@ export default {
     open: 'Otwórz',
   },
   docs: {
+    matrixTitle: 'Certyfikaty wymagane w przetargu', matrixHint: '{n} certyfikatów, które konsorcjum pokrywa wspólnie: {split}.', matrixNeed: 'Wymaganie (BAAINBw)', matrixBy: 'Dostarcza', matrixCert: 'Certyfikat', matrixWhy: 'Dlaczego się liczy', matrixMissing: 'Nikt w konsorcjum go jeszcze nie ma', matrixPending: 'Partner jeszcze bez umowy', you: 'Ty',
     title: 'Dokumenty umowy',
     subtitle: 'Projekty przygotowane z uzgodnionych warunków, po polsku i po niemiecku. Ty weryfikujesz, podpisujesz i składasz.',
     generate: 'Generuj dokumenty',

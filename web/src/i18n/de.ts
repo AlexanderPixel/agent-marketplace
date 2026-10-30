@@ -14,6 +14,7 @@ export default {
     intelligence: 'Bedarfsprognose',
   },
   session: { actAs: 'Handeln als', language: 'Sprache', chooseOrg: 'Wählen Sie ein Unternehmen' },
+  demo: { reset: 'Demo zurücksetzen', confirm: 'Demo zurücksetzen? Deals, Auto-Bid-Läufe, unterschriebene Lieferantenwechsel und das Aktivitätsprotokoll werden gelöscht; die drei Unternehmen erhalten ihre Startdaten zurück.', done: 'Demo zurückgesetzt' },
 
   activity: {
     title: 'Agenten-Aktivitätsprotokoll',
@@ -202,6 +203,7 @@ export default {
     open: 'Öffnen',
   },
   docs: {
+    matrixTitle: 'Von der Ausschreibung geforderte Zertifikate', matrixHint: '{n} Zertifikate, gemeinsam vom Konsortium abgedeckt: {split}.', matrixNeed: 'Anforderung (BAAINBw)', matrixBy: 'Erbracht von', matrixCert: 'Zertifikat', matrixWhy: 'Warum es zählt', matrixMissing: 'Noch kein Konsortialmitglied hat es', matrixPending: 'Partner noch ohne Vertrag', you: 'Sie',
     title: 'Vertragsdokumente',
     subtitle: 'Aus den vereinbarten Konditionen entworfen, auf Polnisch und Deutsch. Sie prüfen, unterschreiben und reichen ein.',
     generate: 'Dokumente erzeugen',

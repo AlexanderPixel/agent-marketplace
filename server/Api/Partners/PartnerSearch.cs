@@ -23,6 +23,9 @@ public class PartnerSearch(AppDb db)
 {
     public const string ExperienceGate = "Experience requirement";
 
+    /// <summary>Certificates a company shows in its public listing (titles only).</summary>
+    private static readonly HashSet<string> TenderCertificatesKinds = ["iso9001", "aqap2110", "iso14001", "iatf16949", "iso3834", "iso45001", "iso27001"];
+
     private static readonly HashSet<string> EuEea =
         ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "NO", "IS", "LI"];
 
@@ -38,7 +41,7 @@ public class PartnerSearch(AppDb db)
             var p = profiles.FirstOrDefault(x => x.OrgId == o.Id) ?? new CompanyProfile { OrgId = o.Id };
             var product = keyword is null ? p.Products.FirstOrDefault() : p.Products.FirstOrDefault(x => x.Keywords.Any(k => keyword.Contains(k)));
             return new PartnerListing(o.Id, o.Name, o.Country, o.City, o.Description,
-                p.Documents.Where(d => d.Kind is "iso9001" or "aqap2110").Select(d => d.Title).ToList(),
+                p.Documents.Where(d => TenderCertificatesKinds.Contains(d.Kind)).Select(d => d.Title).ToList(),
                 p.Products.Select(x => x.Name).ToList(),
                 product?.Capacity, product?.Unit, product?.LeadTimeDays,
                 p.Documents.Any(d => d.Kind == "trade-register") && p.Documents.Any(d => d.Kind == "criminal-record"));

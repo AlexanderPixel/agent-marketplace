@@ -11,6 +11,7 @@
   "dependencies": {
     "@fontsource/ibm-plex-sans": "5.2.8",
     "@primeuix/themes": "1.2.5",
+    "marked": "^15.0.12",
     "primeicons": "7.0.0",
     "primevue": "4.5.5",
     "vue": "3.5.43",

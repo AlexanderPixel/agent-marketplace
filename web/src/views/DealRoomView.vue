@@ -79,7 +79,9 @@ async function approve() {
       </div>
       <div class="outcome-actions">
         <Button v-if="deal.status === 'AwaitingApproval'" :label="t('deals.approve')" icon="pi pi-check" :loading="approving" @click="approve" />
-        <Button v-if="deal.status === 'Closed'" v-tooltip="t('qual.soon')" :label="t('deals.documents')" icon="pi pi-file-edit" disabled />
+        <RouterLink v-if="deal.status === 'Closed'" :to="`/deals/${deal.id}/documents`">
+          <Button :label="t('deals.documents')" icon="pi pi-file-edit" />
+        </RouterLink>
       </div>
     </div>
 

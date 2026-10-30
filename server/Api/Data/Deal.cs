@@ -1,3 +1,5 @@
+using Marketplace.Documents;
+
 namespace Marketplace.Data;
 
 public enum DealStatus { Negotiating, AwaitingApproval, Closed, Failed }
@@ -49,4 +51,6 @@ public class Deal
     public DateTimeOffset CreatedAt { get; set; }
     public DateTimeOffset? ClosedAt { get; set; }
     public string? ApprovedBy { get; set; }
+    public List<AgreementDocument> Documents { get; set; } = [];
+    public DateTimeOffset? DocumentsAt { get; set; }
 }

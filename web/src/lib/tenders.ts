@@ -156,8 +156,15 @@ export interface Deal {
   bidderOrgId: string; partnerOrgId: string; matchScore: number; dealType: string; status: DealStatus; autonomous: boolean
   outcome: string | null; unitPrice: number | null; quantity: number | null; delivery: string | null; offers: Offer[]
   createdAt: string; closedAt: string | null; approvedBy: string | null
+  documents: AgreementDocument[]; documentsAt: string | null
 }
 export interface Party { name: string; country: string; city?: string }
 export const dealSeverity: Record<DealStatus, string> = { Negotiating: 'info', AwaitingApproval: 'warn', Closed: 'success', Failed: 'danger' }
 export const eur = (n: number | null | undefined, digits = 2) =>
   n == null ? '—' : new Intl.NumberFormat(session.language, { style: 'currency', currency: 'EUR', maximumFractionDigits: digits }).format(n)
+
+export interface AgreementDocument {
+  id: string; kind: string; title: Record<string, string>; body: Record<string, string>
+  signers: { party: string; name: string; signature: 'qes' | 'text' | 'handwritten' }[]
+  purpose: string; submitTo: string; submitWithBid: boolean
+}

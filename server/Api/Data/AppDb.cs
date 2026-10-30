@@ -65,6 +65,7 @@ public class AppDb(DbContextOptions<AppDb> options, OrgContext org) : DbContext(
         {
             e.Property(d => d.Status).HasConversion<string>();
             Json(e.Property(d => d.Offers));
+            Json(e.Property(d => d.Documents));
             e.HasQueryFilter(d => d.BidderOrgId == CurrentOrgId || d.PartnerOrgId == CurrentOrgId);
         });
     }

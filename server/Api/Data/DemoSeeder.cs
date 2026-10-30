@@ -24,6 +24,7 @@ public static class DemoSeeder
             db.Organizations.AddRange(DemoOrgs.All());
             db.Profiles.AddRange(DemoProfiles.All());
             db.Mandates.AddRange(DemoProfiles.Mandates());
+            db.Boms.Add(DemoProfiles.Bom());
             await db.SaveChangesAsync();
         }
 

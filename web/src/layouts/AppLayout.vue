@@ -17,7 +17,12 @@ const showActivity = ref(false)
 const health = ref<{ ai: boolean; model: string | null } | null>(null)
 
 const nav = computed(() => [
-  { items: [{ to: '/', icon: 'pi pi-home', label: t('nav.home') }] },
+  {
+    items: [
+      { to: '/', icon: 'pi pi-home', label: t('nav.home') },
+      { to: '/profile', icon: 'pi pi-building', label: t('nav.profile') },
+    ],
+  },
   {
     title: t('nav.groupBid'),
     items: [

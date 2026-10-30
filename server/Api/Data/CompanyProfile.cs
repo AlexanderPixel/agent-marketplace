@@ -7,7 +7,15 @@ public class CompanyProfile
     public List<CompanyDocument> Documents { get; set; } = [];
     public List<CompanyProduct> Products { get; set; } = [];
     public List<OwnershipLink> Ownership { get; set; } = [];
+    public List<StaffMember> Staff { get; set; } = [];
 }
+
+/// <summary>An employee whose CV can go into a wykaz osób. Credentials are owned by the person, not the company.</summary>
+public record StaffMember(
+    string Id, string Name, string Role, int YearsExperience, string Education, List<string> Languages,
+    List<StaffCredential> Credentials, List<string> Projects, string Availability);
+
+public record StaffCredential(string Title, string Issuer, DateOnly? ValidUntil);
 
 /// <param name="Kind">Evidence kind used for matching, e.g. trade-register, criminal-record, iso9001, aqap2110, reference.</param>
 public record CompanyDocument(

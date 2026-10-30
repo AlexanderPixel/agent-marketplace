@@ -45,6 +45,7 @@ app.MapDealEndpoints();
 app.MapComplianceEndpoints();
 app.MapIntelligenceEndpoints();
 app.MapReachEndpoints();
+app.MapProfileEndpoints();
 app.MapFallbackToFile("index.html");
 
 app.Run();

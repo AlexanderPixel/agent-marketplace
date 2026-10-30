@@ -150,7 +150,7 @@ RULES: tuple[Rule, ...] = (
     Rule("product", PPB,
          r"Angebotspreis je 1 Einheit \((?P<a>Vertragsjahr [^)]*?) ?\)\s*in Euro ohne Ust\. mit zwei "
          r"Nachkommastellen\s*Angebotspreis je 1 Einheit \((?P<b>Vertragsjahr [^)]*?) ?\)",
-         "Je Los zwei Nettopreise je Einheit in Euro (zwei Nachkommastellen) angeben: {a} und {b}"),
+         "Je Los zwei Nettopreise je Einheit in Euro (zwei Nachkommastellen) angeben: {a} sowie {b}"),
     Rule("product", RV,
          r"Abweichungen von den in der Leistungsbeschreibung\s+aufgestellten\s+Leistungsanforderungen sind zulässig, "
          r"wenn.{0,250}?die abweichenden Produkte dürfen nur nach ausdrücklicher\s+Zustimmung des AG geliefert werden",
@@ -244,7 +244,7 @@ RULES: tuple[Rule, ...] = (
          r"jeweiligen\s+Lieferdatum vollständig\s+erfolgt sein",
          lambda m: ((f"Mindestabnahmemenge in zwei Abrufen (1. Abruf im {_num(m['a'])}, 2. Abruf im {_num(m['b'])}); "
                      if m["a"] else "")
-                    + "jeder Abruf erfolgt in einem Einzelauftrag; Teillieferungen sind zulässig, die volle Menge muss "
+                    + "jede Abrufmenge wird in einem Abruf bestellt; Teillieferungen sind zulässig, die volle Menge muss "
                       "aber bis zum Liefertermin geliefert sein")),
     Rule("delivery", LB,
          r"Lieferschein mit folgenden Angaben zu erstellen:\s*(?P<f>(?:-\s*[^\n]+\n?){2,8}?)\s*Der Lieferschein ist in "
@@ -271,9 +271,11 @@ RULES: tuple[Rule, ...] = (
          "sowie unverzüglich bei 100 %"),
     # ---- catalogue
     Rule("catalogue", RV,
-         r"unverzüglich nach\s+Abschluss der RV Daten zur Erstellung elektronischer Bestellkataloge",
-         "Unverzüglich nach Vertragsschluss Katalogdaten für den elektronischen Bestellkatalog (Kaufhaus des Bundes) "
-         "liefern und bei Vertragsänderungen pflegen"),
+         r"(?:unter der E ?-Mail-Adresse\s+(?P<mail>[\w.-]+@[\w.-]+)\s+)?unverzüglich nach\s+Abschluss der RV Daten "
+         r"zur Erstellung elektronischer Bestellkataloge",
+         lambda m: ("Unverzüglich nach Vertragsschluss Katalogdaten für den elektronischen Bestellkatalog (Kaufhaus des "
+                    "Bundes) liefern" + (f" (an {m['mail']})" if m["mail"] else "")
+                    + " und bei Vertragsänderungen pflegen")),
     Rule("catalogue", LHB,
          r"Die Katalogdaten müssen im Format (?P<f>BMECat [\d.]+) bereitgestellt werden",
          lambda m: f"Katalogdaten im Format {_num(m['f']).replace('BMECat', 'BMEcat')} liefern (alternativ über die "
@@ -308,8 +310,25 @@ RULES: tuple[Rule, ...] = (
          "Vermögensschäden, Nachweis auf Anforderung"),
     Rule("legal", RV,
          r"Verzug, beträgt die Vertragsstrafe für jeden Werktag des Verzugs (?P<d>[\d,]+ ?%) des Netto-\s*"
-         r"Abrechnungspreises\. Die Gesamtsumme der zu zahlenden Vertragsstrafen\s+ist auf (?P<cap>[\d,]+ ?%)",
-         "Vertragsstrafe bei Lieferverzug {d} des Netto-Abrechnungspreises je Werktag, insgesamt max. {cap}"),
+         r"Abrechnungspreises\. Die Gesamtsumme der zu zahlenden Vertragsstrafen\s+ist auf (?P<cap>[\d,]+ ?%)"
+         r"(?: des Netto-\s*Abrechnungspreises beschränkt\. Die Vertragsstrafe\s+wird ab der (?P<start>[^.]{3,40}?) "
+         r"nach Ablauf des vereinbarten\s+Leistungstermins berechnet)?",
+         lambda m: (f"Vertragsstrafe bei Lieferverzug {_num(m['d'])} des Netto-Abrechnungspreises je Werktag, insgesamt "
+                    f"max. {_num(m['cap'])}"
+                    + (f"; berechnet ab der {_num(m['start'])} nach dem Liefertermin" if m["start"] else ""))),
+    Rule("legal", RV,
+         r"Nicht als höhere Gewalt anzusehen sind insbesondere (?P<x>[^.]{10,250}?)\.\s",
+         lambda m: f"Keine höhere Gewalt (Lieferpflicht bleibt): {_num(m['x'])}"),
+    Rule("legal", RV,
+         r"Der Besteller ist berechtigt, einen Einzelauftrag im Vorfeld der Leistungserbringung \(bis\s+zu "
+         r"(?P<w>\w+ Wochen) vor dem vereinbarten Leistungstermin\) zurückzunehmen\. Ansprüche\s+des AN",
+         "Der Besteller darf Einzelaufträge bis {w} vor dem Liefertermin ohne Ansprüche des AN zurücknehmen"),
+    Rule("legal", RV,
+         r"endet mit Ausschöpfung der Höchstmenge.{0,80}?spätestens jedoch (?P<n>\d+ Jahre?) nach\s+Inkrafttreten"
+         r".{0,700}?einmal um (?P<opt>\d+ Jahre?) \(bis maximal (?P<max>\d+ Jahre?)\) verlängert werden\. Die "
+         r"Verlängerungsoption ist spätestens\s+(?P<f>\w+ Monate) vor Ablauf",
+         "Laufzeit bis zur Ausschöpfung der Höchstmenge, spätestens {n}; der AG kann einmal um {opt} verlängern "
+         "(max. {max}; Option spätestens {f} vor Ablauf, keine Pflicht zur Ausübung)"),
     Rule("legal", RV,
          r"Die Höhe der Vertragsstrafe beträgt für jeden Verstoß (?P<p>[\d,]+ ?%) der\s+Abrechnungssumme",
          "Vertragsstrafe {p} der Netto-Abrechnungssumme je Verstoß gegen militärische Sicherheit, Vertraulichkeit, "
@@ -325,8 +344,9 @@ RULES: tuple[Rule, ...] = (
          "Keine Abnahmepflicht des AG über die Mindestabnahmemengen hinaus; die Höchstmenge ist nicht garantiert"),
     Rule("legal", RV,
          r"In den Preisangaben sind sämtliche\s+Leistungen \((?P<inc>[^)]+)\) enthalten",
-         lambda m: (f"Festpreise für die gesamte Laufzeit inkl. {_num(m['inc']).replace('/', ', ')}; Preisanpassung "
-                    f"nur bei gesetzlichen/behördlichen oder nachweisbaren unvorhersehbaren Marktpreisänderungen")),
+         lambda m: (f"Die Preise im Preis- und Produktblatt decken alle Leistungen ab "
+                    f"({_num(m['inc']).replace('/', ', ')}); Preisanpassung nur bei gesetzlichen/behördlichen oder "
+                    f"nachweisbaren unvorhersehbaren Preisänderungen auf Hersteller- oder Großhandelsebene")),
     Rule("legal", RV,
          r"Die Verjährungsfrist für Mängelansprüche für die Produkte dieser RV beträgt (?P<n>\d+ Monate)",
          "Gewährleistung (Verjährung von Mängelansprüchen) {n} ab Lieferung; Nacherfüllungskosten trägt der AN"),
@@ -357,6 +377,11 @@ RULES: tuple[Rule, ...] = (
          r"benennt er für den\s+Zeitraum von (?P<d>Montag bis Freitag), jeweils von (?P<t>[\d:]+ Uhr bis [\d:]+ Uhr), "
          r"eine/n feste/n",
          "Feste/n, ständig erreichbare/n Ansprechpartner/in plus Vertretung benennen ({d}, {t})"),
+    Rule("other", AUFF,
+         r"Soweit sich aus den Vergabeunterlagen Abweichungen zu den in dieser Auffor-? ?derung zur Angebotsabgabe "
+         r"festgelegten Bedingungen ergeben, haben die An-? ?gaben in der Aufforderung zur Angebotsabgabe Vorrang",
+         "Bei Widersprüchen zwischen den Vergabeunterlagen gehen die Bedingungen der Aufforderung zur Angebotsabgabe "
+         "vor"),
 )
 
 
@@ -380,15 +405,35 @@ def _russia(ctx: TenderContext) -> list[dict]:
     if not hit:
         return []
     doc, page, m = hit
-    share = next((s for _, t in _pages(doc) for s in _rx(r"mehr\s+als (\d+ ?%) des Auftragswerts").findall(t)), None)
+    texts = [t for _, t in _pages(doc)]
+    share = next((s for t in texts for s in _rx(r"mehr\s+als (\d+ ?%) des Auftragswerts").findall(t)), None)
+    owner = next((s for t in texts for s in _rx(r"Anteilen im Umfang von mehr als (\d+ ?%)").findall(t)), None)
+    stake = f", über {_num(owner)} russische Beteiligung" if owner else ", russische Beteiligung"
     sub = (f"; das gilt auch für Unterauftragnehmer/Lieferanten mit mehr als {_num(share)} des Auftragswerts, "
            f"während der gesamten Vertragslaufzeit") if share else ""
     return [_item("eligibility", f"Kein Russland-Bezug nach Art. {m['art']} VO (EU) {m['vo']} (russische "
-                  f"Staatsangehörigkeit/Niederlassung, >50 % russische Beteiligung, Handeln in deren Auftrag){sub}",
+                  f"Staatsangehörigkeit/Niederlassung{stake}, Handeln in deren Auftrag){sub}",
                   doc, page, m.group(0))]
 
 
-_STATE = re.compile(r"^\s*\d{1,2}\.\s+([A-ZÄÖÜ][^\n(,.]*?)\s*(?:\(|,|\.|$)", re.M)
+_STATE = re.compile(r"^\s*\d{1,2}\.\s+(?P<short>[A-ZÄÖÜ][^\n(,.]*?)\s*(?:\((?P<long>[^)\n]+)\))?[ \t]*[,.]?[ \t]*$"
+                    r"(?P<extra>(?:\n(?!\s*\d{1,2}\.\s)[^\n]*)*)", re.M)
+# short names that denote more than one state: keep the official long form ("Korea" = DVR Korea, not Republic of Korea)
+_AMBIGUOUS_STATE = re.compile(r"^(Korea|Kongo|Guinea)$")
+
+
+def _states(text: str) -> list[str]:
+    out = []
+    for m in _STATE.finditer(text):
+        name = _num(m["short"])
+        if m["long"] and _AMBIGUOUS_STATE.match(name):
+            name = f"{name} ({_num(m['long'])})"
+        regions = re.findall(r"einschließlich\s+(?:Sonderverwaltungsregion\s*\(SVR\)\s*)?([A-ZÄÖÜ][\wäöüß-]+)",
+                             m["extra"] or "")
+        if regions:
+            name += f" (inkl. {', '.join(regions)})"
+        out.append(name)
+    return out
 
 
 def _state_list(ctx: TenderContext) -> list[dict]:
@@ -403,7 +448,7 @@ def _state_list(ctx: TenderContext) -> list[dict]:
     for d in _docs(ctx, STAATEN):
         for _, text in _pages(d):
             if _rx(r"Staatenliste").search(text):
-                states += [_num(s) for s in _STATE.findall(text)]
+                states += _states(text)
         if states:
             break
     tail = f" – {len(states)} Staaten: {', '.join(states)}" if states else ""
@@ -568,13 +613,37 @@ def _spec_mismatch(ctx: TenderContext) -> list[dict]:
                   f"obwohl Medizinprodukte beschafft werden – Geltung per Bieterfrage klären", doc, page, m.group(0))]
 
 
+_LV_ROW_DATE = re.compile(r"^C\)\s*\d{5}\b[^\n]*?\b(\d{2}\.\d{2}\.(\d{4}))\b", re.M)
+
+
+def _date_mismatch(ctx: TenderContext) -> list[dict]:
+    """Flag a Leistungsverzeichnis whose required delivery date (column "Lt, gef") lies before the first call-off
+    announced in the Hinweisblatt — the bidder must know which date binds."""
+    abruf = _search(ctx, HINWEIS, r"Die 1\. Abrufmenge wird im (?P<a>[^;]{3,40}?) abgerufen")
+    if not abruf:
+        return []
+    first_year = re.search(r"\d{4}", abruf[2]["a"])
+    for doc in _docs(ctx, LV):
+        for page, text in _pages(doc):
+            if not _rx(r"Lt, gef").search(text):
+                continue
+            m = _LV_ROW_DATE.search(text)
+            if not (m and first_year and int(m.group(2)) < int(first_year.group(0))):
+                continue
+            dates = sorted({d for _, t in _pages(doc) for d, _ in _LV_ROW_DATE.findall(t)})
+            return [_item("other", f"Leistungsverzeichnis nennt als geforderten Liefertermin {', '.join(dates)}, laut "
+                          f"Hinweisblatt erfolgt der 1. Abruf erst im {_num(abruf[2]['a'])} – verbindlichen Termin per "
+                          f"Bieterfrage klären", doc, page, m.group(0))]
+    return []
+
+
 COMPOSITES: dict[str, Callable[[TenderContext], list[dict]]] = {
     "eligibility": lambda ctx: _russia(ctx) + _state_list(ctx),
     "product": lambda ctx: _lots(ctx) + _datasheet(ctx),
     "delivery": _delivery_places,
     "catalogue": _catalogue_limits,
     "invoicing": _einvoice,
-    "other": _spec_mismatch,
+    "other": lambda ctx: _spec_mismatch(ctx) + _date_mismatch(ctx),
 }
 # where composite items go within their category: before (True) or after (False) the simple rules
 _COMPOSITE_FIRST = {"eligibility": False, "product": True, "delivery": False, "catalogue": False,

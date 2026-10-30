@@ -30,7 +30,15 @@ public static class BuyEuropean
     [
         ("Kalashnikov Concern JSC", "RU"), ("Uralvagonzavod", "RU"), ("Promtekhnologiya LLC", "RU"), ("JSC Kurganmashzavod", "RU"),
         ("Shaanxi Baoji Special Vehicles", "CN"),
+        // Fictional, for the demo: a listed party that is already in the BOM.
+        ("Severo-Ural Steel Shot LLC", "RU"),
     ];
+
+    /// <summary>Listed parties: no contracts, orders, payments or other resources may go to them (EU asset freeze).</summary>
+    public static bool Sanctioned(string name) => SanctionsList.Any(s => s.Name.Equals(name.Trim(), StringComparison.OrdinalIgnoreCase));
+
+    public const string SanctionsDetail =
+        "On the EU consolidated sanctions list (asset freeze). No orders, payments or other resources may go to this party; stop and replace the supplier.";
 
     public static decimal EuContent(IEnumerable<BomComponent> components)
     {
@@ -46,9 +54,12 @@ public static class BuyEuropean
     }
 
     /// <summary>Every single swap of a non-eligible supplier to a qualified EU alternative, cheapest way past 65% first.</summary>
+    /// <summary>The note on the alternative a signed change replaced; swapping back to it is an undo.</summary>
+    public const string PreviousSupplier = "Previous supplier";
+
     public static List<SwapSuggestion> Swaps(BillOfMaterials bom) => bom.Components
         .Where(c => !Eligible.Contains(c.Country))
-        .SelectMany(c => c.Alternatives.Where(a => Eligible.Contains(a.Country)).Select(a =>
+        .SelectMany(c => c.Alternatives.Where(a => Eligible.Contains(a.Country) && !Sanctioned(a.Supplier)).Select(a =>
         {
             var swapped = bom.Components.Select(x => x.Id == c.Id ? x with { Supplier = a.Supplier, Country = a.Country, CostEur = a.CostEur } : x);
             var pct = EuContent(swapped);
@@ -72,7 +83,7 @@ public static class BuyEuropean
         .Select(p =>
         {
             var hit = SanctionsList.FirstOrDefault(s => s.Name.Equals(p.Name, StringComparison.OrdinalIgnoreCase));
-            return new SanctionHit(p.Name, p.Country, hit != default, hit != default ? "Listed: do not contract." : "No match.");
+            return new SanctionHit(p.Name, p.Country, hit != default, hit != default ? SanctionsDetail : "No match.");
         })
         .ToList();
 }

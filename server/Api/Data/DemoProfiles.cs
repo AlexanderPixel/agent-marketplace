@@ -53,6 +53,9 @@ public static class DemoProfiles
             new("bolt", "Centre bolt M16 with nut", "Norm Cıvata", "TR", 6, []),
             new("clips", "Rebound clips", "Kuźnia Jawor S.A.", "PL", 5, []),
             new("packaging", "Packaging and pallet", "Drewpal sp. z o.o.", "PL", 4, []),
+            // Demo: a supplier on the EU sanctions list (fictional), to show the screen catching it.
+            new("shot", "Shot-peening media S330", "Severo-Ural Steel Shot LLC", "RU", 3,
+                [new("Vulkan Inox GmbH", "DE", 3.4m, "Same grade S330; EN ISO 11124")]),
         ],
     };
 

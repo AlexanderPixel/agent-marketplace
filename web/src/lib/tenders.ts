@@ -168,3 +168,9 @@ export interface AgreementDocument {
   signers: { party: string; name: string; signature: 'qes' | 'text' | 'handwritten' }[]
   purpose: string; submitTo: string; submitWithBid: boolean
 }
+
+/** A copy of one of the company's own certificates the tender asks for (PL text, DE working translation). */
+export interface TenderCertificate {
+  id: string; kind: string; title: Record<string, string>; body: Record<string, string>; need: string; why: string
+  issuer: string; validUntil: string | null; validAtDeadline: boolean; demoRequirement: boolean
+}

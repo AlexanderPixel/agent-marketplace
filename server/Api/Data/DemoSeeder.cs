@@ -6,14 +6,15 @@ namespace Marketplace.Data;
 public static class DemoSeeder
 {
     /// <summary>
-    /// Recreates the schema when <c>Db:ResetOnStart</c> is on (the default for the demo: no migrations to run,
-    /// every start is a clean demo), then seeds the demo organisations.
+    /// Recreates the schema when <c>Db:ResetOnStart</c> is on (off by default, so bid history and award results survive
+    /// restarts; turn it on for a clean demo or after a schema change, since there are no migrations), then seeds the demo
+    /// organisations into an empty database.
     /// </summary>
     public static async Task PrepareAsync(IServiceProvider services, IConfiguration config)
     {
         using var scope = services.CreateScope();
         var db = scope.ServiceProvider.GetRequiredService<AppDb>();
-        if (config.GetValue("Db:ResetOnStart", true))
+        if (config.GetValue("Db:ResetOnStart", false))
         {
             await db.Database.EnsureDeletedAsync();
         }

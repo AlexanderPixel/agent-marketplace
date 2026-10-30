@@ -1,3 +1,4 @@
+using Marketplace.Telegram;
 using Marketplace.Activity;
 using Marketplace.Compliance;
 using Marketplace.Data;
@@ -12,6 +13,12 @@ public static class ComplianceEndpoints
 
     public record ProductRequest(string Product);
 
+    public record DecisionRequest(bool Sign);
+
+    public record SpecRequest(string Document, string Text);
+
+    public record SpecApplyRequest(string Document, string? Product, List<ImportedComponent> Components);
+
     /// <param name="Country">ISO 3166 alpha-2 code of where the part comes from; this decides whether it counts as EU content.</param>
     public record ComponentRequest(string Name, string Supplier, string Country, decimal CostEur);
 
@@ -19,7 +26,7 @@ public static class ComplianceEndpoints
     {
         var api = app.MapGroup("/api/compliance");
 
-        api.MapGet("/", async (AppDb db, OrgContext org) =>
+        api.MapGet("/", async (AppDb db, OrgContext org, TelegramBot bot) =>
         {
             var orgId = org.Require();
             var me = await db.Organizations.FirstAsync(o => o.Id == orgId);
@@ -40,6 +47,7 @@ public static class ComplianceEndpoints
             var screened = (bom?.Components.Select(c => (c.Supplier, c.Country)) ?? [])
                 .Concat(partners.Select(p => (p.Name, p.Country)));
             var euContent = bom is null ? 0 : BuyEuropean.EuContent(bom.Components);
+            var sanctions = BuyEuropean.Screen(screened);
             return new
             {
                 threshold = BuyEuropean.Threshold,
@@ -49,10 +57,12 @@ public static class ComplianceEndpoints
                 components = bom is null ? [] : BuyEuropean.Components(bom),
                 swaps = bom is null ? [] : BuyEuropean.Swaps(bom),
                 control,
-                sanctions = BuyEuropean.Screen(screened),
-                safeEligible = euContent >= BuyEuropean.Threshold && control.All(c => c.EuControlled),
+                sanctions,
+                safeEligible = euContent >= BuyEuropean.Threshold && control.All(c => c.EuControlled) && !sanctions.Any(s => s.Hit),
+                sanctionsOk = !sanctions.Any(s => s.Hit),
                 contentOk = euContent >= BuyEuropean.Threshold,
                 controlOk = control.All(c => c.EuControlled),
+                telegram = bot.Connected,
             };
         });
 
@@ -63,20 +73,68 @@ public static class ComplianceEndpoints
             var component = bom?.Components.FirstOrDefault(c => c.Id == body.ComponentId);
             var alt = component?.Alternatives.FirstOrDefault(a => a.Supplier == body.Supplier);
             if (bom is null || component is null || alt is null) return TypedResults.NotFound();
+            if (BuyEuropean.Sanctioned(alt.Supplier)) return TypedResults.BadRequest($"{alt.Supplier} is on the EU sanctions list: you cannot buy from them.");
 
             var before = BuyEuropean.EuContent(bom.Components);
-            var old = new BomAlternative(component.Supplier, component.Country, component.CostEur, "Previous supplier");
+            var old = new BomAlternative(component.Supplier, component.Country, component.CostEur, BuyEuropean.PreviousSupplier);
             bom.Components = bom.Components
                 .Select(c => c.Id == component.Id
-                    ? c with { Supplier = alt.Supplier, Country = alt.Country, CostEur = alt.CostEur, Alternatives = [.. c.Alternatives.Where(a => a != alt), old] }
+                    // Alternatives keep their original notes, so swapping back (undo) loses nothing.
+                    ? c with { Supplier = alt.Supplier, Country = alt.Country, CostEur = alt.CostEur, Change = null,
+                        Alternatives = c.Alternatives.Any(a => a.Supplier == old.Supplier) ? c.Alternatives : [.. c.Alternatives, old] }
                     : c)
                 .ToList();
             await db.SaveChangesAsync();
             var after = BuyEuropean.EuContent(bom.Components);
             await log.WriteAsync(orgId, "Compliance agent",
                 $"Switched {component.Name} from {old.Supplier} ({old.Country}) to {alt.Supplier} ({alt.Country}): EU content {before}% → {after}%",
-                $"A person accepted the suggestion. Cost change {alt.CostEur - old.CostEur:+0.00;-0.00} € per set; SAFE/EDIP need at least {BuyEuropean.Threshold}% of component cost from the EU, EEA or Ukraine.");
+                $"{(alt.Note == BuyEuropean.PreviousSupplier ? "A person undid an earlier swap." : "A person accepted the suggestion.")} Cost change {alt.CostEur - old.CostEur:+0.00;-0.00} € per set; SAFE/EDIP need at least {BuyEuropean.Threshold}% of component cost from the EU, EEA or Ukraine.");
             return TypedResults.Ok(new { before, after });
+        });
+
+        // A supplier change goes through a person's signature: drafts first, the BOM changes only on "Sign".
+        api.MapPost("/changes", async Task<IResult> (SwapRequest body, SupplierChanges changes) =>
+            await changes.PrepareAsync(body.ComponentId, body.Supplier) is { } change ? TypedResults.Ok(change) : TypedResults.NotFound());
+
+        api.MapPost("/changes/{id:guid}/decide", async (Guid id, DecisionRequest body, SupplierChanges changes, OrgContext org) =>
+        {
+            org.Require();
+            return TypedResults.Ok(new { message = await changes.DecideAsync(id, body.Sign, "You in the app") });
+        });
+
+        // The spec agent reads an uploaded specification; a person reviews the result before it replaces the BOM.
+        api.MapPost("/import/preview", async Task<IResult> (SpecRequest body, SpecImporter importer, AppDb db, OrgContext org, ActivityLog log) =>
+        {
+            var orgId = org.Require();
+            if (string.IsNullOrWhiteSpace(body.Text)) return TypedResults.BadRequest("The document is empty.");
+            var language = (await db.Organizations.FirstAsync(o => o.Id == orgId)).Language;
+            var result = await importer.ReadAsync(body.Document, body.Text, language);
+            await log.WriteAsync(orgId, "Spec agent",
+                $"Read {body.Document}: found {result.Components.Count} components, {result.Components.Count(c => c.Complete)} complete",
+                $"Read only the uploaded specification ({(result.Method == "ai" ? "AI model" : "table reader")}); every value cites its row in the document. " +
+                "Nothing is changed until a person confirms the import.");
+            return TypedResults.Ok(result);
+        });
+
+        api.MapPost("/import/apply", async Task<IResult> (SpecApplyRequest body, AppDb db, OrgContext org, ActivityLog log) =>
+        {
+            var orgId = org.Require();
+            var rows = body.Components.Where(c => !string.IsNullOrWhiteSpace(c.Supplier) && c.Country is { Length: 2 } && c.CostEur > 0).ToList();
+            if (rows.Count == 0) return TypedResults.BadRequest("No complete components to import.");
+            var components = rows.Select(c => new BomComponent($"c-{Guid.NewGuid():N}"[..10], c.Name.Trim(), c.Supplier!.Trim(), c.Country!.ToUpperInvariant(), c.CostEur!.Value,
+                c.Alternatives.Where(a => a.Country is { Length: 2 } && a.CostEur > 0 && !BuyEuropean.Sanctioned(a.Supplier))
+                    .Select(a => new BomAlternative(a.Supplier.Trim(), a.Country!.ToUpperInvariant(), a.CostEur!.Value, a.Note)).ToList(),
+                Source: new ComponentSource(body.Document, c.Location, c.Quote))).ToList();
+
+            var bom = await db.Boms.FirstOrDefaultAsync();
+            if (bom is null) db.Boms.Add(bom = new BillOfMaterials { OrgId = orgId });
+            if (!string.IsNullOrWhiteSpace(body.Product)) bom.Product = body.Product.Trim();
+            bom.Components = components;
+            await db.SaveChangesAsync();
+            await log.WriteAsync(orgId, "Spec agent",
+                $"Replaced the bill of materials of {bom.Product} with {components.Count} components from {body.Document}: EU content {BuyEuropean.EuContent(components)}%",
+                "A person reviewed the extracted components and confirmed the import. Each component keeps its source row in the specification.");
+            return TypedResults.Ok(new { imported = components.Count });
         });
 
         // The company maintains its own BOM: product name, parts, suppliers and where each part comes from.
@@ -134,5 +192,6 @@ public static class ComplianceEndpoints
         : string.IsNullOrWhiteSpace(c.Supplier) ? "Supplier is required."
         : c.Country is null || c.Country.Length != 2 || !c.Country.All(char.IsAsciiLetter) ? "Country must be a two-letter ISO code."
         : c.CostEur <= 0 ? "Cost must be above zero."
+        : BuyEuropean.Sanctioned(c.Supplier) ? $"{c.Supplier.Trim()} is on the EU sanctions list: you cannot buy from them."
         : null;
 }

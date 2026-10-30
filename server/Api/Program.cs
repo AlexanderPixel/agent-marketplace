@@ -1,3 +1,4 @@
+using Marketplace.Compliance;
 using System.Text.Json.Serialization;
 using Marketplace.Activity;
 using Marketplace.Ai;
@@ -34,6 +35,8 @@ builder.Services.Configure<TelegramOptions>(builder.Configuration.GetSection("Te
 builder.Services.AddSingleton<TelegramBot>();
 builder.Services.AddHostedService(sp => sp.GetRequiredService<TelegramBot>());
 builder.Services.AddScoped<AutoBidDecisions>();
+builder.Services.AddScoped<SupplierChanges>();
+builder.Services.AddScoped<SpecImporter>();
 builder.Services.AddSingleton<AutoBidAgent>();
 builder.Services.AddHostedService(sp => sp.GetRequiredService<AutoBidAgent>());
 
@@ -52,7 +55,6 @@ app.MapPartnerEndpoints();
 app.MapDealEndpoints();
 app.MapComplianceEndpoints();
 app.MapIntelligenceEndpoints();
-app.MapReachEndpoints();
 app.MapProfileEndpoints();
 app.MapAutoBidEndpoints();
 app.MapProductCatalogEndpoints();

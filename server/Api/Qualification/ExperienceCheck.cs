@@ -8,8 +8,9 @@ namespace Marketplace.Qualification;
 public record ExperienceAsk(int Count, decimal? MinValueEur, int? MinQuantity, int Years, bool YearsStated);
 
 /// <summary>
-/// Checks "at least N deliveries worth X in the last Y years" against the company's references. Conservative (rule 7):
-/// a reference only counts once its delivery is complete, and a threshold that needs a value we do not know stays unclear.
+/// Checks "at least N deliveries of this kind worth X in the last Y years" against the company's references. Conservative
+/// (rule 7): a reference only counts once its delivery is complete, only when it is for a product the requirement is about,
+/// and a threshold that needs a value we do not know stays unclear.
 /// </summary>
 public static partial class ExperienceCheck
 {
@@ -61,19 +62,29 @@ public static partial class ExperienceCheck
         return new ExperienceAsk(count, value, quantity, years ?? DefaultYears, years is not null);
     }
 
-    public static EvidenceCheck Evaluate(string need, string requirementText, DateTimeOffset? deadline, CompanyProfile profile)
+    /// <param name="scope">Titles of the lots (or the tender) the company bids for. Used when the requirement text names none of its products.</param>
+    public static EvidenceCheck Evaluate(string need, string requirementText, DateTimeOffset? deadline, CompanyProfile profile, IEnumerable<string> scope)
     {
         var ask = Read(requirementText);
         var at = DateOnly.FromDateTime((deadline ?? DateTimeOffset.UtcNow).UtcDateTime);
         var from = at.AddYears(-ask.Years);
         var en = CultureInfo.GetCultureInfo("en-GB");
-        var asked = $"{ask.Count} deliver{(ask.Count == 1 ? "y" : "ies")}" +
-                    (ask.MinValueEur is { } mv ? $" worth at least €{mv.ToString("N0", en)}" : "") +
-                    (ask.MinQuantity is { } mq ? $" of at least {mq} units" : "") +
-                    $" in the {ask.Years} years before the deadline{(ask.YearsStated ? "" : " (the usual window for supplies)")}";
+        var asked = Asked(ask);
 
-        var refs = profile.Documents.Where(d => d.Kind == "reference").ToList();
-        if (refs.Count == 0) return new EvidenceCheck(need, Outcome.Missing, $"The tender asks for {asked}. No references in your profile.", null);
+        var all = profile.Documents.Where(d => d.Kind == "reference").ToList();
+        if (all.Count == 0) return new EvidenceCheck(need, Outcome.Missing, $"The tender asks for {asked}. No references in your profile.", null);
+
+        // "Similar deliveries": a reference counts only for a product the requirement is about, matched on the product's keywords.
+        var products = InScope(requirementText, scope, profile);
+        if (products.Count == 0)
+            return new EvidenceCheck(need, Outcome.Missing,
+                $"The tender asks for {asked}. None of your products matches what it buys, so none of your {all.Count} references counts as a similar delivery.", null);
+        var kind = string.Join(" or ", products.Select(p => p.Name));
+        var refs = all.Where(r => products.Any(p => Names(p, $"{r.Title} {r.Delivery?.Subject}"))).ToList();
+        if (refs.Count == 0)
+            return new EvidenceCheck(need, Outcome.Missing,
+                $"The tender asks for {asked}. None of your {all.Count} references is for {kind}, so none counts as a similar delivery.", null);
+        asked += $", counting only deliveries of {kind}";
 
         // A reference counts only for a delivery finished inside the window; a won contract still being delivered does not yet.
         var inWindow = refs.Where(r => r.Delivery is null ? r.IssuedOn is { } i && i >= from && i <= at : r.Delivery.Completed >= from && r.Delivery.Completed <= at).ToList();
@@ -98,6 +109,56 @@ public static partial class ExperienceCheck
         if (pending.Count > 0) why += $" {Describe(pending, en)} will count once delivered.";
         return new EvidenceCheck(need, Outcome.Missing, $"The tender asks for {asked}. {why}", inWindow.FirstOrDefault() ?? refs[0]);
     }
+
+    /// <summary>
+    /// The experience step of a partner deal. A bidder may rely on a partner's experience only when the partner performs
+    /// the deliveries it is relied on for (PZP art. 118); covering the quantity gap makes it that performer. So each
+    /// requirement is met if the bidder or the partner meets it on its own references. Unclear is not met (rule 7). The
+    /// detail says only whether the partner's references meet the ask, never what they are (rule 3).
+    /// </summary>
+    public static (bool Passed, string Detail) PartnerStep(Tender tender, TenderLot lot, CompanyProfile bidder, CompanyProfile partner)
+    {
+        var asks = tender.Requirements.Where(QualificationCheck.AsksForExperience).ToList();
+        if (asks.Count == 0)
+        {
+            var done = partner.Documents.Count(d => d.Kind == "reference" && (d.Delivery?.Completed ?? d.IssuedOn) <= DateOnly.FromDateTime(DateTime.UtcNow));
+            return (true, $"The notice sets no experience requirement. The partner has {done} completed reference{(done == 1 ? "" : "s")} on file.");
+        }
+
+        var passed = true;
+        var lines = asks.Select(req =>
+        {
+            var asked = Asked(Read(req.Text));
+            var own = Evaluate("", req.Text, tender.Deadline, bidder, [lot.Title]).Outcome;
+            var theirs = Evaluate("", req.Text, tender.Deadline, partner, [lot.Title]).Outcome;
+            if (own == Outcome.Met) return $"The tender asks for {asked}. Your own references meet it.";
+            if (theirs == Outcome.Met)
+                return $"The tender asks for {asked}. Your references do not meet it; the partner's do, so it counts if the partner " +
+                       "performs these deliveries (it is named in the wykaz dostaw and signs a zobowiązanie podmiotu udostępniającego zasoby).";
+            passed = false;
+            return $"The tender asks for {asked}. Neither your references nor the partner's meet it" +
+                   (theirs == Outcome.Unclear ? ": the partner's could count but do not record the value or quantity, so they are not counted." : ".");
+        }).ToList();
+        return (passed, string.Join(" ", lines));
+    }
+
+    private static string Asked(ExperienceAsk ask)
+    {
+        var en = CultureInfo.GetCultureInfo("en-GB");
+        return $"{ask.Count} deliver{(ask.Count == 1 ? "y" : "ies")}" +
+               (ask.MinValueEur is { } mv ? $" worth at least €{mv.ToString("N0", en)}" : "") +
+               (ask.MinQuantity is { } mq ? $" of at least {mq} units" : "") +
+               $" in the {ask.Years} years before the deadline{(ask.YearsStated ? "" : " (the usual window for supplies)")}";
+    }
+
+    /// <summary>The company's products the requirement is about: those its text names, else those in the lots being bid for.</summary>
+    private static List<CompanyProduct> InScope(string requirementText, IEnumerable<string> scope, CompanyProfile profile)
+    {
+        var named = profile.Products.Where(p => Names(p, requirementText)).ToList();
+        return named.Count > 0 ? named : profile.Products.Where(p => scope.Any(t => Names(p, t))).ToList();
+    }
+
+    private static bool Names(CompanyProduct product, string text) => product.Keywords.Any(k => text.Contains(k, StringComparison.OrdinalIgnoreCase));
 
     /// <summary>True: meets the threshold. False: below it. Null: no threshold to meet is fine; an unknown value is not.</summary>
     private static bool? Meets(decimal? have, decimal? need) => need is null ? true : have is null ? null : have >= need;

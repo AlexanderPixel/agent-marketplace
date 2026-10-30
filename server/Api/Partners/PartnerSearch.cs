@@ -1,4 +1,5 @@
 using Marketplace.Data;
+using Marketplace.Qualification;
 using Microsoft.EntityFrameworkCore;
 
 namespace Marketplace.Partners;
@@ -20,6 +21,8 @@ public record PartnerCandidate(PartnerListing Partner, int Score, bool GatesPass
 /// </summary>
 public class PartnerSearch(AppDb db)
 {
+    public const string ExperienceGate = "Experience requirement";
+
     private static readonly HashSet<string> EuEea =
         ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "NO", "IS", "LI"];
 
@@ -45,16 +48,22 @@ public class PartnerSearch(AppDb db)
     public async Task<List<PartnerCandidate>> SearchAsync(Guid bidderOrg, Tender tender, TenderLot lot, int gap)
     {
         var listings = await ListingsAsync(bidderOrg, lot.Title.ToLowerInvariant());
+        // Read here only to run the experience step; the candidate carries its pass/fail and a summary, not the references.
+        var ids = listings.Select(l => l.OrgId).Append(bidderOrg).ToList();
+        var profiles = await db.Profiles.IgnoreQueryFilters().Where(p => ids.Contains(p.OrgId)).ToDictionaryAsync(p => p.OrgId);
+        CompanyProfile ProfileOf(Guid id) => profiles.GetValueOrDefault(id) ?? new CompanyProfile { OrgId = id };
         var defence = tender.IsDefence;
         const int deliveryDays = 150; // the demo tender's contract runs 17 Nov 2026 to 17 Apr 2027 (eForms BT-536/BT-537)
         return listings.Where(l => l.Capacity is not null).Select(l =>
         {
+            var experience = ExperienceCheck.PartnerStep(tender, lot, ProfileOf(bidderOrg), ProfileOf(l.OrgId));
             var gates = new List<Gate>
             {
                 new("EU/EEA company", EuEea.Contains(l.Country), $"Registered in {l.Country}."),
                 new("Not sanctioned", !Sanctioned.Contains(l.Name), "Checked against the EU consolidated sanctions list (demo copy)."),
                 new("Can join the bid", l.ExclusionEvidence,
                     l.ExclusionEvidence ? "Trade register and criminal-record extracts on file." : "Missing a criminal-record extract, so it cannot pass the exclusion check as a consortium member."),
+                new(ExperienceGate, experience.Passed, experience.Detail),
             };
             var capacityPoints = (int)Math.Round(40.0 * Math.Min(1, (double)l.Capacity!.Value / gap));
             var aqap = l.Certificates.Any(c => c.Contains("AQAP"));

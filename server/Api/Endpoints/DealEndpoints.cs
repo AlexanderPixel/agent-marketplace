@@ -1,6 +1,7 @@
 using Marketplace.Activity;
 using Marketplace.Data;
 using Marketplace.Deals;
+using Marketplace.Documents;
 using Marketplace.Partners;
 using Marketplace.Tenancy;
 using Microsoft.EntityFrameworkCore;
@@ -46,12 +47,16 @@ public static class DealEndpoints
 
         api.MapGet("/deals/{id:guid}", async Task<IResult> (Guid id, AppDb db, OrgContext org) =>
         {
-            org.Require();
+            var orgId = org.Require();
             var d = await db.Deals.FirstOrDefaultAsync(x => x.Id == id);
             if (d is null) return TypedResults.NotFound();
-            var names = await db.Organizations.Where(o => o.Id == d.BidderOrgId || o.Id == d.PartnerOrgId)
-                .ToDictionaryAsync(o => o.Id, o => new { o.Name, o.Country, o.City });
-            return TypedResults.Ok(new { deal = d, bidder = names[d.BidderOrgId], partner = names[d.PartnerOrgId] });
+            var orgs = await db.Organizations.Where(o => o.Id == d.BidderOrgId || o.Id == d.PartnerOrgId).ToDictionaryAsync(o => o.Id);
+            var names = orgs.ToDictionary(o => o.Key, o => new { o.Value.Name, o.Value.Country, o.Value.City });
+            // The viewer's own certificates only: the profile is scoped to the calling organisation, and the partner attaches its own.
+            var tender = await db.Tenders.FirstOrDefaultAsync(t => t.Id == d.TenderId);
+            var profile = await db.Profiles.FirstOrDefaultAsync();
+            var certificates = tender is null || profile is null ? [] : TenderCertificates.For(tender, profile, orgs[orgId]);
+            return TypedResults.Ok(new { deal = d, bidder = names[d.BidderOrgId], partner = names[d.PartnerOrgId], certificates });
         });
 
         api.MapPost("/deals", async Task<IResult> (

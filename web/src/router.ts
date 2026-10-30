@@ -10,7 +10,6 @@ import DealRoomView from '@/views/DealRoomView.vue'
 import DealDocumentsView from '@/views/DealDocumentsView.vue'
 import ComplianceView from '@/views/ComplianceView.vue'
 import IntelligenceView from '@/views/IntelligenceView.vue'
-import ReachView from '@/views/ReachView.vue'
 import ProductsView from '@/views/ProductsView.vue'
 import ProfileView from '@/views/ProfileView.vue'
 
@@ -32,6 +31,5 @@ export const router = createRouter({
     { path: '/compliance', component: ComplianceView, meta: { title: 'nav.compliance' } },
     { path: '/intelligence', component: IntelligenceView, meta: { title: 'nav.intelligence' } },
     { path: '/profile', component: ProfileView, meta: { title: 'nav.profile' } },
-    { path: '/reach', component: ReachView, meta: { title: 'nav.reach' } },
   ],
 })

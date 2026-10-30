@@ -21,6 +21,13 @@ public static class DealOps
         };
         db.Deals.Add(deal);
         await db.SaveChangesAsync();
+        if (candidate.Gates.FirstOrDefault(g => g.Name == PartnerSearch.ExperienceGate) is { } experience)
+        {
+            // Logged to the bidder only: it describes the bidder's own references.
+            await log.WriteAsync(orgId, "Qualification agent",
+                $"Checked the tender's experience requirement with {candidate.Partner.Name}: {(experience.Passed ? "covered" : "not covered")}",
+                experience.Detail, tender.Id);
+        }
         await log.WriteAsync(orgId, "Deal agent", $"Opened a negotiation with {candidate.Partner.Name} for {gap} {lot.Unit}",
             $"Best partner for the gap ({candidate.Score}% match, all hard gates passed). The agent will share deal terms only.",
             tender.Id, sharedWithOrgId: candidate.Partner.OrgId);

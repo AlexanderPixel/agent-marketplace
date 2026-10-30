@@ -15,13 +15,15 @@ namespace Marketplace.AutoBid;
 /// covers a quantity gap with a partner (the agents negotiate inside both mandates), drafts the documents, then stops
 /// and asks a person to sign. Every step goes to the activity log (rule 1); hard limits stay enforced by the deal engine.
 /// </summary>
-public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProvider clock, IConfiguration config, ILogger<AutoBidAgent> logger)
+public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProvider clock, IConfiguration config, IHttpClientFactory http,
+    ILogger<AutoBidAgent> logger)
     : BackgroundService
 {
     private const string Agent = "Auto-bid agent";
     private readonly SemaphoreSlim wake = new(0);
     private readonly SemaphoreSlim busy = new(1, 1);
     private TimeSpan Interval => TimeSpan.FromSeconds(config.GetValue("AutoBid:IntervalSeconds", 60));
+    private TimeSpan ResultInterval => TimeSpan.FromMinutes(config.GetValue("AutoBid:ResultCheckMinutes", 360));
 
     /// <summary>Runs a scan now instead of waiting for the next interval.</summary>
     public void Wake() => wake.Release();
@@ -75,6 +77,15 @@ public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProv
             {
                 logger.LogError(e, "Auto-bid scan failed");
             }
+
+            try
+            {
+                await CheckResultsAsync(stop);
+            }
+            catch (Exception e) when (!stop.IsCancellationRequested)
+            {
+                logger.LogError(e, "Award result check failed");
+            }
             await wake.WaitAsync(Interval, stop).ContinueWith(_ => { }, TaskScheduler.Default);
         }
     }
@@ -93,6 +104,55 @@ public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProv
         finally
         {
             busy.Release();
+        }
+    }
+
+    /// <summary>
+    /// Signed bids whose deadline has passed: looks for the buyer's award notice and records won or lost from it, so nobody
+    /// has to. Each bid is checked at most once per <see cref="ResultInterval"/>; no notice yet means it keeps waiting.
+    /// </summary>
+    private async Task CheckResultsAsync(CancellationToken ct)
+    {
+        var now = clock.GetUtcNow();
+        List<(Guid Id, Guid OrgId)> due;
+        using (var scope = scopes.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<AppDb>();
+            var deadlines = db.Tenders.Where(t => t.Deadline < now).Select(t => t.Id);
+            due = (await db.AutoBidRuns.IgnoreQueryFilters()
+                    .Where(r => r.Stage == AutoBidStage.Signed && r.Result == null && deadlines.Contains(r.TenderId))
+                    .Where(r => r.ResultCheckedAt == null || r.ResultCheckedAt < now - ResultInterval)
+                    .Select(r => new { r.Id, r.OrgId }).ToListAsync(ct))
+                .Select(r => (r.Id, r.OrgId)).ToList();
+        }
+
+        foreach (var (id, orgId) in due)
+        {
+            using var scope = scopes.CreateScope();
+            var sp = scope.ServiceProvider;
+            sp.GetRequiredService<OrgContext>().OrgId = orgId;
+            var db = sp.GetRequiredService<AppDb>();
+            var run = await db.AutoBidRuns.FirstAsync(r => r.Id == id, ct);
+            var tender = await db.Tenders.FirstAsync(t => t.Id == run.TenderId, ct);
+            var company = await db.Organizations.FirstAsync(o => o.Id == orgId, ct);
+            var profile = await db.Profiles.FirstAsync(ct);
+
+            var notices = await AwardResults.FindAsync(http.CreateClient(), tender, ct);
+            var notice = AwardResults.Deciding(notices, AwardResults.OfferedLots(tender, profile).Select(l => l.Id).ToList());
+            run.ResultCheckedAt = now;
+            if (notice is null)
+            {
+                await db.SaveChangesAsync(ct);
+                continue;
+            }
+
+            var won = AwardResults.Names(notice, company.Name);
+            var tx = new AutoBidText(company.Language);
+            run.Note = won ? tx["noteWon", notice.PublicationNumber]
+                : notice.Winners.Count == 0 ? tx["noteNoAward", notice.PublicationNumber]
+                : tx["noteLost", string.Join(", ", notice.Winners.Distinct()), notice.PublicationNumber];
+            await AwardResults.RecordAsync(db, sp.GetRequiredService<ActivityLog>(), clock, run, won, notice, ct);
+            await bot.SendAsync($"<b>{H(tx[won ? "won" : "lost"])}</b>: {H(run.Title)}\n{H(run.Note)}", ct: ct);
         }
     }
 
@@ -139,7 +199,7 @@ public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProv
         created?.TrySetResult(run.Id);
         await log.WriteAsync(orgId, Agent, $"Took on {tender.SourceId}: {run.Title}",
             $"Auto-bid is on, the tender is open until {tender.Deadline:yyyy-MM-dd} and the qualification check says {a.Verdict} " +
-            $"({a.Requirements.Count - a.Red - a.Amber} met, {a.Amber} via equivalent, 0 red).", tender.Id, ct: ct);
+            $"({a.Requirements.Count - a.Red - a.Amber} met, {a.Amber} via equivalent, 0 red).", tender.Id, Trace.Qualification(tender, a), ct: ct);
 
         try
         {
@@ -194,11 +254,13 @@ public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProv
         await StageAsync(db, run, AutoBidStage.AwaitingSignature,
             deal?.Status == DealStatus.AwaitingApproval ? tx["noteReadyApprove"] : tx["noteReady"], ct);
 
-        run.TelegramMessageId = await bot.SendAsync(Compose(tx, run, tender, a, summary, deal, partner), Keyboard(tx, run, tender), ct);
+        var (message, keyboard) = (Compose(tx, run, tender, a, summary, deal, partner), Keyboard(tx, run, tender));
+        run.TelegramMessageId = await bot.SendAsync(message, keyboard, ct);
         await db.SaveChangesAsync(ct);
         await log.WriteAsync(run.OrgId, Agent,
             run.TelegramMessageId is null ? "Bid ready; waiting for a decision in the app" : "Bid ready; sent a sign request to Telegram",
-            "Everything up to the signature is prepared. Signing and submitting stay with a person (rule 5).", tender.Id, ct: ct);
+            "Everything up to the signature is prepared. Signing and submitting stay with a person (rule 5).", tender.Id,
+            Trace.Telegram(message, keyboard, run.TelegramMessageId), ct: ct);
     }
 
     private static async Task<Deal> WaitForDealAsync(AppDb db, Guid dealId, CancellationToken ct)

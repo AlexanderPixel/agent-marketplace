@@ -83,7 +83,7 @@ async function approve() {
 
 <template>
   <div v-if="deal && data" class="page">
-    <BidSteps :current="deal.status === 'Closed' ? 5 : 4" />
+    <BidSteps :current="deal.status === 'Closed' ? 5 : 4" :deal="deal.id" />
     <RouterLink to="/deals" class="back"><i class="pi pi-arrow-left" /> {{ t('deals.title') }}</RouterLink>
 
     <div class="card head" :class="{ negotiating: deal.status === 'Negotiating' }">

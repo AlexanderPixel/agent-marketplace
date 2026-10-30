@@ -49,11 +49,17 @@ public static partial class QualificationCheck
         new(R(@"^Wadium"), "vadium", "Bid security (wadium)"),
     ];
 
+    /// <summary>True when the requirement asks for past deliveries (references, wykaz dostaw).</summary>
+    public static bool AsksForExperience(TenderRequirement req) =>
+        Rules.First(r => r.Kind == "reference").Pattern.IsMatch($"{req.Code} {req.Text}");
+
     public static Assessment Assess(Tender tender, CompanyProfile profile, string companyCountry)
     {
-        var requirements = tender.Requirements.Select(r => Check(r, tender.BuyerCountry, tender.Deadline, profile, companyCountry)).ToList();
         var lots = tender.Lots.Select(l => CheckLot(l, profile)).ToList();
         var offered = lots.Where(l => l.Fit != LotFit.NotOffered).ToList();
+        // What the company would deliver here, so experience is checked against references for those products only.
+        var scope = tender.Lots.Count == 0 ? [tender.Title] : offered.Select(l => l.Lot.Title).ToList();
+        var requirements = tender.Requirements.Select(r => Check(r, tender.BuyerCountry, tender.Deadline, profile, companyCountry, scope)).ToList();
         var red = requirements.Count(r => r.Outcome is Outcome.Missing or Outcome.Unclear);
         var amber = requirements.Count(r => r.Outcome == Outcome.Equivalent);
         var gaps = offered.Where(l => l.Gap > 0).ToList();
@@ -64,7 +70,9 @@ public static partial class QualificationCheck
         return new Assessment(requirements, offered, lots.Count - offered.Count, verdict, red, amber, gaps);
     }
 
-    public static RequirementCheck Check(TenderRequirement req, string buyerCountry, DateTimeOffset? deadline, CompanyProfile profile, string companyCountry)
+    /// <param name="scope">Titles of the lots (or the tender) the company bids for; see <see cref="ExperienceCheck.Evaluate"/>.</param>
+    public static RequirementCheck Check(
+        TenderRequirement req, string buyerCountry, DateTimeOffset? deadline, CompanyProfile profile, string companyCountry, IReadOnlyList<string> scope)
     {
         var text = $"{req.Code} {req.Text}";
         var checks = new List<EvidenceCheck>();
@@ -74,7 +82,7 @@ public static partial class QualificationCheck
             if (!rule.Pattern.IsMatch(text) || !kinds.Add(rule.Kind)) continue;
             if (rule.Kind == "competition-register") kinds.Add("trade-register"); // "…register" also matches the trade-register rule
             checks.Add(rule.Kind == "reference"
-                ? ExperienceCheck.Evaluate(rule.Need, req.Text, deadline, profile)
+                ? ExperienceCheck.Evaluate(rule.Need, req.Text, deadline, profile, scope)
                 : Evaluate(rule, buyerCountry, deadline, profile, companyCountry));
         }
 

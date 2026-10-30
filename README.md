@@ -26,7 +26,7 @@ npm run dev                                # http://localhost:5173 (proxies /api
 
 `npm run build` puts the UI into `server/Api/wwwroot`, so `dotnet run` alone serves the whole app on :5080.
 
-The database is recreated and reseeded on every start (`Db:ResetOnStart`, on by default), so each run is a clean demo.
+The database is kept between starts, so bid runs and won/lost results stay. Demo data is seeded only into an empty database. There are no migrations: after a schema change, start once with `Db__ResetOnStart=true` to recreate it (this deletes all data).
 
 ## How it is built
 

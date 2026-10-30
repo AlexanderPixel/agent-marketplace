@@ -14,6 +14,7 @@ type Stage = 'Qualifying' | 'FindingPartner' | 'Negotiating' | 'Drafting' | 'Awa
 interface Run {
   id: string; tenderId: string; tenderRef: string; title: string; verdict: string; stage: Stage; dealId: string | null
   note: string; createdAt: string; decidedAt: string | null; decidedBy: string | null; result: 'won' | 'lost' | null; demo: boolean
+  resultNotice: string | null; winner: string | null; resultCheckedAt: string | null
 }
 interface State { enabled: boolean; telegram: { configured: boolean; connected: boolean }; runs: Run[] }
 
@@ -53,7 +54,6 @@ async function act(key: string, fn: () => Promise<unknown>) {
   }
 }
 const decide = (r: Run, sign: boolean) => act(r.id + sign, () => post(`/autobid/runs/${r.id}/decision`, { sign }))
-const result = (r: Run, won: boolean) => act(r.id + won, () => post(`/autobid/runs/${r.id}/result`, { won }))
 const scan = () => act('scan', () => post('/autobid/scan'))
 async function testTelegram() {
   try {
@@ -120,18 +120,21 @@ const telegramText = computed(() =>
             <span v-if="r.decidedBy"> · {{ t('autobid.decided', { who: r.decidedBy, when: formatDate(r.decidedAt, true) }) }}</span>
           </div>
           <div class="run-note">{{ r.note }}</div>
+          <a v-if="r.resultNotice" :href="`https://ted.europa.eu/en/notice/-/detail/${r.resultNotice}`" target="_blank" rel="noopener" class="docs-link">
+            {{ t('autobid.awardNotice', { ref: r.resultNotice }) }}
+          </a>
         </div>
         <div class="run-side">
           <Tag :value="t(`autobid.stage.${r.stage}`)" :severity="severity[r.stage]" :icon="isWorking(r.stage) ? 'pi pi-spin pi-spinner' : undefined" />
-          <Tag v-if="r.result" :value="t(`autobid.result.${r.result}`)" :severity="r.result === 'won' ? 'success' : 'secondary'" />
+          <Tag v-if="r.result" :value="t(`autobid.result.${r.result}`)" :severity="r.result === 'won' ? 'success' : 'secondary'"
+            :icon="r.result === 'won' ? 'pi pi-trophy' : undefined" />
+          <span v-else-if="r.stage === 'Signed'" class="awaiting" :title="r.resultCheckedAt ? t('autobid.checked', { when: formatDate(r.resultCheckedAt, true) }) : undefined">
+            <i class="pi pi-clock" aria-hidden="true" /> {{ t('autobid.awaitingAward') }}
+          </span>
           <div class="run-actions">
             <template v-if="r.stage === 'AwaitingSignature'">
               <Button :label="t('autobid.sign')" icon="pi pi-check" size="small" :loading="busy === r.id + true" @click="decide(r, true)" />
               <Button :label="t('autobid.decline')" size="small" severity="secondary" :loading="busy === r.id + false" @click="decide(r, false)" />
-            </template>
-            <template v-else-if="r.stage === 'Signed' && !r.result">
-              <Button :label="t('autobid.won')" icon="pi pi-trophy" size="small" :loading="busy === r.id + true" @click="result(r, true)" />
-              <Button :label="t('autobid.lost')" size="small" severity="secondary" :loading="busy === r.id + false" @click="result(r, false)" />
             </template>
             <RouterLink v-if="r.dealId" :to="`/deals/${r.dealId}/documents`" class="docs-link">{{ t('autobid.documents') }}</RouterLink>
           </div>
@@ -168,4 +171,23 @@ const telegramText = computed(() =>
 .run-side { display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
 .run-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
 .docs-link { color: var(--accent-on-dark); font-size: 14px; }
+.awaiting { display: inline-flex; align-items: center; gap: 6px; font-size: 13.5px; color: var(--ink-muted, inherit); opacity: .85; }
+
+/* On the dark panel: secondary buttons are outlines, the filter is a dark segmented control. */
+.autobid :deep(.p-button-secondary) {
+  background: transparent; border: 1px solid var(--ink-line); color: var(--ink-text);
+}
+.autobid :deep(.p-button-secondary:not(:disabled):hover) {
+  background: rgba(255, 255, 255, .06); border-color: var(--ink-muted); color: #fff;
+}
+.autobid :deep(.p-button-secondary:disabled) { opacity: .45; }
+.autobid :deep(.filters.p-selectbutton) { background: transparent; border: 1px solid var(--ink-line); padding: 3px; gap: 2px; }
+.autobid :deep(.filters .p-togglebutton) {
+  background: transparent; border: 0; color: var(--ink-muted); padding: 0;
+}
+.autobid :deep(.filters .p-togglebutton-content) { background: transparent; box-shadow: none; color: inherit; }
+.autobid :deep(.filters .p-togglebutton:not(.p-togglebutton-checked):hover) { color: #fff; background: transparent; }
+.autobid :deep(.filters .p-togglebutton-checked) { color: #fff; }
+.autobid :deep(.filters .p-togglebutton-checked .p-togglebutton-content) { background: rgba(255, 255, 255, .1); }
+.autobid :deep(.p-tag-warn) { background: rgba(255, 176, 32, .14); color: #ffc46b; }
 </style>

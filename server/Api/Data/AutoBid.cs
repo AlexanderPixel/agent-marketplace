@@ -35,8 +35,15 @@ public class AutoBidRun
     public DateTimeOffset? DecidedAt { get; set; }
     public string? DecidedBy { get; set; }
     public long? TelegramMessageId { get; set; }
-    /// <summary>"won" or "lost" once the buyer has awarded the contract; a win becomes a reference.</summary>
+    /// <summary>"won" or "lost", read by the agent from the buyer's award notice; a win becomes a reference.</summary>
     public string? Result { get; set; }
+    /// <summary>The award notice the result comes from, e.g. a TED publication number.</summary>
+    public string? ResultNotice { get; set; }
+    /// <summary>Who the award notice names as the winner.</summary>
+    public string? Winner { get; set; }
+    public DateTimeOffset? ResultAt { get; set; }
+    /// <summary>When the agent last looked for the award notice.</summary>
+    public DateTimeOffset? ResultCheckedAt { get; set; }
 
     public bool IsOpen => Stage is not (AutoBidStage.Signed or AutoBidStage.Declined or AutoBidStage.Stopped);
 }

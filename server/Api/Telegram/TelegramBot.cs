@@ -148,6 +148,12 @@ public class TelegramBot(IOptions<TelegramOptions> options, IHttpClientFactory h
             var decisions = scope.ServiceProvider.GetRequiredService<AutoBidDecisions>();
             answer = await decisions.DecideAsync(runId, verb == "sign", $"{who} via Telegram", ct);
         }
+        else if (data.Split(':') is [var cverb and ("csign" or "cdecline"), var cid] && Guid.TryParse(cid, out var changeId))
+        {
+            using var scope = scopes.CreateScope();
+            var changes = scope.ServiceProvider.GetRequiredService<Compliance.SupplierChanges>();
+            answer = await changes.DecideAsync(changeId, cverb == "csign", $"{who} via Telegram", ct);
+        }
         else answer = (await TextAsync(null, ct))["already"];
         await CallAsync("answerCallbackQuery", new { callback_query_id = queryId, text = answer }, ct);
     }

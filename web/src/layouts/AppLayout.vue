@@ -43,7 +43,6 @@ const nav = computed(() => [
     items: [
       { to: '/compliance', icon: 'pi pi-shield', label: t('nav.compliance') },
       { to: '/intelligence', icon: 'pi pi-chart-line', label: t('nav.intelligence') },
-      { to: '/reach', icon: 'pi pi-box', label: t('nav.reach') },
     ],
   },
 ])

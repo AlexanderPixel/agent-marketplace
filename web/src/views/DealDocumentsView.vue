@@ -13,11 +13,11 @@ import { api, post } from '@/lib/api'
 import { autopilotAt, beat, markDocumentsShown, showSection } from '@/lib/autopilot'
 import { flag } from '@/lib/flags'
 import { session } from '@/lib/session'
-import type { AgreementDocument, Deal, Party } from '@/lib/tenders'
+import type { AgreementDocument, Deal, Party, TenderCertificate } from '@/lib/tenders'
 
 const { t } = useI18n()
 const route = useRoute()
-const data = ref<{ deal: Deal; bidder: Party; partner: Party }>()
+const data = ref<{ deal: Deal; bidder: Party; partner: Party; certificates: TenderCertificate[] }>()
 const selected = ref<string>()
 const view = ref<'pl' | 'de' | 'both'>('both')
 const generating = ref(false)
@@ -28,6 +28,8 @@ async function load() {
   selected.value ??= data.value?.deal.documents[0]?.id
 }
 watch(() => [route.params.id, session.orgId], load, { immediate: true })
+
+const docs = computed(() => data.value?.deal.documents ?? [])
 
 // Autopilot, documents step: the server has drafted them; walk through the checklist and the drafts.
 watch(() => docs.value.length, async (n) => {
@@ -50,9 +52,13 @@ async function generate() {
   }
 }
 
-const docs = computed(() => data.value?.deal.documents ?? [])
-const doc = computed(() => docs.value.find((d) => d.id === selected.value))
-const title = (d: AgreementDocument) => d.title[session.language] ?? d.title.pl ?? Object.values(d.title)[0]
+const certs = computed(() => data.value?.certificates ?? [])
+const doc = computed<AgreementDocument | TenderCertificate | undefined>(() =>
+  docs.value.find((d) => d.id === selected.value) ?? certs.value.find((c) => c.id === selected.value))
+const cert = computed(() => certs.value.find((c) => c.id === selected.value))
+// The other company in the deal, from the viewer's side: it attaches its own certificates.
+const otherParty = computed(() => (data.value && session.orgId === data.value.deal.bidderOrgId ? data.value.partner : data.value?.bidder))
+const title = (d: AgreementDocument | TenderCertificate) => d.title[session.language] ?? d.title.pl ?? Object.values(d.title)[0]
 const html = (md: string) => marked.parse(md, { async: false }) as string
 const party = (p: string) => (p === 'bidder' ? data.value?.bidder : data.value?.partner)
 const views = computed(() => [
@@ -61,7 +67,7 @@ const views = computed(() => [
   { label: t('docs.sideBySide'), value: 'both' },
 ])
 
-function download(d: AgreementDocument) {
+function download(d: AgreementDocument | TenderCertificate) {
   const text = view.value === 'both' ? `${d.body.pl}\n\n---\n\n${d.body.de}` : d.body[view.value]
   const url = URL.createObjectURL(new Blob([text], { type: 'text/markdown' }))
   const a = Object.assign(document.createElement('a'), { href: url, download: `${d.id}-${view.value}.md` })
@@ -72,7 +78,7 @@ function download(d: AgreementDocument) {
 
 <template>
   <div v-if="data" class="page">
-    <BidSteps :current="5" />
+    <BidSteps :current="5" :deal="data.deal.id" />
     <RouterLink :to="`/deals/${data.deal.id}`" class="back"><i class="pi pi-arrow-left" /> {{ t('deals.room') }}</RouterLink>
     <div class="page-head">
       <div>
@@ -117,14 +123,35 @@ function download(d: AgreementDocument) {
               <div class="muted small">{{ Object.keys(d.body).map((l) => l.toUpperCase()).join(' · ') }}</div>
             </div>
           </button>
+          <template v-if="certs.length">
+            <div class="group-head">
+              <strong>{{ t('docs.certificates') }}</strong>
+              <span v-if="otherParty" class="muted small">{{ t('docs.certificatesHint', { partner: otherParty.name }) }}</span>
+            </div>
+            <button v-for="c in certs" :key="c.id" class="doc-item" :class="{ active: c.id === selected }" @click="selected = c.id">
+              <i class="pi pi-verified" />
+              <div>
+                <div class="doc-title">{{ title(c) }}</div>
+                <div class="muted small" :class="{ expired: !c.validAtDeadline }">
+                  {{ !c.validAtDeadline ? t('docs.certExpired') : c.validUntil ? t('docs.certValid', { date: c.validUntil }) : t('docs.certNoExpiry') }}
+                </div>
+              </div>
+            </button>
+          </template>
         </div>
         <div v-if="doc" class="card doc-view">
           <div class="doc-toolbar">
-            <span class="ai-label"><i class="pi pi-sparkles" /> {{ t('docs.aiDraft') }}</span>
+            <span v-if="cert" class="ai-label"><i class="pi pi-info-circle" /> {{ t('docs.certDemo') }}</span>
+            <span v-else class="ai-label"><i class="pi pi-sparkles" /> {{ t('docs.aiDraft') }}</span>
             <div class="tools">
               <SelectButton v-model="view" :options="views" option-label="label" option-value="value" :allow-empty="false" size="small" />
               <Button :label="t('docs.download')" icon="pi pi-download" size="small" text @click="download(doc)" />
             </div>
+          </div>
+          <div v-if="cert" class="cert-need">
+            <strong>{{ t('docs.certRequired', { need: cert.need }) }}</strong>
+            <Tag v-if="cert.demoRequirement" :value="t('docs.certDemoRequirement')" severity="secondary" />
+            <div class="muted small">{{ cert.why }}</div>
           </div>
           <div class="pages" :class="{ both: view === 'both' }">
             <!-- PL first, in the same order as the language switch. -->
@@ -158,6 +185,10 @@ function download(d: AgreementDocument) {
 .doc-item.active { background: var(--accent-soft); box-shadow: inset 3px 0 0 var(--accent); }
 .doc-item i { color: var(--accent); margin-top: 3px; }
 .doc-title { font-weight: 600; }
+.group-head { display: flex; flex-direction: column; gap: 2px; padding: 16px 12px 6px; margin-top: 6px; border-top: 1px solid var(--border); }
+.expired { color: var(--bad); }
+.cert-need { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; padding: 10px 12px; background: var(--ground); border: 1px solid var(--border); }
+.cert-need .muted { flex-basis: 100%; }
 .doc-view { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
 .doc-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
 .tools { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }

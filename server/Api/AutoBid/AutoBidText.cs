@@ -35,6 +35,10 @@ public sealed class AutoBidText
             ["noteNoDeal"] = "Agenci nie doszli do porozumienia w limitach.", ["noteError"] = "Coś poszło nie tak podczas przygotowania oferty; nic nie zostało wysłane.",
             ["noteSigned"] = "Zatwierdził(a): {0}. Dalej: podpisy kwalifikowane i złożenie oferty na {1} (robi to człowiek).",
             ["noteDeclined"] = "Odrzucił(a): {0}. Nic nie zostanie podpisane ani złożone.", ["portal"] = "platformie zamawiającego",
+            ["won"] = "🏆 Wygrany przetarg", ["lost"] = "Przegrany przetarg",
+            ["noteWon"] = "Wygrany według ogłoszenia o udzieleniu zamówienia TED {0}. Dodany do referencji.",
+            ["noteLost"] = "Przegrany: według ogłoszenia TED {1} zamówienie otrzymał(a) {0}.",
+            ["noteNoAward"] = "Ogłoszenie TED {0} nie wskazuje wykonawcy dla Twojej części: zamówienia nie udzielono.",
         },
         ["en"] = new()
         {
@@ -61,6 +65,10 @@ public sealed class AutoBidText
             ["noteNoDeal"] = "The agents found no deal inside the limits.", ["noteError"] = "Something went wrong while preparing the bid; nothing was sent.",
             ["noteSigned"] = "Approved by {0}. Next: qualified e-signatures and submission on {1}, done by a person.",
             ["noteDeclined"] = "Declined by {0}. Nothing will be signed or submitted.", ["portal"] = "the buyer's portal",
+            ["won"] = "🏆 Tender won", ["lost"] = "Tender lost",
+            ["noteWon"] = "Won according to the TED award notice {0}. Added to your references.",
+            ["noteLost"] = "Lost: the TED award notice {1} names {0} as the winner.",
+            ["noteNoAward"] = "The TED notice {0} names no winner for your lot: the contract was not awarded.",
         },
         ["de"] = new()
         {
@@ -87,6 +95,10 @@ public sealed class AutoBidText
             ["noteNoDeal"] = "Die Agenten fanden keine Einigung im Rahmen.", ["noteError"] = "Beim Vorbereiten ist etwas schiefgegangen; nichts wurde versendet.",
             ["noteSigned"] = "Freigegeben von {0}. Weiter: qualifizierte Signaturen und Abgabe auf {1}, durch einen Menschen.",
             ["noteDeclined"] = "Abgelehnt von {0}. Nichts wird unterschrieben oder abgegeben.", ["portal"] = "der Vergabeplattform",
+            ["won"] = "🏆 Ausschreibung gewonnen", ["lost"] = "Ausschreibung verloren",
+            ["noteWon"] = "Gewonnen laut TED-Vergabebekanntmachung {0}. Zu Ihren Referenzen hinzugefügt.",
+            ["noteLost"] = "Verloren: die TED-Vergabebekanntmachung {1} nennt {0} als Zuschlagsempfänger.",
+            ["noteNoAward"] = "Die TED-Bekanntmachung {0} nennt keinen Zuschlag für Ihr Los: der Auftrag wurde nicht vergeben.",
         },
     };
 

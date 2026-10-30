@@ -1,0 +1,131 @@
+{
+ "content": [
+  {
+   "publicatieId": "447195",
+   "publicatieDatum": "2026-10-30",
+   "typePublicatie": {
+    "code": "MAC",
+    "omschrijving": "Marktconsultatie"
+   },
+   "aanbestedingNaam": "Marktconsultatie Stedelijk Water",
+   "opdrachtgeverNaam": "Gemeente Utrecht",
+   "sluitingsDatumMarktconsultatie": "2026-11-02",
+   "procedure": {
+    "code": "MAC",
+    "omschrijving": "Marktconsultatie"
+   },
+   "typeOpdracht": {
+    "code": "D",
+    "omschrijving": "Diensten"
+   },
+   "digitaal": true,
+   "europees": false,
+   "publicatiecode": {
+    "code": "EFE1",
+    "omschrijving": "Vrijwillige aankondiging van voorafgaande marktconsultatie"
+   },
+   "publicatiestatus": {
+    "code": "PUB",
+    "omschrijving": "Gepubliceerd"
+   },
+   "isVroegtijdigeBeeindiging": false,
+   "looptijd": {
+    "code": "BKN",
+    "omschrijving": "Bekend"
+   },
+   "opdrachtBeschrijving": "De gemeente Utrecht beschikt sinds medio 2026 over een marktstrategie projecten en onderhoud in de openbare ruimte. Deze marktstrategie geeft door middel van leidende principes een kader hoe de gemeente wil samenwerken met de markt om de beoogde productie de komende jaren te realiseren en haar doelstellingen te bereiken.\n\nEen categorieplan is een onderdeel van deze marktstrategie. Het is een doorv…",
+   "isEformsWijziging": true,
+   "score": null,
+   "kenmerk": 619355,
+   "link": {
+    "href": "https://www.tenderned.nl/aankondigingen/overzicht/447195",
+    "title": "self"
+   }
+  },
+  {
+   "publicatieId": "447102",
+   "publicatieDatum": "2026-10-30",
+   "typePublicatie": {
+    "code": "VBE",
+    "omschrijving": "Vroegtijdige beëindiging"
+   },
+   "aanbestedingNaam": "Huur Materieel - Transportmiddelen en Gereedschappen",
+   "opdrachtgeverNaam": "Ministerie van Defensie",
+   "procedure": {
+    "code": "OPE",
+    "omschrijving": "Openbaar"
+   },
+   "typeOpdracht": {
+    "code": "D",
+    "omschrijving": "Diensten"
+   },
+   "tsenderNaam": "Mercell",
+   "tsenderLink": "https://s2c.mercell.com/today/230047",
+   "digitaal": false,
+   "europees": true,
+   "publicatiecode": {
+    "code": "EF29",
+    "omschrijving": "Aankondiging gegunde opdracht - algemene richtlijn, standaardregeling"
+   },
+   "publicatiestatus": {
+    "code": "PUB",
+    "omschrijving": "Gepubliceerd"
+   },
+   "isVroegtijdigeBeeindiging": true,
+   "opdrachtBeschrijving": "Het Ministerie van Defensie, Koninklijke Marine (Commando Zeestrijdkrachten), wil een raamovereenkomst sluiten met één opdrachtnemer voor de huur van transportmiddelen en gereedschappen. De raamovereenkomst voorziet in de tijdelijke inhuur van materieel ter ondersteuning van de operationele en logistieke taken van CZSK, op basis van afroepen. Het gehuurde materieel wordt veilig, gebruiksklaar en c…",
+   "isEformsWijziging": false,
+   "score": null,
+   "kenmerk": 621956,
+   "link": {
+    "href": "https://www.tenderned.nl/aankondigingen/overzicht/447102",
+    "title": "self"
+   }
+  },
+  {
+   "publicatieId": "447088",
+   "publicatieDatum": "2026-10-30",
+   "typePublicatie": {
+    "code": "AAO",
+    "omschrijving": "Aankondiging opdracht"
+   },
+   "aanbestedingNaam": "Bouw- en woonrijp maken Zeeheldenbuurt Hoogeveen",
+   "opdrachtgeverNaam": "Gemeente Hoogeveen",
+   "sluitingsDatum": "2026-12-02T10:00:00",
+   "aantalDagenTotSluitingsDatum": 33,
+   "procedure": {
+    "code": "OPE",
+    "omschrijving": "Openbaar"
+   },
+   "typeOpdracht": {
+    "code": "W",
+    "omschrijving": "Werken"
+   },
+   "digitaal": true,
+   "europees": false,
+   "publicatiecode": {
+    "code": "EFE3",
+    "omschrijving": "Vrijwillige aankondiging van een opdracht"
+   },
+   "publicatiestatus": {
+    "code": "PUB",
+    "omschrijving": "Gepubliceerd"
+   },
+   "isVroegtijdigeBeeindiging": false,
+   "opdrachtBeschrijving": "De opdracht betreft de openbare nationale  aanbestedingsprocedure ten behoeve van Bouw- en woonrijp maken Zeeheldenbuurt Hoogeveen. Deze Aanbesteding is de gemeente Hoogeveen, hierna te noemen Opdrachtgever, met referentienummer Z.663188. De Aanbestedende dienst is de gemeente Hoogeveen.\nDeze aanbesteding vindt plaats op basis van deel 1 van de Aanbestedingswet 2012 (Aw 2012) en hoofdstuk 1 en 2 v…",
+   "isEformsWijziging": false,
+   "score": null,
+   "kenmerk": 621696,
+   "link": {
+    "href": "https://www.tenderned.nl/aankondigingen/overzicht/447088",
+    "title": "self"
+   }
+  }
+ ],
+ "first": true,
+ "last": false,
+ "totalElements": 5,
+ "totalPages": 2,
+ "size": 3,
+ "numberOfElements": 3,
+ "number": 0
+}

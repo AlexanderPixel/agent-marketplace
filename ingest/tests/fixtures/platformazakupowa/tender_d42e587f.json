@@ -1,0 +1,73 @@
+{
+ "enrichment": {
+  "tags": [
+   "prace budowlane",
+   "adaptacja pomieszczeń",
+   "zmiana sposobu użytkowania",
+   "roboty wykończeniowe"
+  ],
+  "platformName": "openNexus",
+  "industry": "roboty_budowlane_konstrukcyjne",
+  "nuts3": [
+   "PL415"
+  ]
+ },
+ "tenderResult": null,
+ "id": "d42e587f-69ec-5d5d-a87a-9711937793f9",
+ "createdAt": "2026-10-30T14:12:35+01:00",
+ "provider": "pz",
+ "cpvCodes": [
+  "45300000",
+  "45400000"
+ ],
+ "publicationDate": "2026-10-30T13:16:00+01:00",
+ "submittingOffersDeadline": "2026-11-17T10:00:00+01:00",
+ "realizationDeadline": null,
+ "offerValidityDeadline": null,
+ "issuers": [
+  {
+   "id": "755893fa-9612-4485-890e-8ed045ace2f2",
+   "createdAt": "2026-10-30T00:00:00+00:00",
+   "title": "Uniwersytet Medyczny im. Karola Marcinkowskiego w Poznaniu",
+   "taxId": "PL7770003104",
+   "address": {
+    "street": "ul. Fredry 10",
+    "city": "Poznań",
+    "postalCode": "61-701",
+    "region": null,
+    "country": null,
+    "nuts3": {
+     "countryCode": null,
+     "subregionCode": null
+    }
+   },
+   "nip": "7770003104",
+   "regon": null,
+   "krs": null
+  }
+ ],
+ "title": "TPm-79/26 Adaptacja pomieszczeń parteru w budynku przy ul. Rokietnickiej 5d w Poznaniu na potrzeby Katedry i Zakładu Biologii Komórki",
+ "description": "<p><span></span></p><p><span>Szanowni Państwo,</span><span>  </span></p><p><span>w załącznikach do postępowania zamieszczono dokumentację związaną z postępowaniem. </span></p><p><a href=\"https://drive.google.com/file/d/1Kd1DttbBeiNWt4q4slS4t76lZVKPbkyD/view\"><span>Pod linkiem</span></a><span> dostępna jest </span><span>Instrukcja składania ofert/wniosków dla Wykonawców.</span><span> </span></p><p> </p><p><span>Pliki dołączane w formularzu należy opatrzyć:</span></p><p><span>- kwalifikowanym</span><a href=\"https://www.nccert.pl/\"><span> </span><span>podpisem elektronicznym</span></a><span>,</sp",
+ "sourceExtraData": {
+  "issuerUrl": "https://platformazakupowa.pl/pn/ump",
+  "externalId": 1398791
+ },
+ "modeIdentifier": null,
+ "websiteUrl": "https://platformazakupowa.pl/transakcja/1398791",
+ "websiteUrls": [
+  "https://platformazakupowa.pl/transakcja/1398791"
+ ],
+ "versionDate": "2026-10-30T13:59:06+01:00",
+ "criteria": [],
+ "status": 1,
+ "contractNature": "construction_works",
+ "procedure": "union",
+ "referenceNumber": "TPm-79/26",
+ "originUrls": [
+  "https://platformazakupowa.pl/transakcja/1398791"
+ ],
+ "euFunded": null,
+ "depositRequired": false,
+ "depositDescription": null,
+ "hasResult": false
+}

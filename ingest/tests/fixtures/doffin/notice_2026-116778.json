@@ -1,0 +1,669 @@
+{
+ "id": "2026-116778",
+ "eFormId": "f5f939d6-d52b-4c08-829f-2fb5a17a0c4b",
+ "procedureId": "c97b54df-ac3f-4a5c-8bca-7d0c7a5418c9",
+ "heading": "Frukt og grønt",
+ "description": "Anskaffelsens formål er å sikre Rammeavtalens brukere en stabil, kostnadseffektiv og kvalitativ god leveranse av fersk frukt, bær, grønnsaker og bearbeidede produkter av frukt og grønnsaker. Det skal leveres til kjøkken og messer, herunder også skip som ligger til kai, og allierte styrker lokalisert i Norge.Samlet estimert verdi for de to delkontraktene er 520 MNOK ekskl. mva., og samlet maksimal verdi er totalt 740 MNOK ekskl. mva., over avtalens varighet. Rammeavtalens varighet vil være 4 år fra signeringstidspunktet.For oppdraget skal det inngås to delkontrakter. Anskaffelsen deles opp geografisk, ved at de to delkontraktene gjelder hver sin del av Norge, herunder en for nord og en for sør.  Delkontrakt 1 – «Sør» gjelder levering av frukt og grønt til brukernes lokasjoner som befinner seg sør i landet. Med «sør» menes her Trøndelag fylke og fylker sør for dette.  Delkontrakt 2 – «Nord» gjelder levering av frukt og grønt til brukernes lokasjoner som befinner seg nord for Trøndelag fylke.   Leverandør kan velge å inngi tilbud på én delkontrakt, eller begge delkontraktene.  Konkurransedokumentene og kontraktsdokumentene er felles for begge delkontraktene, med unntak av prisskjemaet og kjøretøysskjemaet (kun relevant for delkontrakt 2 - nord). Konkurransedokumentene ligger kun tilgjengelig i konkurransens felles side, og ikke i den enkelte delkontrakten.Hvis det leveres tilbud på begge delkontrakter skal det leveres selvstendige tilbud for begge delkontrakter, altså at samtlige dokumenter som fremgår av regler for anskaffelsen punkt 6.2 er inkludert i tilbudet for den aktuelle delkontrakten. Dersom samme leverandør vinner konkurransen tilknyttet både Delkontrakt 1 – Sør og Delkontrakt 2 – Nord forbeholder Oppdragsgiver seg retten til å slå sammen de to delkontraktene til én rammeavtale.",
+ "buyer": [
+  {
+   "id": "916075855",
+   "name": "FORSVARSMATERIELL"
+  }
+ ],
+ "locationId": [
+  "anyw"
+ ],
+ "placeOfPerformance": [
+  "Ikke stedbunden"
+ ],
+ "issueDate": "2026-10-27T13:49:30Z",
+ "deadline": "2026-12-02T11:00:00Z",
+ "qualificationDeadline": null,
+ "noticeType": "ANNOUNCEMENT_OF_COMPETITION",
+ "allTypes": [
+  "ANNOUNCEMENT_OF_COMPETITION",
+  "COMPETITION"
+ ],
+ "allCpvCodes": [
+  "15300000",
+  "15000000",
+  "15310000",
+  "15330000"
+ ],
+ "directCpvCodes": [
+  "15300000",
+  "15000000",
+  "15310000",
+  "15330000"
+ ],
+ "parentCpvCodes": [],
+ "noticeStatus": "ACTIVE",
+ "allReceivedTenders": null,
+ "preferredPublicationDateTed": "2026-10-28",
+ "plannedDateTed": null,
+ "competitionDocsUrl": "https://permalink.mercell.com/293304427.aspx",
+ "sentToTed": true,
+ "regulationUrl": "https://lovdata.no/dokument/SF/forskrift/2016-08-12-974?q=foa",
+ "core": {
+  "estimatedValue": {
+   "amount": 740000000.0,
+   "code": "NOK",
+   "fullLocalizedText": "7.4E8 NOK"
+  },
+  "mainActivity": "defence"
+ },
+ "eform": [
+  {
+   "title": "block01",
+   "sectionId": "1",
+   "label": "Kjøper",
+   "useLabelAsValue": false,
+   "value": null,
+   "sections": [
+    {
+     "title": "block0101",
+     "sectionId": "1.1",
+     "label": "Kjøper",
+     "useLabelAsValue": false,
+     "value": null,
+     "sections": [
+      {
+       "title": "block010101",
+       "sectionId": null,
+       "label": "Offisielt navn",
+       "useLabelAsValue": false,
+       "value": "FORSVARSMATERIELL",
+       "sections": null
+      },
+      {
+       "title": "block010102",
+       "sectionId": null,
+       "label": "Juridisk type kjøper",
+       "useLabelAsValue": false,
+       "value": "Forsvarsmyndighet",
+       "sections": null
+      },
+      {
+       "title": "block010103",
+       "sectionId": null,
+       "label": "Oppdragsgivers virksomhet",
+       "useLabelAsValue": false,
+       "value": "Forsvar",
+       "sections": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "block02",
+   "sectionId": "2",
+   "label": "Prosedyre",
+   "useLabelAsValue": false,
+   "value": null,
+   "sections": [
+    {
+     "title": "block0201",
+     "sectionId": "2.1",
+     "label": "Prosedyre",
+     "useLabelAsValue": false,
+     "value": null,
+     "sections": [
+      {
+       "title": "block020101",
+       "sectionId": null,
+       "label": "Tittel",
+       "useLabelAsValue": false,
+       "value": "Frukt og grønt",
+       "sections": null
+      },
+      {
+       "title": "block020102",
+       "sectionId": null,
+       "label": "Beskrivelse",
+       "useLabelAsValue": false,
+       "value": "Anskaffelsens formål er å sikre Rammeavtalens brukere en stabil, kostnadseffektiv og kvalitativ god leveranse av fersk frukt, bær, grønnsaker og bearbeidede produkter av frukt og grønnsaker. Det skal leveres til kjøkken og messer, herunder også skip som ligger til kai, og allierte styrker lokalisert i Norge.Samlet estimert verdi for de to delkontraktene er 520 MNOK ekskl. mva., og samlet maksimal verdi er totalt 740 MNOK ekskl. mva., over avtalens varighet. Rammeavtalens varighet vil være 4 år fra signeringstidspunktet.For oppdraget skal det inngås to delkontrakter. Anskaffelsen deles opp geografisk, ved at de to delkontraktene gjelder hver sin del av Norge, herunder en for nord og en for sør.  Delkontrakt 1 – «Sør» gjelder levering av frukt og grønt til brukernes lokasjoner som befinner seg sør i landet. Med «sør» menes her Trøndelag fylke og fylker sør for dette.  Delkontrakt 2 – «Nord» gjelder levering av frukt og grønt til brukernes lokasjoner som befinner seg nord for Trøndelag fylke.   Leverandør kan velge å inngi tilbud på én delkontrakt, eller begge delkontraktene.  Konkurransedokumentene og kontraktsdokumentene er felles for begge delkontraktene, med unntak av prisskjemaet og kjøretøysskjemaet (kun relevant for delkontrakt 2 - nord). Konkurransedokumentene ligger kun tilgjengelig i konkurransens felles side, og ikke i den enkelte delkontrakten.Hvis det leveres tilbud på begge delkontrakter skal det leveres selvstendige tilbud for begge delkontrakter, altså at samtlige dokumenter som fremgår av regler for anskaffelsen punkt 6.2 er inkludert i tilbudet for den aktuelle delkontrakten. Dersom samme leverandør vinner konkurransen tilknyttet både Delkontrakt 1 – Sør og Delkontrakt 2 – Nord forbeholder Oppdragsgiver seg retten til å slå sammen de to delkontraktene til én rammeavtale.",
+       "sections": null
+      },
+      {
+       "title": "block020103",
+       "sectionId": null,
+       "label": "Prosedyreidentifikator",
+       "useLabelAsValue": false,
+       "value": "c97b54df-ac3f-4a5c-8bca-7d0c7a5418c9",
+       "sections": null
+      },
+      {
+       "title": "block020105",
+       "sectionId": null,
+       "label": "Intern identifikator",
+       "useLabelAsValue": false,
+       "value": "2025026207",
+       "sections": null
+      },
+      {
+       "title": "block020106",
+       "sectionId": null,
+       "label": "Type prosedyre",
+       "useLabelAsValue": false,
+       "value": "Åpen",
+       "sections": null
+      },
+      {
+       "title": "block020107",
+       "sectionId": null,
+       "label": "Prosedyren er en hasteprosedyre, Usann",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": null
+      },
+      {
+       "title": "block020108",
+       "sectionId": null,
+       "label": "Begrunnelse for den akselererte prosedyren",
+       "useLabelAsValue": false,
+       "value": "",
+       "sections": null
+      },
+      {
+       "title": "block020109",
+       "sectionId": null,
+       "label": "Hovedtrekkene i prosedyren",
+       "useLabelAsValue": false,
+       "value": "",
+       "sections": null
+      },
+      {
+       "title": "block020110",
+       "sectionId": "2.1.1",
+       "label": "Hensikt",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": [
+        {
+         "title": "block02011001",
+         "sectionId": null,
+         "label": "Kontraktens art",
+         "useLabelAsValue": false,
+         "value": "Varer",
+         "sections": null
+        },
+        {
+         "title": "block02011003",
+         "sectionId": null,
+         "label": "Hoved klassifisering",
+         "useLabelAsValue": false,
+         "value": "Frukt, grønnsaker og lignende produkter",
+         "sections": null
+        },
+        {
+         "title": "block02011005",
+         "sectionId": null,
+         "label": "Ytterligere klassifisering",
+         "useLabelAsValue": false,
+         "value": "Næringsmidler, drikkevarer, tobakk og relaterte produkter",
+         "sections": null
+        },
+        {
+         "title": "block02011005",
+         "sectionId": null,
+         "label": "Ytterligere klassifisering",
+         "useLabelAsValue": false,
+         "value": "Poteter og potetprodukter",
+         "sections": null
+        },
+        {
+         "title": "block02011005",
+         "sectionId": null,
+         "label": "Ytterligere klassifisering",
+         "useLabelAsValue": false,
+         "value": "Bearbeidede frukt og grønnsaker",
+         "sections": null
+        }
+       ]
+      },
+      {
+       "title": "block020111",
+       "sectionId": "2.1.2",
+       "label": "Sted for gjennomføring",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": [
+        {
+         "title": "block02011105",
+         "sectionId": null,
+         "label": "Land",
+         "useLabelAsValue": false,
+         "value": "Norge",
+         "sections": null
+        },
+        {
+         "title": "block02011106",
+         "sectionId": null,
+         "label": "Hvor som helst i det gitte landet",
+         "useLabelAsValue": true,
+         "value": null,
+         "sections": null
+        }
+       ]
+      },
+      {
+       "title": "block020112",
+       "sectionId": "2.1.3",
+       "label": "Verdi",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": [
+        {
+         "title": "block02011201",
+         "sectionId": null,
+         "label": "Anslått verdi eksklusiv merverdiavgift, Norwegian krone",
+         "useLabelAsValue": false,
+         "value": "740,000,000",
+         "sections": null
+        }
+       ]
+      },
+      {
+       "title": "block020113",
+       "sectionId": "2.1.4",
+       "label": "Generell informasjon",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": [
+        {
+         "title": "block02011303",
+         "sectionId": null,
+         "label": "Rettslig grunnlag",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block02011304",
+         "sectionId": null,
+         "label": "Direktiv 2014/24/EU",
+         "useLabelAsValue": true,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block02011305",
+         "sectionId": null,
+         "label": null,
+         "useLabelAsValue": false,
+         "value": "Anskaffelsesforskriften Anskaffelsen gjennomføres etter prosedyren «åpen anbudskonkurranse» i henhold til FOA § 13-1 første ledd. Denne prosedyren gir alle interesserte leverandører anledning til å levere tilbud.",
+         "sections": null
+        }
+       ]
+      },
+      {
+       "title": "block020114",
+       "sectionId": "2.1.5",
+       "label": "Vilkår for anskaffelsen",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": [
+        {
+         "title": "block02011401",
+         "sectionId": null,
+         "label": "Vilkår for innlevering",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": [
+          {
+           "title": "block0201140101",
+           "sectionId": null,
+           "label": "Maksimalt antall partier som en tilbyder kan inngi tilbud på",
+           "useLabelAsValue": false,
+           "value": "2",
+           "sections": null
+          }
+         ]
+        },
+        {
+         "title": "block02011402",
+         "sectionId": null,
+         "label": "Vilkår for kontrakt",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": [
+          {
+           "title": "block0201140201",
+           "sectionId": null,
+           "label": "Maksimalt antall partier som kontrakter kan tildeles én tilbyder for",
+           "useLabelAsValue": false,
+           "value": "2",
+           "sections": null
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "title": "block020115",
+       "sectionId": "2.1.6",
+       "label": "Grunnlag for avvisning",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": [
+        {
+         "title": "block02011501",
+         "sectionId": null,
+         "label": "Sources of grounds for exclusion",
+         "useLabelAsValue": false,
+         "value": "{code|name|document-used-in-public-procurement.epo-acc-espd-request}",
+         "sections": null
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "block05",
+   "sectionId": "8",
+   "label": "Virksomheter",
+   "useLabelAsValue": false,
+   "value": null,
+   "sections": [
+    {
+     "title": "block0501",
+     "sectionId": "8.1",
+     "label": null,
+     "useLabelAsValue": false,
+     "value": "ORG-0001",
+     "sections": [
+      {
+       "title": "block050101",
+       "sectionId": null,
+       "label": "Offisielt navn",
+       "useLabelAsValue": false,
+       "value": "FORSVARSMATERIELL",
+       "sections": null
+      },
+      {
+       "title": "block050102",
+       "sectionId": null,
+       "label": "Organisasjonsnummer",
+       "useLabelAsValue": false,
+       "value": "916075855",
+       "sections": null
+      },
+      {
+       "title": "block050104",
+       "sectionId": null,
+       "label": "Postadresse",
+       "useLabelAsValue": false,
+       "value": "Grev Wedels plass 1  ",
+       "sections": null
+      },
+      {
+       "title": "block050105",
+       "sectionId": null,
+       "label": "By",
+       "useLabelAsValue": false,
+       "value": "OSLO",
+       "sections": null
+      },
+      {
+       "title": "block050106",
+       "sectionId": null,
+       "label": "Postnummer",
+       "useLabelAsValue": false,
+       "value": "0151",
+       "sections": null
+      },
+      {
+       "title": "block050107",
+       "sectionId": null,
+       "label": "Underenhet i land",
+       "useLabelAsValue": false,
+       "value": "Oslo (NO081)",
+       "sections": null
+      },
+      {
+       "title": "block050108",
+       "sectionId": null,
+       "label": "Land",
+       "useLabelAsValue": false,
+       "value": "Norge",
+       "sections": null
+      },
+      {
+       "title": "block050109",
+       "sectionId": null,
+       "label": "Kontaktpunkt",
+       "useLabelAsValue": false,
+       "value": "Solveig Skrivervik",
+       "sections": null
+      },
+      {
+       "title": "block050110",
+       "sectionId": null,
+       "label": "E-post",
+       "useLabelAsValue": false,
+       "value": "e-sskrivervik@mil.no",
+       "sections": null
+      },
+      {
+       "title": "block050111",
+       "sectionId": null,
+       "label": "Telefon",
+       "useLabelAsValue": false,
+       "value": "93481148",
+       "sections": null
+      },
+      {
+       "title": "block050113",
+       "sectionId": null,
+       "label": "Internett-adresse",
+       "useLabelAsValue": false,
+       "value": "https://FMA.NO",
+       "sections": null
+      },
+      {
+       "title": "block050117",
+       "sectionId": null,
+       "label": "Rollene til denne virksomheten",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": [
+        {
+         "title": "block05011701",
+         "sectionId": null,
+         "label": "Kjøper",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block05011706",
+         "sectionId": null,
+         "label": "Virksomhet som mottar forespørsler om å delta",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block05011707",
+         "sectionId": null,
+         "label": "Virksomhet som behandler tilbudene",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block05011709",
+         "sectionId": null,
+         "label": "Virksomhet som gir mer informasjon om klagebehandling",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "block0501",
+     "sectionId": "8.1",
+     "label": null,
+     "useLabelAsValue": false,
+     "value": "ORG-0002",
+     "sections": [
+      {
+       "title": "block050101",
+       "sectionId": null,
+       "label": "Offisielt navn",
+       "useLabelAsValue": false,
+       "value": "Oslo tingrett",
+       "sections": null
+      },
+      {
+       "title": "block050102",
+       "sectionId": null,
+       "label": "Organisasjonsnummer",
+       "useLabelAsValue": false,
+       "value": "926725939",
+       "sections": null
+      },
+      {
+       "title": "block050105",
+       "sectionId": null,
+       "label": "By",
+       "useLabelAsValue": false,
+       "value": "Oslo",
+       "sections": null
+      },
+      {
+       "title": "block050106",
+       "sectionId": null,
+       "label": "Postnummer",
+       "useLabelAsValue": false,
+       "value": "0164",
+       "sections": null
+      },
+      {
+       "title": "block050107",
+       "sectionId": null,
+       "label": "Underenhet i land",
+       "useLabelAsValue": false,
+       "value": "Oslo (NO081)",
+       "sections": null
+      },
+      {
+       "title": "block050108",
+       "sectionId": null,
+       "label": "Land",
+       "useLabelAsValue": false,
+       "value": "Norge",
+       "sections": null
+      },
+      {
+       "title": "block050117",
+       "sectionId": null,
+       "label": "Rollene til denne virksomheten",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": [
+        {
+         "title": "block05011708",
+         "sectionId": null,
+         "label": "Virksomhet som gjennomfører klagebehandling",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block05011710",
+         "sectionId": null,
+         "label": "Meklingsvirksomhet",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "block07",
+   "sectionId": null,
+   "label": "Kunngjøringsinformasjon",
+   "useLabelAsValue": false,
+   "value": null,
+   "sections": [
+    {
+     "title": "block0701",
+     "sectionId": null,
+     "label": "Varselidentifikator/-versjon",
+     "useLabelAsValue": false,
+     "value": "f5f939d6-d52b-4c08-829f-2fb5a17a0c4b 01",
+     "sections": null
+    },
+    {
+     "title": "block0702",
+     "sectionId": null,
+     "label": "Type skjema",
+     "useLabelAsValue": false,
+     "value": "Konkurranse",
+     "sections": null
+    },
+    {
+     "title": "block0703",
+     "sectionId": null,
+     "label": "Type varsel",
+     "useLabelAsValue": false,
+     "value": "Melding om kontrakt eller konsesjon – standardregime",
+     "sections": null
+    },
+    {
+     "title": "block0704",
+     "sectionId": null,
+     "label": "Varsel utsendelsesdato",
+     "useLabelAsValue": false,
+     "value": "27.10.2026 14:49",
+     "sections": null
+    },
+    {
+     "title": "block0705",
+     "sectionId": null,
+     "label": "Varsel om utsendelsesdato (eSender)",
+     "useLabelAsValue": false,
+     "value": "27.10.2026 14:52",
+     "sections": null
+    },
+    {
+     "title": "block0706",
+     "sectionId": null,
+     "label": "Språk der denne kunngjøringen er offisielt tilgjengelig",
+     "useLabelAsValue": false,
+     "value": "norsk, English",
+     "sections": null
+    }
+   ]
+  }
+ ],
+ "awardedNames": [],
+ "changeNotices": null,
+ "limitedDataFlag": false,
+ "publicationDate": "2026-10-29",
+ "tedId": "750197-2026",
+ "procurementTimeline": [
+  {
+   "id": "2026-116778",
+   "allType": [
+    "ANNOUNCEMENT_OF_COMPETITION",
+    "COMPETITION"
+   ],
+   "publicationDate": "2026-10-29",
+   "selectedNotice": true
+  }
+ ],
+ "procurementStrategicLabels": [],
+ "lotsNumber": 2
+}

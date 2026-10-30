@@ -1,0 +1,119 @@
+[
+ {
+  "idweb": "26-103999",
+  "id": "26_103999",
+  "contractfolderid": "e3098722-fd8f-4ac9-a078-cb21851e095e",
+  "objet": "Acquisition d’un parc machines de confection métal et des outillages associés pour la 12e base de soutien du Matériel, détachement de Douai.",
+  "filename": "26-103999",
+  "famille": "JOUE",
+  "code_departement": [
+   "59",
+   "36"
+  ],
+  "code_departement_prestation": null,
+  "famille_libelle": "Marchés européens",
+  "dateparution": "2026-10-27",
+  "datefindiffusion": "2026-12-13",
+  "datelimitereponse": "2026-11-29T18:00:00+00:00",
+  "nomacheteur": "12ème BSMAT NEUVY PAILLOUX",
+  "titulaire": null,
+  "perimetre": "DIRECTIVE-81",
+  "type_procedure": "AUTRE",
+  "soustype_procedure": null,
+  "procedure_libelle": "Procédure NC",
+  "procedure_categorise": "AUTRE/",
+  "nature": "APPEL_OFFRE",
+  "sousnature": "STANDARD",
+  "nature_libelle": "Avis de marché",
+  "sousnature_libelle": null,
+  "nature_categorise": "appeloffre/standard",
+  "nature_categorise_libelle": "Avis de marché/",
+  "criteres": null,
+  "marche_public_simplifie": null,
+  "marche_public_simplifie_label": null,
+  "etat": "INITIAL",
+  "descripteur_code": [
+   "194"
+  ],
+  "dc": [
+   "194"
+  ],
+  "descripteur_libelle": [
+   "Machines-outils"
+  ],
+  "type_marche": [
+   "FOURNITURES"
+  ],
+  "type_marche_facette": [
+   "Fournitures"
+  ],
+  "type_avis": [
+   "5",
+   "1"
+  ],
+  "annonce_lie": null,
+  "annonces_anterieures": null,
+  "source_schema": "3.2.5",
+  "gestion": "{\"REFERENCE\": {\"IDWEB\": \"26-103999\", \"TYPE_AVIS\": {\"FAMILLE\": {\"JOUE\": \"\"}, \"PERIMETRE\": {\"DIRECTIVE-81\": \"\"}, \"NATURE\": {\"APPEL_OFFRE\": {\"STANDARD\": \"\"}}, \"STATUT\": {\"INITIAL\": \"\"}}}, \"INDEXATION\": {\"SCHEMA\": \"3.2.5\", \"NOMORGANISME\": \"12ème BSMAT NEUVY PAILLOUX\", \"TYPE_PROCEDURE\": {\"AUTRE\": \"\"}, \"DATE_PUBLICATION\": \"2026-10-27\", \"DATE_LIMITE_REPONSE\": \"2026-11-29T18:00:00.000+01:00\", \"DATE_FIN_DIFFUSION\": \"2026-12-13\", \"DESCRIPTEURS\": {\"DESCRIPTEUR\": {\"CODE\": \"194\", \"LIBELLE\": \"Machines-outils\"}}, \"NATURE_MARCHE\": {\"FOURNITURES\": \"\"}, \"DEP_PUBLICATION\": [\"59\", \"36\"], \"RESUME_OBJET\": \"Acquisition d’un parc machines de confection métal et des outillages associés pour la 12e base de soutien du Matériel, détachement de Douai.\"}}",
+  "donnees": "{\"EFORMS\": {\"ContractNotice\": {\"ext:UBLExtensions\": {\"ext:UBLExtension\": {\"ext:ExtensionContent\": {\"efext:EformsExtension\": {\"efac:NoticeSubType\": {\"cbc:SubTypeCode\": {\"@listName\": \"notice-subtype\", \"#text\": \"18\"}}, \"efac:Organizations\": {\"efac:Organization\": [{\"efac:Company\": {\"cbc:WebsiteURI\": \"www.marches-publics.gouv.fr\", \"cac:PartyIdentification\": {\"cbc:ID\": \"ORG-0001\"}, \"cac:PartyName\": {\"cbc:Name\": {\"@languageID\": \"FRA\", \"#text\": \"BASE SOUT MATER 12 - PORTION CTRALE\"}}, \"cac:PostalAddress\": {\"cbc:Department\": \"36\", \"cbc:CityName\": \"Neuvy pailloux\", \"cbc:PostalZone\": \"36100\", \"cbc:CountrySubentityCode\": {\"@listName\": \"nuts\", \"#text\": \"FRE11\"}, \"cac:Country\": {\"cbc:IdentificationCode\": {\"@listName\": \"country\", \"#text\": \"FRA\"}}}, \"cac:PartyLegalEntity\": {\"cbc:CompanyID\": \"13000873300011\"}, \"cac:Contact\": {\"cbc:Name\": \"Christine PROST\", \"cbc:Telephone\": \"0254036214\", \"cbc:ElectronicMail\": \"christine.prost@intradef.gouv.fr\"}}}, {\"efac:Company\": {\"cac:PartyIdentification\": {\"cbc:ID\": \"ORG-0002\"}, \"cac:PartyName\": {\"cbc:Name\": {\"@languageID\": \"FRA\", \"#text\": \"TRIBUNAL ADMINISTRATIF\"}}, \"cac:PostalAddress\": {\"cbc:StreetName\": \"1 COURS VERGNIAUD\", \"cbc:Department\": \"87\", \"cbc:CityName\": \"LIMOGES\", \"cbc:PostalZone\": \"87000\", \"cbc:CountrySubentityCode\": {\"@listName\": \"nuts\", \"#text\": \"FRE11\"}, \"cac:Country\": {\"cbc:IdentificationCode\": {\"@listName\": \"country\", \"#text\": \"FRA\"}}}, \"cac:PartyLegalEntity\": {\"cbc:CompanyID\": \"17870005000010\"}, \"cac:Contact\": {\"cbc:Telephone\": \"0555339155\", \"cbc:ElectronicMail\": \"greffe.ta-limoges@juradm.fr\"}}}]}}}}}, \"cbc:UBLVersionID\": {\"@schemeName\": \"notice-id\", \"#text\": \"2.3\"}, \"cbc:CustomizationID\": {\"@schemeName\": \"notice-id\", \"#text\": \"eforms-sdk-1.13\"}, \"cbc:ID\": {\"@schemeName\": \"notice-id\", \"#text\": \"392f0f37-444c-457d-bb75-7c71ebe54c5e\"}, \"cbc:ContractFolderID\": \"e3098722-fd8f-4ac9-a078-cb21851e095e\", \"cbc:IssueDate\": \"2026-10-26+01:00\", \"cbc:IssueTime\": \"14:46:48.000+01:00\", \"cbc:VersionID\": \"01\", \"cbc:RegulatoryDomain\": \"32009L0081\", \"cbc:NoticeTypeCode\": {\"@listName\": \"competition\", \"#text\": \"cn-standard\"}, \"cbc:NoticeLanguageCode\": {\"@listName\": \"language\", \"#text\": \"FRA\"}, \"cac:ContractingParty\": {\"cbc:BuyerProfileURI\": \"https://www.marches-publics.gouv.fr/entreprise\", \"cac:ContractingPartyType\": [{\"cbc:PartyTypeCode\": {\"@listName\": \"buyer-legal-type\", \"#text\": \"cga\"}}, {\"cbc:PartyTypeCode\": {\"@listName\": \"buyer-contracting-type\", \"#text\": \"cont-ent\"}}], \"cac:ContractingActivity\": {\"cbc:ActivityTypeCode\": {\"@listName\": \"authority-activity\", \"#text\": \"defence\"}}, \"cac:Party\": {\"cac:PartyIdentification\": {\"cbc:ID\": \"ORG-0001\"}}}, \"cac:TenderingTerms\": {\"cac:ProcurementLegislationDocumentReference\": [{\"cbc:ID\": \"LocalLegalBasis\", \"cbc:DocumentDescription\": {\"@languageID\": \"FRA\", \"#text\": \"Sans objet\"}}, {\"cbc:ID\": \"CrossBorderLaw\", \"cbc:DocumentDescription\": {\"@languageID\": \"FRA\", \"#text\": \"Sans objet\"}}], \"cac:TendererQualificationRequest\": {\"cac:SpecificTendererRequirement\": {\"cbc:TendererRequirementTypeCode\": {\"@listName\": \"exclusion-grounds-source\", \"#text\": \"epo-procurement-document\"}}}}, \"cac:TenderingProcess\": {\"cbc:Description\": {\"@languageID\": \"FRA\", \"#text\": \"Procédure adaptée défense sécurité avec publicité et mise en concurrence - 2 lots\"}, \"cbc:ProcedureCode\": {\"@listName\": \"procurement-procedure-type\", \"#text\": \"oth-single\"}}, \"cac:ProcurementProject\": {\"cbc:ID\": \"NPX_2026_02\", \"cbc:Name\": {\"@languageID\": \"FRA\", \"#text\": \"Atelier métal Douai\"}, \"cbc:Description\": {\"@languageID\": \"FRA\", \"#text\": \"Acquisition d’un parc machines de confection métal et des outillages associés pour la 12e base de soutien du Matériel, détachement de Douai\"}, \"cbc:ProcurementTypeCode\": {\"@listName\": \"contract-nature\", \"#text\": \"supplies\"}, \"cac:RequestedTenderTotal\": {\"cbc:EstimatedOverallContractAmount\": {\"@currencyID\": \"EUR\", \"#text\": \"395750\"}}, \"cac:MainCommodityClassification\": {\"cbc:ItemClassificationCode\": {\"@listName\": \"cpv\", \"#text\": \"42611000\"}}, \"cac:AdditionalCommodityClassification\": {\"cbc:ItemClassificationCode\": {\"@listName\": \"cpv\", \"#text\": \"42612000\"}}, \"cac:RealizedLocation\": {\"cac:Address\": {\"cbc:StreetName\": \"RUE RHIN ET DANUBE\", \"cbc:CityName\": \"DOUAI\", \"cbc:PostalZone\": \"59500\", \"cbc:CountrySubentityCode\": {\"@listName\": \"nuts\", \"#text\": \"FRE11\"}, \"cac:Country\": {\"cbc:IdentificationCode\": {\"@listName\": \"country\", \"#text\": \"FRA\"}}}}}, \"cac:ProcurementProjectLot\": [{\"cbc:ID\": {\"@schemeName\": \"Lot\", \"#text\": \"LOT-0001\"}, \"cac:TenderingTerms\": {\"ext:UBLExtensions\": {\"ext:UBLExtension\": {\"ext:ExtensionContent\": {\"efext:EformsExtension\": {\"efac:TenderSubcontractingRequirements\": {\"efbc:TenderSubcontractingRequirementsCode\": {\"@listName\": \"subcontracting-indication\", \"#text\": \"none\"}}}}}}, \"cbc:VariantConstraintCode\": {\"@listName\": \"permission\", \"#text\": \"not-allowed\"}, \"cbc:FundingProgramCode\": {\"@listName\": \"eu-funded\", \"#text\": \"no-eu-funds\"}, \"cbc:RecurringProcurementIndicator\": \"true\", \"cac:RequiredFinancialGuarantee\": {\"cbc:GuaranteeTypeCode\": {\"@listName\": \"tender-guarantee-required\", \"#text\": \"false\"}}, \"cac:PaymentTerms\": {\"cbc:Note\": {\"@languageID\": \"FRA\", \"#text\": \"CF Documents du marché. Financement par les crédits budgétaires de l'Etat. Avances règlementaires selon les termes du marché. Règlement des sommes dues par virement administratif à 30 jours, conformément à la règlementation applicable et aux termes du CCAP.\"}}, \"cac:TendererQualificationRequest\": [{\"cac:SpecificTendererRequirement\": {\"cbc:TendererRequirementTypeCode\": {\"@listName\": \"selection-criteria-source\", \"#text\": \"epo-procurement-document\"}}}, {\"cbc:CompanyLegalFormCode\": {\"@listName\": \"required\", \"#text\": \"false\"}}, {\"cac:SpecificTendererRequirement\": {\"cbc:TendererRequirementTypeCode\": {\"@listName\": \"reserved-procurement\", \"#text\": \"none\"}}}], \"cac:AllowedSubcontractTerms\": {\"cbc:SubcontractingConditionsCode\": {\"@listName\": \"subcontracting-obligation\", \"#text\": \"subc-chng\"}}, \"cac:ContractExecutionRequirement\": [{\"cbc:ExecutionRequirementCode\": {\"@listName\": \"reserved-execution\", \"#text\": \"no\"}}, {\"cbc:ExecutionRequirementCode\": {\"@listName\": \"conditions\", \"#text\": \"performance\"}, \"cbc:Description\": {\"@languageID\": \"FRA\", \"#text\": \"CF Documents du marché\"}}, {\"cbc:ExecutionRequirementCode\": {\"@listName\": \"einvoicing\", \"#text\": \"allowed\"}}, {\"cbc:ExecutionRequirementCode\": {\"@listName\": \"ecatalog-submission\", \"#text\": \"not-allowed\"}}], \"cac:AwardingTerms\": {\"cac:AwardingCriterion\": {\"cac:SubordinateAwardingCriterion\": {\"cbc:AwardingCriterionTypeCode\": {\"@listName\": \"award-criterion-type\", \"#text\": \"price\"}, \"cbc:Description\": {\"@languageID\": \"FRA\", \"#text\": \"Prix 80%. Cf Règlement de la consultation pour la formule attribuant la note financière.\"}}}}, \"cac:AdditionalInformationParty\": {\"cac:PartyIdentification\": {\"cbc:ID\": \"ORG-0001\"}}, \"cac:TenderRecipientParty\": {\"cbc:EndpointID\": \"https://www.marches-publics.gouv.fr/entreprise/consultation/3092012?orgAcronyme=g7h\"}, \"cac:TenderValidityPeriod\": {\"cbc:DurationMeasure\": {\"@unitCode\": \"DAY\", \"#text\": \"90\"}}, \"cac:AppealTerms\": {\"cac:PresentationPeriod\": {\"cbc:Description\": {\"@languageID\": \"FRA\", \"#text\": \"« Référé précontractuel (art. L. 551-1 à L. 551-12 du CJA \\\"Code de la justice administrative\\\") pouvant être introduit depuis le début de la procédure de passation jusqu'à la signature du marché. Référé contractuel (art L. 551-13 à L. 551-23 du CJA) pouvant être exercé dans les délais prévus à l'art.…\"}}, \"cac:AppealInformationParty\": {\"cac:PartyIdentification\": {\"cbc:ID\": \"ORG-0002\"}}, \"cac:AppealReceiverParty\": {\"cac:PartyIdentification\": {\"cbc:ID\": \"ORG-0002\"}}, \"cac:MediationParty\": {\"cac:PartyIdentification\": {\"cbc:ID\": \"ORG-0001\"}}}, \"cac:Language\": {\"cbc:ID\": \"FRA\"}, \"cac:PostAwardProcess\": {\"cbc:ElectronicOrderUsageIndicator\": \"false\", \"cbc:ElectronicPaymentUsageIndicator\": \"true\"}}, \"cac:TenderingProcess\": {\"cbc:SubmissionMethodCode\": {\"@listName\": \"esubmission\", \"#text\": \"required\"}, \"cac:TenderSubmissionDeadlinePeriod\": {\"cbc:EndDate\": \"2026-11-29+01:00\", \"cbc:EndTime\": \"18:00:00.000+01:00\"}, \"cac:AuctionTerms\": {\"cbc:AuctionConstraintIndicator\": \"false\"}, \"cac:FrameworkAgreement\": {\"cac:SubsequentProcessTenderRequirement\": {\"cbc:Name\": \"buyer-categories\"}}, \"cac:ContractingSystem\": [{\"cbc:ContractingSystemTypeCode\": {\"@listName\": \"framework-agreement\", \"#text\": \"none\"}}, {\"cbc:ContractingSystemTypeCode\": {\"@listName\": \"dps-usage\", \"#text\": \"none\"}}]}, \"cac:ProcurementProject\": {\"cbc:ID\": \"2026-32-02 Lot n°1\", \"cbc:Name\": {\"@languageID\": \"FRA\", \"#text\": \"Table de découpe laser fibre - lot n°1\"}, \"cbc:Description\": {\"@languageID\": \"FRA\", \"#text\": \"Table de découpe laser fibre - lot n°1\"}, \"cbc:ProcurementTypeCode\": {\"@listName\": \"contract-nature\", \"#text\": \"supplies\"}, \"cbc:Note\": {\"@languageID\": \"FRA\", \"#text\": \"Le marché prend effet à compter de la date de notification. La durée est de 12 mois (1 an) à compter de sa date de notification.\"}, \"cbc:SMESuitableIndicator\": \"true\", \"cac:RequestedTenderTotal\": {\"cbc:EstimatedOverallContractAmount\": {\"@currencyID\": \"EUR\", \"#text\": \"170800\"}}, \"cac:MainCommodityClassification\": {\"cbc:ItemClassificationCode\": {\"@listName\": \"cpv\", \"#text\": \"42611000\"}}, \"cac:RealizedLocation\": {\"cac:Address\": {\"cbc:StreetName\": \"RUE RHIN ET DANUBE\", \"cbc:CityName\": \"DOUAI\", \"cbc:PostalZone\": \"59500\", \"cbc:CountrySubentityCode\": {\"@listName\": \"nuts\", \"#text\": \"FRE11\"}, \"cac:Country\": {\"cbc:IdentificationCode\": {\"@listName\": \"country\", \"#text\": \"FRA\"}}}}, \"cac:PlannedPeriod\": {\"cbc:DurationMeasure\": {\"@unitCode\": \"YEAR\", \"#text\": \"1\"}}, \"cac:ContractExtension\": {\"cbc:MaximumNumberNumeric\": \"0\"}}}, {\"cbc:ID\": {\"@schemeName\": \"Lot\", \"#text\": \"LOT-0002\"}, \"cac:TenderingTerms\": {\"ext:UBLExtensions\": {\"ext:UBLExtension\": {\"ext:ExtensionContent\": {\"efext:EformsExtension\": {\"efac:TenderSubcontractingRequirements\": {\"efbc:TenderSubcontractingRequirementsCode\": {\"@listName\": \"subcontracting-indication\", \"#text\": \"none\"}}}}}}, \"cbc:VariantConstraintCode\": {\"@listName\": \"permission\", \"#text\": \"not-allowed\"}, \"cbc:FundingProgramCode\": {\"@listName\": \"eu-funded\", \"#text\": \"no-eu-funds\"}, \"cbc:RecurringProcurementIndicator\": \"true\", \"cac:RequiredFinancialGuarantee\": {\"cbc:GuaranteeTypeCode\": {\"@listName\": \"tender-guarantee-required\", \"#text\": \"false\"}}, \"cac:PaymentTerms\": {\"cbc:Note\": {\"@languageID\": \"FRA\", \"#text\": \"CF Documents du marché. Financement par les crédits budgétaires de l'Etat. Avances règlementaires selon les termes du marché. Règlement des sommes dues par virement administratif à 30 jours, conformément à la règlementation applicable et aux termes du CCAP.\"}}, \"cac:TendererQualificationRequest\": [{\"cac:SpecificTendererRequirement\": {\"cbc:TendererRequirementTypeCode\": {\"@listName\": \"selection-criteria-source\", \"#text\": \"epo-procurement-document\"}}}, {\"cbc:CompanyLegalFormCode\": {\"@listName\": \"required\", \"#text\": \"false\"}}, {\"cac:SpecificTendererRequirement\": {\"cbc:TendererRequirementTypeCode\": {\"@listName\": \"reserved-procurement\", \"#text\": \"none\"}}}], \"cac:AllowedSubcontractTerms\": {\"cbc:SubcontractingConditionsCode\": {\"@listName\": \"subcontracting-obligation\", \"#text\": \"subc-chng\"}}, \"cac:ContractExecutionRequirement\": [{\"cbc:ExecutionRequirementCode\": {\"@listName\": \"reserved-execution\", \"#text\": \"no\"}}, {\"cbc:ExecutionRequirementCode\": {\"@listName\": \"conditions\", \"#text\": \"performance\"}, \"cbc:Description\": {\"@languageID\": \"FRA\", \"#text\": \"CF Documents du marché\"}}, {\"cbc:ExecutionRequirementCode\": {\"@listName\": \"einvoicing\", \"#text\": \"allowed\"}}, {\"cbc:ExecutionRequirementCode\": {\"@listName\": \"ecatalog-submission\", \"#text\": \"not-allowed\"}}], \"cac:AwardingTerms\": {\"cac:AwardingCriterion\": {\"cac:SubordinateAwardingCriterion\": {\"cbc:AwardingCriterionTypeCode\": {\"@listName\": \"award-criterion-type\", \"#text\": \"price\"}, \"cbc:Description\": {\"@languageID\": \"FRA\", \"#text\": \"Prix 80%. Cf Règlement de la consultation pour la formule attribuant la note financière.\"}}}}, \"cac:AdditionalInformationParty\": {\"cac:PartyIdentification\": {\"cbc:ID\": \"ORG-0001\"}}, \"cac:TenderRecipientParty\": {\"cbc:EndpointID\": \"https://www.marches-publics.gouv.fr\"}, \"cac:TenderValidityPeriod\": {\"cbc:DurationMeasure\": {\"@unitCode\": \"DAY\", \"#text\": \"90\"}}, \"cac:AppealTerms\": {\"cac:PresentationPeriod\": {\"cbc:Description\": {\"@languageID\": \"FRA\", \"#text\": \"« Référé précontractuel (art. L. 551-1 à L. 551-12 du CJA \\\"Code de la justice administrative\\\") pouvant être introduit depuis le début de la procédure de passation jusqu'à la signature du marché. Référé contractuel (art L. 551-13 à L. 551-23 du CJA) pouvant être exercé dans les délais prévus à l'art.…\"}}, \"cac:AppealInformationParty\": {\"cac:PartyIdentification\": {\"cbc:ID\": \"ORG-0002\"}}, \"cac:AppealReceiverParty\": {\"cac:PartyIdentification\": {\"cbc:ID\": \"ORG-0002\"}}, \"cac:MediationParty\": {\"cac:PartyIdentification\": {\"cbc:ID\": \"ORG-0001\"}}}, \"cac:Language\": {\"cbc:ID\": \"FRA\"}, \"cac:PostAwardProcess\": {\"cbc:ElectronicOrderUsageIndicator\": \"false\", \"cbc:ElectronicPaymentUsageIndicator\": \"true\"}}, \"cac:TenderingProcess\": {\"cbc:SubmissionMethodCode\": {\"@listName\": \"esubmission\", \"#text\": \"required\"}, \"cac:TenderSubmissionDeadlinePeriod\": {\"cbc:EndDate\": \"2026-11-29+01:00\", \"cbc:EndTime\": \"18:00:00.000+01:00\"}, \"cac:AuctionTerms\": {\"cbc:AuctionConstraintIndicator\": \"false\"}, \"cac:FrameworkAgreement\": {\"cac:SubsequentProcessTenderRequirement\": {\"cbc:Name\": \"buyer-categories\"}}, \"cac:ContractingSystem\": [{\"cbc:ContractingSystemTypeCode\": {\"@listName\": \"framework-agreement\", \"#text\": \"none\"}}, {\"cbc:ContractingSystemTypeCode\": {\"@listName\": \"dps-usage\", \"#text\": \"none\"}}]}, \"cac:ProcurementProject\": {\"cbc:ID\": \"2026-32-03 Lot n°2\", \"cbc:Name\": {\"@languageID\": \"FRA\", \"#text\": \"Centre d’usinage CNC et ses outillages - lot n° 2\"}, \"cbc:Description\": {\"@languageID\": \"FRA\", \"#text\": \"Centre d’usinage CNC et ses outillages - lot n° 2\"}, \"cbc:ProcurementTypeCode\": {\"@listName\": \"contract-nature\", \"#text\": \"supplies\"}, \"cbc:Note\": {\"@languageID\": \"FRA\", \"#text\": \"Le marché prend effet à compter de la date de notification. La durée est de 12 mois (1 an) à compter de sa date de notification.\"}, \"cbc:SMESuitableIndicator\": \"true\", \"cac:RequestedTenderTotal\": {\"cbc:EstimatedOverallContractAmount\": {\"@currencyID\": \"EUR\", \"#text\": \"179150\"}}, \"cac:MainCommodityClassification\": {\"cbc:ItemClassificationCode\": {\"@listName\": \"cpv\", \"#text\": \"42612000\"}}, \"cac:RealizedLocation\": {\"cac:Address\": {\"cbc:StreetName\": \"RUE RHIN ET DANUBE\", \"cbc:CityName\": \"DOUAI\", \"cbc:PostalZone\": \"59500\", \"cbc:CountrySubentityCode\": {\"@listName\": \"nuts\", \"#text\": \"FRE11\"}, \"cac:Country\": {\"cbc:IdentificationCode\": {\"@listName\": \"country\", \"#text\": \"FRA\"}}}}, \"cac:PlannedPeriod\": {\"cbc:DurationMeasure\": {\"@unitCode\": \"YEAR\", \"#text\": \"1\"}}, \"cac:ContractExtension\": {\"cbc:MaximumNumberNumeric\": \"0\"}}}]}}}",
+  "url_avis": "https://www.boamp.fr/pages/avis/?q=idweb:26-103999"
+ },
+ {
+  "idweb": "26-104262",
+  "id": "26_104262",
+  "contractfolderid": null,
+  "objet": "RÉNOVATION DU BÂTIMENT PIERRE POINTUE EN HAUT NIVEAU DE PERFORMANCE ENERGETIQUE",
+  "filename": "26-104262",
+  "famille": "MAPA",
+  "code_departement": [
+   "26"
+  ],
+  "code_departement_prestation": null,
+  "famille_libelle": "Marchés <90 k€ (MAPA)",
+  "dateparution": "2026-10-27",
+  "datefindiffusion": "2026-11-17",
+  "datelimitereponse": "2026-11-17T17:00:00+00:00",
+  "nomacheteur": "Communauté des communes du Diois",
+  "titulaire": null,
+  "perimetre": "MAPA",
+  "type_procedure": "PROCEDURE_ADAPTE",
+  "soustype_procedure": null,
+  "procedure_libelle": "Procédure Adaptée",
+  "procedure_categorise": "PROCEDURE_ADAPTE/",
+  "nature": "APPEL_OFFRE",
+  "sousnature": null,
+  "nature_libelle": "Avis de marché",
+  "sousnature_libelle": null,
+  "nature_categorise": "appeloffre/standard",
+  "nature_categorise_libelle": "Avis de marché/",
+  "criteres": null,
+  "marche_public_simplifie": null,
+  "marche_public_simplifie_label": null,
+  "etat": "INITIAL",
+  "descripteur_code": [
+   "222"
+  ],
+  "dc": [
+   "222"
+  ],
+  "descripteur_libelle": [
+   "Menuiserie"
+  ],
+  "type_marche": [
+   "TRAVAUX"
+  ],
+  "type_marche_facette": [
+   "Travaux"
+  ],
+  "type_avis": [
+   "5",
+   "1"
+  ],
+  "annonce_lie": null,
+  "annonces_anterieures": null,
+  "source_schema": "3.2.5",
+  "gestion": "{\"REFERENCE\": {\"IDWEB\": \"26-104262\", \"TYPE_AVIS\": {\"FAMILLE\": {\"MAPA\": \"\"}, \"PERIMETRE\": {\"MAPA\": \"\"}, \"NATURE\": {\"APPEL_OFFRE\": \"\"}, \"STATUT\": {\"INITIAL\": \"\"}}}, \"INDEXATION\": {\"SCHEMA\": \"3.2.5\", \"NOMORGANISME\": \"Communauté des communes du Diois\", \"TYPE_PROCEDURE\": {\"PROCEDURE_ADAPTE\": \"\"}, \"DATE_PUBLICATION\": \"2026-10-27\", \"DATE_LIMITE_REPONSE\": \"2026-11-17T17:00:00Z\", \"DATE_FIN_DIFFUSION\": \"2026-11-17\", \"DESCRIPTEURS\": {\"DESCRIPTEUR\": {\"CODE\": \"222\", \"LIBELLE\": \"Menuiserie\"}}, \"NATURE_MARCHE\": {\"TRAVAUX\": \"\"}, \"DEP_PUBLICATION\": \"26\", \"RESUME_OBJET\": \"RÉNOVATION DU BÂTIMENT PIERRE POINTUE EN HAUT NIVEAU DE PERFORMANCE ENERGETIQUE\"}}",
+  "donnees": "{\"MAPA\": {\"organisme\": {\"correspondantPRM\": {\"nom\": \"MARUEJOULS Rémi\"}, \"acheteurPublic\": \"Communauté des communes du Diois\", \"adr\": {\"voie\": {\"nomvoie\": \"5 place Jules Plan\"}, \"cp\": \"26150\", \"ville\": \"Die\"}, \"coord\": {\"tel\": \"0475222946\", \"mel\": \"commande-publique@paysdiois.fr\", \"url\": \"http://www.paysdiois.fr/\"}, \"urlProfilAcheteur\": \"https://pays-diois.e-marchespublics.com/pack/annonce_marche_public_2670_1189772.html\", \"classificationOrganisme\": \"6\"}, \"initial\": {\"natureMarche\": {\"travaux\": \"\"}, \"description\": {\"objet\": \"RÉNOVATION DU BÂTIMENT PIERRE POINTUE EN HAUT NIVEAU DE PERFORMANCE ENERGETIQUE\", \"lieuExecution\": {\"voie\": {\"nomvoie\": \"150 avenue de la Clairette\"}, \"cp\": \"26150\", \"ville\": \"DIE\"}}, \"duree\": {\"nbMois\": \"16\"}, \"conditions\": {\"langueFR\": \"\"}, \"justifications\": {\"DC1\": \"\", \"DC2\": \"\"}, \"criteres\": {\"critereCDC\": \"\"}, \"procedure\": {\"procedureAdaptee\": \"\"}, \"delais\": {\"receptionOffres\": \"2026-11-17T17:00:00Z\", \"validite\": {\"nbMois\": \"3\"}}, \"adressesComplt\": {\"admEtTech\": {\"PersonnePhysique\": {\"nom\": \"MARUEJOULS REMI\"}, \"PersonneMorale\": \"Communauté des communes du Diois\", \"adr\": {\"voie\": {\"nomvoie\": \"5 Place Jules Plan\"}, \"cp\": \"26150\", \"ville\": \"Die\"}, \"coord\": {\"mel\": \"commande-publique@paysdiois.fr\"}}, \"document\": {\"PersonneMorale\": \"Communauté des communes du Diois\", \"adr\": {\"voie\": {\"nomvoie\": \"5 Place Jules Plan\"}, \"cp\": \"26150\", \"ville\": \"Die\"}, \"coord\": {\"tel\": \"0475222946\"}}}, \"lots\": {\"unLot\": \"\", \"plusieursLot\": \"\", \"tousLots\": \"\", \"lot\": {\"numLot\": \"Lot 6 Menuiseries Intérieures\", \"description\": \"Menuiseries intérieures\"}}}}}",
+  "url_avis": "https://www.boamp.fr/pages/avis/?q=idweb:26-104262"
+ }
+]

@@ -1,0 +1,73 @@
+{
+ "documenten": [
+  {
+   "documentId": "660bbc35b40e1a13408372ad936c8473",
+   "documentNaam": "TN619355 - EFE1 Vrijwillige aankondiging van voorafgaande marktconsultatie 20261030145915",
+   "typeDocument": {
+    "code": "pdf",
+    "omschrijving": "Portable Document Format"
+   },
+   "datumPublicatie": "2026-10-30",
+   "publicatieCategorie": {
+    "code": "ANK",
+    "omschrijving": "Aankondiging"
+   },
+   "virusIndicatie": false,
+   "grootte": 186790,
+   "links": {
+    "download": {
+     "href": "/papi/tenderned-rs-tns/v2/publicaties/447195/documenten/15168067/content",
+     "title": "download"
+    }
+   }
+  },
+  {
+   "documentId": "88047079f2f3eb3551e5cc9df39d6bb9",
+   "documentNaam": "Vragenlijst MC Stedelijk water",
+   "typeDocument": {
+    "code": "xlsx",
+    "omschrijving": "Excel 2007"
+   },
+   "datumPublicatie": "2026-10-28",
+   "publicatieCategorie": {
+    "code": "MAC",
+    "omschrijving": "Marktconsultatiedocumenten"
+   },
+   "virusIndicatie": false,
+   "grootte": 65073,
+   "links": {
+    "download": {
+     "href": "/papi/tenderned-rs-tns/v2/publicaties/447195/documenten/15142336/content",
+     "title": "download"
+    }
+   }
+  },
+  {
+   "documentId": "008d6a7eca73f4dc274e46ab63c193f7",
+   "documentNaam": "TN619355 - EFE1 Vrijwillige aankondiging van voorafgaande marktconsultatie 20261019104734",
+   "typeDocument": {
+    "code": "pdf",
+    "omschrijving": "Portable Document Format"
+   },
+   "datumPublicatie": "2026-10-19",
+   "publicatieCategorie": {
+    "code": "ANK",
+    "omschrijving": "Aankondiging"
+   },
+   "virusIndicatie": false,
+   "grootte": 184549,
+   "links": {
+    "download": {
+     "href": "/papi/tenderned-rs-tns/v2/publicaties/447195/documenten/15073897/content",
+     "title": "download"
+    }
+   }
+  }
+ ],
+ "links": {
+  "downloadZip": {
+   "href": "/papi/tenderned-rs-tns/v2/publicaties/447195/documenten/zip",
+   "title": "download-zip"
+  }
+ }
+}

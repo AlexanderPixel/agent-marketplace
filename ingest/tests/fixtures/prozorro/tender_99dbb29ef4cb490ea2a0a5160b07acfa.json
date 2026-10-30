@@ -1,0 +1,133 @@
+{
+ "data": {
+  "description": "",
+  "date": "2026-10-30T16:20:47.419973+02:00",
+  "dateModified": "2026-10-30T16:20:47.419973+02:00",
+  "dateCreated": "2026-10-30T16:19:55.003861+02:00",
+  "tenderID": "UA-2026-10-30-009409-a",
+  "documents": [
+   {
+    "confidentiality": "public",
+    "documentType": "contractProforma",
+    "relatedItem": "99dbb29ef4cb490ea2a0a5160b07acfa",
+    "id": "79ece8a6a6664b2db2619df5dd1fce05",
+    "datePublished": "2026-10-30T16:19:57.416650+02:00",
+    "title": "Проект договору_Кава в зернах.doc",
+    "format": "application/msword",
+    "url": "https://public-docs.prozorro.gov.ua/get/23e894a779564092922d88b3cb4a5b23?Signature=vD4BtQ0jRjHG2QnlExOxx0cLCsWhG%2Fc4fw8GX9YIz%2BqtRSWX2TmdlevMvqAAL%2BgUGmde%2FNY3dZ6sxcKH8Nc2Cw%3D%3D&KeyID=52462340",
+    "documentOf": "tender",
+    "dateModified": "2026-10-30T16:19:57.416650+02:00",
+    "author": "tender_owner",
+    "language": "uk"
+   },
+   {
+    "confidentiality": "public",
+    "documentType": "notice",
+    "id": "961db570dbd14314a4c4da574344b38b",
+    "datePublished": "2026-10-30T16:20:46.400965+02:00",
+    "title": "sign.p7s",
+    "format": "application/pkcs7-signature",
+    "url": "https://public-docs.prozorro.gov.ua/get/48959c83899a4c6b8a4ee14349a5a167?Signature=LohGGROhQbEnNfsfnxQDNOVa3qG8m09q9r70Bati1sqyhOB456KtUotJDBqztZlDXJmprq54aMIuL58PSpD5Bg%3D%3D&KeyID=52462340",
+    "documentOf": "tender",
+    "dateModified": "2026-10-30T16:20:46.922276+02:00",
+    "author": "tender_owner",
+    "language": "uk"
+   }
+  ],
+  "status": "active.tendering",
+  "owner": "prom.ua",
+  "title": "Кава в зернах",
+  "mainProcurementCategory": "goods",
+  "procurementMethod": "selective",
+  "items": [
+   {
+    "id": "84bdbede77a642db9d50190ce81ec009",
+    "description": "Кава в зернах, арабіка, 1 кг",
+    "unit": {
+     "name": "кілограм",
+     "code": "KGM"
+    },
+    "quantity": 380.0,
+    "classification": {
+     "description": "Кава, чай та супутня продукція",
+     "scheme": "ДК021",
+     "id": "15860000-4"
+    },
+    "deliveryDate": {
+     "endDate": "2026-11-30T00:00:00+02:00"
+    },
+    "deliveryAddress": {
+     "streetAddress": "вул. Михайлівська, 12",
+     "locality": "Київ",
+     "postalCode": "01001",
+     "countryName": "Україна"
+    },
+    "profile": "244509-15860000-244900-40996564",
+    "category": "15860000-244900-40996564"
+   }
+  ],
+  "tenderPeriod": {
+   "startDate": "2026-10-30T16:20:47.419973+02:00",
+   "endDate": "2026-11-04T12:00:00+02:00"
+  },
+  "procurementMethodType": "priceQuotation",
+  "awardCriteria": "lowestCost",
+  "agreement": {
+   "id": "6baacf7d095346b88238203273e9956c"
+  },
+  "value": {
+   "amount": 248900.0,
+   "currency": "UAH",
+   "valueAddedTaxIncluded": false
+  },
+  "procuringEntity": {
+   "name": "акціонерне товариство “Національна акціонерна компанія “Нафтогаз України”",
+   "identifier": {
+    "scheme": "UA-EDR",
+    "id": "20077720",
+    "legalName": "акціонерне товариство “Національна акціонерна компанія “Нафтогаз України”",
+    "uri": "http://www.naftogaz.com"
+   },
+   "address": {
+    "streetAddress": "вул. Б.Хмельницького, 6",
+    "locality": "м. Київ ",
+    "region": "Київська область",
+    "postalCode": "01601",
+    "countryName": "Україна"
+   },
+   "contactPoint": {
+    "name": "redacted"
+   },
+   "kind": "special"
+  },
+  "noticePublicationDate": "2026-10-30T16:20:47.419973+02:00",
+  "next_check": "2026-11-04T12:00:00+02:00",
+  "id": "99dbb29ef4cb490ea2a0a5160b07acfa"
+ },
+ "config": {
+  "hasAuction": false,
+  "minBidsNumber": 1,
+  "hasAwardingOrder": true,
+  "hasValueRestriction": true,
+  "valueCurrencyEquality": true,
+  "hasPrequalification": false,
+  "hasPreSelectionAgreement": true,
+  "hasTenderComplaints": false,
+  "hasAwardComplaints": false,
+  "hasCancellationComplaints": false,
+  "restricted": false,
+  "hasValueEstimation": true,
+  "hasQualificationComplaints": false,
+  "tenderComplainRegulation": 0,
+  "qualificationComplainDuration": 0,
+  "awardComplainDuration": 0,
+  "cancellationComplainDuration": 0,
+  "clarificationUntilDuration": 0,
+  "qualificationDuration": 0,
+  "minTenderingDuration": 2,
+  "hasEnquiries": false,
+  "minEnquiriesDuration": 0,
+  "enquiryPeriodRegulation": 0,
+  "hasMultiSourcing": false
+ }
+}

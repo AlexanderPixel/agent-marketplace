@@ -1,0 +1,118 @@
+{
+ "apiVersion": "2.157.1",
+ "terms": "***",
+ "pageNumber": 1,
+ "pageSize": 10,
+ "sort": "[identifier:ASC]",
+ "totalResults": 1,
+ "results": [
+  {
+   "reference": "49b6860e-3063-4206-9dbb-cbfd08360d40-CN",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/49b6860e-3063-4206-9dbb-cbfd08360d40-CN",
+   "summary": "Delivering IT and Firearms Equipment to the NFFP in the frame of the EU4Security Moldova Project",
+   "metadata": {
+    "procedureType": [
+     "47396220"
+    ],
+    "es_SortDate": [
+     "2026-10-30T00:00:00.000+0000"
+    ],
+    "cftPartyLegalEntityId": [
+     "47352388"
+    ],
+    "contractType": [
+     "31095499"
+    ],
+    "description": [
+     "The subject of this call for tenders is “EU4 Security Moldova Project/ National Firearms Focal Point for Republic of Moldova”.\nThe subject of this call for tenders is to award a direct contract for the provision of ICT and Firearms equipment to set up a National Firearms Focal Point in the Republic of Moldova.\nEmpowering the National Firearms Focal Point (NFFP) with workstations, laptops, software and firearms equipment represents a strategic and forward-thinking investment in supporting Moldova's national capacity to effectively address the complex challenges of firearms-related crime. Equipping the NFFP with these essential tools will significantly enhance their ability to efficiently coll"
+    ],
+    "language": [
+     "en"
+    ],
+    "title": [
+     "Delivering IT and Firearms Equipment to the NFFP in the frame of the EU4Security Moldova Project"
+    ],
+    "type": [
+     "0"
+    ],
+    "cftId": [
+     "49b6860e-3063-4206-9dbb-cbfd08360d40-CN"
+    ],
+    "callIdentifier": [
+     "CEPOL/2026/OP/0012"
+    ],
+    "DATASOURCE": [
+     "SEDIA"
+    ],
+    "REFERENCE": [
+     "49b6860e-3063-4206-9dbb-cbfd08360d40-CN"
+    ],
+    "cftTimezone": [
+     "Europe/Budapest"
+    ],
+    "cftEstimatedTotalProcedureValue": [
+     "400000 EUR"
+    ],
+    "cftContractNoticeLink": [
+     "[\"754856-2026\",\"211/2026\",\"2026-10-30T00:00:00\"]"
+    ],
+    "frameworkProgramme": [],
+    "cftSubmissionMethodCode": [
+     "ESUBMISSION"
+    ],
+    "identifier": [
+     "49b6860e-3063-4206-9dbb-cbfd08360d40-CN"
+    ],
+    "cftEstimatedOverallContractAmount": [
+     "400000"
+    ],
+    "caName": [
+     "Delivering IT and Firearms Equipment to the NFFP in the frame of the EU4Security Moldova Project"
+    ],
+    "es_ContentType": [
+     "text/plain"
+    ],
+    "cftPlannedDate": [],
+    "esDA_FirstIngestDate": [
+     "2026-10-30T05:02:50.228+0100"
+    ],
+    "deadlineDate": [
+     "2027-01-11T11:00:59.000+0000"
+    ],
+    "esDA_IngestDate": [
+     "2026-10-30T09:44:31.175+0100"
+    ],
+    "url": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/49b6860e-3063-4206-9dbb-cbfd08360d40-CN"
+    ],
+    "esST_URL": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/49b6860e-3063-4206-9dbb-cbfd08360d40-CN"
+    ],
+    "cftEXARegistrationDeadline": [],
+    "cftLeadContractingAuthorityCode": [
+     "[{\"name\":\"European Union Agency For Law Enforcement Training\",\"link\":\"https://www.cepol.europa.eu/\",\"isLeadAuthority\":true}]"
+    ],
+    "mainCpv": [
+     "30232100",
+     "30191400",
+     "22815000",
+     "73432000",
+     "30200000",
+     "30213300"
+    ],
+    "cftPublicationDateEForm": [
+     "2026-10-30T00:00:00"
+    ],
+    "cftEstimatedOverallContractCurrency": [
+     "EUR"
+    ],
+    "startDate": [
+     "2026-10-30T00:00:00.000+0000"
+    ],
+    "status": [
+     "31094502"
+    ]
+   }
+  }
+ ]
+}

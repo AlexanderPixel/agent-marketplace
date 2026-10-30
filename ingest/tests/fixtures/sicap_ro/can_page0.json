@@ -1,0 +1,174 @@
+{
+ "total": 3,
+ "items": [
+  {
+   "caNoticeId": 100665003,
+   "noticeId": 101414986,
+   "procedureId": null,
+   "noticeNo": "CAN1160267",
+   "sysNoticeTypeId": 3,
+   "sysNoticeState": {
+    "id": 2,
+    "text": "Publicat",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysProcedureState": {
+    "id": 5,
+    "text": "Atribuita",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "contractingAuthorityNameAndFN": "13624359 - UM 0929 Bucuresti",
+   "contractTitle": "Furnizare energie electrica",
+   "sysAcquisitionContractType": {
+    "id": 1,
+    "text": "Furnizare",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysProcedureType": {
+    "id": 7,
+    "text": "Negociere fara publicare prealabila",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysContractAssigmentType": {
+    "id": 1,
+    "text": "Contract de achizitii publice",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "cpvCodeAndName": "09310000-5 - Electricitate (Rev.2)",
+   "ronContractValue": 19848213.3,
+   "isOnline": false,
+   "noticeStateDate": "2026-10-30T16:38:42+02:00",
+   "minTenderReceiptDeadline": null,
+   "maxTenderReceiptDeadline": null,
+   "errataNo": 0,
+   "versionNo": null,
+   "sysNoticeVersionId": 2,
+   "tenderReceiptDeadlineExport": null,
+   "estimatedValueExport": "19848213,3 RON",
+   "highestOfferValue": 0.0,
+   "lowestOfferValue": 0.0,
+   "hasSubsequentContracts": false,
+   "isUtility": false,
+   "isPPP": false,
+   "currencyCode": "RON"
+  },
+  {
+   "caNoticeId": 100664941,
+   "noticeId": 101414873,
+   "procedureId": 100334145,
+   "noticeNo": "SCNA1138672",
+   "sysNoticeTypeId": 18,
+   "sysNoticeState": {
+    "id": 2,
+    "text": "Publicat",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysProcedureState": {
+    "id": 3,
+    "text": "Anulata",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "contractingAuthorityNameAndFN": "12859080 - Ministerul Apararii - Centrul de Studii si Proiectare Constructii Militare",
+   "contractTitle": "Stații independente de comunicații - Stații grafice pentru proiectare",
+   "sysAcquisitionContractType": {
+    "id": 1,
+    "text": "Furnizare",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysProcedureType": {
+    "id": 20,
+    "text": "Procedura simplificata",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysContractAssigmentType": {
+    "id": 1,
+    "text": "Contract de achizitii publice",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "cpvCodeAndName": "30214000-2 - Puncte de lucru (Rev.2)",
+   "ronContractValue": 0.0,
+   "isOnline": true,
+   "noticeStateDate": "2026-10-30T13:53:04+02:00",
+   "minTenderReceiptDeadline": null,
+   "maxTenderReceiptDeadline": null,
+   "errataNo": 0,
+   "versionNo": null,
+   "sysNoticeVersionId": 2,
+   "tenderReceiptDeadlineExport": null,
+   "estimatedValueExport": "0 RON",
+   "highestOfferValue": 0.0,
+   "lowestOfferValue": 0.0,
+   "hasSubsequentContracts": false,
+   "isUtility": false,
+   "isPPP": false,
+   "currencyCode": "RON"
+  },
+  {
+   "caNoticeId": 100651393,
+   "noticeId": 101388750,
+   "procedureId": 100323251,
+   "noticeNo": "CAN1176684",
+   "sysNoticeTypeId": 3,
+   "sysNoticeState": {
+    "id": 2,
+    "text": "Publicat",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysProcedureState": {
+    "id": 3,
+    "text": "Anulata",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "contractingAuthorityNameAndFN": "RO 1102556 - RATBV S.A.",
+   "contractTitle": "Materiale de vopsitorie auto",
+   "sysAcquisitionContractType": {
+    "id": 1,
+    "text": "Furnizare",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysProcedureType": {
+    "id": 1,
+    "text": "Licitatie deschisa",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysContractAssigmentType": {
+    "id": 3,
+    "text": "Acord-cadru",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "cpvCodeAndName": "44110000-4 - Materiale de constructii (Rev.2)",
+   "ronContractValue": 0.0,
+   "isOnline": true,
+   "noticeStateDate": "2026-10-30T15:01:10+02:00",
+   "minTenderReceiptDeadline": null,
+   "maxTenderReceiptDeadline": null,
+   "errataNo": 0,
+   "versionNo": null,
+   "sysNoticeVersionId": 2,
+   "tenderReceiptDeadlineExport": null,
+   "estimatedValueExport": "0 RON",
+   "highestOfferValue": 0.0,
+   "lowestOfferValue": 0.0,
+   "hasSubsequentContracts": false,
+   "isUtility": true,
+   "isPPP": false,
+   "currencyCode": "RON"
+  }
+ ],
+ "searchTooLong": false
+}

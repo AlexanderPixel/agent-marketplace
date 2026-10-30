@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><ajax-response><component id="id1a0" ><![CDATA[<table id="datatable" class="table-advanced table table-striped table-bordered" summary="Tabelle der Verfahren aus der Suche">
+<caption>Suchergebnisse</caption>
+
+<thead>
+	
+	<tr class="navigation">
+		<td colspan="7">
+			<div class="navigatorLabel"><div>Zeige 1 bis 100 von 1072</div></div>
+			<div class="navigator"><div id="id19b">
+    <a class="first icon disabled" id="id153" title="Gehe zur ersten Seite" role="button" tabindex="-1" aria-disabled="true"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+    <a rel="prev" class="prev icon disabled" id="id154" title="Gehe zur vorherigen Seite" role="button" tabindex="-1" aria-disabled="true"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    <span class="goto">
+		<a id="id1a9" title="Gehe zu Seite 1" role="button" class="disabled" tabindex="-1" aria-disabled="true"><span>1</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-1-span-navigator-navigation-1-pageLink" id="id1aa" title="Gehe zu Seite 2" role="button" class="" tabindex="0" aria-disabled="false"><span>2</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-1-span-navigator-navigation-2-pageLink" id="id1ab" title="Gehe zu Seite 3" role="button" class="" tabindex="0" aria-disabled="false"><span>3</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-1-span-navigator-navigation-3-pageLink" id="id1ac" title="Gehe zu Seite 4" role="button" class="" tabindex="0" aria-disabled="false"><span>4</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-1-span-navigator-navigation-4-pageLink" id="id1ad" title="Gehe zu Seite 5" role="button" class="" tabindex="0" aria-disabled="false"><span>5</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-1-span-navigator-navigation-5-pageLink" id="id1ae" title="Gehe zu Seite 6" role="button" class="" tabindex="0" aria-disabled="false"><span>6</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-1-span-navigator-navigation-6-pageLink" id="id1af" title="Gehe zu Seite 7" role="button" class="" tabindex="0" aria-disabled="false"><span>7</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-1-span-navigator-navigation-7-pageLink" id="id1b0" title="Gehe zu Seite 8" role="button" class="" tabindex="0" aria-disabled="false"><span>8</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-1-span-navigator-navigation-8-pageLink" id="id1b1" title="Gehe zu Seite 9" role="button" class="" tabindex="0" aria-disabled="false"><span>9</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-1-span-navigator-navigation-9-pageLink" id="id1b2" title="Gehe zu Seite 10" role="button" class="" tabindex="0" aria-disabled="false"><span>10</span></a>
+	</span>
+    <a rel="next" class="next icon" id="id155" href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-1-span-navigator-next" title="Gehe zur nächsten Seite" role="button" tabindex="0" aria-disabled="false"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    <a class="last icon" id="id156" href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-1-span-navigator-last" title="Gehe zur letzten Seite" role="button" tabindex="0" aria-disabled="false"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+</div></div>
+		</td>
+	</tr>
+
+    <tr class="headers">
+        
+            <th scope="col" role="columnheader" class="wicket_orderNone ev-result-col" aria-sort="none"><a href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-2-headers-8-header-orderByLink" id="id1b3" rel="nofollow"><span>Bezeichnung</span></a></th>
+        
+            <th scope="col" role="columnheader" class="wicket_orderNone ev-result-col" aria-sort="none"><a href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-2-headers-9-header-orderByLink" id="id1b4" rel="nofollow"><span>Geschäftszeichen</span></a></th>
+        
+            <th scope="col" role="columnheader" class="wicket_orderNone ev-result-col" aria-sort="none"><a href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-2-headers-10-header-orderByLink" id="id1b5" rel="nofollow"><span>Vergabestelle</span></a></th>
+        
+            <th scope="col" role="columnheader" class="wicket_orderNone ev-result-col" aria-sort="none"><a href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-2-headers-11-header-orderByLink" id="id1b6" rel="nofollow"><span>Ort der Leistungserbringung</span></a></th>
+        
+            <th scope="col" role="columnheader" class="wicket_orderNone ev-result-col" aria-sort="none"><a href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-2-headers-12-header-orderByLink" id="id1b7" rel="nofollow"><span data-hide-column="true">Verfahrensart</span></a></th>
+        
+            <th scope="col" role="columnheader" class="wicket_orderNone result_col_deadline result_type_date" aria-sort="none"><a href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-2-headers-13-header-orderByLink" id="id1b8" rel="nofollow"><span data-hide-column="true">
+
+    <span class="ev-result-deadline-header">Nächste Frist</span>
+
+</span></a></th>
+        
+            <th scope="col" role="columnheader" class="wicket_orderDown result_col_releaseDate result_type_date" aria-sort="descending"><a href="./search.html?2-1.-searchPanel-results-searchResults-results-topToolbars-toolbars-2-headers-14-header-orderByLink" id="id1b9" rel="nofollow" title="Sortierung: absteigend"><span data-hide-column="true">veröffentlicht</span></a></th>
+        
+    </tr>
+
+</thead>
+<tbody>
+	<tr class="odd">
+		<td class="ev-result-col">
+			<div>
+    
+    <a class="text-wrap" href="./tenderdetails.html?id=903335" data-evid="search_list_result">Vergabe Dienstleistungskonzession Heimkantine Julius-Leber-Kaserne Berlin</a>
+    
+</div>
+		</td><td class="ev-result-col">
+			<div>VPB/2BB/DN018 (VpflABw)</div>
+		</td><td class="ev-result-col">
+			<div>
+    
+    Bundeswehrverwaltung
+</div>
+		</td><td class="ev-result-col">
+			<div>Julius-Leber-Kaserne in 13405 Berlin, Kurt-Schumacher-Damm 41</div>
+		</td><td class="ev-result-col">
+			<div>National Öffentliche Ausschreibung</div>
+		</td><td class="result_col_deadline result_type_date">
+			<div>26.11.26, 13:00</div>
+		</td><td class="result_col_releaseDate result_type_date">
+			<div>30.10.26</div>
+		</td>
+	</tr><tr class="odd">
+		<td class="ev-result-col">
+			<div>
+    
+    <a class="text-wrap" href="./tenderdetails.html?id=902820" data-evid="search_list_result">FD-Boote Kl- 423 GFK-Sonardom FGS OSTE und OKER</a>
+    
+</div>
+		</td><td class="ev-result-col">
+			<div>Q S2AD SA257 LA723</div>
+		</td><td class="ev-result-col">
+			<div>
+    
+    Bundeswehrverwaltung
+</div>
+		</td><td class="ev-result-col">
+			<div>26826 Weener (Leer)</div>
+		</td><td class="ev-result-col">
+			<div>EU Verhandlungsverfahren mit TW</div>
+		</td><td class="result_col_deadline result_type_date">
+			<div>07.12.26, 13:00</div>
+		</td><td class="result_col_releaseDate result_type_date">
+			<div>30.10.26</div>
+		</td>
+	</tr><tr class="odd">
+		<td class="ev-result-col">
+			<div>
+    
+    <a class="text-wrap" href="./tenderdetails.html?id=903293" data-evid="search_list_result">8/523S/RC217 -Anmietung Einsatzfahrzeug für das SanUstgZ Stetten a.k.M.</a>
+    
+</div>
+		</td><td class="ev-result-col">
+			<div>6003135685-BwDLZ Stetten a.k.M</div>
+		</td><td class="ev-result-col">
+			<div>
+    
+    Bundeswehrverwaltung
+</div>
+		</td><td class="ev-result-col">
+			<div>Siehe Verzeichnis der Empfängeranschriften</div>
+		</td><td class="ev-result-col">
+			<div>National Öffentliche Ausschreibung</div>
+		</td><td class="result_col_deadline result_type_date">
+			<div>30.11.26, 13:00</div>
+		</td><td class="result_col_releaseDate result_type_date">
+			<div>30.10.26</div>
+		</td>
+	</tr><tr class="even">
+		<td class="ev-result-col">
+			<div>
+    
+    <a class="text-wrap" href="./tenderdetails.html?id=902383" data-evid="search_list_result">REZ Bayern_45Startklar_AA Rosenheim </a>
+    
+</div>
+		</td><td class="ev-result-col">
+			<div>701-26-45Startklar-10336</div>
+		</td><td class="ev-result-col">
+			<div>
+    
+    Bundesagentur für Arbeit
+</div>
+		</td><td class="ev-result-col">
+			<div>- Bad Tölz (Bad Tölz-Wolfratshausen)</div>
+		</td><td class="ev-result-col">
+			<div>EU Offenes Verfahren</div>
+		</td><td class="result_col_deadline result_type_date">
+			<div>01.12.26, 11:00</div>
+		</td><td class="result_col_releaseDate result_type_date">
+			<div>28.10.26</div>
+		</td>
+	</tr>
+</tbody>
+<tfoot>
+	
+	<tr class="navigation">
+		<td colspan="7">
+			<div class="navigatorLabel"><div>Zeige 1 bis 100 von 1072</div></div>
+			<div class="navigator"><div id="id19c">
+    <a class="first icon disabled" id="id168" title="Gehe zur ersten Seite" role="button" tabindex="-1" aria-disabled="true"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+    <a rel="prev" class="prev icon disabled" id="id169" title="Gehe zur vorherigen Seite" role="button" tabindex="-1" aria-disabled="true"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    <span class="goto">
+		<a id="id1ba" title="Gehe zu Seite 1" role="button" class="disabled" tabindex="-1" aria-disabled="true"><span>1</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-bottomToolbars-toolbars-4-span-navigator-navigation-1-pageLink" id="id1bb" title="Gehe zu Seite 2" role="button" class="" tabindex="0" aria-disabled="false"><span>2</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-bottomToolbars-toolbars-4-span-navigator-navigation-2-pageLink" id="id1bc" title="Gehe zu Seite 3" role="button" class="" tabindex="0" aria-disabled="false"><span>3</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-bottomToolbars-toolbars-4-span-navigator-navigation-3-pageLink" id="id1bd" title="Gehe zu Seite 4" role="button" class="" tabindex="0" aria-disabled="false"><span>4</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-bottomToolbars-toolbars-4-span-navigator-navigation-4-pageLink" id="id1be" title="Gehe zu Seite 5" role="button" class="" tabindex="0" aria-disabled="false"><span>5</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-bottomToolbars-toolbars-4-span-navigator-navigation-5-pageLink" id="id1bf" title="Gehe zu Seite 6" role="button" class="" tabindex="0" aria-disabled="false"><span>6</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-bottomToolbars-toolbars-4-span-navigator-navigation-6-pageLink" id="id1c0" title="Gehe zu Seite 7" role="button" class="" tabindex="0" aria-disabled="false"><span>7</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-bottomToolbars-toolbars-4-span-navigator-navigation-7-pageLink" id="id1c1" title="Gehe zu Seite 8" role="button" class="" tabindex="0" aria-disabled="false"><span>8</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-bottomToolbars-toolbars-4-span-navigator-navigation-8-pageLink" id="id1c2" title="Gehe zu Seite 9" role="button" class="" tabindex="0" aria-disabled="false"><span>9</span></a>
+	</span><span class="goto">
+		<a href="./search.html?2-1.-searchPanel-results-searchResults-results-bottomToolbars-toolbars-4-span-navigator-navigation-9-pageLink" id="id1c3" title="Gehe zu Seite 10" role="button" class="" tabindex="0" aria-disabled="false"><span>10</span></a>
+	</span>
+    <a rel="next" class="next icon" id="id16a" href="./search.html?2-1.-searchPanel-results-searchResults-results-bottomToolbars-toolbars-4-span-navigator-next" title="Gehe zur nächsten Seite" role="button" tabindex="0" aria-disabled="false"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    <a class="last icon" id="id16b" href="./search.html?2-1.-searchPanel-results-searchResults-results-bottomToolbars-toolbars-4-span-navigator-last" title="Gehe zur letzten Seite" role="button" tabindex="0" aria-disabled="false"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+</div></div>
+		</td>
+	</tr>
+
+</tfoot>
+</table>]]></component></ajax-response>

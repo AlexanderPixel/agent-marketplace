@@ -1,0 +1,144 @@
+[
+ {
+  "id": "bf34d7a4-7edb-48e8-9ab6-1d57beac193d",
+  "submissionVersion": "/api/submission_versions/fcf01240-7f4d-46d0-9068-77a00655a6b4",
+  "form": "/api/forms/20100a01-c48f-4211-8242-7ec5104462fe",
+  "formSchemaVersion": "/api/form_schema_versions/23399c76-ee07-42f3-b28a-e0f22361eaf1",
+  "organization": "/api/organizations/1b2fcb37-fdcc-4238-888c-cd50aaf9b7d2",
+  "data": {
+   "verzeSdk": "1.13.2",
+   "dodavatele": [
+    {
+     "ico": "14429837",
+     "nazev": "HR stav KV s.r.o."
+    }
+   ],
+   "zadavatele": [
+    {
+     "ico": "00254843",
+     "nazev": "Město Ostrov"
+    }
+   ],
+   "zdrojPodani": {
+    "id": "WEB-ztbqrg",
+    "typ": "WEB",
+    "uzivatelVvzLogin": "ztbqrg"
+   },
+   "nazevZakazky": "Komplexní revitalizace veřejného prostoru a realizace biatlonového tréninkového centra – 1. ETAPA",
+   "uverejnitTed": false,
+   "uverejnitVvz": true,
+   "druhFormulare": "38",
+   "zakazkaZrusena": false,
+   "datumPrijetiVvz": "2026-10-30T13:36:52+01:00",
+   "formularOpravuje": false,
+   "evCisloZakazkyVvz": "Z2026-037588",
+   "datumUverejneniVvz": "2026-10-30T13:40:01+01:00",
+   "formularZneplatnen": false,
+   "lhutaUverejneniVvz": "2026-11-04T23:59:00+01:00",
+   "uzivatelskyNazevFormulare": "38 Oznámení o změně závazku ze smlouvy – obecná VZ - D2",
+   "evCisloVvzSouvisejicihoFormulare": "F2026-037588"
+  },
+  "dataHash": "9d10915f972030919b2d028ebb7f3374e2288e4d68d32768142ea20d73483938",
+  "workflowPlaceCode": "UVEREJNENO_VVZ",
+  "variableId": "F2026-059731",
+  "relatedId": "7753b44c-82c8-4528-b2f3-9a3b731cb7a0",
+  "publicId": "LKpIoQoQG1jFgyfwsA89QP0zLZkn1zOq",
+  "copyFromSubmissionVersion": "/api/submission_versions/c22e8c20-325f-4f2e-b083-d96977b392a3",
+  "version": 5,
+  "validityPeriod": "2026-10-26T14:46:42+01:00/",
+  "createdAt": "2026-10-26T14:46:42+01:00",
+  "updatedAt": "2026-10-30T13:40:01+01:00"
+ },
+ {
+  "id": "e8f6f7bd-4e91-4e63-ad8d-d8159cb0cba6",
+  "submissionVersion": "/api/submission_versions/b39a60a1-54b1-44cb-a342-8cecf786b7fe",
+  "form": "/api/forms/20100a01-c48f-4211-8242-7ec5104462fe",
+  "formSchemaVersion": "/api/form_schema_versions/23399c76-ee07-42f3-b28a-e0f22361eaf1",
+  "organization": "/api/organizations/d414b510-ee6d-4bad-b915-514a8ab6f507",
+  "data": {
+   "verzeSdk": "1.13.2",
+   "zadavatele": [
+    {
+     "ico": "49710371",
+     "nazev": "Řízení letového provozu České republiky, státní podnik (ŘLP ČR, s.p.)"
+    }
+   ],
+   "zdrojPodani": {
+    "id": "WEB-ejidlg",
+    "typ": "WEB",
+    "uzivatelVvzLogin": "ejidlg"
+   },
+   "nazevZakazky": "ReSURS I. - PISEK - stavební úpravy",
+   "uverejnitTed": false,
+   "uverejnitVvz": true,
+   "druhFormulare": "16",
+   "zakazkaZrusena": false,
+   "datumPrijetiVvz": "2026-10-30T14:00:16+01:00",
+   "formularOpravuje": true,
+   "evCisloZakazkyVvz": "Z2026-051857",
+   "datumUverejneniVvz": "2026-10-30T14:10:02+01:00",
+   "formularZneplatnen": false,
+   "lhutaUverejneniVvz": "2026-11-04T23:59:00+01:00",
+   "lhutaNabidkyZadosti": "2026-12-10T10:00:00+01:00",
+   "uzivatelskyNazevFormulare": "16 Oznámení o zahájení zadávacího řízení – obecná veřejná zakázka",
+   "evCisloVvzSouvisejicihoFormulare": "F2026-051857"
+  },
+  "dataHash": "56bda45934879d4f568faea920067621fc99e5538bdfc4b61e010c3ba5212406",
+  "workflowPlaceCode": "UVEREJNENO_VVZ",
+  "variableId": "F2026-059744",
+  "relatedId": "28eee70a-f609-4737-90e6-40720ea3c731",
+  "publicId": "QDCsRBBQ90A3P7xgJBraF1hFkwvEWmVM",
+  "version": 5,
+  "validityPeriod": "2026-10-30T13:58:31+01:00/",
+  "createdAt": "2026-10-30T13:58:31+01:00",
+  "updatedAt": "2026-10-30T14:10:02+01:00"
+ },
+ {
+  "id": "8bdb26ef-c2a3-42a8-961c-c258ab9cec74",
+  "submissionVersion": "/api/submission_versions/200690f0-5084-4835-aa4f-4697557a30a2",
+  "form": "/api/forms/20100a01-c48f-4211-8242-7ec5104462fe",
+  "formSchemaVersion": "/api/form_schema_versions/23399c76-ee07-42f3-b28a-e0f22361eaf1",
+  "organization": "/api/organizations/9871a1f7-eb2f-48f7-b092-1015dc67e87e",
+  "data": {
+   "verzeSdk": "1.13.2",
+   "dodavatele": [
+    {
+     "ico": "25319540",
+     "nazev": "MESSA Invest s.r.o."
+    }
+   ],
+   "zadavatele": [
+    {
+     "ico": "60252260",
+     "nazev": "Tělocvičná jednota Sokol Jablonec n. Nisou"
+    }
+   ],
+   "zdrojPodani": {
+    "id": "WEB-kcjdfc",
+    "typ": "WEB",
+    "uzivatelVvzLogin": "kcjdfc"
+   },
+   "nazevZakazky": "Revitalizace Sokolovny v Jablonci nad Nisou",
+   "uverejnitTed": false,
+   "uverejnitVvz": true,
+   "druhFormulare": "29",
+   "zakazkaZrusena": false,
+   "datumPrijetiVvz": "2026-10-30T14:59:17+01:00",
+   "formularOpravuje": false,
+   "evCisloZakazkyVvz": "Z2026-059777",
+   "datumUverejneniVvz": "2026-10-30T15:00:02+01:00",
+   "formularZneplatnen": false,
+   "lhutaUverejneniVvz": "2026-11-04T23:59:00+01:00",
+   "uzivatelskyNazevFormulare": "29 Oznámení o výsledku zadávacího řízení – obecná veřejná zakázka"
+  },
+  "dataHash": "a449bea11ea20d25da96feb46bba77ff087b4ca338c5b7a18e07986d93d91a1f",
+  "workflowPlaceCode": "UVEREJNENO_VVZ",
+  "variableId": "F2026-059777",
+  "relatedId": "2415a2f3-0c5f-4169-b6cd-d96390f8f096",
+  "publicId": "0pq9eNTuoRcWbKIk2lBCGmMapRqY1nf5",
+  "version": 5,
+  "validityPeriod": "2026-10-30T14:33:58+01:00/",
+  "createdAt": "2026-10-30T14:33:58+01:00",
+  "updatedAt": "2026-10-30T15:00:02+01:00"
+ }
+]

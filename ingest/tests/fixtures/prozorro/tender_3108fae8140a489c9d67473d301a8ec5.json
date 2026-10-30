@@ -1,0 +1,197 @@
+{
+ "data": {
+  "description": "",
+  "date": "2026-10-16T16:24:11.789772+03:00",
+  "dateModified": "2026-10-30T16:20:00.225905+02:00",
+  "dateCreated": "2026-10-16T16:22:01.349995+03:00",
+  "tenderID": "UA-2026-10-16-011819-a",
+  "documents": [
+   {
+    "confidentiality": "public",
+    "relatedItem": "3108fae8140a489c9d67473d301a8ec5",
+    "id": "93b307a55d724a2e9987687b17fa373f",
+    "datePublished": "2026-10-16T16:22:05.126547+03:00",
+    "title": "Додаток_1_документи.pdf",
+    "format": "application/pdf",
+    "url": "https://public-docs.prozorro.gov.ua/get/85c83b7064ac4079b8c2f4b6711e8a12?Signature=lI%2FeNgtHzBzz6aFe4oOoe%2FG9qbm3PBdX5q9cQrhaZeOlUSdBzOLi2BC6er9z1H1tfJoYyT0Lv1KEbITcsKy4BA%3D%3D&KeyID=52462340",
+    "documentOf": "tender",
+    "dateModified": "2026-10-16T16:22:05.126547+03:00",
+    "author": "tender_owner",
+    "language": "uk"
+   },
+   {
+    "confidentiality": "public",
+    "relatedItem": "3108fae8140a489c9d67473d301a8ec5",
+    "id": "1383dca031b045bda71bc4b2c91d7cff",
+    "datePublished": "2026-10-16T16:22:05.126547+03:00",
+    "title": "Додаток_2_лист-згода.pdf",
+    "format": "application/pdf",
+    "url": "https://public-docs.prozorro.gov.ua/get/79427f6608dc4902812a06b2e2b5c51b?Signature=WIEN9FQiXUjj%2FyGc0ISThXaz6cU84hK4lbIVaZlI9WeWIj1Bt3Y7KR7WxyfHOVE7Qj8plPiBNPt0y%2FK%2FtIBkBA%3D%3D&KeyID=52462340",
+    "documentOf": "tender",
+    "dateModified": "2026-10-16T16:22:05.126547+03:00",
+    "author": "tender_owner",
+    "language": "uk"
+   },
+   {
+    "confidentiality": "public",
+    "documentType": "contractProforma",
+    "relatedItem": "3108fae8140a489c9d67473d301a8ec5",
+    "id": "cc845399afa447c084ba824bfc449bcf",
+    "datePublished": "2026-10-16T16:22:05.126547+03:00",
+    "title": "Додаток_3_проект договору.pdf",
+    "format": "application/pdf",
+    "url": "https://public-docs.prozorro.gov.ua/get/66d971c1303640c5acdc8f3cabf8a822?Signature=whr4vrNyrSmf70GG%2BrMDTeaE75eb2Rk1xzAbsDCniAv6dIconVjxFCzChvR9aC4uWUmu9LSSKPYXkfw45El0DQ%3D%3D&KeyID=52462340",
+    "documentOf": "tender",
+    "dateModified": "2026-10-16T16:22:05.126547+03:00",
+    "author": "tender_owner",
+    "language": "uk"
+   },
+   {
+    "confidentiality": "public",
+    "relatedItem": "3108fae8140a489c9d67473d301a8ec5",
+    "id": "d36edefc7e2f428d94e74a4851003df2",
+    "datePublished": "2026-10-16T16:22:05.126547+03:00",
+    "title": "Додаток_4_перелік документів учасника.pdf",
+    "format": "application/pdf",
+    "url": "https://public-docs.prozorro.gov.ua/get/e19ece53a9b945568db1da6af9079400?Signature=vbokGSM2ve4%2BmY78FS0oN2iADO4fYxF057593N8obdoDhQnPgc8xY8%2BP1jUqWI5DMvY01Ie4ovssq3HS%2BShWCg%3D%3D&KeyID=52462340",
+    "documentOf": "tender",
+    "dateModified": "2026-10-16T16:22:05.126547+03:00",
+    "author": "tender_owner",
+    "language": "uk"
+   }
+  ],
+  "status": "active.tendering",
+  "owner": "prom.ua",
+  "title": "код ДК 021:2015 – 39140000-5 Меблі для дому (матраци дитячі)\n",
+  "mainProcurementCategory": "goods",
+  "procurementMethod": "open",
+  "noticePublicationDate": "2026-10-16T16:24:11.789772+03:00",
+  "complaintPeriod": {
+   "startDate": "2026-10-16T16:22:01.061090+03:00",
+   "endDate": "2026-10-30T00:00:00+02:00"
+  },
+  "submissionMethod": "electronicAuction",
+  "guarantee": {
+   "amount": 0.0,
+   "currency": "UAH"
+  },
+  "enquiryPeriod": {
+   "startDate": "2026-10-16T16:22:01.061090+03:00",
+   "endDate": "2026-10-30T00:00:00+02:00",
+   "clarificationsUntil": "2026-11-02T00:00:00+02:00",
+   "invalidationDate": "2026-10-28T17:48:52.863483+02:00"
+  },
+  "tenderPeriod": {
+   "startDate": "2026-10-16T16:22:01.061090+03:00",
+   "endDate": "2026-11-02T01:00:00+02:00"
+  },
+  "items": [
+   {
+    "id": "4bfa73225ec84edaa2160d7020b6d6c2",
+    "description": "матраци дитячі",
+    "unit": {
+     "name": "штука",
+     "code": "H87"
+    },
+    "quantity": 1176.0,
+    "classification": {
+     "description": "Меблі для дому",
+     "scheme": "ДК021",
+     "id": "39140000-5"
+    },
+    "deliveryDate": {
+     "endDate": "2026-12-25T00:00:00+02:00"
+    },
+    "deliveryAddress": {
+     "streetAddress": "заклади дошкільної освіти ",
+     "locality": "м. Запоріжжя",
+     "region": "Запорізька область",
+     "postalCode": "69000",
+     "countryName": "Україна"
+    },
+    "relatedLot": "c3a4624f2b764a4c87e9df8aea7f3d2d"
+   }
+  ],
+  "procurementMethodType": "aboveThreshold",
+  "awardCriteria": "lowestCost",
+  "procuringEntity": {
+   "name": "Департамент освіти і науки Запорізької міської ради",
+   "identifier": {
+    "scheme": "UA-EDR",
+    "id": "37573094",
+    "legalName": "Департамент освіти і науки Запорізької міської ради"
+   },
+   "address": {
+    "streetAddress": "вул. Незалежної України, 39-Б",
+    "locality": "м. Запоріжжя",
+    "region": "Запорізька область",
+    "postalCode": "69037",
+    "countryName": "Україна"
+   },
+   "contactPoint": {
+    "name": "redacted"
+   },
+   "kind": "authority"
+  },
+  "value": {
+   "currency": "UAH",
+   "valueAddedTaxIncluded": false,
+   "amount": 2464308.0
+  },
+  "lots": [
+   {
+    "title": "код ДК 021:2015 – 39140000-5 Меблі для дому (матраци дитячі)\n",
+    "description": "",
+    "status": "active",
+    "id": "c3a4624f2b764a4c87e9df8aea7f3d2d",
+    "date": "2026-10-16T16:22:01.349995+03:00",
+    "value": {
+     "currency": "UAH",
+     "valueAddedTaxIncluded": false,
+     "amount": 2464308.0
+    },
+    "minimalStep": {
+     "currency": "UAH",
+     "valueAddedTaxIncluded": false,
+     "amount": 12321.54
+    },
+    "guarantee": {
+     "amount": 0.0,
+     "currency": "UAH"
+    },
+    "auctionPeriod": {
+     "startDate": "2026-11-03T11:54:07.318000+02:00",
+     "shouldStartAfter": "2026-11-03T00:00:00+02:00"
+    }
+   }
+  ],
+  "next_check": "2026-11-02T01:00:00+02:00",
+  "id": "3108fae8140a489c9d67473d301a8ec5"
+ },
+ "config": {
+  "hasAuction": true,
+  "minBidsNumber": 1,
+  "hasAwardingOrder": true,
+  "hasValueRestriction": true,
+  "valueCurrencyEquality": true,
+  "hasMultiSourcing": false,
+  "hasPrequalification": false,
+  "hasPreSelectionAgreement": false,
+  "qualificationComplainDuration": 0,
+  "hasQualificationComplaints": false,
+  "tenderComplainRegulation": 3,
+  "qualificationDuration": 0,
+  "clarificationUntilDuration": 3,
+  "hasValueEstimation": true,
+  "awardComplainDuration": 5,
+  "cancellationComplainDuration": 10,
+  "hasAwardComplaints": true,
+  "hasTenderComplaints": true,
+  "hasCancellationComplaints": true,
+  "minTenderingDuration": 15,
+  "enquiryPeriodRegulation": 3,
+  "hasEnquiries": false,
+  "minEnquiriesDuration": 0,
+  "restricted": false
+ }
+}

@@ -1,0 +1,107 @@
+{
+ "numHitsTotal": 3,
+ "numHitsAccessible": 3,
+ "hits": [
+  {
+   "id": "2026-116778",
+   "buyer": [
+    {
+     "id": "bed87b482aba566c9511f70f17cf6dc3",
+     "organizationId": "916075855",
+     "name": "FORSVARSMATERIELL"
+    }
+   ],
+   "heading": "Frukt og grønt",
+   "description": "Anskaffelsens formål er å sikre Rammeavtalens brukere en stabil, kostnadseffektiv og kvalitativ god leveranse av fersk frukt, bær, grønnsaker og bearbeidede produkter av frukt og grønnsaker. Det skal leveres til kjøkken og messer, herunder også skip som ligger til kai, og allierte styrker lokalisert i Norge.Samlet estimert verdi for de to delkontraktene er 520 MNOK ekskl. mva., og samlet maksimal verdi er totalt 740 MNOK ekskl. mva., over avtalens varighet. Rammeavtalens varighet vil være 4 år fra signeringstidspunktet.For oppdraget skal det inngås to delkontrakter. Anskaffelsen deles opp geografisk, ved at de to delkontraktene gjelder hver sin del av Norge, herunder en for nord og en for sør.  Delkontrakt 1 – «Sør» gjelder levering av frukt og grønt til brukernes lokasjoner som befinner seg sør i landet. Med «sør» menes her Trøndelag fylke og fylker sør for dette.  Delkontrakt 2 – «Nord» gjelder levering av frukt og grønt til brukernes lokasjoner som befinner seg nord for Trøndelag fylke.   Leverandør kan velge å inngi tilbud på én delkontrakt, eller begge delkontraktene.  Konkurransedokumentene og kontraktsdokumentene er felles for begge delkontraktene, med unntak av prisskjemaet og kjøretøysskjemaet (kun relevant for delkontrakt 2 - nord). Konkurransedokumentene ligger kun tilgjengelig i konkurransens felles side, og ikke i den enkelte delkontrakten.Hvis det leveres tilbud på begge delkontrakter skal det leveres selvstendige tilbud for begge delkontrakter, altså at samtlige dokumenter som fremgår av regler for anskaffelsen punkt 6.2 er inkludert i tilbudet for den aktuelle delkontrakten. Dersom samme leverandør vinner konkurransen tilknyttet både Delkontrakt 1 – Sør og Delkontrakt 2 – Nord forbeholder Oppdragsgiver seg retten til å slå sammen de to delkontraktene til én rammeavtale.",
+   "locationId": [
+    "anyw"
+   ],
+   "estimatedValue": {
+    "currencyCode": "NOK",
+    "amount": 740000000.0
+   },
+   "type": "ANNOUNCEMENT_OF_COMPETITION",
+   "allTypes": [
+    "COMPETITION",
+    "ANNOUNCEMENT_OF_COMPETITION"
+   ],
+   "status": "ACTIVE",
+   "issueDate": "2026-10-27T13:49:30Z",
+   "deadline": "2026-12-02T11:00:00Z",
+   "sentToTed": true,
+   "publicationDate": "2026-10-29",
+   "placeOfPerformance": [
+    "Ikke stedbunden"
+   ],
+   "procurementStrategicLabels": []
+  },
+  {
+   "id": "2026-116824",
+   "buyer": [
+    {
+     "id": "6bd79645265b76d845c7d24348157e44",
+     "organizationId": "964950679",
+     "name": "Løten Kommune"
+    }
+   ],
+   "heading": "Vikartjenester til helse, oppvekst og  barnevern i Løten kommune",
+   "description": "Løten kommune har behov for avtale om bemanningstjenester innenfor helse og oppvekst, inkludert barneverntjenesten. Kommunen har til hensikt å inngå en parallell rammeavtale for å sikre god tilgang på egnet personell. Oppdrag under rammeavtalen vil tildeles den leverandøren som besvarer henvendelsen raskest, og som kan stille med egnet kompetanse for oppdraget.",
+   "locationId": [
+    "NO020"
+   ],
+   "estimatedValue": {
+    "currencyCode": "NOK",
+    "amount": 0.0
+   },
+   "type": "CANCELLED_OR_MISSING_CONCLUSION_OF_CONTRACT",
+   "allTypes": [
+    "CANCELLED_OR_MISSING_CONCLUSION_OF_CONTRACT",
+    "ADVISORY_NOTICE",
+    "RESULT",
+    "PLANNING"
+   ],
+   "status": null,
+   "issueDate": "2026-10-27T15:24:08Z",
+   "deadline": null,
+   "sentToTed": false,
+   "publicationDate": "2026-10-29",
+   "placeOfPerformance": [
+    "Innlandet"
+   ],
+   "procurementStrategicLabels": []
+  }
+ ],
+ "facets": {},
+ "activeFacets": {
+  "buyer": {
+   "items": []
+  },
+  "winner": {
+   "items": []
+  },
+  "cpvCodes": {
+   "items": []
+  },
+  "status": {
+   "items": []
+  },
+  "type": {
+   "items": []
+  },
+  "locations": {
+   "items": []
+  },
+  "cpvCodesLabel": {
+   "items": []
+  },
+  "cpvCodesId": {
+   "items": []
+  },
+  "contractNature": {
+   "items": []
+  },
+  "procurementStrategicLabels": {
+   "items": []
+  }
+ }
+}

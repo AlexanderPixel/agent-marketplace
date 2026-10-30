@@ -1,0 +1,285 @@
+{
+ "uri": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-10-27T00:00:00Z&limit=100&publishedTo=2026-10-30T14:16:30Z",
+ "version": "1.1",
+ "publishedDate": "2026-10-27T14:07:09Z",
+ "publisher": {
+  "name": "Cabinet Office",
+  "scheme": "GB-GOR",
+  "uid": "D2",
+  "uri": "https://www.gov.uk/government/organisations/cabinet-office"
+ },
+ "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+ "publicationPolicy": "https://www.gov.uk/government/publications/open-contracting",
+ "releases": [
+  {
+   "ocid": "ocds-b5fd17-98c0664b-31c9-47dd-bdef-ef71f4dfd0bd",
+   "id": "3114e8ef-dc50-4479-97af-f3871bfc5c85-919243",
+   "language": "en",
+   "date": "2026-10-27T07:56:26Z",
+   "tag": [
+    "award"
+   ],
+   "initiationType": "tender",
+   "tender": {
+    "id": "tender_533264/1622646",
+    "title": "Call off Contract Under Prison Education Dynamic Purchasing System for Self-Employment Courses for Prisoners at HMP Oakwood",
+    "description": "Call off Contract Under Prison Education Dynamic Purchasing System for Self-Employment Courses for Prisoners at HMP Oakwood. The Supplier will deliver an accredited e-commerce self-employment course whilst focussing on the development of an e-commerce business, shall have regard to learners' general personal development. For example: coping with setbacks; success and failure; motivation; working a",
+    "status": "complete",
+    "classification": {
+     "scheme": "CPV",
+     "id": "80000000",
+     "description": "Education and training services"
+    },
+    "items": [
+     {
+      "id": "1",
+      "deliveryAddresses": [
+       {
+        "region": "West Midlands",
+        "countryName": "United Kingdom"
+       }
+      ]
+     }
+    ],
+    "value": {
+     "amount": 34000,
+     "currency": "GBP"
+    },
+    "procurementMethod": "selective",
+    "procurementMethodDetails": "Call-off from a dynamic purchasing system",
+    "tenderPeriod": {
+     "endDate": "2026-07-31T15:00:00+01:00"
+    },
+    "contractPeriod": {
+     "startDate": "2026-10-27T00:00:00Z",
+     "endDate": "2027-06-11T23:59:59+01:00"
+    },
+    "suitability": {
+     "sme": true,
+     "vcse": true
+    },
+    "mainProcurementCategory": "services"
+   },
+   "parties": [
+    {
+     "id": "GB-CFS-135448",
+     "name": "Ministry of Justice",
+     "identifier": {
+      "legalName": "Ministry of Justice"
+     },
+     "address": {
+      "streetAddress": "5 Wellington Place",
+      "locality": "Leeds",
+      "postalCode": "LS1 4AP",
+      "countryName": "England"
+     },
+     "contactPoint": {
+      "email": "commercial.prisoneducation@justice.gov.uk"
+     },
+     "roles": [
+      "buyer"
+     ]
+    },
+    {
+     "id": "GB-COH-13897383",
+     "name": "Inside Ecommerce Academy CIC",
+     "identifier": {
+      "legalName": "Inside Ecommerce Academy CIC",
+      "scheme": "GB-COH",
+      "id": "13897383"
+     },
+     "address": {
+      "streetAddress": "140 Lee Lane, Bolton, Lancashire, BL6 7AF"
+     },
+     "details": {
+      "scale": "sme",
+      "vcse": true
+     },
+     "roles": [
+      "supplier"
+     ]
+    }
+   ],
+   "buyer": {
+    "id": "GB-CFS-135448",
+    "name": "Ministry of Justice"
+   },
+   "awards": [
+    {
+     "id": "ocds-b5fd17-98c0664b-31c9-47dd-bdef-ef71f4dfd0bd-1",
+     "status": "active",
+     "date": "2026-10-26T00:00:00Z",
+     "datePublished": "2026-10-27T07:56:26Z",
+     "value": {
+      "amount": 34000,
+      "currency": "GBP"
+     },
+     "suppliers": [
+      {
+       "id": "GB-COH-13897383",
+       "name": "Inside Ecommerce Academy CIC"
+      }
+     ],
+     "contractPeriod": {
+      "startDate": "2026-10-27T00:00:00Z",
+      "endDate": "2027-06-11T23:59:59+01:00"
+     },
+     "documents": [
+      {
+       "id": "1",
+       "documentType": "awardNotice",
+       "description": "Awarded contract notice on Contracts Finder",
+       "url": "https://www.contractsfinder.service.gov.uk/Notice/3114e8ef-dc50-4479-97af-f3871bfc5c85",
+       "datePublished": "2026-10-27T07:56:26Z",
+       "format": "text/html",
+       "language": "en"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ocid": "ocds-b5fd17-3aaaee62-b8f2-4351-a21c-d70e87cc69c5",
+   "id": "23e52300-1cbb-4e3a-bd07-c4a222c8f74f-919242",
+   "language": "en",
+   "date": "2026-10-27T06:15:03Z",
+   "tag": [
+    "award"
+   ],
+   "initiationType": "tender",
+   "tender": {
+    "id": "tender_525180/1622710",
+    "title": "ITEP1159 - Gov Delivery Email Platform 26/27/28",
+    "description": "Gov Delivery Email Platform 26/27/28",
+    "status": "complete",
+    "classification": {
+     "scheme": "CPV",
+     "id": "48517000",
+     "description": "IT software package"
+    },
+    "items": [
+     {
+      "id": "1",
+      "deliveryAddresses": [
+       {
+        "postalCode": "B4 6GA"
+       },
+       {
+        "countryName": "British Oversea Territories"
+       },
+       {
+        "countryName": "Channel Islands"
+       },
+       {
+        "countryName": "Europe"
+       },
+       {
+        "countryName": "Isle of Man"
+       },
+       {
+        "countryName": "Rest of the World"
+       },
+       {
+        "countryName": "United Kingdom"
+       }
+      ]
+     }
+    ],
+    "value": {
+     "amount": 358133,
+     "currency": "GBP"
+    },
+    "procurementMethod": "selective",
+    "procurementMethodDetails": "Call-off from a framework agreement",
+    "tenderPeriod": {
+     "endDate": "2026-05-29T17:00:00+01:00"
+    },
+    "contractPeriod": {
+     "startDate": "2026-06-01T00:00:00+01:00",
+     "endDate": "2028-03-31T23:59:59+01:00"
+    },
+    "suitability": {
+     "sme": true,
+     "vcse": false
+    },
+    "mainProcurementCategory": "services"
+   },
+   "parties": [
+    {
+     "id": "GB-CFS-332681",
+     "name": "National Highways Limited",
+     "identifier": {
+      "legalName": "National Highways Limited"
+     },
+     "address": {
+      "streetAddress": "Three Snowhill, Snow Hill Queensway, Birmingham, England, B4 6GA",
+      "locality": "birmingham",
+      "postalCode": "B4 6GA",
+      "countryName": "England"
+     },
+     "contactPoint": {
+      "name": "National Highways",
+      "email": "EnterpriseSystemsProcurement@nationalhighways.co.uk"
+     },
+     "roles": [
+      "buyer"
+     ]
+    },
+    {
+     "id": "GB-CFS-332965",
+     "name": "Granicus-Firmstep Ltd",
+     "identifier": {
+      "legalName": "Granicus-Firmstep Ltd"
+     },
+     "address": {
+      "streetAddress": "15 Worship Street,LONDON,EC2A 2DT"
+     },
+     "details": {
+      "scale": "large",
+      "vcse": false
+     },
+     "roles": [
+      "supplier"
+     ]
+    }
+   ],
+   "buyer": {
+    "id": "GB-CFS-332681",
+    "name": "National Highways Limited"
+   },
+   "awards": [
+    {
+     "id": "ocds-b5fd17-3aaaee62-b8f2-4351-a21c-d70e87cc69c5-3",
+     "status": "active",
+     "date": "2026-03-30T00:00:00+01:00",
+     "datePublished": "2026-10-27T06:15:03Z",
+     "value": {
+      "amount": 358133,
+      "currency": "GBP"
+     },
+     "suppliers": [
+      {
+       "id": "GB-CFS-332965",
+       "name": "Granicus-Firmstep Ltd"
+      }
+     ],
+     "contractPeriod": {
+      "startDate": "2026-06-01T00:00:00+01:00",
+      "endDate": "2028-03-31T23:59:59+01:00"
+     },
+     "documents": [
+      {
+       "id": "3",
+       "documentType": "awardNotice",
+       "description": "Awarded contract notice on Contracts Finder",
+       "url": "https://www.contractsfinder.service.gov.uk/Notice/23e52300-1cbb-4e3a-bd07-c4a222c8f74f",
+       "datePublished": "2026-10-27T06:15:03Z",
+       "format": "text/html",
+       "language": "en"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

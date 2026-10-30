@@ -1,0 +1,50 @@
+{
+ "isEditAllowed": false,
+ "isPreparationActivity": false,
+ "isDataEntryCompleted": true,
+ "isPartialChangeActivity": false,
+ "showCost": true,
+ "procurement": {
+  "id": 11005624,
+  "contractingAuthorityId": 100164,
+  "name": "Meditsiiniseadmete keskse hankimise turu-uuring",
+  "nameI18n": {},
+  "procedureTypeCode": "TU",
+  "procurementTypeCode": "A",
+  "procurementStateCode": "alustatud",
+  "procurementSectorCode": "K",
+  "isTendersErhr": true,
+  "publishNotice": false,
+  "isElectronicOffer": true,
+  "isEndingWithContractOrAward": false,
+  "procurementStartBasis": "P"
+ },
+ "procurementCpvDtos": [
+  {
+   "id": 4754,
+   "code": "33100000-1",
+   "name": "Meditsiiniseadmed",
+   "stampCre": "2026-10-29T10:50:31.031+0200",
+   "procurementCpvId": 18337399,
+   "orderNr": "0"
+  }
+ ],
+ "shortDescription": "Tervisekassa kutsub meditsiiniseadmete tarnijaid osalema turu-uuringus, et koguda esmast tagasisidet meditsiiniseadmete keskse hankimise võimaluste kohta. Küsimustik käsitleb keskse hankimise võimalikke eeliseid ja riske, eri tooterühmade sobivust, suhtumist mitme pakkujaga hankemudelisse ning üldisi seisukohti tarnekindluse ja lepingu täitmise andmete esitamise kohta. \n\nTuru-uuringus osalemiseks tuleb täita küsimustik, mis on leitav rubriigist \"Dokumendid\".\n\nKüsitlusele on võimalik vastata ka järgmise lingi kaudu: \nhttps://forms.cloud.microsoft/e/L0zjrFsjD2\n\nNB! Teabevahetuse lehel „Sõnum hankijale“ edastatud ettepanekud ei ole anonüümsed. Kui soovite esitada oma seisukohad turu-uuringu vastusena, palume kasutada veebivormi või saata täidetud küsimustik e-posti aadressile ravimitehankimisejaladustamiseteenus@tervisekassa.ee. \nTuru-uuringu vastuseid käsitletakse konfidentsiaalselt ning tulemuste kokkuvõttes ei seostata seisukohti konkreetse vastajaga.",
+ "isDividedIntoParts": false,
+ "canChangeProcurementParts": false,
+ "isNegotiation": false,
+ "multiStage": 1,
+ "submissionDate": "2026-11-11T11:00:00.000+0200",
+ "submissionDateOpening": "2026-11-11T12:00:00.000+0200",
+ "liablePersonId": 252791,
+ "liablePersonName": "Eveli Bauer",
+ "isProcurement": true,
+ "isSingleTendererFrameworkAgr": false,
+ "isMultipleTendererFrameworkAgr": false,
+ "isElectronicInfoExchange": false,
+ "canEditDuration": false,
+ "mainProcurerName": "Tervisekassa",
+ "mainProcurerTypeCodes": [
+  "CLASSIC"
+ ]
+}

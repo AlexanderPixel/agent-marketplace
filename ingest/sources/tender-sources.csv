@@ -1,0 +1,126 @@
+tier,country,name,type,url,access,defense,notes,check_2026_10_30
+1,EU,TED - Tenders Electronic Daily,eu_aggregator,https://ted.europa.eu/,api,partial,All EU/EEA above-threshold notices incl. Directive 2009/81 defence; eForms XML; API v3 at api.ted.europa.eu,ok
+1,EU,TED API v3,eu_aggregator,https://api.ted.europa.eu/,api,partial,Anonymous search endpoint; no key needed for search,ok
+2,EU,EU Funding & Tenders Portal,eu_aggregator,https://ec.europa.eu/info/funding-tenders/opportunities/portal/,api,yes,EDF / EDIP / ASAP calls (grants) plus EU institution tenders,ok
+2,EU,European Defence Agency - procurement,intl_defense,https://eda.europa.eu/procurement,scrape,yes,EDA's own studies and service contracts,blocks_bots
+2,EU,OCCAR,intl_defense,https://www.occar.int/,scrape,yes,Joint armaments programmes (A400M; Boxer; FREMM; Eurodrone); business opportunities section,blocks_bots
+2,EU,EUSPA - EU Space Programme Agency procurement,intl_defense,https://www.euspa.europa.eu/opportunities/procurement,scrape,dual,Galileo; GOVSATCOM; IRIS2 related,ok
+2,EU,ESA - esa-star,intl_defense,https://esastar-publication.sso.esa.int/,registration,dual,ESA Invitations to Tender,ok
+3,EU,opentender.eu,dataset,https://opentender.eu/,open_data,partial,Historic aggregated tender data for ~35 jurisdictions; good for backfill and parser validation,blocks_bots
+3,EU,Open Contracting Data Registry,dataset,https://data.open-contracting.org/,open_data,partial,Lists publishers that release OCDS data,ok
+1,NATO,NSPA - NATO Support and Procurement Agency,intl_defense,https://www.nspa.nato.int/business/procurement,registration,yes,Source file registration via national delegation required to bid,blocks_bots
+1,NATO,NCIA - NATO Communications and Information Agency,intl_defense,https://www.ncia.nato.int/business,registration,yes,IFIB/NOI notices; Basic Ordering Agreements,blocks_bots
+2,NATO,DIANA - Defence Innovation Accelerator,intl_defense,https://www.diana.nato.int/,scrape,yes,Challenge calls for startups,blocks_bots
+1,PL,e-Zamowienia / BZP,national_portal,https://ezamowienia.gov.pl/,open_data,partial,Biuletyn Zamowien Publicznych; below-threshold notices; open data and API,ok
+1,PL,platformazakupowa.pl,eprocurement_platform,https://platformazakupowa.pl/,scrape,yes,Used by many military units and RBLog logistics bases; holds documents and Q&A,ok
+1,PL,Agencja Uzbrojenia (Armament Agency),defense_agency,https://au-bip.wp.mil.pl/pl/bip/zamowienia/,scrape,yes,Tender list in its BIP; main Polish MoD buyer (188 Directive 2009/81 notices on TED since 2023); many contracts exempt under Art. 346,ok
+2,PL,Inspektorat Wsparcia Sil Zbrojnych,defense_agency,https://www.wojsko-polskie.pl/iwspsz/,scrape,yes,Armed Forces Support Inspectorate; logistics procurement,ok
+2,PL,1 Regionalna Baza Logistyczna,defense_agency,https://1rblog.wp.mil.pl/,scrape,yes,Regional logistics base; RBLog 1-4 publish tenders,ok
+2,PL,2 Regionalna Baza Logistyczna,defense_agency,https://2rblog.wp.mil.pl/,scrape,yes,,ok
+2,PL,3 Regionalna Baza Logistyczna,defense_agency,https://3rblog.wp.mil.pl/,scrape,yes,,ok
+2,PL,4 Regionalna Baza Logistyczna,defense_agency,https://4rblog.wp.mil.pl/,scrape,yes,,ok
+2,PL,Agencja Mienia Wojskowego (AMW),defense_agency,https://amw.com.pl/,scrape,yes,Military property agency; also runs procurement,ok
+2,PL,Rzadowa Agencja Rezerw Strategicznych (RARS),defense_agency,https://www.gov.pl/web/rars,scrape,dual,Strategic reserves agency,ok
+2,PL,Narodowe Centrum Badan i Rozwoju (NCBR),defense_agency,https://www.gov.pl/web/ncbr,scrape,dual,Defence and security R&D programmes,ok
+2,PL,SmartPZP,eprocurement_platform,https://portal.smartpzp.pl/,scrape,partial,,ok
+2,PL,Open Nexus / Marketplanet,eprocurement_platform,https://platformazakupowa.marketplanet.pl/,scrape,partial,Used by several PGZ companies,ok
+2,PL,Logintrade,eprocurement_platform,https://www.logintrade.pl/,scrape,partial,,ok
+2,PL,eB2B,eprocurement_platform,https://platforma.eb2b.com.pl/,scrape,partial,,ok
+2,PL,Polska Grupa Zbrojeniowa (PGZ) - procurement,prime_supplier_portal,https://grupapgz.pl/,scrape,yes,State defence group; subsidiaries publish own purchase notices,ok
+2,PL,Huta Stalowa Wola - przetargi,prime_supplier_portal,https://www.hsw.pl/,scrape,yes,PGZ artillery/vehicles,ok
+2,PL,WB Group,prime_supplier_portal,https://www.wbgroup.pl/,scrape,yes,Private Polish defence prime,ok
+1,DE,e-Vergabe Bund (evergabe-online),national_portal,https://www.evergabe-online.de/,scrape,yes,Federal portal; used by BAAINBw,needs_cookies
+1,DE,Bekanntmachungsservice (oeffentlichevergabe.de),national_portal,https://oeffentlichevergabe.de/,api,partial,National notice data service with open API (eForms-DE),ok
+2,DE,service.bund.de - Ausschreibungen,national_portal,https://www.service.bund.de/Content/DE/Ausschreibungen/Suche/Formular.html,rss,partial,Federal tender search; RSS,ok
+1,DE,BAAINBw (Bundeswehr equipment office),defense_agency,https://www.baainbw.de/,scrape,yes,Main German defence procurement office,timeout_or_geoblocked
+2,DE,BAIUDBw (Bundeswehr infrastructure office),defense_agency,https://www.bundeswehr.de/de/organisation/infrastruktur-umweltschutz-und-dienstleistungen,scrape,yes,,ok
+2,DE,BwI / BWI GmbH,defense_agency,https://www.bwi.de/,scrape,yes,Bundeswehr IT service provider,ok
+2,DE,Cyber Innovation Hub der Bundeswehr,defense_agency,https://www.cyberinnovationhub.de/,scrape,yes,Startup challenges,ok
+2,DE,DTVP - Deutsches Vergabeportal,eprocurement_platform,https://www.dtvp.de/,scrape,partial,,ok
+2,DE,Vergabemarktplatz NRW,eprocurement_platform,https://www.evergabe.nrw.de/,scrape,partial,,ok
+2,DE,Vergabe Bayern,eprocurement_platform,https://www.vergabe.bayern.de/,scrape,partial,,ok
+2,DE,subreport ELViS,eprocurement_platform,https://www.subreport.de/,scrape,partial,,ok
+1,FR,BOAMP,national_portal,https://www.boamp.fr/,api,partial,Open data API at boamp-datadila.opendatasoft.com,ok
+1,FR,PLACE - Plateforme des achats de l'Etat,national_portal,https://www.marches-publics.gouv.fr/,scrape,yes,Used by Ministere des Armees / DGA,ok
+1,FR,DGA - Direction generale de l'armement,defense_agency,https://www.defense.gouv.fr/dga,scrape,yes,,ok
+2,FR,Achats du ministere des Armees,defense_agency,https://achats.defense.gouv.fr/,scrape,yes,Official MoD purchasing portal: tenders; purchase forecasts; RFIs,ok
+2,FR,AID - Agence de l'innovation de defense,defense_agency,https://www.defense.gouv.fr/aid,scrape,yes,Innovation calls,ok
+2,FR,DMAe - aeronautical maintenance,defense_agency,https://www.defense.gouv.fr/dmae,scrape,yes,,ok
+2,FR,AWS-Achat / Maximilien / megalis (regional),eprocurement_platform,https://www.marches-publics.info/,scrape,partial,Regional/local buyers,ok
+1,IT,ANAC - Banca Dati Nazionale Contratti Pubblici,national_portal,https://dati.anticorruzione.it/opendata,open_data,partial,OCDS open data,ok
+2,IT,Acquisti in Rete PA (Consip),national_portal,https://www.acquistinretepa.it/,scrape,partial,,ok
+1,IT,Segretariato Generale della Difesa / DNA,defense_agency,https://www.difesa.it/sgd-dna,scrape,yes,National Armaments Directorate; Teledife / Armaereo / Navarm / Terrarm bandi,ok
+2,IT,Agenzia Industrie Difesa,defense_agency,https://www.aid.difesa.it/,scrape,yes,,timeout_or_geoblocked
+1,ES,PLACSP - Plataforma de Contratacion del Sector Publico,national_portal,https://contrataciondelestado.es/,open_data,partial,ATOM/OCDS feeds; Ministerio de Defensa publishes here,timeout_or_geoblocked
+2,ES,DGAM - Direccion General de Armamento y Material,defense_agency,https://www.defensa.gob.es/,scrape,yes,Tenders issued by Subdireccion General de Adquisiciones de Armamento y Material; published on PLACSP and BOE,ok
+2,ES,ISDEFE,defense_agency,https://www.isdefe.es/,scrape,yes,State defence engineering company,blocks_bots
+1,NL,TenderNed,national_portal,https://www.tenderned.nl/,open_data,partial,Open data dumps,ok
+1,NL,COMMIT (formerly DMO) - Defensie inkoop,defense_agency,https://www.defensie.nl/onderwerpen/z/zakendoen-met-defensie/informatie-voor-leveranciers,scrape,yes,COMMIT Directie Inkoop and DOSCO buy; tenders published on TenderNed,ok
+2,NL,Mercell / Negometrix,eprocurement_platform,https://www.mercell.com/,registration,partial,Used by NL MoD and Nordic buyers,ok
+1,BE,e-Procurement / Public Procurement,national_portal,https://www.publicprocurement.be/,scrape,partial,BOSA e-Notification,ok
+2,BE,Defence - DG Material Resources,defense_agency,https://www.mil.be/,scrape,yes,,ok
+2,LU,Portail des marches publics,national_portal,https://pmp.b2g.etat.lu/,scrape,partial,,ok
+2,LU,Direction de la Defense,defense_agency,https://defense.gouvernement.lu/,scrape,yes,,ok
+2,AT,USP / data.gv.at Kerndaten,national_portal,https://www.data.gv.at/,open_data,partial,Federal notice metadata as open data,ok
+2,AT,BBG - Bundesbeschaffung,national_portal,https://www.bbg.gv.at/,scrape,partial,Central purchasing body,ok
+2,AT,Bundesheer / BMLV,defense_agency,https://www.bundesheer.at/,scrape,yes,,ok
+2,IE,eTenders,national_portal,https://www.etenders.gov.ie/,scrape,partial,,ok
+2,IE,Department of Defence,defense_agency,https://www.gov.ie/en/organisation/department-of-defence/,scrape,yes,,blocks_bots
+2,PT,BASE - Portal dos Contratos Publicos,national_portal,https://www.base.gov.pt/,open_data,partial,,ok
+2,PT,DGRDN - Direcao-Geral de Recursos da Defesa Nacional,defense_agency,https://www.defesa.gov.pt/pt/defesa/organizacao/sc/dgrdn,scrape,yes,,ok
+2,PT,Vortal,eprocurement_platform,https://www.vortal.biz/,registration,partial,,ok
+2,GR,KIMDIS / ESIDIS,national_portal,https://portal.eprocurement.gov.gr/,scrape,partial,,ok
+2,GR,GDDIE - Defence Investments and Armaments,defense_agency,https://www.mod.mil.gr/,scrape,yes,,blocks_bots
+2,CY,eProcurement Cyprus,national_portal,https://www.eprocurement.gov.cy/,scrape,partial,,ok
+2,MT,eTenders Malta,national_portal,https://www.etenders.gov.mt/,scrape,partial,,ok
+1,CZ,NEN - Narodni elektronicky nastroj,national_portal,https://nen.nipez.cz/,open_data,partial,,ok
+2,CZ,Vestnik verejnych zakazek,national_portal,https://vvz.nipez.cz/,open_data,partial,,ok
+1,CZ,Ministerstvo obrany - zakazky,defense_agency,https://www.mocr.army.cz/,scrape,yes,Armament and Acquisition Division,timeout_or_geoblocked
+2,SK,UVO - Urad pre verejne obstaravanie,national_portal,https://www.uvo.gov.sk/,open_data,partial,,ok
+2,SK,Josephine,eprocurement_platform,https://josephine.proebiz.com/,scrape,partial,,ok
+2,SK,Ministerstvo obrany SR,defense_agency,https://www.mosr.sk/,scrape,yes,,ok
+2,HU,EKR - Elektronikus Kozbeszerzesi Rendszer,national_portal,https://ekr.gov.hu/,scrape,partial,,ok
+2,HU,Honvedelmi Miniszterium,defense_agency,https://honvedelem.hu/,scrape,yes,,ok
+1,RO,SEAP / SICAP,national_portal,https://www.e-licitatie.ro/,scrape,partial,,ok
+2,RO,Ministerul Apararii Nationale - achizitii,defense_agency,https://www.mapn.ro/,scrape,yes,,ok
+2,BG,CAIS EOP,national_portal,https://app.eop.bg/,scrape,partial,,ok
+2,BG,Ministry of Defence Bulgaria,defense_agency,https://www.mod.bg/,scrape,yes,,ok
+2,HR,EOJN RH,national_portal,https://eojn.hr/,scrape,partial,,ok
+2,HR,MORH - Ministry of Defence,defense_agency,https://www.morh.hr/,scrape,yes,,ok
+2,SI,e-Narocanje,national_portal,https://www.enarocanje.si/,scrape,partial,,ok
+2,SI,Ministrstvo za obrambo,defense_agency,https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-obrambo/,scrape,yes,,ok
+1,LT,CVP IS,national_portal,https://viesiejipirkimai.lt/,scrape,partial,,ok
+1,LT,Defence Resources Agency (Gynybos resursu agentura),defense_agency,https://gra.lt/,scrape,yes,,timeout_or_geoblocked
+1,LV,EIS / IUB,national_portal,https://www.eis.gov.lv/,scrape,partial,,ok
+1,LV,VALIC - State Defence Logistics and Procurement Centre,defense_agency,https://www.valic.gov.lv/,scrape,yes,,ok
+1,EE,Riigihangete register,national_portal,https://riigihanked.riik.ee/,api,partial,,ok
+1,EE,ECDI - Estonian Centre for Defence Investment,defense_agency,https://www.kaitseinvesteeringud.ee/,scrape,yes,,ok
+1,FI,Hilma,national_portal,https://www.hankintailmoitukset.fi/,api,partial,Open API,ok
+1,FI,Finnish Defence Forces Logistics Command,defense_agency,https://puolustusvoimat.fi/,scrape,yes,,blocks_bots
+2,SE,FMV - Forsvarets materielverk,defense_agency,https://www.fmv.se/,scrape,yes,,blocks_bots
+2,SE,e-Avrop,eprocurement_platform,https://www.e-avrop.com/,scrape,partial,,ok
+2,SE,TendSign,eprocurement_platform,https://tendsign.com/,registration,partial,,ok
+2,DK,udbud.dk,national_portal,https://udbud.dk/,scrape,partial,,ok
+2,DK,FMI - Defence Acquisition and Logistics Organisation,defense_agency,https://www.fmi.dk/,scrape,yes,,ok
+2,NO,Doffin,national_portal,https://www.doffin.no/,api,partial,EEA; new Doffin has API,ok
+2,NO,Forsvarsmateriell (NDMA),defense_agency,https://www.fma.no/,scrape,yes,,ok
+2,UK,Find a Tender,national_portal,https://www.find-tender.service.gov.uk/,api,partial,OCDS API,ok
+2,UK,Contracts Finder,national_portal,https://www.contractsfinder.service.gov.uk/,api,partial,,ok
+2,UK,Defence Sourcing Portal,defense_agency,https://www.contracts.mod.uk/,registration,yes,DE&S / DIO tenders,timeout_or_geoblocked
+2,UK,UK Defence Innovation (ex-DASA),defense_agency,https://www.gov.uk/government/organisations/uk-defence-innovation,scrape,yes,,ok
+2,UA,Prozorro,national_portal,https://prozorro.gov.ua/,api,partial,Full open API,ok
+2,UA,Defence Procurement Agency (AOZ),defense_agency,https://aoz.mod.gov.ua/,scrape,yes,,timeout_or_geoblocked
+2,UA,State Logistics Operator (DOT),defense_agency,https://dot.mod.gov.ua/,scrape,yes,Non-lethal supplies,timeout_or_geoblocked
+2,UA,Brave1,defense_agency,https://brave1.gov.ua/,scrape,yes,Defence tech cluster grants,ok
+3,EU,Rheinmetall supplier portal,prime_supplier_portal,https://www.rheinmetall.com/en/suppliers,scrape,yes,Central digital procurement portal; subsidiaries have own supplier pages,ok
+3,EU,KNDS,prime_supplier_portal,https://knds.com/,scrape,yes,,ok
+3,EU,Saab suppliers,prime_supplier_portal,https://www.saab.com/about/for-suppliers,scrape,yes,,ok
+3,EU,Leonardo suppliers,prime_supplier_portal,https://www.leonardo.com/en/suppliers,scrape,yes,,ok
+3,EU,Thales suppliers,prime_supplier_portal,https://www.thalesgroup.com/en/suppliers,scrape,yes,,ok
+3,EU,Airbus suppliers,prime_supplier_portal,https://www.airbus.com/en/becoming-an-airbus-supplier,scrape,yes,Airbus Partner Portal; Defence and Space division,ok
+3,EU,MBDA,prime_supplier_portal,https://www.mbda-systems.com/,scrape,yes,,ok
+3,EU,Hensoldt,prime_supplier_portal,https://www.hensoldt.net/,scrape,yes,,ok
+3,EU,Kongsberg,prime_supplier_portal,https://www.kongsberg.com/,scrape,yes,,ok
+3,EU,Nammo,prime_supplier_portal,https://www.nammo.com/,scrape,yes,,ok
+3,US,SAM.gov,national_portal,https://sam.gov/,api,partial,SalesPatriot's home market,ok
+3,US,DLA DIBBS,defense_agency,https://www.dibbs.bsm.dla.mil/,scrape,yes,Defense Logistics Agency bid board,ok

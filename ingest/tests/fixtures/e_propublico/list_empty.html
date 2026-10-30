@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Ogłoszenia - e-ProPublico</title>
+</head>
+<body>
+<h3>Aktualne ogłoszenia</h3>
+    <br />
+    <form method="get" class="form-inline" action="/Ogloszenia">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="form-group d-flex col-sm-8 pl-0">
+                    <input style="width: 70%"
+                           id="searchInput"
+                           autofocus autocomplete="off"
+                           spellcheck="false"
+                           type="search"
+                           name="searchText"
+                           placeholder="Wpisz sygnaturę lub temat postępowania"
+                           class="form-control mr-1" />
+                    <button type="submit" class="btn btn-primary" value="Szukaj">
+                        <span class="oi oi-magnifying-glass"></span>
+                        Szukaj
+                    </button>
+                </div>
+                <div class="col-sm-4">
+            </div>
+        </div>
+    </form>
+    <table class="table" style="table-layout: fixed">
+        <thead>
+            <tr>
+                <th data-hc-outline="table">
+                    Sygnatura
+                </th>
+                <th data-hc-outline="table">
+                    Temat
+                </th>
+                <th data-hc-outline="table">
+                    Zamawiający
+                </th>
+                <th style="text-align: center" data-hc-outline="table">
+                    Termin składania ofert
+                </th>
+                <th style="text-align: center; vertical-align: middle;" data-hc-outline="table">
+                    Status
+                </th>
+            </tr>
+        </thead>
+        <colgroup>
+            <col class="col-sm-2">
+            <col class="col-sm-5">
+            <col class="col-sm-3">
+            <col class="col-sm-2">
+            <col class="col-sm-3">
+        </colgroup>
+        <tbody>
+        </tbody>
+    </table>
+    <div class="container">
+        <div class="row pt-3">
+            <div class="col-sm-8">
+                <span class="pageCounter">
+                    Strona 0 z 32
+                </span>
+            </div>
+            <div class="col-sm-4">
+        </div>
+    </div>
+</div>
+    </div>
+    
+</body>
+</html>

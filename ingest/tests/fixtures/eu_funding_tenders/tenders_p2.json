@@ -1,0 +1,217 @@
+{
+ "apiVersion": "2.157.1",
+ "terms": "***",
+ "pageNumber": 2,
+ "pageSize": 3,
+ "sort": "[identifier:ASC]",
+ "totalResults": 5,
+ "results": [
+  {
+   "reference": "7f34d1fb-d0da-4a45-8457-9b42fe70aea0-CN",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/7f34d1fb-d0da-4a45-8457-9b42fe70aea0-CN",
+   "summary": "Provision of Relocation, Move Support, Warehousing and Distribution Services for the European Union Agency for Asylum (EUAA) premises in Malta Lot1: Relocation and Move Support Services Malta Lot2: Warehousing and Distribution Services Malt",
+   "metadata": {
+    "procedureType": [
+     "47396220"
+    ],
+    "es_SortDate": [
+     "2026-09-18T00:00:00.000+0000"
+    ],
+    "cftPartyLegalEntityId": [
+     "47352474"
+    ],
+    "contractType": [
+     "31095498"
+    ],
+    "description": [
+     "The European Union Agency for Asylum (EUAA) requires the provision of Relocation and Move Support Services (Lot 1) and Warehousing and Distribution Services (Lot 2) in Malta as described in Part 2 – Technical Specifications.\nThe services are necessary to support the Agency’s operational, administrative and logistical activities, including internal relocations within EUAA premises and relocations between different EUAA premises in Malta., the handling and transport of furniture, office equipment, archives and other assets, as well as the storage and distribution of palletised and non-palletised goods.\nThe procurement has been structured into two Lots in order to ensure that relocation and mov"
+    ],
+    "language": [
+     "en"
+    ],
+    "title": [
+     "Provision of Relocation, Move Support, Warehousing and Distribution Services for the European Union Agency for Asylum (EUAA) premises in Malta Lot1: Relocation and Move Support Services Malta Lot2: Warehousing and Distribution Services Malt"
+    ],
+    "type": [
+     "0"
+    ],
+    "cftId": [
+     "7f34d1fb-d0da-4a45-8457-9b42fe70aea0-CN"
+    ],
+    "callIdentifier": [
+     "EUAA/MLA/2026/OP/0027"
+    ],
+    "DATASOURCE": [
+     "SEDIA"
+    ],
+    "REFERENCE": [
+     "7f34d1fb-d0da-4a45-8457-9b42fe70aea0-CN"
+    ],
+    "cftTimezone": [
+     "Europe/Malta"
+    ],
+    "cftEstimatedTotalProcedureValue": [
+     "754000 EUR"
+    ],
+    "cftContractNoticeLink": [
+     "[\"644262-2026\",\"181/2026\",\"2026-09-18T00:00:00\"]"
+    ],
+    "frameworkProgramme": [],
+    "cftSubmissionMethodCode": [
+     "ESUBMISSION"
+    ],
+    "identifier": [
+     "7f34d1fb-d0da-4a45-8457-9b42fe70aea0-CN"
+    ],
+    "cftEstimatedOverallContractAmount": [
+     "754000"
+    ],
+    "caName": [
+     "Provision of Relocation, Move Support, Warehousing and Distribution Services for the European Union Agency for Asylum (EUAA) premises in Malta Lot1: Relocation and Move Support Services Malta Lot2: Warehousing and Distribution Services Malt"
+    ],
+    "es_ContentType": [
+     "text/plain"
+    ],
+    "cftPlannedDate": [],
+    "esDA_FirstIngestDate": [
+     "2026-09-18T05:02:09.752+0200"
+    ],
+    "deadlineDate": [
+     "2026-10-22T16:00:59.000+0000"
+    ],
+    "esDA_IngestDate": [
+     "2026-10-30T12:57:12.060+0100"
+    ],
+    "url": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/7f34d1fb-d0da-4a45-8457-9b42fe70aea0-CN"
+    ],
+    "esST_URL": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/7f34d1fb-d0da-4a45-8457-9b42fe70aea0-CN"
+    ],
+    "cftEXARegistrationDeadline": [],
+    "cftLeadContractingAuthorityCode": [
+     "[{\"name\":\"European Union Agency for Asylum\",\"link\":\"http://euaa.europa.eu/\",\"isLeadAuthority\":true}]"
+    ],
+    "mainCpv": [
+     "98392000",
+     "63120000"
+    ],
+    "cftPublicationDateEForm": [
+     "2026-09-18T00:00:00"
+    ],
+    "cftEstimatedOverallContractCurrency": [
+     "EUR"
+    ],
+    "startDate": [
+     "2026-09-18T00:00:00.000+0000"
+    ],
+    "status": [
+     "31094503"
+    ]
+   }
+  },
+  {
+   "reference": "f38cf358-a8ea-4a60-9284-4f9f7a3a4751-CN",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/f38cf358-a8ea-4a60-9284-4f9f7a3a4751-CN",
+   "summary": "Security services for the Delegation of the European Union to China",
+   "metadata": {
+    "procedureType": [
+     "47396208"
+    ],
+    "es_SortDate": [
+     "2026-10-27T00:00:00.000+0000"
+    ],
+    "cftPartyLegalEntityId": [
+     "47352512"
+    ],
+    "contractType": [
+     "31095498"
+    ],
+    "description": [
+     "Provision of security services for the Delegation of the European Union to China"
+    ],
+    "language": [
+     "en"
+    ],
+    "title": [
+     "Security services for the Delegation of the European Union to China"
+    ],
+    "type": [
+     "0"
+    ],
+    "cftId": [
+     "f38cf358-a8ea-4a60-9284-4f9f7a3a4751-CN"
+    ],
+    "callIdentifier": [
+     "EEAS/DELCHNP/2026/CPN/0083"
+    ],
+    "DATASOURCE": [
+     "SEDIA"
+    ],
+    "REFERENCE": [
+     "f38cf358-a8ea-4a60-9284-4f9f7a3a4751-CN"
+    ],
+    "cftTimezone": [
+     "Asia/Shanghai"
+    ],
+    "cftEstimatedTotalProcedureValue": [
+     "14090000 CNY"
+    ],
+    "cftContractNoticeLink": [
+     "[\"742939-2026\",\"208/2026\",\"2026-10-27T00:00:00\"]"
+    ],
+    "frameworkProgramme": [],
+    "cftSubmissionMethodCode": [
+     "ESUBMISSION"
+    ],
+    "identifier": [
+     "f38cf358-a8ea-4a60-9284-4f9f7a3a4751-CN"
+    ],
+    "cftEstimatedOverallContractAmount": [
+     "14090000"
+    ],
+    "caName": [
+     "Security services for the Delegation of the European Union to China"
+    ],
+    "es_ContentType": [
+     "text/plain"
+    ],
+    "cftPlannedDate": [],
+    "esDA_FirstIngestDate": [
+     "2026-10-27T05:01:26.374+0100"
+    ],
+    "deadlineDate": [
+     "2026-11-30T17:00:59.000+0000"
+    ],
+    "esDA_IngestDate": [
+     "2026-10-29T10:43:23.565+0100"
+    ],
+    "url": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/f38cf358-a8ea-4a60-9284-4f9f7a3a4751-CN"
+    ],
+    "esST_URL": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/f38cf358-a8ea-4a60-9284-4f9f7a3a4751-CN"
+    ],
+    "cftEXARegistrationDeadline": [],
+    "cftLeadContractingAuthorityCode": [
+     "[{\"name\":\"European External Action Service (EEAS)\",\"link\":\"https://eeas.europa.eu/\",\"isLeadAuthority\":true}]"
+    ],
+    "mainCpv": [
+     "79710000"
+    ],
+    "cftPublicationDateEForm": [
+     "2026-10-27T00:00:00"
+    ],
+    "cftEstimatedOverallContractCurrency": [
+     "CNY"
+    ],
+    "startDate": [
+     "2026-10-27T00:00:00.000+0000"
+    ],
+    "status": [
+     "31094502"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><ns3:NATVERFAHREN xmlns:ns3="http://evergabe.bescha.bund.de/tendering/forms/xsd/natverfahren2016.xsd" xmlns="http://evergabe.bescha.bund.de/tendering/forms/xsd/euverfahrenR209.xsd" xmlns:ns2="http://evergabe.bescha.bund.de/tendering/forms/xsd/national/V2016">
+    <KATEGORIE>51</KATEGORIE>
+    <VERGABERECHTSRAHMEN>5</VERGABERECHTSRAHMEN>
+    <AUFTRAGSART>2</AUFTRAGSART>
+    <VORINFORMATION>true</VORINFORMATION>
+    <EU_VERFAHREN>false</EU_VERFAHREN>
+    <THEMA>Grundräumung - Teich Atzendorf</THEMA>
+    <ERFUELLUNGSORT>Teich Atzendorf,
+Am Teich, 39443 Staßfurt, Ortsteil Atzendorf</ERFUELLUNGSORT>
+    <LEISTUNGASCII>Räumung, Transport und fachgerechte Entsorgung von Röhricht/Vegetation (ca. 1.000 m² / 750 m² Röhricht)
+Sedimententnahme mittels schwimmfähigen Saugfahrzeug (ca. 750 m² / 60 tTS)
+Entwässerung des anfallenden Materials vor Ort, das Überstandswasser sollte, wenn möglich dem Gewässer wieder zugeführt werden
+Herstellung einer regionalen Blühwiese, einschl. Mahd + Wässerung (ca. 100 m²)</LEISTUNGASCII>
+    <CPVS/>
+    <GESCHAEFTSZEICHEN>V-035-61-26-VOB</GESCHAEFTSZEICHEN>
+    <VERGABEART>107</VERGABEART>
+    <FREIBERUFLICH>false</FREIBERUFLICH>
+    <VETRAULICHKEIT>PUBLIC</VETRAULICHKEIT>
+    <ns3:FORM_SECTION>
+        <ns2:vob-2019-prior-information>
+            <ns2:general-information>
+                <ns2:tender-object>Grundräumung - Teich Atzendorf</ns2:tender-object>
+                <ns2:reference-number>V-035-61-26-VOB</ns2:reference-number>
+                <ns2:contract-type>WORKS</ns2:contract-type>
+                <ns2:valid-until>2026-11-05</ns2:valid-until>
+            </ns2:general-information>
+            <ns2:contracting-authority id="ca-e1fc6b11-3853-4a8e-9b23-e54cdf7f9312">
+                <ns2:name>Salzstadt Staßfurt</ns2:name>
+                <ns2:street-number>Hohenerxlebener Straße 12</ns2:street-number>
+                <ns2:zip-code>39418</ns2:zip-code>
+                <ns2:town>Staßfurt</ns2:town>
+                <ns2:phone>+49 3925 981226</ns2:phone>
+                <ns2:fax>+49 3925 981208</ns2:fax>
+                <ns2:e-mail>Vergabestelle@stassfurt.de</ns2:e-mail>
+                <ns2:internet-address>https://www.stassfurt.de/</ns2:internet-address>
+            </ns2:contracting-authority>
+            <ns2:performance-place>
+                <ns2:p>Teich Atzendorf,</ns2:p>
+                <ns2:p>Am Teich, 39443 Staßfurt, Ortsteil Atzendorf</ns2:p>
+            </ns2:performance-place>
+            <ns2:type-and-scope>
+                <ns2:p>Räumung, Transport und fachgerechte Entsorgung von Röhricht/Vegetation (ca. 1.000 m² / 750 m² Röhricht)</ns2:p>
+                <ns2:p>Sedimententnahme mittels schwimmfähigen Saugfahrzeug (ca. 750 m² / 60 tTS)</ns2:p>
+                <ns2:p>Entwässerung des anfallenden Materials vor Ort, das Überstandswasser sollte, wenn möglich dem Gewässer wieder zugeführt werden</ns2:p>
+                <ns2:p>Herstellung einer regionalen Blühwiese, einschl. Mahd + Wässerung (ca. 100 m²)</ns2:p>
+            </ns2:type-and-scope>
+            <ns2:performance-period>01.12.2026 - 31.01.2027</ns2:performance-period>
+        </ns2:vob-2019-prior-information>
+    </ns3:FORM_SECTION>
+</ns3:NATVERFAHREN>

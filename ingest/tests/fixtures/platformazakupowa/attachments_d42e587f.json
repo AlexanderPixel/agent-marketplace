@@ -1,0 +1,67 @@
+[
+ {
+  "id": "4d115f73-2b28-494d-af26-098d21e1715b",
+  "idV5": "84629c1c-23c7-5c03-b956-db563a595cc9",
+  "createdAt": "2026-10-30T14:12:35+01:00",
+  "filePath": "60/e8/e98111b7fd61efc2c562ba06a7910a7e32dd3c81584db517c03f71f82469",
+  "mimeType": "application/zip",
+  "fileSize": 292293,
+  "checksum": "9c4a34e77f4bac89bbe4e41f52440aaf60a72a28872c63ca8017281357695933",
+  "originalFileName": "TPm_79_26_Załącznik nr 1 do SWZ_projekt umowy+załączniki.zip",
+  "publishedAt": "2026-10-30T12:56:05+01:00",
+  "source": "tender",
+  "fileExists": true
+ },
+ {
+  "id": "28f3c5b8-aa34-44e0-966d-949aa1ed380c",
+  "idV5": "79f0540b-0235-559e-842b-eda061225548",
+  "createdAt": "2026-10-30T14:12:35+01:00",
+  "filePath": "3f/6f/0f0fe4a0f1cef7323d3943fedcbdf279be5788acc77438e011b4a2e1816a",
+  "mimeType": "application/zip",
+  "fileSize": 6861596,
+  "checksum": "b1f1c442837e155d9787be498c2b65cb8b3f2180f96d3d9007c3795bafc60a5c",
+  "originalFileName": "TPm_79_26_Załącznik nr 3 do SWZ_SOPZ.zip",
+  "publishedAt": "2026-10-30T12:56:06+01:00",
+  "source": "tender",
+  "fileExists": true
+ },
+ {
+  "id": "d6f26b97-d001-4617-b0e8-ec3737c59cf8",
+  "idV5": "2558a6bc-191c-5fcf-819e-4ec07d2a43e7",
+  "createdAt": "2026-10-30T14:12:35+01:00",
+  "filePath": "44/36/64bb0d9d2c986396f8023d31c2a047a5bc11d57bea9f127ca7c66e4de15d",
+  "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "fileSize": 60835,
+  "checksum": "116f45e04cd54568f19491422370eb824477eb566628680bed2d75f0c2431505",
+  "originalFileName": "TPm_79_26_załączniki 2, 2A, 2B, 4, 5, 6 do SWZ.docx",
+  "publishedAt": "2026-10-30T12:56:06+01:00",
+  "source": "tender",
+  "fileExists": true
+ },
+ {
+  "id": "5549d2d6-b8e5-41a9-8d5f-d8c985f885d2",
+  "idV5": "b09e976d-5877-5269-b814-f3f399a707a8",
+  "createdAt": "2026-10-30T14:12:35+01:00",
+  "filePath": "3a/43/3f76dcd43bd41ac5f05b9761cf25be62e49b48009e927f69b547eb1279aa",
+  "mimeType": "application/pdf",
+  "fileSize": 154318,
+  "checksum": "0aa71eaefc823c0c424ba118b87eab43a433446a29b1a94f7ea5572f99f91077",
+  "originalFileName": "2026BZP 0051335001.pdf",
+  "publishedAt": "2026-10-30T12:56:06+01:00",
+  "source": "tender",
+  "fileExists": true
+ },
+ {
+  "id": "4b7106bf-e982-4e45-8e37-a2f74b0a0f1e",
+  "idV5": "78d824fc-b489-5d30-941d-c610e6704240",
+  "createdAt": "2026-10-30T14:12:35+01:00",
+  "filePath": "15/d2/ab23b7c37180307c2ae621e97e3a82bc8f611c3d7e0f8cf76c5d16a214c5",
+  "mimeType": "application/pdf",
+  "fileSize": 465488,
+  "checksum": "320075be7b71ba0fd179470b6dcfc1b2135d802e5aeaac6a1ee1ed785ce15bb8",
+  "originalFileName": "TPm_79_26_SWZ_adaptacja Biologia komórki_BES.pdf",
+  "publishedAt": "2026-10-30T12:56:06+01:00",
+  "source": "tender",
+  "fileExists": true
+ }
+]

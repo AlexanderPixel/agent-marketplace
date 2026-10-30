@@ -1,0 +1,387 @@
+[
+ {
+  "id": "54bf01f3-296f-420b-8302-946cc423ac44",
+  "parent": "/api/submissions/fb27e4b8-b86a-484b-90ae-c381fd9e33fd",
+  "submissionVersion": "/api/submission_versions/68456945-4bdd-41d6-bd17-4cfe56bd8bd9",
+  "form": "/api/forms/b607f4cb-898d-4745-8a30-fbd83955a8cc",
+  "formSchemaVersion": "/api/form_schema_versions/75f49d19-8e1a-4c37-a712-68cca0be9cf3",
+  "organization": "/api/organizations/7f71575b-f210-4304-af40-1ed32addfe5f",
+  "data": {
+   "ND-Root": {
+    "ND-Lot": [
+     {
+      "BT-137-Lot": "LOT-0001",
+      "ND-LotTenderingTerms": {
+       "BT-60-Lot": "no-eu-funds",
+       "BT-63-Lot": "not-allowed",
+       "BT-79-Lot": "t-requ",
+       "BT-98-Lot": {
+        "_value": 7.0,
+        "_unitCode": "MONTH"
+       },
+       "ND-LotECatalog": {
+        "BT-764-Lot": "not-allowed"
+       },
+       "ND-PaymentTerms": {
+        "BT-77-Lot": "U této zakázky se předpokládá, že bude financována z prostředků Státního fondu dopravní infrastruktury. Platební podmínky jsou uvedeny v čl. 10 Přílohy č. 2 k SOD (Obchodní podmínky)."
+       },
+       "ND-AwardingTerms": {
+        "ND-LotAwardCriteria": {
+         "ND-LotAwardCriterion": [
+          {
+           "BT-539-Lot": "price",
+           "BT-540-Lot": "Bude hodnocena celková nabídková cena v číselné hodnotě bez DPH uvedená účastníkem zadávacího řízení. Nabídce s nejnižší nabídkovou cenou ze všech hodnocených nabídek bude přiřazeno 100 bodů. Ostatním nabídkám bude přidělena bodová hodnota stanovená násobkem čísla 100 a poměru hodnoty nejvýhodnější …",
+           "BT-734-Lot": "Nabídková cena",
+           "ND-LotAwardCriterionParameters": {
+            "ND-LotAwardWeightCriterionParameter": {
+             "BT-5421-Lot": "per-exa",
+             "BT-541-Lot-WeightNumber": 60.0
+            }
+           }
+          },
+          {
+           "BT-539-Lot": "quality",
+           "BT-540-Lot": "Hodnocení v rámci tohoto dílčího hodnotícího kritéria bude provedeno na základě posouzení údajů uvedených v Seznamu zkušeností hodnocených členů odborného personálu dodavatele. Počet bodů vybraných členů odborného personálu dodavatele bude dán součtem bodů jednotlivých hodnocených členů za zkušenost…",
+           "BT-734-Lot": "Zkušenosti vybraných členů odborného personálu dodavatele",
+           "ND-LotAwardCriterionParameters": {
+            "ND-LotAwardWeightCriterionParameter": {
+             "BT-5421-Lot": "per-exa",
+             "BT-541-Lot-WeightNumber": 40.0
+            }
+           }
+          }
+         ]
+        }
+       },
+       "ND-LotEInvoicing": {
+        "BT-743-Lot": "required"
+       },
+       "ND-LotReviewTerms": {
+        "OPT-301-Lot-ReviewOrg": "ORG-0002",
+        "OPT-301-Lot-ReviewInfo": "ORG-0002",
+        "ND-ReviewPresentationPeriod": {
+         "BT-99-Lot": "Podmínkou pro podání návrhu k ÚOHS je podání námitek k Zadavateli, které je nutné doručit do 15 dnů ode dne, kdy se stěžovatel dozvěděl o domnělém porušení zákona Zadavatelem, nejpozději však do uzavření smlouvy nebo do chvíle, kdy se soutěž o návrh považuje po výběru návrhu za ukončenou.\n\nNámitky p…"
+        }
+       },
+       "ND-TenderRecipient": {
+        "BT-18-Lot": "https://zakazky.spravazeleznic.cz/contract_display_18321.html"
+       },
+       "OPT-301-Lot-AddInfo": "ORG-0001",
+       "ND-TendererLegalForm": {
+        "BT-761-Lot": "false"
+       },
+       "ND-FinancialGuarantee": {
+        "BT-75-Lot": "Zadavatel v souladu s § 41 ZZVZ požaduje, aby účastníci k zajištění plnění svých povinností vyplývajících z účasti v zadávacím řízení poskytli jistotu ve výši 10 700 000 Kč (slovy: deset milionů sedm set tisíc korun českých).",
+        "BT-751-Lot": "true"
+       },
+       "ND-LotReservedExecution": {
+        "BT-736-Lot": "no"
+       },
+       "OPT-301-Lot-DocProvider": "ORG-0001",
+       "ND-ExecutionRequirements": {
+        "BT-70-Lot": "Bankovní nebo pojistná záruka k zajištění plnění smlouvy o dílo.",
+        "OPT-060-Lot": "performance"
+       },
+       "ND-LotSubmissionLanguage": [
+        {
+         "BT-97-Lot": "CES"
+        }
+       ],
+       "ND-LotProcurementDocument": [
+        {
+         "BT-14-Lot": "non-restricted-document",
+         "BT-15-Lot": "https://zakazky.spravazeleznic.cz/contract_display_18321.html",
+         "OPT-140-Lot": "Zadávací dokumentace v plném rozsahu"
+        }
+       ],
+       "ND-SecurityClearanceTerms": {
+        "BT-578-Lot": "false"
+       },
+       "ND-LotReservedParticipation": {
+        "ND-LotReservedProcurement": [
+         {
+          "BT-71-Lot": "none"
+         }
+        ]
+       },
+       "ND-SelectionCriteriaSources": {
+        "ND-SelectionCriteriaSource": [
+         {
+          "BT-821-Lot": "epo-procurement-document"
+         }
+        ]
+       }
+      },
+      "ND-LotProcurementScope": {
+       "BT-21-Lot": "Železniční uzel Brno, etapa Heršpice a Osobní nádraží",
+       "BT-22-Lot": "102446/2025-SŽ-GŘ-O7",
+       "BT-23-Lot": "services",
+       "BT-24-Lot": "Předmět plnění veřejné zakázky:\na)\tSpolupráce při zpracování Dokumentace EIA, zahrnující spolupráci a přípravu podkladů pro zpracovatele Dokumentace EIA uvedeného v čl. 4.15 ZTP, koordinaci technického návrhu s výstupy a doporučeními Dokumentace EIA a zapracování závěrů z procesu EIA do Projektové d…",
+       "BT-300-Lot": "Zadavatel nesděluje výši předpokládané hodnoty veřejné zakázky. Zadavatel stanovuje závaznou zadávací podmínku tak, že částka 711 367 915 Kč je nejvyšší přípustnou nabídkovou cenou (bez DPH), a to pod sankcí vyloučení z další účasti v zadávacím řízení. \n",
+       "ND-LotDuration": {
+        "BT-536-Lot": "2027-03-01+01:00",
+        "BT-537-Lot": "2036-02-29+01:00"
+       },
+       "ND-OptionsAndRenewals": {
+        "BT-54-Lot": "1) Zadavatel si v souladu s § 100 odst. 1 ZZVZ a § 222 odst. 2 ZZVZ vyhrazuje změnu závazku v souladu s čl. 3.8, 3.5, 3.7 a 9.4.8 Obchodních podmínek a to takto:\na) Projednání s veřejností; v rámci této vyhrazené změny lze překročit předpokládaný počet hodin dle přílohy č. 4 Smlouvy maximálně o 20 %…",
+        "BT-58-Lot": 99
+       },
+       "ND-LotPlacePerformance": [
+        {
+         "ND-LotPerformanceAddress": {
+          "BT-5071-Lot": "CZ010",
+          "BT-5141-Lot": "CZE"
+         }
+        }
+       ],
+       "ND-LotMainClassification": {
+        "BT-262-Lot": "71322000",
+        "BT-26(m)-Lot": "cpv"
+       },
+       "ND-LotSocialObjectiveType": [
+        {
+         "BT-775-Lot": "other"
+        }
+       ],
+       "ND-StrategicProcurementType": [
+        {
+         "BT-06-Lot": "env-imp",
+         "BT-777-Lot": "Porady a jednání vedená primárně distančním způsobem.\nDále blíže uvedeno v čl. 21 Pokynů pro dodavatele."
+        },
+        {
+         "BT-06-Lot": "soc-obj",
+         "BT-777-Lot": "Rovnocenné platební podmínky v rámci dodavatelského řetězce; studentské exkurze. \nDále blíže uvedeno v čl. 21 Pokynů pro dodavatele. "
+        }
+       ],
+       "ND-LotEnvironmentalImpactType": [
+        {
+         "BT-774-Lot": "other"
+        }
+       ],
+       "ND-LotAdditionalClassification": [
+        {
+         "BT-263-Lot": "71311230",
+         "BT-26(a)-Lot": "cpv"
+        },
+        {
+         "BT-263-Lot": "71335000",
+         "BT-26(a)-Lot": "cpv"
+        },
+        {
+         "BT-263-Lot": "71351730",
+         "BT-26(a)-Lot": "cpv"
+        }
+       ],
+       "ND-LotInnovativeAcquisitionType": [
+        {
+         "BT-776-Lot": "rd-act"
+        }
+       ]
+      },
+      "ND-LotTenderingProcess": {
+       "BT-17-Lot": "required",
+       "BT-115-Lot": true,
+       "ND-AuctionTerms": {
+        "BT-767-Lot": false
+       },
+       "ND-SubmissionDeadline": {
+        "BT-131(d)-Lot": "2027-01-04+01:00",
+        "BT-131(t)-Lot": "09:00:00+01:00"
+       },
+       "ND-LotFAContractingSystem": {
+        "BT-765-Lot": "none"
+       },
+       "ND-LotDPSContractingSystem": {
+        "BT-766-Lot": "none"
+       }
+      }
+     }
+    ],
+    "BT-01-notice": "32014L0025",
+    "BT-02-notice": "cn-standard",
+    "BT-03-notice": "competition",
+    "BT-04-notice": "12dd28c7-7474-4df5-8104-d14dc2a9ea73",
+    "BT-701-notice": "fb27e4b8-b86a-484b-90ae-c381fd9e33fd",
+    "BT-757-notice": "01",
+    "OPT-001-notice": "2.3",
+    "OPT-002-notice": "eforms-sdk-1.13",
+    "BT-05(a)-notice": "2026-10-29+01:00",
+    "BT-05(b)-notice": "13:26:46+01:00",
+    "BT-702(a)-notice": "CES",
+    "ND-RootExtension": {
+     "ND-Changes": {
+      "ND-Change": [
+       {
+        "BT-718-notice": true,
+        "BT-719-notice": "2026-10-29+01:00",
+        "BT-141(a)-notice": "Popis předmětu veřejné zakázky:\n\na)\tZpracování dokumentace EIA (dále jen \"dokumentace EIA\") dle § 8 zákona č. 100/2001 Sb., o posuzování vlivů na životní prostředí, ve znění pozdějších předpisů. Závěr z procesu EIA bude zapracován do DPS. \nNAHRAZENO\na)\tSpolupráce při zpracování Dokumentace EIA, zahr…",
+        "ND-ChangedSection": [
+         {
+          "BT-13716-notice": "LOT-0001"
+         }
+        ]
+       }
+      ],
+      "BT-758-notice": "739097-2026",
+      "ND-ChangeReason": {
+       "BT-140-notice": "update-add",
+       "BT-762-notice": "Úprava a doplnění Zadávací dokumentace. Z tohoto důvodu zadavatel přistoupil k posunu lhůty pro podání nabídek tak, aby od okamžiku zveřejnění činila lhůta pro podání nabídky nejméně celou svou původní délku. \n"
+      }
+     },
+     "OPP-070-notice": "17",
+     "ND-Organizations": {
+      "ND-Organization": [
+       {
+        "ND-Company": {
+         "ND-CompanyAddress": {
+          "BT-507-Organization-Company": "CZ010",
+          "BT-512-Organization-Company": "11000",
+          "BT-513-Organization-Company": "Praha",
+          "BT-514-Organization-Company": "CZE",
+          "BT-510(a)-Organization-Company": "Dlážděná 1003"
+         },
+         "ND-CompanyContact": {},
+         "ND-CompanyLegalEntity": [
+          {
+           "BT-501-Organization-Company": "70994234"
+          }
+         ],
+         "BT-500-Organization-Company": "Správa železnic, státní organizace",
+         "OPT-200-Organization-Company": "ORG-0001"
+        },
+        "OPP-051-Organization": false
+       },
+       {
+        "ND-Company": {
+         "ND-CompanyAddress": {
+          "BT-507-Organization-Company": "CZ064",
+          "BT-512-Organization-Company": "60200",
+          "BT-513-Organization-Company": "Brno",
+          "BT-514-Organization-Company": "CZE",
+          "BT-510(a)-Organization-Company": "třída Kpt. Jaroše 1926/7"
+         },
+         "ND-CompanyContact": {},
+         "ND-CompanyLegalEntity": [
+          {
+           "BT-501-Organization-Company": "65349423"
+          }
+         ],
+         "BT-500-Organization-Company": "Úřad pro ochranu hospodářské soutěže",
+         "BT-505-Organization-Company": "https://uohs.gov.cz",
+         "OPT-200-Organization-Company": "ORG-0002"
+        }
+       }
+      ]
+     }
+    },
+    "ND-ProcedureTerms": {
+     "ND-CrossBorderLaw": {
+      "BT-09(a)-Procedure": "CrossBorderLaw",
+      "BT-09(b)-Procedure": "Zákon č. 134/2016 Sb., o zadávání veřejných zakázek"
+     },
+     "ND-LocalLegalBasisNoID": [
+      {
+       "BT-01(e)-Procedure": "LocalLegalBasis",
+       "BT-01(f)-Procedure": "Zákon č. 134/2016 Sb., o zadávání veřejných zakázek"
+      }
+     ],
+     "ND-TendererQualificationRequestSources": {
+      "ND-ExclusionGroundsSource": [
+       {
+        "BT-806-Procedure": "epo-procurement-document"
+       }
+      ]
+     }
+    },
+    "ND-ContractingParty": [
+     {
+      "ND-Buyer": {
+       "OPT-300-Procedure-Buyer": "ORG-0001"
+      },
+      "BT-11-Procedure-Buyer": "spec-rights-entity",
+      "BT-508-Procedure-Buyer": "https://zakazky.spravazeleznic.cz",
+      "BT-610-Procedure-Buyer": "urttb"
+     }
+    ],
+    "ND-ProcedureProcurementScope": {
+     "BT-21-Procedure": "Železniční uzel Brno, etapa Heršpice a Osobní nádraží",
+     "BT-22-Procedure": "102446/2025-SŽ-GŘ-O7",
+     "BT-23-Procedure": "services",
+     "BT-24-Procedure": "Předmět plnění veřejné zakázky:\na)\tSpolupráce při zpracování Dokumentace EIA, zahrnující spolupráci a přípravu podkladů pro zpracovatele Dokumentace EIA uvedeného v čl. 4.15 ZTP, koordinaci technického návrhu s výstupy a doporučeními Dokumentace EIA a zapracování závěrů z procesu EIA do Projektové d…",
+     "BT-300-Procedure": "Zadavatel nesděluje výši předpokládané hodnoty veřejné zakázky. Zadavatel stanovuje závaznou zadávací podmínku tak, že částka 711 367 915 Kč je nejvyšší přípustnou nabídkovou cenou (bez DPH), a to pod sankcí vyloučení z další účasti v zadávacím řízení. ",
+     "ND-ProcedureMainClassification": {
+      "BT-262-Procedure": "71322000",
+      "BT-26(m)-Procedure": "cpv"
+     },
+     "OPT-900-Procedure-ValidationAnchor": "_",
+     "ND-ProcedureAdditionalCommodityClassification": [
+      {
+       "BT-263-Procedure": "71311230",
+       "BT-26(a)-Procedure": "cpv"
+      },
+      {
+       "BT-263-Procedure": "71335000",
+       "BT-26(a)-Procedure": "cpv"
+      },
+      {
+       "BT-263-Procedure": "71351730",
+       "BT-26(a)-Procedure": "cpv"
+      }
+     ],
+     "ND-ProcedurePlacePerformanceAdditionalInformation": [
+      {
+       "ND-ProcedurePlacePerformance": {
+        "BT-5071-Procedure": "CZ010",
+        "BT-5141-Procedure": "CZE"
+       }
+      }
+     ]
+    },
+    "ND-ProcedureTenderingProcess": {
+     "BT-105-Procedure": "open",
+     "ND-AcceleratedProcedure": {
+      "BT-106-Procedure": "false"
+     }
+    }
+   },
+   "metadata": {
+    "subType": "17",
+    "identifikatoryNipez": {
+     "zadavaciPostup": {
+      "identifikatorNipez": "ZP/RVZ2600288504/001"
+     },
+     "identifikatorNipez": "RVZ2600288504",
+     "identifikatoryCasti": [
+      {
+       "idCastiVvz": "LOT-0001",
+       "identifikatorNipez": "RVZ2600288504/001"
+      }
+     ]
+    },
+    "identifikatoryNipezPredchozihoPodani": {
+     "identifikatoryNipez": {
+      "zadavaciPostup": {
+       "identifikatorNipez": "ZP/RVZ2600288504/001"
+      },
+      "identifikatorNipez": "RVZ2600288504",
+      "identifikatoryCasti": [
+       {
+        "idCastiVvz": "LOT-0001",
+        "identifikatorNipez": "RVZ2600288504/001"
+       }
+      ]
+     }
+    }
+   }
+  },
+  "dataHash": "8f86f9b2e121512936627e5d6ff0f46b567f93deea3c0c749c6134538884d1f2",
+  "workflowPlaceCode": "UVEREJNENO",
+  "variableId": "EZ7GC-RJQJZ",
+  "relatedId": "12dd28c7-7474-4df5-8104-d14dc2a9ea73",
+  "publicId": "77Q6gq9hVuyMU6ame4B9UrFuxYKWUv6K",
+  "version": 17,
+  "validityPeriod": "2026-10-29T07:38:54+01:00/",
+  "createdAt": "2026-10-29T07:38:54+01:00",
+  "updatedAt": "2026-10-30T08:03:30+01:00"
+ }
+]

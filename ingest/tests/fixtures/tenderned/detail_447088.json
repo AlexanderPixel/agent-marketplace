@@ -1,0 +1,79 @@
+{
+ "publicatieId": 447088,
+ "kenmerk": 621696,
+ "aanbestedingNaam": "Bouw- en woonrijp maken Zeeheldenbuurt Hoogeveen",
+ "opdrachtgeverNaam": "Gemeente Hoogeveen",
+ "numberOfDaysBeforeAanmeldenInschrijven": 33,
+ "opdrachtBeschrijving": "De opdracht betreft de openbare nationale  aanbestedingsprocedure ten behoeve van Bouw- en woonrijp maken Zeeheldenbuurt Hoogeveen. Deze Aanbesteding is de gemeente Hoogeveen, hierna te noemen Opdrachtgever, met referentienummer Z.663188. De Aanbestedende dienst is de gemeente Hoogeveen.\nDeze aanbesteding vindt plaats op basis van deel 1 van de Aanbestedingswet 2012 (Aw 2012) en hoofdstuk 1 en 2 v…",
+ "publicatieDatum": "2026-10-30T10:52:12.921173",
+ "sluitingsDatum": "2026-12-02T10:00:00",
+ "typePublicatie": "Vrijwillige aankondiging van een opdracht",
+ "publicatieCode": "EFE3",
+ "juridischKaderCode": {
+  "code": "ARW2012",
+  "omschrijving": "ARW 2016 - Aanbestedingsreglement Werken 2016"
+ },
+ "nationaalOfEuropeesCode": {
+  "code": "NL",
+  "omschrijving": "Nationaal"
+ },
+ "typeOpdrachtCode": {
+  "code": "W",
+  "omschrijving": "Werken"
+ },
+ "procedureCode": {
+  "code": "OPE",
+  "omschrijving": "Openbaar"
+ },
+ "cpvCodes": [
+  {
+   "isHoofdOpdracht": true,
+   "code": "45200000-9",
+   "omschrijving": "Volledige of gedeeltelijke bouw- en civieltechnische werkzaamheden"
+  }
+ ],
+ "nutsCodes": [
+  {
+   "code": "NL",
+   "omschrijving": "NEDERLAND"
+  }
+ ],
+ "afgerondeAanbesteding": false,
+ "isGeimporteerd": false,
+ "isVroegtijdigBeeindigd": false,
+ "publicatiePdfId": 15164214,
+ "onlyGunningProcedure": false,
+ "isGegund": false,
+ "digitaalInschrijvenCode": {
+  "code": "TEN",
+  "omschrijving": "TenderNed"
+ },
+ "referentieNummer": "Z.663188",
+ "aankondigingCode": {
+  "code": "AAO",
+  "omschrijving": "Aankondiging opdracht"
+ },
+ "opdrachtAardCode": {
+  "code": "OOP",
+  "omschrijving": "Overheidsopdracht"
+ },
+ "formType": "competition",
+ "links": {
+  "pdf": {
+   "href": "/papi/tenderned-rs-tns/v2/publicaties/447088/pdf",
+   "title": "pdf"
+  },
+  "keepInformed": {
+   "href": "https://www.tenderned.nl/aanbestedende-dienst/aankondigingen/447088?keepInformed=true",
+   "title": "keepInformed"
+  },
+  "addToTenders": {
+   "href": "https://www.tenderned.nl/ondernemersplatform/aankondigingen/447088?addToTenders=true",
+   "title": "addToTenders"
+  },
+  "shareOnLinkedIn": {
+   "href": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.tenderned.nl/aankondigingen/overzicht/447088",
+   "title": "shareOnLinkedIn"
+  }
+ }
+}

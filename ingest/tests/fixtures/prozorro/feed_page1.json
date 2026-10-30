@@ -1,0 +1,58 @@
+{
+ "data": [
+  {
+   "dateModified": "2026-10-30T16:20:00.225905+02:00",
+   "tenderID": "UA-2026-10-16-011819-a",
+   "status": "active.tendering",
+   "procurementMethodType": "aboveThreshold",
+   "id": "3108fae8140a489c9d67473d301a8ec5"
+  },
+  {
+   "dateModified": "2026-10-30T16:20:07.933287+02:00",
+   "tenderID": "UA-2026-10-30-009334-a",
+   "status": "active.enquiries",
+   "procurementMethodType": "belowThreshold",
+   "id": "a679f8889d0d4a18ad2a38f822875be0"
+  },
+  {
+   "dateModified": "2026-10-30T16:20:47.419973+02:00",
+   "tenderID": "UA-2026-10-30-009409-a",
+   "status": "active.tendering",
+   "procurementMethodType": "priceQuotation",
+   "id": "99dbb29ef4cb490ea2a0a5160b07acfa"
+  },
+  {
+   "dateModified": "2026-10-30T16:21:38.358817+02:00",
+   "tenderID": "UA-2026-10-13-005250-a",
+   "status": "active.qualification",
+   "procurementMethodType": "aboveThreshold",
+   "id": "79afd5bdf2cd442f84a99348792a0d61"
+  },
+  {
+   "dateModified": "2026-10-30T16:21:38.467137+02:00",
+   "tenderID": "UA-2026-10-30-009418-a",
+   "status": "complete",
+   "procurementMethodType": "reporting",
+   "id": "874462241bcb4a8d93050d33c1e5ccc1"
+  },
+  {
+   "dateModified": "2026-10-30T16:21:39.097584+02:00",
+   "tenderID": "UA-2026-10-07-009061-a",
+   "status": "active.awarded",
+   "procurementMethodType": "aboveThreshold",
+   "id": "300ed16b0f6a4387ae165e4f30407db1"
+  },
+  {
+   "dateModified": "2026-10-30T16:21:42.481090+02:00",
+   "tenderID": "UA-2026-10-30-009434-a",
+   "status": "active",
+   "procurementMethodType": "reporting",
+   "id": "3a965169eae94cc5baf72abe1d31ead2"
+  }
+ ],
+ "next_page": {
+  "offset": "1793369999.5.1.page2cursor",
+  "path": "/api/2.5/tenders?limit=1000&opt_fields=status%2CprocurementMethodType%2CtenderID&offset=1793369999.5.1.page2cursor",
+  "uri": "https://public-api.prozorro.gov.ua/api/2.5/tenders?limit=1000&opt_fields=status%2CprocurementMethodType%2CtenderID&offset=1793369999.5.1.page2cursor"
+ }
+}

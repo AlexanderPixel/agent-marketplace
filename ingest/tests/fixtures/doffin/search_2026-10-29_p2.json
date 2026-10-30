@@ -1,0 +1,71 @@
+{
+ "numHitsTotal": 3,
+ "numHitsAccessible": 3,
+ "hits": [
+  {
+   "id": "2026-116830",
+   "buyer": [
+    {
+     "id": "f4592f81dc15aa5ab9c5b038e2c4ba17",
+     "organizationId": "938726027",
+     "name": "Melhus Kommune"
+    }
+   ],
+   "heading": "Drift av Sørtun bofellesskap",
+   "description": "Anskaffelsen gjelder helse- og omsorgstjenester og er gjennomført i samsvar med anskaffelsesforskriften del IV. Konkurransen ble gjennomført uten forutgående kunngjøring med hjemmel i forskrift om offentlige anskaffelser § 13-3 første ledd bokstav e, idet oppdragsgiver vurderte at det forelå særlige omstendigheter som gjorde det strengt nødvendig å inngå kontrakt innen en tidsramme som ikke muliggjorde en ordinær kunngjort konkurranse.",
+   "locationId": [
+    "NO060"
+   ],
+   "estimatedValue": null,
+   "type": "ANNOUNCEMENT_OF_CONCLUSION_OF_CONTRACT",
+   "allTypes": [
+    "ADVISORY_NOTICE",
+    "ANNOUNCEMENT_OF_CONCLUSION_OF_CONTRACT",
+    "RESULT",
+    "PLANNING"
+   ],
+   "status": null,
+   "issueDate": "2026-10-28T10:06:19Z",
+   "deadline": null,
+   "sentToTed": false,
+   "publicationDate": "2026-10-29",
+   "placeOfPerformance": [
+    "Trøndelag/Trööndelage"
+   ],
+   "procurementStrategicLabels": []
+  }
+ ],
+ "facets": {},
+ "activeFacets": {
+  "buyer": {
+   "items": []
+  },
+  "winner": {
+   "items": []
+  },
+  "cpvCodes": {
+   "items": []
+  },
+  "status": {
+   "items": []
+  },
+  "type": {
+   "items": []
+  },
+  "locations": {
+   "items": []
+  },
+  "cpvCodesLabel": {
+   "items": []
+  },
+  "cpvCodesId": {
+   "items": []
+  },
+  "contractNature": {
+   "items": []
+  },
+  "procurementStrategicLabels": {
+   "items": []
+  }
+ }
+}

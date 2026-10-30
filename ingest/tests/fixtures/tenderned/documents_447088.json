@@ -1,0 +1,73 @@
+{
+ "documenten": [
+  {
+   "documentId": "ec65e688477b95d40d0d35904a76dbdc",
+   "documentNaam": "TN621696 - EFE3 Vrijwillige aankondiging van een opdracht 20261030105207",
+   "typeDocument": {
+    "code": "pdf",
+    "omschrijving": "Portable Document Format"
+   },
+   "datumPublicatie": "2026-10-30",
+   "publicatieCategorie": {
+    "code": "ANK",
+    "omschrijving": "Aankondiging"
+   },
+   "virusIndicatie": false,
+   "grootte": 195869,
+   "links": {
+    "download": {
+     "href": "/papi/tenderned-rs-tns/v2/publicaties/447088/documenten/15164214/content",
+     "title": "download"
+    }
+   }
+  },
+  {
+   "documentId": "74fee6acfb5cae748c965cb9800b190a",
+   "documentNaam": "Aanbestedingsleidraad -Bouw en woonrijp maken Zeeheldenbuurt 1.0",
+   "typeDocument": {
+    "code": "pdf",
+    "omschrijving": "Portable Document Format"
+   },
+   "datumPublicatie": "2026-10-30",
+   "publicatieCategorie": {
+    "code": "DOC",
+    "omschrijving": "Aanbestedingsdocumenten"
+   },
+   "virusIndicatie": false,
+   "grootte": 408209,
+   "links": {
+    "download": {
+     "href": "/papi/tenderned-rs-tns/v2/publicaties/447088/documenten/15163647/content",
+     "title": "download"
+    }
+   }
+  },
+  {
+   "documentId": "130536481b36eb7a1fbfba46ee12c956",
+   "documentNaam": "Bijlage 1 - Bestek inclusief bijlage",
+   "typeDocument": {
+    "code": "zip",
+    "omschrijving": "Zip"
+   },
+   "datumPublicatie": "2026-10-30",
+   "publicatieCategorie": {
+    "code": "DOC",
+    "omschrijving": "Aanbestedingsdocumenten"
+   },
+   "virusIndicatie": false,
+   "grootte": 103452190,
+   "links": {
+    "download": {
+     "href": "/papi/tenderned-rs-tns/v2/publicaties/447088/documenten/15163648/content",
+     "title": "download"
+    }
+   }
+  }
+ ],
+ "links": {
+  "downloadZip": {
+   "href": "/papi/tenderned-rs-tns/v2/publicaties/447088/documenten/zip",
+   "title": "download-zip"
+  }
+ }
+}

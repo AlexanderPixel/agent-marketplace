@@ -1,0 +1,887 @@
+{
+ "uri": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages?updatedFrom=2026-10-29T00:00:00&limit=100&updatedTo=2026-10-30T14:13:02",
+ "version": "1.1",
+ "publishedDate": "2026-10-30T14:12:06Z",
+ "publisher": {
+  "name": "Cabinet Office",
+  "scheme": "GB-GOR",
+  "uid": "D2",
+  "uri": "https://www.gov.uk/government/organisations/cabinet-office"
+ },
+ "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+ "publicationPolicy": "https://www.gov.uk/government/publications/open-contracting",
+ "releases": [
+  {
+   "buyerID": [],
+   "id": "103262-2026",
+   "tag": [
+    "tender"
+   ],
+   "date": "2026-10-30T14:11:39Z",
+   "initiationType": "tender",
+   "ocid": "ocds-h6vhtk-06727d",
+   "parties": [
+    {
+     "name": "Northern Ireland Electricity Networks Limited",
+     "id": "GB-COH-NI026041",
+     "identifier": {
+      "scheme": "GB-COH",
+      "id": "NI026041"
+     },
+     "address": {
+      "streetAddress": "120 Malone Road",
+      "locality": "Belfast",
+      "postalCode": "BT9 5HT",
+      "country": "GB",
+      "countryName": "United Kingdom",
+      "region": "UK"
+     },
+     "contactPoint": {
+      "email": "noreen.magowan@nienetworks.co.uk"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "classifications": [
+       {
+        "scheme": "UK_CA_TYPE",
+        "id": "privateUtility",
+        "description": "Private utility"
+       },
+       {
+        "scheme": "UK_CA_DEVOLVED_REGULATIONS",
+        "id": "GB-NIR",
+        "description": "Northern Irish devolved regulations apply"
+       }
+      ]
+     }
+    }
+   ],
+   "buyer": {
+    "id": "GB-COH-NI026041",
+    "name": "Northern Ireland Electricity Networks Limited"
+   },
+   "tender": {
+    "id": "S1138 (2027)",
+    "legalBasis": {
+     "id": "2023/54",
+     "scheme": "UKPGA",
+     "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+    },
+    "title": "S1138 (2027) The Hire, Erection and Dismantling of Scaffold Services",
+    "description": "NIE Networks now wishes to award a Framework Agreement for Hire, Erection and Dismantling of Scaffold.\nThese services will include the activities detailed below.\n•\tUndertaking pre-site assessments by suitably trained and competent personnel to determine scaffold requirements and develop the necessary design, planning and safety documentation.\n•\tPreparation of all required scaffold designs, design ...",
+    "status": "active",
+    "items": [
+     {
+      "id": "1",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "44212310",
+        "description": "Scaffolding"
+       },
+       {
+        "scheme": "CPV",
+        "id": "45500000",
+        "description": "Hire of construction and civil engineering machinery and equipment with operator"
+       },
+       {
+        "scheme": "CPV",
+        "id": "44212315",
+        "description": "Equipment for scaffolding"
+       },
+       {
+        "scheme": "CPV",
+        "id": "44212317",
+        "description": "Scaffolding structures"
+       },
+       {
+        "scheme": "CPV",
+        "id": "45262100",
+        "description": "Scaffolding work"
+       },
+       {
+        "scheme": "CPV",
+        "id": "45262110",
+        "description": "Scaffolding dismantling work"
+       },
+       {
+        "scheme": "CPV",
+        "id": "45262120",
+        "description": "Scaffolding erection work"
+       },
+       {
+        "scheme": "CPV",
+        "id": "98390000",
+        "description": "Other services"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKN",
+        "country": "GB",
+        "countryName": "United Kingdom"
+       }
+      ],
+      "relatedLot": "1"
+     },
+     {
+      "id": "2",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "44212310",
+        "description": "Scaffolding"
+       },
+       {
+        "scheme": "CPV",
+        "id": "45500000",
+        "description": "Hire of construction and civil engineering machinery and equipment with operator"
+       },
+       {
+        "scheme": "CPV",
+        "id": "44212315",
+        "description": "Equipment for scaffolding"
+       },
+       {
+        "scheme": "CPV",
+        "id": "44212317",
+        "description": "Scaffolding structures"
+       },
+       {
+        "scheme": "CPV",
+        "id": "45262100",
+        "description": "Scaffolding work"
+       },
+       {
+        "scheme": "CPV",
+        "id": "45262110",
+        "description": "Scaffolding dismantling work"
+       },
+       {
+        "scheme": "CPV",
+        "id": "45262120",
+        "description": "Scaffolding erection work"
+       },
+       {
+        "scheme": "CPV",
+        "id": "98390000",
+        "description": "Other services"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKN",
+        "country": "GB",
+        "countryName": "United Kingdom"
+       }
+      ],
+      "relatedLot": "2"
+     }
+    ],
+    "value": {
+     "amountGross": 5760000,
+     "amount": 4800000,
+     "currency": "GBP"
+    },
+    "procurementMethod": "selective",
+    "procurementMethodDetails": "Competitive flexible procedure",
+    "procedure": {
+     "features": "As specified within the RTP and/or tender documents available from the address specified within this notice with the reference project S1138 (2027) Hire, Erection and Dismantling of Scaffold"
+    },
+    "mainProcurementCategory": "works",
+    "specialRegime": [
+     "utilities"
+    ],
+    "aboveThreshold": true,
+    "coveredBy": [
+     "GPA"
+    ],
+    "techniques": {
+     "hasFrameworkAgreement": true,
+     "frameworkAgreement": {
+      "method": "withoutReopeningCompetition",
+      "type": "closed",
+      "description": "As specified within the RTP and/or tender documents available from the address specifi ed within this notice with the reference project S1138 (2027) Hire, Erection and Dismantly of Scaffold"
+     }
+    },
+    "submissionMethodDetails": "As specified within the RTP and/or tender documents available from the address specified within this notice with the reference project S1138 (2027) Hire, Erection and Dismantly of Scaffold\nhttps://e-sourcingni.bravosolution.co.uk\nTenders or requests to participate must be submitted to the above mentioned address",
+    "submissionTerms": {
+     "electronicSubmissionPolicy": "allowed",
+     "languages": [
+      "en"
+     ]
+    },
+    "expressionOfInterestDeadline": "2026-12-03T12:00:00+00:00",
+    "enquiryPeriod": {
+     "endDate": "2026-12-03T12:00:00+00:00"
+    },
+    "awardPeriod": {
+     "endDate": "2027-09-01T23:59:59+01:00"
+    },
+    "lots": [
+     {
+      "id": "1",
+      "title": "Lot 1 - Hire, Erection and Dismantling of Scaffold (Distribution Overhead lines)",
+      "description": "Lot 1\n•\tThe design, erection, inspection and dismantling of scaffold to facilitate NIE Networks’ teams with:\n•\tthe erection / maintenance / replacement of electricity poles  \n•\tthe installation and repair of Low Voltage undereave wires and cables at customer properties \n•\tErection and dismantling of scaffold to facilitate NIE Networks’ fault and emergency response works when required.",
+      "status": "active",
+      "value": {
+       "amountGross": 2880000,
+       "amount": 2400000,
+       "currency": "GBP"
+      },
+      "awardCriteria": {
+       "criteria": [
+        {
+         "type": "quality",
+         "name": "Quality",
+         "description": "Quality",
+         "numbers": [
+          {
+           "number": 30,
+           "weight": "percentageExact"
+          }
+         ]
+        },
+        {
+         "type": "price",
+         "name": "Price",
+         "description": "Price",
+         "numbers": [
+          {
+           "number": 70,
+           "weight": "percentageExact"
+          }
+         ]
+        }
+       ]
+      },
+      "selectionCriteria": {
+       "criteria": [
+        {
+         "description": "As specified within the RTP and/or tender documents available from the address specified within this notice with the reference project S1138 (2027) Hire, Erection and Dismantling of Scaffold",
+         "forReduction": true
+        },
+        {
+         "type": "economic",
+         "description": "As specified within the RTP and/or tender documents available from the address specifi ed within this notice with the reference project S1138 (2027) Hire, Erection and Dismantly of Scaffold"
+        },
+        {
+         "type": "technical",
+         "description": "As specified within the RTP and/or tender documents available from the address specifi ed within this notice with the reference project S1138 (2027) Hire, Erection and Dismantly of Scaffold"
+        }
+       ]
+      },
+      "suitability": {
+       "sme": true
+      },
+      "contractPeriod": {
+       "startDate": "2027-12-29T00:00:00+00:00",
+       "endDate": "2031-12-28T23:59:59+00:00",
+       "maxExtentDate": "2035-12-28T23:59:59+00:00"
+      },
+      "hasRenewal": true,
+      "renewal": {
+       "description": "NIE Networks intends to establish Framework Arrangements under which it shall appoint Suppliers to enter into separate Framework Agreements for the provision of Hire, Erection and Dismantling of Scaffold services across two separate Lots. Each Framework Agreement will be for a period of 4 years with an option, exercisable entirely at the discretion of NIE Networks and subject to the terms of the F..."
+      },
+      "hasOptions": true,
+      "options": {
+       "description": "NIE Networks intends to establish Framework Arrangements under which it shall appoint Suppliers to enter into separate Framework Agreements for the provision of Hire, Erection and Dismantling of Scaffold services across two separate Lots. Each Framework Agreement will be for a period of 4 years with an option, exercisable entirely at the discretion of NIE Networks and subject to the terms of the F..."
+      }
+     },
+     {
+      "id": "2",
+      "title": "Hire, Erection and Dismantling of Scaffold (Distribution and Transmission Substations and Transmission Overhead Lines)",
+      "description": "Lot 2\n•\tThe design, erection, inspection and dismantling of scaffold to facilitate NIE Networks’/ Contractor teams with:\n•\tThe installation / maintenance / replacement of substation equipment, buildings, and apparatus\n•\tThe erection / maintenance / replacement of electricity poles and towers\n•\tRoadside protection schemes to assist with raising and lowering of overhead lines. \n•\tErection and disman...",
+      "status": "active",
+      "value": {
+       "amountGross": 2880000,
+       "amount": 2400000,
+       "currency": "GBP"
+      },
+      "awardCriteria": {
+       "criteria": [
+        {
+         "type": "quality",
+         "name": "Quality",
+         "description": "Quality",
+         "numbers": [
+          {
+           "number": 30,
+           "weight": "percentageExact"
+          }
+         ]
+        },
+        {
+         "type": "price",
+         "name": "Price",
+         "description": "Price",
+         "numbers": [
+          {
+           "number": 70,
+           "weight": "percentageExact"
+          }
+         ]
+        }
+       ]
+      },
+      "selectionCriteria": {
+       "criteria": [
+        {
+         "description": "As specifi ed within the RTP and/or tender documents available from the address specified within this notice with the reference project S1138 (2027) Hire, Erection and Dismantling of Scaffold",
+         "forReduction": true
+        },
+        {
+         "type": "economic",
+         "description": "As specified within the RTP and/or tender documents available from the address specifi ed within this notice with the reference project S1138 (2027) Hire, Erection and Dismantly of Scaffold"
+        },
+        {
+         "type": "technical",
+         "description": "As specified within the RTP and/or tender documents available from the address specifi ed within this notice with the reference project S1138 (2027) Hire, Erection and Dismantly of Scaffold"
+        }
+       ]
+      },
+      "suitability": {
+       "sme": true
+      },
+      "contractPeriod": {
+       "startDate": "2027-12-29T00:00:00+00:00",
+       "endDate": "2031-12-28T23:59:59+00:00",
+       "maxExtentDate": "2035-12-28T23:59:59+00:00"
+      },
+      "hasRenewal": true,
+      "renewal": {
+       "description": "NIE Networks intends to establish Framework Arrangements under which it shall appoint Suppliers to enter into separate Framework Agreements for the provision of Hire, Erection and Dismantling of Scaffold services across two separate Lots. Each Framework Agreement will be for a period of 4 years with an option, exercisable entirely at the discretion of NIE Networks and subject to the terms of the F..."
+      },
+      "hasOptions": true,
+      "options": {
+       "description": "NIE Networks intends to establish Framework Arrangements under which it shall appoint Suppliers to enter into separate Framework Agreements for the provision of Hire, Erection and Dismantling of Scaffold services across two separate Lots. Each Framework Agreement will be for a period of 4 years with an option, exercisable entirely at the discretion of NIE Networks and subject to the terms of the F..."
+      }
+     }
+    ],
+    "lotDetails": {
+     "awardCriteria": {
+      "description": "As specified within the RTP and/or tender documents available from the address specifi ed within this notice with the reference project S1138 (2027) Hire, Erection and Dismantly of Scaffold"
+     }
+    },
+    "documents": [
+     {
+      "id": "conflictOfInterest",
+      "documentType": "conflictOfInterest",
+      "description": "Not published"
+     },
+     {
+      "id": "103262-2026",
+      "documentType": "tenderNotice",
+      "noticeType": "UK4",
+      "description": "Tender notice on Find a Tender",
+      "url": "https://www.find-tender.service.gov.uk/Notice/103262-2026",
+      "datePublished": "2026-10-30T14:11:39Z",
+      "format": "text/html"
+     }
+    ],
+    "hasRecurrence": true,
+    "recurrence": {
+     "dates": [
+      {
+       "startDate": "2034-12-04T23:59:59+00:00"
+      }
+     ]
+    },
+    "riskDetails": "As specified within the RTP and/or tender documents available from the address specifi ed within this notice with the reference project S1138 (2027) Hire, Erection and Dismantling of Scaffold"
+   },
+   "language": "en"
+  },
+  {
+   "ocid": "ocds-h6vhtk-0794b8",
+   "id": "103248-2026",
+   "date": "2026-10-30T14:01:06Z",
+   "tag": [
+    "tender"
+   ],
+   "description": "Once the deadline has passed submissions can neither be created nor submitted. It is not advisable for Suppliers to wait until the last\nmoment before creating and dispatching a response in case of any last minute problems. Please note large files should be uploaded as early\nas possible to ensure transfer before deadline. If a Supplier is having problems uploading to the PCS site, then the Universi...",
+   "initiationType": "tender",
+   "tender": {
+    "id": "PURCH3077",
+    "legalBasis": {
+     "id": "32014L0024",
+     "scheme": "CELEX"
+    },
+    "title": "PURCH3077 Provision of Narrow Linewidth Continuous-Wave Tunable Laser",
+    "status": "active",
+    "classification": {
+     "scheme": "CPV",
+     "id": "38000000",
+     "description": "Laboratory, optical and precision equipments (excl. glasses)"
+    },
+    "mainProcurementCategory": "goods",
+    "description": "PURCH3077 Provision of Narrow Linewidth Continuous-Wave Tunable Laser\nTender documents available from Public Contracts Scotland.\nTender returns should be submitted via Public Contracts Scotland, no paper copies will be accepted. Should paper tenders be submitted, they will be rejected. Further to this any questions or communications regarding individual tender exercises must be sent via the Public...",
+    "lots": [
+     {
+      "id": "1",
+      "description": "PURCH3077 Provision of Contract Agreement for Narrow Linewidth Continuous-Wave Tunable Laser for a Period of 24 Months with the Option to Extend for 2 Further Periods of 12 Months.\nThe University of Glasgow requires the supply, delivery, installation, commissioning and support of a high-performance narrow linewidth continuous-wave tunable laser system.\nPlease refer to the 'PURCH3077 - Schedule 1A ...",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "name": "Section 1 - Technical Specification",
+         "type": "quality",
+         "description": "29%"
+        },
+        {
+         "name": "Section 2 - Technical Service Support",
+         "type": "quality",
+         "description": "10%"
+        },
+        {
+         "name": "Section 3 - Environmental/Sustainable Factors",
+         "type": "quality",
+         "description": "4%"
+        },
+        {
+         "name": "Section 4 - Delivery, Installation & Acceptance Testing",
+         "type": "quality",
+         "description": "17%"
+        },
+        {
+         "type": "price",
+         "description": "40%"
+        }
+       ]
+      },
+      "contractPeriod": {
+       "durationInDays": 720
+      },
+      "hasRenewal": true,
+      "renewal": {
+       "description": "Initial term of 24 months with the option to extend by 2 x 12 months"
+      },
+      "secondStage": {
+       "minimumCandidates": 3
+      },
+      "submissionTerms": {
+       "variantPolicy": "notAllowed"
+      },
+      "hasOptions": false,
+      "status": "active"
+     }
+    ],
+    "items": [
+     {
+      "id": "1",
+      "deliveryAddresses": [
+       {
+        "region": "UKM82"
+       }
+      ],
+      "relatedLot": "1"
+     }
+    ],
+    "submissionMethod": [
+     "electronicSubmission"
+    ],
+    "submissionMethodDetails": "https://www.publiccontractsscotland.gov.uk/",
+    "selectionCriteria": {
+     "criteria": [
+      {
+       "minimum": "- Product liability insurance with a limit of indemnity of not less than one million pounds sterling (1,000,000 GBP) in relation to any one claim or series of claims;\n-Public liability insurance with a limit of indemnity of not less than five million pounds sterling (5,000,000 GBP) in relation to any one claim or series of claims;\n-Employer's liability insurance with a limit of indemnity of not le..."
+      }
+     ]
+    },
+    "documents": [
+     {
+      "documentType": "technicalSelectionCriteria",
+      "id": "technical"
+     }
+    ],
+    "procurementMethod": "selective",
+    "procurementMethodDetails": "Competitive procedure with negotiation",
+    "secondStage": {
+     "successiveReduction": true,
+     "noNegotiationNecessary": true,
+     "invitationDate": "2026-11-30T00:00:00Z"
+    },
+    "coveredBy": [
+     "GPA"
+    ],
+    "tenderPeriod": {
+     "endDate": "2026-11-30T12:00:00Z"
+    },
+    "submissionTerms": {
+     "languages": [
+      "en"
+     ]
+    },
+    "hasRecurrence": false,
+    "contractTerms": {
+     "hasElectronicOrdering": true,
+     "electronicInvoicingPolicy": "allowed",
+     "hasElectronicPayment": true
+    }
+   },
+   "parties": [
+    {
+     "name": "University of Glasgow",
+     "id": "GB-FTS-1836",
+     "identifier": {
+      "legalName": "University of Glasgow"
+     },
+     "address": {
+      "streetAddress": "Procurement Office, Tay House",
+      "locality": "Glasgow",
+      "region": "UKM82",
+      "postalCode": "G12 8QQ",
+      "countryName": "United Kingdom"
+     },
+     "contactPoint": {
+      "name": "Hannah Dobby",
+      "email": "Hannah.Dobby@glasgow.ac.uk",
+      "url": "https://www.publiccontractsscotland.gov.uk/"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "url": "http://www.gla.ac.uk/",
+      "buyerProfile": "https://www.publiccontractsscotland.gov.uk/search/Search_AuthProfile.aspx?ID=AA00108",
+      "classifications": [
+       {
+        "scheme": "TED_CA_TYPE",
+        "id": "BODY_PUBLIC",
+        "description": "Body governed by public law"
+       },
+       {
+        "scheme": "COFOG",
+        "id": "09",
+        "description": "Education"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Glasgow Sheriff Court & Justice of the Peace Court",
+     "id": "GB-FTS-1837",
+     "identifier": {
+      "legalName": "Glasgow Sheriff Court & Justice of the Peace Court"
+     },
+     "address": {
+      "streetAddress": "1 Carlton Place",
+      "locality": "Glasgow",
+      "postalCode": "G5 9TW",
+      "countryName": "United Kingdom"
+     },
+     "roles": [
+      "reviewBody"
+     ]
+    }
+   ],
+   "buyer": {
+    "id": "GB-FTS-1836",
+    "name": "University of Glasgow"
+   },
+   "links": [
+    {
+     "rel": "canonical",
+     "href": "https://api.publiccontractsscotland.gov.uk/v1/Notice?id=ocds-r6ebe6-0000847106"
+    }
+   ],
+   "language": "en"
+  },
+  {
+   "ocid": "ocds-h6vhtk-0794bb",
+   "id": "103258-2026",
+   "date": "2026-10-30T14:08:26Z",
+   "tag": [
+    "award",
+    "contract"
+   ],
+   "initiationType": "tender",
+   "tender": {
+    "id": "S1585",
+    "legalBasis": {
+     "id": "32014L0024",
+     "scheme": "CELEX"
+    },
+    "title": "Analyse Local",
+    "status": "complete",
+    "classification": {
+     "scheme": "CPV",
+     "id": "48000000",
+     "description": "Software package and information systems"
+    },
+    "mainProcurementCategory": "goods",
+    "description": "Analyse Local Revenue Forecasting, RV Finder, Small Business Rate Relief Audit and Virtual Rates Manager",
+    "lots": [
+     {
+      "id": "1",
+      "description": "Analyse Local provides specialist Business Rates intelligence, forecasting and technical support services to the Council. The contract provides access to a number of specialist modules and services including: RV Finder,\tSmall Business Rate Relief (SBRR) Application Checker, SBRR Audit, Virtual Rates Manager (VRM), and forecasting and analysis tools which support the Council's statutory Business Ra...",
+      "awardCriteria": {
+       "criteria": [
+        {
+         "type": "price"
+        }
+       ]
+      },
+      "hasOptions": false,
+      "status": "cancelled"
+     }
+    ],
+    "items": [
+     {
+      "id": "1",
+      "deliveryAddresses": [
+       {
+        "region": "UKD3"
+       }
+      ],
+      "relatedLot": "1"
+     }
+    ],
+    "procurementMethod": "limited",
+    "procurementMethodDetails": "Award procedure without prior publication of a call for competition",
+    "procurementMethodRationaleClassifications": [
+     {
+      "scheme": "TED_PT_AWARD_CONTRACT_WITHOUT_CALL",
+      "id": "D_OUTSIDE_SCOPE",
+      "description": "The procurement falls outside the scope of application of the directive"
+     }
+    ],
+    "procurementMethodRationale": "Direct award from a public framework"
+   },
+   "awards": [
+    {
+     "id": "103258-2026-S1585-1",
+     "relatedLots": [
+      "1"
+     ],
+     "status": "active",
+     "suppliers": [
+      {
+       "id": "GB-COH-14775308",
+       "name": "Inform Holdings Ltd"
+      }
+     ]
+    }
+   ],
+   "parties": [
+    {
+     "name": "Salford City Council",
+     "id": "GB-FTS-165130",
+     "identifier": {
+      "legalName": "Salford City Council",
+      "noIdentifierRationale": "notOnAnyRegister"
+     },
+     "address": {
+      "streetAddress": "Civic Centre, Chorley Road, Swinton",
+      "locality": "Manchester",
+      "region": "UKD34",
+      "postalCode": "M275DA",
+      "countryName": "United Kingdom"
+     },
+     "contactPoint": {
+      "name": "Emma Heyes",
+      "email": "emma.heyes@salford.gov.uk"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "url": "http://www.salford.gov.uk",
+      "classifications": [
+       {
+        "scheme": "TED_CA_TYPE",
+        "id": "REGIONAL_AUTHORITY",
+        "description": "Regional or local authority"
+       },
+       {
+        "scheme": "COFOG",
+        "id": "01",
+        "description": "General public services"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Inform Holdings Ltd",
+     "id": "GB-COH-14775308",
+     "identifier": {
+      "legalName": "Inform Holdings Ltd",
+      "id": "14775308",
+      "scheme": "GB-COH"
+     },
+     "address": {
+      "streetAddress": "25 Deansgate",
+      "locality": "Manchester",
+      "region": "UKD3",
+      "postalCode": "M3 2BY",
+      "countryName": "United Kingdom"
+     },
+     "roles": [
+      "supplier"
+     ],
+     "details": {
+      "scale": "sme"
+     }
+    },
+    {
+     "name": "Salford City Council",
+     "id": "GB-FTS-4110",
+     "identifier": {
+      "legalName": "Salford City Council"
+     },
+     "address": {
+      "locality": "Salford",
+      "countryName": "United Kingdom"
+     },
+     "roles": [
+      "reviewBody"
+     ]
+    }
+   ],
+   "buyer": {
+    "id": "GB-FTS-165130",
+    "name": "Salford City Council"
+   },
+   "contracts": [
+    {
+     "id": "103258-2026-S1585-1",
+     "awardID": "103258-2026-S1585-1",
+     "status": "active",
+     "value": {
+      "amount": 148500,
+      "currency": "GBP"
+     },
+     "dateSigned": "2026-10-07T00:00:00+01:00"
+    }
+   ],
+   "bids": {
+    "statistics": [
+     {
+      "id": "1",
+      "measure": "bids",
+      "relatedLot": "1",
+      "value": 1
+     }
+    ]
+   },
+   "language": "en"
+  },
+  {
+   "id": "103235-2026",
+   "tag": [
+    "tenderCancellation"
+   ],
+   "date": "2026-10-30T13:51:09Z",
+   "initiationType": "tender",
+   "ocid": "ocds-h6vhtk-069992",
+   "parties": [
+    {
+     "name": "Suffolk County Council",
+     "id": "GB-PPON-PHVH-1657-HHMV",
+     "identifier": {
+      "scheme": "GB-PPON",
+      "id": "PHVH-1657-HHMV"
+     },
+     "address": {
+      "streetAddress": "Endeavour House, 8 Russell Road",
+      "locality": "Ipswich",
+      "postalCode": "IP1 2BX",
+      "country": "GB",
+      "countryName": "United Kingdom",
+      "region": "UKH14"
+     },
+     "contactPoint": {
+      "email": "Procurementbusinesssupport@suffolk.gov.uk"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "url": "http://suffolk.gov.uk",
+      "classifications": [
+       {
+        "scheme": "UK_CA_TYPE",
+        "id": "publicAuthoritySubCentralGovernment",
+        "description": "Public authority - sub-central government"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Norfolk County Council",
+     "id": "GB-PPON-PDYH-3246-XWTR",
+     "identifier": {
+      "scheme": "GB-PPON",
+      "id": "PDYH-3246-XWTR"
+     },
+     "address": {
+      "streetAddress": "County Hall, Martineau Lane",
+      "locality": "Norwich",
+      "postalCode": "NR1 2DH",
+      "country": "GB",
+      "countryName": "United Kingdom",
+      "region": "UKH15"
+     },
+     "contactPoint": {
+      "email": "sourcingteam@norfolk.gov.uk"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "url": "http://www.norfolk.gov.uk",
+      "classifications": [
+       {
+        "scheme": "UK_CA_TYPE",
+        "id": "publicAuthoritySubCentralGovernment",
+        "description": "Public authority - sub-central government"
+       }
+      ]
+     }
+    }
+   ],
+   "tender": {
+    "id": "ocds-h6vhtk-069992",
+    "legalBasis": {
+     "id": "2023/54",
+     "scheme": "UKPGA",
+     "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+    },
+    "title": "Norfolk and Suffolk Skills Bootcamps (2027/2028)",
+    "status": "withdrawn",
+    "lots": [
+     {
+      "id": "1",
+      "status": "withdrawn"
+     }
+    ],
+    "documents": [
+     {
+      "id": "103235-2026",
+      "documentType": "tenderCancellationNotice",
+      "noticeType": "UK12",
+      "description": "Procurement termination notice on Find a Tender",
+      "url": "https://www.find-tender.service.gov.uk/Notice/103235-2026",
+      "datePublished": "2026-10-30T13:51:09Z",
+      "format": "text/html"
+     }
+    ]
+   },
+   "awards": [
+    {
+     "id": "1",
+     "status": "cancelled",
+     "statusDetails": "This procurement is being terminated, the contract is currently under review pending changes in the Devolution timetable.",
+     "finalStatusDate": "2026-10-30T00:00:00Z",
+     "relatedLots": [
+      "1"
+     ]
+    }
+   ],
+   "language": "en"
+  }
+ ],
+ "links": {
+  "next": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages?updatedFrom=2026-10-29T00:00:00&limit=100&updatedTo=2026-10-30T14:13:02&cursor=dXBkYXRlZEZyb209MjAyNi0xMC0yOVQwMDowMDowMHx1cGRhdGVkVG89MjAyNi0xMC0zMFQxNDoxMzowMnxuZXh0Q3Vyc29yPTc1NTI1MQ=="
+ }
+}

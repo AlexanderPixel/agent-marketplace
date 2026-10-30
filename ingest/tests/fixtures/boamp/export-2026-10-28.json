@@ -1,0 +1,190 @@
+[
+ {
+  "idweb": "26-104791",
+  "id": "26_104791",
+  "contractfolderid": null,
+  "objet": "Prestations de nettoyage des locaux, des abords du site et des murs rideaux.",
+  "filename": "26-104791",
+  "famille": "FNS",
+  "code_departement": [
+   "59"
+  ],
+  "code_departement_prestation": null,
+  "famille_libelle": "Marchés entre 90 k€ et seuils européens",
+  "dateparution": "2026-10-28",
+  "datefindiffusion": "2026-11-06",
+  "datelimitereponse": null,
+  "nomacheteur": "Centre Historique Minier",
+  "titulaire": null,
+  "perimetre": "FNSimple",
+  "type_procedure": null,
+  "soustype_procedure": null,
+  "procedure_libelle": "Procédure NC",
+  "procedure_categorise": "/",
+  "nature": "ANNULATION",
+  "sousnature": null,
+  "nature_libelle": "Avis d'annulation",
+  "sousnature_libelle": null,
+  "nature_categorise": "Annulation/",
+  "nature_categorise_libelle": "Annulation/",
+  "criteres": null,
+  "marche_public_simplifie": null,
+  "marche_public_simplifie_label": null,
+  "etat": "INITIAL",
+  "descripteur_code": [
+   "239"
+  ],
+  "dc": [
+   "239"
+  ],
+  "descripteur_libelle": [
+   "Nettoyage de locaux"
+  ],
+  "type_marche": [
+   "SERVICES"
+  ],
+  "type_marche_facette": [
+   "Services"
+  ],
+  "type_avis": null,
+  "annonce_lie": [
+   "26-100093"
+  ],
+  "annonces_anterieures": null,
+  "source_schema": "3.2.5",
+  "gestion": "{\"REFERENCE\": {\"IDWEB\": \"26-104791\", \"TYPE_AVIS\": {\"FAMILLE\": {\"FNS\": \"\"}, \"PERIMETRE\": {\"FNSimple\": \"\"}, \"NATURE\": {\"ANNULATION\": \"\"}, \"STATUT\": {\"INITIAL\": \"\"}}, \"ANNONCE_ANTERIEUR\": {\"IDWEB\": \"26-100093\"}}, \"INDEXATION\": {\"SCHEMA\": \"3.2.5\", \"NOMORGANISME\": \"Centre Historique Minier\", \"DATE_PUBLICATION\": \"2026-10-28\", \"DATE_FIN_DIFFUSION\": \"2026-11-06\", \"DESCRIPTEURS\": {\"DESCRIPTEUR\": {\"CODE\": \"239\", \"LIBELLE\": \"Nettoyage de locaux\"}}, \"NATURE_MARCHE\": {\"SERVICES\": \"\"}, \"DEP_PUBLICATION\": \"59\", \"RESUME_OBJET\": \"Prestations de nettoyage des locaux, des abords du site et des murs rideaux.\"}}",
+  "donnees": "{\"FNSimple\": {\"organisme\": {\"nomOfficiel\": \"Centre historique minier\", \"typeIdentificationNational\": {\"siret\": \"\"}, \"codeIdentificationNational\": \"82056621400012\", \"ville\": \"Lewarde\", \"cp\": \"59287\", \"grpCommandes\": {\"non\": \"\"}}, \"annulation\": {\"avisInitial\": {\"idWeb\": \"26-100093\", \"datePublication\": \"2026-10-15\"}, \"natureMarche\": {\"intitule\": \"Prestations de nettoyage des locaux, des abords du site et des murs rideaux.\", \"natureMarche\": {\"services\": \"\"}, \"description\": \"nettoyage des locaux accueillant du publics, ramassage des détritus, nettoyage des murs rideaux, vitreries de hauteur et pare-soleils.\"}, \"infosAnnulation\": \"Bonjour,\\r\\n\\r\\nNous vous informons qu'à la suite d'une évolution de nos besoins et de contraintes organisationnelles internes, la consultation citée en objet est déclarée sans suite pour motif d'intérêt général.\\r\\n\\r\\nLes modifications substantielles que nous devons apporter au cahier des charges (retrait…\"}}}",
+  "url_avis": "https://www.boamp.fr/pages/avis/?q=idweb:26-104791"
+ },
+ {
+  "idweb": "26-104964",
+  "id": "26_104964",
+  "contractfolderid": null,
+  "objet": "Travaux pour la construction du nouveau Lycée Maritime à Boulogne-sur-Mer",
+  "filename": "26-104964",
+  "famille": "FNS",
+  "code_departement": [
+   "59"
+  ],
+  "code_departement_prestation": null,
+  "famille_libelle": "Marchés entre 90 k€ et seuils européens",
+  "dateparution": "2026-10-28",
+  "datefindiffusion": "2026-11-13",
+  "datelimitereponse": null,
+  "nomacheteur": "Région Hauts-de-France",
+  "titulaire": null,
+  "perimetre": "FNSimple",
+  "type_procedure": null,
+  "soustype_procedure": null,
+  "procedure_libelle": "Procédure NC",
+  "procedure_categorise": "/",
+  "nature": "RECTIFICATIF",
+  "sousnature": null,
+  "nature_libelle": "Rectificatif",
+  "sousnature_libelle": "Rectificatif",
+  "nature_categorise": "rectificatif/standard",
+  "nature_categorise_libelle": "Rectificatif/",
+  "criteres": [
+   "environnementaux"
+  ],
+  "marche_public_simplifie": null,
+  "marche_public_simplifie_label": null,
+  "etat": "RECTIFICATIF",
+  "descripteur_code": [
+   "116",
+   "366"
+  ],
+  "dc": [
+   "116",
+   "366"
+  ],
+  "descripteur_libelle": [
+   "Espaces verts",
+   "Voirie et réseaux divers"
+  ],
+  "type_marche": [
+   "TRAVAUX"
+  ],
+  "type_marche_facette": [
+   "Travaux"
+  ],
+  "type_avis": null,
+  "annonce_lie": [
+   "26-91018"
+  ],
+  "annonces_anterieures": null,
+  "source_schema": "3.2.5",
+  "gestion": "{\"REFERENCE\": {\"IDWEB\": \"26-104964\", \"TYPE_AVIS\": {\"FAMILLE\": {\"FNS\": \"\"}, \"PERIMETRE\": {\"FNSimple\": \"\"}, \"NATURE\": {\"RECTIFICATIF\": \"\"}, \"STATUT\": {\"RECTIFICATIF\": \"\"}}, \"ANNONCE_ANTERIEUR\": {\"IDWEB\": \"26-91018\"}}, \"INDEXATION\": {\"SCHEMA\": \"3.2.5\", \"NOMORGANISME\": \"Région Hauts-de-France\", \"DATE_PUBLICATION\": \"2026-10-28\", \"DATE_FIN_DIFFUSION\": \"2026-11-13\", \"DESCRIPTEURS\": {\"DESCRIPTEUR\": [{\"CODE\": \"116\", \"LIBELLE\": \"Espaces verts\"}, {\"CODE\": \"366\", \"LIBELLE\": \"Voirie et réseaux divers\"}]}, \"NATURE_MARCHE\": {\"TRAVAUX\": \"\"}, \"CRITERES_SOCIAUX_ENV\": {\"ENVIRONNEMENTAUX\": \"\"}, \"DEP_PUBLICATION\": \"59\", \"RESUME_OBJET\": \"Travaux pour la construction du nouveau Lycée Maritime à Boulogne-sur-Mer\"}}",
+  "donnees": "{\"FNSimple\": {\"organisme\": {\"nomOfficiel\": \"Région Hauts-de-France\", \"typeIdentificationNational\": {\"siret\": \"\"}, \"codeIdentificationNational\": \"20005374200017\", \"ville\": \"Lille\", \"cp\": \"59555\", \"grpCommandes\": {\"non\": \"\"}}, \"rectificatif\": {\"avisInitial\": {\"idWeb\": \"26-91018\"}, \"natureMarche\": {\"intitule\": \"Travaux pour la construction du nouveau Lycée Maritime à Boulogne-sur-Mer\", \"codeCPV\": {\"objetPrincipal\": {\"classPrincipale\": \"45214200\"}}, \"natureMarche\": {\"travaux\": \"\"}, \"description\": \"Chaque lot fera l'objet d'une attribution séparée.\\nLes prestations sont réglées par des prix forfaitaires\", \"criteresAttrib\": \"énoncé dans le Rc\"}, \"infosRectif\": \"Rubrique : Date et heure limites de réception des plis, Au lieu de 03/11/2026 à 12h00, lire 13/11/2026 à 12h00\"}}}",
+  "url_avis": "https://www.boamp.fr/pages/avis/?q=idweb:26-104964"
+ },
+ {
+  "idweb": "26-105041",
+  "id": "26_105041",
+  "contractfolderid": null,
+  "objet": "Auchy Les Mines - College Joliot Curie - Mise En Accessibilite - 7 Lots",
+  "filename": "26-105041",
+  "famille": "FNS",
+  "code_departement": [
+   "62"
+  ],
+  "code_departement_prestation": null,
+  "famille_libelle": "Marchés entre 90 k€ et seuils européens",
+  "dateparution": "2026-10-28",
+  "datefindiffusion": "2026-11-25",
+  "datelimitereponse": "2026-11-25T16:00:00+00:00",
+  "nomacheteur": "Conseil Départemental du Pas-de-Calais",
+  "titulaire": null,
+  "perimetre": "FNSimple",
+  "type_procedure": "OUVERT",
+  "soustype_procedure": null,
+  "procedure_libelle": "Procédure Ouverte",
+  "procedure_categorise": "OUVERT/",
+  "nature": "APPEL_OFFRE",
+  "sousnature": null,
+  "nature_libelle": "Avis de marché",
+  "sousnature_libelle": null,
+  "nature_categorise": "appeloffre/standard",
+  "nature_categorise_libelle": "Avis de marché/",
+  "criteres": [
+   "environnementaux"
+  ],
+  "marche_public_simplifie": null,
+  "marche_public_simplifie_label": null,
+  "etat": "INITIAL",
+  "descripteur_code": [
+   "144",
+   "264",
+   "270",
+   "17"
+  ],
+  "dc": [
+   "144",
+   "264",
+   "270",
+   "17"
+  ],
+  "descripteur_libelle": [
+   "Gros oeuvre",
+   "Peinture (travaux)",
+   "Plomberie (travaux)",
+   "Ascenseur"
+  ],
+  "type_marche": [
+   "TRAVAUX"
+  ],
+  "type_marche_facette": [
+   "Travaux"
+  ],
+  "type_avis": [
+   "5",
+   "1"
+  ],
+  "annonce_lie": null,
+  "annonces_anterieures": null,
+  "source_schema": "3.2.5",
+  "gestion": "{\"REFERENCE\": {\"IDWEB\": \"26-105041\", \"TYPE_AVIS\": {\"FAMILLE\": {\"FNS\": \"\"}, \"PERIMETRE\": {\"FNSimple\": \"\"}, \"NATURE\": {\"APPEL_OFFRE\": \"\"}, \"STATUT\": {\"INITIAL\": \"\"}}}, \"INDEXATION\": {\"SCHEMA\": \"3.2.5\", \"NOMORGANISME\": \"Conseil Départemental du Pas-de-Calais\", \"TYPE_PROCEDURE\": {\"OUVERT\": \"\"}, \"DATE_PUBLICATION\": \"2026-10-28\", \"DATE_LIMITE_REPONSE\": \"2026-11-25T16:00:00\", \"DATE_FIN_DIFFUSION\": \"2026-11-25\", \"DESCRIPTEURS\": {\"DESCRIPTEUR\": [{\"CODE\": \"144\", \"LIBELLE\": \"Gros oeuvre\"}, {\"CODE\": \"264\", \"LIBELLE\": \"Peinture (travaux)\"}, {\"CODE\": \"270\", \"LIBELLE\": \"Plomberie (travaux)\"}, {\"CODE\": \"17\", \"LIBELLE\": \"Ascenseur\"}]}, \"NATURE_MARCHE\": {\"TRAVAUX\": \"\"}, \"CRITERES_SOCIAUX_ENV\": {\"ENVIRONNEMENTAUX\": \"\"}, \"DEP_PUBLICATION\": \"62\", \"RESUME_OBJET\": \"Auchy Les Mines - College Joliot Curie - Mise En Accessibilite - 7 Lots\"}}",
+  "donnees": "{\"FNSimple\": {\"organisme\": {\"nomOfficiel\": \"Conseil Départemental du Pas-de-Calais\", \"typeIdentificationNational\": {\"siret\": \"\"}, \"codeIdentificationNational\": \"22620001200012\", \"ville\": \"ARRAS\", \"cp\": \"62000\", \"grpCommandes\": {\"non\": \"\"}}, \"initial\": {\"communication\": {\"urlProfilAch\": \"https://marchespublics596280.fr\", \"identifiantInterne\": \"202662M0386\", \"docSecurite\": {\"oui\": \"\"}, \"urlSecurite\": {\"non\": \"\"}, \"nomContact\": \"Secrétariat Daaj\", \"telContact\": \"+33 321216731\"}, \"procedure\": {\"procedureAdapteeO\": \"\", \"capaciteEcoFin\": \"Autres exigences économiques ou financières : se référer au règlement de consultation\", \"techAchat\": {\"autres\": \"\"}, \"dateReceptionOffres\": \"2026-11-25T16:00:00\", \"presOffres\": {\"interdite\": \"\"}, \"nbCandidatReduit\": {\"non\": \"\"}, \"attributionSansNegociation\": {\"oui\": \"\"}, \"variantes\": {\"non\": \"\"}, \"criteresAttrib\": \"Valeur environnementale : 6%\\nValeur technique : 24%\\nPrix : 70%\"}, \"natureMarche\": {\"intitule\": \"AUCHY LES MINES - COLLEGE JOLIOT CURIE - MISE EN ACCESSIBILITE - 7 LOTS\", \"codeCPV\": {\"objetPrincipal\": {\"classPrincipale\": \"45111291\"}}, \"natureMarche\": {\"travaux\": \"\"}, \"description\": \"Installation d'un ascenseur pour accès à tous niveaux externat.\\nDéconnexion de eaux pluviales et infiltration à la parcelle\", \"lieuExecution\": \"FRE12 - Pas-de-Calais\", \"dureeMois\": \"8\", \"valeurEstimee\": {\"@devise\": \"EUR\", \"valeur\": \"656963\"}, \"tranches\": {\"non\": \"\"}, \"reservationMarche\": {\"non\": \"\"}, \"lotsMarche\": {\"oui\": \"\"}}, \"lots\": {\"lot\": [{\"description\": \"2 : Gros Oeuvre - Carrelage. Gros oeuvre carrelage\", \"codeCPV\": {\"objetPrincipal\": {\"classPrincipale\": \"45223220\"}}, \"estimationValeur\": {\"@devise\": \"EUR\", \"valeur\": \"91784\"}, \"lieuExecutionLivraison\": \"AUCHY LES MINES - COLLEGE JOLIOT CURIE\"}, {\"description\": \"3 : Platrerie - Menuiseries intérieures - Faux plafonds. Plâtrerie Menuiseries intérieures Faux plafonds\", \"codeCPV\": {\"objetPrincipal\": {\"classPrincipale\": \"45410000\"}}, \"estimationValeur\": {\"@devise\": \"EUR\", \"valeur\": \"29640\"}, \"lieuExecutionLivraison\": \"AUCHY LES MINES - COLLEGE JOLIOT CURIE\"}, {\"description\": \"4 : Peinture. Peinture\", \"codeCPV\": {\"objetPrincipal\": {\"classPrincipale\": \"45442100\"}}, \"estimationValeur\": {\"@devise\": \"EUR\", \"valeur\": \"7792.5\"}, \"lieuExecutionLivraison\": \"AUCHY LES MINES - COLLEGE JOLIOT CURIE\"}, {\"description\": \"5 : Chauffage - Ventilation - Plomberie sanitaire. Chauffage Ventilation Plomberie sanitaire\", \"codeCPV\": {\"objetPrincipal\": {\"classPrincipale\": \"45232141\"}}, \"estimationValeur\": {\"@devise\": \"EUR\", \"valeur\": \"15475.5\"}, \"lieuExecutionLivraison\": \"AUCHY LES MINES - COLLEGE JOLIOT CURIE\"}, {\"description\": \"6 : Electricité. Electricité\", \"codeCPV\": {\"objetPrincipal\": {\"classPrincipale\": \"45317000\"}}, \"estimationValeur\": {\"@devise\": \"EUR\", \"valeur\": \"35064.9\"}, \"lieuExecutionLivraison\": \"AUCHY LES MINES - COLLEGE JOLIOT CURIE\"}, {\"description\": \"7 : Ascenseur . Ascenseur\", \"codeCPV\": {\"objetPrincipal\": {\"classPrincipale\": \"45313100\"}}, \"estimationValeur\": {\"@devise\": \"EUR\", \"valeur\": \"57399\"}, \"lieuExecutionLivraison\": \"AUCHY LES MINES - COLLEGE JOLIOT CURIE\"}, {\"description\": \"8 : Voirie Reseaux Divers. Voirie Reseaux Divers (Vrd)\", \"codeCPV\": {\"objetPrincipal\": {\"classPrincipale\": \"45111291\"}}, \"estimationValeur\": {\"@devise\": \"EUR\", \"valeur\": \"419807.5\"}, \"lieuExecutionLivraison\": \"AUCHY LES MINES - COLLEGE JOLIOT CURIE\"}]}, \"informComplementaire\": {\"oui\": {\"visiteDetail\": \"Voir modalités de visite dans le règlement de consultation\"}, \"autresInformComplementaire\": \"- clause obligatoire d'insertion professionnelle pour le lot 8 : VRD\\n- période de préparation d'un mois comprise dans le délai d'exécution\"}}}}",
+  "url_avis": "https://www.boamp.fr/pages/avis/?q=idweb:26-105041"
+ }
+]

@@ -1,0 +1,79 @@
+{
+ "isEditAllowed": false,
+ "isPreparationActivity": false,
+ "isDataEntryCompleted": true,
+ "isPartialChangeActivity": false,
+ "showCost": true,
+ "procurement": {
+  "id": 11011964,
+  "contractingAuthorityId": 100079,
+  "name": "Heakorrateenuse tellimine",
+  "nameI18n": {},
+  "procedureTypeCode": "DP",
+  "procurementTypeCode": "T",
+  "procurementStateCode": "liitumiseks avatud",
+  "procurementSectorCode": "K",
+  "procurementSumLimitCode": "4",
+  "isTendersErhr": true,
+  "publishNotice": true,
+  "isElectronicOffer": true,
+  "isEndingWithContractOrAward": false,
+  "procurementStartBasis": "P"
+ },
+ "procurementCpvDtos": [
+  {
+   "id": 11622,
+   "code": "90911000-6",
+   "name": "Ruumide, hoonete ja akende puhastusteenused",
+   "stampCre": "2026-10-30T13:34:02.002+0200",
+   "procurementCpvId": 18344419,
+   "orderNr": "0"
+  },
+  {
+   "id": 10479,
+   "code": "90911200-8",
+   "name": "Hoonete puhastusteenused",
+   "stampCre": "2026-10-30T13:34:02.002+0200",
+   "procurementCpvId": 18344426,
+   "orderNr": "1"
+  },
+  {
+   "id": 7887,
+   "code": "77314000-4",
+   "name": "Maa-alade hooldusteenused",
+   "stampCre": "2026-10-30T13:34:02.002+0200",
+   "procurementCpvId": 18344429,
+   "altProcType": "T",
+   "orderNr": "2"
+  },
+  {
+   "id": 12757,
+   "code": "90620000-9",
+   "name": "Lumekoristusteenused",
+   "stampCre": "2026-10-30T13:34:02.002+0200",
+   "procurementCpvId": 18344435,
+   "orderNr": "3"
+  }
+ ],
+ "notDividedIntoPartsComment": "Dünaamilise hankesüsteemi liitumise esmased taotlused, mis esitatakse riigihangete registris märgitud taotluste esitamise tähtaja jooksul (esimene liitumisperiood), vaatab hankija läbi hiljemalt 30 päeva jooksul taotluste esitamise tähtaja saabumisest ja taotluste avamisest.",
+ "shortDescription": "Kategooriad ja tellitavad koodid EVS 807 järgi:\n\n1) Osa 1 – Heakorra tervikteenus:\n156, 310, 320 (s.h 322), 330 (s.h 334, 335), 340, 350, 360, 390\n\n2) Osa 2 – Väliheakord:\n156, 310, 320 (s.h 322), 350, 360, 390.\n\n3) Osa 3 – Siseheakord:\n156, 330 (v.a 334, 335), 340, 350, 390.\n\n4) Osa 4 – Väli- ja siseheakord:\n156, 310, 320 (s.h 322), 330 (v.a 334, 335), 340, 350, 360, 390.\n\n5) Osa 5 – Eripuhastustööd:\n 334, 335, 330 (tekstiil- ja nahkmööbli puhastus)\n\nDünaamilise hankesüsteemi loomisel avaldatakse üldine tehniline kirjeldus, lepingu projekt ja hindamiskriteeriumid, mis kehtivad ka seotud hangetes. Objektipõhine tehniline kirjeldus (KOTK) esitatakse igakordselt dünaamilise hankesüsteemi alusel korraldatud seotud hanke alusdokumentide koosseisus. \nDHS alusel kavandatavate hankelepingute eeldatav kogus kokku on 250.",
+ "cost": 97500000.0,
+ "organizationReason": "DO",
+ "isDividedIntoParts": true,
+ "canChangeProcurementParts": false,
+ "isNegotiation": false,
+ "multiStage": 2,
+ "submissionDate": "2026-12-07T11:00:00.000+0200",
+ "submissionDateOpening": "2026-12-07T12:00:00.000+0200",
+ "liablePersonId": 261319,
+ "liablePersonName": "Tiia Redi",
+ "isCostClassified": false,
+ "isProcurement": true,
+ "isSingleTendererFrameworkAgr": false,
+ "isMultipleTendererFrameworkAgr": false,
+ "canEditDuration": false,
+ "mainProcurerName": "Riigi Kinnisvara Aktsiaselts",
+ "mainProcurerTypeCodes": [
+  "CLASSIC"
+ ]
+}

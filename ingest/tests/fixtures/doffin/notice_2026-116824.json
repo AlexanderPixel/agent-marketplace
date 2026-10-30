@@ -1,0 +1,917 @@
+{
+ "id": "2026-116824",
+ "eFormId": "c9c33e80-e67c-4f20-b5ce-37ad2ad41c66",
+ "procedureId": "36e07864-4314-4a0b-88b0-a90154bc486d",
+ "heading": "Vikartjenester til helse, oppvekst og  barnevern i Løten kommune",
+ "description": "Løten kommune har behov for avtale om bemanningstjenester innenfor helse og oppvekst, inkludert barneverntjenesten. Kommunen har til hensikt å inngå en parallell rammeavtale for å sikre god tilgang på egnet personell. Oppdrag under rammeavtalen vil tildeles den leverandøren som besvarer henvendelsen raskest, og som kan stille med egnet kompetanse for oppdraget.",
+ "buyer": [
+  {
+   "id": "964950679",
+   "name": "Løten Kommune"
+  }
+ ],
+ "locationId": [
+  "NO020"
+ ],
+ "placeOfPerformance": [
+  "Innlandet"
+ ],
+ "issueDate": "2026-10-27T15:24:08Z",
+ "deadline": null,
+ "qualificationDeadline": null,
+ "noticeType": "CANCELLED_OR_MISSING_CONCLUSION_OF_CONTRACT",
+ "allTypes": [
+  "CANCELLED_OR_MISSING_CONCLUSION_OF_CONTRACT",
+  "RESULT"
+ ],
+ "allCpvCodes": [
+  "79600000",
+  "79620000",
+  "79000000"
+ ],
+ "directCpvCodes": [
+  "79600000",
+  "79620000"
+ ],
+ "parentCpvCodes": [
+  "79000000"
+ ],
+ "noticeStatus": null,
+ "allReceivedTenders": [
+  {
+   "type": "tenders",
+   "total": 0
+  },
+  {
+   "type": "t-esubm",
+   "total": 0
+  }
+ ],
+ "preferredPublicationDateTed": "2026-10-28",
+ "plannedDateTed": null,
+ "competitionDocsUrl": null,
+ "sentToTed": false,
+ "regulationUrl": "https://lovdata.no/dokument/SF/forskrift/2016-08-12-974?q=foa",
+ "core": {
+  "estimatedValue": {
+   "amount": 0.0,
+   "code": "NOK",
+   "fullLocalizedText": "0.0 NOK"
+  },
+  "mainActivity": "gen-pub"
+ },
+ "eform": [
+  {
+   "title": "block01",
+   "sectionId": "1",
+   "label": "Kjøper",
+   "useLabelAsValue": false,
+   "value": null,
+   "sections": [
+    {
+     "title": "block0101",
+     "sectionId": "1.1",
+     "label": "Kjøper",
+     "useLabelAsValue": false,
+     "value": null,
+     "sections": [
+      {
+       "title": "block010101",
+       "sectionId": null,
+       "label": "Offisielt navn",
+       "useLabelAsValue": false,
+       "value": "Løten Kommune",
+       "sections": null
+      },
+      {
+       "title": "block010102",
+       "sectionId": null,
+       "label": "Juridisk type kjøper",
+       "useLabelAsValue": false,
+       "value": "Kommunale myndigheter",
+       "sections": null
+      },
+      {
+       "title": "block010104",
+       "sectionId": null,
+       "label": "Oppdragsgivers virksomhet",
+       "useLabelAsValue": false,
+       "value": "Alminnelig offentlig tjenesteyting",
+       "sections": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "block02",
+   "sectionId": "2",
+   "label": "Prosedyre",
+   "useLabelAsValue": false,
+   "value": null,
+   "sections": [
+    {
+     "title": "block0201",
+     "sectionId": "2.1",
+     "label": "Prosedyre",
+     "useLabelAsValue": false,
+     "value": null,
+     "sections": [
+      {
+       "title": "block020101",
+       "sectionId": null,
+       "label": "Tittel",
+       "useLabelAsValue": false,
+       "value": "Vikartjenester til helse, oppvekst og barnevern i Løten kommune",
+       "sections": null
+      },
+      {
+       "title": "block020102",
+       "sectionId": null,
+       "label": "Beskrivelse",
+       "useLabelAsValue": false,
+       "value": "Løten kommune har behov for avtale om bemanningstjenester innenfor helse og oppvekst, inkludert barneverntjenesten. Kommunen har til hensikt å inngå en parallell rammeavtale for å sikre god tilgang på egnet personell. Oppdrag under rammeavtalen vil tildeles den leverandøren som besvarer henvendelsen raskest, og som kan stille med egnet kompetanse for oppdraget.",
+       "sections": null
+      },
+      {
+       "title": "block020103",
+       "sectionId": null,
+       "label": "Prosedyreidentifikator",
+       "useLabelAsValue": false,
+       "value": "36e07864-4314-4a0b-88b0-a90154bc486d",
+       "sections": null
+      },
+      {
+       "title": "block020104",
+       "sectionId": null,
+       "label": "Tidligere varsel",
+       "useLabelAsValue": false,
+       "value": "3de5ac3f-e8e1-4a6d-adf0-e2dbf59c840c-01",
+       "sections": null
+      },
+      {
+       "title": "block020105",
+       "sectionId": null,
+       "label": "Intern identifikator",
+       "useLabelAsValue": false,
+       "value": "2026/3241",
+       "sections": null
+      },
+      {
+       "title": "block020106",
+       "sectionId": null,
+       "label": "Type prosedyre",
+       "useLabelAsValue": false,
+       "value": "Åpen",
+       "sections": null
+      },
+      {
+       "title": "block020108",
+       "sectionId": null,
+       "label": "Prosedyren er en hasteprosedyre, Usann",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": null
+      },
+      {
+       "title": "block020110",
+       "sectionId": null,
+       "label": "Begrunnelse for den akselererte prosedyren",
+       "useLabelAsValue": false,
+       "value": "",
+       "sections": null
+      },
+      {
+       "title": "block020112",
+       "sectionId": null,
+       "label": "Hovedtrekkene i prosedyren",
+       "useLabelAsValue": false,
+       "value": "Det er i hovedsak behov for vikarer med fagbrev og norsk autorisasjon som helsefagarbeider, vikarer med fagbrev som barne- og ungdomsarbeider samt kvalifiserte saksbehandlere til barneverntjenesten. For oppdrag som ikke krever autorisasjon eller særskilt lovpålagt kompetanse, kan manglende fagbrev kompenseres med relevant erfaring.",
+       "sections": null
+      },
+      {
+       "title": "block020114",
+       "sectionId": "2.1.1",
+       "label": "Hensikt",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": [
+        {
+         "title": "block02011401",
+         "sectionId": null,
+         "label": "Kontraktens art",
+         "useLabelAsValue": false,
+         "value": "Tjenester",
+         "sections": null
+        },
+        {
+         "title": "block02011403",
+         "sectionId": null,
+         "label": "Hoved klassifisering",
+         "useLabelAsValue": false,
+         "value": "Rekrutteringstjenester",
+         "sections": null
+        },
+        {
+         "title": "block02011405",
+         "sectionId": null,
+         "label": "Ytterligere klassifisering",
+         "useLabelAsValue": false,
+         "value": "Formidling av personale, inkludert midlertidig personale",
+         "sections": null
+        }
+       ]
+      },
+      {
+       "title": "block020115",
+       "sectionId": "2.1.2",
+       "label": "Sted for gjennomføring",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": [
+        {
+         "title": "block02011501",
+         "sectionId": null,
+         "label": "Postadresse",
+         "useLabelAsValue": false,
+         "value": "Kildevegen 1  ",
+         "sections": null
+        },
+        {
+         "title": "block02011502",
+         "sectionId": null,
+         "label": "By",
+         "useLabelAsValue": false,
+         "value": "Løten",
+         "sections": null
+        },
+        {
+         "title": "block02011503",
+         "sectionId": null,
+         "label": "Postnummer",
+         "useLabelAsValue": false,
+         "value": "2340",
+         "sections": null
+        },
+        {
+         "title": "block02011504",
+         "sectionId": null,
+         "label": "Underenhet i land",
+         "useLabelAsValue": false,
+         "value": "Innlandet (NO020)",
+         "sections": null
+        },
+        {
+         "title": "block02011505",
+         "sectionId": null,
+         "label": "Land",
+         "useLabelAsValue": false,
+         "value": "Norge",
+         "sections": null
+        },
+        {
+         "title": "block02011507",
+         "sectionId": null,
+         "label": "Tilleggsinformasjon",
+         "useLabelAsValue": false,
+         "value": "Ulike adresser innad i Løten kommune",
+         "sections": null
+        }
+       ]
+      },
+      {
+       "title": "block020116",
+       "sectionId": "2.1.3",
+       "label": "Verdi",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": [
+        {
+         "title": "block02011602",
+         "sectionId": null,
+         "label": "Rammeavtalens maksimale verdi, Norwegian krone",
+         "useLabelAsValue": false,
+         "value": "0",
+         "sections": null
+        }
+       ]
+      },
+      {
+       "title": "block020117",
+       "sectionId": "2.1.4",
+       "label": "Generell informasjon",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": [
+        {
+         "title": "block02011702",
+         "sectionId": null,
+         "label": "Konkurranseutlysningen avsluttes",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block02011703",
+         "sectionId": null,
+         "label": "Tilleggsinformasjon",
+         "useLabelAsValue": false,
+         "value": "Konkurransen vil bli kunngjort på nytt etter en gjennomgang av konkurransen",
+         "sections": null
+        },
+        {
+         "title": "block02011704",
+         "sectionId": null,
+         "label": "Rettslig grunnlag",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block02011705",
+         "sectionId": null,
+         "label": "Annet",
+         "useLabelAsValue": true,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block02011706",
+         "sectionId": null,
+         "label": "NOR — Anskaffelsesforskriften Del 1",
+         "useLabelAsValue": false,
+         "value": "https://lovdata.no/eli/forskrift/2016/8/12/974",
+         "sections": null
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "block05",
+   "sectionId": "6",
+   "label": "Resultater",
+   "useLabelAsValue": false,
+   "value": null,
+   "sections": [
+    {
+     "title": "block0510",
+     "sectionId": "6.1",
+     "label": "Identifikator for resultatparti",
+     "useLabelAsValue": false,
+     "value": "LOT-0000",
+     "sections": [
+      {
+       "title": "block051001",
+       "sectionId": null,
+       "label": "Ingen vinner ble kåret og konkurransen er avsluttet.",
+       "useLabelAsValue": true,
+       "value": null,
+       "sections": null
+      },
+      {
+       "title": "block051003",
+       "sectionId": null,
+       "label": "Årsaken til at en vinner ikke ble valgt",
+       "useLabelAsValue": false,
+       "value": "Annet",
+       "sections": null
+      },
+      {
+       "title": "block051008",
+       "sectionId": "6.1.4",
+       "label": "Statistisk informasjon",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": [
+        {
+         "title": "block05100801",
+         "sectionId": null,
+         "label": "Sammendrag av revisjonsforespørslene kjøperen mottok",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": [
+          {
+           "title": "block0510080101",
+           "sectionId": null,
+           "label": "Antall klagere",
+           "useLabelAsValue": false,
+           "value": "0",
+           "sections": null
+          }
+         ]
+        },
+        {
+         "title": "block05100802",
+         "sectionId": null,
+         "label": "Type påstått uregelmessighet",
+         "useLabelAsValue": false,
+         "value": "Annet",
+         "sections": [
+          {
+           "title": "block0510080204",
+           "sectionId": null,
+           "label": "Antall forespørsler om kjøperanmeldelse",
+           "useLabelAsValue": false,
+           "value": "0",
+           "sections": null
+          }
+         ]
+        },
+        {
+         "title": "block05100804",
+         "sectionId": null,
+         "label": "Mottatte tilbud eller forespørsler om å delta",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": [
+          {
+           "title": "block0510080401",
+           "sectionId": null,
+           "label": "Type mottatte innleveringer",
+           "useLabelAsValue": false,
+           "value": "Tilbud",
+           "sections": [
+            {
+             "title": "block051008040104",
+             "sectionId": null,
+             "label": "Antall anbud eller forespørsler om å delta mottatt",
+             "useLabelAsValue": false,
+             "value": "0",
+             "sections": null
+            }
+           ]
+          },
+          {
+           "title": "block0510080401",
+           "sectionId": null,
+           "label": "Type mottatte innleveringer",
+           "useLabelAsValue": false,
+           "value": "Tilbud er levert elektronisk",
+           "sections": [
+            {
+             "title": "block051008040104",
+             "sectionId": null,
+             "label": "Antall anbud eller forespørsler om å delta mottatt",
+             "useLabelAsValue": false,
+             "value": "0",
+             "sections": null
+            }
+           ]
+          },
+          {
+           "title": "block0510080401",
+           "sectionId": null,
+           "label": "Type mottatte innleveringer",
+           "useLabelAsValue": false,
+           "value": "Tilbud fra tilbydere/leverandører registrert utenfor EU/EØS",
+           "sections": [
+            {
+             "title": "block051008040104",
+             "sectionId": null,
+             "label": "Antall anbud eller forespørsler om å delta mottatt",
+             "useLabelAsValue": false,
+             "value": "0",
+             "sections": null
+            }
+           ]
+          },
+          {
+           "title": "block0510080401",
+           "sectionId": null,
+           "label": "Type mottatte innleveringer",
+           "useLabelAsValue": false,
+           "value": "Tilbud fra tilbydere/leverandører registrert i et annet EU/EØS-land enn kjøper",
+           "sections": [
+            {
+             "title": "block051008040104",
+             "sectionId": null,
+             "label": "Antall anbud eller forespørsler om å delta mottatt",
+             "useLabelAsValue": false,
+             "value": "0",
+             "sections": null
+            }
+           ]
+          },
+          {
+           "title": "block0510080401",
+           "sectionId": null,
+           "label": "Type mottatte innleveringer",
+           "useLabelAsValue": false,
+           "value": "Tilbud fra mikro-, små- eller mellomstore tilbydere/bedrifter",
+           "sections": [
+            {
+             "title": "block051008040104",
+             "sectionId": null,
+             "label": "Antall anbud eller forespørsler om å delta mottatt",
+             "useLabelAsValue": false,
+             "value": "0",
+             "sections": null
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "block06",
+   "sectionId": "8",
+   "label": "Virksomheter",
+   "useLabelAsValue": false,
+   "value": null,
+   "sections": [
+    {
+     "title": "block0601",
+     "sectionId": "8.1",
+     "label": null,
+     "useLabelAsValue": false,
+     "value": "ORG-0001",
+     "sections": [
+      {
+       "title": "block060101",
+       "sectionId": null,
+       "label": "Offisielt navn",
+       "useLabelAsValue": false,
+       "value": "Løten Kommune",
+       "sections": null
+      },
+      {
+       "title": "block060104",
+       "sectionId": null,
+       "label": "Organisasjonsnummer",
+       "useLabelAsValue": false,
+       "value": "964950679",
+       "sections": null
+      },
+      {
+       "title": "block060106",
+       "sectionId": null,
+       "label": "Postadresse",
+       "useLabelAsValue": false,
+       "value": "Kildeveien 1  ",
+       "sections": null
+      },
+      {
+       "title": "block060107",
+       "sectionId": null,
+       "label": "By",
+       "useLabelAsValue": false,
+       "value": "LØTEN",
+       "sections": null
+      },
+      {
+       "title": "block060108",
+       "sectionId": null,
+       "label": "Postnummer",
+       "useLabelAsValue": false,
+       "value": "2341",
+       "sections": null
+      },
+      {
+       "title": "block060109",
+       "sectionId": null,
+       "label": "Underenhet i land",
+       "useLabelAsValue": false,
+       "value": "Innlandet (NO020)",
+       "sections": null
+      },
+      {
+       "title": "block060110",
+       "sectionId": null,
+       "label": "Land",
+       "useLabelAsValue": false,
+       "value": "Norge",
+       "sections": null
+      },
+      {
+       "title": "block060111",
+       "sectionId": null,
+       "label": "Kontaktpunkt",
+       "useLabelAsValue": false,
+       "value": "Bjørg Tvedt Flæte",
+       "sections": null
+      },
+      {
+       "title": "block060112",
+       "sectionId": null,
+       "label": "E-post",
+       "useLabelAsValue": false,
+       "value": "bjorg.tvedt.flaete@loten.kommune.no",
+       "sections": null
+      },
+      {
+       "title": "block060113",
+       "sectionId": null,
+       "label": "Telefon",
+       "useLabelAsValue": false,
+       "value": "+47 62593000",
+       "sections": null
+      },
+      {
+       "title": "block060114",
+       "sectionId": null,
+       "label": "Telefaks",
+       "useLabelAsValue": false,
+       "value": "+47 62593001",
+       "sections": null
+      },
+      {
+       "title": "block060115",
+       "sectionId": null,
+       "label": "Internett-adresse",
+       "useLabelAsValue": false,
+       "value": "http://www.loten.kommune.no",
+       "sections": null
+      },
+      {
+       "title": "block060119",
+       "sectionId": null,
+       "label": "Rollene til denne virksomheten",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": [
+        {
+         "title": "block06011901",
+         "sectionId": null,
+         "label": "Kjøper",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block06011904",
+         "sectionId": null,
+         "label": "Virksomhet som gir tilleggsinformasjon om anskaffelsesprosedyren",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block06011905",
+         "sectionId": null,
+         "label": "Virksomhet som gir tilgang til anskaffelsesdokumentene",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block06011913",
+         "sectionId": null,
+         "label": "Virksomhet hvis budsjett brukes til å betale for kontrakten",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block06011914",
+         "sectionId": null,
+         "label": "Virksomhet som utfører betalingen",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "block0601",
+     "sectionId": "8.1",
+     "label": null,
+     "useLabelAsValue": false,
+     "value": "ORG-0002",
+     "sections": [
+      {
+       "title": "block060101",
+       "sectionId": null,
+       "label": "Offisielt navn",
+       "useLabelAsValue": false,
+       "value": "Østre Innlandet tingrett",
+       "sections": null
+      },
+      {
+       "title": "block060104",
+       "sectionId": null,
+       "label": "Organisasjonsnummer",
+       "useLabelAsValue": false,
+       "value": "973790889",
+       "sections": null
+      },
+      {
+       "title": "block060105",
+       "sectionId": null,
+       "label": "Departement",
+       "useLabelAsValue": false,
+       "value": "Hamar",
+       "sections": null
+      },
+      {
+       "title": "block060106",
+       "sectionId": null,
+       "label": "Postadresse",
+       "useLabelAsValue": false,
+       "value": "Østregate 41  ",
+       "sections": null
+      },
+      {
+       "title": "block060107",
+       "sectionId": null,
+       "label": "By",
+       "useLabelAsValue": false,
+       "value": "Hamar",
+       "sections": null
+      },
+      {
+       "title": "block060108",
+       "sectionId": null,
+       "label": "Postnummer",
+       "useLabelAsValue": false,
+       "value": "2317",
+       "sections": null
+      },
+      {
+       "title": "block060109",
+       "sectionId": null,
+       "label": "Underenhet i land",
+       "useLabelAsValue": false,
+       "value": "Innlandet (NO020)",
+       "sections": null
+      },
+      {
+       "title": "block060110",
+       "sectionId": null,
+       "label": "Land",
+       "useLabelAsValue": false,
+       "value": "Norge",
+       "sections": null
+      },
+      {
+       "title": "block060111",
+       "sectionId": null,
+       "label": "Kontaktpunkt",
+       "useLabelAsValue": false,
+       "value": "Østre Innlandet tingrett",
+       "sections": null
+      },
+      {
+       "title": "block060112",
+       "sectionId": null,
+       "label": "E-post",
+       "useLabelAsValue": false,
+       "value": "ostre.innlandet.tingrett@domstol.no",
+       "sections": null
+      },
+      {
+       "title": "block060113",
+       "sectionId": null,
+       "label": "Telefon",
+       "useLabelAsValue": false,
+       "value": "+4761991250",
+       "sections": null
+      },
+      {
+       "title": "block060119",
+       "sectionId": null,
+       "label": "Rollene til denne virksomheten",
+       "useLabelAsValue": false,
+       "value": null,
+       "sections": [
+        {
+         "title": "block06011906",
+         "sectionId": null,
+         "label": "Virksomhet som gjennomfører klagebehandling",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block06011907",
+         "sectionId": null,
+         "label": "Virksomhet som gir mer informasjon om klagebehandling",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block06011909",
+         "sectionId": null,
+         "label": "Virksomhet som gir informasjon om det generelle regelverket for skatter som gjelder på stedet der kontrakten skal utføres",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block06011910",
+         "sectionId": null,
+         "label": "Virksomhet som gir informasjon om det generelle regelverket for miljøvern som gjelder der kontrakten skal utføres",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        },
+        {
+         "title": "block06011911",
+         "sectionId": null,
+         "label": "Virksomhet som gir informasjon om det generelle regelverket for stillingsvern og arbeidsvilkår som gjelder der kontrakten skal utføres",
+         "useLabelAsValue": false,
+         "value": null,
+         "sections": null
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "block09",
+   "sectionId": null,
+   "label": "Kunngjøringsinformasjon",
+   "useLabelAsValue": false,
+   "value": null,
+   "sections": [
+    {
+     "title": "block0901",
+     "sectionId": null,
+     "label": "Varselidentifikator/-versjon",
+     "useLabelAsValue": false,
+     "value": "c9c33e80-e67c-4f20-b5ce-37ad2ad41c66 01",
+     "sections": null
+    },
+    {
+     "title": "block0902",
+     "sectionId": null,
+     "label": "Type skjema",
+     "useLabelAsValue": false,
+     "value": "Resultat",
+     "sections": null
+    },
+    {
+     "title": "block0903",
+     "sectionId": null,
+     "label": "Type varsel",
+     "useLabelAsValue": false,
+     "value": "Kunngjøring om kontrakt eller konsesjonstildeling – standardregime",
+     "sections": null
+    },
+    {
+     "title": "block0904",
+     "sectionId": null,
+     "label": "Varsel utsendelsesdato",
+     "useLabelAsValue": false,
+     "value": "27.10.2026 16:24",
+     "sections": null
+    },
+    {
+     "title": "block0905",
+     "sectionId": null,
+     "label": "Varsel om utsendelsesdato (eSender)",
+     "useLabelAsValue": false,
+     "value": "28.10.2026 08:58",
+     "sections": null
+    },
+    {
+     "title": "block0906",
+     "sectionId": null,
+     "label": "Språk der denne kunngjøringen er offisielt tilgjengelig",
+     "useLabelAsValue": false,
+     "value": "norsk",
+     "sections": null
+    }
+   ]
+  }
+ ],
+ "awardedNames": [],
+ "changeNotices": null,
+ "limitedDataFlag": false,
+ "publicationDate": "2026-10-29",
+ "tedId": null,
+ "procurementTimeline": [
+  {
+   "id": "2026-114890",
+   "allType": [
+    "ANNOUNCEMENT_OF_COMPETITION",
+    "COMPETITION"
+   ],
+   "publicationDate": "2026-09-23",
+   "selectedNotice": false
+  },
+  {
+   "id": "2026-116824",
+   "allType": [
+    "CANCELLED_OR_MISSING_CONCLUSION_OF_CONTRACT",
+    "RESULT"
+   ],
+   "publicationDate": "2026-10-29",
+   "selectedNotice": true
+  }
+ ],
+ "procurementStrategicLabels": [],
+ "lotsNumber": 1
+}

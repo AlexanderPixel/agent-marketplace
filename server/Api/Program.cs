@@ -2,6 +2,7 @@ using System.Text.Json.Serialization;
 using Marketplace.Activity;
 using Marketplace.Ai;
 using Marketplace.Data;
+using Marketplace.Deals;
 using Marketplace.Endpoints;
 using Marketplace.Partners;
 using Marketplace.Qualification;
@@ -26,6 +27,7 @@ builder.Services.AddHttpClient();
 builder.Services.AddScoped<TenderStore>();
 builder.Services.AddSingleton<TenderSummaryService>();
 builder.Services.AddScoped<PartnerSearch>();
+builder.Services.AddSingleton<DealRunner>();
 
 var app = builder.Build();
 
@@ -39,6 +41,7 @@ app.MapTenderEndpoints();
 app.MapQualificationEndpoints();
 app.MapEcertisEndpoints();
 app.MapPartnerEndpoints();
+app.MapDealEndpoints();
 app.MapFallbackToFile("index.html");
 
 app.Run();

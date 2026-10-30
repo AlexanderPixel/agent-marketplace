@@ -148,3 +148,16 @@ export interface EcertisMatch {
   matched: EcertisEvidence | null
   note: string | null
 }
+
+export type DealStatus = 'Negotiating' | 'AwaitingApproval' | 'Closed' | 'Failed'
+export interface Offer { round: number; side: 'bidder' | 'partner'; unitPrice: number; quantity: number; delivery: string; message: string; accepts: boolean; at: string }
+export interface Deal {
+  id: string; tenderId: string; tenderRef: string; lotId: string; lotTitle: string; unit: string; gap: number
+  bidderOrgId: string; partnerOrgId: string; matchScore: number; dealType: string; status: DealStatus; autonomous: boolean
+  outcome: string | null; unitPrice: number | null; quantity: number | null; delivery: string | null; offers: Offer[]
+  createdAt: string; closedAt: string | null; approvedBy: string | null
+}
+export interface Party { name: string; country: string; city?: string }
+export const dealSeverity: Record<DealStatus, string> = { Negotiating: 'info', AwaitingApproval: 'warn', Closed: 'success', Failed: 'danger' }
+export const eur = (n: number | null | undefined, digits = 2) =>
+  n == null ? '—' : new Intl.NumberFormat(session.language, { style: 'currency', currency: 'EUR', maximumFractionDigits: digits }).format(n)

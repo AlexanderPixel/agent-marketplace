@@ -19,6 +19,8 @@ public class AppDb(DbContextOptions<AppDb> options, OrgContext org) : DbContext(
     public DbSet<ActivityEvent> ActivityEvents => Set<ActivityEvent>();
     public DbSet<Tender> Tenders => Set<Tender>();
     public DbSet<CompanyProfile> Profiles => Set<CompanyProfile>();
+    public DbSet<Mandate> Mandates => Set<Mandate>();
+    public DbSet<Deal> Deals => Set<Deal>();
 
     protected override void OnModelCreating(ModelBuilder b)
     {
@@ -51,6 +53,19 @@ public class AppDb(DbContextOptions<AppDb> options, OrgContext org) : DbContext(
             Json(e.Property(p => p.Documents));
             Json(e.Property(p => p.Products));
             e.HasQueryFilter(p => p.OrgId == CurrentOrgId);
+        });
+
+        b.Entity<Mandate>(e =>
+        {
+            e.HasKey(m => m.OrgId);
+            e.HasQueryFilter(m => m.OrgId == CurrentOrgId);
+        });
+
+        b.Entity<Deal>(e =>
+        {
+            e.Property(d => d.Status).HasConversion<string>();
+            Json(e.Property(d => d.Offers));
+            e.HasQueryFilter(d => d.BidderOrgId == CurrentOrgId || d.PartnerOrgId == CurrentOrgId);
         });
     }
 

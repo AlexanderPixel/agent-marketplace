@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BidSteps from '@/components/BidSteps.vue'
 import { computed, onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
@@ -95,6 +96,7 @@ const languageName = (code: string) =>
 
 <template>
   <div class="page">
+    <BidSteps :current="1" />
     <div class="page-head">
       <div>
         <h1>{{ t('tenders.title') }}</h1>
@@ -203,7 +205,7 @@ const languageName = (code: string) =>
 .clamp { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .translated { color: var(--accent); }
 .verdict { white-space: normal; text-align: left; }
-.featured-tag { margin-right: 6px; background: var(--eu-gold); color: #1a1a1a; }
-:deep(.featured-row) { background: #fffbea !important; }
+.featured-tag { margin-right: 6px; background: var(--accent); color: #ffffff; }
+:deep(.featured-row) { background: var(--accent-soft) !important; box-shadow: inset 3px 0 0 var(--accent); }
 :deep(.p-datatable-tbody > tr) { cursor: pointer; }
 </style>

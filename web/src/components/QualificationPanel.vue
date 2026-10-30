@@ -43,13 +43,42 @@ const unitName = (u: string | undefined | null) => (u ? (units[u] ?? u) : '')
       </div>
 
       <template v-else>
-        <div class="card verdict" :class="analysis.verdict">
-          <i :class="verdictIcon[analysis.verdict]" />
-          <div class="verdict-text">
-            <div class="verdict-label">{{ t(`qual.verdict.${analysis.verdict}`) }}</div>
-            <div class="muted">{{ t(`qual.verdictHint.${analysis.verdict}`) }}</div>
+        <div class="ink-panel verdict" :class="analysis.verdict">
+          <div class="verdict-head">
+            <div class="verdict-text">
+              <h2><span class="idx">01</span> {{ t('qual.column') }}</h2>
+              <div class="verdict-label"><i :class="verdictIcon[analysis.verdict]" /> {{ t(`qual.verdict.${analysis.verdict}`) }}</div>
+              <div class="muted">{{ t(`qual.verdictHint.${analysis.verdict}`) }}</div>
+            </div>
+            <Button :label="t('qual.rerun')" icon="pi pi-refresh" size="small" text class="rerun" :loading="running" @click="run" />
           </div>
-          <Button :label="t('qual.rerun')" icon="pi pi-refresh" size="small" text :loading="running" @click="run" />
+
+          <div v-for="l in analysis.lots" :key="l.lot.id" class="lot">
+            <div class="figures">
+              <div class="fig">
+                <div class="fig-label">{{ l.lot.id }} · {{ l.lot.title }}</div>
+                <div class="fig-num">{{ l.lot.quantity }} <small>{{ unitName(l.lot.unit) }}</small></div>
+                <div class="fig-note">{{ l.lot.place }}</div>
+              </div>
+              <div class="fig">
+                <div class="fig-label">{{ t('qual.capacity') }}</div>
+                <div class="fig-num yours">{{ l.capacity }}</div>
+                <div class="fig-note">{{ l.product?.name }}</div>
+              </div>
+              <div v-if="l.gap" class="fig gap-fig">
+                <div class="fig-label">{{ t('qual.short', { gap: '' }).trim() }}</div>
+                <div class="fig-num">{{ l.gap }}</div>
+                <RouterLink :to="{ path: '/partners', query: { tender: tender.id, lot: l.lot.id, gap: l.gap } }">
+                  <Button :label="t('qual.findPartner', { gap: l.gap, unit: unitName(l.lot.unit) })" icon="pi pi-users" />
+                </RouterLink>
+              </div>
+            </div>
+            <div class="bar" role="img" :aria-label="t('qual.capacityOf', { capacity: l.capacity, needed: `${l.lot.quantity} ${unitName(l.lot.unit)}` })">
+              <div class="bar-fill" :style="{ flexGrow: Math.min(l.capacity ?? 0, l.lot.quantity ?? 0) }" />
+              <div class="bar-gap" :style="{ flexGrow: l.gap ?? 0 }" />
+            </div>
+          </div>
+          <p v-if="analysis.notOffered" class="muted">{{ t('qual.notOffered', { n: analysis.notOffered }) }}</p>
         </div>
 
         <div class="card">
@@ -95,26 +124,6 @@ const unitName = (u: string | undefined | null) => (u ? (units[u] ?? u) : '')
           </div>
         </div>
 
-        <div v-if="analysis.lots.length" class="card">
-          <h2>{{ t('qual.capacity') }}</h2>
-          <div v-for="l in analysis.lots" :key="l.lot.id" class="lot">
-            <div class="lot-main">
-              <div><strong>{{ l.lot.id }}</strong> · {{ l.lot.title }}</div>
-              <div class="muted">{{ l.product?.name }}</div>
-              <div class="bar">
-                <div class="bar-fill" :style="{ width: `${Math.min(100, ((l.capacity ?? 0) / (l.lot.quantity ?? 1)) * 100)}%` }" />
-              </div>
-              <div class="bar-legend">
-                <span>{{ t('qual.capacityOf', { capacity: l.capacity, needed: `${l.lot.quantity} ${unitName(l.lot.unit)}` }) }}</span>
-                <span v-if="l.gap" class="gap">{{ t('qual.short', { gap: `${l.gap} ${unitName(l.lot.unit)}` }) }}</span>
-              </div>
-            </div>
-            <RouterLink v-if="l.gap" :to="{ path: '/partners', query: { tender: tender.id, lot: l.lot.id, gap: l.gap } }">
-              <Button :label="t('qual.findPartner', { gap: l.gap, unit: unitName(l.lot.unit) })" icon="pi pi-users" />
-            </RouterLink>
-          </div>
-          <p v-if="analysis.notOffered" class="muted">{{ t('qual.notOffered', { n: analysis.notOffered }) }}</p>
-        </div>
       </template>
     </div>
 
@@ -129,22 +138,32 @@ const unitName = (u: string | undefined | null) => (u ? (units[u] ?? u) : '')
 .qual { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 16px; align-items: start; }
 @media (max-width: 1100px) { .qual { grid-template-columns: 1fr; } }
 .main { display: flex; flex-direction: column; gap: 16px; }
-.start { display: flex; justify-content: space-between; align-items: center; gap: 16px; background: linear-gradient(90deg, var(--accent-soft), var(--surface)); }
-.start p { margin: 4px 0 0; }
-.verdict { display: flex; gap: 16px; align-items: center; border-left: 6px solid var(--muted); }
-.verdict > i { font-size: 30px; }
-.verdict-text { flex: 1; }
-.verdict-label { font-size: 20px; font-weight: 600; }
-.verdict.can-supply { border-left-color: var(--good); background: var(--good-soft); }
-.verdict.can-supply > i { color: var(--good); }
-.verdict.partner-needed { border-left-color: var(--accent); background: var(--accent-soft); }
-.verdict.partner-needed > i { color: var(--accent); }
-.verdict.not-yet { border-left-color: var(--bad); background: var(--bad-soft); }
-.verdict.not-yet > i { color: var(--bad); }
+.start { display: flex; justify-content: space-between; align-items: center; gap: 16px; border: 1px dashed var(--dash); }
+.start p { margin: 6px 0 0; }
+.verdict { display: flex; flex-direction: column; gap: 24px; }
+.verdict-head { display: flex; gap: 16px; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; }
+.verdict-text { display: flex; flex-direction: column; gap: 8px; max-width: 60ch; }
+.idx { color: var(--accent-on-dark); }
+.verdict-label { font-size: 30px; font-weight: 500; letter-spacing: -0.03em; display: flex; gap: 12px; align-items: center; }
+.verdict-label i { font-size: 22px; color: var(--accent-on-dark); }
+.verdict.can-supply .verdict-label i { color: #6fd39b; }
+.verdict.not-yet .verdict-label i, .verdict.out-of-range .verdict-label i { color: #ff8a80; }
+.rerun { color: var(--ink-text) !important; }
+.lot { display: flex; flex-direction: column; gap: 14px; }
+.figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); border: 1px dashed var(--ink-line); }
+.fig { padding: 20px 22px; display: flex; flex-direction: column; gap: 8px; border-right: 1px dashed var(--ink-line); }
+.fig:last-child { border-right: 0; }
+.fig-label { font-size: 13px; font-weight: 500; color: var(--ink-muted); }
+.fig-num { font-size: 56px; line-height: 1; letter-spacing: -0.05em; font-weight: 500; }
+.fig-num small { font-size: 18px; letter-spacing: 0; color: var(--ink-muted); }
+.fig-num.yours { color: var(--accent-on-dark); }
+.fig-note { font-size: 14px; color: var(--ink-text); }
+.gap-fig { background: repeating-linear-gradient(135deg, rgba(110, 155, 255, 0.1) 0 8px, transparent 8px 16px); }
+.gap-fig a { margin-top: 4px; }
 .section-head { display: flex; justify-content: space-between; align-items: center; }
 .headline { font-weight: 600; margin: 12px 0 6px; }
 .points { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 14.5px; }
-.cite-chip { display: inline-flex; gap: 4px; align-items: center; font-size: 11.5px; color: var(--accent); background: var(--accent-soft); border-radius: 6px; padding: 1px 6px; margin-left: 4px; white-space: nowrap; }
+.cite-chip { display: inline-flex; gap: 4px; align-items: center; font-size: 12px; color: var(--accent); background: var(--accent-soft); padding: 1px 6px; margin-left: 4px; white-space: nowrap; }
 .cite-chip i { font-size: 10px; }
 .req { display: flex; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border); }
 .req:last-child { border-bottom: 0; }
@@ -155,12 +174,9 @@ const unitName = (u: string | undefined | null) => (u ? (units[u] ?? u) : '')
 .check > i { margin-top: 3px; }
 .check > div { flex: 1; }
 .evidence { margin-top: 4px; font-size: 13px; }
-.lot { display: flex; gap: 16px; align-items: center; padding: 12px 0; flex-wrap: wrap; }
-.lot-main { flex: 1 1 300px; display: flex; flex-direction: column; gap: 4px; }
-.bar { height: 10px; background: var(--bad-soft); border-radius: 6px; overflow: hidden; margin-top: 6px; }
-.bar-fill { height: 100%; background: var(--good); }
-.bar-legend { display: flex; justify-content: space-between; font-size: 13px; }
-.gap { color: var(--bad); font-weight: 600; }
+.bar { display: flex; height: 14px; border: 1px solid var(--ink-line); }
+.bar-fill { flex-basis: 0; background: var(--accent-on-dark); }
+.bar-gap { flex-basis: 0; background: repeating-linear-gradient(135deg, var(--accent-on-dark) 0 2px, transparent 2px 9px); }
 .side { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow: auto; }
 .side h2 { margin-bottom: 8px; }
 </style>

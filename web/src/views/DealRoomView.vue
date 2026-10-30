@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BidSteps from '@/components/BidSteps.vue'
 import { computed, onBeforeUnmount, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
@@ -47,6 +48,7 @@ async function approve() {
 
 <template>
   <div v-if="deal && data" class="page">
+    <BidSteps :current="deal.status === 'Closed' ? 5 : 4" />
     <RouterLink to="/deals" class="back"><i class="pi pi-arrow-left" /> {{ t('deals.title') }}</RouterLink>
 
     <div class="card head">
@@ -62,7 +64,7 @@ async function approve() {
       </div>
     </div>
 
-    <div v-if="deal.status !== 'Negotiating'" class="card outcome" :class="deal.status">
+    <div v-if="deal.status !== 'Negotiating'" class="ink-panel outcome" :class="deal.status">
       <i :class="deal.status === 'Closed' ? (deal.autonomous ? 'pi pi-bolt' : 'pi pi-user') : deal.status === 'AwaitingApproval' ? 'pi pi-hourglass' : 'pi pi-times-circle'" />
       <div class="outcome-main">
         <div class="outcome-title">
@@ -120,41 +122,42 @@ async function approve() {
 .back { display: inline-flex; gap: 6px; align-items: center; text-decoration: none; font-size: 14px; }
 .head { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
 .parties { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
-.party { display: flex; gap: 10px; align-items: center; }
+.party { display: flex; gap: 10px; align-items: center; font-size: 17px; }
 .pflag { font-size: 30px; }
-.link-icon { color: var(--accent); font-size: 18px; }
+.link-icon { color: var(--accent); font-size: 18px; padding: 8px; border: 1px dashed var(--dash); }
 .head-meta { display: flex; flex-direction: column; gap: 4px; align-items: flex-end; text-align: right; }
 .small { font-size: 12.5px; }
-.outcome { display: flex; gap: 18px; align-items: center; border-left: 6px solid var(--muted); flex-wrap: wrap; }
-.outcome > i { font-size: 32px; }
-.outcome.Closed { border-left-color: var(--good); background: var(--good-soft); }
-.outcome.Closed > i { color: var(--good); }
-.outcome.AwaitingApproval { border-left-color: var(--warn); background: var(--warn-soft); }
-.outcome.AwaitingApproval > i { color: var(--warn); }
-.outcome.Failed { border-left-color: var(--bad); background: var(--bad-soft); }
-.outcome-main { flex: 1 1 420px; display: flex; flex-direction: column; gap: 6px; }
-.outcome-title { font-size: 20px; font-weight: 600; }
-.terms { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 6px; }
-.terms div { display: flex; flex-direction: column; }
-.terms strong { font-size: 18px; }
+.outcome { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+.outcome > i { font-size: 26px; color: var(--accent-on-dark); }
+.outcome.Closed > i { color: #6fd39b; }
+.outcome.AwaitingApproval > i { color: #ffc46b; }
+.outcome.Failed > i { color: #ff8a80; }
+.outcome-main { flex: 1 1 420px; display: flex; flex-direction: column; gap: 8px; }
+.outcome-title { font-size: 30px; font-weight: 500; letter-spacing: -0.03em; }
+.terms { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); border: 1px dashed var(--ink-line); margin-top: 10px; }
+.terms div { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border-right: 1px dashed var(--ink-line); }
+.terms div:last-child { border-right: 0; }
+.terms .muted { font-size: 13px; color: var(--ink-muted); }
+.terms strong { font-size: 26px; font-weight: 500; letter-spacing: -0.03em; }
 .layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 16px; align-items: start; }
 @media (max-width: 1100px) { .layout { grid-template-columns: 1fr; } }
 .side { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow: auto; }
 .room-head { display: flex; justify-content: space-between; align-items: center; }
-.live { color: var(--good); font-size: 13px; font-weight: 600; display: inline-flex; gap: 6px; align-items: center; }
+.live { color: var(--accent); font-size: 13px; font-weight: 600; display: inline-flex; gap: 6px; align-items: center; }
 .live i { font-size: 9px; animation: pulse 1.2s infinite; }
 @keyframes pulse { 50% { opacity: 0.3; } }
 .messages { display: flex; flex-direction: column; gap: 14px; margin-top: 8px; }
 .msg { display: flex; flex-direction: column; gap: 4px; max-width: 78%; }
 .msg.partner { align-self: flex-end; align-items: flex-end; }
-.who { font-size: 12px; color: var(--muted); }
-.bubble { background: var(--ground); border: 1px solid var(--border); border-radius: 14px; padding: 10px 14px; display: flex; flex-direction: column; gap: 6px; }
-.msg.bidder .bubble { border-top-left-radius: 4px; }
-.msg.partner .bubble { border-top-right-radius: 4px; background: var(--accent-soft); }
-.msg.accept .bubble { border-color: var(--good); background: var(--good-soft); }
+.who { font-size: 12.5px; color: var(--muted); }
+.bubble { background: var(--ground); border: 1px solid var(--border); padding: 10px 14px; display: flex; flex-direction: column; gap: 6px; }
+.msg.partner .bubble { background: var(--accent-soft); }
+.msg.mine .bubble { background: var(--ink); color: #f6f6f6; border-color: var(--ink); }
+.msg.mine .chip { background: transparent; color: #f6f6f6; border-color: var(--ink-line); }
+.msg.accept .bubble { outline: 2px solid var(--good); outline-offset: 2px; }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
-.chip { font-size: 12.5px; border-radius: 6px; padding: 2px 8px; background: var(--surface); border: 1px solid var(--border); }
-.chip.price { font-weight: 700; }
+.chip { font-family: var(--mono); font-size: 12px; padding: 2px 8px; background: var(--surface); border: 1px solid var(--border); }
+.chip.price { font-weight: 500; background: var(--accent); color: #fff; border-color: var(--accent); }
 .chip.ok { color: var(--good); border-color: var(--good); }
 .text { font-size: 14.5px; }
 .typing { display: flex; gap: 4px; padding: 14px 4px 0; }

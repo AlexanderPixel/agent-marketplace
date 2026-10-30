@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BidSteps from '@/components/BidSteps.vue'
 import { computed, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
@@ -60,6 +61,7 @@ function download(d: AgreementDocument) {
 
 <template>
   <div v-if="data" class="page">
+    <BidSteps :current="5" />
     <RouterLink :to="`/deals/${data.deal.id}`" class="back"><i class="pi pi-arrow-left" /> {{ t('deals.room') }}</RouterLink>
     <div class="page-head">
       <div>

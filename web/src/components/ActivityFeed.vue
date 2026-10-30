@@ -65,10 +65,14 @@ onBeforeUnmount(() => source?.close())
 <style scoped>
 .feed { display: flex; flex-direction: column; gap: 12px; }
 .feed-head { display: flex; justify-content: flex-end; }
-.events { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-.event { border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 8px; padding: 10px 12px; background: var(--surface); }
-.event-top { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; }
-.agent { font-weight: 600; color: var(--accent); }
-.action { margin-top: 4px; font-size: 14px; }
-.reason { margin-top: 4px; font-size: 13px; color: var(--muted); }
+.events { list-style: none; margin: 0; padding: 0 0 0 18px; border-left: 1px dashed var(--dash); display: flex; flex-direction: column; gap: 18px; }
+.event { position: relative; }
+.event::before { content: ''; position: absolute; left: -22px; top: 4px; width: 7px; height: 7px; background: var(--accent); }
+.event-top { display: flex; justify-content: space-between; gap: 8px; font-size: 12.5px; color: var(--muted); }
+.event-top time { font-family: var(--mono); font-size: 12px; }
+.agent { color: var(--accent); font-weight: 600; }
+.agent i { display: none; }
+.action { margin-top: 4px; font-size: 14.5px; font-weight: 600; }
+.reason { margin-top: 4px; font-size: 13px; line-height: 1.45; color: var(--muted); }
+.reason strong { font-weight: 500; }
 </style>

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BidSteps from '@/components/BidSteps.vue'
 import { computed, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute, useRouter } from 'vue-router'
@@ -69,6 +70,7 @@ const status = (c: Candidate) => (!c.gatesPassed ? 'failed' : c.score >= thresho
 
 <template>
   <div class="page">
+    <BidSteps v-if="query" :current="3" />
     <div class="page-head">
       <div>
         <h1>{{ t('partners.title') }}</h1>

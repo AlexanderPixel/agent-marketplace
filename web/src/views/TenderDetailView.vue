@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BidSteps from '@/components/BidSteps.vue'
 import { computed, onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
@@ -46,6 +47,7 @@ const portal = computed(() => (tender.value?.source === 'TED' ? 'TED' : 'e-Zamó
 
 <template>
   <div v-if="tender" class="page">
+    <BidSteps :current="2" />
     <RouterLink to="/tenders" class="back"><i class="pi pi-arrow-left" /> {{ t('tenders.title') }}</RouterLink>
 
     <div class="card head">
@@ -179,21 +181,24 @@ const portal = computed(() => (tender.value?.source === 'TED' ? 'TED' : 'e-Zamó
 </template>
 
 <style scoped>
-.back { display: inline-flex; gap: 6px; align-items: center; text-decoration: none; font-size: 14px; }
-.head { display: flex; gap: 18px; align-items: flex-start; flex-wrap: wrap; }
+.back { display: inline-flex; gap: 6px; align-items: center; text-decoration: none; font-size: 14.5px; font-weight: 500; }
+.head { display: flex; gap: 18px; align-items: flex-start; flex-wrap: wrap; background: none; border: 0; padding: 0; }
 .head-flag { font-size: 44px; line-height: 1; }
 .head-main { flex: 1 1 400px; display: flex; flex-direction: column; gap: 8px; }
-.head-main h1 { font-size: 22px; }
+.head-main h1 { font-size: 34px; max-width: 28ch; }
 .head-actions { display: flex; flex-direction: column; gap: 8px; }
 .tags { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-.original { font-size: 14px; color: var(--accent); }
-.facts { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
-.fact { padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
-.fact .value { font-size: 18px; font-weight: 600; }
+.original { font-size: 14px; color: var(--muted); }
+.facts { display: grid; gap: 0; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); background: var(--surface); border: 1px solid var(--border); }
+.facts .card { border: 0; border-right: 1px solid var(--border); }
+.facts .card:last-child { border-right: 0; }
+.fact > .muted:first-child { font-size: 13px; font-weight: 500; }
+.fact { padding: 16px 20px; display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
+.fact .value { font-size: 22px; font-weight: 400; letter-spacing: -0.02em; }
 .small { font-size: 12.5px; }
-.mono { font-family: ui-monospace, monospace; }
+.mono { font-family: var(--mono); }
 .clamp { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.featured-tag { background: var(--eu-gold); color: #1a1a1a; }
+.featured-tag { background: var(--accent); color: #ffffff; }
 .tabs-card { padding: 4px 8px 8px; }
 .req { border-bottom: 1px solid var(--border); padding: 14px 4px; display: flex; flex-direction: column; gap: 6px; }
 .req-head { display: flex; gap: 10px; align-items: center; }
@@ -203,6 +208,6 @@ const portal = computed(() => (tender.value?.source === 'TED' ? 'TED' : 'e-Zamó
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
 .notice-text { white-space: pre-wrap; font-family: inherit; font-size: 14px; max-height: 600px; overflow: auto; margin: 0; }
 .source-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); }
-.json { background: #0f1b36; color: #d9e2f5; padding: 14px; border-radius: 8px; font-size: 12px; max-height: 560px; overflow: auto; margin-top: 8px; }
-:deep(.hl-row) { background: #fffbea !important; font-weight: 500; }
+.json { background: var(--ink); color: #d9e2f5; padding: 14px; border-radius: 8px; font-size: 12px; max-height: 560px; overflow: auto; margin-top: 8px; }
+:deep(.hl-row) { background: var(--accent-soft) !important; font-weight: 500; }
 </style>

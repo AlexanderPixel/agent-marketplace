@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import Select from 'primevue/select'
 import Button from 'primevue/button'
@@ -11,18 +12,29 @@ import { flag } from '@/lib/flags'
 import { languages } from '@/i18n'
 
 const { t, locale } = useI18n()
+const route = useRoute()
 const showActivity = ref(false)
 const health = ref<{ ai: boolean; model: string | null } | null>(null)
 
 const nav = computed(() => [
-  { to: '/', icon: 'pi pi-home', label: t('nav.home') },
-  { to: '/tenders', icon: 'pi pi-search', label: t('nav.tenders') },
-  { to: '/evidence', icon: 'pi pi-id-card', label: t('nav.evidence') },
-  { to: '/partners', icon: 'pi pi-users', label: t('nav.partners') },
-  { to: '/deals', icon: 'pi pi-briefcase', label: t('nav.deals') },
-  { to: '/compliance', icon: 'pi pi-shield', label: t('nav.compliance') },
-  { to: '/intelligence', icon: 'pi pi-chart-line', label: t('nav.intelligence') },
-  { to: '/reach', icon: 'pi pi-box', label: t('nav.reach') },
+  { items: [{ to: '/', icon: 'pi pi-home', label: t('nav.home') }] },
+  {
+    title: t('nav.groupBid'),
+    items: [
+      { to: '/tenders', icon: 'pi pi-search', label: t('nav.tenders') },
+      { to: '/evidence', icon: 'pi pi-id-card', label: t('nav.evidence') },
+      { to: '/partners', icon: 'pi pi-users', label: t('nav.partners') },
+      { to: '/deals', icon: 'pi pi-briefcase', label: t('nav.deals') },
+    ],
+  },
+  {
+    title: t('nav.groupMore'),
+    items: [
+      { to: '/compliance', icon: 'pi pi-shield', label: t('nav.compliance') },
+      { to: '/intelligence', icon: 'pi pi-chart-line', label: t('nav.intelligence') },
+      { to: '/reach', icon: 'pi pi-box', label: t('nav.reach') },
+    ],
+  },
 ])
 
 const orgOptions = computed(() => session.orgs.map((o) => ({ ...o, label: `${flag(o.country)} ${o.name}` })))
@@ -40,18 +52,24 @@ watch(() => session.language, (lang) => (locale.value = lang), { immediate: true
   <div class="shell">
     <aside class="nav">
       <div class="brand">
-        <span class="stars">★</span>
+        <svg class="mark" width="30" height="22" viewBox="0 0 30 22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M2 3 L15 10 L28 3" /><path d="M5 10 L15 15.5 L25 10" /><path d="M9 16.5 L15 20 L21 16.5" />
+        </svg>
         <div>
           <div class="brand-name">{{ t('app.name') }}</div>
           <div class="brand-tag">{{ t('app.tagline') }}</div>
         </div>
       </div>
-      <RouterLink v-for="item in nav" :key="item.to" :to="item.to" class="nav-item" active-class="" exact-active-class="active">
-        <i :class="item.icon" /> {{ item.label }}
-      </RouterLink>
+      <div v-for="(group, gi) in nav" :key="gi" class="nav-group">
+        <div v-if="group.title" class="nav-group-title">{{ group.title }}</div>
+        <RouterLink v-for="item in group.items" :key="item.to" :to="item.to" class="nav-item"
+          :class="{ active: item.to === '/' ? route.path === '/' : route.path.startsWith(item.to) }">
+          <i :class="item.icon" aria-hidden="true" /> {{ item.label }}
+        </RouterLink>
+      </div>
       <div class="nav-foot">
         <span v-if="health" class="ai-state">
-          <i class="pi pi-sparkles" />
+          <span class="dot" :class="{ on: health.ai }" aria-hidden="true">●</span>
           {{ health.ai ? t('common.aiOn', { model: health.model }) : t('common.aiDisabled') }}
         </span>
       </div>
@@ -79,26 +97,36 @@ watch(() => session.language, (lang) => (locale.value = lang), { immediate: true
 </template>
 
 <style scoped>
-.shell { display: grid; grid-template-columns: 240px 1fr; min-height: 100vh; }
-.nav { background: var(--nav); color: #dfe6f5; display: flex; flex-direction: column; gap: 2px; padding: 18px 12px; position: sticky; top: 0; height: 100vh; box-sizing: border-box; }
-.brand { display: flex; gap: 10px; align-items: center; padding: 4px 8px 18px; }
-.stars { color: var(--eu-gold); font-size: 26px; }
-.brand-name { font-weight: 600; color: #fff; }
-.brand-tag { font-size: 12px; color: #9fb0d3; }
-.nav-item { display: flex; gap: 10px; align-items: center; padding: 9px 10px; border-radius: 8px; color: #dfe6f5; text-decoration: none; font-size: 14px; }
-.nav-item:hover { background: #1b2a4d; }
-.nav-item.active { background: #24386a; color: #fff; }
-.nav-foot { margin-top: auto; font-size: 12px; color: #9fb0d3; padding: 8px; }
+.shell { display: grid; grid-template-columns: 236px 1fr; min-height: 100vh; }
+.nav { background: var(--nav); color: #f6f6f6; display: flex; flex-direction: column; gap: 2px; padding: 24px 14px; position: sticky; top: 0; height: 100vh; box-sizing: border-box; }
+.brand { display: flex; gap: 10px; align-items: center; padding: 0 10px 28px; }
+.mark { color: #f6f6f6; flex: none; }
+.brand-name { font-weight: 700; font-size: 17px; letter-spacing: -0.02em; color: #fff; }
+.brand-tag { font-size: 12px; color: var(--ink-muted); }
+.nav-item { display: flex; gap: 10px; align-items: center; padding: 10px 12px; color: var(--ink-text); text-decoration: none; font-size: 15px; }
+.nav-item:hover { color: #fff; background: #232a2e; }
+.nav-item i { font-size: 15px; width: 18px; color: var(--ink-muted); }
+.nav-item.active i { color: #fff; }
+.nav-group { display: flex; flex-direction: column; gap: 2px; }
+.nav-group + .nav-group { margin-top: 14px; }
+.nav-group-title { font-size: 12px; font-weight: 600; color: var(--ink-muted); padding: 0 12px 6px; }
+.nav-item.active { background: var(--accent); color: #fff; font-weight: 600; clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%); }
+.nav-foot { margin-top: auto; padding: 20px 12px 0; border-top: 1px dashed #3a4044; font-size: 12.5px; color: var(--ink-muted); }
 .ai-state { display: flex; gap: 6px; }
+.dot { color: var(--ink-muted); }
+.dot.on { color: var(--accent-on-dark); }
 .main { display: flex; flex-direction: column; min-width: 0; }
-.top { display: flex; gap: 16px; align-items: flex-end; justify-content: flex-end; padding: 14px 28px; background: var(--surface); border-bottom: 1px solid var(--border); flex-wrap: wrap; }
-.top-field { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
+.top { display: flex; gap: 16px; align-items: flex-end; justify-content: flex-end; padding: 14px 36px; background: var(--surface); border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.top-field { display: flex; flex-direction: column; gap: 4px; }
+.top-field label { font-size: 13px; font-weight: 500; color: var(--muted); }
 .org-select { min-width: 280px; }
-.content { padding: 28px; max-width: 1280px; width: 100%; box-sizing: border-box; }
+.content { padding: 36px; max-width: 1280px; width: 100%; box-sizing: border-box; }
 @media (max-width: 800px) {
   .shell { grid-template-columns: 1fr; }
   .nav { position: static; height: auto; flex-direction: row; flex-wrap: wrap; }
-  .brand, .nav-foot { display: none; }
+  .brand, .nav-foot, .nav-group-title { display: none; }
+  .nav-group { flex-direction: row; flex-wrap: wrap; }
+  .nav-group + .nav-group { margin-top: 0; }
 }
 </style>
 <style>

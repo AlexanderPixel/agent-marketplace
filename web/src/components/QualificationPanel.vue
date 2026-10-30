@@ -12,15 +12,32 @@ import {
   criteriaNames, outcomeIcon, outcomeSeverity, units, verdictIcon, verdictSeverity, type Analysis, type Tender,
 } from '@/lib/tenders'
 
-const props = defineProps<{ tender: Tender }>()
+/** `auto`: the agents already checked this tender (there is a deal), so show that check instead of a run button. */
+const props = defineProps<{ tender: Tender; auto?: boolean }>()
 const { t } = useI18n()
 const analysis = ref<Analysis>()
 const running = ref(false)
+
+// The last check per company, language and tender, kept for the browser session so going back over the steps of a deal
+// shows the result without re-running (and re-logging) the check on every visit.
+const cacheKey = () => `analysis:${session.orgId}:${session.language}:${props.tender.id}`
+function cached(): Analysis | undefined {
+  try {
+    return JSON.parse(sessionStorage.getItem(cacheKey()) ?? 'null') ?? undefined
+  } catch {
+    return undefined
+  }
+}
 
 async function run() {
   running.value = true
   try {
     analysis.value = await post<Analysis>(`/tenders/${encodeURIComponent(props.tender.id)}/analysis`)
+    try {
+      sessionStorage.setItem(cacheKey(), JSON.stringify(analysis.value))
+    } catch {
+      // Storage unavailable: the check just runs again next time.
+    }
   } finally {
     running.value = false
   }
@@ -28,6 +45,11 @@ async function run() {
 
 // A different company or language means a different answer.
 watch(() => [session.orgId, session.language, props.tender.id], () => (analysis.value = undefined))
+watch(() => [props.auto, session.orgId, session.language, props.tender.id], () => {
+  if (!props.auto || analysis.value || running.value) return
+  analysis.value = cached()
+  if (!analysis.value) run()
+}, { immediate: true })
 
 const unitName = (u: string | undefined | null) => (u ? (units[u] ?? u) : '')
 

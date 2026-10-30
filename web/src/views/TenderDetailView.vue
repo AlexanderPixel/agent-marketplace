@@ -19,13 +19,14 @@ import { flag } from '@/lib/flags'
 import { session } from '@/lib/session'
 import {
   criteriaNames, cpvLabel, daysLeft, deadlineSeverity, formatDate, isTranslated, localTitle, units,
-  type Tender, type TenderRequirement,
+  type Deal, type Tender, type TenderRequirement,
 } from '@/lib/tenders'
 
 const { t } = useI18n()
 const route = useRoute()
 const tender = ref<Tender>()
 const ocds = ref<unknown>()
+const deal = ref<Deal>()
 
 async function load() {
   const id = encodeURIComponent(route.params.id as string)
@@ -34,6 +35,17 @@ async function load() {
 }
 onMounted(load)
 watch(() => route.params.id, load)
+
+// The deal the agents already made for this tender, if any (the one in `?deal=` first, else our own bid's latest), so
+// the steps link to every later page and the check shows what the agent found instead of asking to run it again.
+async function loadDeal() {
+  deal.value = undefined
+  if (!session.orgId) return
+  const deals = (await api<{ deal: Deal }[]>('/deals', {}, true).catch(() => [])).map((d) => d.deal)
+    .filter((d) => d.tenderId === route.params.id)
+  deal.value = deals.find((d) => d.id === route.query.deal) ?? deals.find((d) => d.bidderOrgId === session.orgId) ?? deals[0]
+}
+watch(() => [route.params.id, session.orgId], loadDeal, { immediate: true })
 
 const days = computed(() => daysLeft(tender.value?.deadline ?? null))
 const languageName = (code: string) => new Intl.DisplayNames([session.language], { type: 'language' }).of(code) ?? code
@@ -47,7 +59,7 @@ const portal = computed(() => (tender.value?.source === 'TED' ? 'TED' : 'e-Zamó
 
 <template>
   <div v-if="tender" class="page">
-    <BidSteps :current="2" />
+    <BidSteps :current="2" :deal="deal?.id" />
     <RouterLink to="/tenders" class="back"><i class="pi pi-arrow-left" /> {{ t('tenders.title') }}</RouterLink>
 
     <div class="card head">
@@ -103,7 +115,7 @@ const portal = computed(() => (tender.value?.source === 'TED' ? 'TED' : 'e-Zamó
       </div>
     </div>
 
-    <QualificationPanel v-if="session.orgId" :tender="tender" />
+    <QualificationPanel v-if="session.orgId" :tender="tender" :auto="!!deal" />
 
     <Message v-if="!tender.hasFullNotice" severity="info" icon="pi pi-info-circle">{{ t('tenders.shortNotice') }}</Message>
 

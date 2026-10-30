@@ -32,5 +32,6 @@ public static class DemoSeeder
             config["DemoData:Path"] ?? "../../demo-data", services.GetRequiredService<IWebHostEnvironment>().ContentRootPath);
         await TenderStore.SeedAsync(db, dataPath);
         Ecertis.EcertisCatalog.Load(Path.Combine(dataPath, "ecertis"));
+        Intelligence.PrimeAwards.Load(Path.Combine(dataPath, "ted/prime-awards.json"));
     }
 }

@@ -1,0 +1,277 @@
+[page 1]
+1 
+Die elektronische Rechnung in der Bundesverwaltung 
+Informationen über die Rechnungsstellung bei öffentlichen 
+Aufträgen 
+Stand Juli 2025
+
+[page 2]
+2 
+Inhaltsverzeichnis 
+Hintergrund ................................................................................................................................................................ 3 
+Rechtliche Grundlagen ....................................................................................................................................... 3 
+Nutzen der elektronischen Rechnung ................................................................................................................. 5 
+Infobox: Vorteile der E-Rechnung .................................................................................................................. 6 
+Umsetzung in der Bundesverwaltung ................................................................................................................. 7 
+Standard XRechnung ........................................................................................................................................... 7 
+Infobox: Inhalte einer elektronischen Rechnung ........................................................................................ 8 
+Infobox: Leitweg-Identifikationsnummer ..................................................................................................... 9 
+Rechnungseingangsplattform des Bundes .................................................................................................... 9 
+Weberfassung der Rechnung .......................................................................................................................... 10 
+Upload der Rechnung ....................................................................................................................................... 10 
+Übertragung per E-Mail ................................................................................................................................... 11 
+Übertragung per Webservice via Peppol ..................................................................................................... 11 
+Infobox: Exkurs Peppol .................................................................................................................................... 12 
+Anhang ...................................................................................................................................................................... 13 
+Entscheidungshilfe zur Auswahl eines Übertragungskanals .................................................................. 13 
+ 
+Bildnachweis 
+Abbildung 1: Entscheidungshilfe zur Auswahl eines Übertragungskanals .............................................. 14
+
+[page 3]
+3 
+Hintergrund 
+Die elektronische Rechnung (E-Rechnung) stellt für die öffentliche Verwaltung in Deutschland 
+einen entscheidenden Schritt zum Ausbau des E-Governments dar. Neben der Digitalisierung von 
+Geschäftsdokumenten ermöglicht die elektronische Vorgangsbearbeitung eine Standardisierung 
+und eine (Teil-)Automatisierung von Prozessen. 
+Diese Broschüre beinhaltet Informationen über die Rechnungsstellung bei öffentlichen Aufträgen 
+und über die Umsetzung der E-Rechnung in der Bundesverwaltung. Zielgruppe dieses Dokuments 
+sind die Lieferanten bzw. Rechnungssteller der Bundesverwaltung. 
+Rechtliche Grundlagen 
+Die am 26. Mai 2014 in Kraft getretene EU-Richtlinie 2014/55/EU über die elektronische 
+Rechnungsstellung bei öffentlichen Aufträgen verpflichtet alle öffentlichen Auftraggeber 
+europaweiter Vergabeverfahren, E-Rechnungen empfangen und verarbeiten zu können. Um dieser 
+Verpflichtung nachzukommen, wurden die Vorgaben der Richtlinie mit dem am 10. April 2017 
+veröffentlichten E- Rechnungsgesetz in nationales Recht für Bundesbehörden umgesetzt. In den 
+Bundesländern ist der elektronische Rechnungsaustausch eigenständig geregelt: Wann eine 
+Annahmepflicht für Behörden und ob eine Rechnungsstellungspflicht für Lieferanten/ 
+Dienstleister besteht, ist in den entsprechenden Umsetzungsakten definiert. Die 
+Koordinierungsstelle für IT-Standards (KoSIT) fasst den Umsetzungsstand der Länder zusammen 
+und stellt diesen über diese Seite zur Verfügung.  
+Für oberste Bundesbehörden und Verfassungsorgane sah das E-Rechnungsgesetz eine Umsetzung 
+der Vorgaben bis zum 27. November 2018 vor. Die Behörden und Einrichtungen der unmittelbaren 
+und mittelbaren Bundesverwaltung hatten als sogenannte subzentrale öffentliche Auftraggeber 
+eine um ein Jahr verlängerte Umsetzungsfrist, die am 27. November 2019 endete.
+
+[page 4]
+4 
+Zunächst umfassten die gesetzlichen Vorgaben primär den Empfang und die Weiterverarbeitung 
+von E-Rechnungen. Darüber hinaus enthält die Richtlinie die Maßgabe, dass mit der Umsetzung 
+gleichzeitig eine Verwaltungsvereinfachung durch eine medienbruchfreie elektronische 
+Verarbeitung einhergehen soll.  
+Mit dem Beschluss der E-Rechnungsverordnung des Bundes (E-RechV) vom 6. September 2017 
+hat das Bundeskabinett die Vorgaben der EU-Richtlinie konkretisiert und darüber hinaus auch 
+Rechnungssteller in die Pflicht genommen, seit dem 27. November 2020 E-Rechnungen zu 
+übermitteln. Ausnahmen von dieser Verpflichtung bilden gemäß § 3 Abs. 3 E-RechV 
+Direktaufträge bis zu einem Auftragswert in Höhe von 1.000 €, geheimhaltungsbedürftige 
+Rechnungsdaten und bestimmte Angelegenheiten des Auswärtigen Dienstes bzw. sonstige 
+Beschaffungen im Ausland.  
+Die Verordnung formuliert zudem Anforderungen an das Rechnungsdatenmodell, das 
+grundsätzlich dem Datenaustauschstandard XRechnung oder einem anderen zur Europäischen 
+Norm EN 16931 konformen Standard entsprechen muss. Zudem muss eine E-Rechnung in 
+Ergänzung zu den umsatzsteuerrechtlichen Bestandteilen (gem. § 14 UStG) weitere 
+Inhaltselemente enthalten. Diese werden im Abschnitt „Umsetzung in der Bundesverwaltung“ 
+beschrieben.  
+Für die Übermittlung und den Empfang von elektronischen Rechnungen schreibt die E-RechV die 
+Nutzung des Verwaltungsportals des Bundes vor. Dies gilt sowohl für Rechnungssteller als auch 
+für Rechnungsempfänger.
+
+[page 5]
+5 
+Nutzen der elektronischen Rechnung  
+Durch die E-Rechnung können sowohl aufseiten der Rechnungssteller als auch aufseiten der 
+Rechnungsempfänger Vorteile gegenüber der papierbasierten Rechnungsstellung und 
+Verarbeitung erzielt werden. Diese Vorteile werden im Folgenden dargestellt. 
+Der Prozess der Rechnungsstellung an verschiedene Bundesbehörden und Einrichtungen der 
+mittel- und unmittelbaren Bundesverwaltung wurde den Rechnungsstellern durch die 
+Konsolidierung der beiden Plattformen ZRE und OZG-RE im Sommer 2025 vereinfacht. Seit 
+September 2025 wird nur noch die OZG-RE als alleinige Eingangsrechnungsplattform des 
+Bundes betrieben, der Betrieb der ZRE ist seit Q4/2025 nicht mehr verfügbar. Nach einmaliger 
+Registrierung können Rechnungen über die Plattform OZG-RE an sämtliche Einrichtungen der 
+unmittelbaren und mittelbaren Bundesverwaltung übermittelt werden und es sind keine 
+bilateralen Vereinbarungen wie bspw. bei EDI-Verfahren (Elektronischer Datenaustausch, eng. 
+electronic data interchange, EDI) notwendig. Informationen über die Konsolidierung der 
+Rechnungseingangsplattformen erhalten Sie auf der Informationswebseite des Bundes unter 
+https://www.e-rechnung-bund.de/plattformkonsolidierung/. 
+Unternehmen mit einem hohen Rechnungsvolumen können signifikante Einsparungen durch den 
+Wegfall von Druck- und Versandkosten realisieren. Für die Rechnungssteller bietet sich zudem die 
+Chance, die Umstellung auf E-Rechnungen zu nutzen, um auch weitere Prozesse im 
+Rechnungswesen zu digitalisieren bzw. zu optimieren. 
+Mit Blick auf die Rechnungsbearbeitung in den Einrichtungen konnte gezeigt werden, dass durch 
+die Minimierung der Transportzeiten sowie den Wegfall ganzer Arbeitsschritte eine Verkürzung 
+der Durchlaufzeit einer Rechnung zu erzielen ist. Dies ermöglicht eine schnellere Zahlung und 
+führt folglich zu einer Liquiditätsverbesserung aufseiten des Rechnungsstellers.
+
+[page 6]
+6 
+Aufgrund der Verpflichtung zur elektronischen Rechnungsstellung und der daraus resultierenden 
+Möglichkeit der medienbruchfreien Weiterverarbeitung ergeben sich auch für die 
+Bundesverwaltung erhebliche Einsparpotenziale. Neben den potenziellen Einsparungen können 
+durch die E-Rechnung bzw. durch die Digitalisierung der Rechnungsverarbeitung auch qualitative 
+Mehrwerte erzeugt werden. So erhöht ein durchgängig elektronischer Prozess die Transparenz und 
+Nachvollziehbarkeit innerhalb der Organisation.  
+Infobox: Vorteile der E-Rechnung 
+Durch die E-Rechnung ergeben sich eine Vielzahl von Vorteilen für Unternehmen und die 
+öffentliche Verwaltung, u. a. die Vereinfachung und Beschleunigung von Verwaltungs- und 
+Geschäftsprozessen sowie die Schonung von natürlichen Ressourcen. Hier finden Sie die Vorteile 
+im Einzelnen für Rechnungssteller und -empfänger.  
+Vorteile für Rechnungssteller: 
+• Vereinfachte Rechnungsstellung 
+• Verkürzte Durchlaufzeiten  
+• Schnellere Bearbeitung und pünktlichere Zahlung 
+• Einsparpotenziale im Rechnungsversand  
+Vorteile für Rechnungsempfänger:  
+• Optimierung der Rechnungsverarbeitung durch automatisiertes 
+  Einlesen der Rechnungsdaten 
+• Steigerung der Datenqualität  
+• Einsparpotenziale in der Rechnungsverarbeitung  
+• Ermöglichen einer dezentralen Rechnungsbearbeitung
+
+[page 7]
+7 
+Umsetzung in der Bundesverwaltung  
+Eine E-Rechnung im Sinne der EU-Richtlinie 2014/55 ist eine Rechnung, die in einem 
+strukturierten elektronischen Format ausgestellt, übermittelt und empfangen wird. Das Format 
+ermöglicht eine automatische und elektronische Verarbeitung. Folglich muss eine E-Rechnung alle 
+relevanten Daten in einem strukturierten Format bereitstellen. Eine Bilddatei, ein PDF-Dokument 
+ohne integrierten Datensatz oder eine eingescannte Papierrechnung erfüllen diese Anforderungen 
+nicht und stellen somit per Definition keine E-Rechnung dar.  
+Standard XRechnung 
+Der im Rahmen eines Steuerungsprojekts zwischen Bund und Ländern entwickelte Standard 
+XRechnung ist eine nationale Ausgestaltung der Europäischen Norm EN 16931 und wird sowohl 
+vom Bund als auch von den Ländern getragen. Konzipiert als reines Datenformat ermöglicht der 
+Standard XRechnung, dass Rechnungsdaten direkt und ohne Medienbruch in die verarbeitenden 
+Systeme importiert werden. Der strukturierte XML-Datensatz dient somit in erster Linie der 
+maschinellen Lesbarkeit. Durch den Einsatz von Anzeigeprogrammen kann der XML-Datensatz für 
+den Menschen lesbar dargestellt werden.  
+Der Standard XRechnung soll den Umgang mit elektronischen Rechnungen in der öffentlichen 
+Verwaltung vereinheitlichen. Es handelt sich um einen offenen, unentgeltlichen und 
+zukunftssicheren Standard, der von der KoSIT betrieben wird. Im elektronischen 
+Rechnungsaustausch kann auch ein anderer Standard verwendet werden, wenn er den 
+Anforderungen der Europäischen Norm, den Nutzungsbedingungen der 
+Rechnungseingangsplattformen und der E-RechV des Bundes entspricht. Alle Informationen über 
+den Standard XRechnung sind bei der KoSIT abrufbar.
+
+[page 8]
+8 
+Infobox: Inhalte einer elektronischen Rechnung 
+Eine E-Rechnung hat gemäß § 5 E-RechV neben den umsatzsteuerrechtlichen 
+Rechnungsbestandteilen (vgl. hierzu § 14 UStG) mindestens folgende Angaben zu enthalten: 
+• die Leitweg-Identifikationsnummer (Leitweg-ID) des Rechnungsempfängers  
+• die geltenden Zahlungsbedingungen (alternativ ein Fälligkeitsdatum) 
+• die Bankverbindungsdaten des Rechnungsstellers 
+• eine E-Mail-Adresse des Rechnungsstellers 
+Zusätzlich muss eine E-Rechnung folgende Angaben enthalten, wenn diese dem Rechnungssteller 
+bei Beauftragung durch den Auftraggeber übermittelt wurden:  
+• eine Bestellnummer 
+• eine Lieferantennummer  
+Für jede dieser zusätzlichen Angaben ist ein bestimmtes Datenfeld vorgesehen. Auftraggeber und 
+Auftragnehmer können weitere Rechnungsinhalte vertraglich festlegen. 
+Bitte beachten Sie, dass die Koordinierungsstelle für IT-Standards (KoSIT) die Informationen  
+zur aktuellen Version Standard XRechnung zur Verfügung stellt. Seit dem 01.02.2024 sind die  
+BT-Felder Geschäftsprozesstyp (BT 23) sowie elektronische Adresse des Verkäufers (BT‑34) und 
+elektronische Adresse des Käufers (BT‑49) verpflichtend. Weitere Informationen hierzu finden Sie 
+auf der Webseite E-Rechnung Bund.
+
+[page 9]
+9 
+Infobox: Leitweg-Identifikationsnummer 
+Die Leitweg-ID ist eine eindeutige Kennungsnummer der angeschlossenen öffentlichen 
+Auftraggeber. Sie ermöglicht eine genaue Adressierung einer E-Rechnung an einen 
+Rechnungsempfänger und die automatische Weiterleitung innerhalb der Plattformen.  
+Bei der Bestellung teilt der Auftraggeber dem Rechnungssteller die Leitweg-ID mit. Zudem kann 
+diese jederzeit in der Plattform zentral eingesehen werden. Der Rechnungssteller benötigt keine 
+eigene Leitweg-ID. 
+Rechnungseingangsplattform des Bundes 
+Im Rahmen der Umsetzung der E-Rechnung stellt der Bund für die Bundesverwaltung die OZG-
+konforme Rechnungseingangsplattform (OZG-RE) als zentralen elektronischen Eingangsweg 
+bereit.  
+• Hinweis: Seit dem 20. September 2025 ist die OZG-RE die alleinige 
+Eingangsrechnungsplattform des Bundes; der Betrieb der ZRE wurde in Q4/2025 
+eingestellt (weitere Informationen zur Plattformkonsolidierung finden Sie unter 
+https://www.e-rechnung-bund.de/plattformkonsolidierung/)  
+Die OZG-RE stellt das Bindeglied zwischen Rechnungsstellern und der Bundesverwaltung dar.  
+Für die Nutzung der Plattform ist die einmalige Registrierung des Rechnungsstellers erforderlich. 
+Nähere Informationen über die einmalige Registrierung an der OZG-RE erhalten Sie in der Anlage 
+Flyer Lieferanteninformation und Bedienhilfe OZG-RE. Im Anschluss an die Registrierung kann der 
+Rechnungssteller die von ihm bevorzugten Übertragungskanäle in der 
+Rechnungseingangsplattform auswählen und im System hinterlegen. 
+Die Anforderungen und Vorteile der Nutzung der einzelnen Kanäle werden in den nachfolgenden 
+Abschnitten beschrieben.
+
+[page 10]
+10 
+Weberfassung der Rechnung 
+Die Weberfassung bietet sich insbesondere für Unternehmen mit einem geringen 
+Rechnungsvolumen an, die entweder keine Software im Rechnungsausgang 
+verwenden oder deren im Einsatz befindliche Software die Erstellung 
+elektronischer Rechnungen gemäß EU-Norm nicht unterstützt. 
+Die Rechnungsdaten werden manuell vom Rechnungssteller in eine Eingabemaske der 
+Plattformen übertragen und anschließend an den Empfänger übermittelt. Dem Rechnungssteller 
+wird zu Archivierungszwecken die valide E-Rechnung im XML-Format zum Download 
+bereitgestellt. 
+Hinweis: Die OZG-RE stellt dem Rechnungssteller kein revisionssicheres Archiv für die  
+E-Rechnungen bereit. Es ist jedoch verpflichtend, dass die erzeugte E-Rechnung im XML-Format 
+beim Rechnungssteller archiviert wird. 
+Upload der Rechnung 
+Der Upload einer Rechnung ist für diejenigen Rechnungssteller relevant, die eine E-Rechnung 
+gemäß EU-Norm erstellen, jedoch nicht über die angebotenen Übertragungskanäle versenden 
+können oder wollen. Die Option zum manuellen Upload einer Rechnung bedarf der Freischaltung 
+des Übertragungskanals.
+
+[page 11]
+11 
+Übertragung per E-Mail 
+Der Übertragungskanal E-Mail setzt voraus, dass der Rechnungssteller mit seiner Software eine 
+valide E-Rechnung generieren kann. 
+Nach der Freischaltung des Übertragungskanals E-Mail in der Rechnungseingangsplattform wird 
+dem Rechnungssteller die für den Versand zu verwendende Adresse für den Rechnungsversand 
+mitgeteilt.  
+Zudem ist die Hinterlegung einer Versandadresse notwendig, da nur Nachrichten von zuvor 
+erfassten Absendern berücksichtigt werden können.  
+Übertragung per Webservice via Peppol 
+Die OZG-RE bietet als weiteren Übertragungskanal die Möglichkeit zum 
+Rechnungsversand aus der erstellenden Software mittels Webservice und 
+Übertragung über das Peppol-Netzwerk.  
+Die Einreichung von E-Rechnungen über Peppol ist grundsätzlich auf zwei verschiedenen Wegen 
+möglich: 
+1. die Nutzung eines bestehenden Peppol-Service-Providers (kostenpflichtig) 
+2. eine kostenpflichtige Mitgliedschaft bei OpenPeppol und der Aufbau eines eigenen Peppol 
+Access Points 
+Um den Status per Peppol eingereichter Rechnungen nachvollziehen zu können, muss der 
+Eingangskanal Peppol im Nutzerkonto der OZG-RE freigeschaltet und die zum Versenden der 
+Rechnungen genutzte Peppol-Participant-ID hinterlegt und verifiziert werden.  
+Weitere Informationen zum Übertragungskanal Peppol finden Sie im Dokument  
+Leitfaden Übertragungskanal Peppol.
+
+[page 12]
+12 
+Infobox: Exkurs Peppol 
+Peppol („Pan-European Public Procurement OnLine“) definiert eine in Europa und auch 
+zunehmend international etablierte Infrastruktur zum sicheren Austausch von Dokumenten 
+zwischen unterschiedlichen Systemen. Durch einheitliche Prozesse, eine einheitliche „Business 
+Sprache“ und technische Spezifikationen wird eine Interoperabilität gewährleistet, die für die 
+elektronische Abwicklung von Einkaufs-, Lieferanten- oder Angebotsprozessen zwischen 
+Unternehmen und Behörden notwendig ist.  
+Technisch basiert Peppol auf dem sogenannten „Vier-Ecken-Modell“. Durch die Anbindung an 
+einen beliebigen Zugangspunkt (Access Point) kann sich ein Rechnungssteller an das Netzwerk 
+anschließen und mit allen anderen Teilnehmern kommunizieren. Der Sender bildet die erste Ecke 
+im Modell. Für alle Parteien im Netzwerk gilt das gleiche Prinzip. Somit wird der potenzielle 
+Empfänger einer Nachricht zu einer weiteren Ecke. Auch der Empfänger muss an einen Access 
+Point angebunden sein. Die beiden Access Points stellen die übrigen Ecken dar und sind für den 
+sicheren Transport der Informationen zuständig. 
+Eine Liste aller Access Points kann auf der offiziellen Webseite von Peppol eingesehen werden.
+
+[page 13]
+13 
+Anhang 
+Entscheidungshilfe zur Auswahl eines Übertragungskanals 
+Die Entscheidungshilfe zur Auswahl eines Übertragungskanals ist als barrierefreier Flyer auf der 
+Website der E-Rechnung zu finden.
+
+[page 14]
+14 
+ 
+Abbildung 1: Entscheidungshilfe zur Auswahl eines Übertragungskanals 
+* Mit elektronischen Rechnungsformaten sind Dateiformate gemeint, die strukturierte Rechnungsdaten enthalten.

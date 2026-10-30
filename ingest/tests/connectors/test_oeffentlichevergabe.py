@@ -205,3 +205,31 @@ async def test_long_backfill_keeps_a_bounded_window_and_stops_at_unavailable_day
     assert [c.state["last_day"] for c in checkpoints] == [f"2026-10-{d:02d}" for d in range(9, 20)]
     assert 1 < peak <= mod.WINDOW                       # parallel, but bounded
     assert route.call_count <= 11 + 1 + mod.WINDOW      # nothing far past the stop day is requested
+
+
+def test_phone_number_in_the_identifier_field_is_not_a_buyer_id():
+    """e-Vergabe fills BT-501 with the phone number ('t:022855041533') when the buyer has no identifier."""
+    from lxml import etree
+
+    xml = fixture_path("oeffentlichevergabe", "notice_d53c984e-fb97-4555-8e8d-170b3ea2578d.xml").read_bytes()
+    conn, _ = make_connector(Oeffentlichevergabe)
+    conn.ctx.now = lambda: NOW
+    n = conn.to_notice(etree.fromstring(xml), published=None)
+    assert n.buyer_name == "Bundesamt für Infrastruktur, Umweltschutz und Dienstleistungen der Bundeswehr"
+    assert n.buyer_id is None
+    assert n.title == "1/DLII6/VM191 - RV Tubus, divers und Katheter, divers"
+    assert n.refs["changed_notice"] == "3c8f8b3f-2fce-4b85-9077-b4537fd8edfc-01"
+
+
+def test_org_identifier_keeps_real_ids_and_drops_phones_and_words():
+    from tenderhub.connectors.oeffentlichevergabe import org_identifier
+
+    for real in ("991-14142-17", "09162000-ZRE1000000-09", "DE289669264", "Leitweg-ID: 991-19564-47",
+                 "62f0f0af-9431-411a-8f96-be7b21daafb8", "HRB 1234", "0898776620"):
+        assert org_identifier(real) == real
+    for bogus in ("t:022855041533", "t: 022894990", "Tel.-Nr.: +49 921/606-2871", "+49 203 604 3423", "fax: 0228 123",
+                  "XXXX", "keine Angabe", "entfällt", "-Nicht angegeben-", "WISTA.Plan GmbH", None, ""):
+        assert org_identifier(bogus) is None
+    # a bare number that is the organisation's own phone number
+    assert org_identifier("0898776620", ["+49 89 8776620"]) is None
+    assert org_identifier("0898776620", ["+49 89 1111111"]) == "0898776620"

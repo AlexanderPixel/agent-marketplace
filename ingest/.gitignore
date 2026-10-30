@@ -36,3 +36,6 @@ htmlcov/
 .DS_Store
 .idea/
 .vscode/
+
+# Downloaded tender attachments (tenderhub enrich)
+attachments/

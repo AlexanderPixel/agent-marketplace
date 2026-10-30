@@ -108,6 +108,32 @@ def _unique(xs: Any) -> list[str]:
 
 
 _PLACEHOLDER = re.compile(r"^[Xx0\s./-]*$|^(?i:n/?a|keine|unbekannt|none)$")  # 'XXXX', '0000', 'n/a'
+_PHONE_LABEL = re.compile(r"^(?:t|tel|telefon|phone|fon|f|fax)\b\.?(?:-?nr\.?)?\s*[:.]", re.I)  # 't:0228…', 'Tel.-Nr.:'
+
+
+def _digits(s: str | None) -> str:
+    """Phone number digits in national form: '+49 228 123' / '0049228123' / '0228123' -> '0228123'."""
+    d = re.sub(r"\D", "", s or "")
+    for intl in ("0049", "49"):
+        if d.startswith(intl) and (s or "").lstrip().startswith(("+", "00")):
+            return "0" + d[len(intl):]
+    return d
+
+
+def org_identifier(value: str | None, phones: Any = ()) -> str | None:
+    """An organisation identifier (BT-501: Leitweg-ID, VAT number, register number, ...) or None.
+
+    Some platforms fill the field with the phone number ('t:022855041533', '+49 6419390', 'Tel.-Nr.: ...')
+    or with words ('keine Angabe', 'entfällt'); those are not identifiers."""
+    v = _clean(value)
+    if not v or _PLACEHOLDER.match(v) or not re.search(r"\d", v):
+        return None
+    if _PHONE_LABEL.match(v) or v.startswith("+"):
+        return None
+    d = _digits(v)
+    if len(d) >= 6 and re.fullmatch(r"[\d\s()/.-]+", v) and any(d == _digits(p) for p in phones if p):
+        return None
+    return v
 _DATE = re.compile(r"^(\d{4}-\d{2}-\d{2})(Z|[+-]\d{2}:\d{2})?$")
 _TIME = re.compile(r"^(\d{2}:\d{2}(?::\d{2})?)(?:\.\d+)?(Z|[+-]\d{2}:\d{2})?$")
 
@@ -285,9 +311,8 @@ class Oeffentlichevergabe(Connector):
                 "[cac:PartyIdentification/cbc:ID=$oid]", oid=org_id)), None)
         buyer_el = company if company is not None else party
         buyer_name = _t(buyer_el, "cac:PartyName/cbc:Name")
-        buyer_id = _t(buyer_el, "cac:PartyLegalEntity/cbc:CompanyID")
-        if buyer_id and _PLACEHOLDER.match(buyer_id):
-            buyer_id = None
+        buyer_id = org_identifier(_t(buyer_el, "cac:PartyLegalEntity/cbc:CompanyID"),
+                                  [_t(buyer_el, "cac:Contact/cbc:Telephone"), _t(buyer_el, "cac:Contact/cbc:Telefax")])
         buyer_city = _t(buyer_el, "cac:PostalAddress/cbc:CityName")
         country3 = (_t(buyer_el, "cac:PostalAddress/cac:Country/cbc:IdentificationCode")
                     or _t(project, "cac:RealizedLocation/cac:Address/cac:Country/cbc:IdentificationCode"))

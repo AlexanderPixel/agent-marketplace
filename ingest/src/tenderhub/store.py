@@ -89,6 +89,35 @@ CREATE TABLE IF NOT EXISTS documents (
     PRIMARY KEY (notice_id, url)
 );
 
+-- deep capture of a tender (enrich.py): its pages as readable markdown, and its attachments
+CREATE TABLE IF NOT EXISTS notice_pages (
+    notice_id  INTEGER NOT NULL REFERENCES notices(id) ON DELETE CASCADE,
+    url        TEXT NOT NULL,
+    title      TEXT,
+    markdown   TEXT,
+    fetched_at TEXT NOT NULL,
+    PRIMARY KEY (notice_id, url)
+);
+
+CREATE TABLE IF NOT EXISTS attachments (
+    id           INTEGER PRIMARY KEY,
+    notice_id    INTEGER NOT NULL REFERENCES notices(id) ON DELETE CASCADE,
+    url          TEXT NOT NULL,
+    filename     TEXT NOT NULL,
+    folder       TEXT,                -- e.g. "Vergabeunterlagen/Version 2" for amendment rounds
+    listed_size  TEXT,
+    listed_date  TEXT,
+    size         INTEGER,
+    content_type TEXT,
+    sha256       TEXT,
+    path         TEXT,                -- local copy
+    text         TEXT,                -- extracted text
+    pages        INTEGER,
+    error        TEXT,
+    fetched_at   TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS attachments_notice ON attachments (notice_id);
+
 CREATE TABLE IF NOT EXISTS sync_state (
     source          TEXT PRIMARY KEY,
     state           TEXT NOT NULL DEFAULT '{}',

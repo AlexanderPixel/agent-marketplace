@@ -12,7 +12,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from importlib import resources
 from pathlib import Path
 from typing import Any
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import parse_qs, quote, urlparse
 
 PAGE_SIZE_MAX = 200
 CLUSTER = "COALESCE(n.cluster_id, n.id)"  # notices stored before dedup ran count as their own cluster
@@ -93,11 +93,57 @@ class Viewer:
             d["documents"] = [dict(r) for r in db.execute("SELECT url, title, kind FROM documents WHERE notice_id=?", (nid,))]
             d["versions"] = [dict(r) for r in db.execute(
                 "SELECT version, captured_at FROM notice_versions WHERE notice_id=? ORDER BY version", (nid,))]
+            cluster = [row["id"]] + [r[0] for r in db.execute(
+                "SELECT id FROM notices WHERE cluster_id = ? AND id != ?", (row["cluster_id"], nid))] \
+                if row["cluster_id"] else [nid]
+            marks = ",".join("?" * len(cluster))
+            d["pages"] = [dict(r) for r in db.execute(
+                f"""SELECT url, title, markdown, fetched_at FROM notice_pages WHERE notice_id IN ({marks})
+                    ORDER BY length(markdown) DESC""", cluster)]
+            d["attachments"] = [dict(r) for r in db.execute(
+                f"""SELECT id, filename, folder, listed_size, listed_date, size, content_type, pages, error, fetched_at,
+                           length(text) AS chars, path IS NOT NULL AS stored
+                    FROM attachments WHERE notice_id IN ({marks}) ORDER BY folder, filename""", cluster)]
             d["copies"] = [dict(r) for r in db.execute(
                 """SELECT id, source, source_id, url, title, notice_type, status, published_at, deadline_at
                    FROM notices WHERE cluster_id = ? AND id != ? ORDER BY published_at DESC""",
                 (row["cluster_id"], nid))] if row["cluster_id"] else []
         return d
+
+    def brief(self, nid: int) -> dict[str, Any]:
+        from .brief import build, load_context
+        with self.connect() as db:
+            return build(load_context(db, nid))
+
+    def attachment(self, aid: int) -> dict[str, Any] | None:
+        with self.connect() as db:
+            row = db.execute("SELECT * FROM attachments WHERE id=?", (aid,)).fetchone()
+        return dict(row) if row else None
+
+    def attachment_file(self, aid: int) -> tuple[Path, str, str] | None:
+        """(path, content type, filename) of a stored attachment; only files under the attachments dir are served."""
+        a = self.attachment(aid)
+        if not a or not a["path"]:
+            return None
+        path = Path(a["path"]).resolve()
+        root = (Path(self.db_path).parent / "attachments").resolve()
+        if root not in path.parents or not path.is_file():
+            return None
+        ctype = a["content_type"] or "application/octet-stream"
+        if a["filename"].lower().endswith(".pdf"):
+            ctype = "application/pdf"
+        return path, ctype.split(";")[0], a["filename"]
+
+    def enrich(self, nid: int) -> dict[str, Any]:
+        from .enrich import enrich
+        from .store import Store
+        store = Store(self.db_path)
+        try:
+            res = enrich(store, nid)
+        finally:
+            store.close()
+        return {"pages": len(res.pages), "attachments": len(res.attachments),
+                "failed": sum(1 for a in res.attachments if a["error"])}
 
     def stats(self) -> dict[str, Any]:
         with self.connect() as db:
@@ -153,6 +199,24 @@ def make_handler(viewer: Viewer) -> type[BaseHTTPRequestHandler]:
                     self.json(viewer.notices(q))
                 elif url.path == "/api/stats":
                     self.json(viewer.stats())
+                elif url.path == "/api/brief":
+                    self.json(viewer.brief(int(q.get("id", 0))))
+                elif url.path == "/api/attachment":
+                    a = viewer.attachment(int(q.get("id", 0)))
+                    self.json(a) if a else self.json({"error": "not found"}, 404)
+                elif url.path == "/api/attachment/file":
+                    f = viewer.attachment_file(int(q.get("id", 0)))
+                    if not f:
+                        return self.json({"error": "not found"}, 404)
+                    path, ctype, name = f
+                    body = path.read_bytes()
+                    self.send_response(200)
+                    self.send_header("Content-Type", ctype)
+                    self.send_header("Content-Length", str(len(body)))
+                    disposition = "attachment" if q.get("download") == "1" else "inline"
+                    self.send_header("Content-Disposition", f"{disposition}; filename*=UTF-8''{quote(name)}")
+                    self.end_headers()
+                    self.wfile.write(body)
                 elif url.path == "/api/notice":
                     d = viewer.notice(int(q.get("id", 0)))
                     self.json(d) if d else self.json({"error": "not found"}, 404)
@@ -162,6 +226,17 @@ def make_handler(viewer: Viewer) -> type[BaseHTTPRequestHandler]:
                 self.json({"error": str(e)}, 400)
             except (ValueError, KeyError) as e:
                 self.json({"error": f"bad request: {e}"}, 400)
+
+        def do_POST(self) -> None:  # noqa: N802
+            url = urlparse(self.path)
+            q = {k: v[0] for k, v in parse_qs(url.query).items()}
+            if url.path == "/api/enrich":
+                try:
+                    self.json(viewer.enrich(int(q.get("id", 0))))
+                except Exception as e:  # noqa: BLE001 — report to the page instead of dropping the connection
+                    self.json({"error": f"{type(e).__name__}: {e}"}, 500)
+            else:
+                self.json({"error": "not found"}, 404)
 
     return Handler
 

@@ -1,0 +1,977 @@
+===== data.lv =====
+true
+false
+1/DLII6/VM191 - RV Tubus, divers und Katheter, divers
+1/DLII6/VM191 - RV Tubus, divers und Katheter, divers
+gemäß 
+- VM191_05_Anlage 2_LOS 1_Preis- und Produktblatt_Endobronchialblocker-Set, 9Fr
+- VM191_05_Anlage 2_LOS 2_Preis- und Produktblatt_Epistaxis-Ballonkatheter, 
+   Doppelballon
+- VM191_05_Anlage 2_LOS 3_Preis- und Produktblatt_Tubus, Endotracheal-, 
+   spiralverstärkt, ID3,0
+6003138848
+DE
+EUR
+N6
+E9
+U0
+PL1CLNT200
+1
+LOS 1 - 2.400 EA Endobronchialblocker-Set, 9Fr
+2.400 EA Endobronchialblocker-Set, 9Fr
+gemäß  
+VM191_05_Anlage 2_LOS 1_Preis- und Produktblatt_Endobronchialblocker-Set, 9Fr
+1.1
+00010
+00010
+ENDOBRONCHIALBLOCKER-SET, 9FR
+2.400 EA Endobronchialblocker-Set, 9Fr
+gemäß  
+VM191_05_Anlage 2_LOS 1_Preis- und Produktblatt_Endobronchialblocker-Set, 9Fr
+19.10.2026 15:53:11
+6003138848
+2400
+2400
+Stück (Each)
+1
+false
+false
+19
+SANB
+01.12.2026
+H
+Z001
+0063230636 00010
+ENDOBRONCHIALBLOCKER-SET, 9FR
+keine amtliche Qualitätssicherung (Güteprüfung)
+QS-Anforderungen
+TS-QMA
+00
+0000000000000010005173585
+000
+Wertung außerhalb des AI-Vergabemanagers
+gemäß VM191_18_Bewertungsmatrix
+2
+LOS 2 - 4.480 EA Epistaxis-Ballonkatheter, Doppelballon
+4.480 EA Epistaxis-Ballonkatheter, Doppelballon
+gemäß VM191_05_Anlage 2_LOS 2_Preis- und Produktblatt_Epistaxis-Ballonkatheter, Doppelballon
+2.1
+00020
+00020
+EPISTAXIS-BALLONKATHETER, DOPPELBALLON
+4.480 EA Epistaxis-Ballonkatheter, Doppelballon
+gemäß VM191_05_Anlage 2_LOS 2_Preis- und Produktblatt_Epistaxis-Ballonkatheter, Doppelballon
+19.10.2026 15:53:11
+6003138848
+4480
+4480
+Stück (Each)
+1
+false
+false
+19
+SANB
+01.12.2026
+H
+Z001
+0063230636 00020
+EPISTAXIS-BALLONKATHETER, DOPPELBALLON
+keine amtliche Qualitätssicherung (Güteprüfung)
+QS-Anforderungen
+TS-QMA
+00
+0000000000000010005173585
+000
+Wertung außerhalb des AI-Vergabemanagers
+gemäß VM191_18_Bewertungsmatrix
+3
+LOS 3 - 130 EA Tubus, Endotracheal-, spiralverstärkt, ID3,0
+130 EA Tubus, Endotracheal-, spiralverstärkt, ID3,0
+gemäß VM191_05_Anlage 2_LOS 3_Preis- und Produktblatt_Tubus, Endotracheal-, 
+spiralverstärkt, ID3,0
+3.1
+00030
+00030
+TUBUS, ENDOTRACHEAL-, SPIRALVERST., ID3
+130 EA Tubus, Endotracheal-, spiralverstärkt, ID3,0
+gemäß VM191_05_Anlage 2_LOS 3_Preis- und Produktblatt_Tubus, Endotracheal-, 
+spiralverstärkt, ID3,0
+19.10.2026 15:53:11
+6003138848
+130
+130
+Stück (Each)
+1
+false
+false
+19
+SANB
+01.12.2026
+Z001
+0063230636 00030
+TUBUS, ENDOTRACHEAL-, SPIRALVERST., ID3
+keine amtliche Qualitätssicherung (Güteprüfung)
+QS-Anforderungen
+TS-QMA
+00
+0000000000000010005173585
+000
+Wertung außerhalb des AI-Vergabemanagers
+gemäß VM191_18_Bewertungsmatrix
+
+===== lvm.aicatalog =====
+ID der Anforderung
+Datum der Anforderung
+ID der Bestellung
+Datum der Bestellung
+Beginn der Lieferung
+Ende der Lieferung
+Positionsnummer AIMarket
+Internationale Warennummer (z.B. EAN)
+Bestellnummer
+Angebotener Herstellerkode
+Obsolete // SUM_INCLUSIVE_ADDITIONAL_OFFERS_NETTO
+Obsolete // SUM_INCLUSIVE_ADDITIONAL_OFFERS_TAX_AMOUNT
+Obsolete // SUM_INCLUSIVE_ADDITIONAL_OFFERS_BRUTTO
+Obsolete // NETTO_SCORING_SUM_WITHOUT_ADDITIONALOFFER
+Obsolete // SCORING_SUM_WITHOUT_ADDITIONALOFFER
+Positionsnummer
+Weitere ID für BANF/Warenkorb
+Weitere ID für BANF/Warenkorb
+Nummer der SAP BANF
+Nummer der SAP Anfrage
+Nummer des SAP Warenkorbs
+Materialnummer
+ID from an external system to this element
+Externe SAP Besteller-ID
+Importiertes SAP Lieferdatum
+SAP Einkaufsorganisation
+SAP Einkäufergruppe
+SAP Einkäufergruppe und Zusatzinformationen
+Importierte SAP Kategorie-ID
+Importierte SAP Materialgruppen-ID
+Importierter SAP Mengeneinheitscode (ISO)
+Importierte SAP Preismengeneinheit
+Importierte SAP Belegwährung (ISO)
+Importierter SAP Kontrollbereich
+Importierte SAP Empfängernummer
+<html>
+      <body>
+        <table cellpadding="5">
+          <tr>
+            <td valign="top" halign="left">
+              <img src="blue_dark_grey/24x24/information.png">
+            </td>
+            <td valign="top" halign="left">
+              Infotext Infotext Infotext...
+            </td>
+          </tr>
+        </table>
+      </body>
+    </html>
+Infotext...
+<html>
+      <body>
+			<b>Achtung:</b> Sobald das Verfahren veröffentlicht/versendet ist, kann die Angabe zur Losaufteilung nicht mehr geändert werden.
+      </body>
+    </html>
+Bitte begründen Sie hier die Entscheidung betreffend der Losaufteilung!
+LV-Klassifizierung
+Wertung erfolgt
+Aufgehoben
+Selektion
+Bezeichnung
+Artikelnummer des Lieferanten
+Dateiname
+Mime Type
+Bestellmenge
+Position ist optional
+<html>
+      <body style="color: #FF0000;">
+				<font size="2">
+					Hinweis: Bei der zu erbringenden Leistung handelt es sich um eine optionale Position.
+				</font>
+      </body>
+    </html>
+Mindestbestellmenge
+Maximalbestellmenge
+Geschätzte Bestellmenge
+Liefermenge
+Mengeneinheit
+Preis netto pro Mengeneinheit in Euro
+Kosten netto pro Einheit und Monat in Euro
+Geschätzte Kosten netto pro Einheit und Monat in Euro
+Geschätzter Preis netto pro Mengeneinheit in Euro
+Laufzeit in Monaten
+Nettokosten in Euro
+Bruttokosten in Euro
+Geschätzte Nettokosten in Euro
+Geschätzte Bruttokosten in Euro
+Preismengeneinheit pro Verpackungsmengeneinheit
+Nettopreis in Euro
+Bruttopreis in Euro
+Geschätzter Nettopreis in Euro
+Geschätzter Bruttopreis in Euro
+Bitte wählen Sie die Bezugseinheit für die Häufigkeit
+Woche
+Monat
+Jahr
+Geben Sie hier die Häufigkeit pro Bezugseinheit an.
+Geschätzte Flächenleistung in m²/h
+Geschätzter Stundensatz in Euro
+Geschätzte Stunden pro Monat
+Geschätzte Stunden pro Monat bei Häufigkeit pro Woche
+Geschätzte Stunden pro Monat bei Häufigkeit pro Monat
+Geschätzte Stunden pro Monat bei Häufigkeit pro Jahr
+Geschätzter Preis netto in Euro pro Monat
+Geschätzter Preis netto in Euro über Laufzeit
+Geschätzter Preis brutto in Euro über Laufzeit
+Flächenleistung in m²/h
+Stundensatz in Euro
+Stunden pro Monat
+Stunden pro Monat bei Häufigkeit pro Woche
+Stunden pro Monat bei Häufigkeit pro Monat
+Stunden pro Monat bei Häufigkeit pro Jahr
+Preis netto in Euro pro Monat
+Preis netto in Euro über Laufzeit
+Preis brutto in Euro über Laufzeit
+Relevanter Nettopreis in Euro
+Nettopreis inkl. Nachlass in Euro
+Nettopreis der Untereinheit in Euro
+Nettopreis in Euro (Mimimum)
+Nettopreis in Euro (Durchschnitt)
+Nettopreis in Euro (Maximum)
+Umsatzsteuer in Euro
+Bruttopreis in Euro
+Formatfehler
+Teillieferung erlaubt
+Internationale Lieferbeschränkungen
+Sonderbehandlungsklasse
+Bemerkung oder Frage
+Weitere Angaben zur angebotenen Position
+Hier können Sie sonstige Hinweise und Bemerkungen betr. des Angebotes/Loses erfassen
+CPV-Klassifizierungs-Code
+Nachlässe aktivieren
+Hierüber wird gesteuert, ob Angaben zum Skonto vom Bieter abgefragt werden.
+Hierüber wird gesteuert, ob das angegebene Skonto in der Angebotswertung berücksichtigt werden soll.
+Nachlässe aktiviert
+Skonto aktiviert
+Nachlass positiv - Zuschlag negativ
+Minimale Zahlungsfrist in Tagen, damit angebotene Skonti berücksichtigt werden
+Skonto 1 Gewährung
+Skonto 2 Gewährung
+Das in der Wertung berücksichtigte Skonto
+Der höchste anwendbare Skontosatz
+Berücksichtigtes Skonto
+Ist LV-Ebene und Losaufteilung
+Nettosumme
+Nachlass positiv - Zuschlag negativ
+Nachlass positiv - Zuschlag negativ
+Nachlass positiv - Zuschlag negativ
+Nettosumme inkl. Nachlass (Zwischenergebnis)
+Bruttosumme
+Bruttosumme
+Bruttosumme inkl. Nachlass (Zwischenergebnis)
+Abweichung von Durchschnitt (EUR)
+Abweichung von Durchschnitt (%)
+Abweichung von Maximum (EUR)
+Abweichung von Maximum (%)
+Abweichung von Minimum (EUR)
+Abweichung von Minimum (%)
+Nettogruppensumme ohne jegl. Nachlässe
+Nettogruppensumme ohne jegl. Nachlässe (Zwischenergebnis)
+Gruppensumme ohne jegl. Nachlässe (Teilergebnis) (Zwischenergebnis)
+Relevanter Nettopreis EUR
+Diese Summe überscheibt die bisher gültige Nettosumme dieser Ebene.
+Finale Umsatzsteuer in Euro
+Diese Summe überscheibt die bisher gültige Bruttosumme dieser Ebene.
+Bemerkung zur Ermittlung der finalen Wertungssumme
+Verwendete Wertungssumme
+Verwendete Wertungssumme
+Nettowertungssumme
+Nettowertungssumme (Teilergebnis)
+Angegebene Bruttosumme
+Angegebene Bruttosumme (Teilergebnis)
+Bruttogruppensumme ohne jegl. Nachlässe
+Bruttogruppensumme ohne jegl. Nachlässe (Zwischenergebnis)
+Bruttogruppensumme ohne jegl. Nachlässe (Teilergebnis)
+Bruttogruppensumme ohne jegl. Nachlässe (Teilergebnis) (Zwischenergebnis)
+Nettogruppensumme inkl. Nachlass
+Nettogruppensumme inkl. Nachlass (Zwischenergebnis)
+Nettogruppensumme inkl. Nachlass (Teilergebnis) (Zwischenergebnis)
+Bruttogruppensumme inkl. Nachlass
+Bruttogruppensumme inkl. Nachlass (Teilergebnis)
+Bruttogruppensumme inkl. Nachlass (Teilergebnis) (Zwischenergebnis)
+Durchschnitt
+Rang
+Abweichung von Minimum (EUR)
+Abweichung von Minimum (%)
+Abweichung von Durchschnitt (EUR)
+Abweichung von Durchschnitt (%)
+Abweichung von Maximum (EUR)
+Abweichung von Maximum (%)
+Geschätzte Nettosumme in Euro
+Geschätzte Nettosumme in Euro
+Abweichung vom Schätzwert (EUR)
+Abweichung vom Schätzwert (%)
+Abweichung vom Schätzwert (EUR)
+Abweichung vom Schätzwert (%)
+Verwendete Wertungssumme
+Verwendete Wertungssumme
+Geschätzte Bruttosumme in Euro
+Angegebene Nettosumme
+Angegebene Nettosumme
+Angegebene Bruttosumme
+Angegebene Bruttosumme
+Angegebene Nettosumme (Teilergebnis)
+Beschreibung der angegebenen Summe
+Beschreibung der Wertungssumme
+Optionale Nettosumme zur Übernahme aus einem externen System
+Umsatzsteuer in Euro
+Optionale Bruttosumme zur Übernahme aus einem externen System
+Abweichung zur Angebotssumme (%)
+Positionssumme inkl. Nachlässe
+Bewilligte Mittel
+Bewilligte Mittel (Summe)
+Bewilligte Mittel
+Bezeichnung
+Nummer des Kriteriums
+Beschreibung
+Beschreibung des Kriteriums oder Frage an den Bieter.
+Bitte beantworten Sie hier die im Feld "Kriterientext" gestellte Frage.
+Gewichtung in Prozent
+Gewichtungspunkte
+Ist Ja-oder-Nein-Kriterium
+<html>
+        <body>
+        <b>Achtung: Nichterfüllung führt zum Ausschluss!</b></body>
+        </html>
+Achtung: Nichterfüllung führt zum Ausschluss!
+Ausschlussschwellenwert in Prozent
+Mindestpunktezahl die in der Gruppe erreicht werden müssen
+Mindestpunktezahl nicht erreicht
+Ausschlusskriterium nicht erfüllt
+Dieser Schalter bestimmt, ob das Kriterium ein Ausschlusskriterium ist.
+Soll dieses Element veröffentlicht werden?
+Soll die Gewichtung dieses Kriteriums veröffentlicht werden?
+Punktesumme des Kriteriums automatisch vom Preis berechnen
+Kriterium erfüllt?
+Kriterium erfüllt?
+Kriterium erfüllt?
+Begründung der Bewertung
+Dieser Schalter bestimmt, ob bei der Bewertung eine Begründung benötigt wird.
+Geben Sie hier in einer kommaseparierten Liste die Punktezahlen an, bei denen keine Begründung der Bewertung erforderlich ist (z.B. 1, 0 = bei Bewertung des Kriteriums mit dem Wert "1" und "0" muss KEINE Begründung eingegeben werden).
+Erweiterte Richtwertmethode
+Begründung zur angewandten Bewertungsmethode
+Negativer Schwankungsbereich für die Ermittlung der Gewinnergruppe in Prozent
+Entscheidungskriterium für erweiterte Richtwertmethode
+Punkte aller Entscheidungskriterien
+Punkte aller Entscheidungskriterien
+Preis
+Skalierungs-Faktor für die Kennzahl
+Kennzahl
+Kennzahl des besten Angebotes
+Minimale gültige Kennzahl
+Leistung gültiger Angebote
+Preis gültiger Angebote
+Rang nach Entscheidungskriterium
+Rang nach erweiterter Richtwertmethode
+Zwischenergebnis
+Zwischenergebnis
+Zwischenergebnis
+Zwischenergebnis
+Ergebnis Kriterium Preis (standard)
+Ergebnis Preis (gewichtet)
+Ergebnis Kriterium Preis (ARRIBA)
+Erreichte Punktzahl (0 bis 100)
+Erfüllungsgrad (0-10)
+Zwischenergebnis
+Zwischenergebnis
+Zwischenergebnis
+Zwischenergebnis
+Kriterien-Ergebnis T
+Kriterien-Ergebnis T
+Gruppensumme
+Typ des Kriterienkataloges (z.B. UfAB)
+Beschreibung
+Verteilbare Gewichtungspunkte
+Summe der Gewichtungspunkte
+Begründung der Gewichtung
+Gesamtergebnis
+Berechnungsgrundlage für Rang
+Rang
+Gesamtergebnis (Maximum)
+Beschreibung
+Erläuterung
+Erfüllt
+Wert
+<html>
+        <body>
+        <table width="100%" cellpadding="5" >
+              <tr>
+                <td valign="top">
+                  <img src="blue_dark_grey/24x24/information.png" border="0">
+                </td>
+                <td valign="top">
+                  <b>Erläuterung:</b> Zur Ermittlung des wirtschaftlichsten Angebotes werden die folgenden Zuschlagskriterien während der Wertungsphase in einer sogenannten Bewertungsmatrix bepunktet. Bei Aufteilung der Leistung in Lose erfolgt die Bewertung für jedes Los einzeln.<br><br>
+                  Für jedes Kriterium werden individuell Punkte vergeben. Je positiver die Bewertung des Angebotes, desto höher ist die Punktzahl. Subjektive Leistungen/Eigenschaften werden benotet. Die Ergebnisse werden zu einem einzigen Ergebnis zusammengeführt, so dass einzelne subjektive Noten dadurch weitgehend objektiviert werden.<br><br>
+                  Der Preis fließt ohne manuelle Bearbeitung in die Wertung ein. Der Punktwert des Preises errechnet sich, indem die günstigste Angebotssumme (bzw. Lossumme) durch die Gesamtsumme (bzw. Lossumme) des jeweils zu bewertenden Angebotes geteilt und mit 100 multipliziert wird. Dadurch erhält das jeweils günstigste Angebot für das Preis-Kriterium die volle Punktzahl (100 Punkte).
+                </td>
+              </tr>
+            </table>
+
+        </body>
+        </html>
+Erläuterung:
+Zur Ermittlung des wirtschaftlichsten Angebotes werden die folgenden Zuschlagskriterien während der Wertungsphase in einer Bewertungsmatrix bepunktet. Bei Aufteilung der Leistung in Lose erfolgt die Bewertung für jedes Los einzeln.
+Für jedes Kriterium werden individuell Punkte vergeben. Je positiver die Bewertung des Angebotes, desto höher ist die Punktzahl. Subjektive Leistungen/Eigenschaften werden benotet. Die Ergebnisse werden zu einem einzigen Ergebnis zusammengeführt, so dass einzelne subjektive Noten dadurch weitgehend objektiviert werden.
+Der Preis fließt ohne manuelle Bearbeitung in die Wertung ein. Der Punktwert des Preises errechnet sich, in dem die günstigste Angebotssumme (bzw. Lossumme) durch die Gesamtsumme (bzw. Lossumme) des jeweils zu bewertenden Angebotes geteilt und mit 100 multipliziert wird. Dadurch erhält das jeweils günstigste Angebot für das Preis-Kriterium die volle Punktzahl (100 Punkte).
+Titel des Fragenkatalogs
+Nummer
+Titel der Frage zur Anzeige in der Gliederung des Leistungsverzeichnisses.
+Fragetext
+Antwort-Hinweis
+Eingabefeld zur Beantwortung der Frage durch den Bieter
+Eingabefeld zur Beantwortung der Frage durch den Bieter mit Ja oder Nein
+Eingabefeld zur Beantwortung der Frage durch den Bieter mit einer ganzen Zahl
+Eingabefeld zur Beantwortung der Frage durch den Bieter mit einem Betrag in Euro
+Eingabefeld zur Beantwortung der Frage durch den Bieter in Prozent
+Eingabefeld zur Beantwortung der Frage durch den Bieter mit einer Dezimalzahl
+Zeitaufwand in Stunden
+Bitte eine Alternative wählen
+wird/werden voll erfüllt
+wird/werden voll erfüllt, zusätzlich vorhandene Funktionen siehe Erläuterung
+wird/werden nicht erfüllt
+kann/können nach Anpassung erfüllt werden
+Antwort des Bieters
+<html>
+          <body>
+            <table width="100%" cellpadding="5" >
+              <tr>
+                <td valign="top">
+                  <img src="blue_dark_grey/24x24/information.png" border="0">
+                </td>
+                <td valign="top">
+                  <b>Erläuterung:</b> Für die Kriterienbewertung der ausgeschriebenen Leistung werden die Antworten des Bieters, die er in diesem Fragebogen angibt, herangezogen.<br><br>
+                  Für jedes Kriterium werden individuell Punkte vergeben. Je positiver die Bewertung des Angebotes, desto höher ist die Punktzahl. Subjektive Leistungen/Eigenschaften werden benotet. Die Ergebnisse werden zu einem einzigen Ergebnis zusammengeführt, so dass einzelne subjektive Noten dadurch weitgehend objektiviert werden.
+                </td>
+              </tr>
+            </table>
+          </body>
+          </html>
+Erläuterung Fragenkatalog:
+Für die Kriterienbewertung der ausgeschriebenen Leistung werden die Antworten des Bieters, die er in diesem Fragebogen angibt, herangezogen.
+Für jedes Kriterium werden individuell Punkte vergeben. Je positiver die Bewertung des Angebotes, desto höher ist die Punktzahl. Subjektive Leistungen/Eigenschaften werden benotet. Die Ergebnisse werden zu einem einzigen Ergebnis zusammengeführt, so dass einzelne subjektive Noten dadurch weitgehend objektiviert werden.
+Vorschlag
+Zuschlag
+Nettopreis EUR
+Zusatzinformation
+Zusatzinformation
+Zusatzinformation
+Zusatzinformation
+Zusatzinformation
+Zusatzinformation
+Datumsformat ist falsch
+Datum ist außerhalb des erlaubten Bereichs
+Preiseinheit
+Einheit
+1. Faktor verwenden
+2. Faktor verwenden
+3. Faktor verwenden
+4. Faktor verwenden
+5. Faktor verwenden
+1. Faktor
+Einheit
+1. Faktor
+2. Faktor
+Einheit
+2. Faktor
+3. Faktor
+Einheit
+3. Faktor
+4. Faktor
+Einheit
+4. Faktor
+5. Faktor
+Einheit
+5. Faktor
+Angabe des Bieters
+Prozent-Angabe
+Prozent-Angabe
+Prozent-Angabe
+Prozent-Angabe
+Prozent-Angabe
+Prozent-Angabe
+Durch Angabe wird dividiert
+Durch Angabe wird dividiert
+Durch Angabe wird dividiert
+Durch Angabe wird dividiert
+Durch Angabe wird dividiert
+Durch Angabe wird dividiert
+Nettosumme
+Bruttosumme
+Nettosumme
+Bruttosumme
+Faktor 1 Multiplikator
+Faktor 1 Multiplikator
+Relevanter Faktor 1
+Faktor 2 Multiplikator
+Faktor 2 Multiplikator
+Relevanter Faktor 2
+" autoupdate="true" class="null" />
+Faktor 3 Multiplikator
+Faktor 3 Multiplikator
+Relevanter Faktor 3
+Faktor 4 Multiplikator
+Faktor 4 Multiplikator
+Relevanter Faktor 4
+Faktor 5 Multiplikator
+Faktor 5 Multiplikator
+Relevanter Faktor 5
+Nr.
+Beschreibung
+$ICON
+@caption
+Nr.
+Frage
+Antwort
+$ICON
+REFERENCE_NO
+QUESTION_TEXT
+QUESTION_EXPLANATION|QUESTION_YESNO|QUESTION_INTEGER|QUESTION_FLOAT|QUESTION_MONEY|QUESTION_PERCENTAGE|QUESTION_REQUIREMENTS_CUSTOMIZABLE
+Nr.
+Bezeichnung
+Ausschlusskriterium
+Ja-Nein-Kr.
+Gewichtung
+Wird veröffentlicht
+Nr.
+Bezeichnung
+Ausschlusskriterium
+Gewichtung
+$ICON
+REFERENCE_NO
+DESCRIPTION_SHORT
+$ICON
+REFERENCE_NO
+QUESTIONAIRE_TITLE
+$ICON
+REFERENCE_NO
+QUESTIONAIRE_TITLE
+$ICON
+REFERENCE_NO|CRITERION_ID
+DESCRIPTION_SHORT
+CRITERION_WEIGHT
+$ICON
+REFERENCE_NO|CRITERION_ID
+DESCRIPTION_SHORT
+CRITERION_WEIGHT
+$ICON
+REFERENCE_NO|CRITERION_ID
+DESCRIPTION_SHORT
+CRITERION_IS_KO
+CRITERION_IS_BOOLEAN
+CRITERION_WEIGHT|CRITERION_WEIGHT_UFAB
+PUBLISH
+$ICON
+REFERENCE_NO|CRITERION_ID
+DESCRIPTION_SHORT
+CRITERION_IS_KO
+CRITERION_WEIGHT|CRITERION_WEIGHT_UFAB
+Bezeichnung
+Schätzwert
+Bezeichnung
+Summe
+$ICON
+DESCRIPTION_SHORT
+ASSUMED_GROUP_SUM
+$ICON
+DESCRIPTION_SHORT
+BRUTTO_GROUP_SUBTOTAL_AT_DISCOUNT
+$ICON
+@caption
+Ergebnis Kriterium Preis
+Ergebnis Kriterium Preis (Zwischenergebnis3)
+Ergebnis Kriterium Preis (Zwischenergebnis2)
+Ergebnis Kriterium Preis (Zwischenergebnis)
+Angebot wie LV
+Besser als LV
+Mindestanforderungen
+Bitte eine Alternative wählen
+Angebot wie LV
+Besser als LV
+Mindestanforderungen
+Nicht erfüllt
+Erreichte Punktzahl (0 bis 10)
+Erreichte Punktzahl (gewichtet)
+Zwischenergebnis
+Beschreibung des Bepunktung des Preiskriteriums bei niedrigstem Preis
+Beschreibung des Bepunktung des Preiskriteriums bei höchsten Preis
+Energieeffizienzniveau (0 bis 10)
+Erreichte Punktzahl (gewichtet)
+Bezeichnung des Nebenangebots
+Bitte eine Alternative wählen
+Sondervorschlag (Betrag ist Angebotssumme)
+Änderungsvorschlag (Betrag ist Änderung +/-)
+Preisnachlass mit Bedingung
+Begründung der Änderung
+Prozentsatz des Rabatts für das Nebenangebot
+Betrag des Rabatts für das Nebenangebot netto
+Betrag des Rabatts für das Nebenangebot brutto
+Nebenangebotssumme inkl. Rabatt brutto
+Nebenangebotssumme inkl. Rabatt netto
+Rang (nur HA und NAoHA)
+Ergebnis (gewichtet)
+Wertigkeitsfaktor Leistung (in %)
+Wertigkeitsfaktor Leistung (in %)
+Wertigkeitsfaktor Preis (in %)
+Wertigkeitsfaktor Preis (in %)
+Maximal erreichbare Leistungspunkte
+Referenzwert Leistungspunkte (in %)
+Referenzwert Preis in Euro
+Bitte eine Alternative wählen
+Reine Preiswertung
+Standard Richtwertmethode
+Erweiterte Richtwertmethode
+Medianmethode (nicht Teil der UfAB 2018)
+Referenzwertmethode (nicht Teil der UfAB 2018)
+Von Fachschnittstelle importierte Langbeschreibung
+ID des Elementes im über die Fachschnittstelle importierten Bill of Quantities
+ID des über die Fachschnittstelle importierten Elementes in einem Drittsystem
+Zusätzliche im Bill of Quantities zum Element hinterlegte Informationen
+Zusatzinformation zum Element aus dem Bill of Quantities
+Anzeige Fremdwährung unterdrücken
+Bewertungsrahmen in Prozent
+Gewichtung in Prozent (Zwischensumme)
+Maximalpunktzahl
+Gewichtungsfaktor
+Bewertungspunkte (0 bis 5)
+Punkteabstand zum wirtschaftlichsten Angebot
+Rang
+Gesamtergebnis
+Gruppensumme
+Gesamtpunkte (Zwischenergebnis)
+Gesamtpunkte
+Gesamtpunkte
+Gesamtpunkte Preiskriteriums (gerundet)
+Gesamtpunkte Preiskriteriums (Zwischenergebnis)
+Gesamtpunkte Preiskriteriums (Zwischenergebnis 2)
+Gesamtpunkte Preiskriteriums (Zwischenergebnis 2)
+Warengruppe (custom)
+Warengruppe 2 (custom)
+Antwort des Bieters
+Ja
+Nein
+Leistungspunkte
+Losaufteilung
+Herstellerliste anzeigen
+Hinweis
+Bitte geben Sie hier an, ob Sie ein Bieter aus Deutschland, der EU oder einem Drittland sind!
+Deutschland
+EU
+Drittland (Nicht EU)
+Angebotswährung
+Kurs (Fremdwährung/EUR)
+Bitte wählen Sie das zu berücksichtigende Skonto!
+Kein Skonto
+Skonto 1
+Skonto 2
+Skonto 1
+Frist zu Skonto 1
+Skonto 2
+Frist zu Skonto 2
+Bitte geben Sie hier den offiziellen Namen des bietenden Unternehmens an!
+Hier können Sie optional einen Namenszusatz angeben.
+Bitte geben Sie hier Strasse und Hausnummer des bietenden Unternehmens an!
+Bitte geben Sie hier das entsprechende Nationalitäts-Kennzeichen des bietenden Unternehmens an!
+Bitte geben Sie hier die Postleitzahl des bietenden Unternehmens an!
+Bitte geben Sie hier den Ort des bietenden Unternehmens an!
+Bitte geben Sie hier die Aufragnehmernummer des bietenden Unternehmens an!
+Bitte geben Sie hier die IBAN des bietenden Unternehmens an!
+Bitte geben Sie hier die BIC des bietenden Unternehmens an!
+Bitte geben Sie hier das Geldinstitut des bietenden Unternehmens an!
+Hier können Sie optional einen Hinweis zu Ihren Angaben erfassen
+Hier können Sie optional einen Hinweis zu Ihren Angaben erfassen
+Mandant
+Hier können Sie optional Ihre Bearbeitungsnummer angeben.
+Hier können Sie optional Ihre Telefonnummer angeben.
+Hier können Sie optional den Namen des Bearbeiters (z.B. für Rückfragen) angeben.
+Bitte geben Sie hier das Datum des Angebots ein!
+Datumsformat ist falsch
+Datum ist außerhalb des erlaubten Bereichs
+Bitte geben Sie hier die Bindefrist ein!
+Datumsformat ist falsch
+Datum ist außerhalb des erlaubten Bereichs
+Hier können Sie den Versandort angeben.
+Bitte wählen Sie hier die zutreffene Lieferklausel aus!
+Die auf Kopfebene ausgewählte Standard-Lieferklausel
+Bitte wählen Sie hier den zutreffenden Preistyp aus!
+Die auf Kopfebene ausgewählte Standard-Lieferklausel
+Rabatt %
+Rabatt absolut
+Zuschlag %
+Zuschlag absolut
+Zuschlag absolut
+Zuschlag absolut
+Zuschlag absolut
+Summe Kopfkonditionen bei gesamtangebotsbezogener Vergabe
+Geschätzte Nettosumme in Euro
+Geschätzte Bruttosumme in Euro
+Nettogruppensumme inkl. Nachlass (Teilergebnis)
+Basispreis
+Bruttogruppensumme inkl. Nachlass (Teilergebnis)
+Bruttogruppensumme ohne Skonto
+Nettogruppensumme ohne Skonto
+Limit (Brutto)
+Geschätzter Umsatzsteuersatz für Limit (%)
+Ordnungszahl
+Geschätzter Nettopreis in Euro
+Geschätzter Umsatzsteuersatz (%)
+Geschätzter Bruttopreis in Euro
+Geschätzte Nettosumme in Euro
+Geschätzte Bruttosumme in Euro
+Preiseinheit
+Angegebener Preis in Angebotswährung
+Verpackungsstufe
+Grundpackung
+Sammelpackung
+Steuerschlüssel QM
+Steuerschlüssel QM (Beschreibung)
+BANF Belegnummer/Position
+Nummer der Position
+Zeilennummer
+Zeilentyp
+Zeilentyp
+Zeilentyp
+Zeilentyp
+Kennzeichen für Gefahrgut
+Sonstige Angaben zur Anfrageposition
+Langbeschreibung
+Geforderte Menge
+Angebotene Menge
+Bestellmengeneinheit
+>
+Gesamtbasispreis
+Gesamtbasispreis
+Rabatt % aus Kopfebene
+Betrag Rabatt absolut aus Kopfebene
+Betrag Rabatt absolut aus Kopfebene
+Rabatt absolut aus Kopfebene
+Zuschlag % aus Kopfebene
+Betrag Zuschlag % aus Kopfebene
+Betrag Zuschlag % aus Kopfebene
+Zuschlag absolut aus Kopfebene
+Betrag Kopfkonditionen
+Betrag Kopfkonditionen
+Betrag Kopfkonditionen
+Zwischensumme nach Kopfkonditionen
+Zwischensumme nach Kopfkonditionen
+Zwischensumme nach Kopfkonditionen
+Betrag Rabatt %
+Betrag Zuschlag %
+Betrag Konditionen auf Gesamtbasispreis
+Basispreis inkl. Kopfkonditionen und Konditionen auf Basispreis
+Sollen auf Zwischensumme 1 weitere Konditionen angewendet werden?
+Rabatt % auf Zwischensumme 1
+Rabatt absolut auf Zwischensumme 1
+Zuschlag % auf Zwischensumme 1
+Zuschlag absolut auf Zwischensumme 1
+Betrag Rabatt % auf Zwischensumme 1
+Betrag Zuschlag % auf Zwischensumme 1
+Betrag Konditionen auf Zwischensumme 1
+Zwischensumme 2
+Sollen auf Zwischensumme 2 weitere Konditionen angewendet werden?
+Rabatt % auf Zwischensumme 2
+Rabatt absolut auf Zwischensumme 2
+Zuschlag % auf Zwischensumme 2
+Zuschlag absolut auf Zwischensumme 2
+Betrag Rabatt % auf Zwischensumme 2
+Betrag Zuschlag % auf Zwischensumme 2
+Betrag Konditionen auf Zwischensumme 2
+Nettosumme
+Nettosumme
+Nettosumme
+Frachtkosten Betrag
+Frachtkosten % Nettosumme
+Verpackung
+Versandkosten
+Nettosumme
+Frachtkosten %
+Betrag Rabatt % auf Zwischensumme 2
+Betrag Zuschlag % auf Zwischensumme 2
+Betrag Konditionen auf Nettosumme
+Betrag Konditionen auf Nettosumme
+Betrag Konditionen auf Nettosumme
+Nettosumme inkl. Fracht
+Zoll Drittland %
+Zoll Drittland absolut
+Zoll Drittland % aus Kopfebene
+Betrag Zoll Drittland %
+Betrag Zoll Drittland % aus Kopfebene
+Betrag Zoll
+Berechnungsbasis Steuer
+Steuer Kennzeichen
+Steuer Kennzeichen
+Steuer Kennzeichen
+Steuer Prozent Kopfebene
+Steuer Kennzeichen aus Kopfebene
+Relevantes Steuer Kennzeichen
+Relevantes Steuer Kennzeichen
+Steuer Prozent
+Steuer Prozent
+Frachtkosten Inland
+Betrag Frachtkosten Inland
+MWSt Fracht Inland
+MWSt % Fracht Inland
+Steuer Absolut
+Effektivpreis in Landeswährung
+Netto-Effektivpreis in Landeswährung
+Preis in Euro
+Preis in Euro Netto
+Nettopreis in Euro
+Berücksichtigtes Skonto aus Kopfebene
+Skontobetrag
+Skontobetrag Netto
+Preis für Wertung in EUR
+Einzel-Vergleichspreis in EUR
+Gesamtvergleichspreis (Netto) in Euro
+Gesamtvergleichspreis in Euro
+Anfragenummer SAP-System
+BEARBNR
+Erstelldatum
+Datumsformat ist falsch
+Datum ist außerhalb des erlaubten Bereichs
+Rang
+Minimum
+Abweichung von Minimum (EUR)
+Abweichung von Minimum (%)
+Durchschnitt
+Abweichung von Durchschnitt (EUR)
+Abweichung von Durchschnitt (%)
+Maximum
+Geforderter Liefertermin
+Datumsformat ist falsch
+Datum ist außerhalb des erlaubten Bereichs
+Empfängernummer
+Empfänger bzw. Leistungsort
+Angebotener Liefertermin
+Datumsformat ist falsch
+Datum ist außerhalb des erlaubten Bereichs
+Angebotener Liefertermin
+Datumsformat ist falsch
+Datum ist außerhalb des erlaubten Bereichs
+Der auf Kopfebene ausgewählte Liefertermin
+Belegnummer der letzten Bestellung
+Bestelldatum der letzten Bestellung
+Datumsformat ist falsch
+Datum ist außerhalb des erlaubten Bereichs
+Kreditorennummer der letzten Bestellung
+Bestellmenge der letzten Bestellung
+Bestellmengeneinheit aus Vorbeschaffung
+Verpackungsstufe der letzten Bestellung
+Gesamtpreis der letzten Bestellung (mit USt.)
+Einzelpreis der letzten Bestellung (ohne USt.)
+Preiseinheit der letzten Bestellung
+Preisstellung der letzten Bestellung
+Preistyp der letzten Bestellung
+zusätzliche Forderungen 1
+zusätzliche Forderungen 2
+Ergänzungen
+Ergänzung
+Versorgungsartikelnr.
+Wirtschaftsnummer
+Name des Herstellers
+Artikelnummer des Herstellers
+Materialart
+Versorgungsartikelnr.
+Name des Herstellers
+Artikelnummer des Herstellers
+Abweichender Versorgungsartikel
+Abweichender Hersteller
+Abweichendes TKZ
+Abweichendes Material
+Artikelnummer des Schadmaterials
+Leistungsnummer
+Warengruppe
+Warengruppenlangbezeichnung
+Positionstyp
+Ergebnis Kriterium Preis
+Zwischenergebnis
+Hilfswert zuZwischenergebnis
+Hilfswert zuZwischenergebnis
+Zwischenergebnis
+Bewertungsgrundlage für das Preiskriterium
+Hilfswert: Bewertungsgrundlage für das Preiskriterium
+Hilfswert: Bewertungsgrundlage für das Preiskriterium
+Minimum des Gruppeneinzelpreises
+Maximum des Gruppeneinzelpreises
+Summe der Einzelpreise
+Optionales Skonto (%)
+Gewährte Zahlungsfrist für Skonto 1 in Tagen
+Optionales Skonto (%)
+Gewährte Zahlungsfrist für Skonto 2 in Tagen
+Gesamtsumme der Änderung netto (Euro)
+Umsatzsteuersatz (%)
+Gesamtsumme der Änderung brutto (Euro)
+Bruttowertungssumme
+Bruttowertungssumme (Teilergebnis)
+Zwischenfeld für den Zugriff auf den Einzelpreis. Ist das Feld an dieser Stelle nicht im LV-XML enthalten, wird kein Ergebnis zurückgegeben.
+Zwischenfeld für den Zugriff auf die Positionssumme. Ist das Feld an dieser Stelle nicht im LV-XML enthalten, wird kein Ergebnis zurückgegeben.
+Zwischenfeld für den Zugriff auf PRICE_AMOUNT_EUR. Ist das Feld an dieser Stelle nicht im LV-XML enthalten, wird kein Ergebnis zurückgegeben.
+Bruttogruppensumme inkl. Nachlass (Zwischenergebnis)
+Nr.
+Bezeichnung
+Geschätzter Nettopreis
+Bestellmenge
+Bestelleinheit
+Nettosumme geschätzt
+Nr.
+Bezeichnung
+Angebotener Liefertermin
+Basispreis
+Preiseinheit
+Bestellmenge
+Bestelleinheit
+Gesamtvergleichspreis in Euro
+$ICON
+REFERENCE_NO
+QUESTIONAIRE_TITLE
+$ICON
+@caption
+$ICON
+POSNR
+DESCRIPTION_SHORT
+ARTICLE_PRICE/ASSUMED_PRICE_AMOUNT
+ARTICLE_PRICE/ASSUMED_QUANTITY
+ARTICLE_PRICE/ORDER_UNIT
+ARTICLE_PRICE/ASSUMED_ITEM_SUM
+$ICON
+POSNR
+DESCRIPTION_SHORT
+REQUEST/DELIVERY_DATE
+ARTICLE_PRICE/UNIT_PRICE
+ARTICLE_PRICE/PRICE_UNIT
+ARTICLE_PRICE/QUANTITY
+ARTICLE_PRICE/ORDER_UNIT
+ARTICLE_PRICE/BRUTTO_ITEM_SUM_AT_DISCOUNT
+$ICON
+POSNR
+DESCRIPTION_SHORT
+ASSUMED_GROUP_SUM|ARTICLE_PRICE/ASSUMED_GROUP_SUM
+$ICON
+POSNR
+DESCRIPTION_SHORT
+BRUTTO_GROUP_SUBTOTAL_AT_DISCOUNT
+
+===== metadata.xml =====
+LV
+true
+28.10.2026 07:28
+AI VERGABEMANAGER Version 9.10.2
+R9.10.2-B20260622-1
+54321-Tender-1a1547015cf-653acda478d996db
+die Bundeswehr
+false
+false
+false
+3

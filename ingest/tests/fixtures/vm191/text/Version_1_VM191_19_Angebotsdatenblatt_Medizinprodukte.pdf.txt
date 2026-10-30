@@ -1,0 +1,78 @@
+[page 1]
+Anlage zur Angebotsaufforderung – Angebotsdatenblatt Medizinprodukt 
+Au
+ftragsNr: 
+Pos
+ition in dem Preis- und Produktblatt: 
+1. Al
+lgemeines
+Firmenname des Auftragnehmers 
+Adresse des Auftragnehmers 
+Firmenname des Herstellers 
+2. Medi
+zinprodukt
+Artikelbezeichnung 
+Artikel-/Bestell-/Ident-Nr. 
+des Auftragnehmers 
+Artikel-/Bestell-/Ident-Nr. 
+des Herstellers (wenn abweichend) 
+CE-Kennzeichen Ja Nein 
+Verfalldatiertes Produkt Ja Nein 
+Verfalldatum ab Wareneingang 
+Pharmazentralnummer (sofern vorhanden) 
+Angabe Risikoklasse nach Anhang IX RL 
+93/42 EWG bzw. Verordnung EU 2017/745 
+(MDR) 
+In-vitro-Diagnostikum (IVD) Ja Nein 
+Wenn IVD, welche Kategorie nach Anhang II 
+RL 98/79/EG bzw. Verordnung EU 2017/746 
+(IVDR) 
+Steriles Produkt Ja Nein 
+____
+________________________________________________________________________________________  
+1 Für jeden Artikel ist ein separates Angebotsdatenblatt auszufüllen
+ Ja  Nein
+
+[page 2]
+3. B
+asismengeneinheit des Produktes
+(im Zweifel zutreffendste Einheit ankreuzen)
+Each (z.B. Tablette, Wattestäbchen…) 
+Flasche (z.B. Desinfektionsmittel, Flüssigkeiten) 
+Tube (z.B. Creme) 
+Dose, Kanna (z.B. Eisspray) 
+Ampulle 
+Rolle (z.B. Verbandrolle) 
+Paar (z.B. Handschuhe, Kompressionsstrümpfe) 
+Set/Behandlungseinheit 
+Beutel, Tasche (z.B. Urinbeutel) 
+Box 
+4. G
+rundpackung (erste Umverpackung der Basismengeneinheit)
+Anzahl der Basismengeneinheit in der 
+Grundpackung 
+Enthält die Grundpackung eine 
+Gebrauchsinformation? 
+ Ja  Nein 
+Gewicht Packung mit Inhalt [Gramm] 
+Länge X Breite X Höhe [mm] 
+EAN / UPC Code 
+5. S
+ammelpackung (wenn vorhanden)
+Anzahl der Grundpackungen pro 
+Sammelpackung 
+Gewicht Packung mit Inhalt [Gramm] 
+Länge x Breite x Höhe [mm] 
+EAN / UPC Code
+
+[page 3]
+6. Versandpackung 
+ 
+Anzahl der Grundpackung pro 
+Versandpackung 
+ 
+Anzahl Paletten  
+Länge x Breite x Höhe [mm]  
+ 
+ 
+7. Besonderheiten/Anmerkungen

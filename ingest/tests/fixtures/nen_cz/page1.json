@@ -1,0 +1,143 @@
+[
+ {
+  "id": "fb27e4b8-b86a-484b-90ae-c381fd9e33fd",
+  "submissionVersion": "/api/submission_versions/4b45dadd-d251-4672-b356-dfc5baac3866",
+  "form": "/api/forms/20100a01-c48f-4211-8242-7ec5104462fe",
+  "formSchemaVersion": "/api/form_schema_versions/23399c76-ee07-42f3-b28a-e0f22361eaf1",
+  "organization": "/api/organizations/7f71575b-f210-4304-af40-1ed32addfe5f",
+  "data": {
+   "verzeSdk": "1.13.2",
+   "evCisloTed": "755935-2026",
+   "zadavatele": [
+    {
+     "ico": "70994234",
+     "nazev": "Správa železnic, státní organizace"
+    }
+   ],
+   "zdrojPodani": {
+    "id": "WEB-hawuyv",
+    "typ": "WEB",
+    "uzivatelVvzLogin": "hawuyv"
+   },
+   "nazevZakazky": "Železniční uzel Brno, etapa Heršpice a Osobní nádraží",
+   "uverejnitTed": true,
+   "uverejnitVvz": true,
+   "druhFormulare": "17",
+   "zakazkaZrusena": false,
+   "datumPrijetiVvz": "2026-10-29T13:26:47+01:00",
+   "datumOdeslaniTed": "2026-10-29T13:26:50+01:00",
+   "formularOpravuje": true,
+   "evCisloZakazkyVvz": "Z2026-052914",
+   "datumUverejneniTed": "2026-10-30T05:00:36+01:00",
+   "datumUverejneniVvz": "2026-10-30T08:02:56+01:00",
+   "formularZneplatnen": false,
+   "lhutaUverejneniTed": "2026-11-02T02:00:00+01:00",
+   "lhutaUverejneniVvz": "2026-10-30T23:59:00+01:00",
+   "lhutaNabidkyZadosti": "2027-01-04T09:00:00+01:00",
+   "uzivatelskyNazevFormulare": "17 Oznámení o zahájení zadávacího řízení – sektorová veřejná zakázka",
+   "evCisloVvzSouvisejicihoFormulare": "F2026-058015"
+  },
+  "dataHash": "4263269aec19bd49cbb9db1e446727643ebdaaf697b487a0ab1edcfe7a27e8c7",
+  "workflowPlaceCode": "UVEREJNENO_VVZ",
+  "variableId": "F2026-059405",
+  "relatedId": "12dd28c7-7474-4df5-8104-d14dc2a9ea73",
+  "publicId": "Ry8XtwZV9AhUzY84FrDrik0QijdmqEUC",
+  "version": 9,
+  "validityPeriod": "2026-10-29T07:38:54+01:00/",
+  "createdAt": "2026-10-29T07:38:54+01:00",
+  "updatedAt": "2026-10-30T08:02:56+01:00"
+ },
+ {
+  "id": "ff68eb02-6915-4517-9d0f-6ecbdc001520",
+  "submissionVersion": "/api/submission_versions/5e34e40c-3401-4d0f-9372-59283d9a91a4",
+  "form": "/api/forms/20100a01-c48f-4211-8242-7ec5104462fe",
+  "formSchemaVersion": "/api/form_schema_versions/23399c76-ee07-42f3-b28a-e0f22361eaf1",
+  "organization": "/api/organizations/c14c8b46-1c84-4a6f-b106-4e258d820d57",
+  "data": {
+   "verzeSdk": "1.13.2",
+   "zadavatele": [
+    {
+     "ico": "05147581",
+     "nazev": "TOMVIK s.r.o."
+    }
+   ],
+   "zdrojPodani": {
+    "id": "WEB-tyehok",
+    "typ": "WEB",
+    "uzivatelVvzLogin": "tyehok"
+   },
+   "nazevZakazky": "Polyfunkční dům pro seniory - stavební úpravy, přístavba a změna užívání objektu",
+   "uverejnitTed": false,
+   "uverejnitVvz": true,
+   "druhFormulare": "16",
+   "zakazkaZrusena": false,
+   "datumPrijetiVvz": "2026-10-30T08:50:42+01:00",
+   "formularOpravuje": false,
+   "evCisloZakazkyVvz": "Z2026-059579",
+   "datumUverejneniVvz": "2026-10-30T09:00:02+01:00",
+   "formularZneplatnen": false,
+   "lhutaUverejneniVvz": "2026-11-04T23:59:00+01:00",
+   "lhutaNabidkyZadosti": "2026-12-02T09:00:00+01:00",
+   "uzivatelskyNazevFormulare": "16 Oznámení o zahájení zadávacího řízení – obecná veřejná zakázka"
+  },
+  "dataHash": "727317d6eb0f3a2d0e04009117f65aff9ed33ada10ac9c0557201b45de61e4cc",
+  "workflowPlaceCode": "UVEREJNENO_VVZ",
+  "variableId": "F2026-059579",
+  "relatedId": "a131455f-fe14-49cf-89d6-e7816edc0b04",
+  "publicId": "tgHA6IxqqpqX2NRQ7QXW9nV3B85fFnyC",
+  "version": 5,
+  "validityPeriod": "2026-10-29T13:21:06+01:00/",
+  "createdAt": "2026-10-29T13:21:06+01:00",
+  "updatedAt": "2026-10-30T09:00:02+01:00"
+ },
+ {
+  "id": "bf34d7a4-7edb-48e8-9ab6-1d57beac193d",
+  "submissionVersion": "/api/submission_versions/fcf01240-7f4d-46d0-9068-77a00655a6b4",
+  "form": "/api/forms/20100a01-c48f-4211-8242-7ec5104462fe",
+  "formSchemaVersion": "/api/form_schema_versions/23399c76-ee07-42f3-b28a-e0f22361eaf1",
+  "organization": "/api/organizations/1b2fcb37-fdcc-4238-888c-cd50aaf9b7d2",
+  "data": {
+   "verzeSdk": "1.13.2",
+   "dodavatele": [
+    {
+     "ico": "14429837",
+     "nazev": "HR stav KV s.r.o."
+    }
+   ],
+   "zadavatele": [
+    {
+     "ico": "00254843",
+     "nazev": "Město Ostrov"
+    }
+   ],
+   "zdrojPodani": {
+    "id": "WEB-ztbqrg",
+    "typ": "WEB",
+    "uzivatelVvzLogin": "ztbqrg"
+   },
+   "nazevZakazky": "Komplexní revitalizace veřejného prostoru a realizace biatlonového tréninkového centra – 1. ETAPA",
+   "uverejnitTed": false,
+   "uverejnitVvz": true,
+   "druhFormulare": "38",
+   "zakazkaZrusena": false,
+   "datumPrijetiVvz": "2026-10-30T13:36:52+01:00",
+   "formularOpravuje": false,
+   "evCisloZakazkyVvz": "Z2026-037588",
+   "datumUverejneniVvz": "2026-10-30T13:40:01+01:00",
+   "formularZneplatnen": false,
+   "lhutaUverejneniVvz": "2026-11-04T23:59:00+01:00",
+   "uzivatelskyNazevFormulare": "38 Oznámení o změně závazku ze smlouvy – obecná VZ - D2",
+   "evCisloVvzSouvisejicihoFormulare": "F2026-037588"
+  },
+  "dataHash": "9d10915f972030919b2d028ebb7f3374e2288e4d68d32768142ea20d73483938",
+  "workflowPlaceCode": "UVEREJNENO_VVZ",
+  "variableId": "F2026-059731",
+  "relatedId": "7753b44c-82c8-4528-b2f3-9a3b731cb7a0",
+  "publicId": "LKpIoQoQG1jFgyfwsA89QP0zLZkn1zOq",
+  "copyFromSubmissionVersion": "/api/submission_versions/c22e8c20-325f-4f2e-b083-d96977b392a3",
+  "version": 5,
+  "validityPeriod": "2026-10-26T14:46:42+01:00/",
+  "createdAt": "2026-10-26T14:46:42+01:00",
+  "updatedAt": "2026-10-30T13:40:01+01:00"
+ }
+]

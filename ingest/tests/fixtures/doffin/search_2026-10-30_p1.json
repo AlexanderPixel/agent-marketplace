@@ -1,0 +1,74 @@
+{
+ "numHitsTotal": 1,
+ "numHitsAccessible": 1,
+ "hits": [
+  {
+   "id": "2026-116856",
+   "buyer": [
+    {
+     "id": "bed87b482aba566c9511f70f17cf6dc3",
+     "organizationId": "916075855",
+     "name": "FORSVARSMATERIELL"
+    }
+   ],
+   "heading": "Arbeidsplattformer for MH-60R Seahawk",
+   "description": "Design og produksjon av arbeidsplattformer for vedlikehold av MH-60R Seahawk.",
+   "locationId": [
+    "NO072"
+   ],
+   "estimatedValue": {
+    "currencyCode": "NOK",
+    "amount": 22500000.0
+   },
+   "type": "ANNOUNCEMENT_OF_CONCLUSION_OF_CONTRACT",
+   "allTypes": [
+    "ANNOUNCEMENT_OF_CONCLUSION_OF_CONTRACT",
+    "RESULT"
+   ],
+   "status": null,
+   "issueDate": "2026-10-28T13:33:56Z",
+   "deadline": null,
+   "sentToTed": true,
+   "publicationDate": "2026-10-30",
+   "placeOfPerformance": [
+    "Troms/Romsa/Tromssa"
+   ],
+   "procurementStrategicLabels": [
+    "ENVIRONMENT_PROCUREMENT"
+   ]
+  }
+ ],
+ "facets": {},
+ "activeFacets": {
+  "buyer": {
+   "items": []
+  },
+  "winner": {
+   "items": []
+  },
+  "cpvCodes": {
+   "items": []
+  },
+  "status": {
+   "items": []
+  },
+  "type": {
+   "items": []
+  },
+  "locations": {
+   "items": []
+  },
+  "cpvCodesLabel": {
+   "items": []
+  },
+  "cpvCodesId": {
+   "items": []
+  },
+  "contractNature": {
+   "items": []
+  },
+  "procurementStrategicLabels": {
+   "items": []
+  }
+ }
+}

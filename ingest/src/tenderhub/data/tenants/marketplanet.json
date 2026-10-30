@@ -1,0 +1,14 @@
+[
+ {
+  "tenant": "oneplace.marketplanet.pl",
+  "notices": 48,
+  "example_url": "https://oneplace.marketplanet.pl/",
+  "buyer": "REMONDIS Aqua Trzemeszno Sp. z o.o."
+ },
+ {
+  "tenant": "pi.marketplanet.pl",
+  "notices": 2,
+  "example_url": "https://pi.marketplanet.pl/strefapzp/",
+  "buyer": "Regionalne Centrum Krwiodawstwa i Krwiolecznictwa im. prof. dr hab. Tadeusza Dorobisza we Wrocławiu"
+ }
+]

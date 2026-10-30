@@ -1,0 +1,207 @@
+{
+ "results": [
+  {
+   "id": "11b9e5d3-1f5b-5a8e-adc8-2c28335300a4",
+   "score": null,
+   "accuracy": null,
+   "is_reference_match": false,
+   "highlight": {
+    "title": [],
+    "organization_name": []
+   },
+   "debug": null
+  },
+  {
+   "id": "6f559f47-6760-5211-856f-85bf896fe7f7",
+   "score": null,
+   "accuracy": null,
+   "is_reference_match": false,
+   "highlight": {
+    "title": [],
+    "organization_name": []
+   },
+   "debug": null
+  }
+ ],
+ "pagination": {
+  "page": 1,
+  "page_size": 2,
+  "total_count": 21,
+  "total_pages": 11,
+  "has_more": true,
+  "offset": 0
+ },
+ "semantic_filters": {
+  "cpv_codes": null,
+  "locality": {
+   "kind": null,
+   "locality": null
+  },
+  "contract_nature": null
+ },
+ "industry_aggregations": [
+  {
+   "name": "inne",
+   "count": 1
+  },
+  {
+   "name": "oprogramowanie_licencje_i_systemy_it",
+   "count": 1
+  }
+ ],
+ "tenders": [
+  {
+   "enrichment": {
+    "tags": [
+     "pojemniki na napoje",
+     "butelki na napoje",
+     "termosy obiadowe"
+    ],
+    "platformName": "openNexus",
+    "industry": "inne",
+    "nuts3": [
+     "PL926"
+    ]
+   },
+   "tenderResult": null,
+   "id": "11b9e5d3-1f5b-5a8e-adc8-2c28335300a4",
+   "createdAt": "2026-10-29T10:59:10+01:00",
+   "provider": "pz",
+   "cpvCodes": [
+    "39221130"
+   ],
+   "publicationDate": "2026-10-29T10:00:00+01:00",
+   "submittingOffersDeadline": "2026-10-29T10:35:00+01:00",
+   "realizationDeadline": null,
+   "offerValidityDeadline": null,
+   "issuers": [
+    {
+     "id": "8c07db06-d450-4b15-9809-9d431916f55f",
+     "createdAt": "2026-10-29T00:00:00+00:00",
+     "title": "Przedsiębiorstwo Gospodarki Komunalnej „Żyrardów” Sp. z o. o.",
+     "taxId": "PL8380007201",
+     "address": {
+      "street": "Czysta 5",
+      "city": "Żyrardów",
+      "postalCode": "96-300",
+      "region": null,
+      "country": null,
+      "nuts3": {
+       "countryCode": null,
+       "subregionCode": null
+      }
+     },
+     "nip": "8380007201",
+     "regon": null,
+     "krs": null
+    }
+   ],
+   "title": "Dostawa termosów Thermos® King Beverage Bottle 1,2 L do PGK \"Żyrardów\" Sp. z o.o.",
+   "description": "<p><span></span></p><p><span>Szanowni Państwo,</span></p><br /><p><span>informujemy o postępowaniu prowadzonym przez Zamawiającego w trybie zgodnym z regulaminem wewnętrznym organizacji.</span></p><p><span>Zapraszamy do złożenia ofert poprzez poniższy formularz elektroniczny.</span></p><br /><p><span>Zastrzegamy, że postępowanie może zakończyć się brakiem wyboru oferty w przypadku:\n- niewystarczających środków na realizację zamówienia,\n- zmianę zapotrzebowania Zamawiającego.</span></p><p><span><a href=\"https://www.youtube.com/watch?v=FteQW-0uSws&amp;t=1s\">Pod linkiem</a> dostępna jest Instrukcja składania ofert dla Wykonawców.</span></p><br /><p><span>W przypadku pytań: </span></p><p><span>- merytorycznych, proszę o kontakt poprzez przycisk \"<strong>Wyślij wiadomość do zamawiającego</strong>\" lub pod nr tel468554041</span></p><p><span>- związanych z obsługą platformy, proszę o kontakt z Centrum Wsparcia Klienta platformy zakupowej Open Nexus czynnym od poniedziałku do piątku w dni robocze, w godzinach od  </span><span>8:00</span><span> do </span><span>17:00</span><span>.</span></p><ul><li><p><span>tel. 22 101 02 02</span></p></li><li><p><span>e-mail: cwk@platformazakupowa.pl</span></p></li></ul><br /><p><span>Zaznaczamy, że oficjalnym potwierdzeniem chęci realizacji zamówienia przez Zamawiającego jest wysłanie zamówienia lub podpisanie umowy. </span></p><p><span>Wiadomości z platformy zakupowej mają charakter informacyjny.</span></p><p>Zgodnie z art. 13 ust. 1 i 2 rozporządzenia Parlamentu\nEuropejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony\nosób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie\nswobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne\nrozporządzenie o ochronie danych) (Dz. Urz. UE L 119 z 04.05.2016, str. 1),\ndalej „RODO\", informuję, że: 1. Administratorem Pani/Pana danych osobowych\njest Przedsiębiorstwo Gospodarki Komunalnej „Żyrardów\" Sp. z o. o. z\nsiedzibą w Żyrardowie przy ul. Czystej 5, nr tel. 46 855 40 41/42, adres email\n: <a href=\"mailto:pgk@pgk.zyrardow\">pgk@pgk.zyrardow</a>; 2. Inspektorem\nochrony danych osobowych u Administratora jest Pani Paulina Sapińska-Szwed, nr.\ntel. 46 855 40 41 wew. 264, adres e-mail: <a href=\"mailto:iod@pgk.zyrardow.pl\">iod@pgk.zyrardow.pl</a>;\n3. Pani/Pana dane osobowe przetwarzane będą na podstawie art. 6 ust. 1 lit. c\nRODO w celu związanym z postępowaniem o udzielenie zamówienia publicznego. 4.\nOdbiorcami Pani/Pana danych osobowych będą osoby lub podmioty, którym\nudostępniona zostanie dokumentacja postępowania w oparciu o art. 8 oraz art. 96\nust. 3 ustawy z dnia 29 stycznia 2004 r. – Prawo zamówień publicznych, dalej\n„ustawa Pzp\"; 5. Pani/Pana dane osobowe mogą być również przekazywane\ninnym podmiotom ( tzw. strona trzecia), które na podstawie przepisów\nszczególnych obowiązującego prawa mogą prowadzić kontrole u Administratora\ndanych osobowych; 6. Pani/Pana dane osobowe będą przechowywane zgodnie z art.\n97 ust. 1 ustawy Pzp, przez okres 4 lat od dnia zakończenia postępowania o\nudzielenie zamówienia, a jeżeli czas trwania umowy przekracza 4 lata, okres\nprzechowywania obejmuje cały czas trwania umowy, z tym zastrzeżeniem, że w\nprzypadku w którym okres przedawnienia roszczeń Administratora wynikających z\numowy będzie dłuższy niż wcześniej określony, wówczas dane osobowe będą\nprzechowywane do dnia zakończenia tego okresu; 7. Dokumenty z Pani/Pana danymi\nosobowymi mogą również być archiwizowane, jeśli wymagać tego będzie szczególny\nprzepis prawa lub prawnie uzasadniony interes Administratora. 8. Pani/Pana dane\nosobowe mogą być również przechowywane dla celów statystycznych, o ile odrębne\nprzepisy tak stanowią; 9. Obowiązek podania przez Panią/Pana danych osobowych\njest wymogiem ustawowym określonym w przepisach ustawy Pzp, związanym z\nudziałem w postępowaniu o udzielenie zamówienia publicznego; konsekwencje\nniepodania określonych danych wynikają z ustawy Pzp; 10. W odniesieniu do\nPani/Pana danych osobowych decyzje nie będą podejmowane w sposób\nzautomatyzowany, stosowanie do art. 22 RODO tj. nie będą podawane procesowi\npozycjonowania; 11. Posiada Pani/Pan: · na podstawie art. 15 RODO prawo dostępu\ndo danych osobowych Pani/Pana dotyczących, przy czym w przypadku gdy wykonanie\nobowiązków, o których mowa w art. 15 ust. 1-3 RODO, wymagałoby niewspółmiernie\ndużego wysiłku, Administrator może żądać od Pani/Pana wskazania dodatkowych\ninformacji mających na celu sprecyzowanie żądania, w szczególności podania\nnazwy lub daty postępowania o udzielenie zamówienia publicznego, · na podstawie\nart. 16 RODO prawo do sprostowania Pani/Pana danych osobowych, przy czym\nskorzystanie z tego uprawnienia nie może naruszać integralności protokołu oraz\njego załączników, a także nie może skutkować zmianą wyniku postępowania o\nudzielenie zamówienia publicznego ani zmianą postanowień umowy zawartej po jego\nzakończeniu w zakresie niezgodnym z ustawą Pzp, · na podstawie art. 18 ust.1\nRODO z wyłączeniem przypadków, o których mowa w art. 18 ust. 2 RODO, prawo\nżądania od Administratora ograniczenia przetwarzania danych osobowych, przy\nczym wniesienie tego żądania przed zakończeniem postępowania o udzielenie\nzamówienia publicznego nie ogranicza przetwarzania danych osobowych do czasu\nzakończenia tego postępowania. Wniesienie żądania, o którym mowa w art. 18 ust.\n1 RODO po zakończeniu postępowania o udzielenie zamówienia publicznego\nspowoduje ograniczenie przetwarzania danych osobowych zawartych w protokole i\nzałącznikach do protokołu, zaś Administrator nie udostępnia tych danych\nzawartych w protokole i w załącznikach do protokołu, chyba że zachodzą\nprzesłanki, o których mowa w art. 18 ust. 2 RODO. 12. Posiada Pan/Pani prawo do\nwniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych, gdy uzna\nPani/Pan, że przetwarzanie danych osobowych Pani/Pana dotyczących narusza\nprzepisy RODO; 13. Nie przysługuje Pani/Panu: · w związku z art. 17 ust. 3 lit.\nb, d lub e RODO prawo do usunięcia danych osobowych; · prawo do przenoszenia\ndanych osobowych, o którym mowa w art. 20 RODO; · na podstawie art. 21 RODO\nprawo sprzeciwu, wobec przetwarzania danych osobowych, gdyż podstawą prawną\nprzetwarzania Pani/Pana danych osobowych jest art. 6 ust. 1 lit. c RODO.</p><p></p>",
+   "sourceExtraData": {
+    "issuerUrl": "https://platformazakupowa.pl/pn/pgk_zyrardow",
+    "externalId": 1400259
+   },
+   "modeIdentifier": null,
+   "websiteUrl": "https://platformazakupowa.pl/transakcja/1400259",
+   "websiteUrls": [
+    "https://platformazakupowa.pl/transakcja/1400259"
+   ],
+   "versionDate": "2026-10-29T10:59:06+01:00",
+   "criteria": [
+    {
+     "name": "Cena",
+     "weight": "100",
+     "description": "Wartość oferty"
+    }
+   ],
+   "status": 2,
+   "contractNature": "supplies",
+   "procedure": "internal",
+   "referenceNumber": "ZW/0244/26/ZM",
+   "originUrls": [
+    "https://platformazakupowa.pl/transakcja/1400259"
+   ],
+   "euFunded": null,
+   "depositRequired": false,
+   "depositDescription": null,
+   "hasResult": false
+  },
+  {
+   "enrichment": {
+    "tags": [
+     "system nadzoru",
+     "oprogramowanie sterujące",
+     "telekomunikacja",
+     "zarządzanie infrastrukturą"
+    ],
+    "platformName": "openNexus",
+    "industry": "oprogramowanie_licencje_i_systemy_it",
+    "nuts3": [
+     "PL841"
+    ]
+   },
+   "tenderResult": null,
+   "id": "6f559f47-6760-5211-856f-85bf896fe7f7",
+   "createdAt": "2026-10-29T14:05:58+01:00",
+   "provider": "pz",
+   "cpvCodes": [],
+   "publicationDate": "2026-10-29T10:07:00+01:00",
+   "submittingOffersDeadline": "2026-10-29T14:00:00+01:00",
+   "realizationDeadline": null,
+   "offerValidityDeadline": null,
+   "issuers": [
+    {
+     "id": "bf557aa0-7aa9-4c7e-a8b1-f383cc1ed673",
+     "createdAt": "2026-10-29T00:00:00+00:00",
+     "title": "Komenda Wojewódzka Policji w Białymstoku",
+     "taxId": "PL5420207868",
+     "address": {
+      "street": "Sienkiewicza 65",
+      "city": "Białystok",
+      "postalCode": "15-003",
+      "region": null,
+      "country": null,
+      "nuts3": {
+       "countryCode": null,
+       "subregionCode": null
+      }
+     },
+     "nip": "5420207868",
+     "regon": null,
+     "krs": null
+    }
+   ],
+   "title": "Aktualizacja oprogramowania systemu dozoru siłowni telekomunikacyjnej TELWIN SCADA",
+   "description": "<p><span></span></p><p><span>Szanowni Państwo,</span></p><br /><p><span>W imieniu ……….......... informujemy o postępowaniu wszystkich solidnych Wykonawców. </span></p><p><span>Zastrzegamy, że postępowanie może zakończyć się brakiem wyboru oferty w przypadku przekroczenia szacowanych środków.</span></p><br /><br /><p><span>W przypadku pytań: </span></p><p><span>- merytorycznych, proszę o kontakt poprzez przycisk \"Wyślij wiadomość\" lub pod nr tel………..........  </span></p><p><span>- związanych z obsługą platformy, proszę o kontakt z Centrum Wsparcia Klienta platformy zakupowej Open Nexus czynnym od poniedziałku do piątku w dni robocze, w godzinach od  </span><span>8:00</span><span> do </span><span>17:00</span><span>.</span></p><ul><li><p><span>tel. 22 101 02 02</span></p></li><li><p><span>e-mail: cwk@platformazakupowa.pl</span></p></li></ul><br /><p><span>Zaznaczamy, że oficjalnym potwierdzeniem chęci realizacji zamówienia przez Zamawiającego jest wysłanie zamówienia lub podpisanie umowy. </span></p><p><span>Wiadomości z platformy zakupowej mają charakter informacyjny.</span></p><p><span><span>Po zakończeniu aukcji należy przesłać podpisany formularz ofertowy na adres marek.garstka@bk.policja.gov.pl</span></span></p><p><span></span></p><p><span><span>termin realizacji do 14 dni r dni od złożenia zlecenia. Termin płatności 30 dni od daty wystawienia faktury .</span></span></p>",
+   "sourceExtraData": {
+    "issuerUrl": "https://platformazakupowa.pl/pn/kwp_bialystok",
+    "externalId": 1399056
+   },
+   "modeIdentifier": null,
+   "websiteUrl": "https://platformazakupowa.pl/transakcja/1399056",
+   "websiteUrls": [
+    "https://platformazakupowa.pl/transakcja/1399056"
+   ],
+   "versionDate": "2026-10-29T14:00:02+01:00",
+   "criteria": [
+    {
+     "name": "Cena",
+     "weight": "100",
+     "description": "Wartość oferty"
+    }
+   ],
+   "status": 2,
+   "contractNature": "supplies",
+   "procedure": "internal",
+   "referenceNumber": "",
+   "originUrls": [
+    "https://platformazakupowa.pl/transakcja/1399056"
+   ],
+   "euFunded": null,
+   "depositRequired": false,
+   "depositDescription": null,
+   "hasResult": false
+  }
+ ]
+}

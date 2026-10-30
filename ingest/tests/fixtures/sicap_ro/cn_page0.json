@@ -1,0 +1,110 @@
+{
+ "total": 3,
+ "items": [
+  {
+   "cNoticeId": 100246682,
+   "noticeId": 101414958,
+   "procedureId": 100335277,
+   "noticeNo": "SCN1181612",
+   "sysNoticeTypeId": 17,
+   "sysNoticeState": {
+    "id": 2,
+    "text": "Publicat",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysProcedureState": {
+    "id": 2,
+    "text": "In desfasurare",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "contractingAuthorityNameAndFN": "4270783 - Ministerul Apararii - Unitatea Militara 01434",
+   "contractTitle": "HOTA PROFESIONALA PENTRU BUCATARIE - 12 CPL",
+   "sysAcquisitionContractType": {
+    "id": 1,
+    "text": "Furnizare",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysProcedureType": {
+    "id": 20,
+    "text": "Procedura simplificata",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysContractAssigmentType": {
+    "id": 1,
+    "text": "Contract de achizitii publice",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "cpvCodeAndName": "39141500-7 - Hote de aspirare (Rev.2)",
+   "estimatedValueRon": 277561.99,
+   "isOnline": true,
+   "hasLots": false,
+   "noticeStateDate": "2026-10-30T15:52:00+02:00",
+   "minTenderReceiptDeadline": "2026-11-13T15:00:00+02:00",
+   "maxTenderReceiptDeadline": "2026-11-13T15:00:00+02:00",
+   "errataNo": 0,
+   "sysNoticeVersionId": 2,
+   "tenderReceiptDeadlineExport": "13.11.2026 15:00",
+   "estimatedValueExport": "277561,99 RON",
+   "sadId": null,
+   "hasAppeal": false
+  },
+  {
+   "cNoticeId": 100213671,
+   "noticeId": 101413851,
+   "procedureId": 100335247,
+   "noticeNo": "CN1097904",
+   "sysNoticeTypeId": 2,
+   "sysNoticeState": {
+    "id": 2,
+    "text": "Publicat",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysProcedureState": {
+    "id": 2,
+    "text": "In desfasurare",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "contractingAuthorityNameAndFN": "4349187 - Ministerul Apararii Nationale - Unitatea Militara 01020",
+   "contractTitle": "Achiziția de acumulatori auto",
+   "sysAcquisitionContractType": {
+    "id": 1,
+    "text": "Furnizare",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysProcedureType": {
+    "id": 1,
+    "text": "Licitatie deschisa",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysContractAssigmentType": {
+    "id": 3,
+    "text": "Acord-cadru",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "cpvCodeAndName": "31400000-0 - Acumulatori, pile galvanice si baterii primare (Rev.2)",
+   "estimatedValueRon": 34251726.9,
+   "isOnline": true,
+   "hasLots": true,
+   "noticeStateDate": "2026-10-30T13:00:21+02:00",
+   "minTenderReceiptDeadline": "2026-12-03T15:00:00+02:00",
+   "maxTenderReceiptDeadline": "2026-12-03T15:00:00+02:00",
+   "errataNo": 0,
+   "sysNoticeVersionId": 2,
+   "tenderReceiptDeadlineExport": "03.12.2026 15:00",
+   "estimatedValueExport": "34251726,9 RON",
+   "sadId": null,
+   "hasAppeal": false
+  }
+ ],
+ "searchTooLong": false
+}

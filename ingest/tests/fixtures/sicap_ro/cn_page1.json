@@ -1,0 +1,58 @@
+{
+ "total": 3,
+ "items": [
+  {
+   "cNoticeId": 100246662,
+   "noticeId": 101414756,
+   "procedureId": 100335233,
+   "noticeNo": "RFQ1000548",
+   "sysNoticeTypeId": 12,
+   "sysNoticeState": {
+    "id": 2,
+    "text": "Publicat",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysProcedureState": {
+    "id": 2,
+    "text": "In desfasurare",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "contractingAuthorityNameAndFN": "4349047 - Unitatea Militara nr. 01969 -Campia Turzii",
+   "contractTitle": "Contract furnizare anvelope aeronave F-16",
+   "sysAcquisitionContractType": {
+    "id": 1,
+    "text": "Furnizare",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysProcedureType": {
+    "id": 9,
+    "text": "Cerere de oferta",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "sysContractAssigmentType": {
+    "id": 1,
+    "text": "Contract de achizitii publice",
+    "localeKey": null,
+    "apiActionResult": null
+   },
+   "cpvCodeAndName": "34731800-8 - Pneuri pentru avioane (Rev.2)",
+   "estimatedValueRon": 729752.0,
+   "isOnline": true,
+   "hasLots": false,
+   "noticeStateDate": "2026-10-30T12:55:55+02:00",
+   "minTenderReceiptDeadline": "2026-11-06T15:00:00+02:00",
+   "maxTenderReceiptDeadline": "2026-11-06T15:00:00+02:00",
+   "errataNo": 0,
+   "sysNoticeVersionId": 2,
+   "tenderReceiptDeadlineExport": "06.11.2026 15:00",
+   "estimatedValueExport": "729752 RON",
+   "sadId": null,
+   "hasAppeal": false
+  }
+ ],
+ "searchTooLong": false
+}

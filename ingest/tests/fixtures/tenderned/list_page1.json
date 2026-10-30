@@ -1,0 +1,91 @@
+{
+ "content": [
+  {
+   "publicatieId": "446894",
+   "publicatieDatum": "2026-10-30",
+   "typePublicatie": {
+    "code": "AAO",
+    "omschrijving": "Aankondiging opdracht"
+   },
+   "aanbestedingNaam": "Onderhoud meet-en regelinstrumenten 2027-2032",
+   "opdrachtgeverNaam": "Waterschap Hollandse Delta",
+   "sluitingsDatum": "2026-11-19T12:00:00",
+   "aantalDagenTotSluitingsDatum": 20,
+   "procedure": {
+    "code": "APE",
+    "omschrijving": "Andere procedure in één fase"
+   },
+   "typeOpdracht": {
+    "code": "D",
+    "omschrijving": "Diensten"
+   },
+   "tsenderNaam": "Mercell",
+   "tsenderLink": "https://s2c.mercell.com/today/215165",
+   "digitaal": false,
+   "europees": true,
+   "publicatiecode": {
+    "code": "EF16",
+    "omschrijving": "Aankondiging van een opdracht - algemene richtlijn, standaardregeling"
+   },
+   "publicatiestatus": {
+    "code": "PUB",
+    "omschrijving": "Gepubliceerd"
+   },
+   "isVroegtijdigeBeeindiging": false,
+   "opdrachtBeschrijving": "Onderhoud meet-en regelinstrumenten 2027-2032 apparatuur Hach Lange",
+   "isEformsWijziging": false,
+   "score": null,
+   "kenmerk": 621709,
+   "link": {
+    "href": "https://www.tenderned.nl/aankondigingen/overzicht/446894",
+    "title": "self"
+   }
+  },
+  {
+   "publicatieId": "440202",
+   "publicatieDatum": "2026-09-17",
+   "typePublicatie": {
+    "code": "AGO",
+    "omschrijving": "Aankondiging gegunde opdracht"
+   },
+   "aanbestedingNaam": "Overeenkomst CTG 5.56mm Blanks",
+   "opdrachtgeverNaam": "Ministerie van Defensie",
+   "procedure": {
+    "code": "OZB",
+    "omschrijving": "Onderhandelingsprocedure zonder voorafgaande oproep tot mededinging"
+   },
+   "typeOpdracht": {
+    "code": "L",
+    "omschrijving": "Leveringen"
+   },
+   "tsenderNaam": "Mercell",
+   "tsenderLink": "https://s2c.mercell.com/today/230327",
+   "digitaal": false,
+   "europees": true,
+   "publicatiecode": {
+    "code": "EF31",
+    "omschrijving": "Aankondiging gegunde opdracht - defensierichtlijn, standaardregeling"
+   },
+   "publicatiestatus": {
+    "code": "PUB",
+    "omschrijving": "Gepubliceerd"
+   },
+   "isVroegtijdigeBeeindiging": false,
+   "opdrachtBeschrijving": "Overeenkomst CTG 5.56mm Blanks t.b.v. Ministerie van Defensie",
+   "isEformsWijziging": false,
+   "score": 15.338583,
+   "kenmerk": 612678,
+   "link": {
+    "href": "https://www.tenderned.nl/aankondigingen/overzicht/440202",
+    "title": "self"
+   }
+  }
+ ],
+ "first": false,
+ "last": true,
+ "totalElements": 5,
+ "totalPages": 2,
+ "size": 3,
+ "numberOfElements": 2,
+ "number": 1
+}

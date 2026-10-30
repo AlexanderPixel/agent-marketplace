@@ -1,0 +1,229 @@
+{
+ "data": {
+  "date": "2026-10-30T16:20:07.933287+02:00",
+  "dateModified": "2026-10-30T16:20:07.933287+02:00",
+  "dateCreated": "2026-10-30T16:14:59.189308+02:00",
+  "tenderID": "UA-2026-10-30-009334-a",
+  "documents": [
+   {
+    "confidentiality": "public",
+    "documentType": "contractProforma",
+    "title_en": "9. Проєкт договору.doc",
+    "title_ru": "9. Проєкт договору.doc",
+    "id": "93be5115c4b146ef912250b6b1d194f2",
+    "datePublished": "2026-10-30T16:15:02.545622+02:00",
+    "title": "Проєкт договору.doc",
+    "format": "application/msword",
+    "url": "https://public-docs.prozorro.gov.ua/get/255cb69c04164f87a4dce55ba5e3fdca?Signature=KHnJtATf8kNNxNSfPgHV6P1Uo8rz%2FeEq0FFRLa845CaXyx09KyxNnBv9tfPCmOSbDPFqzXRTLx1IS3wW03XTDQ%3D%3D&KeyID=52462340",
+    "documentOf": "tender",
+    "dateModified": "2026-10-30T16:15:02.545622+02:00",
+    "author": "tender_owner",
+    "language": "uk"
+   },
+   {
+    "confidentiality": "public",
+    "documentType": "biddingDocuments",
+    "title_en": "9. Оголошення про проведення спрощеної закупівлі.docx",
+    "title_ru": "9. Оголошення про проведення спрощеної закупівлі.docx",
+    "id": "e206118e461b41948c02f0555190c991",
+    "datePublished": "2026-10-30T16:16:12.852235+02:00",
+    "title": "Оголошення про проведення спрощеної закупівлі.docx",
+    "format": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "url": "https://public-docs.prozorro.gov.ua/get/5789507e0f4f4af083d3f72907614a71?Signature=eTxDCQQ9V4vlRS8RiQBzj%2FPqJbtUXfqVyYdkQ%2F5oIpZwGHUargyyOwgDtoJCvvT4hmoOxGktoG07mfIrTSFzAg%3D%3D&KeyID=52462340",
+    "documentOf": "tender",
+    "dateModified": "2026-10-30T16:16:12.852235+02:00",
+    "author": "tender_owner",
+    "language": "uk"
+   },
+   {
+    "confidentiality": "public",
+    "documentType": "notice",
+    "title_en": "sign.p7s",
+    "title_ru": "sign.p7s",
+    "id": "42bbadda75c448769c442170e0a718ff",
+    "datePublished": "2026-10-30T16:19:53.442378+02:00",
+    "title": "sign.p7s",
+    "format": "application/pkcs7-signature",
+    "url": "https://public-docs.prozorro.gov.ua/get/124564deddb54ab28d19e6d63255f40f?Signature=9y0ayZ9li3voefTqRjh%2BIQPKWceY%2BVkH86qt23WXa39BBs8MEb9yureDXa6b%2B907kv08sDXp1ZUC3fn8uHL1Aw%3D%3D&KeyID=52462340",
+    "documentOf": "tender",
+    "dateModified": "2026-10-30T16:19:53.442378+02:00",
+    "author": "tender_owner",
+    "language": "uk"
+   }
+  ],
+  "status": "active.enquiries",
+  "owner": "netcast.com.ua",
+  "title": "Металопрокат",
+  "mainProcurementCategory": "goods",
+  "procurementMethod": "open",
+  "submissionMethod": "electronicAuction",
+  "guarantee": {
+   "amount": 0.0,
+   "currency": "UAH"
+  },
+  "enquiryPeriod": {
+   "startDate": "2026-10-30T16:14:59.189308+02:00",
+   "endDate": "2026-11-05T16:19:57+02:00",
+   "clarificationsUntil": "2026-11-07T00:00:00+02:00"
+  },
+  "tenderPeriod": {
+   "startDate": "2026-11-05T16:19:57+02:00",
+   "endDate": "2026-11-10T16:19:57+02:00"
+  },
+  "items": [
+   {
+    "id": "bcda0886b6f1eeb4c95f0891e73b1557",
+    "description": "Кутник 40х40х4",
+    "unit": {
+     "name": "метр",
+     "code": "MTR"
+    },
+    "quantity": 1700.0,
+    "classification": {
+     "description": "Сплави",
+     "scheme": "ДК021",
+     "id": "14620000-3"
+    },
+    "deliveryDate": {
+     "endDate": "2026-11-20T16:19:57+02:00"
+    },
+    "deliveryAddress": {
+     "streetAddress": "вулиця Зрошувальна, 19",
+     "region": "м. Київ",
+     "postalCode": "02000",
+     "countryName": "Україна"
+    },
+    "relatedLot": "322d6c59768e77a04126328ea1b604f4"
+   },
+   {
+    "id": "214f2443e3c32b238df1c27543d0f1ee",
+    "description": "Кутник 25х25х3",
+    "unit": {
+     "name": "метр",
+     "code": "MTR"
+    },
+    "quantity": 100.0,
+    "classification": {
+     "description": "Сплави",
+     "scheme": "ДК021",
+     "id": "14620000-3"
+    },
+    "deliveryDate": {
+     "endDate": "2026-11-20T16:19:57+02:00"
+    },
+    "deliveryAddress": {
+     "streetAddress": "вулиця Зрошувальна, 19",
+     "region": "м. Київ",
+     "postalCode": "02000",
+     "countryName": "Україна"
+    },
+    "relatedLot": "322d6c59768e77a04126328ea1b604f4"
+   },
+   {
+    "id": "3ed74e899ac42281f5a309ce5c91f0a3",
+    "description": "Кутник 30х30х4",
+    "unit": {
+     "name": "метр",
+     "code": "MTR"
+    },
+    "quantity": 250.0,
+    "classification": {
+     "description": "Сплави",
+     "scheme": "ДК021",
+     "id": "14620000-3"
+    },
+    "deliveryDate": {
+     "endDate": "2026-11-20T16:19:57+02:00"
+    },
+    "deliveryAddress": {
+     "streetAddress": "вулиця Зрошувальна, 19",
+     "region": "м. Київ",
+     "postalCode": "02000",
+     "countryName": "Україна"
+    },
+    "relatedLot": "322d6c59768e77a04126328ea1b604f4"
+   }
+  ],
+  "procurementMethodType": "belowThreshold",
+  "awardCriteria": "lowestCost",
+  "procuringEntity": {
+   "name": "в/ч А0297",
+   "identifier": {
+    "scheme": "UA-EDR",
+    "id": "08419841",
+    "legalName": "в/ч А0297"
+   },
+   "address": {
+    "streetAddress": "вул. Зрошувальна, буд. 19",
+    "locality": "Київ",
+    "region": "м. Київ",
+    "postalCode": "02000",
+    "countryName": "Україна"
+   },
+   "contactPoint": {
+    "name": "redacted"
+   },
+   "kind": "defense"
+  },
+  "value": {
+   "currency": "UAH",
+   "valueAddedTaxIncluded": true,
+   "amount": 398600.0
+  },
+  "lots": [
+   {
+    "title": "Металопрокат",
+    "status": "active",
+    "id": "322d6c59768e77a04126328ea1b604f4",
+    "date": "2026-10-30T16:14:59.189308+02:00",
+    "value": {
+     "currency": "UAH",
+     "valueAddedTaxIncluded": true,
+     "amount": 398600.0
+    },
+    "minimalStep": {
+     "currency": "UAH",
+     "valueAddedTaxIncluded": true,
+     "amount": 3986.0
+    },
+    "guarantee": {
+     "amount": 0.0,
+     "currency": "UAH"
+    },
+    "auctionPeriod": {
+     "startDate": "2026-11-11T11:45:22.102000+02:00",
+     "shouldStartAfter": "2026-11-11T00:00:00+02:00"
+    }
+   }
+  ],
+  "noticePublicationDate": "2026-10-30T16:20:07.933287+02:00",
+  "next_check": "2026-11-05T16:19:57+02:00",
+  "id": "a679f8889d0d4a18ad2a38f822875be0"
+ },
+ "config": {
+  "hasAwardingOrder": true,
+  "valueCurrencyEquality": true,
+  "hasPreSelectionAgreement": false,
+  "hasTenderComplaints": false,
+  "hasAwardComplaints": false,
+  "hasCancellationComplaints": false,
+  "restricted": false,
+  "hasPrequalification": false,
+  "minBidsNumber": 1,
+  "hasAuction": true,
+  "cancellationComplainDuration": 0,
+  "awardComplainDuration": 2,
+  "clarificationUntilDuration": 1,
+  "tenderComplainRegulation": 0,
+  "qualificationComplainDuration": 0,
+  "qualificationDuration": 0,
+  "hasValueEstimation": true,
+  "hasQualificationComplaints": false,
+  "hasValueRestriction": true,
+  "minTenderingDuration": 2,
+  "hasEnquiries": true,
+  "minEnquiriesDuration": 3,
+  "enquiryPeriodRegulation": 0,
+  "hasMultiSourcing": false
+ }
+}

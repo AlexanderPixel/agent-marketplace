@@ -1,0 +1,349 @@
+[
+ {
+  "id": "aee5b93b-bf2b-435f-a120-dae354c66b37",
+  "parent": "/api/submissions/ff68eb02-6915-4517-9d0f-6ecbdc001520",
+  "submissionVersion": "/api/submission_versions/8183b5cf-1d78-4d80-9de0-0c9ff14bc312",
+  "form": "/api/forms/6ed50246-0fa0-45d9-ac57-ba5d2a53a745",
+  "formSchemaVersion": "/api/form_schema_versions/ae139324-4ca1-497f-bb07-1ccba0797047",
+  "organization": "/api/organizations/c14c8b46-1c84-4a6f-b106-4e258d820d57",
+  "data": {
+   "ND-Root": {
+    "ND-Lot": [
+     {
+      "BT-137-Lot": "LOT-0001",
+      "ND-LotTenderingTerms": {
+       "ND-FSR": {
+        "BT-681-Lot": "false"
+       },
+       "BT-60-Lot": "eu-funds",
+       "BT-63-Lot": "not-allowed",
+       "BT-79-Lot": "t-requ",
+       "BT-98-Lot": {
+        "_value": 120.0,
+        "_unitCode": "DAY"
+       },
+       "ND-LotECatalog": {
+        "BT-764-Lot": "not-allowed"
+       },
+       "ND-PaymentTerms": {
+        "BT-77-Lot": "VIz ZD"
+       },
+       "ND-AwardingTerms": {
+        "ND-LotAwardCriteria": {
+         "ND-LotAwardCriterion": [
+          {
+           "BT-539-Lot": "price",
+           "BT-540-Lot": "Nejnižší hodnocena nejlépe",
+           "BT-734-Lot": "Nabídková cena v Kč bez DPH",
+           "ND-LotAwardCriterionParameters": {
+            "ND-LotAwardWeightCriterionParameter": {
+             "BT-5421-Lot": "per-exa",
+             "BT-541-Lot-WeightNumber": 100.0
+            }
+           }
+          }
+         ]
+        }
+       },
+       "ND-LotEInvoicing": {
+        "BT-743-Lot": "required"
+       },
+       "ND-LotESignature": {
+        "BT-744-Lot": "false"
+       },
+       "ND-LotReviewTerms": {
+        "OPT-301-Lot-ReviewOrg": "ORG-0002",
+        "OPT-301-Lot-ReviewInfo": "ORG-0002",
+        "ND-ReviewPresentationPeriod": {
+         "BT-99-Lot": "Podmínkou pro podání návrhu k ÚOHS je podání námitek k Zadavateli, které je nutné doručit do 15 dnů ode dne, kdy se stěžovatel dozvěděl o domnělém porušení zákona Zadavatelem, nejpozději však do uzavření smlouvy nebo do chvíle, kdy se soutěž o návrh považuje po výběru návrhu za ukončenou.\n\nNámitky p…"
+        }
+       },
+       "ND-TenderRecipient": {
+        "BT-18-Lot": "https://nen.nipez.cz/profil/tomvik"
+       },
+       "ND-PostAwardProcess": {
+        "BT-92-Lot": false,
+        "BT-93-Lot": false
+       },
+       "OPT-301-Lot-AddInfo": "ORG-0001",
+       "ND-TendererLegalForm": {
+        "BT-761-Lot": "false"
+       },
+       "ND-FinancialGuarantee": {
+        "BT-751-Lot": "false"
+       },
+       "ND-LotReservedExecution": {
+        "BT-736-Lot": "no"
+       },
+       "OPT-301-Lot-DocProvider": "ORG-0001",
+       "ND-LotSubmissionLanguage": [
+        {
+         "BT-97-Lot": "CES"
+        }
+       ],
+       "ND-LotProcurementDocument": [
+        {
+         "BT-14-Lot": "non-restricted-document",
+         "BT-15-Lot": "https://nen.nipez.cz/profil/tomvik",
+         "OPT-140-Lot": "1"
+        }
+       ],
+       "ND-SecurityClearanceTerms": {
+        "BT-578-Lot": "false"
+       },
+       "ND-LotReservedParticipation": {
+        "ND-LotReservedProcurement": [
+         {
+          "BT-71-Lot": "none"
+         }
+        ]
+       },
+       "ND-SelectionCriteriaSources": {
+        "ND-SelectionCriteriaSource": [
+         {
+          "BT-821-Lot": "epo-procurement-document"
+         }
+        ]
+       }
+      },
+      "ND-LotProcurementScope": {
+       "BT-21-Lot": "Polyfunkční dům pro seniory - stavební úpravy, přístavba a změna užívání objektu",
+       "BT-22-Lot": "1",
+       "BT-23-Lot": "works",
+       "BT-24-Lot": "Polyfunkční dům pro seniory - stavební úpravy, přístavba a změna užívání objektu",
+       "BT-726-Lot": true,
+       "ND-LotDuration": {
+        "BT-536-Lot": "2027-01-04+01:00",
+        "BT-537-Lot": "2028-12-31+01:00"
+       },
+       "ND-LotValueEstimate": {
+        "BT-27-Lot": {
+         "_value": 63776471.84,
+         "_currencyID": "CZK"
+        }
+       },
+       "ND-LotPlacePerformance": [
+        {
+         "ND-LotPerformanceAddress": {
+          "BT-5071-Lot": "CZ042",
+          "BT-5141-Lot": "CZE"
+         }
+        }
+       ],
+       "ND-LotMainClassification": {
+        "BT-262-Lot": "45000000",
+        "BT-26(m)-Lot": "cpv"
+       },
+       "ND-LotSocialObjectiveType": [
+        {
+         "BT-775-Lot": "work-cond"
+        }
+       ],
+       "ND-StrategicProcurementType": [
+        {
+         "BT-06-Lot": "soc-obj",
+         "BT-777-Lot": "Viz ZD"
+        }
+       ]
+      },
+      "ND-LotTenderingProcess": {
+       "BT-17-Lot": "required",
+       "BT-115-Lot": false,
+       "ND-AuctionTerms": {
+        "BT-767-Lot": false
+       },
+       "ND-PublicOpening": {
+        "BT-132(d)-Lot": "2026-12-02+01:00",
+        "BT-132(t)-Lot": "09:01:00+01:00",
+        "ND-PublicOpeningPlace": {
+         "BT-133-Lot": "Sídlo zadavatele"
+        }
+       },
+       "ND-SubmissionDeadline": {
+        "BT-131(d)-Lot": "2026-12-02+01:00",
+        "BT-131(t)-Lot": "09:00:00+01:00"
+       },
+       "ND-LotFAContractingSystem": {
+        "BT-765-Lot": "none"
+       },
+       "ND-LotDPSContractingSystem": {
+        "BT-766-Lot": "none"
+       }
+      }
+     }
+    ],
+    "BT-01-notice": "32014L0024",
+    "BT-02-notice": "cn-standard",
+    "BT-03-notice": "competition",
+    "BT-04-notice": "a131455f-fe14-49cf-89d6-e7816edc0b04",
+    "BT-701-notice": "ff68eb02-6915-4517-9d0f-6ecbdc001520",
+    "BT-757-notice": "01",
+    "OPT-001-notice": "2.3",
+    "OPT-002-notice": "eforms-sdk-1.13",
+    "BT-05(a)-notice": "2026-10-30+01:00",
+    "BT-05(b)-notice": "08:50:42+01:00",
+    "BT-702(a)-notice": "CES",
+    "ND-RootExtension": {
+     "OPP-070-notice": "16",
+     "ND-Organizations": {
+      "ND-Organization": [
+       {
+        "ND-Company": {
+         "ND-CompanyAddress": {
+          "BT-507-Organization-Company": "CZ053",
+          "BT-512-Organization-Company": "57201",
+          "BT-513-Organization-Company": "Polička",
+          "BT-514-Organization-Company": "CZE",
+          "BT-510(a)-Organization-Company": "Riegrova 46"
+         },
+         "ND-CompanyContact": {},
+         "ND-CompanyLegalEntity": [
+          {
+           "BT-501-Organization-Company": "25937774"
+          }
+         ],
+         "BT-500-Organization-Company": "AREA 2000 s.r.o.",
+         "OPT-200-Organization-Company": "ORG-0001"
+        }
+       },
+       {
+        "ND-Company": {
+         "ND-CompanyAddress": {
+          "BT-507-Organization-Company": "CZ064",
+          "BT-512-Organization-Company": "60200",
+          "BT-513-Organization-Company": "Brno",
+          "BT-514-Organization-Company": "CZE",
+          "BT-510(a)-Organization-Company": "třída Kpt. Jaroše 1926/7"
+         },
+         "ND-CompanyContact": {},
+         "ND-CompanyLegalEntity": [
+          {
+           "BT-501-Organization-Company": "65349423"
+          }
+         ],
+         "BT-500-Organization-Company": "Úřad pro ochranu hospodářské soutěže",
+         "BT-505-Organization-Company": "https://uohs.gov.cz",
+         "OPT-200-Organization-Company": "ORG-0002"
+        }
+       },
+       {
+        "ND-Company": {
+         "ND-CompanyAddress": {
+          "BT-507-Organization-Company": "CZ010",
+          "BT-512-Organization-Company": "19900",
+          "BT-513-Organization-Company": "Praha - Letňany",
+          "BT-514-Organization-Company": "CZE",
+          "BT-510(a)-Organization-Company": "Křivoklátská 455"
+         },
+         "ND-CompanyContact": {},
+         "ND-CompanyLegalEntity": [
+          {
+           "BT-501-Organization-Company": "05147581"
+          }
+         ],
+         "BT-500-Organization-Company": "TOMVIK s.r.o.",
+         "OPT-200-Organization-Company": "ORG-0003"
+        },
+        "OPP-051-Organization": false,
+        "OPP-052-Organization": false
+       }
+      ]
+     }
+    },
+    "ND-ProcedureTerms": {
+     "ND-CrossBorderLaw": {
+      "BT-09(a)-Procedure": "CrossBorderLaw",
+      "BT-09(b)-Procedure": "Zákon č. 134/2016 Sb., o zadávání veřejných zakázek"
+     },
+     "ND-LocalLegalBasisNoID": [
+      {
+       "BT-01(e)-Procedure": "LocalLegalBasis",
+       "BT-01(f)-Procedure": "Zákon č. 134/2016 Sb., o zadávání veřejných zakázek"
+      }
+     ],
+     "ND-TendererQualificationRequestSources": {
+      "ND-ExclusionGroundsSource": [
+       {
+        "BT-806-Procedure": "epo-procurement-document"
+       }
+      ]
+     }
+    },
+    "ND-ContractingParty": [
+     {
+      "ND-Buyer": {
+       "ND-ServiceProviderParty": [
+        {
+         "ND-ProviderParty": {
+          "OPT-300-Procedure-SProvider": "ORG-0001"
+         },
+         "OPT-030-Procedure-SProvider": "serv-prov"
+        }
+       ],
+       "OPT-300-Procedure-Buyer": "ORG-0003"
+      },
+      "BT-10-Procedure-Buyer": "soc-pro",
+      "BT-11-Procedure-Buyer": "body-pl-cga",
+      "BT-508-Procedure-Buyer": "https://nen.nipez.cz/profil/tomvik"
+     }
+    ],
+    "ND-ProcedureProcurementScope": {
+     "BT-21-Procedure": "Polyfunkční dům pro seniory - stavební úpravy, přístavba a změna užívání objektu",
+     "BT-22-Procedure": "1",
+     "BT-23-Procedure": "works",
+     "BT-24-Procedure": "Polyfunkční dům pro seniory - stavební úpravy, přístavba a změna užívání objektu",
+     "ND-ProcedureValueEstimate": {
+      "BT-27-Procedure": {
+       "_value": 63776471.84,
+       "_currencyID": "CZK"
+      }
+     },
+     "ND-ProcedureMainClassification": {
+      "BT-262-Procedure": "45000000",
+      "BT-26(m)-Procedure": "cpv"
+     },
+     "OPT-900-Procedure-ValidationAnchor": "_",
+     "ND-ProcedurePlacePerformanceAdditionalInformation": [
+      {
+       "ND-ProcedurePlacePerformance": {
+        "BT-5071-Procedure": "CZ042",
+        "BT-5141-Procedure": "CZE"
+       }
+      }
+     ]
+    },
+    "ND-ProcedureTenderingProcess": {
+     "BT-88-Procedure": "Otevřené řízení dle ZZVZ",
+     "BT-105-Procedure": "open",
+     "ND-AcceleratedProcedure": {
+      "BT-106-Procedure": "false"
+     }
+    }
+   },
+   "metadata": {
+    "subType": "16",
+    "identifikatoryNipez": {
+     "zadavaciPostup": {
+      "identifikatorNipez": "ZP/RVZ2600295922/001"
+     },
+     "identifikatorNipez": "RVZ2600295922",
+     "identifikatoryCasti": [
+      {
+       "idCastiVvz": "LOT-0001",
+       "identifikatorNipez": "RVZ2600295922/001"
+      }
+     ]
+    }
+   }
+  },
+  "dataHash": "2cd38fc45d68e1d4d27549346ec0a3fd05de4ab23ba88b741877965b16e2e4df",
+  "workflowPlaceCode": "UVEREJNENO",
+  "variableId": "Z6TZZ-A80FF",
+  "relatedId": "a131455f-fe14-49cf-89d6-e7816edc0b04",
+  "publicId": "dFPZugPF7lo1yDzQP62kynp3nfSL4hW3",
+  "version": 9,
+  "validityPeriod": "2026-10-29T13:21:07+01:00/",
+  "createdAt": "2026-10-29T13:21:07+01:00",
+  "updatedAt": "2026-10-30T09:00:09+01:00"
+ }
+]

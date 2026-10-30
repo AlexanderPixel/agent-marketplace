@@ -1,0 +1,19 @@
+{
+ "procurementName": "Heakorrateenuse tellimine",
+ "referenceNumber": "304401",
+ "contractingAuthorityName": "Riigi Kinnisvara Aktsiaselts",
+ "contractingAuthorityCode": "10788733",
+ "procedureTypeCode": "DP",
+ "publicationDate": "2026-10-28T07:00:45.045+0200",
+ "isMultiStage": true,
+ "submissionDate": "2026-12-07T11:00:00.000+0200",
+ "submissionDateOpening": "2026-12-07T12:00:00.000+0200",
+ "procurementStateCode": "14",
+ "isGreen": true,
+ "procurementStartBasis": "P",
+ "hasSourceDocuments": true,
+ "showNotStarted": false,
+ "isSuspended": false,
+ "canRegisterToProcurement": true,
+ "contractingAuthorityNameWithCode": "Riigi Kinnisvara Aktsiaselts (10788733)"
+}

@@ -1,0 +1,50 @@
+[
+ {
+  "id": "8bdb26ef-c2a3-42a8-961c-c258ab9cec74",
+  "submissionVersion": "/api/submission_versions/200690f0-5084-4835-aa4f-4697557a30a2",
+  "form": "/api/forms/20100a01-c48f-4211-8242-7ec5104462fe",
+  "formSchemaVersion": "/api/form_schema_versions/23399c76-ee07-42f3-b28a-e0f22361eaf1",
+  "organization": "/api/organizations/9871a1f7-eb2f-48f7-b092-1015dc67e87e",
+  "data": {
+   "verzeSdk": "1.13.2",
+   "dodavatele": [
+    {
+     "ico": "25319540",
+     "nazev": "MESSA Invest s.r.o."
+    }
+   ],
+   "zadavatele": [
+    {
+     "ico": "60252260",
+     "nazev": "Tělocvičná jednota Sokol Jablonec n. Nisou"
+    }
+   ],
+   "zdrojPodani": {
+    "id": "WEB-kcjdfc",
+    "typ": "WEB",
+    "uzivatelVvzLogin": "kcjdfc"
+   },
+   "nazevZakazky": "Revitalizace Sokolovny v Jablonci nad Nisou",
+   "uverejnitTed": false,
+   "uverejnitVvz": true,
+   "druhFormulare": "29",
+   "zakazkaZrusena": false,
+   "datumPrijetiVvz": "2026-10-30T14:59:17+01:00",
+   "formularOpravuje": false,
+   "evCisloZakazkyVvz": "Z2026-059777",
+   "datumUverejneniVvz": "2026-10-30T15:00:02+01:00",
+   "formularZneplatnen": false,
+   "lhutaUverejneniVvz": "2026-11-04T23:59:00+01:00",
+   "uzivatelskyNazevFormulare": "29 Oznámení o výsledku zadávacího řízení – obecná veřejná zakázka"
+  },
+  "dataHash": "a449bea11ea20d25da96feb46bba77ff087b4ca338c5b7a18e07986d93d91a1f",
+  "workflowPlaceCode": "UVEREJNENO_VVZ",
+  "variableId": "F2026-059777",
+  "relatedId": "2415a2f3-0c5f-4169-b6cd-d96390f8f096",
+  "publicId": "0pq9eNTuoRcWbKIk2lBCGmMapRqY1nf5",
+  "version": 5,
+  "validityPeriod": "2026-10-30T14:33:58+01:00/",
+  "createdAt": "2026-10-30T14:33:58+01:00",
+  "updatedAt": "2026-10-30T15:00:02+01:00"
+ }
+]

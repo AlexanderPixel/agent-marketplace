@@ -1,0 +1,19 @@
+{
+ "procurementName": "Meditsiiniseadmete keskse hankimise turu-uuring",
+ "referenceNumber": "317188",
+ "contractingAuthorityName": "Tervisekassa",
+ "contractingAuthorityCode": "74000091",
+ "procedureTypeCode": "TU",
+ "publicationDate": "2026-10-28T14:37:30.030+0200",
+ "isMultiStage": false,
+ "submissionDate": "2026-11-11T11:00:00.000+0200",
+ "submissionDateOpening": "2026-11-11T12:00:00.000+0200",
+ "procurementStateCode": "11",
+ "isGreen": false,
+ "procurementStartBasis": "P",
+ "hasSourceDocuments": true,
+ "showNotStarted": false,
+ "isSuspended": false,
+ "canRegisterToProcurement": true,
+ "contractingAuthorityNameWithCode": "Tervisekassa (74000091)"
+}

@@ -1,0 +1,56 @@
+{
+ "isEditAllowed": false,
+ "isPreparationActivity": false,
+ "isDataEntryCompleted": true,
+ "isPartialChangeActivity": false,
+ "showCost": false,
+ "procurement": {
+  "id": 11006644,
+  "contractingAuthorityId": 159624,
+  "name": "Harjumaa, Saue vald, Maidla küla, Haraka tee 8 ja 10 elektrivarustus (LC5216)",
+  "nameI18n": {},
+  "procedureTypeCode": "VO",
+  "procurementTypeCode": "E",
+  "procurementStateCode": "alustatud",
+  "procurementSectorCode": "V",
+  "procurementSumLimitCode": "1",
+  "isTendersErhr": true,
+  "publishNotice": true,
+  "isElectronicOffer": true,
+  "isEndingWithContractOrAward": false,
+  "procurementStartBasis": "P"
+ },
+ "procurementCpvDtos": [
+  {
+   "id": 6451,
+   "code": "45310000-3",
+   "name": "Elektripaigaldustööd",
+   "stampCre": "2026-10-29T13:39:20.020+0200",
+   "procurementCpvId": 18338639,
+   "orderNr": "0"
+  }
+ ],
+ "notDividedIntoPartsComment": "",
+ "shortDescription": "Hange on välja kuulutatud: Harjumaa, Saue vald, Maidla küla, Haraka tee 8 ja 10 elektrivarustus (LC5216).\n\nEhitada vastavalt projektile ja lisatingimustele. Tööde teostamise lõpptähtaeg on 01.03.2027. \n\n- Arvestid, trafo ja alajaama tellib ELV. Arvestite vajadusest teavitada 2 nädalat ette;\n- arvestada töö mahtude tabeli täiendava märkusega pakkumuse tegemisel: \"Demontaažtöö: Eraldiseisav KP mõõtekamber\". \n\n\n\nVõimalusel ja vajadusel võib lepingu sõlmida ja tööde teostamise/teenuste tellimisega alustada enne hanke kohta üldandmetes avaldatud lepingu kehtivuse eeldatavat algusaega. Hankemenetluse kulgemise pikenemisel üle selle aja võib lepingu sõlmida ja selle täitmisega alustada ka peale üldandmetes avaldatud lepingu kehtivuse eeldatavat algusaega.",
+ "startDate": "2026-11-10T00:00:00.000+0200",
+ "endDate": "2027-03-01T00:00:00.000+0200",
+ "organizationReason": "HL",
+ "isDividedIntoParts": false,
+ "canChangeProcurementParts": false,
+ "isNegotiation": true,
+ "multiStage": 1,
+ "submissionDate": "2026-11-06T11:00:00.000+0200",
+ "submissionDateOpening": "2026-11-06T12:00:00.000+0200",
+ "liablePersonId": 337448,
+ "liablePersonName": "KATRIN UIBO",
+ "isCostClassified": true,
+ "isProcurement": true,
+ "isSingleTendererFrameworkAgr": false,
+ "isMultipleTendererFrameworkAgr": false,
+ "tenderDurationType": "PERIOD",
+ "canEditDuration": false,
+ "mainProcurerName": "Elektrilevi OÜ",
+ "mainProcurerTypeCodes": [
+  "NETWORK"
+ ]
+}

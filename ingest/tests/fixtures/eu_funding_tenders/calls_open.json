@@ -1,0 +1,248 @@
+{
+ "apiVersion": "2.157.1",
+ "terms": "***",
+ "pageNumber": 1,
+ "pageSize": 50,
+ "sort": "[identifier:ASC]",
+ "totalResults": 3,
+ "results": [
+  {
+   "reference": "15861COMPETITIVE_CALLen",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46905650",
+   "summary": "Open Call for Cutting-Edge Defence Solutions",
+   "metadata": {
+    "es_SortDate": [
+     "2026-09-14T00:00:00.000+0000"
+    ],
+    "description": [
+     "<p class=\"ql-align-justify\">The BattleVerse 1st Open Call aims to support the development and validation of innovative technological solutions that contribute to advanced mission planning, simulation, training and execution in defence related environments. Selected applicants will implement a six-month experiment, developing and demonstrating their proposed solution and assessing its potential contribution to the BattleVerse ecosystem.</p><p class=\"ql-align-justify\">Proposals shall address one of the following three technical topics:</p><p class=\"ql-align-justify\"><strong>Topic 1: LLMs for strategic decision-making, symbolic reasoning, game theory and planning under uncertainty.</strong> Exp"
+    ],
+    "language": [
+     "en"
+    ],
+    "title": [
+     "Methods for bridging reality gaps"
+    ],
+    "type": [
+     "8"
+    ],
+    "ccm2Id": [
+     "46905650"
+    ],
+    "DATASOURCE": [
+     "SEDIA"
+    ],
+    "REFERENCE": [
+     "15861COMPETITIVE_CALLen"
+    ],
+    "projectAcronym": [
+     "BATTLEVERSE"
+    ],
+    "callTitle": [
+     "Open Call for Cutting-Edge Defence Solutions"
+    ],
+    "frameworkProgramme": [
+     "44181033"
+    ],
+    "budget": [
+     "1200000"
+    ],
+    "identifier": [
+     "EDF-2024-RA-SIMTRAIN-BRG-STEP"
+    ],
+    "caName": [
+     "Open Call for Cutting-Edge Defence Solutions"
+    ],
+    "es_ContentType": [
+     "text/plain"
+    ],
+    "esDA_FirstIngestDate": [
+     "2026-09-20T13:26:10.138+0200"
+    ],
+    "deadlineDate": [
+     "2026-11-16T18:00:00.000+0000"
+    ],
+    "esDA_IngestDate": [
+     "2026-09-20T13:26:10.138+0200"
+    ],
+    "url": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46905650"
+    ],
+    "esST_URL": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/competitive-calls-cs/46905650"
+    ],
+    "projectName": [
+     "A Human-Centred MSaaS Ecosystem for Enhanced Mission Planning and Execution via Battlefield Modelling, Adversarial AI, and Multi-domain Simulation Environments"
+    ],
+    "projectId": [
+     "101224034"
+    ],
+    "startDate": [
+     "2026-09-14T00:00:00.000+0000"
+    ],
+    "deadlineModel": [
+     "single-stage"
+    ],
+    "status": [
+     "31094502"
+    ]
+   }
+  },
+  {
+   "reference": "51188737TOPICSen",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/EDF-EDIP-P-2026-2027-FNLC-SA-SEAP",
+   "summary": "Support for the functioning of SEAPs, including  for the purpose of establishing, managing and maintaining defence industrial readiness pools",
+   "metadata": {
+    "identifier": [
+     "EDF-EDIP-P-2026-2027-FNLC-SA-SEAP"
+    ],
+    "es_ContentType": [
+     "text/plain"
+    ],
+    "es_SortDate": [
+     "2026-10-13T00:00:00.000+0000"
+    ],
+    "esDA_FirstIngestDate": [
+     "2026-03-31T00:01:23.049+0200"
+    ],
+    "deadlineDate": [
+     "2026-11-12T00:00:00.000+0000",
+     "2027-02-16T00:00:00.000+0000",
+     "2027-09-28T00:00:00.000+0000",
+     "2028-01-27T00:00:00.000+0000",
+     "2028-05-30T00:00:00.000+0000"
+    ],
+    "esDA_IngestDate": [
+     "2026-10-13T18:49:19.209+0200"
+    ],
+    "language": [
+     "en"
+    ],
+    "title": [
+     "Support for the functioning of SEAPs, including  for the purpose of establishing, managing and maintaining defence industrial readiness pools"
+    ],
+    "type": [
+     "1"
+    ],
+    "url": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/EDF-EDIP-P-2026-2027-FNLC-SA-SEAP"
+    ],
+    "typesOfAction": [
+     "EDF Lump Sum Grants"
+    ],
+    "esST_URL": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/EDF-EDIP-P-2026-2027-FNLC-SA-SEAP"
+    ],
+    "ccm2Id": [
+     "51188737"
+    ],
+    "callIdentifier": [
+     "EDF-EDIP-P-2026-2027-FNLC-SA"
+    ],
+    "DATASOURCE": [
+     "SEDIA"
+    ],
+    "REFERENCE": [
+     "51188737TOPICSen"
+    ],
+    "callTitle": [
+     "Continuous call for proposals for supporting actions under the Programme"
+    ],
+    "frameworkProgramme": [
+     "44181033"
+    ],
+    "startDate": [
+     "2026-10-13T00:00:00.000+0000"
+    ],
+    "budgetOverview": [
+     "{\"budgetYearsColumns\":[\"2027\",\"2026\"],\"budgetTopicActionMap\":{\"114366\":[{\"action\":\"EDF-EDIP-P-2026-2027-FNLC-SA-SEAP - EDF-LS EDF Lump Sum Grants\",\"expectedGrants\":0,\"minContribution\":0,\"maxContribution\":0,\"budgetYearMap\":{\"2026\":\"4000000\",\"2027\":\"6000000\"},\"plannedOpeningDate\":\"2026-10-13\",\"deadlineModel\":\"multiple cut-off\",\"deadlineDates\":[\"2026-11-12\",\"2027-02-16\",\"2027-09-28\",\"2028-01-27\",\"2028-05-30\"]}]}}"
+    ],
+    "descriptionByte": [
+     "<p class=\"topicdescriptionkind\">Expected Impact:</p><p>Supported SEAPs are expected to rent office space, recruit personnel and start and uphold operations for a duration of at least one year.</p><p class=\"topicdescriptionkind\">Objective:</p><p>This call aims to provide support for functioning of established SEAPs, including for the purpose of establishing, managing and maintaining defence industrial readiness pools.</p><p class=\"topicdescriptionkind\">Scope:</p><p>Proposals shall aim to support established SEAPs in their initial operations for a duration of at least one year.</p><p><strong>Budget</strong></p><p>The Commission is considering a total budget of EUR 10 000 000 for the call for p"
+    ],
+    "deadlineModel": [
+     "multiple cut-off"
+    ],
+    "status": [
+     "31094502"
+    ]
+   }
+  },
+  {
+   "reference": "51188687TOPICSen",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/EDF-EDIP-USI-2026-LS-IRA-MAB",
+   "summary": "Missiles, ammunition and bombs",
+   "metadata": {
+    "identifier": [
+     "EDF-EDIP-USI-2026-LS-IRA-MAB"
+    ],
+    "es_ContentType": [
+     "text/plain"
+    ],
+    "es_SortDate": [
+     "2026-06-17T00:00:00.000+0000"
+    ],
+    "esDA_FirstIngestDate": [
+     "2026-03-31T00:01:25.309+0200"
+    ],
+    "deadlineDate": [
+     "2026-11-10T00:00:00.000+0000"
+    ],
+    "esDA_IngestDate": [
+     "2026-09-30T14:34:15.228+0200"
+    ],
+    "language": [
+     "en"
+    ],
+    "title": [
+     "Missiles, ammunition and bombs"
+    ],
+    "type": [
+     "1"
+    ],
+    "url": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/EDF-EDIP-USI-2026-LS-IRA-MAB"
+    ],
+    "typesOfAction": [
+     "EDF Lump Sum Grants"
+    ],
+    "esST_URL": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/EDF-EDIP-USI-2026-LS-IRA-MAB"
+    ],
+    "ccm2Id": [
+     "51188687"
+    ],
+    "callIdentifier": [
+     "EDF-EDIP-USI-2026-LS-IRA"
+    ],
+    "DATASOURCE": [
+     "SEDIA"
+    ],
+    "REFERENCE": [
+     "51188687TOPICSen"
+    ],
+    "callTitle": [
+     "1st call for proposals for industrial reinforcement actions under the Ukraine Support Instrument"
+    ],
+    "frameworkProgramme": [
+     "44181033"
+    ],
+    "startDate": [
+     "2026-06-17T00:00:00.000+0000"
+    ],
+    "budgetOverview": [
+     "{\"budgetYearsColumns\":[\"2026\"],\"budgetTopicActionMap\":{\"114364\":[{\"action\":\"EDF-EDIP-USI-2026-LS-IRA-MAB - EDF-LS EDF Lump Sum Grants\",\"expectedGrants\":0,\"minContribution\":0,\"maxContribution\":0,\"budgetYearMap\":{\"2026\":\"180000000\"},\"plannedOpeningDate\":\"2026-06-17\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2026-11-10\"]}]}}"
+    ],
+    "descriptionByte": [
+     "<p class=\"topicdescriptionkind\">Expected Impact:</p><p>Projects are expected to deliver results aligned with the expected results set out in this call topic and to evidence their contribution through dedicated KPIs defined in the proposal. </p><p>Expected results include: </p><p>• demonstrable and sustainable increase in production capacity for the targeted ammunition, bombs and missiles production lines, enabled by operational joint filling plants and production lines; </p><p>• measurable reduction of production lead time from order/production decision to delivery in UA; </p><p>• improved timely availability and supply of defence products for UA, including increased delivery reliability and"
+    ],
+    "deadlineModel": [
+     "single-stage"
+    ],
+    "status": [
+     "31094502"
+    ]
+   }
+  }
+ ]
+}

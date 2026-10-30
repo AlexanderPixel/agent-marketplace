@@ -1,0 +1,42 @@
+{
+ "success": true,
+ "data": [
+  {
+   "id": 5285218,
+   "auction_id": 536470,
+   "user_id": 94990,
+   "account_id": 30019,
+   "contractor_id": null,
+   "auction_stage_id": null,
+   "auction_stage_type_id": null,
+   "type_id": null,
+   "task_attachment_id": null,
+   "attachment_type": 1,
+   "position": 1,
+   "name": "OWD_Dostaw dla PKP TELKOL",
+   "system_name": "20868e2418d185cab4c6bdce98c3cf74.docx",
+   "path": "/30019/auction/536470/",
+   "extension": "docx",
+   "size": 37436,
+   "is_active": true,
+   "antivirus_scan": 1,
+   "file_checksum": "10668258673a28d4f33dccd1b2d3c8f651fb45f2bb1613887e50d2b297124726",
+   "is_public": true,
+   "is_accepted": true,
+   "is_encrypted": false,
+   "is_classified": true,
+   "is_personal_data": false,
+   "is_basic_offer": false,
+   "is_variant_offer": false,
+   "is_shared": false,
+   "is_sent_to_ezd": false,
+   "is_current": true,
+   "signature_data": null,
+   "publication_date": null,
+   "created_at": "2026-10-30 13:55:40",
+   "updated_at": "2026-10-30 13:55:40",
+   "stage_name": "",
+   "type_name": "Załączniki organizatora"
+  }
+ ]
+}

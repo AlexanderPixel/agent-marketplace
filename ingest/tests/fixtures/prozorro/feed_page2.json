@@ -1,0 +1,8 @@
+{
+ "data": [],
+ "next_page": {
+  "offset": "1793370001.0.1.page3cursor",
+  "path": "/api/2.5/tenders?limit=1000&offset=1793370001.0.1.page3cursor",
+  "uri": "https://public-api.prozorro.gov.ua/api/2.5/tenders?limit=1000&offset=1793370001.0.1.page3cursor"
+ }
+}

@@ -1,0 +1,140 @@
+{
+ "uri": "https://www.contractsfinder.service.gov.uk/Published/Notice/releases/c32f774f-8897-4558-8ded-6c499500b751.json",
+ "publishedDate": "2026-10-30T09:14:06Z",
+ "publisher": {
+  "name": "Cabinet Office",
+  "scheme": "GB-GOR",
+  "uid": "D2",
+  "uri": "https://www.gov.uk/government/organisations/cabinet-office"
+ },
+ "version": "1.1",
+ "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+ "publicationPolicy": "https://www.gov.uk/government/publications/open-contracting",
+ "releases": [
+  {
+   "ocid": "ocds-b5fd17-d3a52d5d-ac9d-4c8e-b0b3-2ada94c1e0eb",
+   "id": "c32f774f-8897-4558-8ded-6c499500b751-919787",
+   "language": "en",
+   "date": "2026-10-30T09:14:06Z",
+   "tag": [
+    "tenderAmendment"
+   ],
+   "initiationType": "tender",
+   "tender": {
+    "id": "tender_176932/1621710",
+    "title": "Court Appointed Intermediary Services - Framework Re-Opening October 2026",
+    "description": "This notice relates to the re-opening of framework agreements originally awarded following a procurement exercise conducted under the light tough regime, following a process similar to the open procedure.\r\n\r\nThe Ministry of Justice (MoJ) is inviting tenders for the provision of Court Appointed Intermediary Services (CAIS), to support vulnerable defendants in the criminal jurisdiction and vulnerabl",
+    "datePublished": "2026-10-29T09:50:10Z",
+    "status": "active",
+    "classification": {
+     "scheme": "CPV",
+     "id": "75231100",
+     "description": "Law-courts-related administrative services"
+    },
+    "items": [
+     {
+      "id": "1",
+      "deliveryAddresses": [
+       {
+        "region": "North East",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "North West",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "Yorkshire and the Humber",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "East Midlands",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "West Midlands",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "East of England",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "London",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "South East",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "South West",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "Scotland",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "Wales",
+        "countryName": "United Kingdom"
+       }
+      ]
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Open procedure (above threshold)",
+    "tenderPeriod": {
+     "endDate": "2026-11-12T17:00:00Z"
+    },
+    "contractPeriod": {
+     "startDate": "2027-02-01T00:00:00Z",
+     "endDate": "2029-03-31T23:59:59+01:00"
+    },
+    "suitability": {
+     "sme": true,
+     "vcse": true
+    },
+    "mainProcurementCategory": "services",
+    "documents": [
+     {
+      "id": "1",
+      "documentType": "tenderNotice",
+      "description": "Opportunity notice on Contracts Finder",
+      "url": "https://www.contractsfinder.service.gov.uk/Notice/c32f774f-8897-4558-8ded-6c499500b751",
+      "datePublished": "2026-10-29T09:50:10Z",
+      "dateModified": "2026-10-30T09:14:06Z",
+      "format": "text/html",
+      "language": "en"
+     }
+    ]
+   },
+   "parties": [
+    {
+     "id": "GB-CFS-183111",
+     "name": "Ministry of Justice",
+     "identifier": {
+      "legalName": "Ministry of Justice"
+     },
+     "address": {
+      "streetAddress": "102 Petty France",
+      "locality": "London",
+      "postalCode": "SW1H 9AJ",
+      "countryName": "England"
+     },
+     "contactPoint": {
+      "name": "Commercial",
+      "email": "HMCTSCommercial@justice.gov.uk"
+     },
+     "roles": [
+      "buyer"
+     ]
+    }
+   ],
+   "buyer": {
+    "id": "GB-CFS-183111",
+    "name": "Ministry of Justice"
+   }
+  }
+ ]
+}

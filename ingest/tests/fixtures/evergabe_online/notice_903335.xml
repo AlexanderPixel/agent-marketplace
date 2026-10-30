@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><ns3:NATVERFAHREN xmlns:ns3="http://evergabe.bescha.bund.de/tendering/forms/xsd/natverfahren2016.xsd" xmlns="http://evergabe.bescha.bund.de/tendering/forms/xsd/euverfahrenR209.xsd" xmlns:ns2="http://evergabe.bescha.bund.de/tendering/forms/xsd/national/V2016">
+    <KATEGORIE>6</KATEGORIE>
+    <VERGABERECHTSRAHMEN>9</VERGABERECHTSRAHMEN>
+    <AUFTRAGSART>1</AUFTRAGSART>
+    <VORINFORMATION>false</VORINFORMATION>
+    <EU_VERFAHREN>false</EU_VERFAHREN>
+    <THEMA>Vergabe Dienstleistungskonzession Heimkantine Julius-Leber-Kaserne Berlin</THEMA>
+    <ERFUELLUNGSORT>Julius-Leber-Kaserne in 13405 Berlin, Kurt-Schumacher-Damm 41</ERFUELLUNGSORT>
+    <LEISTUNGASCII>Vergabe Dienstleistungskonzession
+
+Heimkantine, Julius-Leber-Kaserne in 13405 Berlin, Kurt-Schumacher-Damm 41
+1</LEISTUNGASCII>
+    <CPVS>
+        <CPV>
+            <NUMMER>55500000</NUMMER>
+            <HAUPT>true</HAUPT>
+        </CPV>
+        <CPV>
+            <NUMMER>55410000</NUMMER>
+            <HAUPT>true</HAUPT>
+        </CPV>
+        <CPV>
+            <NUMMER>55510000</NUMMER>
+            <HAUPT>true</HAUPT>
+        </CPV>
+        <CPV>
+            <NUMMER>55512000</NUMMER>
+            <HAUPT>true</HAUPT>
+        </CPV>
+        <CPV>
+            <NUMMER>55330000</NUMMER>
+            <HAUPT>true</HAUPT>
+        </CPV>
+        <CPV>
+            <NUMMER>55511000</NUMMER>
+            <HAUPT>true</HAUPT>
+        </CPV>
+    </CPVS>
+    <GESCHAEFTSZEICHEN>VPB/2BB/DN018 (VpflABw)</GESCHAEFTSZEICHEN>
+    <EINGANG_ANGEBOTE>26.11.2026 13:00</EINGANG_ANGEBOTE>
+    <BINDEFRIST>25.02.2027</BINDEFRIST>
+    <VERGABEART>101</VERGABEART>
+    <FREIBERUFLICH>false</FREIBERUFLICH>
+    <VETRAULICHKEIT>PUBLIC</VETRAULICHKEIT>
+    <ns3:FORM_SECTION>
+        <ns2:uvgo-open>
+            <ns2:contracting-issuing-authority>
+                <ns2:contracting-authority>
+                    <ns2:name>Verpflegungsamt der Bundeswehr</ns2:name>
+                    <ns2:street-number>Bremer Str. 71</ns2:street-number>
+                    <ns2:zip-code>26135</ns2:zip-code>
+                    <ns2:town>Oldenburg</ns2:town>
+                    <ns2:phone>+49 4419293835</ns2:phone>
+                    <ns2:fax>+49 4419293560</ns2:fax>
+                    <ns2:e-mail>VpflABwBV2Betreuung@bundeswehr.org</ns2:e-mail>
+                    <ns2:internet-address>http://www.evergabe-online.de/</ns2:internet-address>
+                </ns2:contracting-authority>
+                <ns2:issuing-authority>
+                    <ns2:like-contracting-authority/>
+                </ns2:issuing-authority>
+            </ns2:contracting-issuing-authority>
+            <ns2:general-information>
+                <ns2:contract-type>SERVICES</ns2:contract-type>
+                <ns2:reference-number>VPB/2BB/DN018 (VpflABw)</ns2:reference-number>
+            </ns2:general-information>
+            <ns2:tendering-documents-information>
+                <ns2:tendering-documents-confidentiality>
+                    <ns2:documents-public/>
+                    <ns2:documents-url>https://www.evergabe-online.de/tenderdetails.html?id=903335</ns2:documents-url>
+                </ns2:tendering-documents-confidentiality>
+                <ns2:tendering-documents-access>
+                    <ns2:tendering-documents-only-electronic/>
+                </ns2:tendering-documents-access>
+            </ns2:tendering-documents-information>
+            <ns2:type-scope>
+                <ns2:description>
+                    <ns2:p>Vergabe Dienstleistungskonzession</ns2:p>
+                    <ns2:p/>
+                    <ns2:p>Heimkantine, Julius-Leber-Kaserne in 13405 Berlin, Kurt-Schumacher-Damm 41</ns2:p>
+                    <ns2:p>1</ns2:p>
+                </ns2:description>
+                <ns2:cpv-code>
+                    <ns2:main-code>55500000</ns2:main-code>
+                </ns2:cpv-code>
+                <ns2:cpv-code>
+                    <ns2:main-code>55410000</ns2:main-code>
+                </ns2:cpv-code>
+                <ns2:cpv-code>
+                    <ns2:main-code>55510000</ns2:main-code>
+                </ns2:cpv-code>
+                <ns2:cpv-code>
+                    <ns2:main-code>55512000</ns2:main-code>
+                </ns2:cpv-code>
+                <ns2:cpv-code>
+                    <ns2:main-code>55330000</ns2:main-code>
+                </ns2:cpv-code>
+                <ns2:cpv-code>
+                    <ns2:main-code>55511000</ns2:main-code>
+                </ns2:cpv-code>
+                <ns2:place>
+                    <ns2:p>Julius-Leber-Kaserne in 13405 Berlin, Kurt-Schumacher-Damm 41</ns2:p>
+                </ns2:place>
+            </ns2:type-scope>
+            <ns2:lot-division-information>
+                <ns2:lots-description>
+                    <ns2:p>keine Losaufteilung</ns2:p>
+                </ns2:lots-description>
+            </ns2:lot-division-information>
+            <ns2:secondary-offer>NOT_AUTHORIZED</ns2:secondary-offer>
+            <ns2:deadlines>
+                <ns2:p>Beginn: 01.02.2027</ns2:p>
+                <ns2:p>Ende: 31.01.2032</ns2:p>
+                <ns2:p>Bemerkung zur Ausführungsfrist: Vergabe Dienstleistungskonzession für fünf Jahre</ns2:p>
+            </ns2:deadlines>
+            <ns2:securities>
+                <ns2:p>3000 Euro</ns2:p>
+            </ns2:securities>
+            <ns2:financial-conditions>
+                <ns2:p>Gemäß Bewerbungsbedingungen</ns2:p>
+            </ns2:financial-conditions>
+            <ns2:suitability>
+                <ns2:p>k.A.</ns2:p>
+            </ns2:suitability>
+            <ns2:awarding-criteria>
+                <ns2:p>siehe Vergabeunterlagen</ns2:p>
+            </ns2:awarding-criteria>
+            <ns2:legal-form-requirement>gesamtschuldnerisch haftend</ns2:legal-form-requirement>
+            <ns2:offer-information>
+                <ns2:offer-and-participationrequest-form>
+                    <ns2:electronic-offer-and-participationrequest>
+                        <ns2:without-electronic-signature/>
+                    </ns2:electronic-offer-and-participationrequest>
+                </ns2:offer-and-participationrequest-form>
+                <ns2:deadlines>
+                    <ns2:offer-deadline>2026-11-26T13:00:00</ns2:offer-deadline>
+                    <ns2:validity-period>2027-02-25</ns2:validity-period>
+                </ns2:deadlines>
+                <ns2:required-language>deutsch</ns2:required-language>
+            </ns2:offer-information>
+        </ns2:uvgo-open>
+    </ns3:FORM_SECTION>
+</ns3:NATVERFAHREN>

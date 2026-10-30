@@ -1,0 +1,313 @@
+{
+ "apiVersion": "2.157.1",
+ "terms": "***",
+ "pageNumber": 1,
+ "pageSize": 3,
+ "sort": "[identifier:ASC]",
+ "totalResults": 5,
+ "results": [
+  {
+   "reference": "3dd5b064-77cf-4723-ab3c-91a66842cc2f-PIN",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/3dd5b064-77cf-4723-ab3c-91a66842cc2f-PIN",
+   "summary": "Supply of dress shoes for security officers and receptionists at the three sites of the European Parliament (Brussels, Strasbourg and Luxembourg)",
+   "metadata": {
+    "procedureType": [
+     "47396222"
+    ],
+    "es_SortDate": [
+     "2026-07-09T00:00:00.000+0000"
+    ],
+    "cftPartyLegalEntityId": [
+     "47352338"
+    ],
+    "contractType": [
+     "31095499"
+    ],
+    "description": [
+     "This call for tenders concerns the purchase of dress shoes for security officers and receptionists at the European Parliament in Brussels, Strasbourg and Luxembourg."
+    ],
+    "language": [
+     "en"
+    ],
+    "title": [
+     "Supply of dress shoes for security officers and receptionists at the three sites of the European Parliament (Brussels, Strasbourg and Luxembourg)"
+    ],
+    "type": [
+     "0"
+    ],
+    "cftId": [
+     "3dd5b064-77cf-4723-ab3c-91a66842cc2f-PIN"
+    ],
+    "callIdentifier": [
+     "EP-SAFE/2026/OP/0005-PIN"
+    ],
+    "DATASOURCE": [
+     "SEDIA"
+    ],
+    "REFERENCE": [
+     "3dd5b064-77cf-4723-ab3c-91a66842cc2f-PIN"
+    ],
+    "cftTimezone": [
+     "Europe/Brussels"
+    ],
+    "cftEstimatedTotalProcedureValue": [],
+    "cftContractNoticeLink": [
+     "[\"473220-2026\",\"130/2026\",\"2026-07-09\"]"
+    ],
+    "frameworkProgramme": [],
+    "cftSubmissionMethodCode": [
+     "ESUBMISSION"
+    ],
+    "identifier": [
+     "3dd5b064-77cf-4723-ab3c-91a66842cc2f-PIN"
+    ],
+    "caName": [
+     "Supply of dress shoes for security officers and receptionists at the three sites of the European Parliament (Brussels, Strasbourg and Luxembourg)"
+    ],
+    "es_ContentType": [
+     "text/plain"
+    ],
+    "cftPlannedDate": [
+     "16/02/2027"
+    ],
+    "esDA_FirstIngestDate": [
+     "2026-07-09T05:02:21.252+0200"
+    ],
+    "esDA_IngestDate": [
+     "2026-10-28T16:50:37.531+0100"
+    ],
+    "url": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/3dd5b064-77cf-4723-ab3c-91a66842cc2f-PIN"
+    ],
+    "esST_URL": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/3dd5b064-77cf-4723-ab3c-91a66842cc2f-PIN"
+    ],
+    "cftEXARegistrationDeadline": [],
+    "cftLeadContractingAuthorityCode": [
+     "[{\"name\":\"European Parliament, SG - Directorate-General for Security and Safety\",\"link\":\"http://www.europarl.europa.eu\",\"isLeadAuthority\":true}]"
+    ],
+    "mainCpv": [
+     "18813300",
+     "18810000",
+     "18800000"
+    ],
+    "cftPublicationDateEForm": [
+     "2026-07-09"
+    ],
+    "cftEstimatedOverallContractCurrency": [],
+    "startDate": [
+     "2026-07-09T00:00:00.000+0000"
+    ],
+    "status": [
+     "31094501"
+    ]
+   }
+  },
+  {
+   "reference": "49b6860e-3063-4206-9dbb-cbfd08360d40-CN",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/49b6860e-3063-4206-9dbb-cbfd08360d40-CN",
+   "summary": "Delivering IT and Firearms Equipment to the NFFP in the frame of the EU4Security Moldova Project",
+   "metadata": {
+    "procedureType": [
+     "47396220"
+    ],
+    "es_SortDate": [
+     "2026-10-30T00:00:00.000+0000"
+    ],
+    "cftPartyLegalEntityId": [
+     "47352388"
+    ],
+    "contractType": [
+     "31095499"
+    ],
+    "description": [
+     "The subject of this call for tenders is “EU4 Security Moldova Project/ National Firearms Focal Point for Republic of Moldova”.\nThe subject of this call for tenders is to award a direct contract for the provision of ICT and Firearms equipment to set up a National Firearms Focal Point in the Republic of Moldova.\nEmpowering the National Firearms Focal Point (NFFP) with workstations, laptops, software and firearms equipment represents a strategic and forward-thinking investment in supporting Moldova's national capacity to effectively address the complex challenges of firearms-related crime. Equipping the NFFP with these essential tools will significantly enhance their ability to efficiently coll"
+    ],
+    "language": [
+     "en"
+    ],
+    "title": [
+     "Delivering IT and Firearms Equipment to the NFFP in the frame of the EU4Security Moldova Project"
+    ],
+    "type": [
+     "0"
+    ],
+    "cftId": [
+     "49b6860e-3063-4206-9dbb-cbfd08360d40-CN"
+    ],
+    "callIdentifier": [
+     "CEPOL/2026/OP/0012"
+    ],
+    "DATASOURCE": [
+     "SEDIA"
+    ],
+    "REFERENCE": [
+     "49b6860e-3063-4206-9dbb-cbfd08360d40-CN"
+    ],
+    "cftTimezone": [
+     "Europe/Budapest"
+    ],
+    "cftEstimatedTotalProcedureValue": [
+     "400000 EUR"
+    ],
+    "cftContractNoticeLink": [
+     "[\"754856-2026\",\"211/2026\",\"2026-10-30T00:00:00\"]"
+    ],
+    "frameworkProgramme": [],
+    "cftSubmissionMethodCode": [
+     "ESUBMISSION"
+    ],
+    "identifier": [
+     "49b6860e-3063-4206-9dbb-cbfd08360d40-CN"
+    ],
+    "cftEstimatedOverallContractAmount": [
+     "400000"
+    ],
+    "caName": [
+     "Delivering IT and Firearms Equipment to the NFFP in the frame of the EU4Security Moldova Project"
+    ],
+    "es_ContentType": [
+     "text/plain"
+    ],
+    "cftPlannedDate": [],
+    "esDA_FirstIngestDate": [
+     "2026-10-30T05:02:50.228+0100"
+    ],
+    "deadlineDate": [
+     "2027-01-11T11:00:59.000+0000"
+    ],
+    "esDA_IngestDate": [
+     "2026-10-30T09:44:31.175+0100"
+    ],
+    "url": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/49b6860e-3063-4206-9dbb-cbfd08360d40-CN"
+    ],
+    "esST_URL": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/49b6860e-3063-4206-9dbb-cbfd08360d40-CN"
+    ],
+    "cftEXARegistrationDeadline": [],
+    "cftLeadContractingAuthorityCode": [
+     "[{\"name\":\"European Union Agency For Law Enforcement Training\",\"link\":\"https://www.cepol.europa.eu/\",\"isLeadAuthority\":true}]"
+    ],
+    "mainCpv": [
+     "30232100",
+     "30191400",
+     "22815000",
+     "73432000",
+     "30200000",
+     "30213300"
+    ],
+    "cftPublicationDateEForm": [
+     "2026-10-30T00:00:00"
+    ],
+    "cftEstimatedOverallContractCurrency": [
+     "EUR"
+    ],
+    "startDate": [
+     "2026-10-30T00:00:00.000+0000"
+    ],
+    "status": [
+     "31094502"
+    ]
+   }
+  },
+  {
+   "reference": "533e0b3c-da10-4b27-b4e3-0355bda42d61-EXA",
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/533e0b3c-da10-4b27-b4e3-0355bda42d61-EXA",
+   "summary": "Provision of coffee, tea and complementaries",
+   "metadata": {
+    "procedureType": [
+     "47396214"
+    ],
+    "es_SortDate": [
+     "2026-10-08T00:00:00.000+0000"
+    ],
+    "cftPartyLegalEntityId": [
+     "47352446"
+    ],
+    "contractType": [
+     "31095499"
+    ],
+    "description": [
+     "The main objective of this contract will be contract with a professional service provider, who could provide the supply and delivery of coffee, tea, sugar, and other associated products and rent a coffee machine."
+    ],
+    "language": [
+     "en"
+    ],
+    "title": [
+     "Provision of coffee, tea and complementaries"
+    ],
+    "type": [
+     "0"
+    ],
+    "cftId": [
+     "533e0b3c-da10-4b27-b4e3-0355bda42d61-EXA"
+    ],
+    "callIdentifier": [
+     "EIGE/VNO/2026/LVP/0008-EXA"
+    ],
+    "DATASOURCE": [
+     "SEDIA"
+    ],
+    "REFERENCE": [
+     "533e0b3c-da10-4b27-b4e3-0355bda42d61-EXA"
+    ],
+    "cftTimezone": [
+     "Europe/Vilnius"
+    ],
+    "cftEstimatedTotalProcedureValue": [],
+    "cftContractNoticeLink": [
+     "[null,null]"
+    ],
+    "frameworkProgramme": [],
+    "cftSubmissionMethodCode": [
+     "ESUBMISSION"
+    ],
+    "identifier": [
+     "533e0b3c-da10-4b27-b4e3-0355bda42d61-EXA"
+    ],
+    "caName": [
+     "Provision of coffee, tea and complementaries"
+    ],
+    "es_ContentType": [
+     "text/plain"
+    ],
+    "cftPlannedDate": [
+     "2026-10-30+02:00 Europe/Vilnius"
+    ],
+    "esDA_FirstIngestDate": [
+     "2026-10-08T16:21:48.744+0200"
+    ],
+    "esDA_IngestDate": [
+     "2026-10-27T13:33:10.878+0100"
+    ],
+    "url": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/533e0b3c-da10-4b27-b4e3-0355bda42d61-EXA"
+    ],
+    "esST_URL": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/533e0b3c-da10-4b27-b4e3-0355bda42d61-EXA"
+    ],
+    "cftEXARegistrationDeadline": [
+     "2026-10-26T23:59:59+02:00 Europe/Vilnius"
+    ],
+    "cftLeadContractingAuthorityCode": [
+     "[{\"name\":\"European Institute for Gender Equality\",\"link\":\"https://eige.europa.eu/\",\"isLeadAuthority\":true}]"
+    ],
+    "mainCpv": [
+     "15860000",
+     "39711310"
+    ],
+    "cftPublicationDateEForm": [
+     "2026-10-08+02:00 Europe/Brussels"
+    ],
+    "cftEstimatedOverallContractCurrency": [],
+    "startDate": [
+     "2026-10-08T00:00:00.000+0000"
+    ],
+    "status": [
+     "31094501"
+    ]
+   }
+  }
+ ]
+}

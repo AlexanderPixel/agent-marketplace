@@ -1,0 +1,356 @@
+[
+ {
+  "id": "a5a2bc64-e485-4483-bfef-eef627c5936a",
+  "parent": "/api/submissions/bf34d7a4-7edb-48e8-9ab6-1d57beac193d",
+  "submissionVersion": "/api/submission_versions/fd445779-55b7-4378-a2f9-cf2e25f06fd3",
+  "form": "/api/forms/a71d8511-90f5-43f4-920c-7ab8773ed351",
+  "formSchemaVersion": "/api/form_schema_versions/98863abb-4ea3-4bc8-891f-7113d597a9f9",
+  "organization": "/api/organizations/1b2fcb37-fdcc-4238-888c-cd50aaf9b7d2",
+  "data": {
+   "ND-Root": {
+    "ND-Lot": [
+     {
+      "BT-137-Lot": "LOT-0001",
+      "ND-LotTenderingTerms": {
+       "BT-60-Lot": "no-eu-funds",
+       "ND-LotReviewTerms": {
+        "OPT-301-Lot-ReviewOrg": "ORG-0002",
+        "OPT-301-Lot-ReviewInfo": "ORG-0002",
+        "ND-ReviewPresentationPeriod": {
+         "BT-99-Lot": "Podmínkou pro podání návrhu k ÚOHS je podání námitek k Zadavateli, které je nutné doručit do 15 dnů ode dne, kdy se stěžovatel dozvěděl o domnělém porušení zákona Zadavatelem, nejpozději však do uzavření smlouvy nebo do chvíle, kdy se soutěž o návrh považuje po výběru návrhu za ukončenou.\n\nNámitky p…"
+        }
+       },
+       "OPT-301-Lot-AddInfo": "ORG-0001",
+       "OPT-301-Lot-DocProvider": "ORG-0001"
+      },
+      "ND-LotProcurementScope": {
+       "BT-21-Lot": "Komplexní revitalizace veřejného prostoru a realizace biatlonového tréninkového centra – 1. ETAPA",
+       "BT-22-Lot": "Biatlon - 1.et.",
+       "BT-23-Lot": "works",
+       "BT-24-Lot": "Předmětem plnění veřejné zakázky jsou stavební práce a poskytnutí souvisejících dodávek a služeb spočívajících ve vybudování sportovně-rekreačního areálu, ve kterém se nachází šatny, hygienické a technické zázemí sportovců, vzduchová střelnice, sportovní plocha, workoutový kout, asfaltový okruh a op…",
+       "ND-LotDuration": {
+        "BT-36-Lot": {
+         "_value": 195.0,
+         "_unitCode": "DAY"
+        },
+        "BT-536-Lot": "2026-07-10+02:00"
+       },
+       "ND-LotPlacePerformance": [
+        {
+         "BT-728-Lot": "Karlovarský kraj, město Ostrov: nová stavba umístěná na pozemku parcelní č. 224/629, 802/1 a st. parc. č. 2793, a sousedící pozemek parcelní č. 802/3, vše katastrální území Ostrov nad Ohří",
+         "ND-LotPerformanceAddress": {
+          "BT-5071-Lot": "CZ041",
+          "BT-5141-Lot": "CZE"
+         }
+        }
+       ],
+       "ND-LotMainClassification": {
+        "BT-262-Lot": "45000000",
+        "BT-26(m)-Lot": "cpv"
+       },
+       "ND-LotSocialObjectiveType": [
+        {
+         "BT-775-Lot": "work-cond"
+        }
+       ],
+       "ND-StrategicProcurementType": [
+        {
+         "BT-06-Lot": "soc-obj",
+         "BT-777-Lot": "Dodavatel čestně prohlásil, že bude dodržovat pravidla sociálně odpovědného zadávání."
+        }
+       ],
+       "ND-LotEnvironmentalImpactType": [
+        {
+         "BT-774-Lot": "pollu-prev"
+        }
+       ],
+       "ND-LotAdditionalClassification": [
+        {
+         "BT-263-Lot": "45212220",
+         "BT-26(a)-Lot": "cpv"
+        },
+        {
+         "BT-263-Lot": "45212223",
+         "BT-26(a)-Lot": "cpv"
+        },
+        {
+         "BT-263-Lot": "45223800",
+         "BT-26(a)-Lot": "cpv"
+        }
+       ]
+      },
+      "ND-LotTenderingProcess": {
+       "BT-115-Lot": false,
+       "ND-LotFAContractingSystem": {
+        "BT-765-Lot": "none"
+       }
+      }
+     }
+    ],
+    "OPT-999": "2000-01-01Z",
+    "BT-01-notice": "32014L0024",
+    "BT-02-notice": "can-modif",
+    "BT-03-notice": "cont-modif",
+    "BT-04-notice": "7753b44c-82c8-4528-b2f3-9a3b731cb7a0",
+    "BT-701-notice": "bf34d7a4-7edb-48e8-9ab6-1d57beac193d",
+    "BT-757-notice": "01",
+    "OPT-001-notice": "2.3",
+    "OPT-002-notice": "eforms-sdk-1.13",
+    "BT-05(a)-notice": "2026-10-30+01:00",
+    "BT-05(b)-notice": "13:36:51+01:00",
+    "BT-702(a)-notice": "CES",
+    "ND-RootExtension": {
+     "OPP-070-notice": "38",
+     "ND-NoticeResult": {
+      "ND-LotResult": [
+       {
+        "OPT-322-LotResult": "RES-0001",
+        "BT-13713-LotResult": "LOT-0001",
+        "ND-BuyerReviewComplainants": {
+         "BT-712(a)-LotResult": "complainants",
+         "BT-712(b)-LotResult": 0.0
+        },
+        "ND-LotResultTenderReference": [
+         {
+          "OPT-320-LotResult": "TEN-0001"
+         }
+        ],
+        "ND-LotResultContractReference": [
+         {
+          "OPT-315-LotResult": "CON-0001"
+         }
+        ]
+       }
+      ],
+      "ND-LotTender": [
+       {
+        "BT-171-Tender": 1,
+        "BT-720-Tender": {
+         "_value": 9606939.26,
+         "_currencyID": "CZK"
+        },
+        "BT-1711-Tender": true,
+        "BT-3201-Tender": "Komplexní revitalizace veřejného prostoru a realizace biatlonového tréninkového centra – 1. ETAPA",
+        "OPT-310-Tender": "TPA-0001",
+        "OPT-321-Tender": "TEN-0001",
+        "BT-13714-Tender": "LOT-0001",
+        "ND-SubcontractedContract": {
+         "BT-773-Tender": "not-known"
+        }
+       }
+      ],
+      "ND-TenderingParty": [
+       {
+        "ND-Tenderer": [
+         {
+          "OPT-300-Tenderer": "ORG-0003"
+         }
+        ],
+        "OPT-210-Tenderer": "TPA-0001"
+       }
+      ],
+      "ND-SettledContract": [
+       {
+        "BT-145-Contract": "2026-07-10+02:00",
+        "BT-150-Contract": "Smlouva o dílo č. SML/239/2026",
+        "BT-151-Contract": "https://smlouvy.gov.cz/smlouva/38730580",
+        "BT-721-Contract": "Smlouva o dílo č. SML/239/2026",
+        "BT-1451-Contract": "2026-06-03+02:00",
+        "OPT-316-Contract": "CON-0001",
+        "ND-SettledContractTenderReference": [
+         {
+          "BT-3202-Contract": "TEN-0001"
+         }
+        ]
+       }
+      ],
+      "BT-161-NoticeResult": {
+       "_value": 9260806.6,
+       "_currencyID": "CZK"
+      }
+     },
+     "ND-Organizations": {
+      "ND-Organization": [
+       {
+        "ND-Company": {
+         "ND-CompanyAddress": {
+          "BT-507-Organization-Company": "CZ041",
+          "BT-512-Organization-Company": "36301",
+          "BT-513-Organization-Company": "Ostrov",
+          "BT-514-Organization-Company": "CZE",
+          "BT-510(a)-Organization-Company": "Jáchymovská 1"
+         },
+         "ND-CompanyContact": {},
+         "ND-CompanyLegalEntity": [
+          {
+           "BT-501-Organization-Company": "00254843"
+          }
+         ],
+         "BT-500-Organization-Company": "Město Ostrov",
+         "BT-505-Organization-Company": "https://ostrov.cz/",
+         "OPT-200-Organization-Company": "ORG-0001"
+        },
+        "OPP-051-Organization": false,
+        "OPP-052-Organization": false
+       },
+       {
+        "ND-Company": {
+         "ND-CompanyAddress": {
+          "BT-507-Organization-Company": "CZ064",
+          "BT-512-Organization-Company": "60200",
+          "BT-513-Organization-Company": "Brno",
+          "BT-514-Organization-Company": "CZE",
+          "BT-510(a)-Organization-Company": "třída Kpt. Jaroše 1926/7"
+         },
+         "ND-CompanyContact": {},
+         "ND-CompanyLegalEntity": [
+          {
+           "BT-501-Organization-Company": "65349423"
+          }
+         ],
+         "BT-500-Organization-Company": "Úřad pro ochranu hospodářské soutěže",
+         "BT-505-Organization-Company": "https://uohs.gov.cz",
+         "OPT-200-Organization-Company": "ORG-0002"
+        }
+       },
+       {
+        "ND-Company": {
+         "ND-CompanyAddress": {
+          "BT-507-Organization-Company": "CZ042",
+          "BT-512-Organization-Company": "43151",
+          "BT-513-Organization-Company": "Klášterec nad Ohří",
+          "BT-514-Organization-Company": "CZE",
+          "BT-510(a)-Organization-Company": "Olšová 573"
+         },
+         "ND-CompanyContact": {},
+         "ND-CompanyLegalEntity": [
+          {
+           "BT-501-Organization-Company": "14429837"
+          }
+         ],
+         "BT-500-Organization-Company": "HR stav KV s.r.o.",
+         "BT-505-Organization-Company": "https://hrstav.cz/",
+         "OPT-200-Organization-Company": "ORG-0003"
+        }
+       }
+      ]
+     },
+     "ND-ContractModification": [
+      {
+       "ND-Modification": {
+        "BT-202-Contract": "Změna v oddílu TEN-001 v poli: Hodnota po změně (BT-720-Tender)"
+       },
+       "BT-1501(c)-Contract": "CON-0001",
+       "BT-1501(n)-Contract": "37588-2026",
+       "ND-ModificationReason": {
+        "BT-200-Contract": "mod-cir",
+        "BT-201-Contract": "Dodatkem č. 2 ke smlouvě o dílo dochází ke změně rozsahu předmětu plnění dle změnového listu (ZL) č. 02 a ke změně ceny díla.\n\nZměna dle § 222 odst. 6 ZZVZ:\nZměnovým listem č. 02 se upravuje a zpřesňuje rozsah stavebních prací na stavebních objektech SO-02 – Objekty zázemí tréninkového centra, SO-03…"
+       }
+      }
+     ]
+    },
+    "ND-ProcedureTerms": {
+     "ND-LocalLegalBasisNoID": [
+      {
+       "BT-01(e)-Procedure": "LocalLegalBasis",
+       "BT-01(f)-Procedure": "Zákon č. 134/2016 Sb., o zadávání veřejných zakázek"
+      }
+     ]
+    },
+    "ND-ContractingParty": [
+     {
+      "ND-Buyer": {
+       "OPT-300-Procedure-Buyer": "ORG-0001"
+      }
+     }
+    ],
+    "ND-ProcedureProcurementScope": {
+     "BT-21-Procedure": "Komplexní revitalizace veřejného prostoru a realizace biatlonového tréninkového centra – 1. ETAPA",
+     "BT-22-Procedure": "Biatlon - 1.et.",
+     "BT-23-Procedure": "works",
+     "BT-24-Procedure": "Předmětem plnění veřejné zakázky jsou stavební práce a poskytnutí souvisejících dodávek a služeb spočívajících ve vybudování sportovně-rekreačního areálu, ve kterém se nachází šatny, hygienické a technické zázemí sportovců, vzduchová střelnice, sportovní plocha, workoutový kout, asfaltový okruh a op…",
+     "ND-ProcedureMainClassification": {
+      "BT-262-Procedure": "45000000",
+      "BT-26(m)-Procedure": "cpv"
+     },
+     "OPT-900-Procedure-ValidationAnchor": "_",
+     "ND-ProcedureAdditionalCommodityClassification": [
+      {
+       "BT-263-Procedure": "45212220",
+       "BT-26(a)-Procedure": "cpv"
+      },
+      {
+       "BT-263-Procedure": "45212223",
+       "BT-26(a)-Procedure": "cpv"
+      },
+      {
+       "BT-263-Procedure": "45223800",
+       "BT-26(a)-Procedure": "cpv"
+      }
+     ],
+     "ND-ProcedurePlacePerformanceAdditionalInformation": [
+      {
+       "ND-ProcedurePlacePerformance": {
+        "BT-5071-Procedure": "CZ041",
+        "BT-5141-Procedure": "CZE"
+       }
+      }
+     ]
+    }
+   },
+   "metadata": {
+    "subType": "38",
+    "identifikatoryNipez": {
+     "zadavaciPostup": {
+      "identifikatorNipez": "ZP/RVZ2600110029/001"
+     },
+     "identifikatorNipez": "RVZ2600110029",
+     "identifikatoryCasti": [
+      {
+       "idCastiVvz": "LOT-0001",
+       "identifikatorNipez": "RVZ2600110029/001"
+      }
+     ],
+     "identifikatorySmluv": [
+      {
+       "idSmlouvyVvz": "CON-0001",
+       "identifikatorNipez": "SML/RVZ2600093702",
+       "identifikatorNipezCasti": "RVZ2600110029/001"
+      }
+     ]
+    },
+    "identifikatoryNipezPredchozihoPodani": {
+     "identifikatoryNipez": {
+      "zadavaciPostup": {
+       "identifikatorNipez": "ZP/RVZ2600110029/001"
+      },
+      "identifikatorNipez": "RVZ2600110029",
+      "identifikatoryCasti": [
+       {
+        "idCastiVvz": "LOT-0001",
+        "identifikatorNipez": "RVZ2600110029/001"
+       }
+      ],
+      "identifikatorySmluv": [
+       {
+        "idSmlouvyVvz": "CON-0001",
+        "identifikatorNipez": "SML/RVZ2600093702",
+        "identifikatorNipezCasti": "RVZ2600110029/001"
+       }
+      ]
+     }
+    }
+   }
+  },
+  "dataHash": "8d442eead6f9ede73086913038c1ef529f93c8bd347ca1dd3f038997a361e63e",
+  "workflowPlaceCode": "UVEREJNENO",
+  "variableId": "75ZBH-1FW7J",
+  "relatedId": "7753b44c-82c8-4528-b2f3-9a3b731cb7a0",
+  "publicId": "oPLq3hhXInSA2rlB37lzixnuJw9JPlXN",
+  "copyFromSubmissionVersion": "/api/submission_versions/85a60231-a017-4773-b3ad-025a7112331c",
+  "version": 11,
+  "validityPeriod": "2026-10-26T14:46:42+01:00/",
+  "createdAt": "2026-10-26T14:46:42+01:00",
+  "updatedAt": "2026-10-30T13:40:08+01:00"
+ }
+]

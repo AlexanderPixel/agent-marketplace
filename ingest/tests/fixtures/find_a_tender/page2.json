@@ -1,0 +1,387 @@
+{
+ "uri": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages?updatedFrom=2026-10-29T00:00:00&limit=100&updatedTo=2026-10-30T14:13:02",
+ "version": "1.1",
+ "publishedDate": "2026-10-30T14:12:06Z",
+ "publisher": {
+  "name": "Cabinet Office",
+  "scheme": "GB-GOR",
+  "uid": "D2",
+  "uri": "https://www.gov.uk/government/organisations/cabinet-office"
+ },
+ "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+ "publicationPolicy": "https://www.gov.uk/government/publications/open-contracting",
+ "releases": [
+  {
+   "id": "103222-2026",
+   "tag": [
+    "tenderUpdate"
+   ],
+   "date": "2026-10-30T13:26:50Z",
+   "initiationType": "tender",
+   "ocid": "ocds-h6vhtk-078724",
+   "parties": [
+    {
+     "name": "Liverpool City Region Combined Authority",
+     "id": "GB-PPON-PNDZ-8253-CJJM",
+     "identifier": {
+      "scheme": "GB-PPON",
+      "id": "PNDZ-8253-CJJM"
+     },
+     "address": {
+      "streetAddress": "1 Mann Island",
+      "locality": "Liverpool",
+      "postalCode": "L3 1BP",
+      "country": "GB",
+      "countryName": "United Kingdom",
+      "region": "UKD72"
+     },
+     "contactPoint": {
+      "email": "Procurement@liverpoolcityregion-ca.gov.uk"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "classifications": [
+       {
+        "scheme": "UK_CA_TYPE",
+        "id": "publicAuthoritySubCentralGovernment",
+        "description": "Public authority - sub-central government"
+       }
+      ]
+     }
+    }
+   ],
+   "buyer": {
+    "id": "GB-PPON-PNDZ-8253-CJJM",
+    "name": "Liverpool City Region Combined Authority"
+   },
+   "planning": {
+    "noEngagementNoticeRationale": "Initial market engagement was completed to determine if the requirements could be delivered in line with the single supplier approach."
+   },
+   "tender": {
+    "id": "PRA000746",
+    "legalBasis": {
+     "id": "2023/54",
+     "scheme": "UKPGA",
+     "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+    },
+    "title": "Audio visual, digital signage and visitor management system",
+    "description": "The LCRCA require the most appropriately suited solution available to fulfil the below requirements in entirety, operated by a single supplier.\nA modern cloud hosted Room Desk and Car Parking booking system, to fully replace the Authority's existing solution.\nNew meeting room audio-visual equipment across the Authority's estate, including standard meeting rooms and the larger ground floor auditori...",
+    "status": "active",
+    "items": [
+     {
+      "id": "1",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "32320000",
+        "description": "Television and audio-visual equipment"
+       },
+       {
+        "scheme": "CPV",
+        "id": "48000000",
+        "description": "Software package and information systems"
+       },
+       {
+        "scheme": "CPV",
+        "id": "51000000",
+        "description": "Installation services (except software)"
+       },
+       {
+        "scheme": "CPV",
+        "id": "72000000",
+        "description": "IT services: consulting, software development, Internet and support"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UKD",
+        "country": "GB",
+        "countryName": "United Kingdom"
+       }
+      ],
+      "relatedLot": "1"
+     }
+    ],
+    "value": {
+     "amountGross": 300000.0,
+     "currency": "GBP"
+    },
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Open procedure",
+    "mainProcurementCategory": "services",
+    "aboveThreshold": true,
+    "submissionMethodDetails": "Bidders can access the opportunity via the Chest Portal\n(Merseytravel)\nAudio visual, digital signage and visitor management system\nProject information - DN832645\nhttps://procontract.due-north.com/Opportunities/Index?p=e0cc5631-4690-e511-80fb-000c29c9ba21&v=1",
+    "submissionTerms": {
+     "electronicSubmissionPolicy": "allowed",
+     "languages": [
+      "en"
+     ]
+    },
+    "tenderPeriod": {
+     "endDate": "2026-11-18T10:00:00Z"
+    },
+    "enquiryPeriod": {
+     "endDate": "2026-11-11T10:00:00Z"
+    },
+    "awardPeriod": {
+     "endDate": "2027-03-11T23:59:59Z"
+    },
+    "lots": [
+     {
+      "id": "1",
+      "status": "active",
+      "value": {
+       "amountGross": 300000.0,
+       "currency": "GBP"
+      },
+      "awardCriteria": {
+       "criteria": [
+        {
+         "type": "price",
+         "name": "Price",
+         "numbers": [
+          {
+           "number": 20,
+           "weight": "percentageExact"
+          }
+         ]
+        },
+        {
+         "type": "quality",
+         "name": "Quality",
+         "numbers": [
+          {
+           "number": 80,
+           "weight": "percentageExact"
+          }
+         ]
+        }
+       ]
+      },
+      "contractPeriod": {
+       "startDate": "2027-03-22T00:00:00Z",
+       "endDate": "2030-03-21T23:59:59Z",
+       "maxExtentDate": "2032-03-21T23:59:59Z"
+      },
+      "hasRenewal": true,
+      "renewal": {
+       "description": "x2, 12 month extensions available"
+      }
+     }
+    ],
+    "documents": [
+     {
+      "id": "conflictOfInterest",
+      "documentType": "conflictOfInterest",
+      "description": "Not published"
+     },
+     {
+      "id": "103222-2026",
+      "documentType": "tenderNotice",
+      "noticeType": "UK4",
+      "description": "Tender notice on Find a Tender",
+      "url": "https://www.find-tender.service.gov.uk/Notice/103222-2026",
+      "datePublished": "2026-10-30T13:26:50Z",
+      "format": "text/html"
+     }
+    ],
+    "amendments": [
+     {
+      "description": "Extension end date (estimated) - Previously 2031 stated.\nIf all extensions are used.\n21 03 2032\nContract is for three years with the option to extend for 12 months with 2 extensions available (five years in total)",
+      "id": "103222-2026"
+     }
+    ]
+   },
+   "language": "en"
+  },
+  {
+   "ocid": "ocds-h6vhtk-0597a6",
+   "id": "103190-2026",
+   "date": "2026-10-30T12:45:45Z",
+   "tag": [
+    "tenderUpdate"
+   ],
+   "initiationType": "tender",
+   "tender": {
+    "id": "F/098/CS/25/IB",
+    "legalBasis": {
+     "id": "32014L0024",
+     "scheme": "CELEX"
+    },
+    "title": "Provision of Insourced and Outsourced Clinical Services Framework (Framework Reopening)",
+    "classification": {
+     "scheme": "CPV",
+     "id": "85111000",
+     "description": "Hospital services"
+    },
+    "mainProcurementCategory": "services",
+    "description": "The aim of this Framework is to provide Relevant Authorities with fully compliant solutions which supplement the delivery of patient care by Relevant Authorities in line with the NHS' core Key Performance Indicators and standards.\nThe Framework has two Lots.\nLot 1 Insourced Clinical Services\nLot 2 Outsourced Clinical Services\nInsourced Services are clinical services which are delivered on the prem...",
+    "amendments": [
+     {
+      "id": "26",
+      "description": "This is a Provider Selection Regime (PSR) confirmation of establishment of a framework agreement. A framework agreements has been concluded under the Health Care Services (Provider Selection Regime) Regulations 2023 and The Health Services (Provider Selection Regime) (Wales) Regulations 2025. For the avoidance of doubt, the provisions of the Procurement Act 2023 and the provisions of the Public Co..."
+     }
+    ]
+   },
+   "parties": [
+    {
+     "name": "COUNTESS OF CHESTER HOSPITAL NHS FOUNDATION TRUST",
+     "id": "GB-NHS-RJR",
+     "identifier": {
+      "legalName": "COUNTESS OF CHESTER HOSPITAL NHS FOUNDATION TRUST",
+      "id": "RJR",
+      "scheme": "GB-NHS"
+     },
+     "address": {
+      "streetAddress": "Liverpool Road",
+      "locality": "Chester",
+      "region": "UKD63",
+      "postalCode": "CH21UL",
+      "countryName": "United Kingdom"
+     },
+     "contactPoint": {
+      "name": "Ian Bailiff",
+      "email": "coch.cps@nhs.net"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "url": "https://www.coch.nhs.uk/"
+     }
+    }
+   ],
+   "buyer": {
+    "id": "GB-NHS-RJR",
+    "name": "COUNTESS OF CHESTER HOSPITAL NHS FOUNDATION TRUST"
+   },
+   "language": "en"
+  },
+  {
+   "ocid": "ocds-h6vhtk-079492",
+   "buyerID": [],
+   "id": "103157-2026",
+   "tag": [
+    "planning"
+   ],
+   "date": "2026-10-30T12:14:51Z",
+   "initiationType": "tender",
+   "planning": {
+    "documents": [
+     {
+      "id": "103157-2026",
+      "documentType": "plannedProcurementNotice",
+      "noticeType": "UK1",
+      "description": "Pipeline notice on Find a Tender",
+      "url": "https://www.find-tender.service.gov.uk/Notice/103157-2026",
+      "datePublished": "2026-10-30T12:14:51Z",
+      "format": "text/html"
+     }
+    ]
+   },
+   "parties": [
+    {
+     "name": "Defence Equipment and Support",
+     "id": "GB-PPON-PVRL-5831-GLMM",
+     "identifier": {
+      "scheme": "GB-PPON",
+      "id": "PVRL-5831-GLMM"
+     },
+     "address": {
+      "streetAddress": "MOD Abbey Wood",
+      "locality": "Bristol",
+      "postalCode": "BS34 8JH",
+      "country": "GB",
+      "countryName": "United Kingdom",
+      "region": "UKK12"
+     },
+     "contactPoint": {
+      "email": "Tansie.Mankerty100@mod.gov.uk"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "url": "https://contracts.mod.uk/",
+      "classifications": [
+       {
+        "scheme": "UK_CA_TYPE",
+        "id": "publicAuthorityCentralGovernment",
+        "description": "Public authority - central government"
+       }
+      ]
+     }
+    }
+   ],
+   "buyer": {
+    "id": "GB-PPON-PVRL-5831-GLMM",
+    "name": "Defence Equipment and Support"
+   },
+   "tender": {
+    "id": "ocds-h6vhtk-079492",
+    "legalBasis": {
+     "id": "2023/54",
+     "scheme": "UKPGA",
+     "uri": "https://www.legislation.gov.uk/ukpga/2023/54/contents"
+    },
+    "title": "UK1: 715941475 - Provision and In Service Support of Metal Laundry",
+    "description": "The Authority has a requirement to competitively procure new Metal Laundry Equipment (MLE) followed by the provision of in-service support for the new MLE.  This requirement will include the removal and disposal of the extant equipment prior to the installation of new, including Shot Blasting, Manganese Phosphating, Degreasing and Paint Stripping.",
+    "items": [
+     {
+      "id": "1",
+      "additionalClassifications": [
+       {
+        "scheme": "CPV",
+        "id": "50842000",
+        "description": "Repair and maintenance services of weapon systems"
+       }
+      ],
+      "deliveryAddresses": [
+       {
+        "region": "UK",
+        "country": "GB",
+        "countryName": "United Kingdom"
+       }
+      ],
+      "relatedLot": "1"
+     }
+    ],
+    "value": {
+     "amountGross": 1500000,
+     "amount": 1200000,
+     "currency": "GBP"
+    },
+    "procurementMethodDetails": "Competitive flexible procedure",
+    "mainProcurementCategory": "services",
+    "additionalProcurementCategories": [
+     "goods"
+    ],
+    "specialRegime": [
+     "defenceSecurity"
+    ],
+    "aboveThreshold": true,
+    "lots": [
+     {
+      "id": "1",
+      "suitability": {
+       "sme": true
+      },
+      "contractPeriod": {
+       "startDate": "2027-06-15T00:00:00+01:00",
+       "endDate": "2032-06-14T23:59:59+01:00"
+      },
+      "description": null,
+      "status": "planned"
+     }
+    ],
+    "communication": {
+     "futureNoticeDate": "2027-01-04T23:59:59+00:00"
+    },
+    "status": "planned"
+   },
+   "language": "en"
+  }
+ ]
+}

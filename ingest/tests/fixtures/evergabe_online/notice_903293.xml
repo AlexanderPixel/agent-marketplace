@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><ns3:NATVERFAHREN xmlns:ns3="http://evergabe.bescha.bund.de/tendering/forms/xsd/natverfahren2016.xsd" xmlns="http://evergabe.bescha.bund.de/tendering/forms/xsd/euverfahrenR209.xsd" xmlns:ns2="http://evergabe.bescha.bund.de/tendering/forms/xsd/national/V2016">
+    <KATEGORIE>6</KATEGORIE>
+    <VERGABERECHTSRAHMEN>3</VERGABERECHTSRAHMEN>
+    <AUFTRAGSART>1</AUFTRAGSART>
+    <VORINFORMATION>false</VORINFORMATION>
+    <EU_VERFAHREN>false</EU_VERFAHREN>
+    <THEMA>8/523S/RC217 -Anmietung Einsatzfahrzeug für das SanUstgZ Stetten a.k.M.</THEMA>
+    <ERFUELLUNGSORT>Siehe Verzeichnis der Empfängeranschriften</ERFUELLUNGSORT>
+    <LEISTUNGASCII>Anmietung eines RTW um die sanitätsdienstliche Versorgung bei TrÜbPl-Aufenthalten bzw. Flugplatzbetrieb des SanUstgZ Stetten a.k.M. zu gewährleisten.
+- Anmietung RTW
+- Übergabe/Einweisung
+- Rücknahmen-Check
+- Endreinigung/Desinfektion</LEISTUNGASCII>
+    <CPVS>
+        <CPV>
+            <NUMMER>85143000</NUMMER>
+            <HAUPT>true</HAUPT>
+        </CPV>
+    </CPVS>
+    <GESCHAEFTSZEICHEN>6003135685-BwDLZ Stetten a.k.M</GESCHAEFTSZEICHEN>
+    <EINGANG_ANGEBOTE>30.11.2026 13:00</EINGANG_ANGEBOTE>
+    <BINDEFRIST>28.12.2026</BINDEFRIST>
+    <VERGABEART>101</VERGABEART>
+    <FREIBERUFLICH>false</FREIBERUFLICH>
+    <VETRAULICHKEIT>PUBLIC</VETRAULICHKEIT>
+    <ns3:FORM_SECTION>
+        <ns2:uvgo-open>
+            <ns2:contracting-issuing-authority>
+                <ns2:contracting-authority>
+                    <ns2:name>Bundeswehr-Dienstleistungszentrum Stetten a. k. M.</ns2:name>
+                    <ns2:street-number>Hardtstraße 58</ns2:street-number>
+                    <ns2:zip-code>72510</ns2:zip-code>
+                    <ns2:town>Stetten a. k. M.</ns2:town>
+                    <ns2:phone>+49 7573-504-23230</ns2:phone>
+                    <ns2:e-mail>BwDLZStettena.k.M.Beschaffung@bundeswehr.org</ns2:e-mail>
+                    <ns2:internet-address>http://www.evergabe-online.de/</ns2:internet-address>
+                </ns2:contracting-authority>
+                <ns2:issuing-authority>
+                    <ns2:like-contracting-authority/>
+                </ns2:issuing-authority>
+            </ns2:contracting-issuing-authority>
+            <ns2:general-information>
+                <ns2:contract-type>SERVICES</ns2:contract-type>
+                <ns2:reference-number>6003135685-BwDLZ Stetten a.k.M</ns2:reference-number>
+            </ns2:general-information>
+            <ns2:tendering-documents-information>
+                <ns2:tendering-documents-confidentiality>
+                    <ns2:documents-public/>
+                    <ns2:documents-url>https://www.evergabe-online.de/tenderdetails.html?id=903293</ns2:documents-url>
+                </ns2:tendering-documents-confidentiality>
+                <ns2:tendering-documents-access>
+                    <ns2:tendering-documents-only-electronic/>
+                </ns2:tendering-documents-access>
+            </ns2:tendering-documents-information>
+            <ns2:type-scope>
+                <ns2:description>
+                    <ns2:p>Anmietung eines RTW um die sanitätsdienstliche Versorgung bei TrÜbPl-Aufenthalten bzw. Flugplatzbetrieb des SanUstgZ Stetten a.k.M. zu gewährleisten.</ns2:p>
+                    <ns2:p>- Anmietung RTW</ns2:p>
+                    <ns2:p>- Übergabe/Einweisung</ns2:p>
+                    <ns2:p>- Rücknahmen-Check</ns2:p>
+                    <ns2:p>- Endreinigung/Desinfektion</ns2:p>
+                </ns2:description>
+                <ns2:cpv-code>
+                    <ns2:main-code>85143000</ns2:main-code>
+                </ns2:cpv-code>
+                <ns2:place>
+                    <ns2:p>Siehe Verzeichnis der Empfängeranschriften</ns2:p>
+                </ns2:place>
+            </ns2:type-scope>
+            <ns2:lot-division-information>
+                <ns2:lots-description>
+                    <ns2:p>keine Losaufteilung</ns2:p>
+                </ns2:lots-description>
+            </ns2:lot-division-information>
+            <ns2:secondary-offer>NOT_AUTHORIZED</ns2:secondary-offer>
+            <ns2:deadlines>
+                <ns2:p>Beginn: 01.01.2027</ns2:p>
+                <ns2:p>Ende: 31.03.2027</ns2:p>
+                <ns2:p>Bemerkung zur Ausführungsfrist: Benötigt wird die Anmietung von Einsatzfahrzeugen für die sanitätsdienstliche Versorgung ab 01.01.2027., , Mindestmietzeit von 3 Monaten mit automatischer Verlängerung bei Bedarf um jeweils 1 Monat., , Der Vertrag kann kurzfristig nach Ablauf der Mindestmietzeit monatlich gekündigt werden.</ns2:p>
+            </ns2:deadlines>
+            <ns2:securities>
+                <ns2:p>Keine</ns2:p>
+            </ns2:securities>
+            <ns2:financial-conditions>
+                <ns2:p>Gemäß Bewerbungsbedingungen (Abschlags- und Schlusszahlungen im Rahmen der Verdingungsordnung für Leistungen Teil B (VOL/B))</ns2:p>
+            </ns2:financial-conditions>
+            <ns2:suitability>
+                <ns2:p>k.A.</ns2:p>
+            </ns2:suitability>
+            <ns2:awarding-criteria>
+                <ns2:p>Preis</ns2:p>
+            </ns2:awarding-criteria>
+            <ns2:offer-information>
+                <ns2:offer-and-participationrequest-form>
+                    <ns2:electronic-offer-and-participationrequest>
+                        <ns2:with-advanced-electronic-signature/>
+                    </ns2:electronic-offer-and-participationrequest>
+                </ns2:offer-and-participationrequest-form>
+                <ns2:deadlines>
+                    <ns2:offer-deadline>2026-11-30T13:00:00</ns2:offer-deadline>
+                    <ns2:validity-period>2026-12-28</ns2:validity-period>
+                </ns2:deadlines>
+                <ns2:required-language>deutsch</ns2:required-language>
+            </ns2:offer-information>
+        </ns2:uvgo-open>
+    </ns3:FORM_SECTION>
+</ns3:NATVERFAHREN>

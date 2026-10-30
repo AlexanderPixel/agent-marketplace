@@ -1,0 +1,58 @@
+{
+ "isEditAllowed": false,
+ "isPreparationActivity": false,
+ "isDataEntryCompleted": true,
+ "isPartialChangeActivity": false,
+ "showCost": true,
+ "procurement": {
+  "id": 11010384,
+  "contractingAuthorityId": 100133,
+  "name": "Üldehitusmaterjalide, viimistlusmaterjalide, rauakaupade, kinnitustarvikute ja sisustuskaupade raamleping (kordus)",
+  "nameI18n": {},
+  "procedureTypeCode": "A",
+  "procurementTypeCode": "A",
+  "procurementStateCode": "lõpetatud lepinguta",
+  "procurementSectorCode": "V",
+  "procurementSumLimitCode": "2",
+  "procedureEndingCode": "OM",
+  "isTendersErhr": true,
+  "publishNotice": true,
+  "isElectronicOffer": true,
+  "isEndingWithContractOrAward": false,
+  "procurementStartBasis": "P"
+ },
+ "procurementCpvDtos": [
+  {
+   "id": 11132,
+   "code": "44100000-1",
+   "name": "Ehitusmaterjalid ja seonduvad tooted",
+   "stampCre": "2026-10-30T10:45:04.004+0200",
+   "procurementCpvId": 18342719,
+   "orderNr": "0"
+  }
+ ],
+ "notDividedIntoPartsComment": "1. Sõlmitava raamlepingu periood on 36 kuud, millele hankija ol lisaks arvestanud 2 kuud poolte vaheliste kohustuste täitmiseks.\n2. Hankija ei ole riigihanget osadeks jaotanud, sest hankija korraldas riigihanke “Ehitus- ja tarbekaupade raamleping” (viitenumber 310837) jaotades selle viieks osaks. Hankija tunnistas hankemenetluse kehtetuks hankeosas 1 \"Üldehitusmaterjalid, viimistlusmaterjalid, rauakaubad, kinnitustarvikud ja sisustuskaubad\", kuna hankemenetluses ilmnenud ebakõlasid ei ole võimalik kõrvaldada ega hankemenetlust seetõttu ka õiguspäraselt lõpule viia. \nLähtudes RHSi § 73 lõike 3 punktist 6 tunnistas hankija riigihanke kehtetuks seoses vajadusega muuta hanketingimusi. Hankija korrastas riigihanke alusdokumente ja avaldab RHRis uue e. käesoleva riigihanke.",
+ "shortDescription": "Riigihanke esmeks on üldehitusmaterjalide, viimistlusmaterjalide, rauakaupade, kinnitustarvikute ja sisustuskaupade ostmine 36 kuu vältel. Tehniline kirjeldus on toodud Lisas 1 ja näidisostukorv Lisas 3.",
+ "durationInMonths": 38,
+ "startDate": "2027-01-01T00:00:00.000+0200",
+ "cost": 300000.0,
+ "organizationReason": "RL",
+ "isDividedIntoParts": false,
+ "canChangeProcurementParts": false,
+ "isNegotiation": true,
+ "multiStage": 1,
+ "submissionDate": "2026-11-30T14:00:00.000+0200",
+ "submissionDateOpening": "2026-11-30T15:00:00.000+0200",
+ "liablePersonId": 250949,
+ "liablePersonName": "JAN EEVEL",
+ "isCostClassified": false,
+ "isProcurement": true,
+ "isSingleTendererFrameworkAgr": false,
+ "isMultipleTendererFrameworkAgr": false,
+ "tenderDurationType": "MONTHS",
+ "canEditDuration": false,
+ "mainProcurerName": "aktsiaselts TALLINNA SADAM",
+ "mainProcurerTypeCodes": [
+  "NETWORK"
+ ]
+}

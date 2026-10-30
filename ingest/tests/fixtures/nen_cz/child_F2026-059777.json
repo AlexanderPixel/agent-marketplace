@@ -1,0 +1,418 @@
+[
+ {
+  "id": "8aabaa7e-f49a-4595-b5ca-5ab23db2bd6f",
+  "parent": "/api/submissions/8bdb26ef-c2a3-42a8-961c-c258ab9cec74",
+  "submissionVersion": "/api/submission_versions/677d3b6b-0a13-4277-b67c-2ad2de03cbe0",
+  "form": "/api/forms/af4e29f8-1392-45c1-bc1e-6fa1c7d54819",
+  "formSchemaVersion": "/api/form_schema_versions/9c15ad25-5860-44b5-ab2e-f99259096786",
+  "organization": "/api/organizations/9871a1f7-eb2f-48f7-b092-1015dc67e87e",
+  "data": {
+   "ND-Root": {
+    "ND-Lot": [
+     {
+      "BT-137-Lot": "LOT-0001",
+      "ND-LotTenderingTerms": {
+       "BT-60-Lot": "eu-funds",
+       "ND-AwardingTerms": {
+        "ND-LotAwardCriteria": {
+         "ND-LotAwardCriterion": [
+          {
+           "BT-539-Lot": "price",
+           "BT-540-Lot": "Hodnocení nabídek bude prováděno podle ekonomické výhodnosti. Ekonomická výhodnost nabídek bude hodnocena na základě celkové nabídkové ceny bez DPH.\nHodnocení bude provedeno tak, že nabídky budou seřazeny vzestupně podle výše nabídkové ceny, přičemž za nejvhodnější je považována nabídka s nejnižší n…",
+           "BT-734-Lot": "Celková nabídková cena v Kč bez DPH",
+           "ND-LotAwardCriterionParameters": {
+            "ND-LotAwardWeightCriterionParameter": {
+             "BT-5421-Lot": "per-exa",
+             "BT-541-Lot-WeightNumber": 100.0
+            }
+           }
+          }
+         ]
+        }
+       },
+       "ND-LotReviewTerms": {
+        "OPT-301-Lot-ReviewOrg": "ORG-0002",
+        "OPT-301-Lot-ReviewInfo": "ORG-0002",
+        "ND-ReviewPresentationPeriod": {
+         "BT-99-Lot": "Podmínkou pro podání návrhu k ÚOHS je podání námitek k Zadavateli, které je nutné doručit do 15 dnů ode dne, kdy se stěžovatel dozvěděl o domnělém porušení zákona Zadavatelem, nejpozději však do uzavření smlouvy nebo do chvíle, kdy se soutěž o návrh považuje po výběru návrhu za ukončenou.\n\nNámitky p…"
+        }
+       }
+      },
+      "ND-LotProcurementScope": {
+       "BT-21-Lot": "Revitalizace Sokolovny v Jablonci nad Nisou",
+       "BT-22-Lot": "CC/ZPŘ/TJSokol1/26",
+       "BT-23-Lot": "works",
+       "BT-24-Lot": "Předmětem veřejné zakázky je revitalizace budovy Sokolovny v Jablonci nad Nisou, která byla postavena v novorenesančním slohu roku 1898. V rámci revitalizace bude provedena oprava vnějšího pláště západního průčelí sokolovny, která zahrnuje výměnu střešní krytiny, opravu omítek a štukových prvků fasá…",
+       "ND-LotDuration": {
+        "BT-36-Lot": {
+         "_value": 14.0,
+         "_unitCode": "MONTH"
+        }
+       },
+       "ND-LotValueEstimate": {
+        "BT-27-Lot": {
+         "_value": 17200000.0,
+         "_currencyID": "CZK"
+        }
+       },
+       "ND-LotPlacePerformance": [
+        {
+         "BT-728-Lot": "Místem plnění je budova Sokolovny, Fügnerova 1054/5, Jablonec nad Nisou.",
+         "ND-LotPerformanceAddress": {
+          "BT-5071-Lot": "CZ051",
+          "BT-5141-Lot": "CZE"
+         }
+        }
+       ],
+       "ND-LotMainClassification": {
+        "BT-262-Lot": "45000000",
+        "BT-26(m)-Lot": "cpv"
+       },
+       "ND-StrategicProcurementType": [
+        {
+         "BT-06-Lot": "none"
+        }
+       ],
+       "ND-LotAdditionalClassification": [
+        {
+         "BT-263-Lot": "45453000",
+         "BT-26(a)-Lot": "cpv"
+        },
+        {
+         "BT-263-Lot": "45233160",
+         "BT-26(a)-Lot": "cpv"
+        },
+        {
+         "BT-263-Lot": "44220000",
+         "BT-26(a)-Lot": "cpv"
+        }
+       ]
+      },
+      "ND-LotTenderingProcess": {
+       "BT-115-Lot": false,
+       "ND-AuctionTerms": {
+        "BT-767-Lot": false
+       },
+       "ND-LotFAContractingSystem": {
+        "BT-765-Lot": "none"
+       },
+       "ND-LotDPSContractingSystem": {
+        "BT-766-Lot": "none"
+       }
+      }
+     }
+    ],
+    "OPT-999": "2000-01-01Z",
+    "BT-01-notice": "32014L0024",
+    "BT-02-notice": "can-standard",
+    "BT-03-notice": "result",
+    "BT-04-notice": "2415a2f3-0c5f-4169-b6cd-d96390f8f096",
+    "BT-701-notice": "8bdb26ef-c2a3-42a8-961c-c258ab9cec74",
+    "BT-757-notice": "01",
+    "OPT-001-notice": "2.3",
+    "OPT-002-notice": "eforms-sdk-1.13",
+    "BT-05(a)-notice": "2026-10-30+01:00",
+    "BT-05(b)-notice": "14:59:18+01:00",
+    "BT-702(a)-notice": "CES",
+    "ND-RootExtension": {
+     "OPP-070-notice": "29",
+     "ND-NoticeResult": {
+      "ND-LotResult": [
+       {
+        "BT-142-LotResult": "selec-w",
+        "OPT-322-LotResult": "RES-0001",
+        "BT-13713-LotResult": "LOT-0001",
+        "ND-ReceivedSubmissions": [
+         {
+          "BT-759-LotResult": 0.0,
+          "BT-760-LotResult": "part-req"
+         },
+         {
+          "BT-759-LotResult": 2.0,
+          "BT-760-LotResult": "t-esubm"
+         },
+         {
+          "BT-759-LotResult": 2.0,
+          "BT-760-LotResult": "tenders"
+         },
+         {
+          "BT-759-LotResult": 2.0,
+          "BT-760-LotResult": "t-sme"
+         },
+         {
+          "BT-759-LotResult": 0.0,
+          "BT-760-LotResult": "t-oth-eea"
+         },
+         {
+          "BT-759-LotResult": 0.0,
+          "BT-760-LotResult": "t-no-eea"
+         },
+         {
+          "BT-759-LotResult": 0.0,
+          "BT-760-LotResult": "t-verif-inad-low"
+         },
+         {
+          "BT-759-LotResult": 0.0,
+          "BT-760-LotResult": "t-verif-inad"
+         }
+        ],
+        "ND-BuyerReviewComplainants": {
+         "BT-712(a)-LotResult": "complainants",
+         "BT-712(b)-LotResult": 0.0
+        },
+        "ND-LotResultTenderReference": [
+         {
+          "OPT-320-LotResult": "TEN-0001"
+         }
+        ],
+        "ND-LotResultContractReference": [
+         {
+          "OPT-315-LotResult": "CON-0001"
+         }
+        ]
+       }
+      ],
+      "ND-LotTender": [
+       {
+        "BT-171-Tender": 1,
+        "BT-720-Tender": {
+         "_value": 14201687.76,
+         "_currencyID": "CZK"
+        },
+        "BT-1711-Tender": true,
+        "BT-3201-Tender": "002",
+        "OPT-310-Tender": "TPA-0001",
+        "OPT-321-Tender": "TEN-0001",
+        "BT-13714-Tender": "LOT-0001",
+        "ND-SubcontractedContract": {
+         "BT-773-Tender": "no"
+        }
+       }
+      ],
+      "ND-TenderingParty": [
+       {
+        "ND-Tenderer": [
+         {
+          "OPT-300-Tenderer": "ORG-0004"
+         }
+        ],
+        "OPT-210-Tenderer": "TPA-0001"
+       }
+      ],
+      "ND-SettledContract": [
+       {
+        "BT-145-Contract": "2026-10-29+01:00",
+        "BT-150-Contract": "01/2026",
+        "BT-1451-Contract": "2026-10-05+02:00",
+        "OPT-316-Contract": "CON-0001",
+        "ND-ContractEUFunds": [
+         {
+          "BT-722-Contract": "IROP_ERDF",
+          "BT-5011-Contract": "CZ.06.04.04/00/22_062/0007830"
+         }
+        ],
+        "ND-SettledContractTenderReference": [
+         {
+          "BT-3202-Contract": "TEN-0001"
+         }
+        ]
+       }
+      ],
+      "BT-161-NoticeResult": {
+       "_value": 14201687.76,
+       "_currencyID": "CZK"
+      }
+     },
+     "ND-Organizations": {
+      "ND-Organization": [
+       {
+        "ND-Company": {
+         "ND-CompanyAddress": {
+          "BT-507-Organization-Company": "CZ010",
+          "BT-512-Organization-Company": "15531",
+          "BT-513-Organization-Company": "Praha - Lipence",
+          "BT-514-Organization-Company": "CZE",
+          "BT-510(a)-Organization-Company": "Oddechová 505"
+         },
+         "ND-CompanyContact": {},
+         "ND-CompanyLegalEntity": [
+          {
+           "BT-501-Organization-Company": "26502402"
+          }
+         ],
+         "BT-500-Organization-Company": "Compet Consult s.r.o.",
+         "OPT-200-Organization-Company": "ORG-0001"
+        }
+       },
+       {
+        "ND-Company": {
+         "ND-CompanyAddress": {
+          "BT-507-Organization-Company": "CZ064",
+          "BT-512-Organization-Company": "60200",
+          "BT-513-Organization-Company": "Brno",
+          "BT-514-Organization-Company": "CZE",
+          "BT-510(a)-Organization-Company": "třída Kpt. Jaroše 1926/7"
+         },
+         "ND-CompanyContact": {},
+         "ND-CompanyLegalEntity": [
+          {
+           "BT-501-Organization-Company": "65349423"
+          }
+         ],
+         "BT-500-Organization-Company": "Úřad pro ochranu hospodářské soutěže",
+         "BT-505-Organization-Company": "https://uohs.gov.cz",
+         "OPT-200-Organization-Company": "ORG-0002"
+        }
+       },
+       {
+        "ND-Company": {
+         "ND-CompanyAddress": {
+          "BT-507-Organization-Company": "CZ051",
+          "BT-512-Organization-Company": "46601",
+          "BT-513-Organization-Company": "Jablonec nad Nisou",
+          "BT-514-Organization-Company": "CZE",
+          "BT-510(a)-Organization-Company": "Fügnerova 1054/5"
+         },
+         "ND-CompanyContact": {},
+         "ND-CompanyLegalEntity": [
+          {
+           "BT-501-Organization-Company": "60252260"
+          }
+         ],
+         "BT-500-Organization-Company": "Tělocvičná jednota Sokol Jablonec n. Nisou",
+         "OPT-200-Organization-Company": "ORG-0003"
+        },
+        "OPP-051-Organization": false,
+        "OPP-052-Organization": false
+       },
+       {
+        "ND-Company": {
+         "ND-CompanyAddress": {
+          "BT-507-Organization-Company": "CZ010",
+          "BT-512-Organization-Company": "11000",
+          "BT-513-Organization-Company": "Praha - Nové Město",
+          "BT-514-Organization-Company": "CZE",
+          "BT-510(a)-Organization-Company": "Hybernská 1008/22"
+         },
+         "ND-CompanyContact": {},
+         "ND-CompanyLegalEntity": [
+          {
+           "BT-501-Organization-Company": "25319540"
+          }
+         ],
+         "BT-165-Organization-Company": "sme",
+         "BT-500-Organization-Company": "MESSA Invest s.r.o.",
+         "OPT-200-Organization-Company": "ORG-0004"
+        }
+       }
+      ]
+     }
+    },
+    "ND-ProcedureTerms": {
+     "ND-CrossBorderLaw": {
+      "BT-09(a)-Procedure": "CrossBorderLaw",
+      "BT-09(b)-Procedure": "Zákon č. 134/2016 Sb., o zadávání veřejných zakázek"
+     },
+     "ND-LocalLegalBasisNoID": [
+      {
+       "BT-01(e)-Procedure": "LocalLegalBasis",
+       "BT-01(f)-Procedure": "Zákon č. 134/2016 Sb., o zadávání veřejných zakázek"
+      }
+     ]
+    },
+    "ND-ContractingParty": [
+     {
+      "ND-Buyer": {
+       "ND-ServiceProviderParty": [
+        {
+         "ND-ProviderParty": {
+          "OPT-300-Procedure-SProvider": "ORG-0001"
+         },
+         "OPT-030-Procedure-SProvider": "serv-prov"
+        }
+       ],
+       "OPT-300-Procedure-Buyer": "ORG-0003"
+      },
+      "BT-10-Procedure-Buyer": "rcr",
+      "BT-11-Procedure-Buyer": "org-sub",
+      "BT-508-Procedure-Buyer": "https://nen.nipez.cz/profil/TJSOKOLJNN"
+     }
+    ],
+    "ND-ProcedureProcurementScope": {
+     "BT-21-Procedure": "Revitalizace Sokolovny v Jablonci nad Nisou",
+     "BT-22-Procedure": "CC/ZPŘ/TJSokol1/26",
+     "BT-23-Procedure": "works",
+     "BT-24-Procedure": "Předmětem veřejné zakázky je revitalizace budovy Sokolovny v Jablonci nad Nisou, která byla postavena v novorenesančním slohu roku 1898. V rámci revitalizace bude provedena oprava vnějšího pláště západního průčelí sokolovny, která zahrnuje výměnu střešní krytiny, opravu omítek a štukových prvků fasá…",
+     "ND-ProcedureValueEstimate": {
+      "BT-27-Procedure": {
+       "_value": 17200000.0,
+       "_currencyID": "CZK"
+      }
+     },
+     "ND-ProcedureMainClassification": {
+      "BT-262-Procedure": "45000000",
+      "BT-26(m)-Procedure": "cpv"
+     },
+     "OPT-900-Procedure-ValidationAnchor": "_",
+     "ND-ProcedureAdditionalCommodityClassification": [
+      {
+       "BT-263-Procedure": "45453000",
+       "BT-26(a)-Procedure": "cpv"
+      },
+      {
+       "BT-263-Procedure": "45233160",
+       "BT-26(a)-Procedure": "cpv"
+      },
+      {
+       "BT-263-Procedure": "44220000",
+       "BT-26(a)-Procedure": "cpv"
+      }
+     ],
+     "ND-ProcedurePlacePerformanceAdditionalInformation": [
+      {
+       "BT-728-Procedure": "Místem plnění je budova Sokolovny, Fügnerova 1054/5, Jablonec nad Nisou.",
+       "ND-ProcedurePlacePerformance": {
+        "BT-5071-Procedure": "CZ051",
+        "BT-5141-Procedure": "CZE"
+       }
+      }
+     ]
+    },
+    "ND-ProcedureTenderingProcess": {
+     "BT-105-Procedure": "zpr"
+    }
+   },
+   "metadata": {
+    "subType": "29",
+    "identifikatoryNipez": {
+     "zadavaciPostup": {
+      "identifikatorNipez": "ZP/RVZ2600296080/001"
+     },
+     "identifikatorNipez": "RVZ2600296080",
+     "identifikatoryCasti": [
+      {
+       "idCastiVvz": "LOT-0001",
+       "identifikatorNipez": "RVZ2600296080/001"
+      }
+     ],
+     "identifikatorySmluv": [
+      {
+       "idSmlouvyVvz": "CON-0001",
+       "identifikatorNipez": "SML/RVZ2600255715",
+       "identifikatorNipezCasti": "RVZ2600296080/001"
+      }
+     ]
+    }
+   }
+  },
+  "dataHash": "36b7b3be94522ad72d7905c443b42e4669b0dbcdf8344788ec923a8277d5ce4a",
+  "workflowPlaceCode": "UVEREJNENO",
+  "variableId": "TT1MP-XPA65",
+  "relatedId": "2415a2f3-0c5f-4169-b6cd-d96390f8f096",
+  "publicId": "wtCaQ8N61FP4h59myRM0dr4qSVxKZ5l5",
+  "version": 11,
+  "validityPeriod": "2026-10-30T14:33:59+01:00/",
+  "createdAt": "2026-10-30T14:33:59+01:00",
+  "updatedAt": "2026-10-30T15:00:08+01:00"
+ }
+]

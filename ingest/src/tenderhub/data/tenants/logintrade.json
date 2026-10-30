@@ -1,0 +1,2006 @@
+[
+ {
+  "tenant": "usk-wroc.logintrade.net",
+  "notices": 5237,
+  "example_url": "https://usk-wroc.logintrade.net",
+  "buyer": "UNIWERSYTECKI SZPITAL KLINICZNY IM JANA MIKULICZA - RADECKIEGO WE WROCŁAWIU"
+ },
+ {
+  "tenant": "gcm.logintrade.net",
+  "notices": 4264,
+  "example_url": "https://gcm.logintrade.net/zapytania_email,233418,922a8bddeeed2b624be72da2abdff395.html",
+  "buyer": "Górnośląskie Centrum Medyczne im. prof. Leszka Gieca Śląskiego Uniwersytetu Medycznego w Katowicach"
+ },
+ {
+  "tenant": "szpitalparkitka.logintrade.net",
+  "notices": 4070,
+  "example_url": "https://szpitalparkitka.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Wojewódzki Szpital Specjalistyczny im. Najświętszej Maryi Panny"
+ },
+ {
+  "tenant": "czerwonagora.logintrade.net",
+  "notices": 3336,
+  "example_url": "https://czerwonagora.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Wojewódzki Szpital Specjalistyczny im. św. Rafała w Czerwonej Górze"
+ },
+ {
+  "tenant": "hospital.logintrade.net",
+  "notices": 2309,
+  "example_url": "https://hospital.logintrade.net/zapytania_email,242140,fb73dd4f377ad8213682750641abe790.html",
+  "buyer": "Szpital Wojewódzki w Bielsku-Białej"
+ },
+ {
+  "tenant": "usk-opole.logintrade.net",
+  "notices": 2164,
+  "example_url": "https://usk-opole.logintrade.net/zapytania_email,230754,c32a21d5577b8ad21853674c4e2472f9.html",
+  "buyer": "UNIWERSYTECKI SZPITAL KLINICZNY W OPOLU"
+ },
+ {
+  "tenant": "ur-edu.logintrade.net",
+  "notices": 1172,
+  "example_url": "https://ur-edu.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Uniwersytet Rzeszowski"
+ },
+ {
+  "tenant": "wss-zgierz.logintrade.net",
+  "notices": 922,
+  "example_url": "https://wss-zgierz.logintrade.net/rejestracja/",
+  "buyer": "Wojewódzki Szpital Specjalistyczny im. Marii Skłodowskiej-Curie w Zgierzu"
+ },
+ {
+  "tenant": "szpitalbystra.logintrade.net",
+  "notices": 900,
+  "example_url": "https://szpitalbystra.logintrade.net/zapytania_email,242581,cf19cd8b7fd139adc570d505773a1d1d.html",
+  "buyer": "Centrum Pulmonologii i Torakochirurgii w Bystrej"
+ },
+ {
+  "tenant": "zdw-lublin.logintrade.net",
+  "notices": 864,
+  "example_url": "https://zdw-lublin.logintrade.net/zapytania_email,241515,de8d1daeeac127588a7c3bac4d11302a.html",
+  "buyer": "Zarząd Dróg Wojewódzkich w Lublinie"
+ },
+ {
+  "tenant": "szpital-sosnowiec.logintrade.net",
+  "notices": 832,
+  "example_url": "https://szpital-sosnowiec.logintrade.net/zapytania_email,231466,0176b64e6ee6f5412b60a37d207b6297.html",
+  "buyer": "Sosnowiecki Szpital Miejski Sp. z o.o. w restrukturyzacji"
+ },
+ {
+  "tenant": "szpital.logintrade.net",
+  "notices": 830,
+  "example_url": "https://szpital.logintrade.net/zapytania_email,234873,f260925347795370b0805915b908011a.html",
+  "buyer": "Uniwersytecki Szpital Kliniczny w Radomsku"
+ },
+ {
+  "tenant": "zsm-czest.logintrade.net",
+  "notices": 766,
+  "example_url": "https://zsm-czest.logintrade.net/zapytania_email,242242,c023f5bf785356ef4d2471ac88892eb9.html",
+  "buyer": "SP ZOZ Miejski Szpital Zespolony w Częstochowie"
+ },
+ {
+  "tenant": "spzozhrubieszow.logintrade.net",
+  "notices": 642,
+  "example_url": "https://spzozhrubieszow.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "SAMODZIELNY PUBLICZNY ZESPÓŁ OPIEKI ZDROWOTNEJ W HRUBIESZOWIE"
+ },
+ {
+  "tenant": "umsosnowiec.logintrade.net",
+  "notices": 629,
+  "example_url": "https://umsosnowiec.logintrade.net/zapytania_email,241305,d16a381f72c0b8569bdb7fd34754bc48.html",
+  "buyer": "Miejski Zakład Usług Komunalnych"
+ },
+ {
+  "tenant": "szpital-nowasol-pzp.logintrade.net",
+  "notices": 600,
+  "example_url": "https://szpital-nowasol-pzp.logintrade.net/zapytania_email,231155,c861cf2a72c002c33444b9fda4f46422.html",
+  "buyer": "Wielospecjalistyczny Szpital Samodzielny Publiczny Zakład Opieki Zdrowotnej"
+ },
+ {
+  "tenant": "szpital-swidnica.logintrade.net",
+  "notices": 594,
+  "example_url": "https://szpital-swidnica.logintrade.net/zapytania_email,240973,e8d03c2833b857d5194361e612779d91.html",
+  "buyer": "Samodzielny Publiczny Zespół Opieki Zdrowotnej w Świdnicy"
+ },
+ {
+  "tenant": "umwd-dolnyslask.logintrade.net",
+  "notices": 556,
+  "example_url": "https://umwd-dolnyslask.logintrade.net/zapytania_email,238825,0451064c7691c13a1a90e84b93f3d240.html",
+  "buyer": "Województwo Dolnośląskie - Urząd Marszałkowski Województwa Dolnośląskiego"
+ },
+ {
+  "tenant": "ekosystem.logintrade.net",
+  "notices": 514,
+  "example_url": "https://ekosystem.logintrade.net/zapytania_email,242310,cc73594b321477dfd5c2151b161b397c.html",
+  "buyer": "EKOSYSTEM SPÓŁKA Z OGRANICZONA ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "rudaslaska.logintrade.net",
+  "notices": 506,
+  "example_url": "https://rudaslaska.logintrade.net/zapytania_email,233700,8b86cdd5d7d3de64edf78c87cfac034b.html",
+  "buyer": "MIASTO RUDA ŚLĄSKA"
+ },
+ {
+  "tenant": "gminawalbrzych.logintrade.net",
+  "notices": 482,
+  "example_url": "https://gminawalbrzych.logintrade.net/zapytania_email,238193,b95bcdb7795b35bb2f7cfa68787fb37c.html",
+  "buyer": "Gmina Wałbrzych"
+ },
+ {
+  "tenant": "mpk-wroclaw.logintrade.net",
+  "notices": 450,
+  "example_url": "https://mpk-wroclaw.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Miejskie Przedsiębiorstwo Komunikacyjne Spółka z ograniczoną odpowiedzialnością"
+ },
+ {
+  "tenant": "umed-wroc.logintrade.net",
+  "notices": 426,
+  "example_url": "https://umed-wroc.logintrade.net/zapytania_email,230531,5b267f24ef930f62c0d0f2aae88c5f70.html",
+  "buyer": "Uniwersytet Medyczny im. Piastów Śląskich we Wrocławiu"
+ },
+ {
+  "tenant": "um-bielsko.logintrade.net",
+  "notices": 364,
+  "example_url": "https://um-bielsko.logintrade.net/zapytania_email,237744,8efecd34653fb6e4143468033625d91d.html",
+  "buyer": "Miasto Bielsko-Biała Urząd Miejski w Bielsku-Białej"
+ },
+ {
+  "tenant": "umopole.logintrade.net",
+  "notices": 360,
+  "example_url": "https://umopole.logintrade.net/zapytania_email,241394,34504193276520251fd5ff470f175efe.html",
+  "buyer": "PRZEDSZKOLE PUBLICZNE NR 55"
+ },
+ {
+  "tenant": "zdw-olsztyn.logintrade.net",
+  "notices": 358,
+  "example_url": "https://zdw-olsztyn.logintrade.net/zapytania_email,242370,a84b8ce82f9b472bd534547ae04f1b0d.html",
+  "buyer": "Zarząd Dróg Wojewódzkich w Olsztynie"
+ },
+ {
+  "tenant": "tu-kielce.logintrade.net",
+  "notices": 342,
+  "example_url": "https://tu-kielce.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Politechnika Świętokrzyska"
+ },
+ {
+  "tenant": "zzk-wroc.logintrade.net",
+  "notices": 312,
+  "example_url": "https://zzk-wroc.logintrade.net/zapytania_email,234012,d4f587d8588c41482345153125a9ef24.html",
+  "buyer": "ZARZĄD ZASOBU KOMUNALNEGO"
+ },
+ {
+  "tenant": "szpitalpediatryczny.logintrade.net",
+  "notices": 303,
+  "example_url": "https://szpitalpediatryczny.logintrade.net/zapytania_email,230392,6d9947b35046bd4f92a419f0a1666feb.html",
+  "buyer": "SZPITAL PEDIATRYCZNY W BIELSKU-BIAŁEJ"
+ },
+ {
+  "tenant": "mpkpoznan-pzp.logintrade.net",
+  "notices": 300,
+  "example_url": "https://mpkpoznan-pzp.logintrade.net",
+  "buyer": "Miejskie Przedsiębiorstwo Komunikacyjne w Poznaniu Sp. z o.o."
+ },
+ {
+  "tenant": "zory.logintrade.net",
+  "notices": 258,
+  "example_url": "https://zory.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA MIEJSKA ŻORY"
+ },
+ {
+  "tenant": "umsiemianowice.logintrade.net",
+  "notices": 258,
+  "example_url": "https://umsiemianowice.logintrade.net/zapytania_email,233681,7c50b07aefd845f5422b7f2c065f129e.html",
+  "buyer": "Gmina Siemianowice Śląskie-Urząd Miasta Siemianowice Śląskie"
+ },
+ {
+  "tenant": "szpital-pszczyna.logintrade.net",
+  "notices": 254,
+  "example_url": "https://szpital-pszczyna.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Szpital Joannitas w Pszczynie samorządowa spółka z o.o. w restrukturyzacji"
+ },
+ {
+  "tenant": "interbroker.logintrade.net",
+  "notices": 246,
+  "example_url": "https://interbroker.logintrade.net/zapytania_email,242444,1dbf78a5fd89afd7b06ffe4625bd8207.html",
+  "buyer": "Inter-Broker sp. z o.o."
+ },
+ {
+  "tenant": "mentor.logintrade.net",
+  "notices": 243,
+  "example_url": "https://mentor.logintrade.net/zapytania_email,233932,d31522ea199c6af0898ee4d286ff421b.html",
+  "buyer": "GMINA ŁAŃCUT"
+ },
+ {
+  "tenant": "spzoz-przeworsk.logintrade.net",
+  "notices": 224,
+  "example_url": "https://spzoz-przeworsk.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Samodzielny Publiczny Zakład Opieki Zdrowotnej w Przeworsku"
+ },
+ {
+  "tenant": "mpwikwroclaw-pzp.logintrade.net",
+  "notices": 218,
+  "example_url": "https://mpwikwroclaw-pzp.logintrade.net/zapytania_email,238684,60e55f73775c147d9d4ae15980717207.html",
+  "buyer": "Miejskie Przedsiębiorstwo Wodociągów i Kanalizacji Spółka Akcyjna"
+ },
+ {
+  "tenant": "pzdw.logintrade.net",
+  "notices": 210,
+  "example_url": "https://pzdw.logintrade.net/zapytania_email,242328,33d0d499b39ab60a53ae3d6d27bb83c6.html",
+  "buyer": "Podlaski Zarząd Dróg Wojewódzkich w Białymstoku"
+ },
+ {
+  "tenant": "tbs-wroclaw.logintrade.net",
+  "notices": 182,
+  "example_url": "https://tbs-wroclaw.logintrade.net/zapytania_email,237793,f2d7adb444fb15834c7246a89eff414a.html",
+  "buyer": "TOWARZYSTWO BUDOWNICTWA SPOŁECZNEGO WROCŁAW SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "konin.logintrade.net",
+  "notices": 182,
+  "example_url": "https://konin.logintrade.net/zapytania_email,233523,01a2e12671ae152ee2fb06b63de97814.html",
+  "buyer": "Miasto Konin"
+ },
+ {
+  "tenant": "sejmik-kielce.logintrade.net",
+  "notices": 166,
+  "example_url": "https://sejmik-kielce.logintrade.net/zapytania_email,237001,dfecd358e617c7a6501f6689fa362c96.html",
+  "buyer": "Województwo Świętokrzyskie - Urząd Marszałkowski Województwa Świętokrzyskiego"
+ },
+ {
+  "tenant": "dg.logintrade.net",
+  "notices": 162,
+  "example_url": "https://dg.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Dąbrowa Górnicza"
+ },
+ {
+  "tenant": "zabrze.logintrade.net",
+  "notices": 158,
+  "example_url": "https://zabrze.logintrade.net/zapytania_email,234015,c2260b32f7cd05b5f44d904c7c0fa586.html",
+  "buyer": "MIASTO ZABRZE – PREZYDENT MIASTA"
+ },
+ {
+  "tenant": "tychy.logintrade.net",
+  "notices": 154,
+  "example_url": "https://tychy.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Miasta Tychy"
+ },
+ {
+  "tenant": "upwr.logintrade.net",
+  "notices": 150,
+  "example_url": "https://upwr.logintrade.net/zapytania_email,238105,4bc222fdb77a9000d3f7d930aad3d052.html",
+  "buyer": "UNIWERSYTET PRZYRODNICZY WE WROCŁAWIU"
+ },
+ {
+  "tenant": "umbytom.logintrade.net",
+  "notices": 148,
+  "example_url": "https://umbytom.logintrade.net/zapytania_email,230369,45724da5d3d0c9e50a6e0c072edd909b.html",
+  "buyer": "Gmina Bytom"
+ },
+ {
+  "tenant": "szdw-kielce.logintrade.net",
+  "notices": 142,
+  "example_url": "https://szdw-kielce.logintrade.net/zapytania_email,239779,2cc4c961a97865dc5211ce227c58a5eb.html",
+  "buyer": "Województwo Świętokrzyskie - Świętokrzyski Zarząd Dróg Wojewódzkich"
+ },
+ {
+  "tenant": "mzdim-bytom.logintrade.net",
+  "notices": 140,
+  "example_url": "https://mzdim-bytom.logintrade.net/zapytania_email,234671,35abbe9548a83842c4de86323447acc2.html",
+  "buyer": "Miejski Zarząd Dróg i Mostów w Bytomiu"
+ },
+ {
+  "tenant": "awf-katowice.logintrade.net",
+  "notices": 138,
+  "example_url": "https://awf-katowice.logintrade.net/",
+  "buyer": "Akademia Wychowania Fizycznego im. Jerzego Kukuczki w Katowicach"
+ },
+ {
+  "tenant": "zwik-lodz-pzp.logintrade.net",
+  "notices": 138,
+  "example_url": "https://zwik-lodz-pzp.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "\"ZAKŁAD WODOCIĄGÓW I KANALIZACJI\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "poznan-uw.logintrade.net",
+  "notices": 132,
+  "example_url": "https://poznan-uw.logintrade.net/zapytania_email,242168,270153fb29dd7eb65001f48f964495d2.html",
+  "buyer": "Wielkopolski Urząd Wojewódzki w Poznaniu"
+ },
+ {
+  "tenant": "zdium-wroc.logintrade.net",
+  "notices": 132,
+  "example_url": "https://zdium-wroc.logintrade.net/zapytania_email,242363,191713f83db1d1f32933f4a9e9b21976.html",
+  "buyer": "Zarząd Dróg i Utrzymania Miasta we Wrocławiu"
+ },
+ {
+  "tenant": "ekolbuszowa.logintrade.net",
+  "notices": 132,
+  "example_url": "https://www.ekolbuszowa.logintrade.net",
+  "buyer": "GMINA KOLBUSZOWA"
+ },
+ {
+  "tenant": "uws-edu.logintrade.net",
+  "notices": 130,
+  "example_url": "https://uws-edu.logintrade.net/.",
+  "buyer": "Uniwersytet w Siedlcach"
+ },
+ {
+  "tenant": "powiat-mielecki.logintrade.net",
+  "notices": 130,
+  "example_url": "https://powiat-mielecki.logintrade.net/zapytania_email,230513,dd7de805e9aeaba650873c69ce5a8262.html",
+  "buyer": "POWIAT MIELECKI"
+ },
+ {
+  "tenant": "ipn.logintrade.net",
+  "notices": 129,
+  "example_url": "https://ipn.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Instytut Pamięci Narodowej - Komisja Ścigania Zbrodni przeciwko Narodowi Polskiemu"
+ },
+ {
+  "tenant": "szpitalpsychiatrycznywegorzewo.logintrade.net",
+  "notices": 128,
+  "example_url": "https://szpitalpsychiatrycznywegorzewo.logintrade.net/zapytania_email,232668,34567bc8e9796897c84f1445ad7f5347.html",
+  "buyer": "Szpital Psychiatryczny Samodzielny Publiczny Zakład Opieki Zdrowotnej w Węgorzewie"
+ },
+ {
+  "tenant": "polskieradio.logintrade.net",
+  "notices": 128,
+  "example_url": "https://polskieradio.logintrade.net",
+  "buyer": "Polskie Radio - Spółka Akcyjna w likwidacji"
+ },
+ {
+  "tenant": "eib-pzp.logintrade.net",
+  "notices": 117,
+  "example_url": "https://eib-pzp.logintrade.net/",
+  "buyer": "Wielospecjalistyczny Szpital Samodzielny Publiczny Zakład Opieki Zdrowotnej w Nowej Soli"
+ },
+ {
+  "tenant": "skierniewice.logintrade.net",
+  "notices": 116,
+  "example_url": "https://skierniewice.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "URZĄD MIASTA SKIERNIEWICE"
+ },
+ {
+  "tenant": "enea-wytwarzanie-pzp.logintrade.net",
+  "notices": 113,
+  "example_url": "https://enea-wytwarzanie-pzp.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Enea Wytwarzanie sp. z o.o."
+ },
+ {
+  "tenant": "powiatmyszkowski.logintrade.net",
+  "notices": 110,
+  "example_url": "https://powiatmyszkowski.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Powiat Myszkowski reprezentowany przez Zarząd Powiatu w Myszkowie"
+ },
+ {
+  "tenant": "gmina-klodzko.logintrade.net",
+  "notices": 104,
+  "example_url": "https://gmina-klodzko.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Kłodzko"
+ },
+ {
+  "tenant": "pkmtychy-pzp.logintrade.net",
+  "notices": 104,
+  "example_url": "https://pkmtychy-pzp.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Przedsiębiorstwo Komunikacji Miejskiej Sp. z o.o."
+ },
+ {
+  "tenant": "jurasza.logintrade.net",
+  "notices": 104,
+  "example_url": "https://jurasza.logintrade.net/zapytania_email,185063,6623989859e1a313e59b4fe12e09a665.html",
+  "buyer": "SZPITAL UNIWERSYTECKI NR 1 IM. DR. A. JURASZA W BYDGOSZCZY"
+ },
+ {
+  "tenant": "czechowice-dziedzice.logintrade.net",
+  "notices": 100,
+  "example_url": "https://czechowice-dziedzice.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA CZECHOWICE-DZIEDZICE"
+ },
+ {
+  "tenant": "parkslaski.logintrade.net",
+  "notices": 100,
+  "example_url": "https://parkslaski.logintrade.net/zapytania_email,234810,4902ed30b485e14fb15e64ff9fc64819.html",
+  "buyer": "PARK ŚLĄSKI IM. GEN. JERZEGO ZIĘTKA SPÓŁKA AKCYJNA"
+ },
+ {
+  "tenant": "zim-wroc.logintrade.net",
+  "notices": 96,
+  "example_url": "https://zim-wroc.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA WROCŁAW - ZARZĄD INWESTYCJI MIEJSKICH"
+ },
+ {
+  "tenant": "konstancinjeziorna.logintrade.net",
+  "notices": 94,
+  "example_url": "https://konstancinjeziorna.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Konstancin-Jeziorna"
+ },
+ {
+  "tenant": "umilawa.logintrade.net",
+  "notices": 94,
+  "example_url": "https://umilawa.logintrade.net/zapytania_email,239877,9d9cf1874062b723a70547983dc26aaf.html",
+  "buyer": "GMINA MIEJSKA IŁAWA"
+ },
+ {
+  "tenant": "zawiercie.logintrade.net",
+  "notices": 94,
+  "example_url": "https://zawiercie.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA ZAWIERCIE"
+ },
+ {
+  "tenant": "woda-pzp.logintrade.net",
+  "notices": 90,
+  "example_url": "https://woda-pzp.logintrade.net/zapytania_email,240057,4a57ac87edc544834312dcd0ea9b0309.html",
+  "buyer": "Wodociągi Miejskie w Radomiu Sp. z o.o."
+ },
+ {
+  "tenant": "umchorzow.logintrade.net",
+  "notices": 88,
+  "example_url": "https://umchorzow.logintrade.net/zapytania_email,237694,73e9f81fdc510ffdb40916bcd65e1d41.html",
+  "buyer": "Miasto Chorzów - Miasto na Prawach Powiatu"
+ },
+ {
+  "tenant": "ugswierklaniec.logintrade.net",
+  "notices": 88,
+  "example_url": "https://ugswierklaniec.logintrade.net/zapytania_email,239665,4aa48c244492992e304ded42c3f8583b.html",
+  "buyer": "GMINA ŚWIERKLANIEC"
+ },
+ {
+  "tenant": "gmina-godow.logintrade.net",
+  "notices": 86,
+  "example_url": "https://gmina-godow.logintrade.net/zapytania_email,237811,8e97687b90e695d2ef541e920381c0d6.html",
+  "buyer": "Gmina Godów"
+ },
+ {
+  "tenant": "um-jaslo.logintrade.net",
+  "notices": 86,
+  "example_url": "https://um-jaslo.logintrade.net/zapytania_email,242462,bd769395f85842e363212dfd1f4301fa.html",
+  "buyer": "Miasto Jasło"
+ },
+ {
+  "tenant": "mpwik-pzp.logintrade.net",
+  "notices": 84,
+  "example_url": "https://mpwik-pzp.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Wodociągi Miasta Krakowa S.A."
+ },
+ {
+  "tenant": "miedzna.logintrade.net",
+  "notices": 82,
+  "example_url": "https://miedzna.logintrade.net/zapytania_email,239710,4a8203339fd6afcb333a7faefac0e6af.html",
+  "buyer": "GMINA MIEDŹNA"
+ },
+ {
+  "tenant": "wikopole.logintrade.net",
+  "notices": 82,
+  "example_url": "https://wikopole.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Wodociągi i Kanalizacja w Opolu sp. z o.o."
+ },
+ {
+  "tenant": "zgm-torun.logintrade.net",
+  "notices": 80,
+  "example_url": "https://zgm-torun.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Zakład Gospodarki Mieszkaniowej"
+ },
+ {
+  "tenant": "umwloclawek.logintrade.net",
+  "notices": 78,
+  "example_url": "https://umwloclawek.logintrade.net/zapytania_email,237958,f0ea4d7c327461bd982e87ebdf6c3bee.html",
+  "buyer": "Miasto Włocławek - Urząd Miasta Włocławek"
+ },
+ {
+  "tenant": "powiat-bedzin.logintrade.net",
+  "notices": 78,
+  "example_url": "https://powiat-bedzin.logintrade.net/zapytania_email,240439,9a478dc41f653959961a8f8b66773f26.html",
+  "buyer": "POWIAT BĘDZIŃSKI"
+ },
+ {
+  "tenant": "tarnowskiegory.logintrade.net",
+  "notices": 76,
+  "example_url": "https://tarnowskiegory.logintrade.net/zapytania_email,239837,7d93660987307dc80a2b23c4c95ad581.html",
+  "buyer": "GMINA TARNOWSKIE GÓRY"
+ },
+ {
+  "tenant": "muzeum-olsztyn.logintrade.net",
+  "notices": 76,
+  "example_url": "https://muzeum-olsztyn.logintrade.net/zapytania_email,234089,5c10f5804b987cba198d08a5faa4dcce.html",
+  "buyer": "MUZEUM WARMII I MAZUR W OLSZTYNIE"
+ },
+ {
+  "tenant": "srodaslaska.logintrade.net",
+  "notices": 74,
+  "example_url": "https://srodaslaska.logintrade.net",
+  "buyer": "Gmina Środa Śląska"
+ },
+ {
+  "tenant": "powiatsiedlecki.logintrade.net",
+  "notices": 72,
+  "example_url": "https://powiatsiedlecki.logintrade.net/",
+  "buyer": "Powiat Siedlecki"
+ },
+ {
+  "tenant": "mpgk-chelm.logintrade.net",
+  "notices": 72,
+  "example_url": "https://mpgk-chelm.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "MIEJSKIE PRZEDSIĘBIORSTWO GOSPODARKI KOMUNALNEJ SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "myslowice.logintrade.net",
+  "notices": 70,
+  "example_url": "https://myslowice.logintrade.net/zapytania_email,231490,dcb829abefcbe4442198ad8c323cfb41.html",
+  "buyer": "Gmina Miasto Mysłowice"
+ },
+ {
+  "tenant": "starostwo-puck.logintrade.net",
+  "notices": 68,
+  "example_url": "https://starostwo-puck.logintrade.net/zapytania_email,230602,3dd84dd59c8336122aa72ab996879781.html",
+  "buyer": "Powiat Pucki- Starostwo Powiatowe w Pucku"
+ },
+ {
+  "tenant": "modr-mazowsze.logintrade.net",
+  "notices": 68,
+  "example_url": "https://modr-mazowsze.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Mazowiecki Ośrodek Doradztwa Rolniczego z siedzibą w Warszawie"
+ },
+ {
+  "tenant": "strazmiejska-waw.logintrade.net",
+  "notices": 68,
+  "example_url": "https://strazmiejska-waw.logintrade.net/rejestracja/",
+  "buyer": "MIASTO STOŁECZNE WARSZAWA - STRAŻ MIEJSKA MIASTA STOŁECZNEGO WARSZAWY"
+ },
+ {
+  "tenant": "stadionslask.logintrade.net",
+  "notices": 66,
+  "example_url": "https://stadionslask.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": ",,STADION ŚLĄSKI\" W CHORZOWIE"
+ },
+ {
+  "tenant": "sanatoria-dolnoslaskie.logintrade.net",
+  "notices": 62,
+  "example_url": "https://sanatoria-dolnoslaskie.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Sanatoria Dolnośląskie sp. z o.o."
+ },
+ {
+  "tenant": "pcen.logintrade.net",
+  "notices": 59,
+  "example_url": "https://pcen.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "PODKARPACKI ZESPÓŁ PLACÓWEK WOJEWÓDZKICH W RZESZOWIE"
+ },
+ {
+  "tenant": "celestynow.logintrade.net",
+  "notices": 58,
+  "example_url": "https://celestynow.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA CELESTYNÓW"
+ },
+ {
+  "tenant": "tram-silesia.logintrade.net",
+  "notices": 58,
+  "example_url": "https://tram-silesia.logintrade.net/zapytania_email,236331,63a72f16728b8250561059e50c4c7102.html",
+  "buyer": "Tramwaje Śląskie S.A."
+ },
+ {
+  "tenant": "goleniow.logintrade.net",
+  "notices": 58,
+  "example_url": "https://goleniow.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Goleniów"
+ },
+ {
+  "tenant": "mzuim-tychy.logintrade.net",
+  "notices": 58,
+  "example_url": "https://mzuim-tychy.logintrade.net/zapytania_email,239956,5ea6be1736b336fb5dd5aa3f752aa0d6.html",
+  "buyer": "Miejski Zarząd Ulic i Mostów w Tychach"
+ },
+ {
+  "tenant": "gminasiedlce.logintrade.net",
+  "notices": 58,
+  "example_url": "https://gminasiedlce.logintrade.net/",
+  "buyer": "Gmina Siedlce"
+ },
+ {
+  "tenant": "abw.logintrade.net",
+  "notices": 58,
+  "example_url": "https://abw.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "AGENCJA BEZPIECZEŃSTWA WEWNĘTRZNEGO"
+ },
+ {
+  "tenant": "eibpzp.logintrade.net",
+  "notices": 55,
+  "example_url": "https://eibpzp.logintrade.net/",
+  "buyer": "Uniwersyteckie Centrum Kliniczne Warszawskiego Uniwersytetu Medycznego"
+ },
+ {
+  "tenant": "pegimek.logintrade.net",
+  "notices": 54,
+  "example_url": "https://pegimek.logintrade.net/zapytania_email,242449,dd03f7df8e3b02c3f8105f186b96130f.html",
+  "buyer": "Gmina Miejska Świdnik"
+ },
+ {
+  "tenant": "powiat-pszczyna.logintrade.net",
+  "notices": 54,
+  "example_url": "https://powiat-pszczyna.logintrade.net/zapytania_email,233850,11b04d7cdb891984239737cbedbdafe8.html",
+  "buyer": "Powiat Pszczyński"
+ },
+ {
+  "tenant": "bestwina.logintrade.net",
+  "notices": 52,
+  "example_url": "https://bestwina.logintrade.net/zapytania_email,242595,6b6005a1bc9f6ed3f04998bce665a09d.html",
+  "buyer": "Gmina Bestwina"
+ },
+ {
+  "tenant": "jasienica.logintrade.net",
+  "notices": 52,
+  "example_url": "https://jasienica.logintrade.net/zapytania_email,233462,6e0657c55c04950d31cc1554b7608bda.html",
+  "buyer": "Gmina Jasienica"
+ },
+ {
+  "tenant": "krakowairport-pzp.logintrade.net",
+  "notices": 50,
+  "example_url": "https://krakowairport-pzp.logintrade.net/zapytania_email,227947,7ded1822222c2b03945265069d1df199.html",
+  "buyer": "Międzynarodowy Port Lotniczy im. Jana Pawła II Kraków – Balice sp. z o.o."
+ },
+ {
+  "tenant": "kolbiel.logintrade.net",
+  "notices": 48,
+  "example_url": "http://kolbiel.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Kołbiel"
+ },
+ {
+  "tenant": "pan.logintrade.net",
+  "notices": 48,
+  "example_url": "https://pan.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Polska Akademia Nauk Muzeum Ziemi w Warszawie"
+ },
+ {
+  "tenant": "mops-katowice.logintrade.net",
+  "notices": 48,
+  "example_url": "https://mops-katowice.logintrade.net/zapytania_email,230876,cf02a295bb4a993e7e6b9b603bf7c4e3.html",
+  "buyer": "Miasto Katowice - MIEJSKI OŚRODEK POMOCY SPOŁECZNEJ W KATOWICACH"
+ },
+ {
+  "tenant": "wroclaw-lasy.logintrade.net",
+  "notices": 48,
+  "example_url": "https://wroclaw-lasy.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Skarb Państwa - Państwowe Gospodarstwo Leśne Lasy Państwowe Nadleśnictwo Oborniki Śląskie"
+ },
+ {
+  "tenant": "wsse.logintrade.net",
+  "notices": 48,
+  "example_url": "https://wsse.logintrade.net",
+  "buyer": "Wojewódzka Stacja Sanitarno-Epidemiologiczna w Olsztynie"
+ },
+ {
+  "tenant": "mzgk-czeladz.logintrade.net",
+  "notices": 46,
+  "example_url": "https://mzgk-czeladz.logintrade.net/zapytania_email,234513,4204c551df88a48a21f3ef8ea993133b.html",
+  "buyer": "MIEJSKI ZARZĄD GOSPODARKI KOMUNALNEJ W CZELADZI"
+ },
+ {
+  "tenant": "karczew.logintrade.net",
+  "notices": 42,
+  "example_url": "https://karczew.logintrade.net/zapytania_email,234965,fffafb2f01ed684b1faad2ed0ae1efbc.html",
+  "buyer": "Gmina Karczew"
+ },
+ {
+  "tenant": "zodr.logintrade.net",
+  "notices": 42,
+  "example_url": "https://zodr.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "ZACHODNIOPOMORSKI OŚRODEK DORADZTWA ROLNICZEGO W BARZKOWICACH"
+ },
+ {
+  "tenant": "dolmed.logintrade.net",
+  "notices": 42,
+  "example_url": "https://dolmed.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Dolnośląskie Centrum Medyczne Dolmed SA"
+ },
+ {
+  "tenant": "jedzmyrazem.logintrade.net",
+  "notices": 40,
+  "example_url": "https://jedzmyrazem.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "ZWIĄZEK POWIATOWO-GMINNY POD NAZWĄ \"JEDŹMY RAZEM\""
+ },
+ {
+  "tenant": "gminaswidnica.logintrade.net",
+  "notices": 38,
+  "example_url": "https://gminaswidnica.logintrade.net/zapytania_email,233516,0f90dcbbf91d7185cca8d87149bdf8cb.html",
+  "buyer": "GMINA ŚWIDNICA"
+ },
+ {
+  "tenant": "katywroclawskie.logintrade.net",
+  "notices": 38,
+  "example_url": "https://katywroclawskie.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Zakład Gospodarki Mieszkaniowej"
+ },
+ {
+  "tenant": "zoz.logintrade.net",
+  "notices": 36,
+  "example_url": "https://zoz.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "ZESPÓŁ OPIEKI ZDROWOTNEJ W ŚWIĘTOCHŁOWICACH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ W RESTRUKTURYZACJI"
+ },
+ {
+  "tenant": "dolnyslask.logintrade.net",
+  "notices": 36,
+  "example_url": "https://dolnyslask.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Biuro Obsługi Urzędu Marszałkowskiego Województwa Dolnośląskiego"
+ },
+ {
+  "tenant": "umbedzin.logintrade.net",
+  "notices": 36,
+  "example_url": "https://umbedzin.logintrade.net/zapytania_email,243897,3a982cbaf536dd85477798f64abb4f5a.html",
+  "buyer": "Miasto Będzin"
+ },
+ {
+  "tenant": "zkm-zawiercie.logintrade.net",
+  "notices": 36,
+  "example_url": "https://zkm-zawiercie.logintrade.net/zapytania_email,230327,9843ac542e9f50706108ca7a8e91d88b.html",
+  "buyer": "Zakład Komunikacji Miejskiej Zawiercie sp. z o.o."
+ },
+ {
+  "tenant": "csrg-pzp.logintrade.net",
+  "notices": 35,
+  "example_url": "https://csrg-pzp.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Centralna Stacja Ratownictwa Górniczego S.A."
+ },
+ {
+  "tenant": "pzd-bedzin.logintrade.net",
+  "notices": 34,
+  "example_url": "https://pzd-bedzin.logintrade.net/zapytania_email,242497,3ef5934f8a6c06bd965b88e84a7ffca7.html",
+  "buyer": "Powiatowy Zarząd Dróg w Będzinie z/s w Rogoźniku"
+ },
+ {
+  "tenant": "brzostek.logintrade.net",
+  "notices": 34,
+  "example_url": "https://brzostek.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA BRZOSTEK"
+ },
+ {
+  "tenant": "azk-pszczyna.logintrade.net",
+  "notices": 34,
+  "example_url": "https://azk-pszczyna.logintrade.net/zapytania_email,239866,32f9e52d9f8cf2d53f96c18d0a981f8d.html",
+  "buyer": "Administracja Zasobów Komunalnych w Pszczynie"
+ },
+ {
+  "tenant": "gostynin.logintrade.net",
+  "notices": 34,
+  "example_url": "https://gostynin.logintrade.net/zapytania_email,239134,3f1ab7e4627f740395ca1994d84430f7.html",
+  "buyer": "Gmina Miasta Gostynina"
+ },
+ {
+  "tenant": "kamiensk.logintrade.net",
+  "notices": 34,
+  "example_url": "https://kamiensk.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Kamieńsk"
+ },
+ {
+  "tenant": "umzarow.logintrade.net",
+  "notices": 34,
+  "example_url": "https://umzarow.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA ŻARÓW"
+ },
+ {
+  "tenant": "zdplublin.logintrade.net",
+  "notices": 32,
+  "example_url": "https://zdplublin.logintrade.net/zapytania_email,238088,c8420abd41a2b9ef5a83b69c452587ca.html",
+  "buyer": "Zarząd Dróg Powiatowych w Lublinie z siedzibą w Bełżycach"
+ },
+ {
+  "tenant": "zulwroclaw.logintrade.net",
+  "notices": 32,
+  "example_url": "https://zulwroclaw.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Lasy Państwowe Zakład Usług Leśnych we Wrocławiu"
+ },
+ {
+  "tenant": "rpwik-tychy-pzp.logintrade.net",
+  "notices": 32,
+  "example_url": "https://rpwik-tychy-pzp.logintrade.net",
+  "buyer": "Rejonowe Przedsiębiorstwo Wodociągów i Kanalizacji w Tychach Spółka Akcyjna"
+ },
+ {
+  "tenant": "mpo-krakow.logintrade.net",
+  "notices": 31,
+  "example_url": "https://mpo-krakow.logintrade.net",
+  "buyer": "Miejskie Przedsiębiorstwo Oczyszczania Sp. z o. o."
+ },
+ {
+  "tenant": "prudenspdp.logintrade.net",
+  "notices": 30,
+  "example_url": "https://prudenspdp.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Zespół Szkolno-Przedszkolny nr 16 we Wrocławiu"
+ },
+ {
+  "tenant": "ichf.logintrade.net",
+  "notices": 30,
+  "example_url": "https://ichf.logintrade.net",
+  "buyer": "INSTYTUT CHEMII FIZYCZNEJ PAN"
+ },
+ {
+  "tenant": "pzd-wodzislaw.logintrade.net",
+  "notices": 30,
+  "example_url": "https://pzd-wodzislaw.logintrade.net/zapytania_email,244086,902201f95030cb14139de2b906bb0bf7.html",
+  "buyer": "Powiat Wodzisławski - Powiatowy Zarząd Dróg w Wodzisławiu Śląskim z siedzibą w Syryni"
+ },
+ {
+  "tenant": "szpital-opole.logintrade.net",
+  "notices": 30,
+  "example_url": "https://szpital-opole.logintrade.net/zapytania_email,214309,694bbd35be181937f854023ec0e203e2.html",
+  "buyer": "Szpital Wojewódzki w Opolu sp. z o.o."
+ },
+ {
+  "tenant": "szpitalwolomin.logintrade.net",
+  "notices": 30,
+  "example_url": "https://szpitalwolomin.logintrade.net/login.html",
+  "buyer": "Szpital Matki Bożej Nieustającej Pomocy w Wołominie"
+ },
+ {
+  "tenant": "korsze.logintrade.net",
+  "notices": 28,
+  "example_url": "https://korsze.logintrade.net/zapytania_email,242214,847314480cad8184df3f4e2718ed3d69.html",
+  "buyer": "GMINA KORSZE"
+ },
+ {
+  "tenant": "marcinowice.logintrade.net",
+  "notices": 28,
+  "example_url": "https://marcinowice.logintrade.net/zapytania_email,242611,0cf18a3afcaf80697370dd3f156bf4d7.html",
+  "buyer": "Gmina Marcinowice"
+ },
+ {
+  "tenant": "powiatsredzki.logintrade.net",
+  "notices": 28,
+  "example_url": "https://powiatsredzki.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Powiat Średzki reprezentowany przez Zarząd Powiatu w Środzie Wielkopolskiej"
+ },
+ {
+  "tenant": "katowice-ap.logintrade.net",
+  "notices": 28,
+  "example_url": "https://katowice-ap.logintrade.net/",
+  "buyer": "Archiwum Państwowe w Katowicach"
+ },
+ {
+  "tenant": "teatrpolski.logintrade.net",
+  "notices": 28,
+  "example_url": "https://teatrpolski.logintrade.net",
+  "buyer": "TEATR POLSKI"
+ },
+ {
+  "tenant": "port-gdynia.logintrade.net",
+  "notices": 28,
+  "example_url": "https://port-gdynia.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Zarząd Morskiego Portu Gdynia S.A."
+ },
+ {
+  "tenant": "mzk-konin.logintrade.net",
+  "notices": 28,
+  "example_url": "https://mzk-konin.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Miejski Zakład Komunikacji w Koninie Sp. z o.o."
+ },
+ {
+  "tenant": "mpk-czestochowa.logintrade.net",
+  "notices": 27,
+  "example_url": "https://mpk-czestochowa.logintrade.net",
+  "buyer": "Miejskie Przedsiębiorstwo Komunikacyjne w Częstochowie S.A."
+ },
+ {
+  "tenant": "mzk-koszalin.logintrade.net",
+  "notices": 26,
+  "example_url": "https://mzk-koszalin.logintrade.net/rejestracja/przetargi.html",
+  "buyer": "Miejski Zakład Komunikacji Spółka z o.o. w Koszalinie"
+ },
+ {
+  "tenant": "radzionkow.logintrade.net",
+  "notices": 26,
+  "example_url": "https://radzionkow.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA RADZIONKÓW"
+ },
+ {
+  "tenant": "szpital-swinoujscie.logintrade.net",
+  "notices": 26,
+  "example_url": "https://szpital-swinoujscie.logintrade.net/zapytania_email,239888,549c3a9af7c6f096f150e5ad1ad48a33.html",
+  "buyer": "Szpital Miejski im. Jana Garduły w Świnoujściu sp. z o. o."
+ },
+ {
+  "tenant": "pogotowie-mielec.logintrade.net",
+  "notices": 26,
+  "example_url": "https://pogotowie-mielec.logintrade.net/zapytania_email,234813,3616fe72b8a4bcd33a8435e3dbfdef09.html",
+  "buyer": "Podkarpacka Stacja Pogotowia Ratunkowego w Mielcu"
+ },
+ {
+  "tenant": "zzowlodawa.logintrade.net",
+  "notices": 26,
+  "example_url": "https://zzowlodawa.logintrade.net/rejestracja/przetargi.html",
+  "buyer": "ZAKŁAD ZAGOSPODAROWANIA ODPADÓW MZC SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "spartan.logintrade.net",
+  "notices": 24,
+  "example_url": "https://spartan.logintrade.net/zapytania_email,238192,3eb6dafca906eaf3e9b4a0bfce3fe6e6.html",
+  "buyer": "Wrocławskie Centrum Treningowe SPARTAN Spółka z o.o."
+ },
+ {
+  "tenant": "sws-swarzewo.logintrade.net",
+  "notices": 24,
+  "example_url": "https://sws-swarzewo.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Spółka Wodno-Ściekowa \"Swarzewo\""
+ },
+ {
+  "tenant": "pzd-pszczyna.logintrade.net",
+  "notices": 24,
+  "example_url": "https://pzd-pszczyna.logintrade.net/zapytania_email,242097,0b59e8a65394f74067b759afd46e3d5d.html",
+  "buyer": "POWIATOWY ZARZĄD DRÓG W PSZCZYNIE"
+ },
+ {
+  "tenant": "ekspzoo.logintrade.net",
+  "notices": 24,
+  "example_url": "https://ekspzoo.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA MIASTO ŚWIDNICA MIEJSKI ZARZĄD NIERUCHOMOŚCI w Świdnicy"
+ },
+ {
+  "tenant": "pukgryfino.logintrade.net",
+  "notices": 24,
+  "example_url": "https://pukgryfino.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "PRZEDSIĘBIORSTWO USŁUG KOMUNALNYCH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "polanica.logintrade.net",
+  "notices": 24,
+  "example_url": "https://polanica.logintrade.net/zapytania_email,233947,a4dc95c2181008bef3f0d2a2c028555b.html",
+  "buyer": "GMINA POLANICA-ZDRÓJ"
+ },
+ {
+  "tenant": "umczeladz.logintrade.net",
+  "notices": 24,
+  "example_url": "https://umczeladz.logintrade.net/zapytania_email,236057,a618591ae244b00eca184f8a7d146972.html",
+  "buyer": "Miasto Czeladź"
+ },
+ {
+  "tenant": "mops-czeladz.logintrade.net",
+  "notices": 22,
+  "example_url": "https://mops-czeladz.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Centrum Usług Społecznych w Czeladzi"
+ },
+ {
+  "tenant": "poczesna.logintrade.net",
+  "notices": 22,
+  "example_url": "https://poczesna.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Poczesna"
+ },
+ {
+  "tenant": "dzialoszyn.logintrade.net",
+  "notices": 22,
+  "example_url": "https://dzialoszyn.logintrade.net/zapytania_email,236859,2283fe7484d5496af0ca9d736efd0499.html",
+  "buyer": "Miasto i Gmina Działoszyn"
+ },
+ {
+  "tenant": "szpitalpsychiatryczny.logintrade.net",
+  "notices": 22,
+  "example_url": "https://szpitalpsychiatryczny.logintrade.net/zapytania_email,236689,3c6661f7dc91c5ce50de42ded5378b74.html",
+  "buyer": "Wojewódzki Szpital dla Nerwowo i Psychicznie Chorych w Bolesławcu"
+ },
+ {
+  "tenant": "gmina-ilawa.logintrade.net",
+  "notices": 22,
+  "example_url": "https://gmina-ilawa.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Iława"
+ },
+ {
+  "tenant": "kolaczyce-itl.logintrade.net",
+  "notices": 20,
+  "example_url": "https://kolaczyce-itl.logintrade.net/zapytania_email,239920,dcf85dd7f7fb9ce33f560723b3c29ef1.html",
+  "buyer": "GMINA KOŁACZYCE"
+ },
+ {
+  "tenant": "uggrajewo.logintrade.net",
+  "notices": 20,
+  "example_url": "https://uggrajewo.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA GRAJEWO"
+ },
+ {
+  "tenant": "zoo-opole.logintrade.net",
+  "notices": 20,
+  "example_url": "https://zoo-opole.logintrade.net/zapytania_email,233507,5445ad72cf8c07a7c14b9fb9b4aba9d7.html",
+  "buyer": "Ogród Zoologiczny w Opolu Spółka z ograniczoną odpowiedzialnością"
+ },
+ {
+  "tenant": "arenakrakow.logintrade.net",
+  "notices": 20,
+  "example_url": "https://arenakrakow.logintrade.net/zapytania_email,230003,686ef63ffb6e33f1a1c737aae062775c.html",
+  "buyer": "Arena Kraków S.A."
+ },
+ {
+  "tenant": "tomice.logintrade.net",
+  "notices": 20,
+  "example_url": "https://tomice.logintrade.net/zapytania_email,229355,306ebc7fcb340a2ee2d5e4130fd0b6bc.html",
+  "buyer": "Gmina Tomice"
+ },
+ {
+  "tenant": "al-edu.logintrade.net",
+  "notices": 20,
+  "example_url": "https://al-edu.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Akademia Łomżyńska"
+ },
+ {
+  "tenant": "blachownia.logintrade.net",
+  "notices": 20,
+  "example_url": "https://blachownia.logintrade.net/zapytania_email,236803,74d36491a242241fa16be110179563a8.html",
+  "buyer": "GMINA BLACHOWNIA"
+ },
+ {
+  "tenant": "komprachcice.logintrade.net",
+  "notices": 20,
+  "example_url": "https://komprachcice.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Komprachcice"
+ },
+ {
+  "tenant": "maszewo.logintrade.net",
+  "notices": 20,
+  "example_url": "https://maszewo.logintrade.net",
+  "buyer": "Gmina Maszewo"
+ },
+ {
+  "tenant": "uek-krakow.logintrade.net",
+  "notices": 20,
+  "example_url": "https://uek-krakow.logintrade.net/zapytania_email,231574,7fbb1b9f02aa6aaf7b077319da990243.html",
+  "buyer": "Uniwersytet Ekonomiczny w Krakowie"
+ },
+ {
+  "tenant": "gimwarta.logintrade.net",
+  "notices": 20,
+  "example_url": "https://gimwarta.logintrade.net/rejestracja/ustawowe",
+  "buyer": "GMINA WARTA"
+ },
+ {
+  "tenant": "radioopole.logintrade.net",
+  "notices": 20,
+  "example_url": "https://radioopole.logintrade.net/",
+  "buyer": "Polskie Radio Regionalna Rozgłośnia w Opolu „Radio Opole” S.A. w likwidacji"
+ },
+ {
+  "tenant": "weglokoksenergia-pzp.logintrade.net",
+  "notices": 20,
+  "example_url": "https://weglokoksenergia-pzp.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "WĘGLOKOKS ENERGIA NSE sp. z o.o"
+ },
+ {
+  "tenant": "pdps-ostrowina.logintrade.net",
+  "notices": 20,
+  "example_url": "https://pdps-ostrowina.logintrade.net/zapytania_email,238478,e4964899ca0c85ce8478a195ca33d2a9.html",
+  "buyer": "Powiatowy Dom Pomocy Społecznej"
+ },
+ {
+  "tenant": "mosir-siemianowice.logintrade.net",
+  "notices": 20,
+  "example_url": "https://mosir-siemianowice.logintrade.net/zapytania_email,222799,409c1ffef0324344947c80172e02cffc.html",
+  "buyer": "Miejski Ośrodek Sportu i Rekreacji \"Pszczelnik\""
+ },
+ {
+  "tenant": "marki.logintrade.net",
+  "notices": 20,
+  "example_url": "https://marki.logintrade.net/zapytania_email,221305,0fc1a97d861a9a070d7e6a99b194ecc1.html",
+  "buyer": "Gmina Miasto Marki"
+ },
+ {
+  "tenant": "umolecko.logintrade.net",
+  "notices": 19,
+  "example_url": "https://umolecko.logintrade.net/",
+  "buyer": "GMINA OLECKO"
+ },
+ {
+  "tenant": "um-wegorzewo.logintrade.net",
+  "notices": 18,
+  "example_url": "https://um-wegorzewo.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA WĘGORZEWO"
+ },
+ {
+  "tenant": "ugradziejow.logintrade.net",
+  "notices": 18,
+  "example_url": "https://ugradziejow.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA RADZIEJÓW"
+ },
+ {
+  "tenant": "gminadzikowiec.logintrade.net",
+  "notices": 18,
+  "example_url": "https://gminadzikowiec.logintrade.net/",
+  "buyer": "GMINA DZIKOWIEC"
+ },
+ {
+  "tenant": "fabrykapelnazycia.logintrade.net",
+  "notices": 18,
+  "example_url": "https://fabrykapelnazycia.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Fabryka Pełna Życia Sp. z o.o."
+ },
+ {
+  "tenant": "ranizow.logintrade.net",
+  "notices": 18,
+  "example_url": "https://ranizow.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA RANIŻÓW"
+ },
+ {
+  "tenant": "raczki.logintrade.net",
+  "notices": 18,
+  "example_url": "https://raczki.logintrade.net",
+  "buyer": "GMINA RACZKI"
+ },
+ {
+  "tenant": "bobrowniki.logintrade.net",
+  "notices": 18,
+  "example_url": "https://bobrowniki.logintrade.net/zapytania_email,236081,db20421c44ca1102deb7281034512297.html",
+  "buyer": "GMINA BOBROWNIKI"
+ },
+ {
+  "tenant": "psychiatria-bielsko.logintrade.net",
+  "notices": 18,
+  "example_url": "https://psychiatria-bielsko.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "BIELSKIE CENTRUM PSYCHIATRII - OLSZÓWKA W BIELSKU-BIAŁEJ"
+ },
+ {
+  "tenant": "zuk-pulawy.logintrade.net",
+  "notices": 18,
+  "example_url": "https://zuk-pulawy.logintrade.net",
+  "buyer": "ZAKŁAD USŁUG KOMUNALNYCH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "teatr-rzeszow.logintrade.net",
+  "notices": 18,
+  "example_url": "https://teatr-rzeszow.logintrade.net/",
+  "buyer": "Teatr im. Wandy Siemaszkowej w Rzeszowie"
+ },
+ {
+  "tenant": "tbsdombud.logintrade.net",
+  "notices": 18,
+  "example_url": "https://tbsdombud.logintrade.net",
+  "buyer": "Towarzystwo Budownictwa Społecznego \"DOMBUD\" Sp. z o. o."
+ },
+ {
+  "tenant": "info-piekary.logintrade.net",
+  "notices": 18,
+  "example_url": "https://info-piekary.logintrade.net/zapytania_email,219795,a57a8a1178b3e2f02bbc4b8a26504d78.html",
+  "buyer": "Miejskie Centrum Informacji i Turystyki w Piekarach Śląskich Sp. z o.o."
+ },
+ {
+  "tenant": "ug-sokoly-wrotapodlasia.logintrade.net",
+  "notices": 17,
+  "example_url": "https://ug-sokoly-wrotapodlasia.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Sokoły"
+ },
+ {
+  "tenant": "kobielewielkie.logintrade.net",
+  "notices": 16,
+  "example_url": "https://kobielewielkie.logintrade.net/zapytania_email,233900,c8c65dcf4624ffcf9d5ed39e43d01dde.html",
+  "buyer": "Gmina Kobiele Wielkie"
+ },
+ {
+  "tenant": "przybiernow.logintrade.net",
+  "notices": 16,
+  "example_url": "https://przybiernow.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA PRZYBIERNÓW"
+ },
+ {
+  "tenant": "gminaciechanow.logintrade.net",
+  "notices": 16,
+  "example_url": "https://gminaciechanow.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Ciechanów"
+ },
+ {
+  "tenant": "olsztynek.logintrade.net",
+  "notices": 16,
+  "example_url": "https://olsztynek.logintrade.net/zapytania_email,237566,97bfc7493b5f00d77a29685bf1cfd9a0.html",
+  "buyer": "GMINA OLSZTYNEK"
+ },
+ {
+  "tenant": "euterminal.logintrade.net",
+  "notices": 16,
+  "example_url": "https://euterminal.logintrade.net/",
+  "buyer": "Euroterminal Sławków Sp. z o.o."
+ },
+ {
+  "tenant": "zsp-dlugoleka.logintrade.net",
+  "notices": 16,
+  "example_url": "https://zsp-dlugoleka.logintrade.net/zapytania_email,241441,3835ce1a12c98423c2b1ef7232d52af7.html",
+  "buyer": "Zespół Szkolno-Przedszkolny w Długołęce"
+ },
+ {
+  "tenant": "umradziejow.logintrade.net",
+  "notices": 14,
+  "example_url": "https://umradziejow.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Miasto Radziejów"
+ },
+ {
+  "tenant": "bielskpodlaski.logintrade.net",
+  "notices": 14,
+  "example_url": "https://bielskpodlaski.logintrade.net",
+  "buyer": "Gmina Bielsk Podlaski"
+ },
+ {
+  "tenant": "mck-krakow.logintrade.net",
+  "notices": 14,
+  "example_url": "https://mck-krakow.logintrade.net",
+  "buyer": "MIĘDZYNARODOWE CENTRUM KULTURY W KRAKOWIE"
+ },
+ {
+  "tenant": "wodociagi-chrzanowskie.logintrade.net",
+  "notices": 14,
+  "example_url": "https://wodociagi-chrzanowskie.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Wodociągi Chrzanowskie Sp. z o.o."
+ },
+ {
+  "tenant": "zalewo.logintrade.net",
+  "notices": 14,
+  "example_url": "https://zalewo.logintrade.net/zapytania_email,230520,8fe1598e03ec09a7b930e301a384a477.html",
+  "buyer": "GMINA ZALEWO"
+ },
+ {
+  "tenant": "lubiszyn.logintrade.net",
+  "notices": 14,
+  "example_url": "https://lubiszyn.logintrade.net/",
+  "buyer": "GMINA LUBISZYN"
+ },
+ {
+  "tenant": "pogotowie-legnica.logintrade.net",
+  "notices": 14,
+  "example_url": "https://pogotowie-legnica.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Pogotowie Ratunkowe w Legnicy"
+ },
+ {
+  "tenant": "laskarzew.logintrade.net",
+  "notices": 14,
+  "example_url": "https://laskarzew.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Łaskarzew"
+ },
+ {
+  "tenant": "pk-kielce.logintrade.net",
+  "notices": 14,
+  "example_url": "https://pk-kielce.logintrade.net/zapytania_email,231692,ae08f27389e140d784d640933916b684.html",
+  "buyer": "Województwo Świętokrzyskie - Zespół Świętokrzyskich i Nadnidziańskich Parków Krajobrazowych"
+ },
+ {
+  "tenant": "kozy.logintrade.net",
+  "notices": 14,
+  "example_url": "https://kozy.logintrade.net/zapytania_email,240805,782a2b363bbfac3c718afddc6c835a15.html",
+  "buyer": "GMINA KOZY"
+ },
+ {
+  "tenant": "bojszowy.logintrade.net",
+  "notices": 14,
+  "example_url": "https://bojszowy.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA BOJSZOWY"
+ },
+ {
+  "tenant": "osina.logintrade.net",
+  "notices": 12,
+  "example_url": "https://osina.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA OSINA"
+ },
+ {
+  "tenant": "pzdn.logintrade.net",
+  "notices": 12,
+  "example_url": "https://pzdn.logintrade.net/zapytania_email,242415,486cf3530531973d1dcc7dc81ce204a6.html",
+  "buyer": "POWIATOWY ZARZĄD DRÓG W NIDZICY"
+ },
+ {
+  "tenant": "kurzetnik.logintrade.net",
+  "notices": 12,
+  "example_url": "https://kurzetnik.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA KURZĘTNIK"
+ },
+ {
+  "tenant": "mdkbielsko.logintrade.net",
+  "notices": 12,
+  "example_url": "https://mdkbielsko.logintrade.net/zapytania_email,233680,b067515f2fe8d47e87451523b6104c90.html",
+  "buyer": "Miejski Dom Kultury"
+ },
+ {
+  "tenant": "pwik-wodzislaw.logintrade.net",
+  "notices": 12,
+  "example_url": "https://pwik-wodzislaw.logintrade.net/zapytania_email,239588,0badfd9100f94a1c1b341b6bb420d9a5.html",
+  "buyer": "Przedsiębiorstwo Wodociągów i Kanalizacji Sp. z o.o."
+ },
+ {
+  "tenant": "silesiafilm.logintrade.net",
+  "notices": 12,
+  "example_url": "https://silesiafilm.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Instytucja Filmowa Silesia-Film"
+ },
+ {
+  "tenant": "gmina-wilkowice.logintrade.net",
+  "notices": 12,
+  "example_url": "https://gmina-wilkowice.logintrade.net/zapytania_email,230171,96d2b653ba34edf1fec7ecc906cc12d1.html",
+  "buyer": "GMINA WILKOWICE"
+ },
+ {
+  "tenant": "zbm-cieszyn.logintrade.net",
+  "notices": 12,
+  "example_url": "https://zbm-cieszyn.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Zakład Budynków Miejskich w Cieszynie Sp. z o.o."
+ },
+ {
+  "tenant": "suprasl.logintrade.net",
+  "notices": 12,
+  "example_url": "https://suprasl.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Sportowa Szkoła Podstawowa im. Ferdynanda Mareckiego w Supraślu"
+ },
+ {
+  "tenant": "strattonbrokers.logintrade.net",
+  "notices": 12,
+  "example_url": "https://strattonbrokers.logintrade.net/",
+  "buyer": "REGIONALNE CENTRUM GOSPODARKI ODPADAMI RESORT SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "zaz-goleniow.logintrade.net",
+  "notices": 12,
+  "example_url": "https://zaz-goleniow.logintrade.net/",
+  "buyer": "Gmina Goleniów - Zakład Aktywności Zawodowej w Goleniowie"
+ },
+ {
+  "tenant": "malczyce.logintrade.net",
+  "notices": 10,
+  "example_url": "https://malczyce.logintrade.net/zapytania_email,233632,fbe8e062f2f877d58c79cc2a82a2d36e.html",
+  "buyer": "Gmina Malczyce"
+ },
+ {
+  "tenant": "wordkatowice.logintrade.net",
+  "notices": 10,
+  "example_url": "https://wordkatowice.logintrade.net/zapytania_email,238183,0d5825c2ffbaa5796966673d8fe8ab0e.html",
+  "buyer": "Wojewódzki Ośrodek Ruchu Drogowego w Katowicach"
+ },
+ {
+  "tenant": "wisniew.logintrade.net",
+  "notices": 10,
+  "example_url": "https://wisniew.logintrade.net/",
+  "buyer": "Gmina Wiśniew"
+ },
+ {
+  "tenant": "pngs.logintrade.net",
+  "notices": 10,
+  "example_url": "https://pngs.logintrade.net/zapytania_email,244073,d7e678e86568820a46663958eb316a98.html",
+  "buyer": "PARK NARODOWY GÓR STOŁOWYCH."
+ },
+ {
+  "tenant": "simzaglebie.logintrade.net",
+  "notices": 10,
+  "example_url": "https://simzaglebie.logintrade.net/zapytania_email,236475,0063a7d6389d143038d628bd803df7a8.html",
+  "buyer": "SIM ZAGŁĘBIE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "ugkuczbork.logintrade.net",
+  "notices": 9,
+  "example_url": "https://ugkuczbork.logintrade.net",
+  "buyer": "Gmina Kuczbork - Osada"
+ },
+ {
+  "tenant": "zgm-zawiercie.logintrade.net",
+  "notices": 8,
+  "example_url": "https://zgm-zawiercie.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Zawiercie jednostka organizacyjna - Zakład Gospodarki Mieszkaniowej"
+ },
+ {
+  "tenant": "jgora.logintrade.net",
+  "notices": 8,
+  "example_url": "https://jgora.logintrade.net/zapytania_email,236339,e4c9b6c1bf721a4dde5321ba8eab675e.html",
+  "buyer": "Pogotowie Ratunkowe w Jeleniej Górze"
+ },
+ {
+  "tenant": "kowaleoleckie.logintrade.net",
+  "notices": 8,
+  "example_url": "https://kowaleoleckie.logintrade.net/",
+  "buyer": "Gmina Kowale Oleckie"
+ },
+ {
+  "tenant": "mpuk.logintrade.net",
+  "notices": 8,
+  "example_url": "https://mpuk.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Miejskie Przedsiębiorstwo Usług Komunalnych w Świętochłowicach Sp. z o.o."
+ },
+ {
+  "tenant": "kjf.logintrade.net",
+  "notices": 8,
+  "example_url": "https://kjf.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "KJF Broker Sp. z o.o."
+ },
+ {
+  "tenant": "zk1grudziadz.logintrade.net",
+  "notices": 8,
+  "example_url": "https://zk1grudziadz.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Zakład Karny Nr 1 w Grudziądzu"
+ },
+ {
+  "tenant": "wydminy.logintrade.net",
+  "notices": 8,
+  "example_url": "https://wydminy.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Wydminy"
+ },
+ {
+  "tenant": "pzeas.logintrade.net",
+  "notices": 8,
+  "example_url": "http://pzeas.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Zespół Szkół Zawodowych z Biblioteką Pedagogiczną w Piszu"
+ },
+ {
+  "tenant": "kielce-praca.logintrade.net",
+  "notices": 8,
+  "example_url": "https://kielce-praca.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Powiatowy Urząd Pracy w Kielcach"
+ },
+ {
+  "tenant": "mops-dg.logintrade.net",
+  "notices": 8,
+  "example_url": "https://mops-dg.logintrade.net/zapytania_email,241142,3e24049d60e6c7ac507904c5f9fa53df.html",
+  "buyer": "MIEJSKI OŚRODEK POMOCY SPOŁECZNEJ W DĄBROWIE GÓRNICZEJ"
+ },
+ {
+  "tenant": "domaro.logintrade.net",
+  "notices": 8,
+  "example_url": "https://domaro.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "...Domaro Sp. z o.o."
+ },
+ {
+  "tenant": "bakalarzewo.logintrade.net",
+  "notices": 8,
+  "example_url": "https://bakalarzewo.logintrade.net/zapytania_email,236303,15dcbf18337d54ac76f9bd023c409064.html",
+  "buyer": "GMINA BAKAŁARZEWO"
+ },
+ {
+  "tenant": "ztkzory.logintrade.net",
+  "notices": 8,
+  "example_url": "https://ztkzory.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Zakłady Techniki Komunalnej sp. z o.o."
+ },
+ {
+  "tenant": "mtbs-konin.logintrade.net",
+  "notices": 8,
+  "example_url": "https://mtbs-konin.logintrade.net/zapytania_email,215748,4a3f824fbae7976f741617a85b8e54a1.html",
+  "buyer": "Miejskie Towarzystwo Budownictwa Społecznego Sp. z o.o. w Koninie"
+ },
+ {
+  "tenant": "enea-pzp.logintrade.net",
+  "notices": 8,
+  "example_url": "https://enea-pzp.logintrade.net/zapytania_email,211716,58bef05fd2078fc1f12e92d1423b5be7.html",
+  "buyer": "ENEA Nowa Energia sp. z o.o."
+ },
+ {
+  "tenant": "zpk-warmia-mazury.logintrade.net",
+  "notices": 8,
+  "example_url": "https://zpk-warmia-mazury.logintrade.net/zapytania_email,235791,36156a1cc5c88fe9bc10d27d68e3974e.html",
+  "buyer": "Zespół Parków Krajobrazowych Pojezierza Iławskiego i Wzgórz Dylewskich"
+ },
+ {
+  "tenant": "mpkwroclaw.logintrade.net",
+  "notices": 6,
+  "example_url": "https://mpkwroclaw.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Miejskie Przedsiębiorstwo Komunikacyjne Spółka z ograniczoną odpowiedzialnością"
+ },
+ {
+  "tenant": "wios-lodz.logintrade.net",
+  "notices": 6,
+  "example_url": "https://wios-lodz.logintrade.net/rejestracja/ustawowe",
+  "buyer": "Wojewódzki Inspektorat Ochrony Środowiska w Łodzi"
+ },
+ {
+  "tenant": "powiatlobeski.logintrade.net",
+  "notices": 6,
+  "example_url": "https://powiatlobeski.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "POWIAT ŁOBESKI"
+ },
+ {
+  "tenant": "szczyrk.logintrade.net",
+  "notices": 6,
+  "example_url": "https://szczyrk.logintrade.net/zapytania_email,239096,4c51a409918c20167e0960d9be2e25da.html",
+  "buyer": "GMINA SZCZYRK"
+ },
+ {
+  "tenant": "gminamarianowo.logintrade.net",
+  "notices": 6,
+  "example_url": "https://gminamarianowo.logintrade.net",
+  "buyer": "GMINA MARIANOWO"
+ },
+ {
+  "tenant": "zaniemyskiewodociagi.logintrade.net",
+  "notices": 6,
+  "example_url": "https://zaniemyskiewodociagi.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "ZANIEMYSKIE WODOCIĄGI SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "teatr-rozrywki.logintrade.net",
+  "notices": 6,
+  "example_url": "https://teatr-rozrywki.logintrade.net/",
+  "buyer": "Teatr Rozrywki"
+ },
+ {
+  "tenant": "atol-olesnica.logintrade.net",
+  "notices": 6,
+  "example_url": "https://atol-olesnica.logintrade.net/zapytania_email,236317,8b595f18e622a12adb4c90ead5308b52.html",
+  "buyer": "Oleśnicki Kompleks Rekreacyjny \"ATOL\" Sp. z o.o."
+ },
+ {
+  "tenant": "teatrslaski.logintrade.net",
+  "notices": 6,
+  "example_url": "https://teatrslaski.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "TEATR ŚLĄSKI  IM. STANISŁAWA WYSPIAŃSKIEGO W KATOWICACH"
+ },
+ {
+  "tenant": "tyski-sport.logintrade.net",
+  "notices": 6,
+  "example_url": "https://tyski-sport.logintrade.net/",
+  "buyer": "Tyski Sport S.A."
+ },
+ {
+  "tenant": "olszanka-gmina.logintrade.net",
+  "notices": 6,
+  "example_url": "https://olszanka-gmina.logintrade.net/",
+  "buyer": "GMINA OLSZANKA"
+ },
+ {
+  "tenant": "zb-rudziniec.logintrade.net",
+  "notices": 6,
+  "example_url": "https://zb-rudziniec.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA RUDZINIEC - ZAKŁAD BUDŻETOWY GOSPODARKI KOMUNALNEJ I MIESZKANIOWEJ W RUDZIŃCU"
+ },
+ {
+  "tenant": "dps-choroszcz.logintrade.net",
+  "notices": 6,
+  "example_url": "https://dps-choroszcz.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "DOM POMOCY SPOŁECZNEJ w CHOROSZCZY"
+ },
+ {
+  "tenant": "miastolaskarzew.logintrade.net",
+  "notices": 6,
+  "example_url": "https://miastolaskarzew.logintrade.net",
+  "buyer": "Gmina Miasto Łaskarzew"
+ },
+ {
+  "tenant": "teatr-capitol.logintrade.net",
+  "notices": 6,
+  "example_url": "https://teatr-capitol.logintrade.net/zapytania_email,242199,8eba736764b3749894db8f7306eb4c36.html",
+  "buyer": "Teatr Muzyczny Capitol"
+ },
+ {
+  "tenant": "ospgrodziecsl.logintrade.net",
+  "notices": 6,
+  "example_url": "https://ospgrodziecsl.logintrade.net/zapytania_email,229679,f41cc9a3ab6e88f9c53320d6b5dff118.html",
+  "buyer": "Ochotnicza Straż Pożarna w Grodźcu Śląskim"
+ },
+ {
+  "tenant": "ospleszczyny.logintrade.net",
+  "notices": 6,
+  "example_url": "https://ospleszczyny.logintrade.net/",
+  "buyer": "Ochotnicza Straż Pożarna Bielsko-Biała Leszczyny"
+ },
+ {
+  "tenant": "leofal.logintrade.net",
+  "notices": 5,
+  "example_url": "https://leofal.logintrade.net/zapytania_email,241073,1d7f2503f877156899e1e99a0d2f51cd.html",
+  "buyer": "GMINA SUWAŁKI"
+ },
+ {
+  "tenant": "miastoryn.logintrade.net",
+  "notices": 4,
+  "example_url": "https://miastoryn.logintrade.net",
+  "buyer": "Gmina Ryn"
+ },
+ {
+  "tenant": "grabowo.logintrade.net",
+  "notices": 4,
+  "example_url": "https://grabowo.logintrade.net",
+  "buyer": "GMINA GRABOWO"
+ },
+ {
+  "tenant": "ossolineum.logintrade.net",
+  "notices": 4,
+  "example_url": "https://ossolineum.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Zakład Narodowy im. Ossolińskich"
+ },
+ {
+  "tenant": "hydrodukt.logintrade.net",
+  "notices": 4,
+  "example_url": "https://hydrodukt.logintrade.net/zapytania_email,230539,28c45d13d71353ae458fbaadcf38a795.html",
+  "buyer": "Hydrodukt Spółka z ograniczoną odpowiedzialnością"
+ },
+ {
+  "tenant": "powiatwegorzewski.logintrade.net",
+  "notices": 4,
+  "example_url": "https://powiatwegorzewski.logintrade.net/zapytania_email,212552,ddf803dd0a3fae4bdbe8b3fa7fe0adb9.html",
+  "buyer": "POWIAT WĘGORZEWSKI"
+ },
+ {
+  "tenant": "kuratorium-waw.logintrade.net",
+  "notices": 4,
+  "example_url": "https://kuratorium-waw.logintrade.net/",
+  "buyer": "Kuratorium Oświaty w Warszawie"
+ },
+ {
+  "tenant": "pup-wroclaw.logintrade.net",
+  "notices": 4,
+  "example_url": "https://pup-wroclaw.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Powiatowy Urząd Pracy we Wrocławiu"
+ },
+ {
+  "tenant": "pgk-ketrzyn.logintrade.net",
+  "notices": 4,
+  "example_url": "https://pgk-ketrzyn.logintrade.net/rejestracja/?do_not_show_cookie_info=true",
+  "buyer": "Przedsiębiorstwo Gospodarki Komunalnej \"Komunalnik\" Sp. z o.o."
+ },
+ {
+  "tenant": "mpgk.logintrade.net",
+  "notices": 4,
+  "example_url": "https://mpgk.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Miejskie Przedsiębiorstwo Gospodarki Komunalnej w Świętochłowicach Sp. z o.o."
+ },
+ {
+  "tenant": "mpgk-jaslo.logintrade.net",
+  "notices": 4,
+  "example_url": "https://mpgk-jaslo.logintrade.net/zapytania_email,231514,ce49184522d35e2960968e618f3d55d7.html",
+  "buyer": "MIEJSKIE PRZEDSIĘBIORSTWO GOSPODARKI KOMUNALNEJ SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "zs2myszkow.logintrade.net",
+  "notices": 4,
+  "example_url": "https://zs2myszkow.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Zespół Szkół nr 2 im. H. Kołłątaja"
+ },
+ {
+  "tenant": "cztbs.logintrade.net",
+  "notices": 4,
+  "example_url": "https://cztbs.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Czerwonackie Towarzystwo Budownictwa Społecznego sp. z o.o."
+ },
+ {
+  "tenant": "konstantynow-zpisdn.logintrade.net",
+  "notices": 4,
+  "example_url": "https://konstantynow-zpisdn.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "ZAKŁAD POPRAWCZY I SCHRONISKO DLA NIELETNICH"
+ },
+ {
+  "tenant": "magnus-broker.logintrade.net",
+  "notices": 4,
+  "example_url": "https://magnus-broker.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Zespół Szkół Centrum Kształcenia Rolniczego w Sandomierzu-Mokoszynie"
+ },
+ {
+  "tenant": "zozmswia.logintrade.net",
+  "notices": 4,
+  "example_url": "https://zozmswia.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ SZPITAL SPECJALISTYCZNY MINISTERSTWA SPRAW WEWNĘTRZNYCH I ADMINISTRACJI W OTWOCKU"
+ },
+ {
+  "tenant": "osirursus.logintrade.net",
+  "notices": 4,
+  "example_url": "https://osirursus.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Ośrodek Sportu i Rekreacji m.st. Warszawy w Dzielnicy Ursus"
+ },
+ {
+  "tenant": "nemo-wodnyswiat.logintrade.net",
+  "notices": 4,
+  "example_url": "https://nemo-wodnyswiat.logintrade.net/zapytania_email,241111,9e87eaddae62e5cfafb29d7e45233396.html",
+  "buyer": "„Nemo-Wodny Świat Dąbrowa Górnicza” Sp. z o. o."
+ },
+ {
+  "tenant": "ops-sw.logintrade.net",
+  "notices": 4,
+  "example_url": "https://ops-sw.logintrade.net/zapytania_email,220916,9e680597cc0e6f61543a98af21c6a2cb.html",
+  "buyer": "Ośrodek Pomocy Społecznej w Świętochłowicach"
+ },
+ {
+  "tenant": "szkolatyniecmaly.logintrade.net",
+  "notices": 4,
+  "example_url": "https://szkolatyniecmaly.logintrade.net/zapytania_email,243040,7c985b3d68fdc25ae55f6f5cee373069.html",
+  "buyer": "Zespół Szkolno-Przedszkolny w Tyńcu Małym"
+ },
+ {
+  "tenant": "grudusk.logintrade.net",
+  "notices": 4,
+  "example_url": "https://grudusk.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Grudusk"
+ },
+ {
+  "tenant": "budry.logintrade.net",
+  "notices": 4,
+  "example_url": "https://budry.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Gmina Budry"
+ },
+ {
+  "tenant": "pec-bytom.logintrade.net",
+  "notices": 4,
+  "example_url": "https://pec-bytom.logintrade.net/zapytania_email,228662,2b5f023fe7013232e10f8bceb0306cea.html",
+  "buyer": "Przedsiębiorstwo Energetyki Cieplnej Sp. z o.o."
+ },
+ {
+  "tenant": "pniewy.logintrade.net",
+  "notices": 4,
+  "example_url": "https://pniewy.logintrade.net",
+  "buyer": "Gmina Pniewy"
+ },
+ {
+  "tenant": "zoisok.logintrade.net",
+  "notices": 4,
+  "example_url": "https://zoisok.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Zakład Odzysku i Składowania Odpadów Komunalnych w Leśnie Górnym"
+ },
+ {
+  "tenant": "ugk.logintrade.net",
+  "notices": 4,
+  "example_url": "https://ugk.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA KOBIERZYCE"
+ },
+ {
+  "tenant": "dabrowskie-wodociagi-pzp.logintrade.net",
+  "notices": 4,
+  "example_url": "https://dabrowskie-wodociagi-pzp.logintrade.net/zapytania_email,234734,0bb8cd657a7f0bb36bad263d76eec7f6.html",
+  "buyer": "Dąbrowskie Wodociągi sp. z o.o."
+ },
+ {
+  "tenant": "po-opole.logintrade.net",
+  "notices": 4,
+  "example_url": "https://po-opole.logintrade.net/zapytania_email,212368,8e1bb3532c55021f9e1abbf5f0eef16b.html",
+  "buyer": "POLITECHNIKA OPOLSKA"
+ },
+ {
+  "tenant": "dabrowskie-wodociagi.logintrade.net",
+  "notices": 4,
+  "example_url": "https://dabrowskie-wodociagi.logintrade.net/zapytania_email,225932,86996cbbd1af4981a880a47b19f09a4b.html",
+  "buyer": "Dąbrowskie Wodociągi sp. z o.o."
+ },
+ {
+  "tenant": "szpitaldziekanow.logintrade.net",
+  "notices": 4,
+  "example_url": "https://szpitaldziekanow.logintrade.net",
+  "buyer": "Samodzielny Zespół Publicznych Zakładów Opieki Zdrowotnej im. Dzieci Warszawy w Dziekanowie Leśnym"
+ },
+ {
+  "tenant": "komunikacjabeskidzka.logintrade.net",
+  "notices": 2,
+  "example_url": "https://komunikacjabeskidzka.logintrade.net/",
+  "buyer": "Komunikacja Beskidzka S.A."
+ },
+ {
+  "tenant": "zwik-lodzpzp.logintrade.net",
+  "notices": 2,
+  "example_url": "https://zwik-lodzpzp.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "\"ZAKŁAD WODOCIĄGÓW I KANALIZACJI\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "rakbroker.logintrade.net",
+  "notices": 2,
+  "example_url": "https://rakbroker.logintrade.net/zapytania_email,228210,8354e06e3a9a133ecc6ea12f620a1517.html",
+  "buyer": "POWIAT MILICKI"
+ },
+ {
+  "tenant": "zlobekpszenno.logintrade.net",
+  "notices": 2,
+  "example_url": "https://zlobekpszenno.logintrade.net/zapytania_email,231378,a499bc73d60026187ed90384ecedc6cb.html",
+  "buyer": "ŻŁOBEK GMINNY W PSZENNIE"
+ },
+ {
+  "tenant": "mopr-bytom.logintrade.net",
+  "notices": 2,
+  "example_url": "https://mopr-bytom.logintrade.net/zapytania_email,231987,532b8e3352fd056fbbca5b51b0097acf.html",
+  "buyer": "MIEJSKI OŚRODEK POMOCY RODZINIE"
+ },
+ {
+  "tenant": "tbs-jaslo.logintrade.net",
+  "notices": 2,
+  "example_url": "https://tbs-jaslo.logintrade.net/zapytania_email,231778,91e30e3c547c025eb073e2dc107f2b02.html",
+  "buyer": "Towarzystwo Budownictwa Społecznego - Administrator Budynków Komunalnych Sp. z o.o."
+ },
+ {
+  "tenant": "zgmkwr.logintrade.net",
+  "notices": 2,
+  "example_url": "https://zgmkwr.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Zakład Gospodarki Mieszkaniowej"
+ },
+ {
+  "tenant": "edu-dlugoleka.logintrade.net",
+  "notices": 2,
+  "example_url": "https://edu-dlugoleka.logintrade.net/zapytania_email,241909,57e6b0033f5d2ec9eb4a207237311740.html",
+  "buyer": "PRZEDSZKOLE W KIEŁCZOWIE"
+ },
+ {
+  "tenant": "forty.logintrade.net",
+  "notices": 2,
+  "example_url": "https://forty.logintrade.net",
+  "buyer": "Twierdza Srebrna Góra Sp. z o.o."
+ },
+ {
+  "tenant": "mops-zawiercie.logintrade.net",
+  "notices": 2,
+  "example_url": "https://mops-zawiercie.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Miejski Ośrodek Pomocy Społecznej w Zawierciu"
+ },
+ {
+  "tenant": "senior-czeladz.logintrade.net",
+  "notices": 2,
+  "example_url": "https://senior-czeladz.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Dom Pomocy Społecznej SENIOR im. Jana Kaczmarka"
+ },
+ {
+  "tenant": "aquapark-wroc.logintrade.net",
+  "notices": 2,
+  "example_url": "https://aquapark-wroc.logintrade.net/zapytania_email,242972,735e9039268ea659c44b47d292d7d498.html",
+  "buyer": "WROCŁAWSKI PARK WODNY SPÓŁKA AKCYJNA"
+ },
+ {
+  "tenant": "cus-czeladz.logintrade.net",
+  "notices": 2,
+  "example_url": "https://cus-czeladz.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Centrum Usług Społecznych w Czeladzi"
+ },
+ {
+  "tenant": "tbsczeladz.logintrade.net",
+  "notices": 2,
+  "example_url": "https://tbsczeladz.logintrade.net/",
+  "buyer": "Czeladzkie Towarzystwo Budownictwa Społecznego - ZBK Sp. z o.o."
+ },
+ {
+  "tenant": "zck-wroc.logintrade.net",
+  "notices": 2,
+  "example_url": "https://zck-wroc.logintrade.net/zapytania_email,241629,3de73a3f80d7deaf2c7b77c7f8874044.html",
+  "buyer": "Zarząd Cmentarzy Komunalnych"
+ },
+ {
+  "tenant": "zlobekkielczow.logintrade.net",
+  "notices": 2,
+  "example_url": "https://zlobekkielczow.logintrade.net/zapytania_email,242211,2e748c2cf113b34f98f9bbcaa2f3e535.html",
+  "buyer": "GMINNY ŻŁOBEK W KIEŁCZOWIE"
+ },
+ {
+  "tenant": "pzddzialdowo.logintrade.net",
+  "notices": 2,
+  "example_url": "https://pzddzialdowo.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Powiatowy Zarząd Dróg w Działdowie"
+ },
+ {
+  "tenant": "horyniec-zdroj.logintrade.net",
+  "notices": 2,
+  "example_url": "https://horyniec-zdroj.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GMINA HORYNIEC-ZDRÓJ"
+ },
+ {
+  "tenant": "gkskatowice.logintrade.net",
+  "notices": 2,
+  "example_url": "https://gkskatowice.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "GKS GIEKSA KATOWICE SPÓŁKA AKCYJNA"
+ },
+ {
+  "tenant": "szkolamirkow.logintrade.net",
+  "notices": 2,
+  "example_url": "https://szkolamirkow.logintrade.net/zapytania_email,243299,7325875497da7e6b8ac3b3b530921724.html",
+  "buyer": "ZESPÓŁ SZKOLNO-PRZEDSZKOLNY W MIRKOWIE"
+ },
+ {
+  "tenant": "mosir-czeladz.logintrade.net",
+  "notices": 2,
+  "example_url": "https://mosir-czeladz.logintrade.net/zapytania_email,231496,c2ad49d5a86a9edc6b705e61ddfe98c0.html",
+  "buyer": "Miejski Ośrodek Sportu i Rekreacji w Czeladzi"
+ },
+ {
+  "tenant": "parama.logintrade.net",
+  "notices": 2,
+  "example_url": "https://parama.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "ŚLĄSKI TEATR LALKI I AKTORA \"ATENEUM\""
+ },
+ {
+  "tenant": "zlobek-czeladz.logintrade.net",
+  "notices": 2,
+  "example_url": "https://zlobek-czeladz.logintrade.net/zapytania_email,235184,b16a294f44be5bcebf75feaa405e718c.html",
+  "buyer": "ŻŁOBEK MIEJSKI W CZELADZI"
+ },
+ {
+  "tenant": "sp4-czeladz.logintrade.net",
+  "notices": 2,
+  "example_url": "https://sp4-czeladz.logintrade.net/zapytania_email,235314,2777ff9080ee159ef24cc8009375d266.html",
+  "buyer": "Szkoła Podstawowa nr 4 w Czeladzi"
+ },
+ {
+  "tenant": "sp3-czeladz.logintrade.net",
+  "notices": 2,
+  "example_url": "https://sp3-czeladz.logintrade.net/zapytania_email,234805,cea9ac5eb542b1174a342009452e36ea.html",
+  "buyer": "Szkoła Podstawowa nr 3 im. Janusza Korczaka w Czeladzi"
+ },
+ {
+  "tenant": "dps1-zabrze.logintrade.net",
+  "notices": 2,
+  "example_url": "https://dps1-zabrze.logintrade.net/zapytania_email,243193,87dcdba3c4761a4295484f498b8d9f69.html",
+  "buyer": "DOM POMOCY SPOŁECZNEJ NR 1"
+ },
+ {
+  "tenant": "gminasrokowo.logintrade.net",
+  "notices": 2,
+  "example_url": "https://gminasrokowo.logintrade.net/zapytania_email,239520,6d4921e2bbcae3767a81719894b5b4c6.html",
+  "buyer": "GMINA SROKOWO"
+ },
+ {
+  "tenant": "krus-swi.logintrade.net",
+  "notices": 2,
+  "example_url": "https://krus-swi.logintrade.net",
+  "buyer": "Centrum Rehabilitacji Rolników Kasy Rolniczego Ubezpieczenia Społecznego \"Sasanka\" w Świnoujściu"
+ },
+ {
+  "tenant": "mzs-radziejow.logintrade.net",
+  "notices": 2,
+  "example_url": "https://mzs-radziejow.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "MIEJSKI ZESPÓŁ SZKÓŁ W RADZIEJOWIE"
+ },
+ {
+  "tenant": "mzbm-bedzin.logintrade.net",
+  "notices": 2,
+  "example_url": "https://mzbm-bedzin.logintrade.net/zapytania_email,237313,0162b7149dce9f6cdb8909cce5618430.html",
+  "buyer": "Miejski Zakład Budynków Mieszkalnych Spółka z ograniczoną odpowiedzialnością"
+ },
+ {
+  "tenant": "opssrodawlkp.logintrade.net",
+  "notices": 2,
+  "example_url": "https://opssrodawlkp.logintrade.net/zapytania_email,241187,8bddb7a3bb1ec634aa48d0951d45599a.html",
+  "buyer": "Osrodek Pomocy Społecznej"
+ },
+ {
+  "tenant": "opera-wroclaw.logintrade.net",
+  "notices": 2,
+  "example_url": "https://opera-wroclaw.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "OPERA WROCŁAWSKA"
+ },
+ {
+  "tenant": "osir-goleniow.logintrade.net",
+  "notices": 2,
+  "example_url": "https://osir-goleniow.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "OŚRODEK SPORTU I REKREACJI"
+ },
+ {
+  "tenant": "radziejowskidomkultury.logintrade.net",
+  "notices": 2,
+  "example_url": "https://radziejowskidomkultury.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Radziejowski Dom Kultury w Radziejowie"
+ },
+ {
+  "tenant": "osp-rudzica.logintrade.net",
+  "notices": 2,
+  "example_url": "https://osp-rudzica.logintrade.net/zapytania_email,230105,c91ffe86fa9c1be66e92552288e4829c.html",
+  "buyer": "Ochotnicza Straż Pożarna w Rudzicy"
+ },
+ {
+  "tenant": "ospmiedzyrzeczegorne.logintrade.net",
+  "notices": 2,
+  "example_url": "https://ospmiedzyrzeczegorne.logintrade.net/zapytania_email,230106,6d39ac81f16546189f42c75aa9978701.html",
+  "buyer": "Ochotnicza Straż Pożarna w Międzyrzeczu Górnym"
+ },
+ {
+  "tenant": "mka-jastrzebie.logintrade.net",
+  "notices": 2,
+  "example_url": "https://mka-jastrzebie.logintrade.net/zapytania,str2.html?rodzaj=ustawowe&return_to=/zapytania,wedycji,propozycje.html?rodzaj=ustawowe&id_zapytanie=195060",
+  "buyer": "Międzygminna Komunikacja Autobusowa Sp. z o.o."
+ },
+ {
+  "tenant": "wszn.logintrade.net",
+  "notices": 2,
+  "example_url": "https://wszn.logintrade.net/",
+  "buyer": "Wojewódzki Szpital Specjalistyczny im. św. Jadwigi w Opolu"
+ },
+ {
+  "tenant": "mzk-oswiecim.logintrade.net",
+  "notices": 2,
+  "example_url": "https://mzk-oswiecim.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Miejski Zakład Komunikacji spółka z o.o."
+ },
+ {
+  "tenant": "mpwikwroclawpzp.logintrade.net",
+  "notices": 2,
+  "example_url": "https://mpwikwroclawpzp.logintrade.net/zapytania_email,219087,c0313bd54bf16677db379e361eb74ac5.html",
+  "buyer": "Miejskie Przedsiębiorstwo Wodociągów i Kanalizacji Spółka Akcyjna"
+ },
+ {
+  "tenant": "powiattorunski.logintrade.net",
+  "notices": 2,
+  "example_url": "https://powiattorunski.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Powiat Toruński"
+ },
+ {
+  "tenant": "osp-mazancowice.logintrade.net",
+  "notices": 2,
+  "example_url": "https://osp-mazancowice.logintrade.net/zapytania_email,229805,9e0790051246f5d9533eefbdbdab1562.html",
+  "buyer": "Ochotnicza Straż Pożarna w Mazańcowicach"
+ },
+ {
+  "tenant": "ospjasienica.logintrade.net",
+  "notices": 2,
+  "example_url": "https://ospjasienica.logintrade.net/zapytania_email,229671,f8f0bf9d5ed83f6c7bb2b623ad1ddc33.html",
+  "buyer": "Ochotnicza Straż Pożarna w Jasienicy"
+ },
+ {
+  "tenant": "mpk-czest.logintrade.net",
+  "notices": 1,
+  "example_url": "https://mpk-czest.logintrade.net/rejestracja/ustawowe.html",
+  "buyer": "Miejskie Przedsiębiorstwo Komunikacyjne w Częstochowie S.A."
+ }
+]

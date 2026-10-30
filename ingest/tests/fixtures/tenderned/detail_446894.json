@@ -1,0 +1,77 @@
+{
+ "publicatieId": 446894,
+ "kenmerk": 621709,
+ "aanbestedingNaam": "Onderhoud meet-en regelinstrumenten 2027-2032",
+ "opdrachtgeverNaam": "Waterschap Hollandse Delta",
+ "numberOfDaysBeforeAanmeldenInschrijven": 20,
+ "opdrachtBeschrijving": "Onderhoud meet-en regelinstrumenten 2027-2032 apparatuur Hach Lange",
+ "publicatieDatum": "2026-10-30T04:25:48.316388",
+ "sluitingsDatum": "2026-11-19T12:00:00",
+ "typePublicatie": "Aankondiging van een opdracht - algemene richtlijn, standaardregeling",
+ "publicatieCode": "EF16",
+ "juridischKaderCode": {
+  "code": "NAW",
+  "omschrijving": "Aanbestedingswet 2012"
+ },
+ "nationaalOfEuropeesCode": {
+  "code": "EU",
+  "omschrijving": "Europees"
+ },
+ "typeOpdrachtCode": {
+  "code": "D",
+  "omschrijving": "Diensten"
+ },
+ "procedureCode": {
+  "code": "APE",
+  "omschrijving": "Andere procedure in één fase"
+ },
+ "cpvCodes": [
+  {
+   "isHoofdOpdracht": true,
+   "code": "50500000-0",
+   "omschrijving": "Reparatie en onderhoud van pompen, kleppen, kranen, metalen containers en machines"
+  }
+ ],
+ "nutsCodes": [
+  {
+   "code": "NL",
+   "omschrijving": "NEDERLAND"
+  }
+ ],
+ "afgerondeAanbesteding": false,
+ "isGeimporteerd": true,
+ "urlTsenderWebsite": "https://s2c.mercell.com/today/215165",
+ "urlTsenderNaam": "Mercell",
+ "isVroegtijdigBeeindigd": false,
+ "onlyGunningProcedure": false,
+ "isGegund": false,
+ "pbNummerTed": "755500-2026",
+ "referentieNummer": "5c2b2db5-bb47-48ab-a962-a556542583d8",
+ "aankondigingCode": {
+  "code": "AAO",
+  "omschrijving": "Aankondiging opdracht"
+ },
+ "opdrachtAardCode": {
+  "code": "OOP",
+  "omschrijving": "Overheidsopdracht"
+ },
+ "formType": "competition",
+ "links": {
+  "pdf": {
+   "href": "/papi/tenderned-rs-tns/v2/publicaties/446894/pdf",
+   "title": "pdf"
+  },
+  "keepInformed": {
+   "href": "https://www.tenderned.nl/aanbestedende-dienst/aankondigingen/446894?keepInformed=true",
+   "title": "keepInformed"
+  },
+  "addToTenders": {
+   "href": "https://www.tenderned.nl/ondernemersplatform/aankondigingen/446894?addToTenders=true",
+   "title": "addToTenders"
+  },
+  "shareOnLinkedIn": {
+   "href": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.tenderned.nl/aankondigingen/overzicht/446894",
+   "title": "shareOnLinkedIn"
+  }
+ }
+}

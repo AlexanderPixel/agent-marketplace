@@ -1,0 +1,85 @@
+{
+ "publicatieId": 447102,
+ "kenmerk": 621956,
+ "aanbestedingNaam": "Huur Materieel - Transportmiddelen en Gereedschappen",
+ "opdrachtgeverNaam": "Ministerie van Defensie",
+ "numberOfDaysBeforeAanmeldenInschrijven": 0,
+ "opdrachtBeschrijving": "Het Ministerie van Defensie, Koninklijke Marine (Commando Zeestrijdkrachten), wil een raamovereenkomst sluiten met één opdrachtnemer voor de huur van transportmiddelen en gereedschappen. De raamovereenkomst voorziet in de tijdelijke inhuur van materieel ter ondersteuning van de operationele en logistieke taken van CZSK, op basis van afroepen. Het gehuurde materieel wordt veilig, gebruiksklaar en c…",
+ "publicatieDatum": "2026-10-30T11:26:00.552513",
+ "typePublicatie": "Aankondiging gegunde opdracht - algemene richtlijn, standaardregeling",
+ "publicatieCode": "EF29",
+ "juridischKaderCode": {
+  "code": "NAW",
+  "omschrijving": "Aanbestedingswet 2012"
+ },
+ "nationaalOfEuropeesCode": {
+  "code": "EU",
+  "omschrijving": "Europees"
+ },
+ "typeOpdrachtCode": {
+  "code": "D",
+  "omschrijving": "Diensten"
+ },
+ "procedureCode": {
+  "code": "OPE",
+  "omschrijving": "Openbaar"
+ },
+ "cpvCodes": [
+  {
+   "isHoofdOpdracht": false,
+   "code": "44510000-8",
+   "omschrijving": "Gereedschap"
+  },
+  {
+   "isHoofdOpdracht": true,
+   "code": "60100000-9",
+   "omschrijving": "Wegvervoersdiensten"
+  },
+  {
+   "isHoofdOpdracht": false,
+   "code": "34000000-7",
+   "omschrijving": "Vervoersmaterieel en bijbehorende producten"
+  }
+ ],
+ "nutsCodes": [
+  {
+   "code": "NL321",
+   "omschrijving": "Kop van Noord-Holland"
+  }
+ ],
+ "afgerondeAanbesteding": false,
+ "isGeimporteerd": true,
+ "urlTsenderWebsite": "https://s2c.mercell.com/today/230047",
+ "urlTsenderNaam": "Mercell",
+ "isVroegtijdigBeeindigd": true,
+ "onlyGunningProcedure": false,
+ "isGegund": false,
+ "referentieNummer": "1cd7b4cc-d5f1-4f92-8bab-2b75e7a78033",
+ "aankondigingCode": {
+  "code": "VBE",
+  "omschrijving": "Vroegtijdige beëindiging"
+ },
+ "opdrachtAardCode": {
+  "code": "RAA",
+  "omschrijving": "Raamovereenkomst"
+ },
+ "formType": "result",
+ "links": {
+  "pdf": {
+   "href": "/papi/tenderned-rs-tns/v2/publicaties/447102/pdf",
+   "title": "pdf"
+  },
+  "keepInformed": {
+   "href": "https://www.tenderned.nl/aanbestedende-dienst/aankondigingen/447102?keepInformed=true",
+   "title": "keepInformed"
+  },
+  "addToTenders": {
+   "href": "https://www.tenderned.nl/ondernemersplatform/aankondigingen/447102?addToTenders=true",
+   "title": "addToTenders"
+  },
+  "shareOnLinkedIn": {
+   "href": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.tenderned.nl/aankondigingen/overzicht/447102",
+   "title": "shareOnLinkedIn"
+  }
+ }
+}

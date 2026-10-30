@@ -1,0 +1,699 @@
+{
+ "results": [
+  {
+   "id": "5df44036-b004-5dcb-a62f-1ac6e09c1c25",
+   "score": null,
+   "accuracy": null,
+   "is_reference_match": false,
+   "highlight": {
+    "title": [],
+    "organization_name": []
+   },
+   "debug": null
+  },
+  {
+   "id": "b90a1b87-285a-5294-8bc7-23c837a26b73",
+   "score": null,
+   "accuracy": null,
+   "is_reference_match": false,
+   "highlight": {
+    "title": [],
+    "organization_name": []
+   },
+   "debug": null
+  },
+  {
+   "id": "4aa1c95f-349a-5d18-8265-e21e81c9679c",
+   "score": null,
+   "accuracy": null,
+   "is_reference_match": false,
+   "highlight": {
+    "title": [],
+    "organization_name": []
+   },
+   "debug": null
+  },
+  {
+   "id": "985529e9-3a83-5a5a-b84b-9212649d808b",
+   "score": null,
+   "accuracy": null,
+   "is_reference_match": false,
+   "highlight": {
+    "title": [],
+    "organization_name": []
+   },
+   "debug": null
+  },
+  {
+   "id": "c87013ee-5a53-5bcb-b0a4-bce55569dc00",
+   "score": null,
+   "accuracy": null,
+   "is_reference_match": false,
+   "highlight": {
+    "title": [],
+    "organization_name": []
+   },
+   "debug": null
+  },
+  {
+   "id": "6ef4b135-01b4-5e7c-b6e0-826ea248a33e",
+   "score": null,
+   "accuracy": null,
+   "is_reference_match": false,
+   "highlight": {
+    "title": [],
+    "organization_name": []
+   },
+   "debug": null
+  },
+  {
+   "id": "7e56de2d-d8f9-5532-a636-0acce98e045b",
+   "score": null,
+   "accuracy": null,
+   "is_reference_match": false,
+   "highlight": {
+    "title": [],
+    "organization_name": []
+   },
+   "debug": null
+  }
+ ],
+ "pagination": {
+  "page": 1,
+  "page_size": 7,
+  "total_count": 151,
+  "total_pages": 22,
+  "has_more": true,
+  "offset": 0
+ },
+ "semantic_filters": {
+  "cpv_codes": null,
+  "locality": {
+   "kind": null,
+   "locality": null
+  },
+  "contract_nature": null
+ },
+ "industry_aggregations": [
+  {
+   "name": "roboty_budowlane_konstrukcyjne",
+   "count": 2
+  },
+  {
+   "name": "uslugi_ochroniarskie",
+   "count": 1
+  },
+  {
+   "name": "stolarka_okienna_i_drzwiowa",
+   "count": 1
+  },
+  {
+   "name": "inne",
+   "count": 1
+  },
+  {
+   "name": "roboty_budowlane_remonty",
+   "count": 1
+  },
+  {
+   "name": "opracowanie_dokumentacji_technicznej",
+   "count": 1
+  }
+ ],
+ "tenders": [
+  {
+   "enrichment": {
+    "tags": [
+     "roboty budowlane",
+     "budowa obiektów",
+     "infrastruktura magazynowa"
+    ],
+    "platformName": "openNexus",
+    "industry": "roboty_budowlane_konstrukcyjne",
+    "nuts3": [
+     "PL619"
+    ]
+   },
+   "tenderResult": null,
+   "id": "5df44036-b004-5dcb-a62f-1ac6e09c1c25",
+   "createdAt": "2026-10-29T19:59:04+01:00",
+   "provider": "pz",
+   "cpvCodes": [
+    "45210000",
+    "45213220"
+   ],
+   "publicationDate": "2026-10-29T19:19:00+01:00",
+   "submittingOffersDeadline": "2026-11-13T12:00:00+01:00",
+   "realizationDeadline": null,
+   "offerValidityDeadline": null,
+   "issuers": [
+    {
+     "id": "24824acf-ac75-487d-928d-6005322b0608",
+     "createdAt": "2026-10-29T00:00:00+00:00",
+     "title": "Gmina Boniewo",
+     "taxId": "PL8882902541",
+     "address": {
+      "street": "ul. Szkolna 28",
+      "city": "Boniewo",
+      "postalCode": "87-851",
+      "region": null,
+      "country": null,
+      "nuts3": {
+       "countryCode": null,
+       "subregionCode": null
+      }
+     },
+     "nip": "8882902541",
+     "regon": null,
+     "krs": null
+    }
+   ],
+   "title": "Rozbudowa i modernizacja magazynu obrony cywilnej w Boniewie Ogłoszenie nr 2026/BZP 00510384/01 z dnia 2026-10-29",
+   "description": "<p><span></span></p><p><span>Szanowni Państwo,</span><span>  </span></p><p><span>w załącznikach do postępowania zamieszczono dokumentację związaną z postępowaniem. </span></p><p><a href=\"https://drive.google.com/file/d/1Kd1DttbBeiNWt4q4slS4t76lZVKPbkyD/view\"><span>Pod linkiem</span></a><span> dostępna jest </span><span>Instrukcja składania ofert/wniosków dla Wykonawców.</span><span> </span></p><p> </p><p><span>Pliki dołączane w formularzu należy opatrzyć:</span></p><p><span>- kwalifikowanym</span><a href=\"https://www.nccert.pl/\"><span> </span><span>podpisem elektronicznym</span></a><span>,</span></p><p><span>- podpisem</span><a href=\"https://moj.gov.pl/nforms/signer/upload?xFormsAppName=SIGNER\"><span> </span><span>zaufanym</span></a><span>,</span></p><p><span>- lub elektronicznym podpisem</span><a href=\"https://www.gov.pl/web/mswia/oprogramowanie-do-pobrania\"><span> </span><span>osobistym</span></a><span>. </span></p><p> </p><p><span>W związku z powyższym </span><span>Formularz znajdujący się na niniejszej stronie służy złożeniu oferty wraz z załącznikami, natomiast </span><span>przycisk “</span><span>Wyślij wiadomość do zamawiającego</span><span>” służy do: </span></p><ul><li><p><span>Zadawania pytań Zamawiającemu,</span></p></li><li><p><span>Odpowiedzi na wezwanie do uzupełnienia oferty lub złożenia wyjaśnień,</span></p></li><li><p><span>Przesłania odwołania/inne. </span></p></li></ul><p> </p><p><span>Zgodnie z art. 61. ust. 1. oraz art. 63 ust. 2 ustawy Prawo Zamówień Publicznych z dnia 11 września 2019 r. komunikacja w niniejszym postępowaniu odbywa się </span><span>wyłącznie przy użyciu środków komunikacji elektronicznej.</span></p><p> </p><p><span>Jeżeli będą Państwo mieli pytania techniczne związane z procesem złożenia oferty na platformie zakupowej, prosimy o kontakt z Centrum Wsparcia Klienta platformazakupowa.pl:</span></p><ul><li><p><span>tel. 22 101 02 02</span></p></li><li><p><span>e-mail: </span><span>cwk@platformazakupowa.pl </span></p></li></ul><p><span><br /></span></p>",
+   "sourceExtraData": {
+    "issuerUrl": "https://platformazakupowa.pl/pn/boniewo",
+    "externalId": 1400960
+   },
+   "modeIdentifier": null,
+   "websiteUrl": "https://platformazakupowa.pl/transakcja/1400960",
+   "websiteUrls": [
+    "https://platformazakupowa.pl/transakcja/1400960"
+   ],
+   "versionDate": "2026-10-29T19:59:02+01:00",
+   "criteria": [],
+   "status": 1,
+   "contractNature": "construction_works",
+   "procedure": "domestic",
+   "referenceNumber": "ZPiPF12.2026",
+   "originUrls": [
+    "https://platformazakupowa.pl/transakcja/1400960"
+   ],
+   "euFunded": null,
+   "depositRequired": false,
+   "depositDescription": null,
+   "hasResult": false
+  },
+  {
+   "enrichment": {
+    "tags": [
+     "ochrona obiektów",
+     "usługi bezpieczeństwa",
+     "ochrona fizyczna"
+    ],
+    "platformName": "openNexus",
+    "industry": "uslugi_ochroniarskie",
+    "nuts3": [
+     "PL636"
+    ]
+   },
+   "tenderResult": null,
+   "id": "b90a1b87-285a-5294-8bc7-23c837a26b73",
+   "createdAt": "2026-10-30T14:59:14+01:00",
+   "provider": "pz",
+   "cpvCodes": [
+    "79710000"
+   ],
+   "publicationDate": "2026-10-30T14:51:00+01:00",
+   "submittingOffersDeadline": "2026-11-13T12:00:00+01:00",
+   "realizationDeadline": null,
+   "offerValidityDeadline": null,
+   "issuers": [
+    {
+     "id": "b7084e59-af6d-4dc2-88aa-a85bb27b17ea",
+     "createdAt": "2026-10-30T00:00:00+00:00",
+     "title": "Miejski Zakład Komunikacji Sp. z o.o. z siedzibą w Słupsku",
+     "taxId": "PL8390410217",
+     "address": {
+      "street": "Bitwy Warszawskiej 1",
+      "city": "Słupsk",
+      "postalCode": "76-200",
+      "region": null,
+      "country": null,
+      "nuts3": {
+       "countryCode": null,
+       "subregionCode": null
+      }
+     },
+     "nip": "8390410217",
+     "regon": null,
+     "krs": null
+    }
+   ],
+   "title": "Świadczenie usług ochrony mienia na rzecz „Miejskiego Zakładu Komunikacji” Sp. z o.o z siedzibą w Słupsku w okresie od 1 stycznia 2027 r. do 31 grudnia 2027 r.",
+   "description": "<p><span></span></p><p><span>Szanowni Państwo,</span></p><br /><p><span>informujemy o postępowaniu prowadzonym przez Zamawiającego w trybie zgodnym z regulaminem wewnętrznym organizacji.</span></p><p><span>Zapraszamy do złożenia ofert poprzez załączony formularz ofertowy</span></p><br /><p><span>Zastrzegamy, że postępowanie może zakończyć się brakiem wyboru oferty w przypadku:\n- niewystarczających środków na realizację zamówienia,\n- zmianę zapotrzebowania Zamawiającego.</span></p><p><span><a href=\"https://www.youtube.com/watch?v=FteQW-0uSws&amp;t=1s\">Pod linkiem</a> dostępna jest Instrukcja składania ofert dla Wykonawców.</span></p><br /><p><span>W przypadku pytań: </span></p><p><span>- merytorycznych, proszę o kontakt poprzez przycisk \"<strong>Wyślij wiadomość do zamawiającego</strong>\" </span></p><p><span>- związanych z obsługą platformy, proszę o kontakt z Centrum Wsparcia Klienta platformy zakupowej Open Nexus czynnym od poniedziałku do piątku w dni robocze, w godzinach od  </span><span>8:00</span><span> do </span><span>17:00</span><span>.</span></p><ul><li><p><span>tel. 22 101 02 02</span></p></li><li><p><span>e-mail: cwk@platformazakupowa.pl</span></p></li></ul><br /><p><span>Zaznaczamy, że oficjalnym potwierdzeniem chęci realizacji zamówienia przez Zamawiającego jest wysłanie zamówienia lub podpisanie umowy. </span></p><p><span>Wiadomości z platformy zakupowej mają charakter informacyjny.</span></p>",
+   "sourceExtraData": {
+    "issuerUrl": "https://platformazakupowa.pl/pn/mzk_slupsk",
+    "externalId": 1401657
+   },
+   "modeIdentifier": null,
+   "websiteUrl": "https://platformazakupowa.pl/transakcja/1401657",
+   "websiteUrls": [
+    "https://platformazakupowa.pl/transakcja/1401657"
+   ],
+   "versionDate": "2026-10-30T14:59:05+01:00",
+   "criteria": [
+    {
+     "name": "Cena",
+     "weight": "80",
+     "description": "Wartość oferty"
+    },
+    {
+     "name": "Wysokość ulgi, którą Wykonawca może udzielić Zamawiającego  z tytułu wpłat na PFRON",
+     "weight": "20",
+     "description": null
+    }
+   ],
+   "status": 1,
+   "contractNature": "services",
+   "procedure": "internal",
+   "referenceNumber": "26/DP/2026",
+   "originUrls": [
+    "https://platformazakupowa.pl/transakcja/1401657"
+   ],
+   "euFunded": null,
+   "depositRequired": false,
+   "depositDescription": null,
+   "hasResult": false
+  },
+  {
+   "enrichment": {
+    "tags": [
+     "obiekty tymczasowe",
+     "zaplecze sanitarne",
+     "infrastruktura socjalna"
+    ],
+    "platformName": "openNexus",
+    "industry": "roboty_budowlane_konstrukcyjne",
+    "nuts3": [
+     "PL713"
+    ]
+   },
+   "tenderResult": null,
+   "id": "4aa1c95f-349a-5d18-8265-e21e81c9679c",
+   "createdAt": "2026-10-29T14:59:07+01:00",
+   "provider": "pz",
+   "cpvCodes": [
+    "45000000",
+    "71000000",
+    "71200000",
+    "71220000",
+    "71221000",
+    "71320000",
+    "71322000",
+    "71242000",
+    "45100000",
+    "45210000",
+    "45223800",
+    "45111200",
+    "45112000",
+    "45262300",
+    "45262311",
+    "45262310",
+    "45262210",
+    "45260000",
+    "45261000",
+    "45231300",
+    "45231400",
+    "45233200",
+    "45112710",
+    "45300000",
+    "45310000",
+    "45320000",
+    "45331000",
+    "45343000",
+    "45400000",
+    "45420000",
+    "45421100",
+    "45430000",
+    "45440000",
+    "45450000"
+   ],
+   "publicationDate": "2026-10-29T14:25:00+01:00",
+   "submittingOffersDeadline": "2026-11-13T12:00:00+01:00",
+   "realizationDeadline": null,
+   "offerValidityDeadline": null,
+   "issuers": [
+    {
+     "id": "ed00324f-a4f6-4acf-8222-b9c85606e0a8",
+     "createdAt": "2026-10-29T00:00:00+00:00",
+     "title": "Gmina Sulejów",
+     "taxId": "PL7711768348",
+     "address": {
+      "street": "Konecka 42",
+      "city": "Sulejów",
+      "postalCode": "97-330",
+      "region": null,
+      "country": null,
+      "nuts3": {
+       "countryCode": null,
+       "subregionCode": null
+      }
+     },
+     "nip": "7711768348",
+     "regon": null,
+     "krs": null
+    }
+   ],
+   "title": "Budowa kontenerowego zaplecza socjalno – sanitarnego we Włodzimierzowie wraz z niezbędną infrastrukturą socjalną na dz. nr 392/12 obr. Włodzimierzów w formule zaprojektuj i wybuduj – II postępowanie",
+   "description": "<p><span></span></p><p><span>Szanowni Państwo,</span><span>  </span></p><p><span>w załącznikach do postępowania zamieszczono dokumentację związaną z postępowaniem. </span></p><p><a href=\"https://drive.google.com/file/d/1Kd1DttbBeiNWt4q4slS4t76lZVKPbkyD/view\"><span>Pod linkiem</span></a><span> dostępna jest </span><span>Instrukcja składania ofert/wniosków dla Wykonawców.</span><span> </span></p><p> </p><p><span>Pliki dołączane w formularzu należy opatrzyć:</span></p><p><span>- kwalifikowanym</span><a href=\"https://www.nccert.pl/\"><span> </span><span>podpisem elektronicznym</span></a><span>,</span></p><p><span>- podpisem</span><a href=\"https://moj.gov.pl/nforms/signer/upload?xFormsAppName=SIGNER\"><span> </span><span>zaufanym</span></a><span>,</span></p><p><span>- lub elektronicznym podpisem</span><a href=\"https://www.gov.pl/web/mswia/oprogramowanie-do-pobrania\"><span> </span><span>osobistym</span></a><span>. </span></p><p> </p><p><span>W związku z powyższym </span><span>Formularz znajdujący się na niniejszej stronie służy złożeniu oferty wraz z załącznikami, natomiast </span><span>przycisk “</span><span>Wyślij wiadomość do zamawiającego</span><span>” służy do: </span></p><ul><li><p><span>Zadawania pytań Zamawiającemu,</span></p></li><li><p><span>Odpowiedzi na wezwanie do uzupełnienia oferty lub złożenia wyjaśnień,</span></p></li><li><p><span>Przesłania odwołania/inne. </span></p></li></ul><p> </p><p><span>Zgodnie z art. 61. ust. 1. oraz art. 63 ust. 2 ustawy Prawo Zamówień Publicznych z dnia 11 września 2019 r. komunikacja w niniejszym postępowaniu odbywa się </span><span>wyłącznie przy użyciu środków komunikacji elektronicznej.</span></p><p> </p><p><span>Jeżeli będą Państwo mieli pytania techniczne związane z procesem złożenia oferty na platformie zakupowej, prosimy o kontakt z Centrum Wsparcia Klienta platformazakupowa.pl:</span></p><ul><li><p><span>tel. 22 101 02 02</span></p></li><li><p><span>e-mail: </span><span>cwk@platformazakupowa.pl </span></p></li></ul><p><span><br /></span></p>",
+   "sourceExtraData": {
+    "issuerUrl": "https://platformazakupowa.pl/pn/sulejow",
+    "externalId": 1400573
+   },
+   "modeIdentifier": null,
+   "websiteUrl": "https://platformazakupowa.pl/transakcja/1400573",
+   "websiteUrls": [
+    "https://platformazakupowa.pl/transakcja/1400573"
+   ],
+   "versionDate": "2026-10-29T14:59:03+01:00",
+   "criteria": [],
+   "status": 1,
+   "contractNature": "construction_works",
+   "procedure": "domestic",
+   "referenceNumber": "ZP.271.1.32.2026",
+   "originUrls": [
+    "https://platformazakupowa.pl/transakcja/1400573"
+   ],
+   "euFunded": null,
+   "depositRequired": false,
+   "depositDescription": null,
+   "hasResult": false
+  },
+  {
+   "enrichment": {
+    "tags": [
+     "zasłony okienne",
+     "osłony przeciwsłoneczne",
+     "okucia budowlane"
+    ],
+    "platformName": "openNexus",
+    "industry": "stolarka_okienna_i_drzwiowa",
+    "nuts3": [
+     "PL621"
+    ]
+   },
+   "tenderResult": null,
+   "id": "985529e9-3a83-5a5a-b84b-9212649d808b",
+   "createdAt": "2026-10-30T12:59:12+01:00",
+   "provider": "pz",
+   "cpvCodes": [
+    "39515400"
+   ],
+   "publicationDate": "2026-10-30T12:06:00+01:00",
+   "submittingOffersDeadline": "2026-11-13T12:00:00+01:00",
+   "realizationDeadline": null,
+   "offerValidityDeadline": null,
+   "issuers": [
+    {
+     "id": "03750311-a998-45a9-86dc-b3a8497bbdd6",
+     "createdAt": "2026-10-30T00:00:00+00:00",
+     "title": "Elbląskie Przedsiębiorstwo Energetyki Cieplnej Sp. z o.o.",
+     "taxId": "PL5780002619",
+     "address": {
+      "street": "Fabryczna 3",
+      "city": "Elbląg",
+      "postalCode": "82-300",
+      "region": null,
+      "country": null,
+      "nuts3": {
+       "countryCode": null,
+       "subregionCode": null
+      }
+     },
+     "nip": "5780002619",
+     "regon": null,
+     "krs": null
+    }
+   ],
+   "title": "Dostawa i montaż 32 sztuk rolet okiennych wewnętrznych i 4 sztuk żaluzji aluminiowych wewnętrznych w budynkach Elbląskiego Przedsiębiorstwa Energetyki Cieplnej Sp. z o. o.",
+   "description": "<p><span></span></p><p>\n                            </p><p>Szanowni Państwo,</p><p>W imieniu Elbląskiego Przedsiębiorstwa Energetyki Cieplnej Sp. z o.o. informujemy o postępowaniu wszystkich solidnych wykonawców do składania ofert na <strong><span>dostawę i montaż</span></strong><strong> 32 sztuk rolet okiennych wewnętrznych i 4 sztuk żaluzji aluminiowych wewnętrznych w budynkach Elbląskiego Przedsiębiorstwa Energetyki Cieplnej Sp. z o. o.</strong></p><p><br /></p><p><u><span>Zamawiający zaleca dokonanie </span>wizji lokalnej w celu pomiaru okien.  </u></p><p>Osoba\ndo kontaktu po stronie Zamawiającego: <span>Andrzej\nGołota, tel. 573-664-037</span></p><p>Opis przedmiotu zamówienia zamieszczono w załączniku do postępowania.<span> </span></p><p><span>Termin płatności 30 dni od daty doręczenia dokumentu księgowego do siedziby Zamawiającego, po podpisaniu protokołu zdawczo-odbiorczego.</span><span></span></p><p><span>Gwarancja:</span></p><p><span>a)<span>     \n</span></span><span>Wykonawca udziela na dostarczony i zamontowany\nprzedmiot zamówienia <strong>24-miesięcznej gwarancji</strong>.</span></p><p></p><p><span>b)<span>    \n</span></span><span>Okres gwarancji liczony jest od dnia podpisania\nprzez Zamawiającego protokołu odbioru przedmiotu zamówienia bez zastrzeżeń.</span></p><p></p><p>\n\n\n\n</p><p><span>c)<span>     \n</span></span><span>W okresie gwarancji Wykonawca zobowiązany jest do\nusunięcia wad lub usterek powstałych z przyczyn leżących po\nstronie Wykonawcy, w szczególności wad materiałowych, montażowych lub\nzwiązanych <br />z nieprawidłowym działaniem mechanizmów.</span></p><p><br /></p><p><br /></p><p><em>Zamawiający zastrzega sobie możliwość zmiany lub odwołania warunków zawartych w Zapytaniu ofertowym, jak również zamknięcia Postępowania bez dokonania wyboru którejkolwiek z ofert lub jego unieważnienia bez podawania przyczyny. Postępowanie może być zamknięte/ unieważnione na każdym jego etapie. Wykonawcom nie przysługuje z tego tytułu żadne roszczenie względem Zamawiającego.</em></p><p><span><strong>W przypadku pytań:</strong></span></p><p><span>-\n merytorycznych, proszę o kontakt za pośrednictwem przycisku  \"Wyślij wiadomość do Zamawiającego\" </span></p><p><span>- związanych\n z obsługą platformy, proszę o kontakt z Centrum Wsparcia Klienta \nplatformy zakupowej Open Nexus pod nr 22 101 02 02, czynnym od \nponiedziałku do piątku w godzinach<strong> 8:00 do 17:00.   </strong></span></p><p><br /></p><p><em>Wiadomości z platformy zakupowej mają charakter informacyjny.</em></p>",
+   "sourceExtraData": {
+    "issuerUrl": "https://platformazakupowa.pl/pn/epec",
+    "externalId": 1401340
+   },
+   "modeIdentifier": null,
+   "websiteUrl": "https://platformazakupowa.pl/transakcja/1401340",
+   "websiteUrls": [
+    "https://platformazakupowa.pl/transakcja/1401340"
+   ],
+   "versionDate": "2026-10-30T12:59:08+01:00",
+   "criteria": [
+    {
+     "name": "Cena",
+     "weight": "100",
+     "description": "Wartość oferty"
+    }
+   ],
+   "status": 1,
+   "contractNature": "supplies",
+   "procedure": "internal",
+   "referenceNumber": "",
+   "originUrls": [
+    "https://platformazakupowa.pl/transakcja/1401340"
+   ],
+   "euFunded": null,
+   "depositRequired": false,
+   "depositDescription": null,
+   "hasResult": false
+  },
+  {
+   "enrichment": {
+    "tags": [
+     "opakowania ochronne",
+     "materiały opakowaniowe",
+     "wypełnienia opakowań",
+     "styropianowe artykuły"
+    ],
+    "platformName": "openNexus",
+    "industry": "inne",
+    "nuts3": [
+     "PL912"
+    ]
+   },
+   "tenderResult": null,
+   "id": "c87013ee-5a53-5bcb-b0a4-bce55569dc00",
+   "createdAt": "2026-10-29T14:59:18+01:00",
+   "provider": "pz",
+   "cpvCodes": [
+    "19520000"
+   ],
+   "publicationDate": "2026-10-29T14:57:00+01:00",
+   "submittingOffersDeadline": "2026-11-13T12:00:00+01:00",
+   "realizationDeadline": null,
+   "offerValidityDeadline": null,
+   "issuers": [
+    {
+     "id": "579ed16b-f5e9-4fe4-a856-9f91aac7eee6",
+     "createdAt": "2026-10-29T00:00:00+00:00",
+     "title": "Narodowe Centrum Badań Jądrowych",
+     "taxId": "PL5320100125",
+     "address": {
+      "street": "Andrzeja Sołtana 7",
+      "city": "Otwock",
+      "postalCode": "05-400",
+      "region": null,
+      "country": null,
+      "nuts3": {
+       "countryCode": null,
+       "subregionCode": null
+      }
+     },
+     "nip": "5320100125",
+     "regon": null,
+     "krs": null
+    }
+   ],
+   "title": "Dostawa elementów styropianowych do wypełnienia opakowań transportowych dla NCBJ Ośrodka Radioizotopów POLATOM",
+   "description": "<p><span></span></p><p><span>Szanowni Państwo,</span><span>  </span></p><p><span>w załącznikach do postępowania zamieszczono dokumentację związaną z postępowaniem. </span></p><p><a href=\"https://drive.google.com/file/d/1Kd1DttbBeiNWt4q4slS4t76lZVKPbkyD/view\"><span>Pod linkiem</span></a><span> dostępna jest </span><span>Instrukcja składania ofert/wniosków dla Wykonawców.</span><span> </span></p><p> </p><p><span>Pliki dołączane w formularzu należy opatrzyć:</span></p><p><span>- kwalifikowanym</span><a href=\"https://www.nccert.pl/\"><span> </span><span>podpisem elektronicznym</span></a><span>,</span></p><p><span>- podpisem</span><a href=\"https://moj.gov.pl/nforms/signer/upload?xFormsAppName=SIGNER\"><span> </span><span>zaufanym</span></a><span>,</span></p><p><span>- lub elektronicznym podpisem</span><a href=\"https://www.gov.pl/web/mswia/oprogramowanie-do-pobrania\"><span> </span><span>osobistym</span></a><span>. </span></p><p> </p><p><span>W związku z powyższym </span><span>Formularz znajdujący się na niniejszej stronie służy złożeniu oferty wraz z załącznikami, natomiast </span><span>przycisk “</span><span>Wyślij wiadomość do zamawiającego</span><span>” służy do: </span></p><ul><li><p><span>Zadawania pytań Zamawiającemu,</span></p></li><li><p><span>Odpowiedzi na wezwanie do uzupełnienia oferty lub złożenia wyjaśnień,</span></p></li><li><p><span>Przesłania odwołania/inne. </span></p></li></ul><p> </p><p><span>Zgodnie z art. 61. ust. 1. oraz art. 63 ust. 2 ustawy Prawo Zamówień Publicznych z dnia 11 września 2019 r. komunikacja w niniejszym postępowaniu odbywa się </span><span>wyłącznie przy użyciu środków komunikacji elektronicznej.</span></p><p> </p><p><span>Jeżeli będą Państwo mieli pytania techniczne związane z procesem złożenia oferty na platformie zakupowej, prosimy o kontakt z Centrum Wsparcia Klienta platformazakupowa.pl:</span></p><ul><li><p><span>tel. 22 101 02 02</span></p></li><li><p><span>e-mail: </span><span>cwk@platformazakupowa.pl </span></p></li></ul><p><span><br /></span></p>",
+   "sourceExtraData": {
+    "issuerUrl": "https://platformazakupowa.pl/pn/polatom",
+    "externalId": 1400891
+   },
+   "modeIdentifier": null,
+   "websiteUrl": "https://platformazakupowa.pl/transakcja/1400891",
+   "websiteUrls": [
+    "https://platformazakupowa.pl/transakcja/1400891"
+   ],
+   "versionDate": "2026-10-29T14:59:03+01:00",
+   "criteria": [],
+   "status": 1,
+   "contractNature": "supplies",
+   "procedure": "domestic",
+   "referenceNumber": "41/P/2026",
+   "originUrls": [
+    "https://platformazakupowa.pl/transakcja/1400891"
+   ],
+   "euFunded": null,
+   "depositRequired": false,
+   "depositDescription": null,
+   "hasResult": false
+  },
+  {
+   "enrichment": {
+    "tags": [
+     "ochrona pożarowa",
+     "prace budowlane",
+     "instalacje przeciwpożarowe",
+     "roboty budowlane"
+    ],
+    "platformName": "openNexus",
+    "industry": "roboty_budowlane_remonty",
+    "nuts3": [
+     "PL415"
+    ]
+   },
+   "tenderResult": null,
+   "id": "6ef4b135-01b4-5e7c-b6e0-826ea248a33e",
+   "createdAt": "2026-10-29T11:59:13+01:00",
+   "provider": "pz",
+   "cpvCodes": [
+    "45000000",
+    "45111000",
+    "45113000",
+    "45310000",
+    "45311100",
+    "45311200",
+    "45316000",
+    "45314310",
+    "45210000",
+    "45111300",
+    "45262520",
+    "45223210",
+    "45410000",
+    "45262000",
+    "45430000",
+    "45421000",
+    "45442100",
+    "45450000",
+    "45261210"
+   ],
+   "publicationDate": "2026-10-29T11:11:00+01:00",
+   "submittingOffersDeadline": "2026-11-13T12:00:00+01:00",
+   "realizationDeadline": null,
+   "offerValidityDeadline": null,
+   "issuers": [
+    {
+     "id": "c5f2705c-7cd2-4034-aa60-a89125680084",
+     "createdAt": "2026-10-29T00:00:00+00:00",
+     "title": "Uniwersytet Przyrodniczy w Poznaniu",
+     "taxId": "PL7770004960",
+     "address": {
+      "street": "Wojska Polskiego 28",
+      "city": "Poznań",
+      "postalCode": "60-637",
+      "region": null,
+      "country": null,
+      "nuts3": {
+       "countryCode": null,
+       "subregionCode": null
+      }
+     },
+     "nip": "7770004960",
+     "regon": null,
+     "krs": null
+    }
+   ],
+   "title": "„Dostosowanie klatki schodowej budynku hotelowego do wymagań w zakresie ochrony przeciwpożarowej” – postępowanie powtórzone",
+   "description": "<p><span></span></p><p><span>Szanowni Państwo,</span><span>  </span></p><p><span>w załącznikach do postępowania zamieszczono dokumentację związaną z postępowaniem. </span></p><p><a href=\"https://drive.google.com/file/d/1Kd1DttbBeiNWt4q4slS4t76lZVKPbkyD/view\"><span>Pod linkiem</span></a><span> dostępna jest </span><span>Instrukcja składania ofert/wniosków dla Wykonawców.</span><span> </span></p><p> </p><p><span>Pliki dołączane w formularzu należy opatrzyć:</span></p><p><span>- kwalifikowanym</span><a href=\"https://www.nccert.pl/\"><span> </span><span>podpisem elektronicznym</span></a><span>,</span></p><p><span>- podpisem</span><a href=\"https://moj.gov.pl/nforms/signer/upload?xFormsAppName=SIGNER\"><span> </span><span>zaufanym</span></a><span>,</span></p><p><span>- lub elektronicznym podpisem</span><a href=\"https://www.gov.pl/web/mswia/oprogramowanie-do-pobrania\"><span> </span><span>osobistym</span></a><span>. </span></p><p> </p><p><span>W związku z powyższym </span><span>Formularz znajdujący się na niniejszej stronie służy złożeniu oferty wraz z załącznikami, natomiast </span><span>przycisk “</span><span>Wyślij wiadomość do zamawiającego</span><span>” służy do: </span></p><ul><li><p><span>Zadawania pytań Zamawiającemu,</span></p></li><li><p><span>Odpowiedzi na wezwanie do uzupełnienia oferty lub złożenia wyjaśnień,</span></p></li><li><p><span>Przesłania odwołania/inne. </span></p></li></ul><p> </p><p><span>Zgodnie z art. 61. ust. 1. oraz art. 63 ust. 2 ustawy Prawo Zamówień Publicznych z dnia 11 września 2019 r. komunikacja w niniejszym postępowaniu odbywa się </span><span>wyłącznie przy użyciu środków komunikacji elektronicznej.</span></p><p> </p><p><span>Jeżeli będą Państwo mieli pytania techniczne związane z procesem złożenia oferty na platformie zakupowej, prosimy o kontakt z Centrum Wsparcia Klienta platformazakupowa.pl:</span></p><ul><li><p><span>tel. 22 101 02 02</span></p></li><li><p><span>e-mail: </span><span>cwk@platformazakupowa.pl </span></p></li></ul><p><span><br /></span></p>",
+   "sourceExtraData": {
+    "issuerUrl": "https://platformazakupowa.pl/pn/up_poznan",
+    "externalId": 1400417
+   },
+   "modeIdentifier": null,
+   "websiteUrl": "https://platformazakupowa.pl/transakcja/1400417",
+   "websiteUrls": [
+    "https://platformazakupowa.pl/transakcja/1400417"
+   ],
+   "versionDate": "2026-10-29T11:59:07+01:00",
+   "criteria": [],
+   "status": 1,
+   "contractNature": "construction_works",
+   "procedure": "domestic",
+   "referenceNumber": "3/RB/2026",
+   "originUrls": [
+    "https://platformazakupowa.pl/transakcja/1400417"
+   ],
+   "euFunded": null,
+   "depositRequired": false,
+   "depositDescription": null,
+   "hasResult": false
+  },
+  {
+   "enrichment": {
+    "tags": [
+     "usługi konserwatorskie",
+     "badania zabytków",
+     "ochrona dóbr kultury"
+    ],
+    "platformName": "openNexus",
+    "industry": "opracowanie_dokumentacji_technicznej",
+    "nuts3": [
+     "PL213"
+    ]
+   },
+   "tenderResult": null,
+   "id": "7e56de2d-d8f9-5532-a636-0acce98e045b",
+   "createdAt": "2026-10-30T12:59:12+01:00",
+   "provider": "pz",
+   "cpvCodes": [
+    "71000000"
+   ],
+   "publicationDate": "2026-10-30T12:07:00+01:00",
+   "submittingOffersDeadline": "2026-11-13T12:04:00+01:00",
+   "realizationDeadline": null,
+   "offerValidityDeadline": null,
+   "issuers": [
+    {
+     "id": "9591f36a-bed9-40de-886e-dc021ab59b01",
+     "createdAt": "2026-10-30T00:00:00+00:00",
+     "title": "Uniwersytet Rolniczy im. Hugona Kołłątaja w Krakowie",
+     "taxId": "PL6750002118",
+     "address": {
+      "street": null,
+      "city": null,
+      "postalCode": null,
+      "region": null,
+      "country": null,
+      "nuts3": {
+       "countryCode": null,
+       "subregionCode": null
+      }
+     },
+     "nip": "6750002118",
+     "regon": null,
+     "krs": null
+    }
+   ],
+   "title": "Wykonanie programu prac konserwatorskich kompozycji rzeźbiarskiej „Układ Heliocentryczny” znajdującej się przed budynkiem Uniwersytetu Rolniczego przy al. Mickiewicza 24 w Krakowie",
+   "description": "<p><span></span></p><p><span>Szanowni Państwo,  </span></p><p><span>informujemy, że poniższe postępowanie ma charakter szacowania wartości zamówienia.</span><span>  </span></p><p><span>Dlaczego warto odpowiedzieć na szacowanie wartości zamówienia?</span></p><p><span>Informujemy, iż niniejsze postępowanie nie stanowi zaproszenia do składania ofert w rozumieniu art. 66 Kodeksu cywilnego,<strong> nie zobowiązuje Zamawiającego do zawarcia umowy, czy też udzielenia zamówienia</strong> i nie stanowi części procedury udzielania zamówienia publicznego realizowanego na podstawie ustawy Prawo zamówień publicznych. </span></p><p><span>Jednocześnie Zamawiający zastrzega, że odpowiedź na niniejsze postępowanie o charakterze szacowania ceny może skutkować:</span></p><ul><li><p><span><strong>zaproszeniem </strong>do złożenia oferty lub/i </span></p></li><li><p><span><strong>zaproszeniem </strong>do negocjacji warunków umownych lub </span></p></li><li><p><span><strong>zawarciem </strong><strong>umowy</strong>, której przedmiot został określony w niniejszym postępowaniu. </span></p></li></ul><p><span>W przypadku pytań:</span></p><ul><li><p><span>technicznych lub merytorycznych, proszę o kontakt za pośrednictwem przycisku \"<strong>Wyślij wiadomość do zamawiającego</strong>\" lub pod nr tel. 883 892 248 (Anna Socha)</span></p></li><li><p><span>związanych z obsługą platformy, proszę o kontakt z Centrum Wsparcia Klienta platformy zakupowej Open Nexus pod nr 22 101 02 02, czynnym od poniedziałku do piątku w godzinach 8:00 do 17:00.   </span></p></li></ul><p> </p><p><span>Oficjalnym potwierdzeniem chęci realizacji zamówienia przez Zamawiającego jest wysłanie zamówienia lub podpisanie umowy.  Wiadomości z platformy zakupowej mają charakter informacyjny.</span></p>",
+   "sourceExtraData": {
+    "issuerUrl": "https://platformazakupowa.pl/pn/urk",
+    "externalId": 1401268
+   },
+   "modeIdentifier": null,
+   "websiteUrl": "https://platformazakupowa.pl/transakcja/1401268",
+   "websiteUrls": [
+    "https://platformazakupowa.pl/transakcja/1401268"
+   ],
+   "versionDate": "2026-10-30T12:59:08+01:00",
+   "criteria": [
+    {
+     "name": "Cena",
+     "weight": "100",
+     "description": "Wartość oferty"
+    }
+   ],
+   "status": 1,
+   "contractNature": "services",
+   "procedure": "domestic",
+   "referenceNumber": "",
+   "originUrls": [
+    "https://platformazakupowa.pl/transakcja/1401268"
+   ],
+   "euFunded": null,
+   "depositRequired": false,
+   "depositDescription": null,
+   "hasResult": false
+  }
+ ]
+}

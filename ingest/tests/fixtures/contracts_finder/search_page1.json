@@ -1,0 +1,510 @@
+{
+ "uri": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-10-27T00:00:00Z&limit=100&publishedTo=2026-10-30T14:16:30Z",
+ "version": "1.1",
+ "publishedDate": "2026-10-30T14:04:15Z",
+ "publisher": {
+  "name": "Cabinet Office",
+  "scheme": "GB-GOR",
+  "uid": "D2",
+  "uri": "https://www.gov.uk/government/organisations/cabinet-office"
+ },
+ "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+ "publicationPolicy": "https://www.gov.uk/government/publications/open-contracting",
+ "releases": [
+  {
+   "ocid": "ocds-b5fd17-e90f0df4-c47b-4a53-9dac-4f49e138a2db",
+   "id": "c95b145b-df51-4e53-a3ae-c7f8e086d556-919851",
+   "language": "en",
+   "date": "2026-10-30T12:50:02Z",
+   "tag": [
+    "tender"
+   ],
+   "initiationType": "tender",
+   "tender": {
+    "id": "C4N122449472",
+    "title": "Security System CCTV Package ANTHRO-PROC-COMM4",
+    "description": "HS2 Old Oak Common (OOC) is a new high-speed rail station being built as part of the High Speed 2 (HS2) project - the UK's flagship rail infrastructure initiative. Once constructed Old Oak Common will be the largest newly built station in the UK. A key interchange between HS2, Elizabeth Line, Great Western Railway (GWR), and Heathrow Express services. Situated in West London, between North Acton a",
+    "datePublished": "2026-10-30T12:50:02Z",
+    "status": "active",
+    "classification": {
+     "scheme": "CPV",
+     "id": "35125300",
+     "description": "Security cameras"
+    },
+    "items": [
+     {
+      "id": "1",
+      "deliveryAddresses": [
+       {
+        "region": "London",
+        "countryName": "United Kingdom"
+       }
+      ]
+     }
+    ],
+    "minValue": {
+     "amount": 250000,
+     "currency": "GBP"
+    },
+    "value": {
+     "amount": 500000,
+     "currency": "GBP"
+    },
+    "procurementMethodDetails": "",
+    "tenderPeriod": {
+     "endDate": "2026-11-09T12:00:00Z"
+    },
+    "contractPeriod": {
+     "startDate": "2027-06-11T00:00:00+01:00",
+     "endDate": "2030-12-31T23:59:59Z"
+    },
+    "suitability": {
+     "sme": false,
+     "vcse": false
+    },
+    "mainProcurementCategory": "goods",
+    "documents": [
+     {
+      "id": "1",
+      "documentType": "tenderNotice",
+      "description": "Opportunity notice on Contracts Finder",
+      "url": "https://www.contractsfinder.service.gov.uk/Notice/c95b145b-df51-4e53-a3ae-c7f8e086d556",
+      "datePublished": "2026-10-30T12:50:02Z",
+      "format": "text/html",
+      "language": "en"
+     },
+     {
+      "id": "2",
+      "documentType": "tenderNotice",
+      "description": "Please follow this link to view the notice.",
+      "url": "https://www.competefor.co.uk/business/viewOpportunityDetailsSupplier.html?id=122449474"
+     }
+    ]
+   },
+   "parties": [
+    {
+     "id": "GB-CFS-289065",
+     "name": "Anthro JV",
+     "identifier": {
+      "legalName": "Anthro JV"
+     },
+     "address": {
+      "streetAddress": "EC4M 9BR",
+      "locality": "London",
+      "postalCode": "EC4M9BR",
+      "countryName": "UK"
+     },
+     "contactPoint": {
+      "name": "Erin Povey",
+      "email": "erin.povey@anthrosolutions.co.uk",
+      "telephone": "07711945653"
+     },
+     "roles": [
+      "buyer"
+     ]
+    }
+   ],
+   "buyer": {
+    "id": "GB-CFS-289065",
+    "name": "Anthro JV"
+   }
+  },
+  {
+   "ocid": "ocds-b5fd17-9febbd15-4601-42a9-b547-9b58b2d26114",
+   "id": "e004e4c9-7238-4902-80c1-52f0650e4ca0-919847",
+   "language": "en",
+   "date": "2026-10-30T12:46:23Z",
+   "tag": [
+    "planning"
+   ],
+   "initiationType": "tender",
+   "planning": {
+    "budget": {
+     "budgetBreakdown": [
+      {
+       "id": "1",
+       "period": {
+        "startDate": "2027-04-01T00:00:00+01:00",
+        "endDate": "2028-03-31T23:59:59+01:00"
+       },
+       "description": "2027/2028",
+       "amount": {
+        "amount": 4500000,
+        "currency": "GBP"
+       }
+      }
+     ]
+    },
+    "documents": [
+     {
+      "id": "1",
+      "documentType": "plannedProcurementNotice",
+      "description": "Future opportunity notice on Contracts Finder",
+      "url": "https://www.contractsfinder.service.gov.uk/Notice/e004e4c9-7238-4902-80c1-52f0650e4ca0",
+      "datePublished": "2026-10-30T12:46:23Z",
+      "format": "text/html",
+      "language": "en"
+     }
+    ]
+   },
+   "tender": {
+    "id": "LiDAR 27",
+    "title": "FDIS - LiDAR Scanning service provider for Defence Housing Service - FY2027/28 - Amey Central and North Regions",
+    "description": "Central Region - East / West / East Midlands & North\r\n\r\nNorth Region - Northern England / Scotland / Northern Ireland\r\n\r\nScope\r\nThis requirement sets the technical specification for point cloud surveys of the internal and external areas of Defence Housing Service (DHS) assets, and for delivery of the scan data to the Authority's Platform.\r\n\r\nAsset itemisation and photography, item 3 of version 1, ",
+    "status": "planned",
+    "classification": {
+     "scheme": "CPV",
+     "id": "71251000",
+     "description": "Architectural and building-surveying services"
+    },
+    "items": [
+     {
+      "id": "1",
+      "deliveryAddresses": [
+       {
+        "region": "North East",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "North West",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "Yorkshire and the Humber",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "East Midlands",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "West Midlands",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "East of England",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "Scotland",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "Wales",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "Northern Ireland",
+        "countryName": "United Kingdom"
+       }
+      ]
+     }
+    ],
+    "minValue": {
+     "amount": 10000,
+     "currency": "GBP"
+    },
+    "value": {
+     "amount": 113000,
+     "currency": "GBP"
+    },
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Open procedure (below threshold)",
+    "communication": {
+     "futureNoticeDate": "2026-11-13T23:59:59Z"
+    },
+    "contractPeriod": {
+     "startDate": "2027-04-01T00:00:00+01:00",
+     "endDate": "2028-03-31T23:59:59+01:00"
+    },
+    "suitability": {
+     "sme": true,
+     "vcse": false
+    }
+   },
+   "parties": [
+    {
+     "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/Mdj94B2D",
+     "name": "AMEY DEFENCE SERVICES LIMITED",
+     "identifier": {
+      "legalName": "AMEY DEFENCE SERVICES LIMITED",
+      "scheme": "GB-SRS",
+      "id": "sid4gov.cabinetoffice.gov.uk/Mdj94B2D"
+     },
+     "address": {
+      "streetAddress": "Ministry of Defence, DIO, Amey Defence Services Limited,, Swales Pavilion, RAF Wyton",
+      "locality": "HUNTINGDON",
+      "postalCode": "PE28 2EA",
+      "countryName": "England"
+     },
+     "contactPoint": {
+      "name": "Simon Ridley",
+      "email": "simon.ridley@ameydefenceservices.co.uk"
+     },
+     "roles": [
+      "buyer"
+     ]
+    }
+   ],
+   "buyer": {
+    "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/Mdj94B2D",
+    "name": "AMEY DEFENCE SERVICES LIMITED"
+   }
+  },
+  {
+   "ocid": "ocds-b5fd17-d3a52d5d-ac9d-4c8e-b0b3-2ada94c1e0eb",
+   "id": "c32f774f-8897-4558-8ded-6c499500b751-919787",
+   "language": "en",
+   "date": "2026-10-30T09:14:06Z",
+   "tag": [
+    "tenderAmendment"
+   ],
+   "initiationType": "tender",
+   "tender": {
+    "id": "tender_176932/1621710",
+    "title": "Court Appointed Intermediary Services - Framework Re-Opening October 2026",
+    "description": "This notice relates to the re-opening of framework agreements originally awarded following a procurement exercise conducted under the light tough regime, following a process similar to the open procedure.\r\n\r\nThe Ministry of Justice (MoJ) is inviting tenders for the provision of Court Appointed Intermediary Services (CAIS), to support vulnerable defendants in the criminal jurisdiction and vulnerabl",
+    "datePublished": "2026-10-29T09:50:10Z",
+    "status": "active",
+    "classification": {
+     "scheme": "CPV",
+     "id": "75231100",
+     "description": "Law-courts-related administrative services"
+    },
+    "items": [
+     {
+      "id": "1",
+      "deliveryAddresses": [
+       {
+        "region": "North East",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "North West",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "Yorkshire and the Humber",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "East Midlands",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "West Midlands",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "East of England",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "London",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "South East",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "South West",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "Scotland",
+        "countryName": "United Kingdom"
+       },
+       {
+        "region": "Wales",
+        "countryName": "United Kingdom"
+       }
+      ]
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Open procedure (above threshold)",
+    "tenderPeriod": {
+     "endDate": "2026-11-12T17:00:00Z"
+    },
+    "contractPeriod": {
+     "startDate": "2027-02-01T00:00:00Z",
+     "endDate": "2029-03-31T23:59:59+01:00"
+    },
+    "suitability": {
+     "sme": true,
+     "vcse": true
+    },
+    "mainProcurementCategory": "services",
+    "documents": [
+     {
+      "id": "1",
+      "documentType": "tenderNotice",
+      "description": "Opportunity notice on Contracts Finder",
+      "url": "https://www.contractsfinder.service.gov.uk/Notice/c32f774f-8897-4558-8ded-6c499500b751",
+      "datePublished": "2026-10-29T09:50:10Z",
+      "dateModified": "2026-10-30T09:14:06Z",
+      "format": "text/html",
+      "language": "en"
+     }
+    ]
+   },
+   "parties": [
+    {
+     "id": "GB-CFS-183111",
+     "name": "Ministry of Justice",
+     "identifier": {
+      "legalName": "Ministry of Justice"
+     },
+     "address": {
+      "streetAddress": "102 Petty France",
+      "locality": "London",
+      "postalCode": "SW1H 9AJ",
+      "countryName": "England"
+     },
+     "contactPoint": {
+      "name": "Commercial",
+      "email": "HMCTSCommercial@justice.gov.uk"
+     },
+     "roles": [
+      "buyer"
+     ]
+    }
+   ],
+   "buyer": {
+    "id": "GB-CFS-183111",
+    "name": "Ministry of Justice"
+   }
+  },
+  {
+   "ocid": "ocds-b5fd17-7917ed39-076b-4d05-a35a-be485e6f76c2",
+   "id": "fe5875f1-9491-4431-b914-aaf615b6f5f4-919751",
+   "language": "en",
+   "date": "2026-10-29T22:46:38Z",
+   "tag": [
+    "award"
+   ],
+   "initiationType": "tender",
+   "tender": {
+    "id": "GPL0251",
+    "title": "Co-Sourced Internal Audit Service",
+    "description": "The contract appoints a supplier to act as Orbit's Head of Audit and direct internal resource as well as deliver Orbit's annual internal audit plan using their own expert resource as well. Supplier will also have the responsibility to prepare Orbit's future annual internal audit plans.\r\n\r\nThe Contract has been awarded following a further competition under GCA RM6310 Audit & Assurance Services Fram",
+    "status": "complete",
+    "classification": {
+     "scheme": "CPV",
+     "id": "79212200",
+     "description": "Internal audit services"
+    },
+    "items": [
+     {
+      "id": "1",
+      "deliveryAddresses": [
+       {
+        "postalCode": "CV3 2SU"
+       }
+      ]
+     }
+    ],
+    "procurementMethod": "selective",
+    "procurementMethodDetails": "Call-off from a framework agreement",
+    "tenderPeriod": {
+     "endDate": "2026-08-17T12:00:00+01:00"
+    },
+    "contractPeriod": {
+     "startDate": "2026-11-01T00:00:00Z",
+     "endDate": "2029-10-31T23:59:59Z"
+    },
+    "suitability": {
+     "sme": false,
+     "vcse": false
+    },
+    "mainProcurementCategory": "services"
+   },
+   "parties": [
+    {
+     "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/Uy8H6GqT",
+     "name": "ORBIT GROUP LIMITED",
+     "identifier": {
+      "legalName": "ORBIT GROUP LIMITED",
+      "scheme": "GB-SRS",
+      "id": "sid4gov.cabinetoffice.gov.uk/Uy8H6GqT"
+     },
+     "address": {
+      "streetAddress": "GARDEN COURT",
+      "locality": "COVENTRY",
+      "postalCode": "CV32SU",
+      "countryName": "England"
+     },
+     "contactPoint": {
+      "email": "group.tenders@orbit.org.uk"
+     },
+     "details": {
+      "url": "http://www.orbit.org.uk"
+     },
+     "roles": [
+      "buyer"
+     ]
+    },
+    {
+     "id": "GB-COH-OC305127",
+     "name": "BDO LLP",
+     "identifier": {
+      "legalName": "BDO LLP",
+      "scheme": "GB-COH",
+      "id": "OC305127"
+     },
+     "address": {
+      "streetAddress": "55 Baker Street\r\nLondon\r\nW1U 7EU"
+     },
+     "details": {
+      "scale": "large",
+      "vcse": false
+     },
+     "roles": [
+      "supplier"
+     ]
+    }
+   ],
+   "buyer": {
+    "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/Uy8H6GqT",
+    "name": "ORBIT GROUP LIMITED"
+   },
+   "awards": [
+    {
+     "id": "ocds-b5fd17-7917ed39-076b-4d05-a35a-be485e6f76c2-1",
+     "status": "active",
+     "date": "2026-09-29T00:00:00+01:00",
+     "datePublished": "2026-10-29T22:46:38Z",
+     "value": {
+      "amount": 840000,
+      "currency": "GBP"
+     },
+     "suppliers": [
+      {
+       "id": "GB-COH-OC305127",
+       "name": "BDO LLP"
+      }
+     ],
+     "contractPeriod": {
+      "startDate": "2026-11-01T00:00:00Z",
+      "endDate": "2029-10-31T23:59:59Z"
+     },
+     "documents": [
+      {
+       "id": "1",
+       "documentType": "awardNotice",
+       "description": "Awarded contract notice on Contracts Finder",
+       "url": "https://www.contractsfinder.service.gov.uk/Notice/fe5875f1-9491-4431-b914-aaf615b6f5f4",
+       "datePublished": "2026-10-29T22:46:38Z",
+       "format": "text/html",
+       "language": "en"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "links": {
+  "next": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2026-10-27T00:00:00Z&limit=100&publishedTo=2026-10-30T14:16:30Z&cursor=cHVibGlzaGVkRnJvbT0yMDI2LTEwLTI3VDAwOjAwOjAwWnxwdWJsaXNoZWRUbz0yMDI2LTEwLTMwVDE0OjE2OjMwWnxsaW1pdD0xMDB8bmV4dEN1cnNvcj03ODgzNjU="
+ }
+}

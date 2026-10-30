@@ -1,0 +1,321 @@
+[
+ {
+  "id": "14344570-c809-4f5b-ae95-d372b42745e1",
+  "parent": "/api/submissions/e8f6f7bd-4e91-4e63-ad8d-d8159cb0cba6",
+  "submissionVersion": "/api/submission_versions/a05ee026-f2b4-4b8f-b0be-730c2aa36fc7",
+  "form": "/api/forms/6ed50246-0fa0-45d9-ac57-ba5d2a53a745",
+  "formSchemaVersion": "/api/form_schema_versions/ae139324-4ca1-497f-bb07-1ccba0797047",
+  "organization": "/api/organizations/d414b510-ee6d-4bad-b915-514a8ab6f507",
+  "data": {
+   "ND-Root": {
+    "ND-Lot": [
+     {
+      "BT-137-Lot": "LOT-0001",
+      "ND-LotTenderingTerms": {
+       "BT-60-Lot": "no-eu-funds",
+       "BT-63-Lot": "not-allowed",
+       "BT-98-Lot": {
+        "_value": 0.0,
+        "_unitCode": "DAY"
+       },
+       "ND-LotECatalog": {
+        "BT-764-Lot": "not-allowed"
+       },
+       "ND-AwardingTerms": {
+        "ND-LotAwardCriteria": {
+         "ND-LotAwardCriterion": [
+          {
+           "BT-539-Lot": "price",
+           "BT-540-Lot": "Nejnižší nabídková cena bez DPH",
+           "BT-734-Lot": "Nejnižší nabídková cena",
+           "ND-LotAwardCriterionParameters": {
+            "ND-LotAwardWeightCriterionParameter": {
+             "BT-5421-Lot": "per-exa",
+             "BT-541-Lot-WeightNumber": 100.0
+            }
+           }
+          }
+         ]
+        }
+       },
+       "ND-LotEInvoicing": {
+        "BT-743-Lot": "required"
+       },
+       "ND-LotReviewTerms": {
+        "OPT-301-Lot-ReviewOrg": "ORG-0002",
+        "OPT-301-Lot-ReviewInfo": "ORG-0002",
+        "ND-ReviewPresentationPeriod": {
+         "BT-99-Lot": "Podmínkou pro podání návrhu k ÚOHS je podání námitek k Zadavateli, které je nutné doručit do 15 dnů ode dne, kdy se stěžovatel dozvěděl o domnělém porušení zákona Zadavatelem, nejpozději však do uzavření smlouvy nebo do chvíle, kdy se soutěž o návrh považuje po výběru návrhu za ukončenou.\n\nNámitky p…"
+        }
+       },
+       "ND-TenderRecipient": {
+        "BT-18-Lot": "https://nen.nipez.cz/"
+       },
+       "ND-PostAwardProcess": {
+        "BT-92-Lot": false,
+        "BT-93-Lot": true
+       },
+       "OPT-301-Lot-AddInfo": "ORG-0001",
+       "ND-FinancialGuarantee": {
+        "BT-751-Lot": "true"
+       },
+       "ND-LotReservedExecution": {
+        "BT-736-Lot": "no"
+       },
+       "OPT-301-Lot-DocProvider": "ORG-0001",
+       "ND-LotSubmissionLanguage": [
+        {
+         "BT-97-Lot": "CES"
+        }
+       ],
+       "ND-LotProcurementDocument": [
+        {
+         "BT-14-Lot": "non-restricted-document",
+         "BT-15-Lot": "https://nen.nipez.cz/profil/RLPCR",
+         "OPT-140-Lot": "ZD"
+        }
+       ],
+       "ND-LotReservedParticipation": {
+        "ND-LotReservedProcurement": [
+         {
+          "BT-71-Lot": "none"
+         }
+        ]
+       },
+       "ND-SelectionCriteriaSources": {
+        "ND-SelectionCriteriaSource": [
+         {
+          "BT-821-Lot": "epo-procurement-document"
+         }
+        ]
+       }
+      },
+      "ND-LotProcurementScope": {
+       "BT-21-Lot": "ReSURS I. - PISEK - stavební úpravy",
+       "BT-22-Lot": ".",
+       "BT-23-Lot": "works",
+       "BT-24-Lot": "Předmětem plnění tohoto zadávacího řízení jsou stavební úpravy související primárně s výměnou radaru na RLB PISEK vč. RADOMu. Dojde k vyztužení radarové věže, úpravě konstrukce pro osazení antén (nově sekundární a primární), úpravě konstrukce pro osazení nového RADOMu a úpravám v objektu (radarový s…",
+       "BT-726-Lot": true,
+       "ND-LotDuration": {
+        "BT-36-Lot": {
+         "_value": 12.0,
+         "_unitCode": "MONTH"
+        }
+       },
+       "ND-LotPlacePerformance": [
+        {
+         "ND-LotPerformanceAddress": {
+          "BT-5071-Lot": "CZ020",
+          "BT-5141-Lot": "CZE"
+         }
+        }
+       ],
+       "ND-LotMainClassification": {
+        "BT-262-Lot": "45000000",
+        "BT-26(m)-Lot": "cpv"
+       },
+       "ND-StrategicProcurementType": [
+        {
+         "BT-06-Lot": "none"
+        }
+       ]
+      },
+      "ND-LotTenderingProcess": {
+       "BT-17-Lot": "required",
+       "BT-115-Lot": true,
+       "ND-AuctionTerms": {
+        "BT-767-Lot": false
+       },
+       "ND-PublicOpening": {
+        "BT-132(d)-Lot": "2026-12-10+01:00",
+        "BT-132(t)-Lot": "10:00:00+01:00",
+        "ND-PublicOpeningPlace": {
+         "BT-133-Lot": "Online"
+        }
+       },
+       "ND-SubmissionDeadline": {
+        "BT-131(d)-Lot": "2026-12-10+01:00",
+        "BT-131(t)-Lot": "10:00:00+01:00"
+       },
+       "ND-LotFAContractingSystem": {
+        "BT-765-Lot": "none"
+       },
+       "ND-LotDPSContractingSystem": {
+        "BT-766-Lot": "none"
+       }
+      }
+     }
+    ],
+    "BT-01-notice": "32014L0024",
+    "BT-02-notice": "cn-standard",
+    "BT-03-notice": "competition",
+    "BT-04-notice": "28eee70a-f609-4737-90e6-40720ea3c731",
+    "BT-701-notice": "e8f6f7bd-4e91-4e63-ad8d-d8159cb0cba6",
+    "BT-757-notice": "01",
+    "OPT-001-notice": "2.3",
+    "OPT-002-notice": "eforms-sdk-1.13",
+    "BT-05(a)-notice": "2026-10-30+01:00",
+    "BT-05(b)-notice": "14:00:15+01:00",
+    "BT-702(a)-notice": "CES",
+    "ND-RootExtension": {
+     "ND-Changes": {
+      "ND-Change": [
+       {
+        "BT-718-notice": true,
+        "BT-719-notice": "2026-10-30+01:00",
+        "BT-141(a)-notice": "Úprava technické kvalifikace, viz VZD č. 2 a s tím související posun lhůty pro podání nabídek.",
+        "ND-ChangedSection": [
+         {
+          "BT-13716-notice": "LOT-0001"
+         }
+        ]
+       }
+      ],
+      "BT-758-notice": "51857-2026",
+      "ND-ChangeReason": {
+       "BT-140-notice": "update-add",
+       "BT-762-notice": "Úprava technické kvalifikace, viz VZD č. 2 a s tím související posun lhůty pro podání nabídek."
+      }
+     },
+     "OPP-070-notice": "16",
+     "ND-Organizations": {
+      "ND-Organization": [
+       {
+        "ND-Company": {
+         "ND-CompanyAddress": {
+          "BT-507-Organization-Company": "CZ020",
+          "BT-512-Organization-Company": "25261",
+          "BT-513-Organization-Company": "Jeneč",
+          "BT-514-Organization-Company": "CZE",
+          "BT-510(a)-Organization-Company": "Navigační 787"
+         },
+         "ND-CompanyContact": {},
+         "ND-CompanyLegalEntity": [
+          {
+           "BT-501-Organization-Company": "49710371"
+          }
+         ],
+         "BT-500-Organization-Company": "Řízení letového provozu České republiky, státní podnik (ŘLP ČR, s.p.)",
+         "OPT-200-Organization-Company": "ORG-0001"
+        },
+        "OPP-051-Organization": false,
+        "OPP-052-Organization": false
+       },
+       {
+        "ND-Company": {
+         "ND-CompanyAddress": {
+          "BT-507-Organization-Company": "CZ064",
+          "BT-512-Organization-Company": "60200",
+          "BT-513-Organization-Company": "Brno",
+          "BT-514-Organization-Company": "CZE",
+          "BT-510(a)-Organization-Company": "třída Kpt. Jaroše 1926/7"
+         },
+         "ND-CompanyContact": {},
+         "ND-CompanyLegalEntity": [
+          {
+           "BT-501-Organization-Company": "65349423"
+          }
+         ],
+         "BT-500-Organization-Company": "Úřad pro ochranu hospodářské soutěže",
+         "BT-505-Organization-Company": "https://uohs.gov.cz",
+         "OPT-200-Organization-Company": "ORG-0002"
+        }
+       }
+      ]
+     }
+    },
+    "ND-ProcedureTerms": {
+     "ND-CrossBorderLaw": {
+      "BT-09(a)-Procedure": "CrossBorderLaw",
+      "BT-09(b)-Procedure": "Zákon č. 134/2016 Sb., o zadávání veřejných zakázek"
+     },
+     "ND-LocalLegalBasisNoID": [
+      {
+       "BT-01(e)-Procedure": "LocalLegalBasis",
+       "BT-01(f)-Procedure": "Zákon č. 134/2016 Sb., o zadávání veřejných zakázek"
+      }
+     ],
+     "ND-TendererQualificationRequestSources": {
+      "ND-ExclusionGroundsSource": [
+       {
+        "BT-806-Procedure": "epo-procurement-document"
+       }
+      ]
+     }
+    },
+    "ND-ContractingParty": [
+     {
+      "ND-Buyer": {
+       "OPT-300-Procedure-Buyer": "ORG-0001"
+      },
+      "BT-10-Procedure-Buyer": "gen-pub",
+      "BT-11-Procedure-Buyer": "body-pl-cga",
+      "BT-508-Procedure-Buyer": "https://nen.nipez.cz/profil/RLPCR"
+     }
+    ],
+    "ND-ProcedureProcurementScope": {
+     "BT-21-Procedure": "ReSURS I. - PISEK - stavební úpravy",
+     "BT-23-Procedure": "works",
+     "BT-24-Procedure": "Předmětem plnění tohoto zadávacího řízení jsou stavební úpravy související primárně s výměnou radaru na RLB PISEK vč. RADOMu. Dojde k vyztužení radarové věže, úpravě konstrukce pro osazení antén (nově sekundární a primární), úpravě konstrukce pro osazení nového RADOMu a úpravám v objektu (radarový s…",
+     "ND-ProcedureMainClassification": {
+      "BT-262-Procedure": "45000000",
+      "BT-26(m)-Procedure": "cpv"
+     },
+     "OPT-900-Procedure-ValidationAnchor": "_",
+     "ND-ProcedurePlacePerformanceAdditionalInformation": [
+      {
+       "ND-ProcedurePlacePerformance": {
+        "BT-5071-Procedure": "CZ020",
+        "BT-5141-Procedure": "CZE"
+       }
+      }
+     ]
+    },
+    "ND-ProcedureTenderingProcess": {
+     "BT-105-Procedure": "open",
+     "ND-AcceleratedProcedure": {
+      "BT-106-Procedure": "false"
+     }
+    }
+   },
+   "metadata": {
+    "subType": "16",
+    "identifikatoryNipez": {
+     "zadavaciPostup": {
+      "identifikatorNipez": "ZP/RVZ2600286627/001"
+     },
+     "identifikatorNipez": "RVZ2600286627",
+     "identifikatoryCasti": [
+      {
+       "idCastiVvz": "LOT-0001",
+       "identifikatorNipez": "RVZ2600286627/001"
+      }
+     ]
+    },
+    "identifikatoryNipezPredchozihoPodani": {
+     "identifikatoryNipez": {
+      "zadavaciPostup": {
+       "identifikatorNipez": "ZP/RVZ2600286627/001"
+      },
+      "identifikatorNipez": "RVZ2600286627",
+      "identifikatoryCasti": [
+       {
+        "idCastiVvz": "LOT-0001",
+        "identifikatorNipez": "RVZ2600286627/001"
+       }
+      ]
+     }
+    }
+   }
+  },
+  "dataHash": "3ed6b52886ea554eb2e38f01dda3ffea5ace1a83855f72f6dafd241fb87b29f8",
+  "workflowPlaceCode": "UVEREJNENO",
+  "variableId": "F23AN-MG6YJ",
+  "relatedId": "28eee70a-f609-4737-90e6-40720ea3c731",
+  "publicId": "q2ZWWuJKehaHM6v9ffivL3dDIGD403vB",
+  "version": 7,
+  "validityPeriod": "2026-10-30T13:58:32+01:00/",
+  "createdAt": "2026-10-30T13:58:32+01:00",
+  "updatedAt": "2026-10-30T14:10:07+01:00"
+ }
+]

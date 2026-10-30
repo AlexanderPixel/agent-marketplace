@@ -1,0 +1,81 @@
+{
+ "publicatieId": 440202,
+ "kenmerk": 612678,
+ "aanbestedingNaam": "Overeenkomst CTG 5.56mm Blanks",
+ "opdrachtgeverNaam": "Ministerie van Defensie",
+ "numberOfDaysBeforeAanmeldenInschrijven": 0,
+ "opdrachtBeschrijving": "Overeenkomst CTG 5.56mm Blanks t.b.v. Ministerie van Defensie",
+ "publicatieDatum": "2026-09-17T04:07:20.643803",
+ "typePublicatie": "Aankondiging gegunde opdracht - defensierichtlijn, standaardregeling",
+ "publicatieCode": "EF31",
+ "juridischKaderCode": {
+  "code": "DEF",
+  "omschrijving": "Aanbestedingswet op defensie- en veiligheidsgebied"
+ },
+ "nationaalOfEuropeesCode": {
+  "code": "EU",
+  "omschrijving": "Europees"
+ },
+ "typeOpdrachtCode": {
+  "code": "L",
+  "omschrijving": "Leveringen"
+ },
+ "procedureCode": {
+  "code": "OZB",
+  "omschrijving": "Onderhandelingsprocedure zonder voorafgaande oproep tot mededinging"
+ },
+ "cpvCodes": [
+  {
+   "isHoofdOpdracht": true,
+   "code": "35330000-6",
+   "omschrijving": "Munitie"
+  },
+  {
+   "isHoofdOpdracht": false,
+   "code": "35331500-8",
+   "omschrijving": "Patronen"
+  }
+ ],
+ "nutsCodes": [
+  {
+   "code": "NL",
+   "omschrijving": "NEDERLAND"
+  }
+ ],
+ "afgerondeAanbesteding": false,
+ "isGeimporteerd": true,
+ "urlTsenderWebsite": "https://s2c.mercell.com/today/230327",
+ "urlTsenderNaam": "Mercell",
+ "isVroegtijdigBeeindigd": false,
+ "onlyGunningProcedure": true,
+ "isGegund": true,
+ "pbNummerTed": "639742-2026",
+ "referentieNummer": "92570a53-dff4-4e5a-9fc7-9bb3f2a9c348",
+ "aankondigingCode": {
+  "code": "AGO",
+  "omschrijving": "Aankondiging gegunde opdracht"
+ },
+ "opdrachtAardCode": {
+  "code": "OOP",
+  "omschrijving": "Overheidsopdracht"
+ },
+ "formType": "result",
+ "links": {
+  "pdf": {
+   "href": "/papi/tenderned-rs-tns/v2/publicaties/440202/pdf",
+   "title": "pdf"
+  },
+  "keepInformed": {
+   "href": "https://www.tenderned.nl/aanbestedende-dienst/aankondigingen/440202?keepInformed=true",
+   "title": "keepInformed"
+  },
+  "addToTenders": {
+   "href": "https://www.tenderned.nl/ondernemersplatform/aankondigingen/440202?addToTenders=true",
+   "title": "addToTenders"
+  },
+  "shareOnLinkedIn": {
+   "href": "https://www.linkedin.com/sharing/share-offsite/?url=https://www.tenderned.nl/aankondigingen/overzicht/440202",
+   "title": "shareOnLinkedIn"
+  }
+ }
+}

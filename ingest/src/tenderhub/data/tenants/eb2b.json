@@ -1,0 +1,692 @@
+[
+ {
+  "tenant": "wim.eb2b.com.pl",
+  "notices": 9961,
+  "example_url": "https://wim.eb2b.com.pl/open-preview-auction.html/531157",
+  "buyer": "Wojskowy Instytut Medyczny - Państwowy Instytut Badawczy"
+ },
+ {
+  "tenant": "jurasza.eb2b.com.pl",
+  "notices": 6030,
+  "example_url": "https://jurasza.eb2b.com.pl/edit-auction.html/528733",
+  "buyer": "SZPITAL UNIWERSYTECKI NR 1 IM. DR. A. JURASZA W BYDGOSZCZY"
+ },
+ {
+  "tenant": "spsk4lublin.eb2b.com.pl",
+  "notices": 5154,
+  "example_url": "https://spsk4lublin.eb2b.com.pl/open-preview-auction.html/519696",
+  "buyer": "Uniwersytecki Szpital Kliniczny nr 4 w Lublinie"
+ },
+ {
+  "tenant": "szpital-koscierzyna.eb2b.com.pl",
+  "notices": 4284,
+  "example_url": "https://szpital-koscierzyna.eb2b.com.pl",
+  "buyer": "SZPITAL SPECJALISTYCZNY W KOŚCIERZYNIE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "cmkp.eb2b.com.pl",
+  "notices": 3820,
+  "example_url": "https://cmkp.eb2b.com.pl/open-preview-auction.html/532796",
+  "buyer": "CENTRUM MEDYCZNEGO KSZTAŁCENIA PODYPLOMOWEGO"
+ },
+ {
+  "tenant": "nio.eb2b.com.pl",
+  "notices": 3448,
+  "example_url": "http://nio.eb2b.com.pl",
+  "buyer": "Narodowy Instytut Onkologii im. Marii Skłodowskiej-Curie - Państwowy Instytut Badawczy"
+ },
+ {
+  "tenant": "szpital-lublin.eb2b.com.pl",
+  "notices": 3204,
+  "example_url": "https://szpital-lublin.eb2b.com.pl/",
+  "buyer": "WOJEWÓDZKI SZPITAL SPECJALISTYCZNY im. Stefana Kardynała Wyszyńskiego Samodzielny Publiczny Zakład Opieki Zdrowotnej"
+ },
+ {
+  "tenant": "gddkia.eb2b.com.pl",
+  "notices": 3163,
+  "example_url": "https://gddkia.eb2b.com.pl/",
+  "buyer": "Generalna Dyrekcja Dróg Krajowych i Autostrad Oddział w Gdańsku"
+ },
+ {
+  "tenant": "platforma.eb2b.com.pl",
+  "notices": 2639,
+  "example_url": "https://platforma.eb2b.com.pl/",
+  "buyer": "Zakład Usług Komunalnych w Warce Sp. z o.o."
+ },
+ {
+  "tenant": "uszd-lublin.eb2b.com.pl",
+  "notices": 2552,
+  "example_url": "https://uszd-lublin.eb2b.com.pl/",
+  "buyer": "Uniwersytecki Szpital Dziecięcy w Lublinie"
+ },
+ {
+  "tenant": "szpitalbp.eb2b.com.pl",
+  "notices": 2462,
+  "example_url": "https://szpitalbp.eb2b.com.pl",
+  "buyer": "Wojewódzki Szpital Specjalistyczny w Białej Podlaskiej"
+ },
+ {
+  "tenant": "sum.eb2b.com.pl",
+  "notices": 2032,
+  "example_url": "https://sum.eb2b.com.pl/organizer-auctions.html",
+  "buyer": "ŚLĄSKI UNIWERSYTET MEDYCZNY W KATOWICACH"
+ },
+ {
+  "tenant": "usdk.eb2b.com.pl",
+  "notices": 1668,
+  "example_url": "https://usdk.eb2b.com.pl/",
+  "buyer": "Uniwersytecki Szpital Dziecięcy w Krakowie"
+ },
+ {
+  "tenant": "polregio.eb2b.com.pl",
+  "notices": 1592,
+  "example_url": "https://www.polregio.eb2b.com.pl",
+  "buyer": "POLREGIO S.A."
+ },
+ {
+  "tenant": "szpitalzelazna.eb2b.com.pl",
+  "notices": 1006,
+  "example_url": "https://szpitalzelazna.eb2b.com.pl/open-preview-auction.html/521166",
+  "buyer": "Centrum Medyczne \"Żelazna\" sp. z o. o."
+ },
+ {
+  "tenant": "zamowienia.eb2b.com.pl",
+  "notices": 938,
+  "example_url": "https://zamowienia.eb2b.com.pl",
+  "buyer": "Centrum Obsługi Administracji Rządowej"
+ },
+ {
+  "tenant": "kowr.eb2b.com.pl",
+  "notices": 875,
+  "example_url": "https://kowr.eb2b.com.pl",
+  "buyer": "KRAJOWY OŚRODEK WSPARCIA ROLNICTWA"
+ },
+ {
+  "tenant": "slaska-policja.eb2b.com.pl",
+  "notices": 822,
+  "example_url": "https://slaska-policja.eb2b.com.pl",
+  "buyer": "Komenda Wojewódzka Policji w Katowicach"
+ },
+ {
+  "tenant": "nask.eb2b.com.pl",
+  "notices": 817,
+  "example_url": "https://nask.eb2b.com.pl/open-auctions.html",
+  "buyer": "NAUKOWA I AKADEMICKA SIEĆ KOMPUTEROWA - PAŃSTWOWY INSTYTUT BADAWCZY"
+ },
+ {
+  "tenant": "bgk.eb2b.com.pl",
+  "notices": 790,
+  "example_url": "https://bgk.eb2b.com.pl/open-preview-auction.html/509219",
+  "buyer": "Bank Gospodarstwa Krajowego"
+ },
+ {
+  "tenant": "mpwik-waw.eb2b.com.pl",
+  "notices": 707,
+  "example_url": "https://mpwik-waw.eb2b.com.pl",
+  "buyer": "Miejskie Przedsiębiorstwo Wodociągów i Kanalizacji w m. st. Warszawie S.A."
+ },
+ {
+  "tenant": "szpitalorlowskiego.eb2b.com.pl",
+  "notices": 646,
+  "example_url": "https://szpitalorlowskiego.eb2b.com.pl/",
+  "buyer": "SAMODZIELNY PUBLICZNY SZPITAL KLINICZNY IM. PROF. W. ORŁOWSKIEGO CENTRUM MEDYCZNEGO KSZTAŁCENIA PODYPLOMOWEGO"
+ },
+ {
+  "tenant": "pkpintercity.eb2b.com.pl",
+  "notices": 606,
+  "example_url": "https://pkpintercity.eb2b.com.pl",
+  "buyer": "\"PKP Intercity\" S.A."
+ },
+ {
+  "tenant": "brodnowski.eb2b.com.pl",
+  "notices": 523,
+  "example_url": "https://brodnowski.eb2b.com.pl",
+  "buyer": "Mazowiecki Szpital Bródnowski Sp. z o.o."
+ },
+ {
+  "tenant": "spzozhajnowka.eb2b.com.pl",
+  "notices": 492,
+  "example_url": "https://spzozhajnowka.eb2b.com.pl",
+  "buyer": "Samodzielny Publiczny Zakład Opieki Zdrowotnej w Hajnówce"
+ },
+ {
+  "tenant": "szpitaljaslo.eb2b.com.pl",
+  "notices": 490,
+  "example_url": "https://szpitaljaslo.eb2b.com.pl/open-auctions.html",
+  "buyer": "Szpital Specjalistyczny w Jaśle"
+ },
+ {
+  "tenant": "pkp.eb2b.com.pl",
+  "notices": 486,
+  "example_url": "https://pkp.eb2b.com.pl/open-preview-auction.html/508245",
+  "buyer": "Polskie Koleje Państwowe S.A."
+ },
+ {
+  "tenant": "amwsinevia.eb2b.com.pl",
+  "notices": 464,
+  "example_url": "https://www.amwsinevia.eb2b.com.pl",
+  "buyer": "AMW SINEVIA SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "tvp.eb2b.com.pl",
+  "notices": 388,
+  "example_url": "https://tvp.eb2b.com.pl/",
+  "buyer": "Telewizja Polska S.A. w likwidacji"
+ },
+ {
+  "tenant": "umlub.eb2b.com.pl",
+  "notices": 360,
+  "example_url": "https://umlub.eb2b.com.pl/open-preview-auction.html/528760/uslugi-w-zakresie-medycyny-pracy-i-profilaktycznej-opieki-zdrowotnej-1",
+  "buyer": "UNIWERSYTET MEDYCZNY W LUBLINIE"
+ },
+ {
+  "tenant": "uplublin.eb2b.com.pl",
+  "notices": 319,
+  "example_url": "https://uplublin.eb2b.com.pl/",
+  "buyer": "UNIWERSYTET PRZYRODNICZY W LUBLINIE"
+ },
+ {
+  "tenant": "amwkwatera.eb2b.com.pl",
+  "notices": 308,
+  "example_url": "https://amwkwatera.eb2b.com.pl",
+  "buyer": "AMW Towarzystwo Budownictwa Społecznego „KWATERA” Sp. z o. o."
+ },
+ {
+  "tenant": "podkarpacka-policja.eb2b.com.pl",
+  "notices": 298,
+  "example_url": "https://podkarpacka-policja.eb2b.com.pl/",
+  "buyer": "Komenda Wojewódzka Policji w Rzeszowie"
+ },
+ {
+  "tenant": "zdwlodz.eb2b.com.pl",
+  "notices": 296,
+  "example_url": "https://zdwlodz.eb2b.com.pl",
+  "buyer": "ZARZĄD DRÓG WOJEWÓDZKICH W ŁODZI"
+ },
+ {
+  "tenant": "imgw.eb2b.com.pl",
+  "notices": 296,
+  "example_url": "https://imgw.eb2b.com.pl",
+  "buyer": "Instytut Meteorologii i Gospodarki Wodnej - Państwowy Instytut Badawczy"
+ },
+ {
+  "tenant": "li.eb2b.com.pl",
+  "notices": 293,
+  "example_url": "https://li.eb2b.com.pl",
+  "buyer": "Miasto Łódź – Miejskie Centrum Inwestycji u imieniu i na rzecz którego działają Łódzkie Inwestycje sp. z o.o."
+ },
+ {
+  "tenant": "parp.eb2b.com.pl",
+  "notices": 219,
+  "example_url": "https://parp.eb2b.com.pl",
+  "buyer": "Polska Agencja Rozwoju Przedsiębiorczości"
+ },
+ {
+  "tenant": "ihar.eb2b.com.pl",
+  "notices": 200,
+  "example_url": "https://ihar.eb2b.com.pl/",
+  "buyer": "Instytut Hodowli i Aklimatyzacji Roślin - Państwowy Instytut Badawczy Zakład Doświadczalny Radzików"
+ },
+ {
+  "tenant": "mpk-poznan.eb2b.com.pl",
+  "notices": 192,
+  "example_url": "https://mpk-poznan.eb2b.com.pl",
+  "buyer": "Miejskie Przedsiębiorstwo Komunikacyjne w Poznaniu Sp. z o.o."
+ },
+ {
+  "tenant": "bogdanka.eb2b.com.pl",
+  "notices": 182,
+  "example_url": "https://bogdanka.eb2b.com.pl",
+  "buyer": "Lubelski Węgiel Bogdanka S.A."
+ },
+ {
+  "tenant": "opi.eb2b.com.pl",
+  "notices": 178,
+  "example_url": "https://opi.eb2b.com.pl/open-preview-auction.html/523335",
+  "buyer": "Ośrodek Przetwarzania Informacji - Państwowy Instytut Badawczy"
+ },
+ {
+  "tenant": "kw.eb2b.com.pl",
+  "notices": 169,
+  "example_url": "https://kw.eb2b.com.pl/open-preview-auction.html/514922",
+  "buyer": "Koleje Wielkopolskie sp. z o.o."
+ },
+ {
+  "tenant": "zkzl.eb2b.com.pl",
+  "notices": 156,
+  "example_url": "https://zkzl.eb2b.com.pl",
+  "buyer": "ZARZĄD KOMUNALNYCH ZASOBÓW LOKALOWYCH SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "teatrwielki.eb2b.com.pl",
+  "notices": 148,
+  "example_url": "https://teatrwielki.eb2b.com.pl/",
+  "buyer": "Teatr Wielki - Opera Narodowa"
+ },
+ {
+  "tenant": "szpitaldeblin.eb2b.com.pl",
+  "notices": 140,
+  "example_url": "https://szpitaldeblin.eb2b.com.pl",
+  "buyer": "6 SZPITAL WOJSKOWY Z PRZYCHODNIĄ SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ"
+ },
+ {
+  "tenant": "kd.eb2b.com.pl",
+  "notices": 136,
+  "example_url": "https://kd.eb2b.com.pl",
+  "buyer": "Koleje Dolnośląskie S.A."
+ },
+ {
+  "tenant": "mpk-krakow.eb2b.com.pl",
+  "notices": 127,
+  "example_url": "https://mpk-krakow.eb2b.com.pl/open-preview-auction.html/525814/swiadczenie-uslug-polegajacych-na-organizacji-i-przeprowadzeniu-zajec-sportowo-rekreacyjnych-z-elementami-samoobrony-1",
+  "buyer": "Miejskie Przedsiębiorstwo Komunikacyjne Spółka Akcyjna w Krakowie"
+ },
+ {
+  "tenant": "pwpw.eb2b.com.pl",
+  "notices": 125,
+  "example_url": "https://pwpw.eb2b.com.pl/open-preview-auction/528159/wsparcie-serwisowe-dla-systemu-dwdm-ciena-na-okres-36-miesiecy",
+  "buyer": "Polska Wytwórnia Papierów Wartościowych SA"
+ },
+ {
+  "tenant": "km.eb2b.com.pl",
+  "notices": 104,
+  "example_url": "https://km.eb2b.com.pl/open-auctions.html",
+  "buyer": "\"Koleje Mazowieckie - KM\" sp. z o.o."
+ },
+ {
+  "tenant": "miastomyszkow.eb2b.com.pl",
+  "notices": 100,
+  "example_url": "https://miastomyszkow.eb2b.com.pl/open-preview-auction.html/519285",
+  "buyer": "Gmina Myszków"
+ },
+ {
+  "tenant": "rcgw.eb2b.com.pl",
+  "notices": 96,
+  "example_url": "https://rcgw.eb2b.com.pl/open-preview-auction.html/523903",
+  "buyer": "Regionalne Centrum Gospodarki Wodno-Ściekowej S.A."
+ },
+ {
+  "tenant": "ilot.eb2b.com.pl",
+  "notices": 94,
+  "example_url": "https://ilot.eb2b.com.pl/open-preview-auction.html/3092/wykonanie-uslugi-cateringowej-podczas-1-dnia-trwania-konferencji-na-rzecz-budowania-marki-dobrego-pracodawcy-zwiazanej-z-obchodami-100-lecia-sieci-badawczej-lukasiewicz-instytutu-lotnictwa",
+  "buyer": "SIEĆ BADAWCZA ŁUKASIEWICZ-INSTYTUT LOTNICTWA"
+ },
+ {
+  "tenant": "ignatianum.eb2b.com.pl",
+  "notices": 92,
+  "example_url": "https://ignatianum.eb2b.com.pl",
+  "buyer": "UNIWERSYTET IGNATIANUM W KRAKOWIE"
+ },
+ {
+  "tenant": "udt.eb2b.com.pl",
+  "notices": 90,
+  "example_url": "https://udt.eb2b.com.pl/",
+  "buyer": "Urząd Dozoru Technicznego"
+ },
+ {
+  "tenant": "lubuska-policja.eb2b.com.pl",
+  "notices": 82,
+  "example_url": "https://lubuska-policja.eb2b.com.pl/",
+  "buyer": "Komenda Wojewódzka Policji w Gorzowie Wlkp."
+ },
+ {
+  "tenant": "sgh.eb2b.com.pl",
+  "notices": 78,
+  "example_url": "https://sgh.eb2b.com.pl/open-preview-auction.html/519645",
+  "buyer": "SZKOŁA GŁÓWNA HANDLOWA W WARSZAWIE"
+ },
+ {
+  "tenant": "aotm.eb2b.com.pl",
+  "notices": 76,
+  "example_url": "https://aotm.eb2b.com.pl/",
+  "buyer": "Agencja Oceny Technologii Medycznych i Taryfikacji"
+ },
+ {
+  "tenant": "powiatjaslo.eb2b.com.pl",
+  "notices": 68,
+  "example_url": "https://powiatjaslo.eb2b.com.pl/open-auctions.html",
+  "buyer": "Powiat Jasielski"
+ },
+ {
+  "tenant": "kolejeslaskie.eb2b.com.pl",
+  "notices": 68,
+  "example_url": "https://kolejeslaskie.eb2b.com.pl",
+  "buyer": "Koleje Śląskie sp. z o.o."
+ },
+ {
+  "tenant": "itpkp.eb2b.com.pl",
+  "notices": 66,
+  "example_url": "https://itpkp.eb2b.com.pl/open-auctions.html",
+  "buyer": "Polskie Koleje Państwowe S.A."
+ },
+ {
+  "tenant": "mzo.eb2b.com.pl",
+  "notices": 62,
+  "example_url": "https://mzo.eb2b.com.pl/",
+  "buyer": "Miejski Zakład Oczyszczania w Pruszkowie sp. z o.o."
+ },
+ {
+  "tenant": "zdpotwock.eb2b.com.pl",
+  "notices": 56,
+  "example_url": "https://zdpotwock.eb2b.com.pl/open-preview-auction.html/526220",
+  "buyer": "ZARZĄD DRÓG POWIATOWYCH W OTWOCKU"
+ },
+ {
+  "tenant": "zuw.eb2b.com.pl",
+  "notices": 50,
+  "example_url": "https://zuw.eb2b.com.pl/",
+  "buyer": "Zachodniopomorski Urząd Wojewódzki w Szczecinie"
+ },
+ {
+  "tenant": "mpecolsztyn.eb2b.com.pl",
+  "notices": 48,
+  "example_url": "https://mpecolsztyn.eb2b.com.pl/open-auctions.html",
+  "buyer": "Miejskie Przedsiębiorstwo Energetyki Cieplnej Spółka z ograniczoną odpowiedzialnością"
+ },
+ {
+  "tenant": "pzdjaslo.eb2b.com.pl",
+  "notices": 46,
+  "example_url": "https://pzdjaslo.eb2b.com.pl/open-auctions.html",
+  "buyer": "Powiatowy Zarząd Dróg w Jaśle"
+ },
+ {
+  "tenant": "eco.eb2b.com.pl",
+  "notices": 43,
+  "example_url": "https://eco.eb2b.com.pl/open-preview-auction.html/501722/dostawa-oprogramowania-inzynierskiego-do-optymalizacji-pracy-sieci-cieplowniczej-wraz-z-uslugami-dodatkowymi-w-tym-usluga-wdrozeniowa-usluga-wsparcia-technicznego-i-merytorycznego-dla-sieci-cieplowniczej-w-opolu",
+  "buyer": "Energetyka Cieplna Opolszczyzny S.A."
+ },
+ {
+  "tenant": "cepelek.eb2b.com.pl",
+  "notices": 42,
+  "example_url": "https://cepelek.eb2b.com.pl",
+  "buyer": "CENTRALNA WOJSKOWA PRZYCHODNIA LEKARSKA CEPELEK SAMODZIELNY PUBLICZNY ZAKŁAD OPIEKI ZDROWOTNEJ"
+ },
+ {
+  "tenant": "milanowek.eb2b.com.pl",
+  "notices": 40,
+  "example_url": "https://milanowek.eb2b.com.pl",
+  "buyer": "Gmina Milanówek"
+ },
+ {
+  "tenant": "ecs.eb2b.com.pl",
+  "notices": 39,
+  "example_url": "https://ecs.eb2b.com.pl/open-preview-auction.html/528755/druk-wydawnictw-dla-europejskiego-centrum-solidarnosci-2",
+  "buyer": "Europejskie Centrum Solidarności"
+ },
+ {
+  "tenant": "kwpsp_opole.eb2b.com.pl",
+  "notices": 38,
+  "example_url": "https://kwpsp_opole.eb2b.com.pl",
+  "buyer": "Komenda Wojewódzka Państwowej Straży Pożarnej w Opolu"
+ },
+ {
+  "tenant": "bm-bytom.eb2b.com.pl",
+  "notices": 36,
+  "example_url": "https://bm-bytom.eb2b.com.pl/open-preview-auction.html/520038",
+  "buyer": "GMINA BYTOM - BYTOMSKIE MIESZKANIA"
+ },
+ {
+  "tenant": "zoolodz.eb2b.com.pl",
+  "notices": 32,
+  "example_url": "https://zoolodz.eb2b.com.pl/open-preview-auction.html/513601",
+  "buyer": "Holding Łódź Spółka z o.o."
+ },
+ {
+  "tenant": "muzhp.eb2b.com.pl",
+  "notices": 32,
+  "example_url": "https://muzhp.eb2b.com.pl/open-preview-auction.html/514493",
+  "buyer": "Muzeum Historii Polski"
+ },
+ {
+  "tenant": "mza.eb2b.com.pl",
+  "notices": 32,
+  "example_url": "https://mza.eb2b.com.pl/",
+  "buyer": "Miejskie Zakłady Autobusowe sp. z o.o."
+ },
+ {
+  "tenant": "lpec.eb2b.com.pl",
+  "notices": 32,
+  "example_url": "https://lpec.eb2b.com.pl/",
+  "buyer": "Lubelskie Przedsiębiorstwo Energetyki Cieplnej Spółka Akcyjna"
+ },
+ {
+  "tenant": "zmsp.eb2b.com.pl",
+  "notices": 30,
+  "example_url": "https://zmsp.eb2b.com.pl/",
+  "buyer": "Zarząd Mienia Skarbu Państwa"
+ },
+ {
+  "tenant": "kwpspolsztyn.eb2b.com.pl",
+  "notices": 30,
+  "example_url": "http://kwpspolsztyn.eb2b.com.pl/",
+  "buyer": "Komenda Wojewódzka Państwowej Straży Pożarnej w Olsztynie"
+ },
+ {
+  "tenant": "mzdtorun.eb2b.com.pl",
+  "notices": 26,
+  "example_url": "https://mzdtorun.eb2b.com.pl/open-preview-auction.html/520703",
+  "buyer": "Miejski Zarząd Dróg w Toruniu"
+ },
+ {
+  "tenant": "mcs.eb2b.com.pl",
+  "notices": 26,
+  "example_url": "https://mcs.eb2b.com.pl",
+  "buyer": "Mazowieckie Centrum Stomatologii Sp. z o.o."
+ },
+ {
+  "tenant": "ibideas.eb2b.com.pl",
+  "notices": 26,
+  "example_url": "https://ibideas.eb2b.com.pl",
+  "buyer": "Instytut Badawczy IDEAS"
+ },
+ {
+  "tenant": "szpitalfrombork.eb2b.com.pl",
+  "notices": 26,
+  "example_url": "https://szpitalfrombork.eb2b.com.pl",
+  "buyer": "Szpital Psychiatryczny św. Antoniego Wielkiego we Fromborku"
+ },
+ {
+  "tenant": "mzowolomin.eb2b.com.pl",
+  "notices": 25,
+  "example_url": "https://mzowolomin.eb2b.com.pl/",
+  "buyer": "MIEJSKI ZAKŁAD OCZYSZCZANIA W WOŁOMINIE SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "pgkimkrotoszyn.eb2b.com.pl",
+  "notices": 22,
+  "example_url": "https://pgkimkrotoszyn.eb2b.com.pl",
+  "buyer": "PRZEDSIĘBIORSTWO GOSPODARKI KOMUNALNEJ I MIESZKANIOWEJ SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "osir-bemowo.eb2b.com.pl",
+  "notices": 20,
+  "example_url": "https://osir-bemowo.eb2b.com.pl/",
+  "buyer": "Ośrodek Sportu i Rekreacji m. st. Warszawy w Dzielnicy Bemowo"
+ },
+ {
+  "tenant": "wkd.eb2b.com.pl",
+  "notices": 20,
+  "example_url": "https://wkd.eb2b.com.pl/open-auctions.html",
+  "buyer": "Warszawska Kolej Dojazdowa sp. z o.o."
+ },
+ {
+  "tenant": "umgryfice.eb2b.com.pl",
+  "notices": 18,
+  "example_url": "https://umgryfice.eb2b.com.pl/",
+  "buyer": "Gmina Gryfice"
+ },
+ {
+  "tenant": "impan.eb2b.com.pl",
+  "notices": 18,
+  "example_url": "https://impan.eb2b.com.pl/",
+  "buyer": "Instytut Matematyczny Polskiej Akademii Nauk"
+ },
+ {
+  "tenant": "rpec.eb2b.com.pl",
+  "notices": 17,
+  "example_url": "https://rpec.eb2b.com.pl/open-preview-auction.html/486118",
+  "buyer": "Radomskie Przedsiębiorstwo Energetyki Cieplnej „RADPEC” Spółka Akcyjna"
+ },
+ {
+  "tenant": "zosm.eb2b.com.pl",
+  "notices": 16,
+  "example_url": "https://zosm.eb2b.com.pl",
+  "buyer": "ZAKŁAD OBSŁUGI SYSTEMU MONITORINGU"
+ },
+ {
+  "tenant": "tp-kom.eb2b.com.pl",
+  "notices": 16,
+  "example_url": "https://tp-kom.eb2b.com.pl",
+  "buyer": "Tarnowska Gospodarka Komunalna TP-KOM Spółka z ograniczoną odpowiedzialnością"
+ },
+ {
+  "tenant": "gsp.eb2b.com.pl",
+  "notices": 16,
+  "example_url": "https://gsp.eb2b.com.pl/open-auctions.html",
+  "buyer": "Gas Storage Poland sp. z o.o."
+ },
+ {
+  "tenant": "sp382.eb2b.com.pl",
+  "notices": 14,
+  "example_url": "https://sp382.eb2b.com.pl",
+  "buyer": "Szkoła Podstawowa nr 382 im. Warszawskich Dzieci"
+ },
+ {
+  "tenant": "eb2b.com.pl",
+  "notices": 13,
+  "example_url": "https://www.eb2b.com.pl",
+  "buyer": "Miejskie Zakłady Autobusowe sp. z o.o."
+ },
+ {
+  "tenant": "tpbus.eb2b.com.pl",
+  "notices": 12,
+  "example_url": "https://tpbus.eb2b.com.pl/",
+  "buyer": "Komunikacja Gminy Tarnowo Podgórne TPBUS Sp. z o.o."
+ },
+ {
+  "tenant": "skmzamowienia.eb2b.com.pl",
+  "notices": 11,
+  "example_url": "https://skmzamowienia.eb2b.com.pl/open-auctions.html",
+  "buyer": "PKP Szybka Kolej Miejska w Trójmieście Sp. z o.o."
+ },
+ {
+  "tenant": "termika.eb2b.com.pl",
+  "notices": 11,
+  "example_url": "https://termika.eb2b.com.pl",
+  "buyer": "ORLEN Termika Silesia S.A."
+ },
+ {
+  "tenant": "zp.eb2b.com.pl",
+  "notices": 10,
+  "example_url": "https://zp.eb2b.com.pl/",
+  "buyer": "AGENCJA BADAŃ MEDYCZNYCH"
+ },
+ {
+  "tenant": "skm-warszawa.eb2b.com.pl",
+  "notices": 9,
+  "example_url": "http://skm-warszawa.eb2b.com.pl",
+  "buyer": "Szybka Kolej Miejska Sp. z o.o."
+ },
+ {
+  "tenant": "owg.eb2b.com.pl",
+  "notices": 8,
+  "example_url": "https://owg.eb2b.com.pl/open-preview-auction.html/536121",
+  "buyer": "Warszawski Ośrodek Interwencji Kryzysowej"
+ },
+ {
+  "tenant": "muzeumrakowiecka37.eb2b.com.pl",
+  "notices": 8,
+  "example_url": "https://muzeumrakowiecka37.eb2b.com.pl/",
+  "buyer": "Muzeum Żołnierzy Wyklętych i Więźniów Politycznych PRL (w organizacji)"
+ },
+ {
+  "tenant": "lasyszczecin.eb2b.com.pl",
+  "notices": 8,
+  "example_url": "https://lasyszczecin.eb2b.com.pl",
+  "buyer": "Zespół Składnic Lasów Państwowych w Stargardzie"
+ },
+ {
+  "tenant": "mik.eb2b.com.pl",
+  "notices": 6,
+  "example_url": "https://mik.eb2b.com.pl/",
+  "buyer": "Małopolski Instytut Kultury w Krakowie"
+ },
+ {
+  "tenant": "krs.eb2b.com.pl",
+  "notices": 6,
+  "example_url": "https://krs.eb2b.com.pl",
+  "buyer": "KRAJOWA RADA SĄDOWNICTWA"
+ },
+ {
+  "tenant": "instytutteatralny.eb2b.com.pl",
+  "notices": 6,
+  "example_url": "https://instytutteatralny.eb2b.com.pl",
+  "buyer": "Instytut Teatralny im. Zbigniewa Raszewskiego"
+ },
+ {
+  "tenant": "trwarszawa.eb2b.com.pl",
+  "notices": 6,
+  "example_url": "https://trwarszawa.eb2b.com.pl",
+  "buyer": "\"TEATR ROZMAITOŚCI\""
+ },
+ {
+  "tenant": "gryfickietbs.eb2b.com.pl",
+  "notices": 6,
+  "example_url": "https://gryfickietbs.eb2b.com.pl",
+  "buyer": "GRYFICKIE TOWARZYSTWO BUDOWNICTWA SPOŁECZNEGO - SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ"
+ },
+ {
+  "tenant": "gif.eb2b.com.pl",
+  "notices": 6,
+  "example_url": "https://gif.eb2b.com.pl",
+  "buyer": "GŁÓWNY INSPEKTORAT FARMACEUTYCZNY"
+ },
+ {
+  "tenant": "krrit.eb2b.com.pl",
+  "notices": 6,
+  "example_url": "https://krrit.eb2b.com.pl",
+  "buyer": "Biuro Krajowej Rady Radiofonii i Telewizji"
+ },
+ {
+  "tenant": "dbfoursus.eb2b.com.pl",
+  "notices": 4,
+  "example_url": "https://dbfoursus.eb2b.com.pl/",
+  "buyer": "Dzielnicowe Biuro Finansów Oświaty Ursus m.st. Warszawy"
+ },
+ {
+  "tenant": "piap.eb2b.com.pl",
+  "notices": 4,
+  "example_url": "https://piap.eb2b.com.pl",
+  "buyer": "SIEĆ BADAWCZA ŁUKASIEWICZ - PRZEMYSŁOWY INSTYTUT AUTOMATYKI I POMIARÓW PIAP"
+ },
+ {
+  "tenant": "pkmtychy.eb2b.com.pl",
+  "notices": 4,
+  "example_url": "https://pkmtychy.eb2b.com.pl/",
+  "buyer": "Przedsiębiorstwo Komunikacji Miejskiej Sp. z o.o."
+ },
+ {
+  "tenant": "wfr.eb2b.com.pl",
+  "notices": 4,
+  "example_url": "https://wfr.eb2b.com.pl/",
+  "buyer": "Wielkopolski Fundusz Rozwoju Sp. z o.o."
+ },
+ {
+  "tenant": "ifpilm.eb2b.com.pl",
+  "notices": 2,
+  "example_url": "https://ifpilm.eb2b.com.pl",
+  "buyer": "Instytut Fizyki Plazmy i Laserowej Mikrosyntezy im. S. Kaliskiego"
+ },
+ {
+  "tenant": "sp409.eb2b.com.pl",
+  "notices": 2,
+  "example_url": "https://sp409.eb2b.com.pl/",
+  "buyer": "SZKOŁA PODSTAWOWA NR 409 W WARSZAWIE"
+ },
+ {
+  "tenant": "pkspolonus.eb2b.com.pl",
+  "notices": 2,
+  "example_url": "https://pkspolonus.eb2b.com.pl",
+  "buyer": "Przedsiębiorstwo Komunikacji Samochodowej \" POLONUS\" w Warszawie Spółka Akcyjna"
+ }
+]

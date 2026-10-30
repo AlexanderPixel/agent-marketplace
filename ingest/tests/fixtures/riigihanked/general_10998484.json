@@ -1,0 +1,56 @@
+{
+ "isEditAllowed": false,
+ "isPreparationActivity": false,
+ "isDataEntryCompleted": true,
+ "isPartialChangeActivity": false,
+ "showCost": true,
+ "procurement": {
+  "id": 10998484,
+  "contractingAuthorityId": 120467,
+  "name": "Mobiilse saekaatri rent",
+  "nameI18n": {},
+  "procedureTypeCode": "A",
+  "procurementTypeCode": "T",
+  "procurementStateCode": "alustatud",
+  "procurementSectorCode": "K",
+  "procurementSumLimitCode": "4",
+  "isTendersErhr": true,
+  "publishNotice": true,
+  "isElectronicOffer": true,
+  "isEndingWithContractOrAward": false,
+  "procurementStartBasis": "P"
+ },
+ "procurementCpvDtos": [
+  {
+   "id": 7872,
+   "code": "77211100-3",
+   "name": "Metsamaterjali saagimisteenused",
+   "stampCre": "2026-10-27T15:47:24.024+0200",
+   "procurementCpvId": 18328799,
+   "altProcType": "T",
+   "orderNr": "0"
+  }
+ ],
+ "notDividedIntoPartsComment": "Hankija otsustas riigihanget ühe menetluse raames osadeks mitte jagada kuna eesmärgiks on sõlmida raamlepingud vähemalt 5 pakkujaga ning teenuse olemusest tulenevalt ei ole selle osadeks jagamine asjakohane.\nRiigihankes saavad osaleda ainult pakkujad, kelle elu- või asukoht on riigihangete seaduse § 3 p-s 2 nimetatud riigis (Eesti, mõni muu Euroopa Liidu liikmesriik, muu Euroopa Majanduspiirkonna lepinguriik või Maailma Kaubandusorganisatsiooni riigihankelepinguga ühinenud riik). Nimetatud tingimus kehtib ka isikute suhtes, kelle vahenditele pakkuja käesoleva seaduse § 103 lõike 1 alusel tugineb (riigihangete seaduse § 7 lg 3).\nKõrvaldamise alused ja kvalifitseerimistingimused: Vaata hanke alusdokumentidest.",
+ "shortDescription": "Mobiilse saekaatri rent (koos operaatoriga) erinevates Eesti piirkondades vastavalt tehnilisele kirjeldusele",
+ "durationInMonths": 48,
+ "cost": 250000.0,
+ "organizationReason": "RL",
+ "isDividedIntoParts": false,
+ "canChangeProcurementParts": false,
+ "isNegotiation": true,
+ "multiStage": 1,
+ "submissionDate": "2026-11-30T10:00:00.000+0200",
+ "submissionDateOpening": "2026-11-30T11:00:00.000+0200",
+ "liablePersonId": 504400,
+ "liablePersonName": "HELE HANNAH NOORMAA",
+ "isProcurement": true,
+ "isSingleTendererFrameworkAgr": false,
+ "isMultipleTendererFrameworkAgr": false,
+ "tenderDurationType": "MONTHS",
+ "canEditDuration": false,
+ "mainProcurerName": "Riigi Kaitseinvesteeringute Keskus",
+ "mainProcurerTypeCodes": [
+  "CLASSIC"
+ ]
+}

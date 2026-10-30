@@ -38,5 +38,26 @@ public static class ProfileEndpoints
             await db.SaveChangesAsync();
             return TypedResults.NoContent();
         });
+
+        // Demo extension (see DemoProfileExtras): add or remove the extra product lines and references.
+        app.MapPost("/api/profile/extended", async Task<IResult> (AppDb db, OrgContext org) =>
+        {
+            if (org.Require() != DemoProfileExtras.OrgId) return TypedResults.BadRequest("The extension belongs to the demo bidder.");
+            var profile = await db.Profiles.FirstOrDefaultAsync();
+            if (profile is null) return TypedResults.NotFound();
+            DemoProfileExtras.Apply(profile);
+            await db.SaveChangesAsync();
+            return TypedResults.NoContent();
+        });
+
+        app.MapDelete("/api/profile/extended", async Task<IResult> (AppDb db, OrgContext org) =>
+        {
+            org.Require();
+            var profile = await db.Profiles.FirstOrDefaultAsync();
+            if (profile is null) return TypedResults.NotFound();
+            DemoProfileExtras.Remove(profile);
+            await db.SaveChangesAsync();
+            return TypedResults.NoContent();
+        });
     }
 }

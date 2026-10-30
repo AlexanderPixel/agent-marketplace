@@ -8,7 +8,7 @@ import Tag from 'primevue/tag'
 import Message from 'primevue/message'
 import ActivityFeed from '@/components/ActivityFeed.vue'
 import { api, post } from '@/lib/api'
-import { advance, autopilotAt, beat, pointAt, showSection, stopAutopilot } from '@/lib/autopilot'
+import { autopilotAt, beat, pointAt, showSection } from '@/lib/autopilot'
 import { flag } from '@/lib/flags'
 import { session } from '@/lib/session'
 import { localTitle, units, type TenderLot, type TenderSummary } from '@/lib/tenders'
@@ -54,18 +54,15 @@ async function load() {
   }
 }
 
-// Autopilot step 3: open talks with the best partner whose hard gates pass.
+// Autopilot, partner step: point at the partner the server picks (best score with all hard gates passed).
 async function autoNegotiate() {
   if (!autopilotAt('partner')) return
   const best = [...(result.value?.candidates ?? [])].filter((c) => c.gatesPassed).sort((a, b) => b.score - a.score)[0]
-  if (!best) return stopAutopilot('noPartner')
+  if (!best) return
   await nextTick()
   await showSection(`[data-ap="candidate-${best.partner.orgId}"]`, 'start')
-  await beat(2200)
+  await beat(1500)
   await pointAt(`[data-ap="negotiate-${best.partner.orgId}"]`, { click: true })
-  if (!autopilotAt('partner')) return
-  advance('negotiate', 'negotiate')
-  await negotiate(best)
 }
 watch([() => session.orgId, query], load, { immediate: true })
 

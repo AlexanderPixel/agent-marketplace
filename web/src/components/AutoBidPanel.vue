@@ -3,6 +3,7 @@ import { computed, onBeforeUnmount, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Button from 'primevue/button'
 import Tag from 'primevue/tag'
+import SelectButton from 'primevue/selectbutton'
 import ToggleSwitch from 'primevue/toggleswitch'
 import { useToast } from 'primevue/usetoast'
 import { api, post } from '@/lib/api'
@@ -12,7 +13,7 @@ import { formatDate } from '@/lib/tenders'
 type Stage = 'Qualifying' | 'FindingPartner' | 'Negotiating' | 'Drafting' | 'AwaitingSignature' | 'Signed' | 'Declined' | 'Stopped'
 interface Run {
   id: string; tenderId: string; tenderRef: string; title: string; verdict: string; stage: Stage; dealId: string | null
-  note: string; createdAt: string; decidedBy: string | null; result: 'won' | 'lost' | null
+  note: string; createdAt: string; decidedAt: string | null; decidedBy: string | null; result: 'won' | 'lost' | null; demo: boolean
 }
 interface State { enabled: boolean; telegram: { configured: boolean; connected: boolean }; runs: Run[] }
 
@@ -22,13 +23,13 @@ const state = ref<State>()
 const busy = ref<string>()
 let timer: ReturnType<typeof setInterval> | undefined
 
-async function load() {
+async function load(quiet = false) {
   if (!session.orgId) return
-  state.value = await api<State>('/autobid')
+  state.value = await api<State>('/autobid', {}, quiet)
 }
-watch(() => session.orgId, load, { immediate: true })
+watch(() => session.orgId, () => load(), { immediate: true })
 // Poll while the agent may be working, so stages update live.
-timer = setInterval(() => { if (state.value?.enabled || state.value?.runs.some((r) => isWorking(r.stage))) void load() }, 3000)
+timer = setInterval(() => { if (state.value?.enabled || state.value?.runs.some((r) => isWorking(r.stage))) void load(true) }, 3000)
 onBeforeUnmount(() => clearInterval(timer))
 
 const isWorking = (s: Stage) => ['Qualifying', 'FindingPartner', 'Negotiating', 'Drafting'].includes(s)
@@ -63,6 +64,21 @@ async function testTelegram() {
   }
 }
 
+// History filter: what is waiting for you, what you signed, what you turned down, what the agents gave up on.
+type Filter = 'all' | 'waiting' | 'signed' | 'declined' | 'stopped'
+const filter = ref<Filter>('all')
+const matches: Record<Filter, (r: Run) => boolean> = {
+  all: () => true,
+  waiting: (r) => r.stage === 'AwaitingSignature' || isWorking(r.stage),
+  signed: (r) => r.stage === 'Signed',
+  declined: (r) => r.stage === 'Declined',
+  stopped: (r) => r.stage === 'Stopped',
+}
+const filters = computed(() => (['all', 'waiting', 'signed', 'declined', 'stopped'] as Filter[]).map((f) => ({
+  value: f, label: `${t(`autobid.filter.${f}`)} ${state.value?.runs.filter(matches[f]).length ?? 0}`,
+})))
+const shown = computed(() => state.value?.runs.filter(matches[filter.value]) ?? [])
+
 const telegramText = computed(() =>
   !state.value?.telegram.configured ? t('autobid.telegramMissing') : state.value.telegram.connected ? t('autobid.telegramOn') : t('autobid.telegramStart'))
 </script>
@@ -89,11 +105,20 @@ const telegramText = computed(() =>
     </div>
 
     <p v-if="!state.runs.length" class="muted empty">{{ state.enabled ? t('autobid.waiting') : t('autobid.none') }}</p>
+    <template v-else>
+    <div class="history-head">
+      <h3>{{ t('autobid.history') }}</h3>
+      <SelectButton v-model="filter" :options="filters" option-label="label" option-value="value" :allow-empty="false" size="small" class="filters" />
+    </div>
+    <p v-if="!shown.length" class="muted empty">{{ t('autobid.nothingHere') }}</p>
     <ol v-else class="runs">
-      <li v-for="r in state.runs" :key="r.id" class="run">
+      <li v-for="r in shown" :key="r.id" class="run">
         <div class="run-main">
           <RouterLink :to="`/tenders/${encodeURIComponent(r.tenderId)}`" class="run-title">{{ r.title }}</RouterLink>
-          <div class="run-meta"><span class="mono">{{ r.tenderRef }}</span> · {{ formatDate(r.createdAt, true) }}</div>
+          <div class="run-meta">
+            <span class="mono">{{ r.tenderRef }}</span> · {{ formatDate(r.createdAt, true) }}<span v-if="r.demo"> · {{ t('autobid.demo') }}</span>
+            <span v-if="r.decidedBy"> · {{ t('autobid.decided', { who: r.decidedBy, when: formatDate(r.decidedAt, true) }) }}</span>
+          </div>
           <div class="run-note">{{ r.note }}</div>
         </div>
         <div class="run-side">
@@ -113,6 +138,7 @@ const telegramText = computed(() =>
         </div>
       </li>
     </ol>
+    </template>
   </section>
 </template>
 
@@ -129,6 +155,8 @@ const telegramText = computed(() =>
 .bar-actions { display: flex; gap: 8px; align-items: center; }
 .on-dark { color: var(--ink-text) !important; }
 .empty { margin: 0; }
+.history-head { display: flex; gap: 12px; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.history-head h3 { margin: 0; font-size: 16px; font-weight: 600; color: #fff; }
 .runs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; border: 1px dashed var(--ink-line); }
 .run { display: flex; gap: 16px; justify-content: space-between; padding: 16px 18px; border-bottom: 1px dashed var(--ink-line); flex-wrap: wrap; }
 .run:last-child { border-bottom: 0; }

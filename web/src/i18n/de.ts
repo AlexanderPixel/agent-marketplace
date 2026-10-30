@@ -320,7 +320,7 @@ export default {
     run: 'Demo im Autopilot starten',
     hint: 'Sehen Sie zu, wie die Agenten von der Ausschreibung bis zu unterschriftsreifen Unterlagen gehen. Sie können jederzeit stoppen.',
     title: 'Autopilot',
-    stop: 'Stoppen',
+    stop: 'Nicht mehr folgen',
     dismiss: 'Schließen',
     msg: {
       check: 'Schritt 2 von 5: Anforderungen und Kapazität werden mit Ihrem Profil abgeglichen…',
@@ -328,7 +328,7 @@ export default {
       negotiate: 'Schritt 4 von 5: Ihr Agent verhandelt in Ihrem Rahmen. Verfolgen Sie die Angebote.',
       documents: 'Schritt 5 von 5: Deal abgeschlossen. Die Vertragsentwürfe werden erstellt…',
       done: 'Fertig. Entwürfe und Unterschriften-Checkliste liegen bereit. Ein Mensch prüft und unterschreibt; nichts wurde versendet.',
-      stopped: 'Gestoppt. Machen Sie auf diesem Bildschirm von Hand weiter.',
+      stopped: 'Nicht mehr gefolgt. Die Agenten arbeiten im Hintergrund weiter, die Unterschriftsanfrage kommt trotzdem.',
       noGap: 'Gestoppt: Sie können allein liefern, ein Partner-Deal ist nicht nötig.',
       notQualified: 'Gestoppt: Eine Anforderung ist rot oder unklar. Klären Sie sie, bevor Sie Partner suchen.',
       noPartner: 'Gestoppt: Kein Partner hat die Pflichtkriterien erfüllt.',
@@ -337,6 +337,8 @@ export default {
     },
   },
   autobid: {
+    history: 'Verlauf', nothingHere: 'Keine Einträge.', demo: 'Demo', decided: '{who}, {when}',
+    filter: { all: 'Alle', waiting: 'Offen', signed: 'Unterschrieben', declined: 'Nicht unterschrieben', stopped: 'Gestoppt' },
     title: 'Automatisch bieten',
     hint: 'Passt eine offene Ausschreibung zu Ihren Produkten und sind Sie geeignet, bereiten die Agenten das ganze Angebot vor: Partner, Verhandlung in Ihrem Rahmen und die Unterlagen. Vor der Unterschrift halten sie an und fragen Sie per Telegram.',
     on: 'An', off: 'Aus',
@@ -353,5 +355,5 @@ export default {
       AwaitingSignature: 'Wartet auf Ihre Unterschrift', Signed: 'Freigegeben', Declined: 'Abgelehnt', Stopped: 'Gestoppt' },
     result: { won: 'Gewonnen: zu Referenzen hinzugefügt', lost: 'Verloren' },
   },
-  common: { aiDisabled: 'KI aus (kein OpenRouter-Schlüssel): regelbasierte Ersatzlogik aktiv.', aiOn: 'KI: {model}' },
+  common: { loading: 'Wird geladen', aiDisabled: 'KI aus (kein OpenRouter-Schlüssel): regelbasierte Ersatzlogik aktiv.', aiOn: 'KI: {model}' },
 }

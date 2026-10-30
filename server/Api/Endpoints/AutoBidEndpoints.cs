@@ -12,6 +12,7 @@ public static class AutoBidEndpoints
     public record Toggle(bool Enabled);
     public record Decision(bool Sign);
     public record Result(bool Won);
+    public record DemoStart(string TenderId);
 
     public static void MapAutoBidEndpoints(this WebApplication app)
     {
@@ -21,7 +22,7 @@ public static class AutoBidEndpoints
         {
             org.Require();
             var settings = await db.AutoBidSettings.FirstOrDefaultAsync();
-            var runs = await db.AutoBidRuns.OrderByDescending(r => r.CreatedAt).Take(20).ToListAsync();
+            var runs = await db.AutoBidRuns.OrderByDescending(r => r.CreatedAt).Take(100).ToListAsync();
             return new { enabled = settings?.Enabled ?? false, telegram = new { bot.Configured, bot.Connected }, runs };
         });
 
@@ -38,6 +39,21 @@ public static class AutoBidEndpoints
                     : "The agents will not take on new tenders. Bids already waiting for a decision stay as they are.");
             if (body.Enabled) agent.Wake();
             return new { settings.Enabled };
+        });
+
+        // The watched demo: the server runs every step, the page only follows it, so a refresh never breaks it.
+        api.MapPost("/demo", async Task<IResult> (DemoStart body, OrgContext org, AutoBidAgent agent) =>
+        {
+            var orgId = org.Require();
+            var runId = await agent.StartDemoAsync(orgId, body.TenderId);
+            return runId is null ? TypedResults.BadRequest("The company does not qualify for this tender.") : TypedResults.Ok(new { runId });
+        });
+
+        api.MapGet("/runs/{id:guid}", async Task<IResult> (Guid id, AppDb db, OrgContext org) =>
+        {
+            org.Require();
+            var run = await db.AutoBidRuns.FirstOrDefaultAsync(r => r.Id == id);
+            return run is null ? TypedResults.NotFound() : TypedResults.Ok(run);
         });
 
         api.MapPost("/scan", (OrgContext org, AutoBidAgent agent) =>

@@ -2,12 +2,12 @@
 import BidSteps from '@/components/BidSteps.vue'
 import { computed, nextTick, onBeforeUnmount, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute } from 'vue-router'
 import Button from 'primevue/button'
 import Tag from 'primevue/tag'
 import ActivityFeed from '@/components/ActivityFeed.vue'
 import { api, post } from '@/lib/api'
-import { advance, autopilotAt, beat, pointAt, showSection, stopAutopilot } from '@/lib/autopilot'
+import { autopilotAt, pointAt, showSection, beat } from '@/lib/autopilot'
 import { flag } from '@/lib/flags'
 import { session } from '@/lib/session'
 import { dealSeverity, eur, formatDate, units, type Deal, type Party } from '@/lib/tenders'
@@ -19,7 +19,7 @@ const approving = ref(false)
 let timer: ReturnType<typeof setInterval> | undefined
 
 async function load() {
-  data.value = await api(`/deals/${route.params.id}`)
+  data.value = await api(`/deals/${route.params.id}`, {}, !!data.value)
   if (data.value?.deal.status !== 'Negotiating') clearInterval(timer)
 }
 function start() {
@@ -36,18 +36,13 @@ const mySide = computed(() => (deal.value?.bidderOrgId === session.orgId ? 'bidd
 const party = (side: string) => (side === 'bidder' ? data.value?.bidder : data.value?.partner)
 const value = computed(() => (deal.value?.unitPrice && deal.value.quantity ? deal.value.unitPrice * deal.value.quantity : null))
 
-// Autopilot step 4: watch the agents; on a close go to the documents. Approval stays with a person.
-const router = useRouter()
+// Autopilot, negotiation step: when the agents finish, show the outcome. The server drafts the documents next.
 watch(() => deal.value?.status, async (status) => {
   if (!autopilotAt('negotiate') || !status || status === 'Negotiating') return
-  if (status === 'AwaitingApproval') return stopAutopilot('needsApproval')
-  if (status !== 'Closed') return stopAutopilot('dealFailed')
-  advance('documents', 'documents')
   await nextTick()
   await showSection('[data-ap="outcome"]', 'start')
-  await beat(3200)
-  await pointAt('[data-ap="documents"]', { click: true })
-  if (autopilotAt('documents')) router.push(`/deals/${route.params.id}/documents`)
+  await beat(1500)
+  await pointAt('[data-ap="documents"]')
 })
 
 // While the agents talk, keep the newest offer on screen and the pointer on it.

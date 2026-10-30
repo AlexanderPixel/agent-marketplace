@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import { nextTick, onMounted, ref, watch } from 'vue'
-import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import Button from 'primevue/button'
 import Tag from 'primevue/tag'
 import ActivityFeed from '@/components/ActivityFeed.vue'
 import EcertisBox from '@/components/EcertisBox.vue'
 import { post } from '@/lib/api'
-import { advance, autopilotAt, beat, pointAt, showSection, stopAutopilot } from '@/lib/autopilot'
+import { autopilotAt, beat, pointAt, showSection } from '@/lib/autopilot'
 import { session } from '@/lib/session'
 import {
   criteriaNames, outcomeIcon, outcomeSeverity, units, verdictIcon, verdictSeverity, type Analysis, type Tender,
@@ -32,23 +31,17 @@ watch(() => [session.orgId, session.language, props.tender.id], () => (analysis.
 
 const unitName = (u: string | undefined | null) => (u ? (units[u] ?? u) : '')
 
-// Autopilot step 2: run the check, then hand the first gap to the partner search.
-const router = useRouter()
+// Autopilot, check step: show the same check the server ran, and point at the gap. The server moves on by itself.
 onMounted(async () => {
   if (!autopilotAt('check')) return
-  await beat(800)
+  await beat(600)
   await pointAt('[data-ap="check"]', { click: true })
   if (!autopilotAt('check')) return
   await run()
   await nextTick()
   await showSection('[data-ap="verdict"]', 'start')
-  const gapLot = analysis.value?.lots.find((l) => l.gap)
-  if (!gapLot) return stopAutopilot(analysis.value?.verdict === 'can-supply' ? 'noGap' : 'notQualified')
-  advance('partner', 'partner')
-  await beat(2500)
-  await pointAt('[data-ap="find-partner"]', { click: true })
-  if (!autopilotAt('partner')) return
-  router.push({ path: '/partners', query: { tender: props.tender.id, lot: gapLot.lot.id, gap: gapLot.gap } })
+  await beat(1500)
+  await pointAt('[data-ap="find-partner"]')
 })
 </script>
 

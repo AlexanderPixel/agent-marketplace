@@ -320,7 +320,7 @@ export default {
     run: 'Run the demo on autopilot',
     hint: 'Watch the agents go from tender to signed-ready documents. You can stop at any time.',
     title: 'Autopilot',
-    stop: 'Stop',
+    stop: 'Stop following',
     dismiss: 'Close',
     msg: {
       check: 'Step 2 of 5: checking requirements and capacity against your profile…',
@@ -328,7 +328,7 @@ export default {
       negotiate: 'Step 4 of 5: your agent is negotiating within your limits. Watch the offers come in.',
       documents: 'Step 5 of 5: deal closed. Drafting the agreement documents…',
       done: 'Done. The drafts and signing checklist are ready. A person reviews and signs; nothing was sent.',
-      stopped: 'Stopped. Carry on by hand from this screen.',
+      stopped: 'Stopped following. The agents carry on in the background and the sign request still arrives.',
       noGap: 'Stopped: you can supply this tender alone, so no partner deal is needed.',
       notQualified: 'Stopped: a requirement is red or unclear. Fix it before looking for partners.',
       noPartner: 'Stopped: no partner passed the hard gates.',
@@ -337,6 +337,8 @@ export default {
     },
   },
   autobid: {
+    history: 'History', nothingHere: 'Nothing here.', demo: 'demo', decided: '{who}, {when}',
+    filter: { all: 'All', waiting: 'Waiting', signed: 'Signed', declined: 'Not signed', stopped: 'Stopped' },
     title: 'Auto-bid',
     hint: 'When an open tender matches what you make and you qualify, the agents prepare the whole bid: partner, negotiation inside your limits and the documents. They stop before signing and ask you on Telegram.',
     on: 'On', off: 'Off',
@@ -353,5 +355,5 @@ export default {
       AwaitingSignature: 'Waiting for your signature', Signed: 'Signed off', Declined: 'Declined', Stopped: 'Stopped' },
     result: { won: 'Won: added to references', lost: 'Lost' },
   },
-  common: { aiDisabled: 'AI is off (no OpenRouter key): rule-based fallbacks are used.', aiOn: 'AI: {model}' },
+  common: { loading: 'Loading', aiDisabled: 'AI is off (no OpenRouter key): rule-based fallbacks are used.', aiOn: 'AI: {model}' },
 }

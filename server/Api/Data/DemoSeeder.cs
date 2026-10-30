@@ -22,7 +22,13 @@ public static class DemoSeeder
         if (!await db.Organizations.AnyAsync())
         {
             db.Organizations.AddRange(DemoOrgs.All());
-            db.Profiles.AddRange(DemoProfiles.All());
+            var profiles = DemoProfiles.All().ToList();
+            if (config.GetValue("DemoData:ExtendedProfile", true))
+            {
+                DemoProfileExtras.Apply(profiles.First(p => p.OrgId == DemoProfileExtras.OrgId));
+            }
+
+            db.Profiles.AddRange(profiles);
             db.Mandates.AddRange(DemoProfiles.Mandates());
             db.Boms.Add(DemoProfiles.Bom());
             await db.SaveChangesAsync();

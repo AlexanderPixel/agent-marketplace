@@ -320,7 +320,7 @@ export default {
     run: 'Uruchom demo na autopilocie',
     hint: 'Zobacz, jak agenci przechodzą od przetargu do dokumentów gotowych do podpisu. Możesz zatrzymać w każdej chwili.',
     title: 'Autopilot',
-    stop: 'Zatrzymaj',
+    stop: 'Przestań śledzić',
     dismiss: 'Zamknij',
     msg: {
       check: 'Krok 2 z 5: sprawdzanie wymagań i mocy produkcyjnych względem Twojego profilu…',
@@ -328,7 +328,7 @@ export default {
       negotiate: 'Krok 4 z 5: Twój agent negocjuje w Twoich limitach. Obserwuj kolejne oferty.',
       documents: 'Krok 5 z 5: umowa zamknięta. Przygotowujemy projekty dokumentów…',
       done: 'Gotowe. Projekty i lista podpisów są gotowe. Sprawdza i podpisuje człowiek; nic nie zostało wysłane.',
-      stopped: 'Zatrzymano. Kontynuuj ręcznie z tego ekranu.',
+      stopped: 'Przestano śledzić. Agenci pracują dalej w tle, a prośba o podpis i tak przyjdzie.',
       noGap: 'Zatrzymano: możesz zrealizować ten przetarg sam, partner nie jest potrzebny.',
       notQualified: 'Zatrzymano: jedno z wymagań jest czerwone lub niejasne. Napraw je przed szukaniem partnerów.',
       noPartner: 'Zatrzymano: żaden partner nie przeszedł warunków obowiązkowych.',
@@ -337,6 +337,8 @@ export default {
     },
   },
   autobid: {
+    history: 'Historia', nothingHere: 'Brak pozycji.', demo: 'demo', decided: '{who}, {when}',
+    filter: { all: 'Wszystkie', waiting: 'Oczekujące', signed: 'Podpisane', declined: 'Niepodpisane', stopped: 'Zatrzymane' },
     title: 'Automatyczne składanie ofert',
     hint: 'Gdy otwarty przetarg pasuje do Twoich produktów i spełniasz warunki, agenci przygotowują całą ofertę: partnera, negocjacje w Twoich limitach i dokumenty. Zatrzymują się przed podpisem i pytają Cię na Telegramie.',
     on: 'Włączone', off: 'Wyłączone',
@@ -353,5 +355,5 @@ export default {
       AwaitingSignature: 'Czeka na Twój podpis', Signed: 'Zatwierdzone', Declined: 'Odrzucone', Stopped: 'Zatrzymane' },
     result: { won: 'Wygrany: dodany do referencji', lost: 'Przegrany' },
   },
-  common: { aiDisabled: 'AI wyłączone (brak klucza OpenRouter): używane są reguły zastępcze.', aiOn: 'AI: {model}' },
+  common: { loading: 'Wczytywanie', aiDisabled: 'AI wyłączone (brak klucza OpenRouter): używane są reguły zastępcze.', aiOn: 'AI: {model}' },
 }

@@ -7,7 +7,9 @@ import Button from 'primevue/button'
 import Drawer from 'primevue/drawer'
 import ActivityFeed from '@/components/ActivityFeed.vue'
 import AutopilotCursor from '@/components/AutopilotCursor.vue'
-import { autopilot, autopilotRunning, dismissAutopilot, stopAutopilot } from '@/lib/autopilot'
+import LoadingMark from '@/components/LoadingMark.vue'
+import { autopilot, autopilotRunning, dismissAutopilot, resumeAutopilot, stopAutopilot } from '@/lib/autopilot'
+import { useRouter } from 'vue-router'
 import { api } from '@/lib/api'
 import { session, type Org } from '@/lib/session'
 import { flag } from '@/lib/flags'
@@ -15,6 +17,7 @@ import { languages } from '@/i18n'
 
 const { t, locale } = useI18n()
 const route = useRoute()
+const router = useRouter()
 const showActivity = ref(false)
 const health = ref<{ ai: boolean; model: string | null } | null>(null)
 
@@ -47,6 +50,8 @@ const nav = computed(() => [
 const orgOptions = computed(() => session.orgs.map((o) => ({ ...o, label: `${flag(o.country)} ${o.name}` })))
 
 onMounted(async () => {
+  // Pick a demo run back up straight away after a refresh; the company id is already remembered.
+  resumeAutopilot(router)
   session.orgs = await api<Org[]>('/orgs')
   if (!session.orgs.some((o) => o.id === session.orgId)) session.orgId = (session.orgs.find((o) => o.country === 'PL') ?? session.orgs[0])?.id ?? ''
   health.value = await api('/health')
@@ -103,6 +108,7 @@ watch(() => session.language, (lang) => (locale.value = lang), { immediate: true
         <Button v-else :label="t('autopilot.dismiss')" size="small" text class="ap-dismiss" @click="dismissAutopilot" />
       </div>
       <main class="content">
+        <LoadingMark />
         <RouterView :key="session.orgId" />
       </main>
     </div>
@@ -145,7 +151,7 @@ watch(() => session.language, (lang) => (locale.value = lang), { immediate: true
 .top-field { display: flex; flex-direction: column; gap: 4px; }
 .top-field label { font-size: 13px; font-weight: 500; color: var(--muted); }
 .org-select { min-width: 280px; }
-.content { padding: 36px; max-width: 1280px; width: 100%; box-sizing: border-box; }
+.content { position: relative; min-height: 60vh; padding: 36px; max-width: 1280px; width: 100%; box-sizing: border-box; }
 @media (max-width: 800px) {
   .shell { grid-template-columns: 1fr; }
   .nav { position: static; height: auto; flex-direction: row; flex-wrap: wrap; }

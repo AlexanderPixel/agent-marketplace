@@ -10,7 +10,7 @@ import Checkbox from 'primevue/checkbox'
 import Tag from 'primevue/tag'
 import Message from 'primevue/message'
 import { api, post } from '@/lib/api'
-import { advance, autopilotAt, beat, pointAt, showSection } from '@/lib/autopilot'
+import { autopilotAt, beat, markDocumentsShown, showSection } from '@/lib/autopilot'
 import { flag } from '@/lib/flags'
 import { session } from '@/lib/session'
 import type { AgreementDocument, Deal, Party } from '@/lib/tenders'
@@ -29,21 +29,15 @@ async function load() {
 }
 watch(() => [route.params.id, session.orgId], load, { immediate: true })
 
-// Autopilot step 5: draft the documents, then hand over to a person to review and sign.
-watch(() => data.value?.deal.status, async (status) => {
-  if (!autopilotAt('documents') || status !== 'Closed') return
-  await beat(1200)
-  if (!autopilotAt('documents')) return
-  if (!docs.value.length) {
-    await pointAt('[data-ap="generate"]', { click: true })
-    await generate()
-  }
-  await nextTick()
+// Autopilot, documents step: the server has drafted them; walk through the checklist and the drafts.
+watch(() => docs.value.length, async (n) => {
+  if (!autopilotAt('documents') || !n) return
+  await beat(800)
   await showSection('[data-ap="checklist"]', 'start')
-  await beat(3500)
+  await beat(3000)
   await showSection('[data-ap="viewer"]', 'start')
-  advance('done', 'done')
-})
+  markDocumentsShown()
+}, { immediate: true })
 
 async function generate() {
   generating.value = true

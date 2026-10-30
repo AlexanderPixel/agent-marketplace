@@ -23,6 +23,11 @@ public class AutoBidRun
     public string Verdict { get; set; } = "";
     public AutoBidStage Stage { get; set; }
     public Guid? DealId { get; set; }
+    /// <summary>The lot with a quantity gap and its size, when a partner is needed.</summary>
+    public string? LotId { get; set; }
+    public int? Gap { get; set; }
+    /// <summary>A demo run: started by a person to watch, paced so each step stays on screen for a moment.</summary>
+    public bool Demo { get; set; }
     /// <summary>What happened last, in a sentence a person can read.</summary>
     public string Note { get; set; } = "";
     public DateTimeOffset CreatedAt { get; set; }

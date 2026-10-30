@@ -3,7 +3,7 @@ import { computed, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Button from 'primevue/button'
 import { api } from '@/lib/api'
-import { advance, autopilotRunning } from '@/lib/autopilot'
+import { autopilotRunning, startAutopilot } from '@/lib/autopilot'
 import { useRouter } from 'vue-router'
 import { currentOrg } from '@/lib/session'
 import { flag } from '@/lib/flags'
@@ -19,10 +19,8 @@ onMounted(async () => {
 })
 
 const router = useRouter()
-function runAutopilot() {
-  if (!featured.value) return
-  advance('check', 'check')
-  router.push(`/tenders/${encodeURIComponent(featured.value.id)}`)
+async function runAutopilot() {
+  if (featured.value) await startAutopilot(router, featured.value.id)
 }
 
 const days = computed(() => (featured.value ? daysLeft(featured.value.deadline) : null))

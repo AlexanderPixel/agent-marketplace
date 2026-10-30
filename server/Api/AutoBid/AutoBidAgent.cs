@@ -26,6 +26,43 @@ public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProv
     /// <summary>Runs a scan now instead of waiting for the next interval.</summary>
     public void Wake() => wake.Release();
 
+    /// <summary>
+    /// Starts a watched demo run on one tender, independent of the auto-bid switch. It runs on the server, so closing or
+    /// refreshing the page never stops it; the page just follows the run. Returns the run, or null if the company does not
+    /// qualify for this tender. An open run is returned instead of starting a second one.
+    /// </summary>
+    public async Task<Guid?> StartDemoAsync(Guid orgId, string tenderId)
+    {
+        using (var scope = scopes.CreateScope())
+        {
+            scope.ServiceProvider.GetRequiredService<OrgContext>().OrgId = orgId;
+            var open = await scope.ServiceProvider.GetRequiredService<AppDb>().AutoBidRuns
+                .Where(r => r.Stage != AutoBidStage.Signed && r.Stage != AutoBidStage.Declined && r.Stage != AutoBidStage.Stopped)
+                .OrderByDescending(r => r.CreatedAt).FirstOrDefaultAsync();
+            if (open is not null) return open.Id;
+        }
+
+        var created = new TaskCompletionSource<Guid?>(TaskCreationOptions.RunContinuationsAsynchronously);
+        _ = Task.Run(async () =>
+        {
+            try
+            {
+                await WorkForAsync(orgId, CancellationToken.None, tenderId, created);
+            }
+            catch (Exception e)
+            {
+                logger.LogError(e, "Demo run failed");
+            }
+            finally
+            {
+                created.TrySetResult(null);
+            }
+        });
+        return await created.Task;
+    }
+
+    private static Task Beat(AutoBidRun run, int ms, CancellationToken ct) => run.Demo ? Task.Delay(ms, ct) : Task.CompletedTask;
+
     protected override async Task ExecuteAsync(CancellationToken stop)
     {
         while (!stop.IsCancellationRequested)
@@ -60,7 +97,7 @@ public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProv
     }
 
     /// <summary>One company: at most one tender in flight at a time, so a person is never flooded with requests.</summary>
-    private async Task WorkForAsync(Guid orgId, CancellationToken ct)
+    private async Task WorkForAsync(Guid orgId, CancellationToken ct, string? demoTender = null, TaskCompletionSource<Guid?>? created = null)
     {
         using var scope = scopes.CreateScope();
         var sp = scope.ServiceProvider;
@@ -68,8 +105,8 @@ public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProv
         var db = sp.GetRequiredService<AppDb>();
         var log = sp.GetRequiredService<ActivityLog>();
 
-        if (!(await db.AutoBidSettings.FirstOrDefaultAsync(ct))?.Enabled ?? true) return;
         var runs = await db.AutoBidRuns.ToListAsync(ct);
+        if (demoTender is null && (!(await db.AutoBidSettings.FirstOrDefaultAsync(ct))?.Enabled ?? true)) return;
         if (runs.Any(r => r.IsOpen)) return;
 
         var company = await db.Organizations.FirstAsync(o => o.Id == orgId, ct);
@@ -77,8 +114,10 @@ public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProv
         var profile = await db.Profiles.FirstOrDefaultAsync(ct);
         if (profile is null) return;
         var now = clock.GetUtcNow();
-        var seen = runs.Select(r => r.TenderId).ToHashSet();
-        var open = await db.Tenders.Where(t => t.Deadline > now.AddDays(2)).OrderByDescending(t => t.Featured).ThenBy(t => t.Deadline).ToListAsync(ct);
+        var seen = demoTender is null ? runs.Select(r => r.TenderId).ToHashSet() : [];
+        var open = demoTender is null
+            ? await db.Tenders.Where(t => t.Deadline > now.AddDays(2)).OrderByDescending(t => t.Featured).ThenBy(t => t.Deadline).ToListAsync(ct)
+            : await db.Tenders.Where(t => t.Id == demoTender).ToListAsync(ct);
 
         // Conservative (rule 7): act alone only when a specific lot matches a product, never on a category match.
         var pick = open.Where(t => !seen.Contains(t.Id))
@@ -91,11 +130,13 @@ public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProv
         {
             Id = Guid.NewGuid(), OrgId = orgId, TenderId = tender.Id, TenderRef = tender.SourceId,
             Title = tender.Titles.GetValueOrDefault(company.Language) ?? tender.Title, Verdict = a.Verdict,
-            Stage = AutoBidStage.Qualifying, CreatedAt = now, UpdatedAt = now,
+            Stage = AutoBidStage.Qualifying, CreatedAt = now, UpdatedAt = now, Demo = demoTender is not null,
+            LotId = a.Gaps.FirstOrDefault()?.Lot.Id, Gap = a.Gaps.FirstOrDefault()?.Gap,
             Note = a.Verdict == "can-supply" ? tx["noteQualifies"] : tx["noteGap", tx.Qty(a.Gaps[0].Gap, a.Gaps[0].Lot.Unit), a.Gaps[0].Lot.Id],
         };
         db.AutoBidRuns.Add(run);
         await db.SaveChangesAsync(ct);
+        created?.TrySetResult(run.Id);
         await log.WriteAsync(orgId, Agent, $"Took on {tender.SourceId}: {run.Title}",
             $"Auto-bid is on, the tender is open until {tender.Deadline:yyyy-MM-dd} and the qualification check says {a.Verdict} " +
             $"({a.Requirements.Count - a.Red - a.Amber} met, {a.Amber} via equivalent, 0 red).", tender.Id, ct: ct);
@@ -117,6 +158,7 @@ public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProv
         if (a.Verdict == "partner-needed")
         {
             var gap = a.Gaps[0];
+            await Beat(run, 4000, ct);
             await StageAsync(db, run, AutoBidStage.FindingPartner, tx["noteSearching", tx.Qty(gap.Gap, gap.Lot.Unit)], ct);
             var candidates = await sp.GetRequiredService<PartnerSearch>().SearchAsync(run.OrgId, tender, gap.Lot, gap.Gap!.Value);
             var best = candidates.FirstOrDefault(c => c.GatesPassed);
@@ -126,6 +168,7 @@ public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProv
                 return;
             }
 
+            await Beat(run, 5000, ct);
             await StageAsync(db, run, AutoBidStage.Negotiating, tx["noteNegotiating", best.Partner.Name], ct);
             deal = await DealOps.OpenAsync(db, log, sp.GetRequiredService<DealRunner>(), clock, run.OrgId, tender, gap.Lot, gap.Gap.Value, best);
             run.DealId = deal.Id;
@@ -138,7 +181,9 @@ public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProv
 
             if (deal.Status == DealStatus.Closed)
             {
+                await Beat(run, 3500, ct);
                 await StageAsync(db, run, AutoBidStage.Drafting, tx["noteDrafting"], ct);
+                await Beat(run, 2000, ct);
                 await DealOps.DraftDocumentsAsync(db, log, clock, deal, run.OrgId);
             }
         }

@@ -64,6 +64,12 @@ async function addDoc() {
   form.value = { kind: 'reference', title: '', issuer: '', validUntil: null }
   await load()
 }
+/** Turns a stored slug like "trade-register" into readable text; acronyms stay as they are. */
+const kindLabel = (k: string) => {
+  const acronyms: Record<string, string> = { iso9001: 'ISO 9001', aqap2110: 'AQAP 2110' }
+  return acronyms[k] ?? k.charAt(0).toUpperCase() + k.slice(1).replace(/-/g, ' ')
+}
+
 async function removeDoc(id: string) {
   await api(`/profile/documents/${id}`, { method: 'DELETE' })
   await load()
@@ -80,10 +86,10 @@ async function removeDoc(id: string) {
     </div>
 
     <div class="tiles">
-      <div class="tile"><strong>{{ counts.total }}</strong>{{ t('profile.documents') }}<span v-if="counts.warn" class="bad small">{{ t('profile.needAttention', { n: counts.warn }) }}</span></div>
-      <div class="tile"><strong>{{ data.profile.products.length }}</strong>{{ t('profile.products') }}</div>
-      <div class="tile"><strong>{{ data.profile.staff.length }}</strong>{{ t('profile.staff') }}</div>
-      <div class="tile"><strong>{{ data.profile.ownership.at(-1)?.share ?? '—' }}%</strong>{{ data.profile.ownership.at(-1)?.entity ?? t('profile.owner') }}</div>
+      <div class="tile"><span class="tile-label">{{ t('profile.documents') }}</span><strong>{{ counts.total }}</strong><span v-if="counts.warn" class="tile-warn">{{ t('profile.needAttention', { n: counts.warn }) }}</span></div>
+      <div class="tile"><span class="tile-label">{{ t('profile.products') }}</span><strong>{{ data.profile.products.length }}</strong></div>
+      <div class="tile"><span class="tile-label">{{ t('profile.staff') }}</span><strong>{{ data.profile.staff.length }}</strong></div>
+      <div class="tile"><span class="tile-label">{{ data.profile.ownership.at(-1)?.entity ?? t('profile.owner') }}</span><strong>{{ data.profile.ownership.at(-1)?.share ?? '—' }}%</strong></div>
     </div>
 
     <div class="card">
@@ -104,11 +110,11 @@ async function removeDoc(id: string) {
               <tbody>
                 <tr v-for="d in data.profile.documents" :key="d.id">
                   <td><i class="pi pi-file-pdf doc-icon" /> {{ d.title }}</td>
-                  <td><Tag :value="d.kind" severity="secondary" class="mini" /></td>
+                  <td><span class="kind">{{ kindLabel(d.kind) }}</span></td>
                   <td class="muted">{{ flag(d.country) }} {{ d.issuer }}</td>
-                  <td>{{ d.validUntil ?? '—' }}</td>
+                  <td class="mono">{{ d.validUntil ?? '—' }}</td>
                   <td><Tag :value="status(d.validUntil).label" :severity="status(d.validUntil).sev" /></td>
-                  <td><Button icon="pi pi-trash" text rounded size="small" severity="secondary" @click="removeDoc(d.id)" /></td>
+                  <td><Button icon="pi pi-trash" text size="small" severity="secondary" :aria-label="t('profile.remove')" @click="removeDoc(d.id)" /></td>
                 </tr>
               </tbody>
             </table>
@@ -120,7 +126,7 @@ async function removeDoc(id: string) {
               <tbody>
                 <tr v-for="p in data.profile.products" :key="p.id">
                   <td>{{ p.name }}</td>
-                  <td class="muted">{{ p.cpv }}</td>
+                  <td class="muted mono">{{ p.cpv }}</td>
                   <td class="num"><strong>{{ p.capacity.toLocaleString() }}</strong> {{ units[p.unit] ?? p.unit }}</td>
                   <td class="num">{{ eur(p.unitPriceEur) }}</td>
                   <td class="num">{{ t('profile.days', { n: p.leadTimeDays }) }}</td>
@@ -159,7 +165,7 @@ async function removeDoc(id: string) {
 
     <Dialog v-model:visible="adding" modal :header="t('profile.addDoc')" :style="{ width: '480px' }">
       <div class="form">
-        <label>{{ t('profile.kind') }}<Select v-model="form.kind" :options="kinds" /></label>
+        <label>{{ t('profile.kind') }}<Select v-model="form.kind" :options="kinds.map((k) => ({ value: k, label: kindLabel(k) }))" option-label="label" option-value="value" /></label>
         <label>{{ t('profile.doc') }}<InputText v-model="form.title" placeholder="np. Koncesja MSWiA na obrót wyrobami wojskowymi" /></label>
         <label>{{ t('profile.issuer') }}<InputText v-model="form.issuer" /></label>
         <label>{{ t('profile.validUntil') }}<DatePicker v-model="form.validUntil" date-format="yy-mm-dd" show-icon /></label>
@@ -188,25 +194,33 @@ async function removeDoc(id: string) {
 </template>
 
 <style scoped>
-.small { font-size: 12.5px; }
+.small { font-size: 13px; }
 .bad { color: var(--bad); }
-.row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-.tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
-.tile { background: var(--surface, white); border: 1px solid var(--border); border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 2px; font-size: 13px; color: var(--muted); }
-.tile strong { font-size: 24px; color: var(--text); }
-.tbl { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 6px; }
-.tbl th { text-align: left; color: var(--muted); font-weight: 500; padding: 8px; border-bottom: 1px solid var(--border); }
-.tbl td { padding: 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
-.num { text-align: right; }
-.mini { font-size: 11px; padding: 0 6px; }
-.doc-icon { color: var(--bad); margin-right: 4px; }
-.people { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 12px; }
-.person { display: flex; gap: 12px; border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
-.avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: white; display: flex; align-items: center; justify-content: center; font-weight: 600; flex: none; }
-.person-main { display: flex; flex-direction: column; gap: 4px; }
+.row { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); background: var(--ink); color: #f6f6f6; clip-path: var(--chamfer); }
+.tile { padding: 20px 24px; display: flex; flex-direction: column; gap: 6px; border-right: 1px dashed var(--ink-line); min-width: 0; }
+.tile:last-child { border-right: 0; }
+.tile-label { font-size: 13px; font-weight: 500; color: var(--ink-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tile strong { font-size: 40px; font-weight: 500; line-height: 1; letter-spacing: -0.04em; }
+.tile-warn { font-size: 13px; font-weight: 600; color: #ffc46b; }
+.tbl { width: 100%; border-collapse: collapse; font-size: 14.5px; margin-top: 8px; }
+.tbl th { text-align: left; color: var(--muted); font-size: 13px; font-weight: 600; padding: 10px 12px; background: var(--ground); border-bottom: 1px solid var(--border); }
+.tbl td { padding: 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.num { text-align: right; white-space: nowrap; }
+.tbl td.mono, .tbl td:nth-last-child(2) { white-space: nowrap; }
+.kind { font-size: 13px; color: var(--text); background: var(--ground); border: 1px solid var(--border); padding: 2px 8px; white-space: nowrap; }
+.mini { font-size: 12px; padding: 0 6px; }
+.doc-icon { color: var(--accent); margin-right: 6px; }
+.people { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(380px, 100%), 1fr)); gap: 16px; margin-top: 8px; }
+.person { display: flex; gap: 14px; border: 1px solid var(--border); background: var(--surface); padding: 18px; }
+.avatar { width: 44px; height: 44px; background: var(--ink); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 600; flex: none; clip-path: var(--chamfer-sm); }
+.person-main { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.person-main strong { font-size: 16px; }
 .creds { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px; }
 .projects { margin: 4px 0; padding-left: 18px; }
-.form { display: flex; flex-direction: column; gap: 12px; }
-.form label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--muted); }
-.wykaz { font-size: 12.5px; }
+.form { display: flex; flex-direction: column; gap: 14px; }
+.form label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 500; color: var(--muted); }
+.wykaz { font-size: 13px; }
+.card :deep(.p-tablist-tab-list) { background: transparent; }
+@media (max-width: 700px) { .tbl { display: block; overflow-x: auto; } }
 </style>

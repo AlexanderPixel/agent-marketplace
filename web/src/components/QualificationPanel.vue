@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { onMounted, ref, watch } from 'vue'
+import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import Button from 'primevue/button'
 import Tag from 'primevue/tag'
 import ActivityFeed from '@/components/ActivityFeed.vue'
 import EcertisBox from '@/components/EcertisBox.vue'
 import { post } from '@/lib/api'
+import { advance, autopilotAt, beat, stopAutopilot } from '@/lib/autopilot'
 import { session } from '@/lib/session'
 import {
   criteriaNames, outcomeIcon, outcomeSeverity, units, verdictIcon, verdictSeverity, type Analysis, type Tender,
@@ -29,6 +31,21 @@ async function run() {
 watch(() => [session.orgId, session.language, props.tender.id], () => (analysis.value = undefined))
 
 const unitName = (u: string | undefined | null) => (u ? (units[u] ?? u) : '')
+
+// Autopilot step 2: run the check, then hand the first gap to the partner search.
+const router = useRouter()
+onMounted(async () => {
+  if (!autopilotAt('check')) return
+  await beat(1200)
+  if (!autopilotAt('check')) return
+  await run()
+  const gapLot = analysis.value?.lots.find((l) => l.gap)
+  if (!gapLot) return stopAutopilot(analysis.value?.verdict === 'can-supply' ? 'noGap' : 'notQualified')
+  advance('partner', 'partner')
+  await beat(3500)
+  if (!autopilotAt('partner')) return
+  router.push({ path: '/partners', query: { tender: props.tender.id, lot: gapLot.lot.id, gap: gapLot.gap } })
+})
 </script>
 
 <template>

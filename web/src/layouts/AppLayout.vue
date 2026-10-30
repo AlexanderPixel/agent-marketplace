@@ -6,6 +6,7 @@ import Select from 'primevue/select'
 import Button from 'primevue/button'
 import Drawer from 'primevue/drawer'
 import ActivityFeed from '@/components/ActivityFeed.vue'
+import { autopilot, autopilotRunning, dismissAutopilot, stopAutopilot } from '@/lib/autopilot'
 import { api } from '@/lib/api'
 import { session, type Org } from '@/lib/session'
 import { flag } from '@/lib/flags'
@@ -91,6 +92,15 @@ watch(() => session.language, (lang) => (locale.value = lang), { immediate: true
         </div>
         <Button :label="t('activity.open')" icon="pi pi-list" severity="secondary" outlined @click="showActivity = true" />
       </header>
+      <div v-if="autopilot.stage" class="autopilot" :class="autopilot.stage" role="status" aria-live="polite">
+        <span class="ap-mark" aria-hidden="true"><i :class="autopilotRunning() ? 'pi pi-spin pi-spinner' : autopilot.stage === 'done' ? 'pi pi-check' : 'pi pi-pause'" /></span>
+        <div class="ap-text">
+          <strong>{{ t('autopilot.title') }}</strong>
+          <span>{{ t(`autopilot.msg.${autopilot.message}`) }}</span>
+        </div>
+        <Button v-if="autopilotRunning()" :label="t('autopilot.stop')" icon="pi pi-stop" size="small" severity="secondary" @click="stopAutopilot()" />
+        <Button v-else :label="t('autopilot.dismiss')" size="small" text class="ap-dismiss" @click="dismissAutopilot" />
+      </div>
       <main class="content">
         <RouterView :key="session.orgId" />
       </main>
@@ -121,6 +131,14 @@ watch(() => session.language, (lang) => (locale.value = lang), { immediate: true
 .dot { color: var(--ink-muted); }
 .dot.on { color: var(--accent-on-dark); }
 .main { display: flex; flex-direction: column; min-width: 0; }
+.autopilot { position: sticky; top: 0; z-index: 5; display: flex; gap: 14px; align-items: center; padding: 12px 36px; background: var(--ink); color: #f6f6f6; flex-wrap: wrap; }
+.autopilot.stopped { background: #3a2a00; }
+.ap-mark { width: 30px; height: 30px; display: grid; place-items: center; background: var(--accent); clip-path: var(--chamfer-sm); flex: none; }
+.autopilot.done .ap-mark { background: var(--good); }
+.autopilot.stopped .ap-mark { background: #b07a00; }
+.ap-text { flex: 1 1 320px; display: flex; gap: 10px; flex-wrap: wrap; align-items: baseline; font-size: 15px; }
+.ap-text span { color: var(--ink-text); }
+.ap-dismiss { color: var(--ink-text) !important; }
 .top { display: flex; gap: 16px; align-items: flex-end; justify-content: flex-end; padding: 14px 36px; background: var(--surface); border-bottom: 1px solid var(--border); flex-wrap: wrap; }
 .top-field { display: flex; flex-direction: column; gap: 4px; }
 .top-field label { font-size: 13px; font-weight: 500; color: var(--muted); }

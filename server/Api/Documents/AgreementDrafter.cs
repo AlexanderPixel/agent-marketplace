@@ -37,6 +37,9 @@ public static class AgreementDrafter
         var reference = tender.Reference ?? tender.SourceId;
         string P(decimal d) => d.ToString("N2", Pl);
         string D(decimal d) => d.ToString("N2", De);
+        // Shares read the same in both languages: "40 %", "37,5 %".
+        string PlPct(decimal d) => d.ToString("0.#", Pl) + " %";
+        string DePct(decimal d) => d.ToString("0.#", De) + " %";
         string PlDate(DateOnly d) => d.ToString("d MMMM yyyy", Pl);
         string DeDate(DateOnly d) => d.ToString("d. MMMM yyyy", De);
         var bidderSig = $"{bidder.Name}, {bidder.City}";
@@ -62,7 +65,7 @@ public static class AgreementDrafter
 
             ## § 1. Przedmiot
             1. Wykonawca zamierza złożyć ofertę w postępowaniu **{reference}** prowadzonym przez **{tender.BuyerName}** ({tender.BuyerCity}, Niemcy), ogłoszenie TED {tender.SourceId}, część **{deal.LotId}: {deal.LotTitle}** ({lotQty} {deal.Unit}).
-            2. Podwykonawca zobowiązuje się dostarczyć Wykonawcy **{qty} kompletów** ({share}% ilości części {deal.LotId}) zgodnie z „Material- und Leistungsliste” zamawiającego.
+            2. Podwykonawca zobowiązuje się dostarczyć Wykonawcy **{qty} kompletów** ({PlPct(share)} ilości części {deal.LotId}) zgodnie z „Material- und Leistungsliste” zamawiającego.
 
             ## § 2. Wynagrodzenie
             Cena jednostkowa: **{P(price)} EUR** netto za komplet. Wartość umowy: **{P(value)} EUR** netto. Ceny stałe do końca realizacji.
@@ -101,7 +104,7 @@ public static class AgreementDrafter
 
             ## § 1 Gegenstand
             1. Der Bieter beabsichtigt, im Vergabeverfahren **{reference}** des **{tender.BuyerName}** ({tender.BuyerCity}), TED-Bekanntmachung {tender.SourceId}, ein Angebot für **{deal.LotId}: {deal.LotTitle}** ({lotQty} {deal.Unit}) abzugeben.
-            2. Der Nachunternehmer liefert dem Bieter **{qty} Sätze** ({D(share)} % der Menge von {deal.LotId}) gemäß der Material- und Leistungsliste des Auftraggebers.
+            2. Der Nachunternehmer liefert dem Bieter **{qty} Sätze** ({DePct(share)} der Menge von {deal.LotId}) gemäß der Material- und Leistungsliste des Auftraggebers.
 
             ## § 2 Vergütung
             Stückpreis **{D(price)} EUR** netto je Satz, Gesamtwert **{D(value)} EUR** netto. Festpreise bis zum Ende der Ausführung.
@@ -115,8 +118,11 @@ public static class AgreementDrafter
             ## § 5 Qualität und Compliance
             AQAP 2110 und ISO 9001 bleiben während der Ausführung gültig; die Qualitätsanforderungen des Auftraggebers gelten auch für den Nachunternehmer. Der Nachunternehmer erklärt, nicht unter Art. 5k der Verordnung (EU) Nr. 833/2014 zu fallen.
 
-            ## § 6 Schlussbestimmungen
-            Es gilt polnisches Recht. {autonomyDe}
+            ## § 6 Vertraulichkeit und Daten
+            Die Parteien haben ausschließlich kaufmännische Bedingungen ausgetauscht (Preis, Menge, Termin). Unterlagen und Verhandlungsgrenzen der Parteien wurden nicht offengelegt.
+
+            ## § 7 Schlussbestimmungen
+            Es gilt polnisches Recht. Gerichtsstand ist der Sitz des Bieters. {autonomyDe}
 
             | Für den Bieter | Für den Nachunternehmer |
             |---|---|
@@ -127,7 +133,7 @@ public static class AgreementDrafter
         var commitmentDe = $"""
             {draftDe}
 
-            # Verpflichtungserklärung des Nachunternehmers
+            # Verpflichtungserklärung des Nachunternehmers (Zobowiązanie podmiotu udostępniającego zasoby)
 
             Vergabeverfahren: **{reference}**, {tender.BuyerName}, TED {tender.SourceId}, {deal.LotId}
 
@@ -161,13 +167,13 @@ public static class AgreementDrafter
         var listDe = $"""
             {draftDe}
 
-            # Unterauftragnehmerverzeichnis
+            # Unterauftragnehmerverzeichnis (Wykaz podwykonawców)
 
             Bieter: **{bidder.Name}**, {bidder.City} · Verfahren **{reference}** · TED {tender.SourceId}
 
             | Los | Leistungsteil | Menge | Anteil | Nachunternehmer | Sitz |
             |---|---|---|---|---|---|
-            | {deal.LotId} | {deal.LotTitle} | {qty} {deal.Unit} | {D(share)} % | {partner.Name} | {partner.City}, CZ |
+            | {deal.LotId} | {deal.LotTitle} | {qty} {deal.Unit} | {DePct(share)} | {partner.Name} | {partner.City}, {partner.Country} |
 
             Die übrigen Leistungen erbringt der Bieter selbst. Die Verpflichtungserklärung des Nachunternehmers liegt bei.
             """;
@@ -181,9 +187,9 @@ public static class AgreementDrafter
 
             | Część | Zakres | Ilość | Udział | Podwykonawca | Siedziba |
             |---|---|---|---|---|---|
-            | {deal.LotId} | {deal.LotTitle} | {qty} {deal.Unit} | {share}% | {partner.Name} | {partner.City}, CZ |
+            | {deal.LotId} | {deal.LotTitle} | {qty} {deal.Unit} | {PlPct(share)} | {partner.Name} | {partner.City}, {partner.Country} |
 
-            Pozostały zakres wykonawca realizuje samodzielnie.
+            Pozostały zakres wykonawca realizuje samodzielnie. Zobowiązanie podwykonawcy (Verpflichtungserklärung) stanowi załącznik.
             """;
 
         var declarationDe = $"""

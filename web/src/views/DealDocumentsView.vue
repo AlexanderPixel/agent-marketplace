@@ -10,6 +10,7 @@ import Checkbox from 'primevue/checkbox'
 import Tag from 'primevue/tag'
 import Message from 'primevue/message'
 import { api, post } from '@/lib/api'
+import { advance, autopilotAt, beat } from '@/lib/autopilot'
 import { flag } from '@/lib/flags'
 import { session } from '@/lib/session'
 import type { AgreementDocument, Deal, Party } from '@/lib/tenders'
@@ -27,6 +28,15 @@ async function load() {
   selected.value ??= data.value?.deal.documents[0]?.id
 }
 watch(() => [route.params.id, session.orgId], load, { immediate: true })
+
+// Autopilot step 5: draft the documents, then hand over to a person to review and sign.
+watch(() => data.value?.deal.status, async (status) => {
+  if (!autopilotAt('documents') || status !== 'Closed') return
+  await beat(1500)
+  if (!autopilotAt('documents')) return
+  if (!docs.value.length) await generate()
+  advance('done', 'done')
+})
 
 async function generate() {
   generating.value = true
@@ -51,7 +61,7 @@ const views = computed(() => [
 ])
 
 function download(d: AgreementDocument) {
-  const text = view.value === 'both' ? `${d.body.de}\n\n---\n\n${d.body.pl}` : d.body[view.value]
+  const text = view.value === 'both' ? `${d.body.pl}\n\n---\n\n${d.body.de}` : d.body[view.value]
   const url = URL.createObjectURL(new Blob([text], { type: 'text/markdown' }))
   const a = Object.assign(document.createElement('a'), { href: url, download: `${d.id}-${view.value}.md` })
   a.click()
@@ -116,10 +126,11 @@ function download(d: AgreementDocument) {
             </div>
           </div>
           <div class="pages" :class="{ both: view === 'both' }">
+            <!-- PL first, in the same order as the language switch. -->
             <!-- eslint-disable-next-line vue/no-v-html -- our own templates, rendered from deal terms -->
-            <article v-if="view !== 'pl'" class="paper" lang="de" v-html="html(doc.body.de ?? '')" />
-            <!-- eslint-disable-next-line vue/no-v-html -->
             <article v-if="view !== 'de'" class="paper" lang="pl" v-html="html(doc.body.pl ?? '')" />
+            <!-- eslint-disable-next-line vue/no-v-html -->
+            <article v-if="view !== 'pl'" class="paper" lang="de" v-html="html(doc.body.de ?? '')" />
           </div>
         </div>
       </div>
@@ -128,34 +139,37 @@ function download(d: AgreementDocument) {
 </template>
 
 <style scoped>
-.back { display: inline-flex; gap: 6px; align-items: center; text-decoration: none; font-size: 14px; }
-.small { font-size: 12.5px; }
-.checklist { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px; }
-.checklist th { text-align: left; color: var(--muted); font-weight: 500; padding: 8px; border-bottom: 1px solid var(--border); }
-.checklist td { padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.back { display: inline-flex; gap: 6px; align-items: center; text-decoration: none; font-size: 14.5px; font-weight: 500; }
+.small { font-size: 13px; }
+.checklist { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14.5px; }
+.checklist th { text-align: left; color: var(--muted); font-size: 13px; font-weight: 600; padding: 10px 12px; background: var(--ground); border-bottom: 1px solid var(--border); }
+.checklist td { padding: 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
 .checklist a { text-decoration: none; color: var(--text); }
+.checklist a:hover { color: var(--accent); }
 .checklist tr.signed td:not([rowspan]) { color: var(--good); }
-.human { margin: 12px 0 0; display: flex; gap: 8px; align-items: center; font-size: 14px; color: var(--accent); }
+.human { margin: 14px 0 0; display: flex; gap: 8px; align-items: center; font-size: 14.5px; color: var(--text); padding: 12px 14px; border: 1px dashed var(--dash); }
+.human i { color: var(--accent); }
 .viewer { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 16px; align-items: start; }
 @media (max-width: 900px) { .viewer { grid-template-columns: 1fr; } }
-.doc-list { padding: 8px; display: flex; flex-direction: column; gap: 4px; }
-.doc-item { display: flex; gap: 10px; align-items: flex-start; text-align: left; border: 0; background: none; padding: 10px; border-radius: 8px; cursor: pointer; font: inherit; color: inherit; }
+.doc-list { padding: 6px; display: flex; flex-direction: column; gap: 2px; }
+.doc-item { display: flex; gap: 10px; align-items: flex-start; text-align: left; border: 0; background: none; padding: 12px; cursor: pointer; font: inherit; color: inherit; }
 .doc-item:hover { background: var(--ground); }
-.doc-item.active { background: var(--accent-soft); }
+.doc-item.active { background: var(--accent-soft); box-shadow: inset 3px 0 0 var(--accent); }
 .doc-item i { color: var(--accent); margin-top: 3px; }
-.doc-title { font-weight: 500; }
-.doc-view { display: flex; flex-direction: column; gap: 12px; }
+.doc-title { font-weight: 600; }
+.doc-view { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
 .doc-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
-.tools { display: flex; gap: 8px; align-items: center; }
-.pages { display: grid; gap: 16px; }
-.pages.both { grid-template-columns: 1fr 1fr; }
-@media (max-width: 1100px) { .pages.both { grid-template-columns: 1fr; } }
-.paper { background: white; border: 1px solid var(--border); border-radius: 6px; padding: 28px 32px; font-family: Georgia, 'Times New Roman', serif; font-size: 14.5px; line-height: 1.55;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 6%); }
-.paper :deep(h1) { font-size: 20px; text-align: center; margin: 8px 0 16px; }
-.paper :deep(h2) { font-size: 15px; margin: 18px 0 6px; }
-.paper :deep(blockquote) { margin: 0 0 12px; padding: 8px 12px; background: var(--warn-soft); border-left: 3px solid var(--warn); font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; }
+.tools { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.pages { display: grid; gap: 16px; min-width: 0; }
+/* minmax(0, 1fr): a wide table inside a page must not push the second page out of the card. */
+.pages.both { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 1100px) { .pages.both { grid-template-columns: minmax(0, 1fr); } }
+.paper { min-width: 0; overflow-x: auto; background: #fff; border: 1px solid var(--border); padding: 28px 32px; font-family: Georgia, 'Times New Roman', serif; font-size: 14.5px; line-height: 1.55; }
+.paper :deep(h1) { font-size: 20px; text-align: center; margin: 8px 0 16px; letter-spacing: 0; }
+.paper :deep(h2) { font-size: 15px; margin: 18px 0 6px; font-family: inherit; color: inherit; letter-spacing: 0; }
+.paper :deep(blockquote) { margin: 0 0 12px; padding: 10px 12px; background: var(--warn-soft); border: 1px solid #f0d49a; font-family: 'Hanken Grotesk', sans-serif; font-size: 13px; }
 .paper :deep(blockquote p) { margin: 0; }
 .paper :deep(table) { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 13.5px; }
-.paper :deep(th), .paper :deep(td) { border: 1px solid var(--border); padding: 6px 8px; text-align: left; }
+.paper :deep(th), .paper :deep(td) { border: 1px solid var(--border); padding: 6px 8px; text-align: left; hyphens: auto; }
+.pages.both .paper { padding: 24px 22px; font-size: 14px; }
 </style>

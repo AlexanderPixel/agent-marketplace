@@ -8,6 +8,7 @@ import Tag from 'primevue/tag'
 import Message from 'primevue/message'
 import ActivityFeed from '@/components/ActivityFeed.vue'
 import { api, post } from '@/lib/api'
+import { advance, autopilotAt, beat, stopAutopilot } from '@/lib/autopilot'
 import { flag } from '@/lib/flags'
 import { session } from '@/lib/session'
 import { localTitle, units, type TenderLot, type TenderSummary } from '@/lib/tenders'
@@ -49,7 +50,19 @@ async function load() {
     } finally {
       searching.value = false
     }
+    void autoNegotiate()
   }
+}
+
+// Autopilot step 3: open talks with the best partner whose hard gates pass.
+async function autoNegotiate() {
+  if (!autopilotAt('partner')) return
+  const best = [...(result.value?.candidates ?? [])].filter((c) => c.gatesPassed).sort((a, b) => b.score - a.score)[0]
+  if (!best) return stopAutopilot('noPartner')
+  await beat(3000)
+  if (!autopilotAt('partner')) return
+  advance('negotiate', 'negotiate')
+  await negotiate(best)
 }
 watch([() => session.orgId, query], load, { immediate: true })
 

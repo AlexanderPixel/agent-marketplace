@@ -4,6 +4,8 @@ import { useI18n } from 'vue-i18n'
 import Button from 'primevue/button'
 import BidSteps from '@/components/BidSteps.vue'
 import { api } from '@/lib/api'
+import { advance, autopilotRunning } from '@/lib/autopilot'
+import { useRouter } from 'vue-router'
 import { currentOrg } from '@/lib/session'
 import { flag } from '@/lib/flags'
 import { daysLeft, formatDate, localTitle, type TenderSummary } from '@/lib/tenders'
@@ -16,6 +18,13 @@ onMounted(async () => {
   const list = await api<{ rows: TenderSummary[] }>('/tenders')
   featured.value = list.rows.find((r) => r.featured)
 })
+
+const router = useRouter()
+function runAutopilot() {
+  if (!featured.value) return
+  advance('check', 'check')
+  router.push(`/tenders/${encodeURIComponent(featured.value.id)}`)
+}
 
 const days = computed(() => (featured.value ? daysLeft(featured.value.deadline) : null))
 
@@ -55,6 +64,8 @@ const tools = [
         <RouterLink :to="`/tenders/${encodeURIComponent(featured.id)}`" class="btn-link">
           <Button :label="t('home.check')" icon="pi pi-bolt" />
         </RouterLink>
+        <Button :label="t('autopilot.run')" icon="pi pi-play" severity="secondary" :disabled="autopilotRunning()" @click="runAutopilot" />
+        <span class="ap-hint">{{ t('autopilot.hint') }}</span>
         <RouterLink to="/tenders" class="secondary-link">{{ t('home.browse') }}</RouterLink>
       </div>
     </section>
@@ -88,6 +99,7 @@ const tools = [
 .start-facts strong { color: #fff; }
 .start-actions { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
 .btn-link { text-decoration: none; }
+.ap-hint { font-size: 13px; color: var(--ink-text); max-width: 34ch; }
 .secondary-link { color: var(--ink-text); font-size: 14.5px; }
 .secondary-link:hover { color: #fff; }
 .how, .tools { display: flex; flex-direction: column; gap: 12px; }

@@ -2,11 +2,12 @@
 import BidSteps from '@/components/BidSteps.vue'
 import { computed, onBeforeUnmount, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import Button from 'primevue/button'
 import Tag from 'primevue/tag'
 import ActivityFeed from '@/components/ActivityFeed.vue'
 import { api, post } from '@/lib/api'
+import { advance, autopilotAt, beat, stopAutopilot } from '@/lib/autopilot'
 import { flag } from '@/lib/flags'
 import { session } from '@/lib/session'
 import { dealSeverity, eur, formatDate, units, type Deal, type Party } from '@/lib/tenders'
@@ -34,6 +35,17 @@ const unit = computed(() => (deal.value ? (units[deal.value.unit] ?? deal.value.
 const mySide = computed(() => (deal.value?.bidderOrgId === session.orgId ? 'bidder' : 'partner'))
 const party = (side: string) => (side === 'bidder' ? data.value?.bidder : data.value?.partner)
 const value = computed(() => (deal.value?.unitPrice && deal.value.quantity ? deal.value.unitPrice * deal.value.quantity : null))
+
+// Autopilot step 4: watch the agents; on a close go to the documents. Approval stays with a person.
+const router = useRouter()
+watch(() => deal.value?.status, async (status) => {
+  if (!autopilotAt('negotiate') || !status || status === 'Negotiating') return
+  if (status === 'AwaitingApproval') return stopAutopilot('needsApproval')
+  if (status !== 'Closed') return stopAutopilot('dealFailed')
+  advance('documents', 'documents')
+  await beat(4000)
+  if (autopilotAt('documents')) router.push(`/deals/${route.params.id}/documents`)
+})
 
 async function approve() {
   approving.value = true

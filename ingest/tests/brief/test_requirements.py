@@ -31,7 +31,7 @@ def test_shape_order_and_no_duplicates(items):
     assert len(texts) == len(set(texts))
     for i in items:
         assert set(i) == {"category", "requirement", "cite"}
-        assert len(i["requirement"]) < 450
+        assert len(i["requirement"]) < 500  # the state list (26 names) is the longest item
 
 
 def test_quotes_are_verbatim(ctx, items):
@@ -52,9 +52,15 @@ def test_eligibility(items):
     assert "mehr als 10 % des Auftragswerts" in rus["requirement"]
     states = find(items, "BMI-Staatenliste", category="eligibility")
     assert "26 Staaten" in states["requirement"]
-    for s in ("Afghanistan", "China", "Russische Föderation", "Ukraine", "Vietnam"):
+    for s in ("Afghanistan", "China (inkl. Hongkong, Macau)", "Russische Föderation", "Ukraine", "Vietnam"):
         assert s in states["requirement"]
+    # "Korea" alone would read as South Korea; the list means the DVR Korea
+    assert "Korea (Demokratische Volksrepublik Korea)" in states["requirement"]
     assert "Staatenliste" in states["cite"]["file"]
+    assert "über 50% russische Beteiligung" in rus["requirement"]
+    reg = find(items, "Handelsregister", category="eligibility")
+    assert "nicht älter als 6 Monate" in reg["requirement"]
+    assert "Verpflichtungserklärung" in find(items, "Eignungsleihe")["requirement"]
 
 
 def test_product_per_lot(items):
@@ -65,6 +71,10 @@ def test_product_per_lot(items):
     assert "48 Monate" in find(items, "Los 2:", "pro Packung")["requirement"]
     los3 = find(items, "Los 3:", "pro Packung")
     assert "max. 10 Stück" in los3["requirement"] and "keine Mindesthaltbarkeit" in los3["requirement"]
+    prices = find(items, "zwei Nettopreise")
+    assert "Vertragsjahr 1 und 2" in prices["requirement"] and "Vertragsjahr 3" in prices["requirement"]
+    assert find(items, "Zustimmung des AG liefern")["cite"]["page"] == 3
+    assert find(items, "Bevollmächtigter mit Sitz in der EU")["category"] == "product"
 
 
 def test_product_and_quality(items):
@@ -81,6 +91,8 @@ def test_product_and_quality(items):
     assert "keine amtliche Qualitätssicherung (Güteprüfung)" in lv["requirement"]
     assert lv["cite"]["folder"] == "Vergabeunterlagen/Version 3", "newest Leistungsverzeichnis"
     assert "AMMPSicherheit@Bundeswehr.org" in find(items, "Schwerwiegende Vorkommnisse")["requirement"]
+    assert find(items, "21 CFR 820")["category"] == "quality"
+    assert "Herstellervorgaben" in find(items, "Händler prüfen je Produkt")["requirement"]
 
 
 def test_delivery(items):
@@ -94,6 +106,11 @@ def test_delivery(items):
     assert "DPU Incoterms® 2020" in find(items, "Lieferklausel")["requirement"]
     part = find(items, "Teillieferungen")
     assert part["cite"]["file"] == "VM191_2. Hinweisblatt.pdf", "newest Hinweisblatt"
+    assert "1. Abruf im 1. Quartal 2027, 2. Abruf im Januar 2028" in part["requirement"]
+    note = find(items, "Lieferschein mit", category="delivery")
+    assert "Auftragsnummer, Artikelname, Menge" in note["requirement"]
+    announce = find(items, "Geplante Auslieferungen")
+    assert "LogZBw" in announce["requirement"] and "@bundeswehr.org" in announce["requirement"]
     assert find(items, "Spätestens 10 Tage vor dem Liefertermin")
     assert find(items, "50 % und 75 % der Höchstmenge")
 
@@ -119,11 +136,29 @@ def test_legal(items):
     assert find(items, "Keine Abnahmepflicht")
     assert find(items, "Gerichtsstand Bonn")
     assert find(items, "UN-Kaufrecht ausgeschlossen")["cite"]["page"] == 12
+    term = find(items, "Laufzeit bis zur Ausschöpfung")
+    assert "spätestens 2 Jahre" in term["requirement"] and "einmal um 1 Jahr" in term["requirement"]
+    assert find(items, "drei Wochen vor dem Liefertermin")["category"] == "legal"
+    assert "Engpässen bei Lieferanten" in find(items, "Keine höhere Gewalt")["requirement"]
+    assert "ersten vollendeten Woche" in find(items, "0,2 %")["requirement"]
+    prices = find(items, "Zollgebühren")
+    assert "Festpreis" not in prices["requirement"], "PPB has separate prices for Vertragsjahr 1-2 and 3"
 
 
 def test_flags_arzneimittel_template(items):
     flag = find(items, "für Arzneimittel formuliert")
     assert flag["category"] == "other" and "Bieterfrage" in flag["requirement"]
+    date = find(items, "geforderten Liefertermin 01.12.2026")
+    assert date["category"] == "other" and "1. Quartal 2027" in date["requirement"]
+    assert date["cite"]["folder"] == "Vergabeunterlagen/Version 3"
+    assert find(items, "Aufforderung zur Angebotsabgabe vor")["category"] == "other"
+
+
+def test_state_names_keep_ambiguous_long_form():
+    from tenderhub.brief.requirements import _states
+    text = ("Staatenliste\n1. Kongo (Demokratische Republik Kongo)\n2. China (Volksrepublik China),\n"
+            "ab 01.07.1997 einschließlich Sonderverwaltungsregion (SVR) Hongkong\n3. Georgien\n")
+    assert _states(text) == ["Kongo (Demokratische Republik Kongo)", "China (inkl. Hongkong)", "Georgien"]
 
 
 def test_generic_no_tender_values_in_code():
@@ -131,7 +166,8 @@ def test_generic_no_tender_values_in_code():
 
     import tenderhub.brief.requirements as mod
     src = Path(mod.__file__).read_text()
-    for v in ("VM191", "2400", "2.400", "Krugau", "Gronau", "Bonn\"", "28 Monate", "AMMPSicherheit"):
+    for v in ("VM191", "2400", "2.400", "Krugau", "Gronau", "Bonn\"", "28 Monate", "AMMPSicherheit",
+              "LogZBw", "Quartal 2027", "01.12.2026", "21 CFR 820", "Märkische"):
         assert v not in src, f"tender-specific value {v!r} hard-coded"
 
 

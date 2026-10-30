@@ -19,7 +19,6 @@ const { t, locale } = useI18n()
 const route = useRoute()
 const router = useRouter()
 const showActivity = ref(false)
-const health = ref<{ ai: boolean; model: string | null } | null>(null)
 
 const nav = computed(() => [
   {
@@ -53,7 +52,6 @@ onMounted(async () => {
   resumeAutopilot(router)
   session.orgs = await api<Org[]>('/orgs')
   if (!session.orgs.some((o) => o.id === session.orgId)) session.orgId = (session.orgs.find((o) => o.country === 'PL') ?? session.orgs[0])?.id ?? ''
-  health.value = await api('/health')
 })
 
 watch(() => session.language, (lang) => (locale.value = lang), { immediate: true })
@@ -101,12 +99,6 @@ async function resetDemo() {
           :class="{ active: item.to === '/' ? route.path === '/' : route.path.startsWith(item.to) }">
           <i :class="item.icon" aria-hidden="true" /> {{ item.label }}
         </RouterLink>
-      </div>
-      <div class="nav-foot">
-        <span v-if="health" class="ai-state">
-          <span class="dot" :class="{ on: health.ai }" aria-hidden="true">●</span>
-          {{ health.ai ? t('common.aiOn', { model: health.model }) : t('common.aiDisabled') }}
-        </span>
       </div>
     </aside>
     <div class="main">
@@ -158,10 +150,6 @@ async function resetDemo() {
 .nav-group + .nav-group { margin-top: 14px; }
 .nav-group-title { font-size: 12px; font-weight: 600; color: var(--ink-muted); padding: 0 12px 6px; }
 .nav-item.active { background: var(--accent); color: #fff; font-weight: 600; clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%); }
-.nav-foot { margin-top: auto; padding: 20px 12px 0; border-top: 1px dashed #3a4044; font-size: 12.5px; color: var(--ink-muted); }
-.ai-state { display: flex; gap: 6px; }
-.dot { color: var(--ink-muted); }
-.dot.on { color: var(--accent-on-dark); }
 .main { display: flex; flex-direction: column; min-width: 0; }
 .autopilot { position: sticky; top: 0; z-index: 5; display: flex; gap: 14px; align-items: center; padding: 12px 36px; background: var(--ink); color: #f6f6f6; flex-wrap: wrap; }
 .autopilot.stopped { background: #3a2a00; }
@@ -179,7 +167,7 @@ async function resetDemo() {
 @media (max-width: 800px) {
   .shell { grid-template-columns: 1fr; }
   .nav { position: static; height: auto; flex-direction: row; flex-wrap: wrap; }
-  .brand, .nav-foot, .nav-group-title { display: none; }
+  .brand, .nav-group-title { display: none; }
   .nav-group { flex-direction: row; flex-wrap: wrap; }
   .nav-group + .nav-group { margin-top: 0; }
 }

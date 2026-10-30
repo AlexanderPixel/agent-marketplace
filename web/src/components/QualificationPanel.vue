@@ -4,6 +4,7 @@ import { useI18n } from 'vue-i18n'
 import Button from 'primevue/button'
 import Tag from 'primevue/tag'
 import ActivityFeed from '@/components/ActivityFeed.vue'
+import EcertisBox from '@/components/EcertisBox.vue'
 import { post } from '@/lib/api'
 import { session } from '@/lib/session'
 import {
@@ -84,6 +85,10 @@ const unitName = (u: string | undefined | null) => (u ? (units[u] ?? u) : '')
                     <strong>{{ c.evidence.title }}</strong> · {{ c.evidence.issuer }}
                     <span v-if="c.evidence.validUntil" class="muted"> · {{ c.evidence.validUntil }}</span>
                   </div>
+                  <div v-if="c.alsoSubmit?.length" class="evidence">
+                    <i class="pi pi-plus" /> {{ t('evidence.alsoSubmit') }}: <strong>{{ c.alsoSubmit.map((d) => d.title).join(', ') }}</strong>
+                  </div>
+                  <EcertisBox v-if="c.ecertis" :match="c.ecertis" :buyer-country="tender.buyerCountry" :clarification="c.clarification" />
                 </div>
               </div>
             </div>
@@ -147,6 +152,7 @@ const unitName = (u: string | undefined | null) => (u ? (units[u] ?? u) : '')
 .cite { font-size: 12px; color: var(--muted); }
 .check { display: flex; gap: 8px; font-size: 14px; }
 .check > i { margin-top: 3px; }
+.check > div { flex: 1; }
 .evidence { margin-top: 4px; font-size: 13px; }
 .lot { display: flex; gap: 16px; align-items: center; padding: 12px 0; flex-wrap: wrap; }
 .lot-main { flex: 1 1 300px; display: flex; flex-direction: column; gap: 4px; }

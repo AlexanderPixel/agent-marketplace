@@ -29,5 +29,6 @@ public static class DemoSeeder
         var dataPath = Path.GetFullPath(
             config["DemoData:Path"] ?? "../../demo-data", services.GetRequiredService<IWebHostEnvironment>().ContentRootPath);
         await TenderStore.SeedAsync(db, dataPath);
+        Ecertis.EcertisCatalog.Load(Path.Combine(dataPath, "ecertis"));
     }
 }

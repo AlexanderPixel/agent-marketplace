@@ -33,7 +33,6 @@ export default {
     defenceOnly: 'Tylko obronność',
     openOnly: 'Tylko otwarte',
     count: '{shown} z {total} ogłoszeń',
-    featured: 'Przetarg demo',
     translated: 'Tytuł przetłumaczony, oryginał: {lang}',
     buyer: 'Zamawiający',
     cpv: 'CPV',

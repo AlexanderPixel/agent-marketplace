@@ -33,7 +33,6 @@ export default {
     defenceOnly: 'Nur Verteidigung',
     openOnly: 'Nur offene',
     count: '{shown} von {total} Bekanntmachungen',
-    featured: 'Demo-Ausschreibung',
     translated: 'Übersetzter Titel, Original: {lang}',
     buyer: 'Auftraggeber',
     cpv: 'CPV',

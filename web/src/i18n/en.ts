@@ -33,7 +33,6 @@ export default {
     defenceOnly: 'Defence only',
     openOnly: 'Open only',
     count: '{shown} of {total} notices',
-    featured: 'Demo tender',
     translated: 'Translated title, original in {lang}',
     buyer: 'Buyer',
     cpv: 'CPV',

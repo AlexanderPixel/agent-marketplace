@@ -12,6 +12,7 @@ import Column from 'primevue/column'
 import Tag from 'primevue/tag'
 import Button from 'primevue/button'
 import Message from 'primevue/message'
+import QualificationPanel from '@/components/QualificationPanel.vue'
 import { api } from '@/lib/api'
 import { flag } from '@/lib/flags'
 import { session } from '@/lib/session'
@@ -100,6 +101,8 @@ const portal = computed(() => (tender.value?.source === 'TED' ? 'TED' : 'e-Zamó
         <div v-if="tender.reference" class="muted small">{{ t('tenders.reference') }}: {{ tender.reference }}</div>
       </div>
     </div>
+
+    <QualificationPanel v-if="session.orgId" :tender="tender" />
 
     <Message v-if="!tender.hasFullNotice" severity="info" icon="pi pi-info-circle">{{ t('tenders.shortNotice') }}</Message>
 

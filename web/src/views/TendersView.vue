@@ -17,7 +17,7 @@ import { api, post } from '@/lib/api'
 import { flag } from '@/lib/flags'
 import { session } from '@/lib/session'
 import {
-  cpvLabel, daysLeft, deadlineSeverity, formatDate, isTranslated, localTitle, type TenderSummary,
+  cpvLabel, daysLeft, deadlineSeverity, formatDate, isTranslated, localTitle, verdictIcon, verdictSeverity, type TenderSummary,
 } from '@/lib/tenders'
 
 const { t } = useI18n()
@@ -55,7 +55,7 @@ async function load() {
   }
 }
 
-watch([country, source, defence, open], load)
+watch([country, source, defence, open, () => session.orgId], load)
 watch(q, () => {
   clearTimeout(timer)
   timer = setTimeout(load, 250)
@@ -145,7 +145,13 @@ const languageName = (code: string) =>
             </div>
           </template>
         </Column>
-        <Column :header="t('tenders.cpv')" style="width: 220px">
+        <Column :header="t('qual.column')" style="width: 150px">
+          <template #body="{ data }: { data: TenderSummary }">
+            <Tag v-if="data.verdict" :severity="verdictSeverity[data.verdict]" :icon="verdictIcon[data.verdict]"
+              :value="t(`qual.verdict.${data.verdict}`)" class="verdict" />
+          </template>
+        </Column>
+        <Column :header="t('tenders.cpv')" style="width: 200px">
           <template #body="{ data }: { data: TenderSummary }">
             <div class="mono">{{ data.cpv }}</div>
             <div class="muted small clamp">{{ cpvLabel(data) }}</div>
@@ -196,6 +202,7 @@ const languageName = (code: string) =>
 .mono { font-family: ui-monospace, monospace; font-size: 13px; }
 .clamp { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .translated { color: var(--accent); }
+.verdict { white-space: normal; text-align: left; }
 .featured-tag { margin-right: 6px; background: var(--eu-gold); color: #1a1a1a; }
 :deep(.featured-row) { background: #fffbea !important; }
 :deep(.p-datatable-tbody > tr) { cursor: pointer; }

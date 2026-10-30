@@ -13,15 +13,34 @@ public static class AutoBidEndpoints
     public record Decision(bool Sign);
     public record DemoStart(string TenderId);
 
+    /// <summary>
+    /// Runs are written in the company's language (Telegram speaks it too). The page shows them in the language the viewer
+    /// picked: the note is re-filled from its template and the title taken from the tender's own translations.
+    /// </summary>
+    private static async Task InViewerLanguageAsync(AppDb db, OrgContext org, HttpRequest request, List<AutoBidRun> runs)
+    {
+        var viewer = request.Headers.AcceptLanguage.ToString() is { Length: >= 2 } l ? l[..2] : null;
+        if (viewer is null || runs.Count == 0) return;
+        var company = await db.Organizations.Where(o => o.Id == org.OrgId).Select(o => o.Language).FirstAsync();
+        var ids = runs.Select(r => r.TenderId).Distinct().ToList();
+        var titles = await db.Tenders.Where(t => ids.Contains(t.Id)).ToDictionaryAsync(t => t.Id, t => t.Titles);
+        foreach (var r in runs)
+        {
+            r.Note = AutoBidText.Translate(r.Note, company, viewer);
+            if (titles.GetValueOrDefault(r.TenderId)?.GetValueOrDefault(viewer) is { Length: > 0 } title) r.Title = title;
+        }
+    }
+
     public static void MapAutoBidEndpoints(this WebApplication app)
     {
         var api = app.MapGroup("/api/autobid");
 
-        api.MapGet("/", async (AppDb db, OrgContext org, TelegramBot bot) =>
+        api.MapGet("/", async (AppDb db, OrgContext org, TelegramBot bot, HttpRequest request) =>
         {
             org.Require();
             var settings = await db.AutoBidSettings.FirstOrDefaultAsync();
-            var runs = await db.AutoBidRuns.OrderByDescending(r => r.CreatedAt).Take(100).ToListAsync();
+            var runs = await db.AutoBidRuns.AsNoTracking().OrderByDescending(r => r.CreatedAt).Take(100).ToListAsync();
+            await InViewerLanguageAsync(db, org, request, runs);
             return new { enabled = settings?.Enabled ?? false, telegram = new { bot.Configured, bot.Connected }, runs };
         });
 
@@ -48,11 +67,13 @@ public static class AutoBidEndpoints
             return runId is null ? TypedResults.BadRequest("The company does not qualify for this tender.") : TypedResults.Ok(new { runId });
         });
 
-        api.MapGet("/runs/{id:guid}", async Task<IResult> (Guid id, AppDb db, OrgContext org) =>
+        api.MapGet("/runs/{id:guid}", async Task<IResult> (Guid id, AppDb db, OrgContext org, HttpRequest request) =>
         {
             org.Require();
-            var run = await db.AutoBidRuns.FirstOrDefaultAsync(r => r.Id == id);
-            return run is null ? TypedResults.NotFound() : TypedResults.Ok(run);
+            var run = await db.AutoBidRuns.AsNoTracking().FirstOrDefaultAsync(r => r.Id == id);
+            if (run is null) return TypedResults.NotFound();
+            await InViewerLanguageAsync(db, org, request, [run]);
+            return TypedResults.Ok(run);
         });
 
         api.MapPost("/scan", (OrgContext org, AutoBidAgent agent) =>

@@ -1,4 +1,5 @@
 using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace Marketplace.AutoBid;
 
@@ -122,6 +123,36 @@ public sealed class AutoBidText
 
     public string this[string key, params object?[] args] =>
         string.Format(Culture, Texts[Language].GetValueOrDefault(key) ?? Texts["en"][key], args);
+
+    /// <summary>
+    /// A run note is saved as a sentence in the company's language. To show it in another UI language, find the note
+    /// template it was made from, take its arguments back out and fill the same template in <paramref name="to"/>.
+    /// Quantities get the target language's units and number format. A note that matches no template is returned as is.
+    /// </summary>
+    public static string Translate(string note, string? from, string? to)
+    {
+        var (src, dst) = (new AutoBidText(from), new AutoBidText(to));
+        if (src.Language == dst.Language || string.IsNullOrEmpty(note)) return note;
+        foreach (var (key, template) in Texts[src.Language].Where(kv => kv.Key.StartsWith("note")))
+        {
+            var pattern = "^" + Regex.Replace(Regex.Escape(template), @"\\\{(\d+)}", m => $"(?<a{m.Groups[1].Value}>.+?)") + "$";
+            var match = Regex.Match(note, pattern, RegexOptions.Singleline);
+            if (!match.Success) continue;
+            var count = Regex.Matches(template, @"\{(\d+)}").Select(m => int.Parse(m.Groups[1].Value)).DefaultIfEmpty(-1).Max() + 1;
+            var args = Enumerable.Range(0, count).Select(i => (object?)src.RetranslateQty(match.Groups[$"a{i}"].Value, dst)).ToArray();
+            return dst[key, args];
+        }
+        return note;
+    }
+
+    /// <summary>"320 kpl." → "320 sets"; anything that is not a quantity in this language comes back unchanged.</summary>
+    private string RetranslateQty(string value, AutoBidText to)
+    {
+        var unit = Units[Language].FirstOrDefault(u => value.EndsWith(" " + u.Value));
+        if (unit.Key is null) return value;
+        var digits = new string(value[..^(unit.Value.Length + 1)].Where(char.IsDigit).ToArray());
+        return decimal.TryParse(digits, out var n) ? to.Qty(n, unit.Key) : value;
+    }
 
     public string Unit(string? code) => code is null ? "" : Units[Language].GetValueOrDefault(code, code);
     public string Qty(decimal? n, string? unit) => $"{n?.ToString("N0", Culture)} {Unit(unit)}".Trim();

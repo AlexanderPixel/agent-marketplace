@@ -28,7 +28,7 @@ async function load(quiet = false) {
   if (!session.orgId) return
   state.value = await api<State>('/autobid', {}, quiet)
 }
-watch(() => session.orgId, () => load(), { immediate: true })
+watch(() => [session.orgId, session.language], () => load(), { immediate: true })
 // Poll while the agent may be working, so stages update live.
 timer = setInterval(() => { if (state.value?.enabled || state.value?.runs.some((r) => isWorking(r.stage))) void load(true) }, 3000)
 onBeforeUnmount(() => clearInterval(timer))

@@ -43,6 +43,7 @@ app.MapEcertisEndpoints();
 app.MapPartnerEndpoints();
 app.MapDealEndpoints();
 app.MapComplianceEndpoints();
+app.MapIntelligenceEndpoints();
 app.MapFallbackToFile("index.html");
 
 app.Run();

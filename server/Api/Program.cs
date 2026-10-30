@@ -4,6 +4,7 @@ using Marketplace.Ai;
 using Marketplace.Data;
 using Marketplace.Endpoints;
 using Marketplace.Tenancy;
+using Marketplace.Tenders;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,6 +20,8 @@ builder.Services.AddSingleton<ActivityHub>();
 builder.Services.AddSingleton(TimeProvider.System);
 builder.Services.Configure<AiOptions>(builder.Configuration.GetSection("AI"));
 builder.Services.AddSingleton<AiService>();
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<TenderStore>();
 
 var app = builder.Build();
 
@@ -28,6 +31,7 @@ app.UseMiddleware<OrgMiddleware>();
 app.UseDefaultFiles();
 app.UseStaticFiles();
 app.MapCoreEndpoints();
+app.MapTenderEndpoints();
 app.MapFallbackToFile("index.html");
 
 app.Run();

@@ -37,3 +37,11 @@ The database is recreated and reseeded on every start (`Db:ResetOnStart`, on by 
   (EF Core query filters in `AppDb`, so isolation lives in the data layer).
 - **Agent activity log**: every agent action is written through `ActivityLog` with agent, action and reason, and
   streamed live to the UI (server-sent events).
+
+## Demo data
+
+`demo-data/` holds the cached real notices the API loads on start, so the demo never depends on a live call:
+TED eForms notices (including the demo tender 723644-2026, BAAINBw, 20 lots), 208 Polish defence TED notices,
+and 567 e-Zamówienia BZP notices. `tools/prepare_demo_data.py` rebuilds it from the raw pull; see `demo-data/SOURCES.md`.
+`POST /api/tenders/import/ted/{publicationNumber}` pulls a further notice live from the TED Search API.
+`GET /api/tenders/{id}/ocds` returns any tender as an OCDS 1.1 release package.

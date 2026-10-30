@@ -54,7 +54,6 @@ const portal = computed(() => (tender.value?.source === 'TED' ? 'TED' : 'e-Zamó
         <div class="tags">
           <Tag :value="tender.source === 'TED' ? 'TED eForms' : 'e-Zamówienia BZP'" :severity="tender.source === 'TED' ? 'info' : 'secondary'" />
           <Tag v-if="tender.isDefence" value="Defence" icon="pi pi-shield" severity="contrast" />
-          <Tag v-if="tender.featured" :value="t('tenders.featured')" icon="pi pi-star-fill" class="featured-tag" />
           <span class="muted mono">{{ tender.sourceId }}</span>
         </div>
         <h1>{{ localTitle(tender) }}</h1>
@@ -193,7 +192,6 @@ const portal = computed(() => (tender.value?.source === 'TED' ? 'TED' : 'e-Zamó
 .small { font-size: 12.5px; }
 .mono { font-family: ui-monospace, monospace; }
 .clamp { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.featured-tag { background: var(--eu-gold); color: #1a1a1a; }
 .tabs-card { padding: 4px 8px 8px; }
 .req { border-bottom: 1px solid var(--border); padding: 14px 4px; display: flex; flex-direction: column; gap: 6px; }
 .req-head { display: flex; gap: 10px; align-items: center; }

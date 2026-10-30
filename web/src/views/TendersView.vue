@@ -132,7 +132,6 @@ const languageName = (code: string) =>
               <span class="flag">{{ flag(data.buyerCountry) }}</span>
               <div>
                 <div class="title">
-                  <Tag v-if="data.featured" :value="t('tenders.featured')" icon="pi pi-star-fill" class="featured-tag" />
                   {{ localTitle(data) }}
                 </div>
                 <div class="muted small">
@@ -203,7 +202,6 @@ const languageName = (code: string) =>
 .clamp { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .translated { color: var(--accent); }
 .verdict { white-space: normal; text-align: left; }
-.featured-tag { margin-right: 6px; background: var(--eu-gold); color: #1a1a1a; }
 :deep(.featured-row) { background: #fffbea !important; }
 :deep(.p-datatable-tbody > tr) { cursor: pointer; }
 </style>

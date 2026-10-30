@@ -6,6 +6,26 @@ public static class DemoProfiles
     private static readonly List<string> LeafSpringKeywords =
         ["feder, blatt", "blattfeder", "leaf spring", "resor", "pružin", "listov", "pruzin"];
 
+    /// <summary>Pre-approved mandates. Bidder buys up to €420/set; Moravia sells from €385; Váh from €400.</summary>
+    public static IEnumerable<Mandate> Mandates() =>
+    [
+        new Mandate
+        {
+            OrgId = DemoOrgs.Bidder, Product = "Leaf springs (Blattfedern), sets", Buying = true, TargetPrice = 380, LimitPrice = 420,
+            MinQuantity = 300, MaxQuantity = 400, DeliveryLimit = new(2027, 3, 15), AutonomyThreshold = 85, AutonomousValueCapEur = 200_000,
+        },
+        new Mandate
+        {
+            OrgId = DemoOrgs.Partner, Product = "Leaf springs, sets", Buying = false, TargetPrice = 430, LimitPrice = 385,
+            MinQuantity = 100, MaxQuantity = 400, DeliveryLimit = new(2027, 2, 1), AutonomyThreshold = 85, AutonomousValueCapEur = 250_000,
+        },
+        new Mandate
+        {
+            OrgId = DemoOrgs.WeakPartner, Product = "Leaf springs, sets", Buying = false, TargetPrice = 445, LimitPrice = 400,
+            MinQuantity = 50, MaxQuantity = 300, DeliveryLimit = new(2027, 3, 7), AutonomyThreshold = 85, AutonomousValueCapEur = 150_000,
+        },
+    ];
+
     public static IEnumerable<CompanyProfile> All() =>
     [
         new CompanyProfile
@@ -51,7 +71,7 @@ public static class DemoProfiles
                 new("sk-rt", "criminal-record", "Výpis z registra trestov právnických osôb", "Generálna prokuratúra SR", "SK", new(2026, 9, 1), new(2027, 3, 1)),
                 new("sk-iso", "iso9001", "ISO 9001:2015", "SGS Slovakia", "SK", new(2024, 5, 1), new(2027, 4, 30)),
             ],
-            Products = [new("leaf-spring", "Listové pružiny", LeafSpringKeywords, "34320000", 300, "SE", 430m, 120)],
+            Products = [new("leaf-spring", "Listové pružiny", LeafSpringKeywords, "34320000", 300, "SE", 430m, 110)],
         },
     ];
 }

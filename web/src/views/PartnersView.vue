@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import Button from 'primevue/button'
 import Tag from 'primevue/tag'
 import Message from 'primevue/message'
@@ -24,6 +24,8 @@ interface SearchResult { tender: TenderSummary; lot: TenderLot; gap: number; can
 
 const { t } = useI18n()
 const route = useRoute()
+const router = useRouter()
+const starting = ref<string>()
 const threshold = 85
 const network = ref<Listing[]>([])
 const result = ref<SearchResult>()
@@ -49,6 +51,17 @@ async function load() {
   }
 }
 watch([() => session.orgId, query], load, { immediate: true })
+
+async function negotiate(c: Candidate) {
+  if (!query.value) return
+  starting.value = c.partner.orgId
+  try {
+    const { id } = await post<{ id: string }>('/deals', { ...query.value, partnerOrgId: c.partner.orgId })
+    router.push(`/deals/${id}`)
+  } finally {
+    starting.value = undefined
+  }
+}
 
 const unitName = (u: string | null | undefined) => (u ? (units[u] ?? u) : '')
 const status = (c: Candidate) => (!c.gatesPassed ? 'failed' : c.score >= threshold ? 'autonomous' : 'approval')
@@ -112,7 +125,8 @@ const status = (c: Candidate) => (!c.gatesPassed ? 'failed' : c.score >= thresho
                 <i :class="status(c) === 'autonomous' ? 'pi pi-bolt' : status(c) === 'approval' ? 'pi pi-user' : 'pi pi-ban'" />
                 {{ status(c) === 'autonomous' ? t('partners.autonomous') : status(c) === 'approval' ? t('partners.needsApproval', { threshold }) : t('partners.gateFailed') }}
               </span>
-              <Button v-tooltip="t('partners.soon')" :label="t('partners.negotiate')" icon="pi pi-comments" :disabled="true" />
+              <Button :label="t('partners.negotiate')" icon="pi pi-comments" :disabled="!c.gatesPassed" :loading="starting === c.partner.orgId"
+                :severity="status(c) === 'autonomous' ? undefined : 'secondary'" @click="negotiate(c)" />
             </div>
           </div>
           <Message severity="secondary" icon="pi pi-lock">{{ t('partners.privacy') }}</Message>

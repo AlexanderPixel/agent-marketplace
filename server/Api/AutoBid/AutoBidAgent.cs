@@ -1,4 +1,3 @@
-using System.Globalization;
 using Marketplace.Activity;
 using Marketplace.Data;
 using Marketplace.Deals;
@@ -74,6 +73,7 @@ public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProv
         if (runs.Any(r => r.IsOpen)) return;
 
         var company = await db.Organizations.FirstAsync(o => o.Id == orgId, ct);
+        var tx = new AutoBidText(company.Language);
         var profile = await db.Profiles.FirstOrDefaultAsync(ct);
         if (profile is null) return;
         var now = clock.GetUtcNow();
@@ -92,66 +92,64 @@ public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProv
             Id = Guid.NewGuid(), OrgId = orgId, TenderId = tender.Id, TenderRef = tender.SourceId,
             Title = tender.Titles.GetValueOrDefault(company.Language) ?? tender.Title, Verdict = a.Verdict,
             Stage = AutoBidStage.Qualifying, CreatedAt = now, UpdatedAt = now,
-            Note = a.Verdict == "can-supply" ? "Qualifies and has the capacity." : $"Qualifies; short by {a.Gaps[0].Gap} {a.Gaps[0].Lot.Unit} on {a.Gaps[0].Lot.Id}.",
+            Note = a.Verdict == "can-supply" ? tx["noteQualifies"] : tx["noteGap", tx.Qty(a.Gaps[0].Gap, a.Gaps[0].Lot.Unit), a.Gaps[0].Lot.Id],
         };
         db.AutoBidRuns.Add(run);
         await db.SaveChangesAsync(ct);
         await log.WriteAsync(orgId, Agent, $"Took on {tender.SourceId}: {run.Title}",
             $"Auto-bid is on, the tender is open until {tender.Deadline:yyyy-MM-dd} and the qualification check says {a.Verdict} " +
-            $"({a.Requirements.Count - a.Red - a.Amber} met, {a.Amber} via equivalent, 0 red). {run.Note}", tender.Id, ct: ct);
+            $"({a.Requirements.Count - a.Red - a.Amber} met, {a.Amber} via equivalent, 0 red).", tender.Id, ct: ct);
 
         try
         {
-            await PrepareAsync(sp, db, log, run, tender, a, ct);
+            await PrepareAsync(sp, db, log, tx, run, tender, a, ct);
         }
         catch (Exception e)
         {
             logger.LogError(e, "Auto-bid run {Run} failed", run.Id);
-            await StopAsync(db, log, run, "Something went wrong while preparing the bid; nothing was sent.", ct);
+            await StopAsync(db, log, tx, run, tx["noteError"], ct);
         }
     }
 
-    private async Task PrepareAsync(IServiceProvider sp, AppDb db, ActivityLog log, AutoBidRun run, Tender tender, Assessment a, CancellationToken ct)
+    private async Task PrepareAsync(IServiceProvider sp, AppDb db, ActivityLog log, AutoBidText tx, AutoBidRun run, Tender tender, Assessment a, CancellationToken ct)
     {
         Deal? deal = null;
         if (a.Verdict == "partner-needed")
         {
             var gap = a.Gaps[0];
-            await StageAsync(db, run, AutoBidStage.FindingPartner, $"Looking for a partner for {gap.Gap} {gap.Lot.Unit}.", ct);
+            await StageAsync(db, run, AutoBidStage.FindingPartner, tx["noteSearching", tx.Qty(gap.Gap, gap.Lot.Unit)], ct);
             var candidates = await sp.GetRequiredService<PartnerSearch>().SearchAsync(run.OrgId, tender, gap.Lot, gap.Gap!.Value);
             var best = candidates.FirstOrDefault(c => c.GatesPassed);
             if (best is null)
             {
-                await StopAsync(db, log, run, "No partner passed the hard gates, so the bid cannot be completed.", ct);
+                await StopAsync(db, log, tx, run, tx["noteNoPartner"], ct);
                 return;
             }
 
-            await StageAsync(db, run, AutoBidStage.Negotiating, $"Negotiating with {best.Partner.Name} inside your limits.", ct);
+            await StageAsync(db, run, AutoBidStage.Negotiating, tx["noteNegotiating", best.Partner.Name], ct);
             deal = await DealOps.OpenAsync(db, log, sp.GetRequiredService<DealRunner>(), clock, run.OrgId, tender, gap.Lot, gap.Gap.Value, best);
             run.DealId = deal.Id;
             deal = await WaitForDealAsync(db, deal.Id, ct);
             if (deal.Status == DealStatus.Failed)
             {
-                await StopAsync(db, log, run, $"The agents found no deal inside the limits: {deal.Outcome}", ct);
+                await StopAsync(db, log, tx, run, tx["noteNoDeal"], ct);
                 return;
             }
 
             if (deal.Status == DealStatus.Closed)
             {
-                await StageAsync(db, run, AutoBidStage.Drafting, "Deal closed. Drafting the agreement documents.", ct);
+                await StageAsync(db, run, AutoBidStage.Drafting, tx["noteDrafting"], ct);
                 await DealOps.DraftDocumentsAsync(db, log, clock, deal, run.OrgId);
             }
         }
 
         var company = await db.Organizations.FirstAsync(o => o.Id == run.OrgId, ct);
-        var summary = await sp.GetRequiredService<TenderSummaryService>().SummariseAsync(tender, company.Language, ct);
+        var summary = await sp.GetRequiredService<TenderSummaryService>().SummariseAsync(tender, tx.Language, ct);
         var partner = deal is null ? null : await db.Organizations.FirstAsync(o => o.Id == deal.PartnerOrgId, ct);
         await StageAsync(db, run, AutoBidStage.AwaitingSignature,
-            deal?.Status == DealStatus.AwaitingApproval
-                ? "Ready. The partner deal is below your autonomy threshold, so your Sign also approves it."
-                : "Ready to sign. Waiting for your decision.", ct);
+            deal?.Status == DealStatus.AwaitingApproval ? tx["noteReadyApprove"] : tx["noteReady"], ct);
 
-        run.TelegramMessageId = await bot.SendAsync(Compose(run, tender, a, summary, deal, partner), Keyboard(run, tender), ct);
+        run.TelegramMessageId = await bot.SendAsync(Compose(tx, run, tender, a, summary, deal, partner), Keyboard(tx, run, tender), ct);
         await db.SaveChangesAsync(ct);
         await log.WriteAsync(run.OrgId, Agent,
             run.TelegramMessageId is null ? "Bid ready; waiting for a decision in the app" : "Bid ready; sent a sign request to Telegram",
@@ -176,61 +174,63 @@ public class AutoBidAgent(IServiceScopeFactory scopes, TelegramBot bot, TimeProv
         await db.SaveChangesAsync(ct);
     }
 
-    private async Task StopAsync(AppDb db, ActivityLog log, AutoBidRun run, string why, CancellationToken ct)
+    private async Task StopAsync(AppDb db, ActivityLog log, AutoBidText tx, AutoBidRun run, string why, CancellationToken ct)
     {
         await StageAsync(db, run, AutoBidStage.Stopped, why, ct);
         await log.WriteAsync(run.OrgId, Agent, $"Stopped working on {run.TenderRef}", why, run.TenderId, ct: ct);
-        await bot.SendAsync($"⏸ <b>Auto-bid stopped</b>: {H(run.Title)}\n{H(why)}", ct: ct);
+        await bot.SendAsync($"<b>{H(tx["stopped"])}</b>: {H(run.Title)}\n{H(why)}", ct: ct);
     }
 
-    private object[][] Keyboard(AutoBidRun run, Tender tender)
+    private object[][] Keyboard(AutoBidText tx, AutoBidRun run, Tender tender)
     {
-        var rows = new List<object[]> { new[] { Button("✅ Sign", $"sign:{run.Id}"), Button("❌ Don't sign", $"decline:{run.Id}") } };
+        var rows = new List<object[]> { new[] { Button(tx["sign"], $"sign:{run.Id}"), Button(tx["decline"], $"decline:{run.Id}") } };
         var links = new List<object>();
         // Telegram only accepts public http(s) links on buttons; local app links stay in the message text.
         if (!bot.AppBaseUrl.Contains("localhost") && !bot.AppBaseUrl.Contains("127.0.0.1"))
-            links.Add(Link("Open in EU Patriot", $"{bot.AppBaseUrl}/tenders/{Uri.EscapeDataString(tender.Id)}"));
-        if (tender.NoticeUrl is { } notice) links.Add(Link("Notice on TED", notice));
+            links.Add(Link(tx["open"], $"{bot.AppBaseUrl}/tenders/{Uri.EscapeDataString(tender.Id)}"));
+        if (tender.NoticeUrl is { } notice) links.Add(Link(tx["notice"], notice));
         if (links.Count > 0) rows.Add([.. links]);
         return [.. rows];
     }
 
-    private string Compose(AutoBidRun run, Tender tender, Assessment a, TenderSummaryText summary, Deal? deal, Organization? partner)
+    /// <summary>The sign request: short, and entirely in the company's language (titles, units, numbers, dates, summary).</summary>
+    private string Compose(AutoBidText tx, AutoBidRun run, Tender tender, Assessment a, TenderSummaryText summary, Deal? deal, Organization? partner)
     {
-        var en = CultureInfo.GetCultureInfo("en-GB");
+        // Notice titles end with the procedure reference, which the second line already shows.
+        var title = tender.Reference is { } r && run.Title.EndsWith(r) ? run.Title[..^r.Length].TrimEnd(' ', '–', '-') : run.Title;
         var days = tender.Deadline is { } dl ? (int)Math.Ceiling((dl - clock.GetUtcNow()).TotalDays) : (int?)null;
         var lines = new List<string>
         {
-            $"🛡 <b>Ready to sign: {H(run.Title)}</b>",
-            $"{H(tender.BuyerName)}{(tender.BuyerCity is null ? "" : ", " + H(tender.BuyerCity))} ({H(tender.BuyerCountry)}) · {H(tender.Source.ToString())} {H(tender.SourceId)}",
-            $"Deadline: <b>{tender.Deadline?.ToString("d MMM yyyy, HH:mm", en)} UTC</b>{(days is null ? "" : $" ({days} days left)")}",
+            $"🛡 <b>{H(tx["ready"])}: {H(title)}</b>",
+            $"{H(tender.BuyerName)}{(tender.BuyerCity is null ? "" : ", " + H(tender.BuyerCity))} · TED {H(tender.SourceId)}",
+            $"{H(tx["deadline"])}: <b>{H(tender.Deadline is { } d ? tx.DateTime(d) : "—")}</b>{(days is null ? "" : $" ({H(tx["daysLeft", days])})")}",
             "",
-            $"<b>Your part</b>",
         };
-        lines.AddRange(a.Lots.Select(l => $"• {H(l.Lot.Id)} {H(l.Lot.Title)}: {l.Lot.Quantity:0} {H(l.Lot.Unit)} (you make {l.Capacity})"));
-        lines.Add($"Requirements: {a.Requirements.Count - a.Red - a.Amber} met, {a.Amber} via an equivalent document, 0 missing.");
+
+        foreach (var l in a.Lots)
+        {
+            var lotNo = int.TryParse(new string(l.Lot.Id.Where(char.IsDigit).ToArray()), out var n) ? n.ToString() : l.Lot.Id;
+            var split = deal is not null && deal.LotId == l.Lot.Id ? $" ({tx["youMake", tx.Qty(l.Capacity, l.Lot.Unit), tx.Qty(deal.Quantity, deal.Unit)]})" : "";
+            lines.Add($"<b>{H(tx["part"])}</b>: {H(tx["lot", lotNo])} – {H(l.Product?.Name ?? l.Lot.Title)}, {H(tx.Qty(l.Lot.Quantity, l.Lot.Unit))}{H(split)}");
+        }
 
         if (deal is not null && partner is not null)
         {
-            lines.Add("");
-            lines.Add("<b>Partner deal</b>");
-            lines.Add($"{H(partner.Name)} ({H(partner.Country)}): {deal.Quantity} {H(deal.Unit)} at €{deal.UnitPrice?.ToString("N2", en)}" +
-                      $" = €{(deal.UnitPrice * deal.Quantity)?.ToString("N0", en)}, delivery {deal.Delivery?.ToString("d MMM yyyy", en)}");
-            lines.Add(deal.Status == DealStatus.Closed
-                ? $"Closed by the agents inside both mandates ({deal.MatchScore}% match). {deal.Documents.Count} drafts in PL and DE."
-                : $"Agreed by the agents but below your autonomy threshold ({deal.MatchScore}% match): <b>Sign also approves this deal.</b>");
+            lines.Add($"<b>{H(tx["partner"])}</b>: {H(partner.Name)} ({H(partner.Country)}) · {H(tx.Qty(deal.Quantity, deal.Unit))} × {H(tx.Eur(deal.UnitPrice))} = " +
+                      $"{H(tx.Eur(deal.UnitPrice * deal.Quantity, 0))} · {H(tx["delivery", deal.Delivery is { } dd ? tx.Date(dd) : "—"])}");
+            lines.Add(H(deal.Status == DealStatus.Closed ? tx["closed", deal.Documents.Count] : tx["approve"]));
         }
 
+        lines.Add($"<b>{H(tx["requirements"])}</b>: {H(a.Amber > 0 ? tx["reqEquivalent", a.Amber] : tx["reqMet"])}");
         lines.Add("");
-        lines.Add($"<b>Summary</b>{(summary.ByAi ? " (AI)" : "")}");
-        lines.Add(H(summary.Headline));
-        lines.AddRange(summary.Points.Take(5).Select(p => $"• {H(p.Text)}"));
-
+        lines.Add($"<b>{H(tx["summary"])}</b>");
+        lines.AddRange(summary.Points.Take(3).Select(p => $"• {H(p.Text)}"));
         lines.Add("");
-        lines.Add($"Details: {H(bot.AppBaseUrl)}/tenders/{H(Uri.EscapeDataString(tender.Id))}");
-        if (deal is not null) lines.Add($"Documents: {H(bot.AppBaseUrl)}/deals/{deal.Id}/documents");
-        lines.Add("");
-        lines.Add("<i>Sign records your go-ahead. The qualified e-signatures and the submission on the buyer's portal stay with you.</i>");
+        var details = $"{bot.AppBaseUrl}/tenders/{Uri.EscapeDataString(tender.Id)}";
+        lines.Add(deal is null
+            ? $"<a href=\"{H(details)}\">{H(tx["details"])}</a>"
+            : $"<a href=\"{H(details)}\">{H(tx["details"])}</a> · <a href=\"{H($"{bot.AppBaseUrl}/deals/{deal.Id}/documents")}\">{H(tx["documents"])}</a>");
+        lines.Add($"<i>{H(tx["footer"])}</i>");
 
         var text = string.Join("\n", lines);
         return text.Length <= 4000 ? text : text[..3990] + "…";

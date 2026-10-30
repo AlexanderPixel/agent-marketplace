@@ -22,7 +22,7 @@ public static class DemoOrgs
         new Organization
         {
             Id = WeakPartner, Name = "Váh Komponenty s.r.o.", Country = "SK", City = "Trenčín", Kind = OrgKind.Supplier, Language = "en",
-            Description = "Machined parts and springs for commercial vehicles.",
+            Description = "Small-arms maker: AK-47 assault rifles in 7.62×39 mm for armed forces and police.",
         },
     ];
 }

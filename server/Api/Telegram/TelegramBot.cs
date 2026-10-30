@@ -3,6 +3,7 @@ using System.Net.Http.Json;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using Marketplace.AutoBid;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
 namespace Marketplace.Telegram;
@@ -106,6 +107,16 @@ public class TelegramBot(IOptions<TelegramOptions> options, IHttpClientFactory h
         }
     }
 
+    /// <summary>The bot speaks the language of the company that uses auto-bid; before that, the Telegram user's language.</summary>
+    private async Task<AutoBidText> TextAsync(string? userLanguage, CancellationToken ct)
+    {
+        using var scope = scopes.CreateScope();
+        var db = scope.ServiceProvider.GetRequiredService<Data.AppDb>();
+        var orgId = await db.AutoBidSettings.IgnoreQueryFilters().Where(s => s.Enabled).Select(s => (Guid?)s.OrgId).FirstOrDefaultAsync(ct);
+        var language = orgId is null ? null : await db.Organizations.Where(o => o.Id == orgId).Select(o => o.Language).FirstOrDefaultAsync(ct);
+        return new AutoBidText(language ?? userLanguage?[..Math.Min(2, userLanguage.Length)]);
+    }
+
     private async Task HandleAsync(JsonNode u, CancellationToken ct)
     {
         if (u["message"] is { } message)
@@ -118,9 +129,8 @@ public class TelegramBot(IOptions<TelegramOptions> options, IHttpClientFactory h
                 chatId = from;
                 log.LogInformation("Telegram bot linked to chat {Chat}. Put it in Telegram:ChatId to keep it after a restart.", from);
             }
-            var reply = chatId == from
-                ? $"Connected. Sign requests from EU Patriot will arrive here.\nChat id: <code>{from}</code>"
-                : "This bot is linked to another chat.";
+            var tx = await TextAsync(message["from"]?["language_code"]?.GetValue<string>(), ct);
+            var reply = chatId == from ? tx["connected", from] : tx["otherChat"];
             await CallAsync("sendMessage", new { chat_id = from, text = reply, parse_mode = "HTML" }, ct);
             return;
         }
@@ -131,14 +141,14 @@ public class TelegramBot(IOptions<TelegramOptions> options, IHttpClientFactory h
         var data = q["data"]?.GetValue<string>() ?? "";
         var who = q["from"]?["first_name"]?.GetValue<string>() ?? "Telegram user";
         string answer;
-        if (fromChat != chatId) answer = "Not allowed from this chat.";
+        if (fromChat != chatId) answer = (await TextAsync(null, ct))["notAllowed"];
         else if (data.Split(':') is [var verb and ("sign" or "decline"), var id] && Guid.TryParse(id, out var runId))
         {
             using var scope = scopes.CreateScope();
             var decisions = scope.ServiceProvider.GetRequiredService<AutoBidDecisions>();
             answer = await decisions.DecideAsync(runId, verb == "sign", $"{who} via Telegram", ct);
         }
-        else answer = "Already decided.";
+        else answer = (await TextAsync(null, ct))["already"];
         await CallAsync("answerCallbackQuery", new { callback_query_id = queryId, text = answer }, ct);
     }
 }

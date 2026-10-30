@@ -92,11 +92,12 @@ public static class AutoBidEndpoints
             return TypedResults.Ok(new { message = "Recorded as won and added to your references." });
         });
 
-        api.MapPost("/telegram/test", async Task<IResult> (OrgContext org, TelegramBot bot) =>
+        api.MapPost("/telegram/test", async Task<IResult> (AppDb db, OrgContext org, TelegramBot bot) =>
         {
             org.Require();
             if (!bot.Connected) return TypedResults.BadRequest("Telegram is not connected yet: send /start to your bot first.");
-            await bot.SendAsync("✅ EU Patriot is connected. Sign requests will arrive in this chat.");
+            var me = await db.Organizations.FirstAsync(o => o.Id == org.OrgId);
+            await bot.SendAsync(new AutoBidText(me.Language)["test"]);
             return TypedResults.Ok();
         });
     }

@@ -6,6 +6,9 @@ public static class DemoProfiles
     private static readonly List<string> LeafSpringKeywords =
         ["feder, blatt", "blattfeder", "leaf spring", "resor", "pružin", "listov", "pruzin"];
 
+    /// <summary>Terms that identify assault rifles in lot titles (CPV 35321200, rifles) in Polish, English, German, Czech and Slovak.</summary>
+    private static readonly List<string> RifleKeywords = ["ak-47", "ak47", "kałasznikow", "kalashnikov", "karabinek", "karabin", "assault rifle", "rifle", "sturmgewehr", "gewehr", "útočná puška", "samopal"];
+
     /// <summary>Pre-approved mandates. Bidder buys up to €420/set; Moravia sells from €385; Váh from €400.</summary>
     public static IEnumerable<Mandate> Mandates() =>
     [
@@ -21,8 +24,8 @@ public static class DemoProfiles
         },
         new Mandate
         {
-            OrgId = DemoOrgs.WeakPartner, Product = "Leaf springs, sets", Buying = false, TargetPrice = 445, LimitPrice = 400,
-            MinQuantity = 50, MaxQuantity = 300, DeliveryLimit = new(2027, 3, 7), AutonomyThreshold = 85, AutonomousValueCapEur = 150_000,
+            OrgId = DemoOrgs.WeakPartner, Product = "AK-47 assault rifles, 7.62×39 mm, pieces", Buying = false, TargetPrice = 850, LimitPrice = 720,
+            MinQuantity = 50, MaxQuantity = 300, DeliveryLimit = new(2027, 3, 7), AutonomyThreshold = 85, AutonomousValueCapEur = 250_000,
         },
     ];
 
@@ -129,6 +132,7 @@ public static class DemoProfiles
                 new("sk-or", "trade-register", "Výpis z obchodného registra", "Okresný súd Trenčín", "SK", new(2026, 8, 10), null),
                 new("sk-rt", "criminal-record", "Výpis z registra trestov právnických osôb", "Generálna prokuratúra SR", "SK", new(2026, 9, 1), new(2027, 3, 1)),
                 new("sk-iso", "iso9001", "ISO 9001:2015", "SGS Slovakia", "SK", new(2024, 5, 1), new(2027, 4, 30)),
+                new("sk-lic", "export-licence", "Povolenie na obchodovanie s výrobkami obranného priemyslu", "Ministerstvo hospodárstva SR", "SK", new(2025, 6, 1), new(2030, 5, 31)),
             ],
             Ownership =
             [
@@ -136,7 +140,7 @@ public static class DemoProfiles
                 new("Tianrun Europe Holding B.V.", "NL", 100, "parent"),
                 new("Shandong Tianrun Auto Parts Co., Ltd.", "CN", 51, "ultimate"),
             ],
-            Products = [new("leaf-spring", "Listové pružiny", LeafSpringKeywords, "34320000", 300, "SE", 430m, 110)],
+            Products = [new("ak-47", "AK-47 assault rifles (7.62×39 mm)", RifleKeywords, "35321200", 300, "EA", 780m, 120)],
         },
     ];
 }

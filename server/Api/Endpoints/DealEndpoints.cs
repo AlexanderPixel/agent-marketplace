@@ -1,7 +1,6 @@
 using Marketplace.Activity;
 using Marketplace.Data;
 using Marketplace.Deals;
-using Marketplace.Documents;
 using Marketplace.Partners;
 using Marketplace.Tenancy;
 using Microsoft.EntityFrameworkCore;
@@ -66,18 +65,7 @@ public static class DealEndpoints
             if (candidate is null) return TypedResults.BadRequest("Not a candidate for this gap.");
             if (!candidate.GatesPassed) return TypedResults.BadRequest("A hard gate failed for this partner.");
 
-            var deal = new Deal
-            {
-                Id = Guid.NewGuid(), TenderId = tender.Id, TenderRef = tender.SourceId, LotId = lot.Id, LotTitle = lot.Title,
-                Unit = lot.Unit ?? "", Gap = body.Gap, BidderOrgId = orgId, PartnerOrgId = body.PartnerOrgId,
-                MatchScore = candidate.Score, Status = DealStatus.Negotiating, CreatedAt = clock.GetUtcNow(),
-            };
-            db.Deals.Add(deal);
-            await db.SaveChangesAsync();
-            await log.WriteAsync(orgId, "Deal agent", $"Opened a negotiation with {candidate.Partner.Name} for {body.Gap} {lot.Unit}",
-                $"Best partner for the gap ({candidate.Score}% match, all hard gates passed). The agent will share deal terms only.",
-                tender.Id, sharedWithOrgId: body.PartnerOrgId);
-            runner.Start(deal.Id);
+            var deal = await DealOps.OpenAsync(db, log, runner, clock, orgId, tender, lot, body.Gap, candidate);
             return TypedResults.Ok(new { deal.Id });
         });
 
@@ -87,17 +75,7 @@ public static class DealEndpoints
             var d = await db.Deals.FirstOrDefaultAsync(x => x.Id == id);
             if (d is null) return TypedResults.NotFound();
             if (d.Status != DealStatus.Closed) return TypedResults.BadRequest("The deal is not closed yet.");
-            var tender = await db.Tenders.FindAsync(d.TenderId);
-            var orgs = await db.Organizations.Where(o => o.Id == d.BidderOrgId || o.Id == d.PartnerOrgId).ToDictionaryAsync(o => o.Id);
-            var now = clock.GetUtcNow();
-            d.Documents = AgreementDrafter.Draft(d, tender!, orgs[d.BidderOrgId], orgs[d.PartnerOrgId], DateOnly.FromDateTime(now.UtcDateTime));
-            d.DocumentsAt = now;
-            await db.SaveChangesAsync();
-            await log.WriteAsync(orgId, "Document agent",
-                $"Drafted {d.Documents.Count} documents in Polish and German: {string.Join(", ", d.Documents.Select(x => x.Title.GetValueOrDefault("de") ?? x.Title.First().Value))}",
-                "The deal closed. German tenders need a Nachunternehmervertrag plus the Verpflichtungserklärung, Unterauftragnehmerverzeichnis " +
-                "and Eigenerklärung. Built only from the agreed deal terms and both companies' names; drafts wait for human review and signature.",
-                d.TenderId, sharedWithOrgId: d.BidderOrgId == orgId ? d.PartnerOrgId : d.BidderOrgId);
+            await DealOps.DraftDocumentsAsync(db, log, clock, d, orgId);
             return TypedResults.Ok(d.Documents);
         });
 
@@ -108,13 +86,7 @@ public static class DealEndpoints
             if (d is null) return TypedResults.NotFound();
             if (d.Status != DealStatus.AwaitingApproval) return TypedResults.BadRequest("Nothing to approve.");
             var me = await db.Organizations.FirstAsync(o => o.Id == orgId);
-            d.Status = DealStatus.Closed;
-            d.ClosedAt = clock.GetUtcNow();
-            d.ApprovedBy = me.Name;
-            d.Outcome = $"Approved by a person at {me.Name}: {d.Quantity} {d.Unit} at €{d.UnitPrice:0.00}.";
-            await db.SaveChangesAsync();
-            await log.WriteAsync(orgId, "Deal agent", "Deal approved by a person", "The match was below the autonomy threshold, so a human decided.",
-                d.TenderId, sharedWithOrgId: d.BidderOrgId == orgId ? d.PartnerOrgId : d.BidderOrgId);
+            await DealOps.ApproveAsync(db, log, clock, d, orgId, me.Name);
             return TypedResults.Ok();
         });
     }

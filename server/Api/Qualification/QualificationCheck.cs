@@ -73,7 +73,9 @@ public static partial class QualificationCheck
         {
             if (!rule.Pattern.IsMatch(text) || !kinds.Add(rule.Kind)) continue;
             if (rule.Kind == "competition-register") kinds.Add("trade-register"); // "…register" also matches the trade-register rule
-            checks.Add(Evaluate(rule, buyerCountry, deadline, profile, companyCountry));
+            checks.Add(rule.Kind == "reference"
+                ? ExperienceCheck.Evaluate(rule.Need, req.Text, deadline, profile)
+                : Evaluate(rule, buyerCountry, deadline, profile, companyCountry));
         }
 
         if (checks.Count == 0)

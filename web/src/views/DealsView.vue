@@ -8,6 +8,7 @@ import DatePicker from 'primevue/datepicker'
 import Tag from 'primevue/tag'
 import { useToast } from 'primevue/usetoast'
 import { api } from '@/lib/api'
+import AutoBidPanel from '@/components/AutoBidPanel.vue'
 import { flag } from '@/lib/flags'
 import { session } from '@/lib/session'
 import { dealSeverity, eur, formatDate, units, type Deal, type Party } from '@/lib/tenders'
@@ -58,6 +59,8 @@ const buying = computed(() => mandate.value?.buying)
         <p class="muted">{{ t('deals.subtitle') }}</p>
       </div>
     </div>
+
+    <AutoBidPanel />
 
     <div class="layout">
       <div class="list">

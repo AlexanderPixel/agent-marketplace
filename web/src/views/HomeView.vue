@@ -2,7 +2,6 @@
 import { computed, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Button from 'primevue/button'
-import BidSteps from '@/components/BidSteps.vue'
 import { api } from '@/lib/api'
 import { advance, autopilotRunning } from '@/lib/autopilot'
 import { useRouter } from 'vue-router'
@@ -28,15 +27,6 @@ function runAutopilot() {
 
 const days = computed(() => (featured.value ? daysLeft(featured.value.deadline) : null))
 
-/** Every working area of the app, in the order a supplier meets them. */
-const tools = [
-  { key: 'tenders', to: '/tenders', icon: 'pi pi-search' },
-  { key: 'evidence', to: '/evidence', icon: 'pi pi-id-card' },
-  { key: 'deals', to: '/deals', icon: 'pi pi-briefcase' },
-  { key: 'compliance', to: '/compliance', icon: 'pi pi-shield' },
-  { key: 'intelligence', to: '/intelligence', icon: 'pi pi-chart-line' },
-  { key: 'reach', to: '/reach', icon: 'pi pi-box' },
-]
 </script>
 
 <template>
@@ -69,22 +59,6 @@ const tools = [
       </div>
     </section>
 
-    <section class="how">
-      <h2>{{ t('home.howTitle') }}</h2>
-      <BidSteps :current="1" />
-    </section>
-
-    <section class="tools">
-      <h2>{{ t('home.toolsTitle') }}</h2>
-      <div class="grid">
-        <RouterLink v-for="f in tools" :key="f.key" :to="f.to" class="card tool">
-          <i :class="f.icon" aria-hidden="true" />
-          <div class="tool-title">{{ t(`home.f.${f.key}.title`) }}</div>
-          <p class="muted">{{ t(`home.f.${f.key}.text`) }}</p>
-          <span class="tool-open">{{ t('home.open') }} <i class="pi pi-arrow-right" aria-hidden="true" /></span>
-        </RouterLink>
-      </div>
-    </section>
   </div>
 </template>
 
@@ -101,13 +75,4 @@ const tools = [
 .ap-hint { font-size: 13px; color: var(--ink-text); max-width: 34ch; }
 .secondary-link { color: var(--ink-text); font-size: 14.5px; }
 .secondary-link:hover { color: #fff; }
-.how, .tools { display: flex; flex-direction: column; gap: 12px; }
-.tool { display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: var(--text); }
-.tool:hover { border-color: var(--accent); }
-.tool:hover .tool-open { text-decoration: underline; }
-.tool > i { font-size: 20px; color: var(--accent); }
-.tool-title { font-size: 17px; font-weight: 600; letter-spacing: -0.015em; }
-.tool p { margin: 0; flex: 1; }
-.tool-open { color: var(--accent); font-weight: 600; font-size: 14.5px; display: inline-flex; gap: 6px; align-items: center; }
-.tool-open i { font-size: 12px; }
 </style>

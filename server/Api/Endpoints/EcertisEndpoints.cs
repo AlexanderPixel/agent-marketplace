@@ -25,7 +25,16 @@ public static class EcertisEndpoints
             org.Require();
             var profile = await db.Profiles.FirstOrDefaultAsync();
             var country = buyerCountry ?? "DE";
-            return (profile?.Documents ?? []).Select(d => new { document = d, ecertis = EcertisCatalog.Match(d, country) });
+            var company = await db.Organizations.FirstAsync(o => o.Id == org.OrgId);
+            // How to get each document again: only where we know the national source (Polish companies for now).
+            List<ObtainableDocument>? Obtain(string kind) => company.Country == "PL" ? PolishSources.ByKind.GetValueOrDefault(kind) : null;
+            return new
+            {
+                translationNote = company.Country == "PL" && country == "DE" ? PolishSources.TranslationNote : null,
+                // The German competition register has no foreign equivalent; these are what a Polish bidder submits instead.
+                instead = country == "DE" ? new[] { "criminal-record", "trade-register" }.Select(k => new { kind = k, obtain = Obtain(k)?.FirstOrDefault() }) : null,
+                rows = (profile?.Documents ?? []).Select(d => new { document = d, ecertis = EcertisCatalog.Match(d, country), obtain = Obtain(d.Kind) }),
+            };
         });
     }
 }

@@ -22,6 +22,8 @@ public class AppDb(DbContextOptions<AppDb> options, OrgContext org) : DbContext(
     public DbSet<Mandate> Mandates => Set<Mandate>();
     public DbSet<Deal> Deals => Set<Deal>();
     public DbSet<BillOfMaterials> Boms => Set<BillOfMaterials>();
+    public DbSet<AutoBidSettings> AutoBidSettings => Set<AutoBidSettings>();
+    public DbSet<AutoBidRun> AutoBidRuns => Set<AutoBidRun>();
 
     protected override void OnModelCreating(ModelBuilder b)
     {
@@ -69,6 +71,20 @@ public class AppDb(DbContextOptions<AppDb> options, OrgContext org) : DbContext(
             e.HasKey(m => m.OrgId);
             Json(e.Property(m => m.Components));
             e.HasQueryFilter(m => m.OrgId == CurrentOrgId);
+        });
+
+        b.Entity<AutoBidSettings>(e =>
+        {
+            e.HasKey(x => x.OrgId);
+            e.HasQueryFilter(x => x.OrgId == CurrentOrgId);
+        });
+
+        b.Entity<AutoBidRun>(e =>
+        {
+            e.Property(r => r.Stage).HasConversion<string>();
+            e.Ignore(r => r.IsOpen);
+            e.HasIndex(r => new { r.OrgId, r.TenderId });
+            e.HasQueryFilter(r => r.OrgId == CurrentOrgId);
         });
 
         b.Entity<Deal>(e =>

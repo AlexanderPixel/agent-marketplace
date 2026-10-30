@@ -63,8 +63,10 @@ public static class DemoProfiles
                 new("pl-us", "tax", "Zaświadczenie o niezaleganiu w podatkach", "Urząd Skarbowy w Radomiu", "PL", new(2026, 9, 25), new(2026, 12, 25)),
                 new("pl-iso", "iso9001", "ISO 9001:2015", "TÜV NORD Polska", "PL", new(2025, 4, 1), new(2028, 3, 31)),
                 new("pl-aqap", "aqap2110", "AQAP 2110:2016", "Wojskowe Centrum Normalizacji, Jakości i Kodyfikacji", "PL", new(2024, 6, 1), new(2027, 5, 31)),
-                new("pl-ref-1", "reference", "Referencje: 1 200 kpl. resorów dla 2. Regionalnej Bazy Logistycznej (2025)", "2. RBLog", "PL", new(2025, 12, 10), null),
-                new("pl-ref-2", "reference", "Referencje: resory do Jelcz 442 dla Jelcz sp. z o.o. (2024)", "Jelcz sp. z o.o.", "PL", new(2024, 11, 5), null),
+                new("pl-ref-1", "reference", "Referencje: 1 200 kpl. resorów dla 2. Regionalnej Bazy Logistycznej (2025)", "2. RBLog", "PL", new(2025, 12, 10), null,
+                    Delivery: new("2. Regionalna Baza Logistyczna", "Resory piórowe", 1200, "SE", null, new(2025, 11, 30), null, "Reference letter")),
+                new("pl-ref-2", "reference", "Referencje: resory do Jelcz 442 dla Jelcz sp. z o.o. (2024)", "Jelcz sp. z o.o.", "PL", new(2024, 11, 5), null,
+                    Delivery: new("Jelcz sp. z o.o.", "Resory do Jelcz 442", null, null, null, new(2024, 10, 31), null, "Reference letter")),
                 new("pl-oc", "insurance", "Polisa OC działalności, suma 5 mln PLN", "PZU SA", "PL", new(2026, 1, 1), new(2026, 12, 31)),
             ],
             Ownership =
@@ -108,7 +110,8 @@ public static class DemoProfiles
                 new("cz-rt", "criminal-record", "Výpis z evidence Rejstříku trestů právnických osob", "Rejstřík trestů", "CZ", new(2026, 9, 20), new(2027, 3, 20)),
                 new("cz-iso", "iso9001", "ISO 9001:2015", "TÜV SÜD Czech", "CZ", new(2025, 2, 1), new(2028, 1, 31)),
                 new("cz-aqap", "aqap2110", "AQAP 2110:2016", "Úřad pro obrannou standardizaci, katalogizaci a státní ověřování jakosti", "CZ", new(2025, 3, 1), new(2028, 2, 28)),
-                new("cz-ref", "reference", "Reference: leaf springs for Tatra T815 (2025)", "Tatra Trucks a.s.", "CZ", new(2025, 9, 1), null),
+                new("cz-ref", "reference", "Reference: leaf springs for Tatra T815 (2025)", "Tatra Trucks a.s.", "CZ", new(2025, 9, 1), null,
+                    Delivery: new("Tatra Trucks a.s.", "Leaf springs for Tatra T815", null, null, null, new(2025, 8, 31), null, "Reference letter")),
             ],
             Ownership =
             [

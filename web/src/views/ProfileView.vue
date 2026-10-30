@@ -18,7 +18,8 @@ import { flag } from '@/lib/flags'
 import { session } from '@/lib/session'
 import { eur, units } from '@/lib/tenders'
 
-interface Doc { id: string; kind: string; title: string; issuer: string; country: string; issuedOn: string | null; validUntil: string | null }
+interface Delivery { buyer: string; subject: string; quantity: number | null; unit: string | null; valueEur: number | null; completed: string; tenderRef: string | null; source: string }
+interface Doc { id: string; kind: string; title: string; issuer: string; country: string; issuedOn: string | null; validUntil: string | null; delivery: Delivery | null }
 interface Product { id: string; name: string; cpv: string; capacity: number; unit: string; unitPriceEur: number; leadTimeDays: number }
 interface Credential { title: string; issuer: string; validUntil: string | null }
 interface Staff { id: string; name: string; role: string; yearsExperience: number; education: string; languages: string[]; credentials: Credential[]; projects: string[]; availability: string }
@@ -109,7 +110,15 @@ async function removeDoc(id: string) {
               <thead><tr><th>{{ t('profile.doc') }}</th><th>{{ t('profile.kind') }}</th><th>{{ t('profile.issuer') }}</th><th>{{ t('profile.validUntil') }}</th><th></th><th></th></tr></thead>
               <tbody>
                 <tr v-for="d in data.profile.documents" :key="d.id">
-                  <td><i class="pi pi-file-pdf doc-icon" /> {{ d.title }}</td>
+                  <td>
+                    <i class="pi pi-file-pdf doc-icon" /> {{ d.title }}
+                    <div v-if="d.delivery" class="delivery">
+                      <span v-if="d.delivery.quantity">{{ d.delivery.quantity.toLocaleString() }} {{ units[d.delivery.unit ?? ''] ?? d.delivery.unit }}</span>
+                      <span>{{ d.delivery.valueEur ? eur(d.delivery.valueEur, 0) : t('profile.valueUnknown') }}</span>
+                      <span>{{ t(d.delivery.completed > today ? 'profile.dueOn' : 'profile.doneOn', { date: d.delivery.completed }) }}</span>
+                      <span class="src">{{ d.delivery.source }}</span>
+                    </div>
+                  </td>
                   <td><span class="kind">{{ kindLabel(d.kind) }}</span></td>
                   <td class="muted">{{ flag(d.country) }} {{ d.issuer }}</td>
                   <td class="mono">{{ d.validUntil ?? '—' }}</td>
@@ -208,6 +217,8 @@ async function removeDoc(id: string) {
 .tbl td { padding: 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
 .num { text-align: right; white-space: nowrap; }
 .tbl td.mono, .tbl td:nth-last-child(2) { white-space: nowrap; }
+.delivery { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 6px; font-size: 13px; color: var(--muted); }
+.delivery .src { color: var(--accent); }
 .kind { font-size: 13px; color: var(--text); background: var(--ground); border: 1px solid var(--border); padding: 2px 8px; white-space: nowrap; }
 .mini { font-size: 12px; padding: 0 6px; }
 .doc-icon { color: var(--accent); margin-right: 6px; }

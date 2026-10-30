@@ -1,12 +1,14 @@
 using System.Text.Json.Serialization;
 using Marketplace.Activity;
 using Marketplace.Ai;
+using Marketplace.AutoBid;
 using Marketplace.Data;
 using Marketplace.Deals;
 using Marketplace.Endpoints;
 using Marketplace.Partners;
 using Marketplace.Qualification;
 using Marketplace.Tenancy;
+using Marketplace.Telegram;
 using Marketplace.Tenders;
 using Microsoft.EntityFrameworkCore;
 
@@ -28,6 +30,12 @@ builder.Services.AddScoped<TenderStore>();
 builder.Services.AddSingleton<TenderSummaryService>();
 builder.Services.AddScoped<PartnerSearch>();
 builder.Services.AddSingleton<DealRunner>();
+builder.Services.Configure<TelegramOptions>(builder.Configuration.GetSection("Telegram"));
+builder.Services.AddSingleton<TelegramBot>();
+builder.Services.AddHostedService(sp => sp.GetRequiredService<TelegramBot>());
+builder.Services.AddScoped<AutoBidDecisions>();
+builder.Services.AddSingleton<AutoBidAgent>();
+builder.Services.AddHostedService(sp => sp.GetRequiredService<AutoBidAgent>());
 
 var app = builder.Build();
 
@@ -46,6 +54,7 @@ app.MapComplianceEndpoints();
 app.MapIntelligenceEndpoints();
 app.MapReachEndpoints();
 app.MapProfileEndpoints();
+app.MapAutoBidEndpoints();
 app.MapFallbackToFile("index.html");
 
 app.Run();

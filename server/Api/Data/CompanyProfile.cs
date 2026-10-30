@@ -18,8 +18,19 @@ public record StaffMember(
 public record StaffCredential(string Title, string Issuer, DateOnly? ValidUntil);
 
 /// <param name="Kind">Evidence kind used for matching, e.g. trade-register, criminal-record, iso9001, aqap2110, reference.</param>
+/// <param name="Delivery">For references only: what was delivered, so experience thresholds can be checked.</param>
 public record CompanyDocument(
-    string Id, string Kind, string Title, string Issuer, string Country, DateOnly? IssuedOn, DateOnly? ValidUntil, string? Note = null);
+    string Id, string Kind, string Title, string Issuer, string Country, DateOnly? IssuedOn, DateOnly? ValidUntil, string? Note = null,
+    DeliveryRecord? Delivery = null);
+
+/// <summary>
+/// A completed (or contracted) delivery behind a reference. Null fields are unknown, never guessed: a threshold that
+/// needs an unknown value stays unclear (rule 7).
+/// </summary>
+/// <param name="Completed">When the delivery is (or will be) done. A reference only counts once this date has passed.</param>
+/// <param name="Source">Where the record came from, e.g. "Won tender TED 723644-2026" or "Entered by hand".</param>
+public record DeliveryRecord(
+    string Buyer, string Subject, int? Quantity, string? Unit, decimal? ValueEur, DateOnly Completed, string? TenderRef, string Source);
 
 /// <param name="Keywords">Lower-case terms in any language that identify the product in lot titles.</param>
 /// <param name="Capacity">Units the company can deliver within a typical tender delivery window.</param>

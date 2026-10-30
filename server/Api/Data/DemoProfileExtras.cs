@@ -16,11 +16,11 @@ public static class DemoProfileExtras
     public static List<CompanyProduct> Products() =>
     [
         new($"{Prefix}vehicle-parts", "Części zamienne do pojazdów wojskowych (zawieszenie, układ jezdny)",
-            ["części do pojazdów", "części zamienne do pojazdów", "spare parts for military vehicles"], "35400000", 2000, "EA", 140m, 60),
+            ["części do pojazdów", "części zamienne do pojazdów", "spare parts for military vehicles"], "35400000", 2000, "EA", 140m, 60, Origin: "PL"),
         new($"{Prefix}fire-bodies", "Zabudowy pożarnicze i ratownicze na podwoziach ciężarowych",
-            ["ratowniczo-gaśnicz", "ratowniczo – gaśnicz", "wóz strażacki", "wozy strażackie"], "34144210", 6, "EA", 285_000m, 210),
+            ["ratowniczo-gaśnicz", "ratowniczo – gaśnicz", "wóz strażacki", "wozy strażackie"], "34144210", 6, "EA", 285_000m, 210, Origin: "PL"),
         new($"{Prefix}rescue-equipment", "Sprzęt ratowniczy i wyposażenie ochrony ludności (OLiOC)",
-            ["ochrony ludności", "olioc", "obrony cywilnej", "sprzęt ratownicz"], "35110000", 1500, "EA", 320m, 45),
+            ["ochrony ludności", "olioc", "obrony cywilnej", "sprzęt ratownicz"], "35110000", 1500, "EA", 320m, 45, Origin: "PL"),
     ];
 
     public static List<CompanyDocument> Documents() =>

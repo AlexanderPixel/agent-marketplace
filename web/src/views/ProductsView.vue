@@ -79,7 +79,7 @@ const tenderTitle = (h: TenderHit) => h.titles[session.language] ?? h.title
       <RouterLink v-for="p in list" :key="p.id" :to="`/products/${encodeURIComponent(p.id)}`" class="card item">
         <div class="item-top">
           <span class="cat">{{ p.category ? t(`products.cat.${p.category}`, p.category) : p.cpv }}</span>
-          <span v-if="p.origin" class="muted small">{{ flag(p.origin) }} {{ p.origin }}</span>
+          <span class="muted small">{{ t('products.origin') }}: {{ flag(p.origin ?? '') }} {{ p.origin }}</span>
         </div>
         <div class="item-name">{{ p.name }}</div>
         <p v-if="p.summary" class="muted small">{{ p.summary }}</p>

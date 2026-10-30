@@ -17,7 +17,8 @@ public static class ProductCatalogEndpoints
         {
             org.Require();
             var profile = await db.Profiles.FirstOrDefaultAsync();
-            return (profile?.Products ?? []).Select(p => new
+            var home = (await db.Organizations.FirstAsync(o => o.Id == org.OrgId)).Country;
+            return (profile?.Products ?? []).Select(p => WithOrigin(p, home)).Select(p => new
             {
                 p.Id, p.Name, p.Category, p.Origin, p.Summary, p.Cpv, p.Capacity, p.Unit, p.UnitPriceEur, p.LeadTimeDays,
                 specs = p.Specs?.Count ?? 0,
@@ -29,8 +30,9 @@ public static class ProductCatalogEndpoints
         {
             org.Require();
             var profile = await db.Profiles.FirstOrDefaultAsync();
-            var product = profile?.Products.FirstOrDefault(p => p.Id == id);
-            if (product is null) return TypedResults.NotFound();
+            var found = profile?.Products.FirstOrDefault(p => p.Id == id);
+            if (found is null) return TypedResults.NotFound();
+            var product = WithOrigin(found, (await db.Organizations.FirstAsync(o => o.Id == org.OrgId)).Country);
 
             var only = new CompanyProfile { Products = [product] };
             var now = clock.GetUtcNow();
@@ -53,4 +55,7 @@ public static class ProductCatalogEndpoints
             return TypedResults.Ok(new { product, needs, tenders = matched });
         });
     }
+
+    /// <summary>Every product shows a country: its own country of manufacture, else the company's country.</summary>
+    private static CompanyProduct WithOrigin(CompanyProduct p, string home) => p.Origin is null ? p with { Origin = home } : p;
 }

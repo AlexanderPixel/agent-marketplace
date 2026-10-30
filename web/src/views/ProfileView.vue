@@ -20,7 +20,7 @@ import { eur, units } from '@/lib/tenders'
 
 interface Delivery { buyer: string; subject: string; quantity: number | null; unit: string | null; valueEur: number | null; completed: string; tenderRef: string | null; source: string }
 interface Doc { id: string; kind: string; title: string; issuer: string; country: string; issuedOn: string | null; validUntil: string | null; delivery: Delivery | null }
-interface Product { id: string; name: string; cpv: string; capacity: number; unit: string; unitPriceEur: number; leadTimeDays: number }
+interface Product { id: string; name: string; cpv: string; capacity: number; unit: string; unitPriceEur: number; leadTimeDays: number; origin: string | null }
 interface Credential { title: string; issuer: string; validUntil: string | null }
 interface Staff { id: string; name: string; role: string; yearsExperience: number; education: string; languages: string[]; credentials: Credential[]; projects: string[]; availability: string }
 interface Full {
@@ -131,10 +131,11 @@ async function removeDoc(id: string) {
 
           <TabPanel value="products">
             <table class="tbl">
-              <thead><tr><th>{{ t('profile.product') }}</th><th>CPV</th><th class="num">{{ t('profile.capacity') }}</th><th class="num">{{ t('profile.price') }}</th><th class="num">{{ t('profile.leadTime') }}</th></tr></thead>
+              <thead><tr><th>{{ t('profile.product') }}</th><th>{{ t('products.origin') }}</th><th>CPV</th><th class="num">{{ t('profile.capacity') }}</th><th class="num">{{ t('profile.price') }}</th><th class="num">{{ t('profile.leadTime') }}</th></tr></thead>
               <tbody>
                 <tr v-for="p in data.profile.products" :key="p.id">
                   <td>{{ p.name }}</td>
+                  <td class="nowrap">{{ flag(p.origin ?? data.organization.country) }} {{ p.origin ?? data.organization.country }}</td>
                   <td class="muted mono">{{ p.cpv }}</td>
                   <td class="num"><strong>{{ p.capacity.toLocaleString() }}</strong> {{ units[p.unit] ?? p.unit }}</td>
                   <td class="num">{{ eur(p.unitPriceEur) }}</td>
@@ -216,6 +217,7 @@ async function removeDoc(id: string) {
 .tbl th { text-align: left; color: var(--muted); font-size: 13px; font-weight: 600; padding: 10px 12px; background: var(--ground); border-bottom: 1px solid var(--border); }
 .tbl td { padding: 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
 .num { text-align: right; white-space: nowrap; }
+.nowrap { white-space: nowrap; }
 .tbl td.mono, .tbl td:nth-last-child(2) { white-space: nowrap; }
 .delivery { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 6px; font-size: 13px; color: var(--muted); }
 .delivery .src { color: var(--accent); }

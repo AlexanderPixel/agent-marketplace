@@ -127,7 +127,7 @@ public static class DemoProfiles
                 new("Moravia Holding a.s.", "CZ", 100, "parent"),
                 new("Petr Novák (natural person)", "CZ", 64, "ultimate"),
             ],
-            Products = [new("leaf-spring", "Listové pružiny (leaf springs)", LeafSpringKeywords, "34320000", 400, "SE", 395m, 75)],
+            Products = [new("leaf-spring", "Listové pružiny (leaf springs)", LeafSpringKeywords, "34320000", 400, "SE", 395m, 75, "leaf-spring", "CZ")],
         },
         new CompanyProfile
         {

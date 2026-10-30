@@ -44,8 +44,6 @@ public static class AgreementDrafter
         string DeDate(DateOnly d) => d.ToString("d. MMMM yyyy", De);
         var bidderSig = $"{bidder.Name}, {bidder.City}";
         var partnerSig = $"{partner.Name}, {partner.City}";
-        var draftPl = "> **Projekt wygenerowany przez AI. Wymaga weryfikacji prawnej przed podpisaniem.**";
-        var draftDe = "> **KI-generierter Entwurf. Vor der Unterzeichnung rechtlich prüfen.**";
         var autonomy = deal.Autonomous
             ? $"Warunki handlowe uzgodnione automatycznie przez agentów obu stron w granicach zatwierdzonych mandatów ({deal.ClosedAt:yyyy-MM-dd HH:mm} UTC)."
             : $"Warunki handlowe uzgodnione przez agentów i zatwierdzone przez: {deal.ApprovedBy}.";
@@ -54,8 +52,6 @@ public static class AgreementDrafter
             : $"Die kaufmännischen Bedingungen wurden von den Agenten vereinbart und freigegeben durch: {deal.ApprovedBy}.";
 
         var subcontractPl = $"""
-            {draftPl}
-
             # Umowa podwykonawcza (warunkowa)
 
             zawarta w dniu {PlDate(today)} pomiędzy:
@@ -93,8 +89,6 @@ public static class AgreementDrafter
             """;
 
         var subcontractDe = $"""
-            {draftDe}
-
             # Nachunternehmervertrag (aufschiebend bedingt)
 
             geschlossen am {DeDate(today)} zwischen
@@ -131,8 +125,6 @@ public static class AgreementDrafter
             """;
 
         var commitmentDe = $"""
-            {draftDe}
-
             # Verpflichtungserklärung des Nachunternehmers (Zobowiązanie podmiotu udostępniającego zasoby)
 
             Vergabeverfahren: **{reference}**, {tender.BuyerName}, TED {tender.SourceId}, {deal.LotId}
@@ -148,8 +140,6 @@ public static class AgreementDrafter
             """;
 
         var commitmentPl = $"""
-            {draftPl}
-
             # Zobowiązanie podmiotu udostępniającego zasoby (Verpflichtungserklärung)
 
             Postępowanie: **{reference}**, {tender.BuyerName}, TED {tender.SourceId}, część {deal.LotId}
@@ -165,8 +155,6 @@ public static class AgreementDrafter
             """;
 
         var listDe = $"""
-            {draftDe}
-
             # Unterauftragnehmerverzeichnis (Wykaz podwykonawców)
 
             Bieter: **{bidder.Name}**, {bidder.City} · Verfahren **{reference}** · TED {tender.SourceId}
@@ -179,8 +167,6 @@ public static class AgreementDrafter
             """;
 
         var listPl = $"""
-            {draftPl}
-
             # Wykaz podwykonawców (Unterauftragnehmerverzeichnis)
 
             Wykonawca: **{bidder.Name}**, {bidder.City} · Postępowanie **{reference}** · TED {tender.SourceId}
@@ -193,8 +179,6 @@ public static class AgreementDrafter
             """;
 
         var declarationDe = $"""
-            {draftDe}
-
             # Eigenerklärung des Bieters
 
             Verfahren **{reference}**, {tender.BuyerName}
@@ -208,8 +192,6 @@ public static class AgreementDrafter
             """;
 
         var declarationPl = $"""
-            {draftPl}
-
             # Oświadczenia wykonawcy (Eigenerklärung)
 
             Postępowanie **{reference}**, {tender.BuyerName}

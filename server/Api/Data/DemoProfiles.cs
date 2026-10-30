@@ -48,9 +48,10 @@ public static class DemoProfiles
             Documents =
             [
                 new("sk-or", "trade-register", "Výpis z obchodného registra", "Okresný súd Trenčín", "SK", new(2026, 8, 10), null),
+                new("sk-rt", "criminal-record", "Výpis z registra trestov právnických osôb", "Generálna prokuratúra SR", "SK", new(2026, 9, 1), new(2027, 3, 1)),
                 new("sk-iso", "iso9001", "ISO 9001:2015", "SGS Slovakia", "SK", new(2024, 5, 1), new(2027, 4, 30)),
             ],
-            Products = [new("leaf-spring", "Listové pružiny", LeafSpringKeywords, "34320000", 200, "SE", 430m, 120)],
+            Products = [new("leaf-spring", "Listové pružiny", LeafSpringKeywords, "34320000", 300, "SE", 430m, 120)],
         },
     ];
 }

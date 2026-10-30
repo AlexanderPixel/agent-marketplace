@@ -4,6 +4,7 @@ import PlaceholderView from '@/views/PlaceholderView.vue'
 import TendersView from '@/views/TendersView.vue'
 import TenderDetailView from '@/views/TenderDetailView.vue'
 import EvidenceView from '@/views/EvidenceView.vue'
+import PartnersView from '@/views/PartnersView.vue'
 
 const placeholder = (path: string, title: string) => ({ path, component: PlaceholderView, meta: { title } })
 
@@ -14,7 +15,7 @@ export const router = createRouter({
     { path: '/tenders', component: TendersView, meta: { title: 'nav.tenders' } },
     { path: '/tenders/:id', component: TenderDetailView, meta: { title: 'nav.tenders' } },
     { path: '/evidence', component: EvidenceView, meta: { title: 'nav.evidence' } },
-    placeholder('/partners', 'nav.partners'),
+    { path: '/partners', component: PartnersView, meta: { title: 'nav.partners' } },
     placeholder('/deals', 'nav.deals'),
     placeholder('/compliance', 'nav.compliance'),
     placeholder('/intelligence', 'nav.intelligence'),

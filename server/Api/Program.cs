@@ -3,6 +3,7 @@ using Marketplace.Activity;
 using Marketplace.Ai;
 using Marketplace.Data;
 using Marketplace.Endpoints;
+using Marketplace.Partners;
 using Marketplace.Qualification;
 using Marketplace.Tenancy;
 using Marketplace.Tenders;
@@ -24,6 +25,7 @@ builder.Services.AddSingleton<AiService>();
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<TenderStore>();
 builder.Services.AddSingleton<TenderSummaryService>();
+builder.Services.AddScoped<PartnerSearch>();
 
 var app = builder.Build();
 
@@ -36,6 +38,7 @@ app.MapCoreEndpoints();
 app.MapTenderEndpoints();
 app.MapQualificationEndpoints();
 app.MapEcertisEndpoints();
+app.MapPartnerEndpoints();
 app.MapFallbackToFile("index.html");
 
 app.Run();

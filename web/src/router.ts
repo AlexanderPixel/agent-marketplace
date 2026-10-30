@@ -8,6 +8,7 @@ import PartnersView from '@/views/PartnersView.vue'
 import DealsView from '@/views/DealsView.vue'
 import DealRoomView from '@/views/DealRoomView.vue'
 import DealDocumentsView from '@/views/DealDocumentsView.vue'
+import ComplianceView from '@/views/ComplianceView.vue'
 
 const placeholder = (path: string, title: string) => ({ path, component: PlaceholderView, meta: { title } })
 
@@ -22,7 +23,7 @@ export const router = createRouter({
     { path: '/deals', component: DealsView, meta: { title: 'nav.deals' } },
     { path: '/deals/:id', component: DealRoomView, meta: { title: 'nav.deals' } },
     { path: '/deals/:id/documents', component: DealDocumentsView, meta: { title: 'nav.deals' } },
-    placeholder('/compliance', 'nav.compliance'),
+    { path: '/compliance', component: ComplianceView, meta: { title: 'nav.compliance' } },
     placeholder('/intelligence', 'nav.intelligence'),
     placeholder('/reach', 'nav.reach'),
   ],

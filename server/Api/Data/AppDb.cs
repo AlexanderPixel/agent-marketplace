@@ -21,6 +21,7 @@ public class AppDb(DbContextOptions<AppDb> options, OrgContext org) : DbContext(
     public DbSet<CompanyProfile> Profiles => Set<CompanyProfile>();
     public DbSet<Mandate> Mandates => Set<Mandate>();
     public DbSet<Deal> Deals => Set<Deal>();
+    public DbSet<BillOfMaterials> Boms => Set<BillOfMaterials>();
 
     protected override void OnModelCreating(ModelBuilder b)
     {
@@ -52,12 +53,20 @@ public class AppDb(DbContextOptions<AppDb> options, OrgContext org) : DbContext(
             e.HasKey(p => p.OrgId);
             Json(e.Property(p => p.Documents));
             Json(e.Property(p => p.Products));
+            Json(e.Property(p => p.Ownership));
             e.HasQueryFilter(p => p.OrgId == CurrentOrgId);
         });
 
         b.Entity<Mandate>(e =>
         {
             e.HasKey(m => m.OrgId);
+            e.HasQueryFilter(m => m.OrgId == CurrentOrgId);
+        });
+
+        b.Entity<BillOfMaterials>(e =>
+        {
+            e.HasKey(m => m.OrgId);
+            Json(e.Property(m => m.Components));
             e.HasQueryFilter(m => m.OrgId == CurrentOrgId);
         });
 

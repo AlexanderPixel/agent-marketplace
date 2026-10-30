@@ -6,6 +6,7 @@ public class CompanyProfile
     public Guid OrgId { get; set; }
     public List<CompanyDocument> Documents { get; set; } = [];
     public List<CompanyProduct> Products { get; set; } = [];
+    public List<OwnershipLink> Ownership { get; set; } = [];
 }
 
 /// <param name="Kind">Evidence kind used for matching, e.g. trade-register, criminal-record, iso9001, aqap2110, reference.</param>

@@ -11,6 +11,7 @@ import DealDocumentsView from '@/views/DealDocumentsView.vue'
 import ComplianceView from '@/views/ComplianceView.vue'
 import IntelligenceView from '@/views/IntelligenceView.vue'
 import ReachView from '@/views/ReachView.vue'
+import ProductsView from '@/views/ProductsView.vue'
 import ProfileView from '@/views/ProfileView.vue'
 
 const placeholder = (path: string, title: string) => ({ path, component: PlaceholderView, meta: { title } })
@@ -19,6 +20,8 @@ export const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', component: HomeView },
+    { path: '/products', component: ProductsView, meta: { title: 'nav.products' } },
+    { path: '/products/:id', component: ProductsView, meta: { title: 'nav.products' } },
     { path: '/tenders', component: TendersView, meta: { title: 'nav.tenders' } },
     { path: '/tenders/:id', component: TenderDetailView, meta: { title: 'nav.tenders' } },
     { path: '/evidence', component: EvidenceView, meta: { title: 'nav.evidence' } },

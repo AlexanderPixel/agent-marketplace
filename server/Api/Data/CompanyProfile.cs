@@ -34,5 +34,12 @@ public record DeliveryRecord(
 
 /// <param name="Keywords">Lower-case terms in any language that identify the product in lot titles.</param>
 /// <param name="Capacity">Units the company can deliver within a typical tender delivery window.</param>
+/// <param name="Category">What kind of product it is, matched against buyers' specifications (e.g. sniper-rifle, assault-rifle).</param>
+/// <param name="Origin">Country of manufacture (ISO 3166-1 alpha-2).</param>
+/// <param name="Specs">The technical sheet: measured values and plain-text facts, keyed so specifications can be checked.</param>
 public record CompanyProduct(
-    string Id, string Name, List<string> Keywords, string Cpv, int Capacity, string Unit, decimal UnitPriceEur, int LeadTimeDays);
+    string Id, string Name, List<string> Keywords, string Cpv, int Capacity, string Unit, decimal UnitPriceEur, int LeadTimeDays,
+    string? Category = null, string? Origin = null, string? Summary = null, List<SpecValue>? Specs = null);
+
+/// <summary>One line of a product's technical sheet: a number with its unit, or a text value (yes/no, a name, a mechanism).</summary>
+public record SpecValue(string Key, string Label, decimal? Number = null, string? Unit = null, string? Text = null);

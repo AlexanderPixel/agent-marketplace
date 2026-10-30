@@ -31,6 +31,7 @@ const nav = computed(() => [
   {
     title: t('nav.groupBid'),
     items: [
+      { to: '/products', icon: 'pi pi-th-large', label: t('nav.products') },
       { to: '/tenders', icon: 'pi pi-search', label: t('nav.tenders') },
       { to: '/evidence', icon: 'pi pi-id-card', label: t('nav.evidence') },
       // Partners is hidden from the menu for now; the gap check and autopilot still open it.

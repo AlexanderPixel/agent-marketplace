@@ -39,5 +39,6 @@ public static class DemoSeeder
         await TenderStore.SeedAsync(db, dataPath);
         Ecertis.EcertisCatalog.Load(Path.Combine(dataPath, "ecertis"));
         Intelligence.PrimeAwards.Load(Path.Combine(dataPath, "ted/prime-awards.json"));
+        Products.MarketNeeds.Load(Path.Combine(dataPath, "needs"));
     }
 }

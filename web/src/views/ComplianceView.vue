@@ -1,17 +1,22 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { computed, reactive, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import Button from 'primevue/button'
 import Tag from 'primevue/tag'
 import Message from 'primevue/message'
+import Dialog from 'primevue/dialog'
+import InputText from 'primevue/inputtext'
+import InputNumber from 'primevue/inputnumber'
+import Select from 'primevue/select'
 import { api, post } from '@/lib/api'
 import { flag } from '@/lib/flags'
+import { countryCodes, countryName } from '@/lib/countries'
 import { session } from '@/lib/session'
 import { eur } from '@/lib/tenders'
 
 interface Alt { supplier: string; country: string; costEur: number; note: string }
 interface Report {
-  threshold: number; product: string | null; euContent: number; safeEligible: boolean; contentOk: boolean; controlOk: boolean
+  threshold: number; eligibleCountries: string[]; product: string | null; euContent: number; safeEligible: boolean; contentOk: boolean; controlOk: boolean
   components: { component: { id: string; name: string; supplier: string; country: string; costEur: number }; eligible: boolean; share: number }[]
   swaps: { componentId: string; component: string; from: string; fromCountry: string; to: Alt; costDelta: number; newEuContent: number; reachesThreshold: boolean }[]
   control: { company: string; country: string; role: string; chain: { entity: string; country: string; share: number; role: string }[]; euControlled: boolean; detail: string }[]
@@ -23,11 +28,73 @@ const report = ref<Report>()
 const applying = ref<string>()
 const flash = ref(false)
 
+type Part = Report['components'][number]['component']
+const dialog = ref(false)
+const editingId = ref<string>()
+const form = reactive({ name: '', supplier: '', country: 'PL', costEur: null as number | null })
+const saving = ref(false)
+const error = ref<string>()
+const productDraft = ref('')
+const editingProduct = ref(false)
+
+const eligible = computed(() => new Set(report.value?.eligibleCountries ?? []))
+const countryGroups = computed(() => {
+  const items = countryCodes
+    .map((c) => ({ value: c, name: countryName(c), label: `${flag(c)} ${countryName(c)}` }))
+    .sort((a, b) => a.name.localeCompare(b.name))
+  return [
+    { label: t('compliance.groupEu'), items: items.filter((i) => eligible.value.has(i.value)) },
+    { label: t('compliance.groupOther'), items: items.filter((i) => !eligible.value.has(i.value)) },
+  ]
+})
+const formValid = computed(() => form.name.trim() && form.supplier.trim() && form.country && (form.costEur ?? 0) > 0)
+
 async function load() {
   if (!session.orgId) return
   report.value = await api<Report>('/compliance')
 }
 watch(() => session.orgId, load, { immediate: true })
+
+function openPart(c?: Part) {
+  editingId.value = c?.id
+  Object.assign(form, c ? { name: c.name, supplier: c.supplier, country: c.country, costEur: c.costEur } : { name: '', supplier: '', country: 'PL', costEur: null })
+  error.value = undefined
+  dialog.value = true
+}
+
+async function savePart() {
+  saving.value = true
+  error.value = undefined
+  try {
+    const body = JSON.stringify(form)
+    if (editingId.value) await api(`/compliance/components/${editingId.value}`, { method: 'PUT', body })
+    else await api('/compliance/components', { method: 'POST', body })
+    dialog.value = false
+    await load()
+  } catch (e) {
+    error.value = (e as Error).message
+  } finally {
+    saving.value = false
+  }
+}
+
+async function removePart(c: Part) {
+  if (!confirm(t('compliance.confirmRemove', { name: c.name }))) return
+  await api(`/compliance/components/${c.id}`, { method: 'DELETE' })
+  await load()
+}
+
+function editProduct() {
+  productDraft.value = report.value?.product ?? ''
+  editingProduct.value = true
+}
+
+async function saveProduct() {
+  if (!productDraft.value.trim()) return
+  await api('/compliance/product', { method: 'PUT', body: JSON.stringify({ product: productDraft.value }) })
+  editingProduct.value = false
+  await load()
+}
 
 async function apply(s: Report['swaps'][number]) {
   applying.value = s.componentId + s.to.supplier
@@ -51,7 +118,14 @@ async function apply(s: Report['swaps'][number]) {
       </div>
     </div>
 
-    <Message v-if="!report.product" severity="info">{{ t('compliance.noBom') }}</Message>
+    <div v-if="!report.product" class="card">
+      <h2>{{ t('compliance.createTitle') }}</h2>
+      <p class="muted">{{ t('compliance.createHint') }}</p>
+      <div class="inline-form">
+        <InputText v-model="productDraft" :placeholder="t('compliance.productPlaceholder')" @keyup.enter="saveProduct" />
+        <Button :label="t('compliance.create')" icon="pi pi-plus" :disabled="!productDraft.trim()" @click="saveProduct" />
+      </div>
+    </div>
 
     <template v-else>
       <div class="card hero" :class="{ ok: report.safeEligible, flash }">
@@ -62,7 +136,15 @@ async function apply(s: Report['swaps'][number]) {
         </div>
         <div class="hero-main">
           <div class="hero-title">{{ report.safeEligible ? t('compliance.eligible') : t('compliance.notEligible') }}</div>
-          <div class="muted">{{ report.product }}</div>
+          <div v-if="!editingProduct" class="muted product">
+            {{ report.product }}
+            <Button icon="pi pi-pencil" text rounded size="small" :aria-label="t('compliance.editProduct')" @click="editProduct" />
+          </div>
+          <div v-else class="inline-form">
+            <InputText v-model="productDraft" @keyup.enter="saveProduct" />
+            <Button icon="pi pi-check" size="small" :aria-label="t('compliance.save')" @click="saveProduct" />
+            <Button icon="pi pi-times" size="small" text :aria-label="t('compliance.cancel')" @click="editingProduct = false" />
+          </div>
           <div class="gauge">
             <div class="gauge-fill" :style="{ width: `${report.euContent}%` }" />
             <div class="gauge-mark" :style="{ left: `${report.threshold}%` }"><span>{{ t('compliance.threshold', { n: report.threshold }) }}</span></div>
@@ -95,15 +177,25 @@ async function apply(s: Report['swaps'][number]) {
       </div>
 
       <div class="card">
-        <h2>{{ t('compliance.bom') }}</h2>
+        <div class="card-head">
+          <h2>{{ t('compliance.bom') }}</h2>
+          <Button :label="t('compliance.addPart')" icon="pi pi-plus" size="small" @click="openPart()" />
+        </div>
+        <p class="muted small">{{ t('compliance.originNote') }}</p>
         <table class="bom">
-          <thead><tr><th>{{ t('compliance.component') }}</th><th>{{ t('compliance.supplier') }}</th><th class="num">{{ t('compliance.cost') }}</th><th>{{ t('compliance.share') }}</th></tr></thead>
+          <thead><tr><th>{{ t('compliance.component') }}</th><th>{{ t('compliance.supplier') }}</th><th>{{ t('compliance.origin') }}</th><th class="num">{{ t('compliance.cost') }}</th><th>{{ t('compliance.share') }}</th><th /></tr></thead>
           <tbody>
+            <tr v-if="!report.components.length"><td colspan="6" class="muted">{{ t('compliance.noParts') }}</td></tr>
             <tr v-for="c in report.components" :key="c.component.id">
               <td>{{ c.component.name }}</td>
-              <td>{{ flag(c.component.country) }} {{ c.component.supplier }} <Tag :value="c.eligible ? 'EU' : c.component.country" :severity="c.eligible ? 'success' : 'danger'" class="mini" /></td>
+              <td>{{ c.component.supplier }}</td>
+              <td class="nowrap">{{ flag(c.component.country) }} {{ countryName(c.component.country) }} <Tag :value="c.eligible ? 'EU' : c.component.country" :severity="c.eligible ? 'success' : 'danger'" class="mini" /></td>
               <td class="num">{{ eur(c.component.costEur) }}</td>
-              <td><div class="share"><div :class="c.eligible ? 'eu' : 'non'" :style="{ width: `${c.share * 2.5}%` }" /><span>{{ c.share }}%</span></div></td>
+              <td><div class="share"><div :class="c.eligible ? 'eu' : 'non'" :style="{ width: `${Math.max(2, c.share * 1.2)}px` }" /><span>{{ c.share }}%</span></div></td>
+              <td class="actions">
+                <Button icon="pi pi-pencil" text rounded size="small" :aria-label="t('compliance.edit')" @click="openPart(c.component)" />
+                <Button icon="pi pi-trash" text rounded size="small" severity="danger" :aria-label="t('compliance.remove')" @click="removePart(c.component)" />
+              </td>
             </tr>
           </tbody>
         </table>
@@ -136,11 +228,39 @@ async function apply(s: Report['swaps'][number]) {
         </div>
       </div>
     </template>
+
+    <Dialog v-model:visible="dialog" modal :header="editingId ? t('compliance.editPart') : t('compliance.addPart')" :style="{ width: '480px' }">
+      <div class="form">
+        <label>{{ t('compliance.component') }}<InputText v-model="form.name" :placeholder="t('compliance.partPlaceholder')" /></label>
+        <label>{{ t('compliance.supplier') }}<InputText v-model="form.supplier" /></label>
+        <label>{{ t('compliance.origin') }}
+          <Select v-model="form.country" :options="countryGroups" option-group-label="label" option-group-children="items"
+            option-label="label" option-value="value" filter :filter-fields="['name', 'value']" fluid />
+        </label>
+        <Tag v-if="form.country" :value="eligible.has(form.country) ? t('compliance.countsEu') : t('compliance.countsNonEu')"
+          :severity="eligible.has(form.country) ? 'success' : 'danger'" class="counts" />
+        <label>{{ t('compliance.cost') }} (EUR)<InputNumber v-model="form.costEur" :min="0" :max-fraction-digits="2" mode="currency" currency="EUR" fluid /></label>
+        <Message v-if="error" severity="error" size="small">{{ error }}</Message>
+      </div>
+      <template #footer>
+        <Button :label="t('compliance.cancel')" text @click="dialog = false" />
+        <Button :label="t('compliance.save')" icon="pi pi-check" :disabled="!formValid" :loading="saving" @click="savePart" />
+      </template>
+    </Dialog>
   </div>
 </template>
 
 <style scoped>
 .small { font-size: 12.5px; }
+.card-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.inline-form { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.inline-form .p-inputtext { flex: 1 1 280px; }
+.product { display: flex; align-items: center; gap: 2px; }
+.form { display: flex; flex-direction: column; gap: 14px; }
+.form label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 500; color: var(--muted); }
+.counts { align-self: flex-start; margin-top: -6px; }
+.nowrap { white-space: nowrap; }
+.actions { white-space: nowrap; text-align: right; width: 1%; }
 .good { color: var(--good); }
 .bad { color: var(--bad); }
 .hero { display: flex; gap: 24px; align-items: center; border-left: 6px solid var(--bad); transition: background 0.4s; }
@@ -171,7 +291,7 @@ async function apply(s: Report['swaps'][number]) {
 .num { text-align: right; }
 .mini { font-size: 11px; padding: 0 6px; margin-left: 6px; }
 .share { display: flex; gap: 8px; align-items: center; }
-.share div { height: 8px; border-radius: 4px; }
+.share div { flex: none; height: 8px; border-radius: 4px; }
 .share .eu { background: var(--good); }
 .share .non { background: var(--bad); }
 .share span { font-size: 12.5px; color: var(--muted); }

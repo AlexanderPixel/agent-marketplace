@@ -105,9 +105,8 @@ const checks = computed(() => {
   ]
 })
 
-// Failing checks open by themselves; a person can open or close any of them.
+// Every check starts collapsed; a person opens the ones they want to look at.
 const open = reactive(new Set<string>())
-let opened = false
 function toggle(key: string) {
   if (open.has(key)) open.delete(key)
   else open.add(key)
@@ -122,12 +121,8 @@ function roleLabel(role: string) {
 async function load() {
   if (!session.orgId) return
   report.value = await api<Report>('/compliance')
-  if (!opened) {
-    checks.value.filter((c) => !c.ok).forEach((c) => open.add(c.key))
-    opened = true
-  }
 }
-watch(() => session.orgId, () => { opened = false; open.clear(); load() }, { immediate: true })
+watch(() => session.orgId, () => { open.clear(); load() }, { immediate: true })
 
 function openPart(c?: Part) {
   editingId.value = c?.id
@@ -251,7 +246,6 @@ async function applyImport() {
   try {
     await post('/compliance/import/apply', { document: spec.value.document, product: spec.value.product, components: importable.value })
     importOpen.value = false
-    opened = false
     open.clear()
     await load()
   } catch (e) {

@@ -1,0 +1,1157 @@
+{
+ "reserved-execution-lot": [
+  "no",
+  "no",
+  "no"
+ ],
+ "deadline-receipt-tender-date-lot": [
+  "2026-09-10+02:00",
+  "2026-09-10+02:00",
+  "2026-09-10+02:00"
+ ],
+ "publication-number": "609937-2026",
+ "selection-criterion-description-lot": {
+  "pol": [
+   "Zamawiający wymaga wykazania przez Wykonawcę spełniania warunku udziału w postępowaniu dotyczącego uprawnień do prowadzenia określonej działalności gospodarczej lub zawodowej, tj. Zamawiający uzna warunek udziału w postępowaniu dotyczący uprawnień do prowadzenia określonej działalności zawodowej za spełniony, jeżeli Wykonawca wykaże, że posiada koncesję na prowadzenie działalności gospodarczej w zakresie obrotu bronią i amunicją wydaną zgodnie z ustawą z dnia 13 czerwca 2019 r. o wykonywaniu działalności gospodarczej w zakresie wytwarzania i obrotu materiałami wybuchowymi, bronią, amunicją oraz wyrobami i technologią o przeznaczeniu wojskowym lub policyjnym (Dz. U. z 2023 r. poz. 1743 z późn. zm.). Ocena spełniania warunku zostanie dokonana na podstawie informacji złożonych w części IV lit. A jednolitego europejskiego dokumentu zamówienia (JEDZ).",
+   "Zamawiający wymaga wykazania przez Wykonawcę spełniania warunków udziału w postępowaniu dotyczących zdolności technicznych lub zawodowych w zakresie doświadczenia. Zamawiający uzna warunek za spełniony, jeżeli Wykonawca wykaże się doświadczeniem, polegającym na wykonaniu w okresie ostatnich 3 lat przed upływem terminu składania ofert, a jeżeli okres prowadzenia działalności jest krótszy, to w tym okresie, co najmniej jednej umowy dotyczącej dostawy broni palnej krótkiej, o wartości dostawy nie mniejszej niż 150 000,00 złotych brutto. Przez wartość dostawy rozumie się wysokość wynagrodzenia otrzymanego przez Wykonawcę z tytułu jej wykonania. Ocena spełniania warunku zostanie dokonana na podstawie informacji złożonych w części IV lit. C jednolitego europejskiego dokumentu zamówienia (JEDZ).",
+   "Zamawiający wymaga wykazania przez Wykonawcę spełniania warunku udziału w postępowaniu dotyczącego uprawnień do prowadzenia określonej działalności gospodarczej lub zawodowej, tj. Zamawiający uzna warunek udziału w postępowaniu dotyczący uprawnień do prowadzenia określonej działalności zawodowej za spełniony, jeżeli Wykonawca wykaże, że posiada koncesję na prowadzenie działalności gospodarczej w zakresie obrotu bronią i amunicją wydaną zgodnie z ustawą z dnia 13 czerwca 2019 r. o wykonywaniu działalności gospodarczej w zakresie wytwarzania i obrotu materiałami wybuchowymi, bronią, amunicją oraz wyrobami i technologią o przeznaczeniu wojskowym lub policyjnym (Dz. U. z 2023 r. poz. 1743 z późn. zm.). Ocena spełniania warunku zostanie dokonana na podstawie informacji złożonych w części IV lit. A jednolitego europejskiego dokumentu zamówienia (JEDZ)."
+  ]
+ },
+ "BT-01-notice": "32014L0024",
+ "place-performance-street-proc": [
+  "ul. Sielecka 9"
+ ],
+ "submission-url-lot": [
+  "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c",
+  "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c",
+  "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c"
+ ],
+ "place-of-performance-country-proc": [
+  "POL"
+ ],
+ "BT-821-Lot": [
+  "epo-notice",
+  "epo-notice",
+  "epo-procurement-document"
+ ],
+ "BT-5141-Lot": [
+  "POL",
+  "POL",
+  "POL"
+ ],
+ "place-of-performance-post-code-proc": [
+  "37-700"
+ ],
+ "BT-5121-Procedure": [
+  "37-700"
+ ],
+ "option-description-lot": {
+  "pol": [
+   "1. Zamawiający przewiduje możliwość skorzystania z prawa opcji polegającej na zwiększeniu dostaw: pistoletów kompaktowych wraz z kaburami dla osób praworęcznych o maksymalną ilość do 194 szt. i kabur dla osób leworęcznych o maksymalną ilość do 20 szt.; 2. Termin realizacji opcji: 30 dni licząc od dnia złożenia przez Zamawiającego oświadczenia woli w przedmiocie skorzystania z opcji w określonym przez Zamawiającego zakresie; 3. Zamawiający może skorzystać z prawa opcji na podstawie jednego lub więcej oświadczeń do maksymalnych wysokości określonych w pkt. 1.; 4. Zamawiający zastrzega, że nie jest zobowiązany do skorzystania z prawa opcji, a w przypadku skorzystania z prawa opcji nie jest zobowiązany do wykorzystania opcji w maksymalnym przewidzianym zakresie; 5. Zamawiający może składać oświadczenia w przedmiocie skorzystania z opcji w terminie do 60 dni od dnia zawarcia umowy.",
+   "1. Zamawiający przewiduje możliwość skorzystania z prawa opcji polegającej na zwiększeniu dostaw amunicji 9x19mm FMJ o maksymalną ilość do 150 000 szt. 2. Termin realizacji opcji: 30 dni licząc od dnia złożenia przez Zamawiającego oświadczenia woli w przedmiocie skorzystania z opcji w określonym przez Zamawiającego zakresie; 3. Zamawiający może skorzystać z prawa opcji na podstawie jednego lub więcej oświadczeń do maksymalnej wysokości określonej w pkt. 1.; 4. Zamawiający zastrzega, że nie jest zobowiązany do skorzystania z prawa opcji, a w przypadku skorzystania z prawa opcji nie jest zobowiązany do wykorzystania opcji w maksymalnym przewidzianym zakresie; 5. Zamawiający może składać oświadczenia w przedmiocie skorzystania z opcji w terminie do 60 dni od dnia zawarcia umowy.",
+   "1. Zamawiający przewiduje możliwość skorzystania z prawa opcji polegającej na zwiększeniu dostaw: kajdanek stalowych o maksymalną ilość do 40 szt., pokrowców na kajdanki o maksymalną ilość do 40 szt., pałek teleskopowych o maksymalną ilość do 40 szt., uchwytów do pałki teleskopowej o maksymalną ilość do 40 szt., ręcznych miotaczy gazu o maksymalną ilość do 100 szt.; pokrowców na ręczny miotacz gazu o maksymalną ilość do 100 szt. oraz podwójnych ładownic na magazynki o maksymalną ilość do 200 szt.; 2. Termin realizacji opcji: 30 dni licząc od dnia złożenia przez Zamawiającego oświadczenia woli w przedmiocie skorzystania z opcji w określonym przez Zamawiającego zakresie; 3. Zamawiający może skorzystać z prawa opcji na podstawie jednego lub więcej oświadczeń do maksymalnych wysokości określonych w pkt. 1.; 4. Zamawiający zastrzega, że nie jest zobowiązany do skorzystania z prawa opcji, a w przypadku skorzystania z prawa opcji nie jest zobowiązany do wykorzystania opcji w maksymalnym przewidzianym zakresie; 5. Zamawiający może składać oświadczenia w przedmiocie skorzystania z opcji w terminie do 60 dni od dnia zawarcia umowy."
+  ]
+ },
+ "links": {
+  "xml": {
+   "MUL": "https://ted.europa.eu/en/notice/609937-2026/xml"
+  },
+  "pdf": {
+   "BUL": "https://ted.europa.eu/bg/notice/609937-2026/pdf",
+   "SPA": "https://ted.europa.eu/es/notice/609937-2026/pdf",
+   "CES": "https://ted.europa.eu/cs/notice/609937-2026/pdf",
+   "DAN": "https://ted.europa.eu/da/notice/609937-2026/pdf",
+   "DEU": "https://ted.europa.eu/de/notice/609937-2026/pdf",
+   "EST": "https://ted.europa.eu/et/notice/609937-2026/pdf",
+   "ELL": "https://ted.europa.eu/el/notice/609937-2026/pdf",
+   "ENG": "https://ted.europa.eu/en/notice/609937-2026/pdf",
+   "FRA": "https://ted.europa.eu/fr/notice/609937-2026/pdf",
+   "GLE": "https://ted.europa.eu/ga/notice/609937-2026/pdf",
+   "HRV": "https://ted.europa.eu/hr/notice/609937-2026/pdf",
+   "ITA": "https://ted.europa.eu/it/notice/609937-2026/pdf",
+   "LAV": "https://ted.europa.eu/lv/notice/609937-2026/pdf",
+   "LIT": "https://ted.europa.eu/lt/notice/609937-2026/pdf",
+   "HUN": "https://ted.europa.eu/hu/notice/609937-2026/pdf",
+   "MLT": "https://ted.europa.eu/mt/notice/609937-2026/pdf",
+   "NLD": "https://ted.europa.eu/nl/notice/609937-2026/pdf",
+   "POL": "https://ted.europa.eu/pl/notice/609937-2026/pdf",
+   "POR": "https://ted.europa.eu/pt/notice/609937-2026/pdf",
+   "RON": "https://ted.europa.eu/ro/notice/609937-2026/pdf",
+   "SLK": "https://ted.europa.eu/sk/notice/609937-2026/pdf",
+   "SLV": "https://ted.europa.eu/sl/notice/609937-2026/pdf",
+   "FIN": "https://ted.europa.eu/fi/notice/609937-2026/pdf",
+   "SWE": "https://ted.europa.eu/sv/notice/609937-2026/pdf"
+  },
+  "pdfs": {
+   "POL": "https://ted.europa.eu/pl/notice/609937-2026/pdfs"
+  },
+  "html": {
+   "BUL": "https://ted.europa.eu/bg/notice/-/detail/609937-2026",
+   "SPA": "https://ted.europa.eu/es/notice/-/detail/609937-2026",
+   "CES": "https://ted.europa.eu/cs/notice/-/detail/609937-2026",
+   "DAN": "https://ted.europa.eu/da/notice/-/detail/609937-2026",
+   "DEU": "https://ted.europa.eu/de/notice/-/detail/609937-2026",
+   "EST": "https://ted.europa.eu/et/notice/-/detail/609937-2026",
+   "ELL": "https://ted.europa.eu/el/notice/-/detail/609937-2026",
+   "ENG": "https://ted.europa.eu/en/notice/-/detail/609937-2026",
+   "FRA": "https://ted.europa.eu/fr/notice/-/detail/609937-2026",
+   "GLE": "https://ted.europa.eu/ga/notice/-/detail/609937-2026",
+   "HRV": "https://ted.europa.eu/hr/notice/-/detail/609937-2026",
+   "ITA": "https://ted.europa.eu/it/notice/-/detail/609937-2026",
+   "LAV": "https://ted.europa.eu/lv/notice/-/detail/609937-2026",
+   "LIT": "https://ted.europa.eu/lt/notice/-/detail/609937-2026",
+   "HUN": "https://ted.europa.eu/hu/notice/-/detail/609937-2026",
+   "MLT": "https://ted.europa.eu/mt/notice/-/detail/609937-2026",
+   "NLD": "https://ted.europa.eu/nl/notice/-/detail/609937-2026",
+   "POL": "https://ted.europa.eu/pl/notice/-/detail/609937-2026",
+   "POR": "https://ted.europa.eu/pt/notice/-/detail/609937-2026",
+   "RON": "https://ted.europa.eu/ro/notice/-/detail/609937-2026",
+   "SLK": "https://ted.europa.eu/sk/notice/-/detail/609937-2026",
+   "SLV": "https://ted.europa.eu/sl/notice/-/detail/609937-2026",
+   "FIN": "https://ted.europa.eu/fi/notice/-/detail/609937-2026",
+   "SWE": "https://ted.europa.eu/sv/notice/-/detail/609937-2026"
+  },
+  "htmlDirect": {
+   "BUL": "https://ted.europa.eu/bg/notice/609937-2026/html",
+   "SPA": "https://ted.europa.eu/es/notice/609937-2026/html",
+   "CES": "https://ted.europa.eu/cs/notice/609937-2026/html",
+   "DAN": "https://ted.europa.eu/da/notice/609937-2026/html",
+   "DEU": "https://ted.europa.eu/de/notice/609937-2026/html",
+   "EST": "https://ted.europa.eu/et/notice/609937-2026/html",
+   "ELL": "https://ted.europa.eu/el/notice/609937-2026/html",
+   "ENG": "https://ted.europa.eu/en/notice/609937-2026/html",
+   "FRA": "https://ted.europa.eu/fr/notice/609937-2026/html",
+   "GLE": "https://ted.europa.eu/ga/notice/609937-2026/html",
+   "HRV": "https://ted.europa.eu/hr/notice/609937-2026/html",
+   "ITA": "https://ted.europa.eu/it/notice/609937-2026/html",
+   "LAV": "https://ted.europa.eu/lv/notice/609937-2026/html",
+   "LIT": "https://ted.europa.eu/lt/notice/609937-2026/html",
+   "HUN": "https://ted.europa.eu/hu/notice/609937-2026/html",
+   "MLT": "https://ted.europa.eu/mt/notice/609937-2026/html",
+   "NLD": "https://ted.europa.eu/nl/notice/609937-2026/html",
+   "POL": "https://ted.europa.eu/pl/notice/609937-2026/html",
+   "POR": "https://ted.europa.eu/pt/notice/609937-2026/html",
+   "RON": "https://ted.europa.eu/ro/notice/609937-2026/html",
+   "SLK": "https://ted.europa.eu/sk/notice/609937-2026/html",
+   "SLV": "https://ted.europa.eu/sl/notice/609937-2026/html",
+   "FIN": "https://ted.europa.eu/fi/notice/609937-2026/html",
+   "SWE": "https://ted.europa.eu/sv/notice/609937-2026/html"
+  }
+ },
+ "contract-nature-main-proc": "supplies",
+ "lots-max-allowed-proc": "3",
+ "BT-539-Lot": [
+  "price",
+  "price",
+  "price"
+ ],
+ "organisation-country-buyer": [
+  "POL"
+ ],
+ "framework-agreement-lot": [
+  "none",
+  "none",
+  "none"
+ ],
+ "BT-5101(a)-Lot": [
+  "ul. Sielecka 9",
+  "ul. Sielecka 9",
+  "ul. Sielecka 9"
+ ],
+ "place-performance-street-lot": [
+  "ul. Sielecka 9",
+  "ul. Sielecka 9",
+  "ul. Sielecka 9"
+ ],
+ "BT-98-Lot": [
+  {
+   "unit": "DAY",
+   "value": "90"
+  },
+  {
+   "unit": "DAY",
+   "value": "90"
+  },
+  {
+   "unit": "DAY",
+   "value": "90"
+  }
+ ],
+ "BT-134-Lot": {
+  "pol": [
+   "Wykonawca składa ofertę przy pomocy interaktywnego „Formularza ofertowego” udostępnionego przez Zamawiającego na Platformie e­Zamówienia i zamieszczonego w podglądzie postępowania w zakładce „Informacje podstawowe”. Szczegółowy sposób złożenia oferty zawarto w rozdziale 15 SWZ.",
+   "Wykonawca składa ofertę przy pomocy interaktywnego „Formularza ofertowego” udostępnionego przez Zamawiającego na Platformie e­Zamówienia i zamieszczonego w podglądzie postępowania w zakładce „Informacje podstawowe”. Szczegółowy sposób złożenia oferty zawarto w rozdziale 15 SWZ.",
+   "Wykonawca składa ofertę przy pomocy interaktywnego „Formularza ofertowego” udostępnionego przez Zamawiającego na Platformie e­Zamówienia i zamieszczonego w podglądzie postępowania w zakładce „Informacje podstawowe”. Szczegółowy sposób złożenia oferty zawarto w rozdziale 15 SWZ."
+  ]
+ },
+ "BT-132(d)-Lot": [
+  "2026-09-10+02:00",
+  "2026-09-10+02:00",
+  "2026-09-10+02:00"
+ ],
+ "tender-validity-deadline-unit-lot": [
+  "DAY",
+  "DAY",
+  "DAY"
+ ],
+ "change-reason-code": "update-add",
+ "deadline-receipt-request": [
+  "2026-09-10T10:00:00+02:00",
+  "2026-09-10T10:00:00+02:00",
+  "2026-09-10T10:00:00+02:00"
+ ],
+ "place-of-performance": [
+  "PL822",
+  "POL",
+  "PL822",
+  "PL822",
+  "PL822",
+  "POL",
+  "POL",
+  "POL"
+ ],
+ "organisation-country-sub-addinfo-lot": [
+  "PL823"
+ ],
+ "BT-140-notice": "update-add",
+ "BT-60-Lot": [
+  "no-eu-funds",
+  "no-eu-funds",
+  "no-eu-funds"
+ ],
+ "BT-634-Procedure": false,
+ "BT-05(a)-notice": "2026-09-03+02:00",
+ "BT-21-Procedure": {
+  "pol": "Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie"
+ },
+ "organisation-post-code-addinfo-lot": [
+  "35-959"
+ ],
+ "BT-767-Lot": [
+  false,
+  false,
+  false
+ ],
+ "place-of-performance-country-lot": [
+  "POL",
+  "POL",
+  "POL"
+ ],
+ "gpa-lot": [
+  true,
+  true,
+  true
+ ],
+ "public-opening-date-lot": [
+  "2026-09-10+02:00",
+  "2026-09-10+02:00",
+  "2026-09-10+02:00"
+ ],
+ "organisation-country-revieworg-lot": [
+  "POL"
+ ],
+ "publication-date": "2026-09-04+02:00",
+ "ecatalog-allowed-lot": [
+  "not-allowed",
+  "not-allowed",
+  "not-allowed"
+ ],
+ "BT-809-Lot": [
+  "slc-suit-auth-mbrshp",
+  "slc-abil-ref-supply",
+  "slc-suit-auth-mbrshp"
+ ],
+ "BT-54-lot": {
+  "pol": [
+   "1. Zamawiający przewiduje możliwość skorzystania z prawa opcji polegającej na zwiększeniu dostaw: pistoletów kompaktowych wraz z kaburami dla osób praworęcznych o maksymalną ilość do 194 szt. i kabur dla osób leworęcznych o maksymalną ilość do 20 szt.; 2. Termin realizacji opcji: 30 dni licząc od dnia złożenia przez Zamawiającego oświadczenia woli w przedmiocie skorzystania z opcji w określonym przez Zamawiającego zakresie; 3. Zamawiający może skorzystać z prawa opcji na podstawie jednego lub więcej oświadczeń do maksymalnych wysokości określonych w pkt. 1.; 4. Zamawiający zastrzega, że nie jest zobowiązany do skorzystania z prawa opcji, a w przypadku skorzystania z prawa opcji nie jest zobowiązany do wykorzystania opcji w maksymalnym przewidzianym zakresie; 5. Zamawiający może składać oświadczenia w przedmiocie skorzystania z opcji w terminie do 60 dni od dnia zawarcia umowy.",
+   "1. Zamawiający przewiduje możliwość skorzystania z prawa opcji polegającej na zwiększeniu dostaw amunicji 9x19mm FMJ o maksymalną ilość do 150 000 szt. 2. Termin realizacji opcji: 30 dni licząc od dnia złożenia przez Zamawiającego oświadczenia woli w przedmiocie skorzystania z opcji w określonym przez Zamawiającego zakresie; 3. Zamawiający może skorzystać z prawa opcji na podstawie jednego lub więcej oświadczeń do maksymalnej wysokości określonej w pkt. 1.; 4. Zamawiający zastrzega, że nie jest zobowiązany do skorzystania z prawa opcji, a w przypadku skorzystania z prawa opcji nie jest zobowiązany do wykorzystania opcji w maksymalnym przewidzianym zakresie; 5. Zamawiający może składać oświadczenia w przedmiocie skorzystania z opcji w terminie do 60 dni od dnia zawarcia umowy.",
+   "1. Zamawiający przewiduje możliwość skorzystania z prawa opcji polegającej na zwiększeniu dostaw: kajdanek stalowych o maksymalną ilość do 40 szt., pokrowców na kajdanki o maksymalną ilość do 40 szt., pałek teleskopowych o maksymalną ilość do 40 szt., uchwytów do pałki teleskopowej o maksymalną ilość do 40 szt., ręcznych miotaczy gazu o maksymalną ilość do 100 szt.; pokrowców na ręczny miotacz gazu o maksymalną ilość do 100 szt. oraz podwójnych ładownic na magazynki o maksymalną ilość do 200 szt.; 2. Termin realizacji opcji: 30 dni licząc od dnia złożenia przez Zamawiającego oświadczenia woli w przedmiocie skorzystania z opcji w określonym przez Zamawiającego zakresie; 3. Zamawiający może skorzystać z prawa opcji na podstawie jednego lub więcej oświadczeń do maksymalnych wysokości określonych w pkt. 1.; 4. Zamawiający zastrzega, że nie jest zobowiązany do skorzystania z prawa opcji, a w przypadku skorzystania z prawa opcji nie jest zobowiązany do wykorzystania opcji w maksymalnym przewidzianym zakresie; 5. Zamawiający może składać oświadczenia w przedmiocie skorzystania z opcji w terminie do 60 dni od dnia zawarcia umowy."
+  ]
+ },
+ "BT-11-Procedure-Buyer": [
+  "cga"
+ ],
+ "customization-id": "eforms-sdk-1.13",
+ "organisation-identifier-revieworg-lot": [
+  "NIP 5262239325"
+ ],
+ "BT-24-Lot": {
+  "pol": [
+   "Przedmiotem zamówienia jest dostawa: 1. 250 szt. fabrycznie nowych pistoletów kompaktowych wraz z kaburami dla osób praworęcznych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1.1) 56 szt. – gwarantowany zakres zamówienia, 1.2) nie więcej niż 194 szt. – opcja; 2. 26 szt. fabrycznie nowych kabur dla osób leworęcznych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 2.1) 6 szt. – gwarantowany zakres zamówienia, 2.2) nie więcej niż 20 szt. – opcja;",
+   "Przedmiotem zamówienia jest dostawa 300 000 szt. fabrycznie nowej amunicji 9x19mm FMJ, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1)150 000 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 150 000 szt. – opcja",
+   "Przedmiotem zamówienia jest dostawa: 1. 100 szt. fabrycznie nowych kajdanek stalowych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1.1) 60 szt. – gwarantowany zakres zamówienia, 1.2) nie więcej niż 40 szt. – opcja; 2. 100 szt. fabrycznie nowych pokrowców na kajdanki, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 2.1) 60 szt. – gwarantowany zakres zamówienia, 2.2) nie więcej niż 40 szt. – opcja; 3. 100 szt. fabrycznie nowych pałek teleskopowych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 3.1) 60 szt. – gwarantowany zakres zamówienia, 3.2) nie więcej niż 40 szt. – opcja; 4. 100 szt. fabrycznie nowych uchwytów do pałki teleskopowej, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 4.1) 60 szt. – gwarantowany zakres zamówienia, 4.2) nie więcej niż 40 szt. – opcja; 5. 400 szt. fabrycznie nowych ręcznych miotaczy gazu, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 5.1) 300 szt. – gwarantowany zakres zamówienia, 5.2) nie więcej niż 100 szt. – opcja; 6. 150 szt. fabrycznie nowych pokrowców na ręczny miotacz gazu, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 6.1) 50 szt. – gwarantowany zakres zamówienia, 6.2) nie więcej niż 100 szt. – opcja; 7. 270 szt. fabrycznie nowych podwójnych ładownic na magazynki, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 7.1) 70 szt. – gwarantowany zakres zamówienia, 7.2) nie więcej niż 200 szt. – opcja."
+  ]
+ },
+ "BT-105-Procedure": "open",
+ "BT-106-Procedure": "true",
+ "BT-765-Lot": [
+  "none",
+  "none",
+  "none"
+ ],
+ "document-restricted-lot": [
+  "non-restricted-document",
+  "non-restricted-document",
+  "non-restricted-document"
+ ],
+ "dispatch-time": "14:56:00+02:00",
+ "additional-classification-type-proc": [
+  "cpv",
+  "cpv"
+ ],
+ "authority-main-activity": [
+  "gen-pub"
+ ],
+ "BT-756-Procedure": false,
+ "organisation-identifier-addinfo-lot": [
+  "NIP: 8131096298",
+  "REGON: 001023003"
+ ],
+ "BT-5121-Lot": [
+  "37-700",
+  "37-700",
+  "37-700"
+ ],
+ "buyer-post-code": [
+  "35-959"
+ ],
+ "BT-262-Lot": [
+  "35321100",
+  "35331000",
+  "35000000"
+ ],
+ "selection-criteria-source": [
+  "epo-notice",
+  "epo-notice",
+  "epo-procurement-document"
+ ],
+ "BT-758-notice": "7ff0f628-e465-430d-a938-d928500d3b66-02",
+ "BT-92-Lot": [
+  true,
+  true,
+  true
+ ],
+ "BT-26(m)-Lot": [
+  "cpv",
+  "cpv",
+  "cpv"
+ ],
+ "BT-10-Procedure-Buyer": [
+  "gen-pub"
+ ],
+ "procedure-identifier": "28f13fc0-087d-435a-845c-66890917622c",
+ "BT-5131-Procedure": [
+  "Przemyśl"
+ ],
+ "BT-5071-Procedure": [
+  "PL822"
+ ],
+ "organisation-name-buyer": {
+  "pol": [
+   "Izba Administracji Skarbowej w Rzeszowie"
+  ]
+ },
+ "identifier-lot": [
+  "LOT-0001",
+  "LOT-0002",
+  "LOT-0003"
+ ],
+ "OPP-012-notice": "2026-09-04+02:00",
+ "place-of-performance-subdiv-lot": [
+  "PL822",
+  "PL822",
+  "PL822"
+ ],
+ "BT-21-Lot": {
+  "pol": [
+   "1. Dostawa broni",
+   "2. Dostawa amunicji",
+   "3. Dostawa środków przymusu bezpośredniego"
+  ]
+ },
+ "legal-basis": [
+  "32014L0024"
+ ],
+ "BT-26(a)-Procedure": [
+  "cpv",
+  "cpv"
+ ],
+ "organisation-internet-address-revieworg-lot": [
+  "https://www.gov.pl/web/uzp/krajowa-izba-odwolawcza"
+ ],
+ "electronic-invoicing-lot": [
+  "required",
+  "required",
+  "required"
+ ],
+ "lots-max-awarded-proc": "3",
+ "description-lot": {
+  "pol": [
+   "Przedmiotem zamówienia jest dostawa: 1. 250 szt. fabrycznie nowych pistoletów kompaktowych wraz z kaburami dla osób praworęcznych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1.1) 56 szt. – gwarantowany zakres zamówienia, 1.2) nie więcej niż 194 szt. – opcja; 2. 26 szt. fabrycznie nowych kabur dla osób leworęcznych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 2.1) 6 szt. – gwarantowany zakres zamówienia, 2.2) nie więcej niż 20 szt. – opcja;",
+   "Przedmiotem zamówienia jest dostawa 300 000 szt. fabrycznie nowej amunicji 9x19mm FMJ, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1)150 000 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 150 000 szt. – opcja",
+   "Przedmiotem zamówienia jest dostawa: 1. 100 szt. fabrycznie nowych kajdanek stalowych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1.1) 60 szt. – gwarantowany zakres zamówienia, 1.2) nie więcej niż 40 szt. – opcja; 2. 100 szt. fabrycznie nowych pokrowców na kajdanki, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 2.1) 60 szt. – gwarantowany zakres zamówienia, 2.2) nie więcej niż 40 szt. – opcja; 3. 100 szt. fabrycznie nowych pałek teleskopowych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 3.1) 60 szt. – gwarantowany zakres zamówienia, 3.2) nie więcej niż 40 szt. – opcja; 4. 100 szt. fabrycznie nowych uchwytów do pałki teleskopowej, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 4.1) 60 szt. – gwarantowany zakres zamówienia, 4.2) nie więcej niż 40 szt. – opcja; 5. 400 szt. fabrycznie nowych ręcznych miotaczy gazu, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 5.1) 300 szt. – gwarantowany zakres zamówienia, 5.2) nie więcej niż 100 szt. – opcja; 6. 150 szt. fabrycznie nowych pokrowców na ręczny miotacz gazu, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 6.1) 50 szt. – gwarantowany zakres zamówienia, 6.2) nie więcej niż 100 szt. – opcja; 7. 270 szt. fabrycznie nowych podwójnych ładownic na magazynki, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 7.1) 70 szt. – gwarantowany zakres zamówienia, 7.2) nie więcej niż 200 szt. – opcja."
+  ]
+ },
+ "organisation-email-revieworg-lot": [
+  "odwolania@uzp.gov.pl"
+ ],
+ "BT-738-notice": "2026-09-03T00:00:00+02:00",
+ "BT-762-notice": {
+  "pol": "W pkt. 5.1.12 dokonano zmian w zakresie terminów składania i otwarcia ofert."
+ },
+ "procurement-document-id-lot": [
+  "generated_id",
+  "generated_id",
+  "generated_id"
+ ],
+ "BT-757-notice": 2,
+ "BT-132(t)-Lot": [
+  "11:00:00+02:00",
+  "11:00:00+02:00",
+  "11:00:00+02:00"
+ ],
+ "tender-validity-deadline-lot": [
+  {
+   "unit": "DAY",
+   "value": "90"
+  },
+  {
+   "unit": "DAY",
+   "value": "90"
+  },
+  {
+   "unit": "DAY",
+   "value": "90"
+  }
+ ],
+ "BT-540-Lot": {
+  "pol": [
+   "100%",
+   "100%",
+   "100%"
+  ]
+ },
+ "notice-type": "cn-standard",
+ "organisation-tel-revieworg-lot": [
+  "+48 22 458 78 01"
+ ],
+ "dispatch-date": "2026-09-03+02:00",
+ "electronic-auction-lot": [
+  false,
+  false,
+  false
+ ],
+ "place-of-performance-city-proc": [
+  "Przemyśl"
+ ],
+ "OPP-070-notice": "16",
+ "selection-criterion-lot": [
+  "slc-suit-auth-mbrshp",
+  "slc-abil-ref-supply",
+  "slc-suit-auth-mbrshp"
+ ],
+ "organisation-post-code-buyer": [
+  "35-959"
+ ],
+ "SUB_LG": [
+  "POL",
+  "POL",
+  "POL"
+ ],
+ "reserved-procurement-lot": [
+  "none",
+  "none",
+  "none"
+ ],
+ "BT-98-Lot-Unit": [
+  "DAY",
+  "DAY",
+  "DAY"
+ ],
+ "organisation-country-addinfo-lot": [
+  "POL"
+ ],
+ "BT-131(d)-Lot": [
+  "2026-09-10+02:00",
+  "2026-09-10+02:00",
+  "2026-09-10+02:00"
+ ],
+ "buyer-internet-address": [
+  "http://www.gov.pl/ias-rzeszow/"
+ ],
+ "place-of-performance-subdiv-proc": [
+  "PL822"
+ ],
+ "notice-title": {
+  "hun": "Lengyelország – Biztonsági, tűzoltó, rendőrségi és védelmi felszerelések – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "lav": "Polija – Drošības, ugunsdzēsības, policijas un aizsardzības aprīkojums – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "swe": "Polen – Säkerhets-, brandbekämpnings-, polis- och försvarsutrustning – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "gle": "An Pholainn – Security, fire-fighting, police and defence equipment – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "ell": "Πολωνία – Εξοπλισμός ασφαλείας και πυρόσβεσης, αστυνομικός και αμυντικός εξοπλισμός – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "spa": "Polonia – Equipo de seguridad, extinción de incendios, policía y defensa – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "est": "Poola – Turva-, tuletõrje-, politsei- ja kaitseseadmed – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "nld": "Polen – Uitrusting voor veiligheid, brandweer, politie en leger – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "fin": "Puola – Turva-, palontorjunta-, poliisi- ja maanpuolustusvälineet – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "pol": "Polska – Sprzęt bezpieczeństwa, gaśniczy, policyjny i obronny – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "hrv": "Poljska – Sigurnosna, vatrogasna policijska i obrambena oprema – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "ces": "Polsko – Bezpečnostní, hasičské, policejní a ochranné vybavení – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "dan": "Polen – Sikkerheds-, brandbekæmpelses, politi- og forsvarsudstyr – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "ron": "Polonia – Echipament de securitate, de luptă împotriva incendiilor, de poliţie şi de apărare – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "por": "Polónia – Equipamento de segurança, combate a incêndios, polícia e defesa – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "slk": "Poľsko – Bezpečnostné, hasičské, policajné a ochranné vybavenie – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "fra": "Pologne – Équipement de sécurité, de lutte contre l'incendie, de police et de défense – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "mlt": "Il-Polonja – Tagħmir għas-sigurtà, tifi tan-nar, pulizija u difiża – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "deu": "Polen – Ausrüstung für Sicherheitszwecke, Brandbekämpfung, Polizei und Verteidigung – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "lit": "Lenkija – Apsaugos, gaisrų gesinimo, policijos ir gynybos įrenginiai – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "ita": "Polonia – Attrezzature di sicurezza, antincendio, per la polizia e di difesa – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "bul": "Полша – Оборудване за безопасност, противопожарно, полицейско и отбранително оборудване – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "slv": "Poljska – Varnostna, gasilska, policijska in obrambna oprema – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "eng": "Poland – Security, fire-fighting, police and defence equipment – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie"
+ },
+ "BT-17-Lot": [
+  "required",
+  "required",
+  "required"
+ ],
+ "buyer-city": {
+  "mul": [
+   "Rzeszów"
+  ]
+ },
+ "internal-identifier-proc": "1801-ILZ.260.36.2026",
+ "description-proc": {
+  "pol": "1. Przedmiotem zamówienia jest dostawa broni, amunicji i środków przymusu bezpośredniego dla Izby Administracji Skarbowej w Rzeszowie. 2. Zamówienie zostało podzielone na trzy części tj.: 2.1. Część I zamówienia: 2.1.1. 250 szt. fabrycznie nowych pistoletów kompaktowych wraz z kaburami dla osób praworęcznych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 56 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 194 szt. – opcja; 2.1.2. 26 szt. fabrycznie nowych kabur dla osób leworęcznych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 6 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 20 szt. – opcja; 2.2. Część II zamówienia: 300 000 szt. fabrycznie nowej amunicji 9x19mm FMJ, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 150 000 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 150 000 szt. – opcja; 2.3. Część III zamówienia: 2.3.1. 100 szt. fabrycznie nowych kajdanek stalowych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 60 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 40 szt. – opcja; 2.3.2. 100 szt. fabrycznie nowych pokrowców na kajdanki, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 60 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 40 szt. – opcja; 2.3.3. 100 szt. fabrycznie nowych pałek teleskopowych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 60 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 40 szt. – opcja; 2.3.4. 100 szt. fabrycznie nowych uchwytów do pałki teleskopowej, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 60 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 40 szt. – opcja; 2.3.5. 400 szt. fabrycznie nowych ręcznych miotaczy gazu, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 300 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 100 szt. – opcja; 2.3.6. 150 szt. fabrycznie nowych pokrowców na ręczny miotacz gazu, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 50 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 100 szt. – opcja; 2.3.7. 270 szt. fabrycznie nowych podwójnych ładownic na magazynki, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 70 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 200 szt. – opcja."
+ },
+ "award-criterion-description-lot": {
+  "pol": [
+   "100%",
+   "100%",
+   "100%"
+  ]
+ },
+ "electronic-ordering-lot": [
+  true,
+  true,
+  true
+ ],
+ "legal-basis-notice": "32014L0024",
+ "procurement-relaunch-proc": false,
+ "document-url-lot": [
+  "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c",
+  "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c",
+  "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c"
+ ],
+ "electronic-payment-lot": [
+  true,
+  true,
+  true
+ ],
+ "organisation-city-revieworg-lot": [
+  "Warszawa"
+ ],
+ "deadline-receipt-tender-time-lot": [
+  "10:00:00+02:00",
+  "10:00:00+02:00",
+  "10:00:00+02:00"
+ ],
+ "BT-263-Procedure": [
+  "35331000",
+  "35321100"
+ ],
+ "BT-04-notice": "28f13fc0-087d-435a-845c-66890917622c",
+ "contract-nature": [
+  "supplies",
+  "supplies",
+  "supplies",
+  "supplies"
+ ],
+ "buyer-name": {
+  "pol": [
+   "Izba Administracji Skarbowej w Rzeszowie"
+  ]
+ },
+ "BT-71-Lot": [
+  "none",
+  "none",
+  "none"
+ ],
+ "tender-validity-deadline-value-lot": [
+  "90",
+  "90",
+  "90"
+ ],
+ "BT-15-Lot": [
+  "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c",
+  "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c",
+  "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c"
+ ],
+ "form-type": "competition",
+ "buyer-identifier": [
+  "NIP: 8131096298",
+  "REGON: 001023003"
+ ],
+ "AA": [
+  "cga"
+ ],
+ "organisation-internet-address-addinfo-lot": [
+  "http://www.gov.pl/ias-rzeszow/"
+ ],
+ "BT-99-Lot": {
+  "pol": [
+   "Odwołanie wnosi się w terminie 10 dni od dnia przekazania informacji o czynności zamawiającego stanowiącej podstawę jego wniesienia, jeżeli informacja została przekazana przy użyciu środków komunikacji elektronicznej. Odwołanie wobec treści ogłoszenia wszczynającego postępowanie o udzielenie zamówienia lub wobec treści dokumentów zamówienia wnosi się w terminie 10 dni od dnia zamieszczenia ogłoszenia w Dzienniku Urzędowym Unii Europejskiej lub dokumentów zamówienia na stronie internetowej, Odwołanie w przypadkach innych niż określone wyżej wnosi się w terminie 10 dni od dnia, w którym powzięto lub przy zachowaniu należytej staranności można było powziąć wiadomość o okolicznościach stanowiących podstawę jego wniesienia.",
+   "Odwołanie wnosi się w terminie 10 dni od dnia przekazania informacji o czynności zamawiającego stanowiącej podstawę jego wniesienia, jeżeli informacja została przekazana przy użyciu środków komunikacji elektronicznej. Odwołanie wobec treści ogłoszenia wszczynającego postępowanie o udzielenie zamówienia lub wobec treści dokumentów zamówienia wnosi się w terminie 10 dni od dnia zamieszczenia ogłoszenia w Dzienniku Urzędowym Unii Europejskiej lub dokumentów zamówienia na stronie internetowej, Odwołanie w przypadkach innych niż określone wyżej wnosi się w terminie 10 dni od dnia, w którym powzięto lub przy zachowaniu należytej staranności można było powziąć wiadomość o okolicznościach stanowiących podstawę jego wniesienia.",
+   "Odwołanie wnosi się w terminie 10 dni od dnia przekazania informacji o czynności zamawiającego stanowiącej podstawę jego wniesienia, jeżeli informacja została przekazana przy użyciu środków komunikacji elektronicznej. Odwołanie wobec treści ogłoszenia wszczynającego postępowanie o udzielenie zamówienia lub wobec treści dokumentów zamówienia wnosi się w terminie 10 dni od dnia zamieszczenia ogłoszenia w Dzienniku Urzędowym Unii Europejskiej lub dokumentów zamówienia na stronie internetowej, Odwołanie w przypadkach innych niż określone wyżej wnosi się w terminie 10 dni od dnia, w którym powzięto lub przy zachowaniu należytej staranności można było powziąć wiadomość o okolicznościach stanowiących podstawę jego wniesienia."
+  ]
+ },
+ "DI": [
+  "32014L0024"
+ ],
+ "BI": [
+  "NIP: 8131096298",
+  "REGON: 001023003"
+ ],
+ "BT-33-Procedure": "3",
+ "buyer-country-sub": [
+  "PL823"
+ ],
+ "place-of-performance-city-lot": [
+  "Przemyśl",
+  "Przemyśl",
+  "Przemyśl"
+ ],
+ "additional-classification-proc": [
+  "35331000",
+  "35321100"
+ ],
+ "FT": [
+  {
+   "pol": "1. Zamawiający precyzuje, że termin realizacji przedmiotu zamówienia (dot. każdej części) wynosi: 1.1) 60 dni licząc od dnia zawarcia umowy – dla gwarantowanego zakresu zamówienia; 1.2) 30 dni licząc od dnia złożenia przez Zamawiającego oświadczenia woli w przedmiocie skorzystania z opcji – dla zakresu objętego prawem opcji 1.3) W przypadku skorzystania z prawa opcji maksymalny zakładany czas realizacji Umowy może wynieść do 90 dni od zawarcia Umowy. 2.1) W zakresie części I zamówienia Zamawiający nie dopuszcza złożenia ofert dotyczących pistoletów kompaktowych pochodzących z państw trzecich niebędących stroną umów międzynarodowych. 2.2) Za państwa trzecie niebędące stronami umów międzynarodowych uznaje się państwa inne niż wskazane w art. 16b ustawy z 11.09.2019 r. Prawo zamówień publicznych (Dz.U. z 2026 r. poz. 793), uznaje się państwa, za niebędące stronami Porozumienia Światowej Organizacji Handlu w sprawie zamówień rządowych lub innych umów międzynarodowych, których stroną jest Unia Europejska gwarantujących na zasadzie wzajemności i równości dostęp do rynku zamówień publicznych. 2.3) Za kraj pochodzenia pistoletu kompaktowego, zgodnie z art. 60 rozporządzenia Parlamentu Europejskiego i Rady (UE) nr 952/2013 z 9.10.2013 r. ustanawiającego unijny kodeks celny uznaje się kraj, w którym: 2.3.1) pistolet kompaktowy został całkowicie wyprodukowany, 2.3.2) pistolet kompaktowy został poddany ostatniemu istotnemu, ekonomicznie uzasadnionemu przetwarzaniu lub obróbce, w przedsiębiorstwie przystosowanym do tego celu, co spowodowało wytworzenie nowego produktu lub stanowiło istotny etap wytwarzania, w przypadku gdy w produkcję pistoletu kompaktowego zaangażowany był więcej niż jeden kraj.\n100%\nWykonawca składa ofertę przy pomocy interaktywnego „Formularza ofertowego” udostępnionego przez Zamawiającego na Platformie e­Zamówienia i zamieszczonego w podglądzie postępowania w zakładce „Informacje podstawowe”. Szczegółowy sposób złożenia oferty zawarto w rozdziale 15 SWZ.\nart. 109 ust. 1 pkt 7 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych\nPrzedmiotem zamówienia jest dostawa: 1. 250 szt. fabrycznie nowych pistoletów kompaktowych wraz z kaburami dla osób praworęcznych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1.1) 56 szt. – gwarantowany zakres zamówienia, 1.2) nie więcej niż 194 szt. – opcja; 2. 26 szt. fabrycznie nowych kabur dla osób leworęcznych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 2.1) 6 szt. – gwarantowany zakres zamówienia, 2.2) nie więcej niż 20 szt. – opcja;\nart. 109 ust. 1 pkt 8 i 10 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych\nOdwołanie wnosi się w terminie 10 dni od dnia przekazania informacji o czynności zamawiającego stanowiącej podstawę jego wniesienia, jeżeli informacja została przekazana przy użyciu środków komunikacji elektronicznej. Odwołanie wobec treści ogłoszenia wszczynającego postępowanie o udzielenie zamówienia lub wobec treści dokumentów zamówienia wnosi się w terminie 10 dni od dnia zamieszczenia ogłoszenia w Dzienniku Urzędowym Unii Europejskiej lub dokumentów zamówienia na stronie internetowej, Odwołanie w przypadkach innych niż określone wyżej wnosi się w terminie 10 dni od dnia, w którym powzięto lub przy zachowaniu należytej staranności można było powziąć wiadomość o okolicznościach stanowiących podstawę jego wniesienia.\nhttps://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c\nKrajowa Izba Odwoławcza\nart. 108 ust. 1 pkt 1 lit. e oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych\nW pkt. 5.1.12 dokonano zmian w zakresie terminów składania i otwarcia ofert.\nart. 108 ust. 1 pkt 3 oraz art. 109 ust. 1 pkt 1 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych\nZakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie\nart. 108 ust. 1 pkt 1 lit. g oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych\nart. 108 ust. 1 pkt 1 lit. a oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych\nart. 108 ust. 1 pkt 6 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych\nZamawiający wymaga wykazania przez Wykonawcę spełniania warunku udziału w postępowaniu dotyczącego uprawnień do prowadzenia określonej działalności gospodarczej lub zawodowej, tj. Zamawiający uzna warunek udziału w postępowaniu dotyczący uprawnień do prowadzenia określonej działalności zawodowej za spełniony, jeżeli Wykonawca wykaże, że posiada koncesję na prowadzenie działalności gospodarczej w zakresie obrotu bronią i amunicją wydaną zgodnie z ustawą z dnia 13 czerwca 2019 r. o wykonywaniu działalności gospodarczej w zakresie wytwarzania i obrotu materiałami wybuchowymi, bronią, amunicją oraz wyrobami i technologią o przeznaczeniu wojskowym lub policyjnym (Dz. U. z 2023 r. poz. 1743 z późn. zm.). Ocena spełniania warunku zostanie dokonana na podstawie informacji złożonych w części IV lit. A jednolitego europejskiego dokumentu zamówienia (JEDZ).\nZamawiający wymaga wykazania przez Wykonawcę spełniania warunków udziału w postępowaniu dotyczących zdolności technicznych lub zawodowych w zakresie doświadczenia. Zamawiający uzna warunek za spełniony, jeżeli Wykonawca wykaże się doświadczeniem, polegającym na wykonaniu w okresie ostatnich 3 lat przed upływem terminu składania ofert, a jeżeli okres prowadzenia działalności jest krótszy, to w tym okresie, co najmniej jednej umowy dotyczącej dostawy broni palnej krótkiej, o wartości dostawy nie mniejszej niż 150 000,00 złotych brutto. Przez wartość dostawy rozumie się wysokość wynagrodzenia otrzymanego przez Wykonawcę z tytułu jej wykonania. Ocena spełniania warunku zostanie dokonana na podstawie informacji złożonych w części IV lit. C jednolitego europejskiego dokumentu zamówienia (JEDZ).\n1. Zamawiający przewiduje możliwość skorzystania z prawa opcji polegającej na zwiększeniu dostaw: kajdanek stalowych o maksymalną ilość do 40 szt., pokrowców na kajdanki o maksymalną ilość do 40 szt., pałek teleskopowych o maksymalną ilość do 40 szt., uchwytów do pałki teleskopowej o maksymalną ilość do 40 szt., ręcznych miotaczy gazu o maksymalną ilość do 100 szt.; pokrowców na ręczny miotacz gazu o maksymalną ilość do 100 szt. oraz podwójnych ładownic na magazynki o maksymalną ilość do 200 szt.; 2. Termin realizacji opcji: 30 dni licząc od dnia złożenia przez Zamawiającego oświadczenia woli w przedmiocie skorzystania z opcji w określonym przez Zamawiającego zakresie; 3. Zamawiający może skorzystać z prawa opcji na podstawie jednego lub więcej oświadczeń do maksymalnych wysokości określonych w pkt. 1.; 4. Zamawiający zastrzega, że nie jest zobowiązany do skorzystania z prawa opcji, a w przypadku skorzystania z prawa opcji nie jest zobowiązany do wykorzystania opcji w maksymalnym przewidzianym zakresie; 5. Zamawiający może składać oświadczenia w przedmiocie skorzystania z opcji w terminie do 60 dni od dnia zawarcia umowy.\nW dniu 15.07.2026 r. w Dz. Urz. UE Opublikowane zostało wstępne ogłoszenie informacyjne nr 2026/S 134-487289\nart. 108 ust. 1 pkt 1 lit. g oraz pkt 4 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych; art. 7 ust. 1 ustawy z dnia 13 kwietnia 2022 r. o szczególnych rozwiązaniach w zakresie przeciwdziałania wspieraniu agresji na Ukrainę oraz służących ochronie bezpieczeństwa narodowego\nart. 108 ust. 1 pkt 1 lit. b i f oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych\nIzba Administracji Skarbowej w Rzeszowie\nart. 108 ust. 1 pkt 1 lit. c oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych\n1. Dostawa broni\nPrzedmiotem zamówienia jest dostawa 300 000 szt. fabrycznie nowej amunicji 9x19mm FMJ, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1)150 000 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 150 000 szt. – opcja\nPrzedmiotem zamówienia jest dostawa: 1. 100 szt. fabrycznie nowych kajdanek stalowych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1.1) 60 szt. – gwarantowany zakres zamówienia, 1.2) nie więcej niż 40 szt. – opcja; 2. 100 szt. fabrycznie nowych pokrowców na kajdanki, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 2.1) 60 szt. – gwarantowany zakres zamówienia, 2.2) nie więcej niż 40 szt. – opcja; 3. 100 szt. fabrycznie nowych pałek teleskopowych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 3.1) 60 szt. – gwarantowany zakres zamówienia, 3.2) nie więcej niż 40 szt. – opcja; 4. 100 szt. fabrycznie nowych uchwytów do pałki teleskopowej, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 4.1) 60 szt. – gwarantowany zakres zamówienia, 4.2) nie więcej niż 40 szt. – opcja; 5. 400 szt. fabrycznie nowych ręcznych miotaczy gazu, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 5.1) 300 szt. – gwarantowany zakres zamówienia, 5.2) nie więcej niż 100 szt. – opcja; 6. 150 szt. fabrycznie nowych pokrowców na ręczny miotacz gazu, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 6.1) 50 szt. – gwarantowany zakres zamówienia, 6.2) nie więcej niż 100 szt. – opcja; 7. 270 szt. fabrycznie nowych podwójnych ładownic na magazynki, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 7.1) 70 szt. – gwarantowany zakres zamówienia, 7.2) nie więcej niż 200 szt. – opcja.\nart. 108 ust. 1 pkt 1 lit. h oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych\n1. Przedmiotem zamówienia jest dostawa broni, amunicji i środków przymusu bezpośredniego dla Izby Administracji Skarbowej w Rzeszowie. 2. Zamówienie zostało podzielone na trzy części tj.: 2.1. Część I zamówienia: 2.1.1. 250 szt. fabrycznie nowych pistoletów kompaktowych wraz z kaburami dla osób praworęcznych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 56 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 194 szt. – opcja; 2.1.2. 26 szt. fabrycznie nowych kabur dla osób leworęcznych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 6 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 20 szt. – opcja; 2.2. Część II zamówienia: 300 000 szt. fabrycznie nowej amunicji 9x19mm FMJ, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 150 000 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 150 000 szt. – opcja; 2.3. Część III zamówienia: 2.3.1. 100 szt. fabrycznie nowych kajdanek stalowych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 60 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 40 szt. – opcja; 2.3.2. 100 szt. fabrycznie nowych pokrowców na kajdanki, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 60 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 40 szt. – opcja; 2.3.3. 100 szt. fabrycznie nowych pałek teleskopowych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 60 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 40 szt. – opcja; 2.3.4. 100 szt. fabrycznie nowych uchwytów do pałki teleskopowej, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 60 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 40 szt. – opcja; 2.3.5. 400 szt. fabrycznie nowych ręcznych miotaczy gazu, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 300 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 100 szt. – opcja; 2.3.6. 150 szt. fabrycznie nowych pokrowców na ręczny miotacz gazu, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 50 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 100 szt. – opcja; 2.3.7. 270 szt. fabrycznie nowych podwójnych ładownic na magazynki, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 70 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 200 szt. – opcja.\n1. W zakresie części I zamówienia Zamawiający nie dopuszcza złożenia ofert dotyczących pistoletów kompaktowych pochodzących z państw trzecich niebędących stroną umów międzynarodowych. 2. Za państwa trzecie niebędące stronami umów międzynarodowych uznaje się państwa inne niż wskazane w art. 16b ustawy z 11.09.2019 r. Prawo zamówień publicznych (Dz.U. z 2026 r. poz. 793), uznaje się państwa, za niebędące stronami Porozumienia Światowej Organizacji Handlu w sprawie zamówień rządowych lub innych umów międzynarodowych, których stroną jest Unia Europejska gwarantujących na zasadzie wzajemności i równości dostęp do rynku zamówień publicznych. 3. Za kraj pochodzenia pistoletu kompaktowego, zgodnie z art. 60 rozporządzenia Parlamentu Europejskiego i Rady (UE) nr 952/2013 z 9.10.2013 r. ustanawiającego unijny kodeks celny uznaje się kraj, w którym: 3.1. pistolet kompaktowy został całkowicie wyprodukowany, 3.2. pistolet kompaktowy został poddany ostatniemu istotnemu, ekonomicznie uzasadnionemu przetwarzaniu lub obróbce, w przedsiębiorstwie przystosowanym do tego celu, co spowodowało wytworzenie nowego produktu lub stanowiło istotny etap wytwarzania, w przypadku gdy w produkcję pistoletu kompaktowego zaangażowany był więcej niż jeden kraj.\n1. Zamawiający przewiduje możliwość skorzystania z prawa opcji polegającej na zwiększeniu dostaw: pistoletów kompaktowych wraz z kaburami dla osób praworęcznych o maksymalną ilość do 194 szt. i kabur dla osób leworęcznych o maksymalną ilość do 20 szt.; 2. Termin realizacji opcji: 30 dni licząc od dnia złożenia przez Zamawiającego oświadczenia woli w przedmiocie skorzystania z opcji w określonym przez Zamawiającego zakresie; 3. Zamawiający może skorzystać z prawa opcji na podstawie jednego lub więcej oświadczeń do maksymalnych wysokości określonych w pkt. 1.; 4. Zamawiający zastrzega, że nie jest zobowiązany do skorzystania z prawa opcji, a w przypadku skorzystania z prawa opcji nie jest zobowiązany do wykorzystania opcji w maksymalnym przewidzianym zakresie; 5. Zamawiający może składać oświadczenia w przedmiocie skorzystania z opcji w terminie do 60 dni od dnia zawarcia umowy.\n1. Zamawiający przewiduje możliwość skorzystania z prawa opcji polegającej na zwiększeniu dostaw amunicji 9x19mm FMJ o maksymalną ilość do 150 000 szt. 2. Termin realizacji opcji: 30 dni licząc od dnia złożenia przez Zamawiającego oświadczenia woli w przedmiocie skorzystania z opcji w określonym przez Zamawiającego zakresie; 3. Zamawiający może skorzystać z prawa opcji na podstawie jednego lub więcej oświadczeń do maksymalnej wysokości określonej w pkt. 1.; 4. Zamawiający zastrzega, że nie jest zobowiązany do skorzystania z prawa opcji, a w przypadku skorzystania z prawa opcji nie jest zobowiązany do wykorzystania opcji w maksymalnym przewidzianym zakresie; 5. Zamawiający może składać oświadczenia w przedmiocie skorzystania z opcji w terminie do 60 dni od dnia zawarcia umowy.\n3. Dostawa środków przymusu bezpośredniego\nart. 108 ust. 1 pkt 5 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych\nart. 108 ust. 1 pkt 1 lit. d oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych\n2. Dostawa amunicji\n02\nWarszawa\nexg-mis-sanction\n7ff0f628-e465-430d-a938-d928500d3b66-02\n35321100\n2026-09-04+02:00\n53cdf025-7e4f-4d80-bbe6-37d7f79aa254\nexg-crim-part\nnone\nexg-mis-prep-confl\nrequired\nexg-mis-distortion\nsupplies\nprice\nPL911\n90\ncn-standard\n171/2026\nORG-0001\nORG-0002\ngen-pub\nexg-crim-traffick\n16\n14:56:00+02:00\nexg-crim-terror\nPOL\n2026-09-03+02:00\nepo-notice\n37-700\nno-eu-funds\n32014L0024\nexg-pmt-bre-tax\nslc-abil-ref-supply\n3\nul. Postępu 17A\n35-959\nprzetargi.ias.400000@mf.gov.pl\nREGON: 001023003\nexg-natl\ntrue\nRzeszów\nexg-crim-fraud\nPrzemyśl\n00609937-2026\ngenerated_id\nnon-restricted-document\nno\nul. Geodetów 1\n17 850 36 00\nNIP: 8131096298\neforms-sdk-1.13\n35000000\nnot-allowed\nNIP 5262239325\nul. Sielecka 9\nexg-mis-misrepresent\nLOT-0001\nodwolania@uzp.gov.pl\n1801-ILZ.260.36.2026\n35331000\nLOT-0003\nLOT-0002\nupdate-add\n+48 22 458 78 01\nepo-procurement-document\n10:00:00+02:00\n11:00:00+02:00\nslc-suit-auth-mbrshp\n2026-09-10Z\n28f13fc0-087d-435a-845c-66890917622c\nexg-pmt-bre-ssc\nfalse\nhttp://www.gov.pl/ias-rzeszow/\nexg-crim-laund\nexg-mis-bre-lab-law\n02-676\nPL822\nPL823\nhttps://www.gov.pl/web/uzp/krajowa-izba-odwolawcza\n2.3\nexg-crim-corrpt\ncga\nopen"
+  }
+ ],
+ "DS": "2026-09-03+02:00",
+ "DT": [
+  "2026-09-10T10:00:00+02:00",
+  "2026-09-10T10:00:00+02:00",
+  "2026-09-10T10:00:00+02:00"
+ ],
+ "organisation-tel-buyer": [
+  "17 850 36 00"
+ ],
+ "BT-67(a)-Procedure": [
+  "exg-mis-prep-confl",
+  "exg-crim-corrpt",
+  "exg-crim-fraud",
+  "exg-mis-bre-lab-law",
+  "exg-pmt-bre-ssc",
+  "exg-pmt-bre-tax",
+  "exg-natl",
+  "exg-mis-distortion",
+  "exg-crim-terror",
+  "exg-crim-part",
+  "exg-crim-traffick",
+  "exg-crim-laund",
+  "exg-mis-misrepresent",
+  "exg-mis-sanction"
+ ],
+ "AU": {
+  "pol": [
+   "Izba Administracji Skarbowej w Rzeszowie"
+  ]
+ },
+ "CY": [
+  "POL"
+ ],
+ "BT-36-Lot": [
+  {
+   "unit": "DAY",
+   "value": "90"
+  },
+  {
+   "unit": "DAY",
+   "value": "90"
+  },
+  {
+   "unit": "DAY",
+   "value": "90"
+  }
+ ],
+ "IA": [
+  "http://www.gov.pl/ias-rzeszow/"
+ ],
+ "BT-24-Procedure": {
+  "pol": "1. Przedmiotem zamówienia jest dostawa broni, amunicji i środków przymusu bezpośredniego dla Izby Administracji Skarbowej w Rzeszowie. 2. Zamówienie zostało podzielone na trzy części tj.: 2.1. Część I zamówienia: 2.1.1. 250 szt. fabrycznie nowych pistoletów kompaktowych wraz z kaburami dla osób praworęcznych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 56 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 194 szt. – opcja; 2.1.2. 26 szt. fabrycznie nowych kabur dla osób leworęcznych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 6 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 20 szt. – opcja; 2.2. Część II zamówienia: 300 000 szt. fabrycznie nowej amunicji 9x19mm FMJ, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 150 000 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 150 000 szt. – opcja; 2.3. Część III zamówienia: 2.3.1. 100 szt. fabrycznie nowych kajdanek stalowych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 60 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 40 szt. – opcja; 2.3.2. 100 szt. fabrycznie nowych pokrowców na kajdanki, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 60 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 40 szt. – opcja; 2.3.3. 100 szt. fabrycznie nowych pałek teleskopowych, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 60 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 40 szt. – opcja; 2.3.4. 100 szt. fabrycznie nowych uchwytów do pałki teleskopowej, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 60 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 40 szt. – opcja; 2.3.5. 400 szt. fabrycznie nowych ręcznych miotaczy gazu, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 300 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 100 szt. – opcja; 2.3.6. 150 szt. fabrycznie nowych pokrowców na ręczny miotacz gazu, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 50 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 100 szt. – opcja; 2.3.7. 270 szt. fabrycznie nowych podwójnych ładownic na magazynki, przy czym zakres rzeczowy składa się z gwarantowanego zakresu zamówienia oraz zakresu objętego prawem opcji tj.: 1) 70 szt. – gwarantowany zakres zamówienia, 2) nie więcej niż 200 szt. – opcja."
+ },
+ "BT-26(m)-Procedure": "cpv",
+ "PR": "open",
+ "organisation-name-addinfo-lot": {
+  "pol": [
+   "Izba Administracji Skarbowej w Rzeszowie"
+  ]
+ },
+ "BT-05(b)-notice": "14:56:00+02:00",
+ "MA": [
+  "gen-pub"
+ ],
+ "ojs-number": "171/2026",
+ "OJ": "171/2026",
+ "buyer-email": [
+  "przetargi.ias.400000@mf.gov.pl"
+ ],
+ "OL": [
+  "POL"
+ ],
+ "public-opening-place-lot": {
+  "pol": [
+   "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c",
+   "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c",
+   "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c"
+  ]
+ },
+ "title-proc": {
+  "pol": "Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie"
+ },
+ "OPP-011-notice": "171/2026",
+ "buyer-legal-type": [
+  "cga"
+ ],
+ "organisation-name-revieworg-lot": {
+  "pol": [
+   "Krajowa Izba Odwoławcza"
+  ]
+ },
+ "BT-5131-Lot": [
+  "Przemyśl",
+  "Przemyśl",
+  "Przemyśl"
+ ],
+ "RC": [
+  "PL822",
+  "POL",
+  "PL822",
+  "PL822",
+  "PL822",
+  "POL",
+  "POL",
+  "POL"
+ ],
+ "organisation-street-revieworg-lot": [
+  "ul. Postępu 17A"
+ ],
+ "PC": [
+  "35000000",
+  "35331000",
+  "35321100",
+  "35321100",
+  "35331000",
+  "35000000"
+ ],
+ "PD": "2026-09-04+02:00",
+ "NC": [
+  "supplies",
+  "supplies",
+  "supplies",
+  "supplies"
+ ],
+ "ND": "609937-2026",
+ "RN": "594601-2026",
+ "BT-97-Lot": [
+  "POL",
+  "POL",
+  "POL"
+ ],
+ "NL": 3,
+ "additional-information-lot": {
+  "pol": [
+   "1. W zakresie części I zamówienia Zamawiający nie dopuszcza złożenia ofert dotyczących pistoletów kompaktowych pochodzących z państw trzecich niebędących stroną umów międzynarodowych. 2. Za państwa trzecie niebędące stronami umów międzynarodowych uznaje się państwa inne niż wskazane w art. 16b ustawy z 11.09.2019 r. Prawo zamówień publicznych (Dz.U. z 2026 r. poz. 793), uznaje się państwa, za niebędące stronami Porozumienia Światowej Organizacji Handlu w sprawie zamówień rządowych lub innych umów międzynarodowych, których stroną jest Unia Europejska gwarantujących na zasadzie wzajemności i równości dostęp do rynku zamówień publicznych. 3. Za kraj pochodzenia pistoletu kompaktowego, zgodnie z art. 60 rozporządzenia Parlamentu Europejskiego i Rady (UE) nr 952/2013 z 9.10.2013 r. ustanawiającego unijny kodeks celny uznaje się kraj, w którym: 3.1. pistolet kompaktowy został całkowicie wyprodukowany, 3.2. pistolet kompaktowy został poddany ostatniemu istotnemu, ekonomicznie uzasadnionemu przetwarzaniu lub obróbce, w przedsiębiorstwie przystosowanym do tego celu, co spowodowało wytworzenie nowego produktu lub stanowiło istotny etap wytwarzania, w przypadku gdy w produkcję pistoletu kompaktowego zaangażowany był więcej niż jeden kraj."
+  ]
+ },
+ "OPA-98-Lot-Number": [
+  "90",
+  "90",
+  "90"
+ ],
+ "organisation-country-sub-buyer": [
+  "PL823"
+ ],
+ "TW": {
+  "mul": [
+   "Rzeszów"
+  ]
+ },
+ "BT-766-Lot": [
+  "none",
+  "none",
+  "none"
+ ],
+ "main-classification-lot": [
+  "35321100",
+  "35331000",
+  "35000000"
+ ],
+ "BT-736-Lot": [
+  "no",
+  "no",
+  "no"
+ ],
+ "organisation-post-code-revieworg-lot": [
+  "02-676"
+ ],
+ "BT-133-Lot": {
+  "pol": [
+   "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c",
+   "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c",
+   "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c"
+  ]
+ },
+ "change-reason-description": {
+  "pol": "W pkt. 5.1.12 dokonano zmian w zakresie terminów składania i otwarcia ofert."
+ },
+ "OPA-36-Lot-Number": [
+  "90",
+  "90",
+  "90"
+ ],
+ "organisation-street-addinfo-lot": [
+  "ul. Geodetów 1"
+ ],
+ "BT-137-Lot": [
+  "LOT-0001",
+  "LOT-0002",
+  "LOT-0003"
+ ],
+ "BT-701-notice": "53cdf025-7e4f-4d80-bbe6-37d7f79aa254",
+ "procedure-justification": {
+  "pol": "W dniu 15.07.2026 r. w Dz. Urz. UE Opublikowane zostało wstępne ogłoszenie informacyjne nr 2026/S 134-487289"
+ },
+ "official-language": [
+  "POL"
+ ],
+ "eu-fund-lot": [
+  "no-eu-funds",
+  "no-eu-funds",
+  "no-eu-funds"
+ ],
+ "BT-03-notice": "competition",
+ "organisation-city-buyer": [
+  "Rzeszów"
+ ],
+ "additional-info-proc": {
+  "pol": "1. Zamawiający precyzuje, że termin realizacji przedmiotu zamówienia (dot. każdej części) wynosi: 1.1) 60 dni licząc od dnia zawarcia umowy – dla gwarantowanego zakresu zamówienia; 1.2) 30 dni licząc od dnia złożenia przez Zamawiającego oświadczenia woli w przedmiocie skorzystania z opcji – dla zakresu objętego prawem opcji 1.3) W przypadku skorzystania z prawa opcji maksymalny zakładany czas realizacji Umowy może wynieść do 90 dni od zawarcia Umowy. 2.1) W zakresie części I zamówienia Zamawiający nie dopuszcza złożenia ofert dotyczących pistoletów kompaktowych pochodzących z państw trzecich niebędących stroną umów międzynarodowych. 2.2) Za państwa trzecie niebędące stronami umów międzynarodowych uznaje się państwa inne niż wskazane w art. 16b ustawy z 11.09.2019 r. Prawo zamówień publicznych (Dz.U. z 2026 r. poz. 793), uznaje się państwa, za niebędące stronami Porozumienia Światowej Organizacji Handlu w sprawie zamówień rządowych lub innych umów międzynarodowych, których stroną jest Unia Europejska gwarantujących na zasadzie wzajemności i równości dostęp do rynku zamówień publicznych. 2.3) Za kraj pochodzenia pistoletu kompaktowego, zgodnie z art. 60 rozporządzenia Parlamentu Europejskiego i Rady (UE) nr 952/2013 z 9.10.2013 r. ustanawiającego unijny kodeks celny uznaje się kraj, w którym: 2.3.1) pistolet kompaktowy został całkowicie wyprodukowany, 2.3.2) pistolet kompaktowy został poddany ostatniemu istotnemu, ekonomicznie uzasadnionemu przetwarzaniu lub obróbce, w przedsiębiorstwie przystosowanym do tego celu, co spowodowało wytworzenie nowego produktu lub stanowiło istotny etap wytwarzania, w przypadku gdy w produkcję pistoletu kompaktowego zaangażowany był więcej niż jeden kraj."
+ },
+ "dps-usage-lot": [
+  "none",
+  "none",
+  "none"
+ ],
+ "BT-67(b)-Procedure": {
+  "pol": [
+   "art. 108 ust. 1 pkt 6 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 1 lit. c oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 1 lit. g oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 1 lit. h oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 3 oraz art. 109 ust. 1 pkt 1 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 3 oraz art. 109 ust. 1 pkt 1 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 1 lit. g oraz pkt 4 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych; art. 7 ust. 1 ustawy z dnia 13 kwietnia 2022 r. o szczególnych rozwiązaniach w zakresie przeciwdziałania wspieraniu agresji na Ukrainę oraz służących ochronie bezpieczeństwa narodowego",
+   "art. 108 ust. 1 pkt 5 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 1 lit. e oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 1 lit. a oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 1 lit. b i f oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 1 lit. d oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 109 ust. 1 pkt 8 i 10 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 109 ust. 1 pkt 7 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych"
+  ]
+ },
+ "main-classification-type-proc": "cpv",
+ "BT-5141-Procedure": [
+  "POL"
+ ],
+ "classification-cpv": [
+  "35000000",
+  "35331000",
+  "35321100",
+  "35321100",
+  "35331000",
+  "35000000"
+ ],
+ "TI": {
+  "hun": "Lengyelország – Biztonsági, tűzoltó, rendőrségi és védelmi felszerelések – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "lav": "Polija – Drošības, ugunsdzēsības, policijas un aizsardzības aprīkojums – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "swe": "Polen – Säkerhets-, brandbekämpnings-, polis- och försvarsutrustning – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "gle": "An Pholainn – Security, fire-fighting, police and defence equipment – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "ell": "Πολωνία – Εξοπλισμός ασφαλείας και πυρόσβεσης, αστυνομικός και αμυντικός εξοπλισμός – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "spa": "Polonia – Equipo de seguridad, extinción de incendios, policía y defensa – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "est": "Poola – Turva-, tuletõrje-, politsei- ja kaitseseadmed – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "nld": "Polen – Uitrusting voor veiligheid, brandweer, politie en leger – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "fin": "Puola – Turva-, palontorjunta-, poliisi- ja maanpuolustusvälineet – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "pol": "Polska – Sprzęt bezpieczeństwa, gaśniczy, policyjny i obronny – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "hrv": "Poljska – Sigurnosna, vatrogasna policijska i obrambena oprema – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "ces": "Polsko – Bezpečnostní, hasičské, policejní a ochranné vybavení – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "dan": "Polen – Sikkerheds-, brandbekæmpelses, politi- og forsvarsudstyr – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "ron": "Polonia – Echipament de securitate, de luptă împotriva incendiilor, de poliţie şi de apărare – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "por": "Polónia – Equipamento de segurança, combate a incêndios, polícia e defesa – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "slk": "Poľsko – Bezpečnostné, hasičské, policajné a ochranné vybavenie – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "fra": "Pologne – Équipement de sécurité, de lutte contre l'incendie, de police et de défense – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "mlt": "Il-Polonja – Tagħmir għas-sigurtà, tifi tan-nar, pulizija u difiża – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "deu": "Polen – Ausrüstung für Sicherheitszwecke, Brandbekämpfung, Polizei und Verteidigung – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "lit": "Lenkija – Apsaugos, gaisrų gesinimo, policijos ir gynybos įrenginiai – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "ita": "Polonia – Attrezzature di sicurezza, antincendio, per la polizia e di difesa – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "bul": "Полша – Оборудване за безопасност, противопожарно, полицейско и отбранително оборудване – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "slv": "Poljska – Varnostna, gasilska, policijska in obrambna oprema – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie",
+  "eng": "Poland – Security, fire-fighting, police and defence equipment – Zakup broni, amunicji i środków przymusu bezpośredniego na potrzeby IAS w Rzeszowie"
+ },
+ "BT-23-Procedure": "supplies",
+ "competition-termination-proc": false,
+ "OPT-140-Lot": [
+  "generated_id",
+  "generated_id",
+  "generated_id"
+ ],
+ "BT-750-Lot": {
+  "pol": [
+   "Zamawiający wymaga wykazania przez Wykonawcę spełniania warunku udziału w postępowaniu dotyczącego uprawnień do prowadzenia określonej działalności gospodarczej lub zawodowej, tj. Zamawiający uzna warunek udziału w postępowaniu dotyczący uprawnień do prowadzenia określonej działalności zawodowej za spełniony, jeżeli Wykonawca wykaże, że posiada koncesję na prowadzenie działalności gospodarczej w zakresie obrotu bronią i amunicją wydaną zgodnie z ustawą z dnia 13 czerwca 2019 r. o wykonywaniu działalności gospodarczej w zakresie wytwarzania i obrotu materiałami wybuchowymi, bronią, amunicją oraz wyrobami i technologią o przeznaczeniu wojskowym lub policyjnym (Dz. U. z 2023 r. poz. 1743 z późn. zm.). Ocena spełniania warunku zostanie dokonana na podstawie informacji złożonych w części IV lit. A jednolitego europejskiego dokumentu zamówienia (JEDZ).",
+   "Zamawiający wymaga wykazania przez Wykonawcę spełniania warunków udziału w postępowaniu dotyczących zdolności technicznych lub zawodowych w zakresie doświadczenia. Zamawiający uzna warunek za spełniony, jeżeli Wykonawca wykaże się doświadczeniem, polegającym na wykonaniu w okresie ostatnich 3 lat przed upływem terminu składania ofert, a jeżeli okres prowadzenia działalności jest krótszy, to w tym okresie, co najmniej jednej umowy dotyczącej dostawy broni palnej krótkiej, o wartości dostawy nie mniejszej niż 150 000,00 złotych brutto. Przez wartość dostawy rozumie się wysokość wynagrodzenia otrzymanego przez Wykonawcę z tytułu jej wykonania. Ocena spełniania warunku zostanie dokonana na podstawie informacji złożonych w części IV lit. C jednolitego europejskiego dokumentu zamówienia (JEDZ).",
+   "Zamawiający wymaga wykazania przez Wykonawcę spełniania warunku udziału w postępowaniu dotyczącego uprawnień do prowadzenia określonej działalności gospodarczej lub zawodowej, tj. Zamawiający uzna warunek udziału w postępowaniu dotyczący uprawnień do prowadzenia określonej działalności zawodowej za spełniony, jeżeli Wykonawca wykaże, że posiada koncesję na prowadzenie działalności gospodarczej w zakresie obrotu bronią i amunicją wydaną zgodnie z ustawą z dnia 13 czerwca 2019 r. o wykonywaniu działalności gospodarczej w zakresie wytwarzania i obrotu materiałami wybuchowymi, bronią, amunicją oraz wyrobami i technologią o przeznaczeniu wojskowym lub policyjnym (Dz. U. z 2023 r. poz. 1743 z późn. zm.). Ocena spełniania warunku zostanie dokonana na podstawie informacji złożonych w części IV lit. A jednolitego europejskiego dokumentu zamówienia (JEDZ)."
+  ]
+ },
+ "BT-31-Procedure": "3",
+ "BT-747-Lot": [
+  "slc-suit-auth-mbrshp",
+  "slc-abil-ref-supply",
+  "slc-suit-auth-mbrshp"
+ ],
+ "procedure-accelerated": "true",
+ "BT-02-notice": "cn-standard",
+ "award-criterion-type-lot": [
+  "price",
+  "price",
+  "price"
+ ],
+ "BT-93-Lot": [
+  true,
+  true,
+  true
+ ],
+ "exclusion-grounds": [
+  "exg-mis-prep-confl",
+  "exg-crim-corrpt",
+  "exg-crim-fraud",
+  "exg-mis-bre-lab-law",
+  "exg-pmt-bre-ssc",
+  "exg-pmt-bre-tax",
+  "exg-natl",
+  "exg-mis-distortion",
+  "exg-crim-terror",
+  "exg-crim-part",
+  "exg-crim-traffick",
+  "exg-crim-laund",
+  "exg-mis-misrepresent",
+  "exg-mis-sanction"
+ ],
+ "place-of-performance-post-code-lot": [
+  "37-700",
+  "37-700",
+  "37-700"
+ ],
+ "organisation-country-sub-revieworg-lot": [
+  "PL911"
+ ],
+ "BT-23-Lot": [
+  "supplies",
+  "supplies",
+  "supplies"
+ ],
+ "BT-1351-Procedure": {
+  "pol": "W dniu 15.07.2026 r. w Dz. Urz. UE Opublikowane zostało wstępne ogłoszenie informacyjne nr 2026/S 134-487289"
+ },
+ "OPT-002-notice": "eforms-sdk-1.13",
+ "BT-764-Lot": [
+  "not-allowed",
+  "not-allowed",
+  "not-allowed"
+ ],
+ "electronic-submission-lot": [
+  "required",
+  "required",
+  "required"
+ ],
+ "notice-version": 2,
+ "submission-language": [
+  "POL",
+  "POL",
+  "POL"
+ ],
+ "organisation-identifier-buyer": [
+  "NIP: 8131096298",
+  "REGON: 001023003"
+ ],
+ "exclusion-grounds-source-proc": [
+  "epo-notice"
+ ],
+ "public-opening-description-lot": {
+  "pol": [
+   "Wykonawca składa ofertę przy pomocy interaktywnego „Formularza ofertowego” udostępnionego przez Zamawiającego na Platformie e­Zamówienia i zamieszczonego w podglądzie postępowania w zakładce „Informacje podstawowe”. Szczegółowy sposób złożenia oferty zawarto w rozdziale 15 SWZ.",
+   "Wykonawca składa ofertę przy pomocy interaktywnego „Formularza ofertowego” udostępnionego przez Zamawiającego na Platformie e­Zamówienia i zamieszczonego w podglądzie postępowania w zakładce „Informacje podstawowe”. Szczegółowy sposób złożenia oferty zawarto w rozdziale 15 SWZ.",
+   "Wykonawca składa ofertę przy pomocy interaktywnego „Formularza ofertowego” udostępnionego przez Zamawiającego na Platformie e­Zamówienia i zamieszczonego w podglądzie postępowania w zakładce „Informacje podstawowe”. Szczegółowy sposób złożenia oferty zawarto w rozdziale 15 SWZ."
+  ]
+ },
+ "OPP-010-notice": "609937-2026",
+ "organisation-tel-addinfo-lot": [
+  "17 850 36 00"
+ ],
+ "contract-nature-main-lot": [
+  "supplies",
+  "supplies",
+  "supplies"
+ ],
+ "BT-806-Procedure": [
+  "epo-notice"
+ ],
+ "organisation-city-addinfo-lot": [
+  "Rzeszów"
+ ],
+ "main-activity": [
+  "gen-pub"
+ ],
+ "change-notice-version-identifier": "7ff0f628-e465-430d-a938-d928500d3b66-02",
+ "buyer-country": [
+  "POL"
+ ],
+ "BT-14-Lot": [
+  "non-restricted-document",
+  "non-restricted-document",
+  "non-restricted-document"
+ ],
+ "contract-duration-period-lot": [
+  {
+   "unit": "DAY",
+   "value": "90"
+  },
+  {
+   "unit": "DAY",
+   "value": "90"
+  },
+  {
+   "unit": "DAY",
+   "value": "90"
+  }
+ ],
+ "duration-period-unit-lot": [
+  "DAY",
+  "DAY",
+  "DAY"
+ ],
+ "BT-743-Lot": [
+  "required",
+  "required",
+  "required"
+ ],
+ "organisation-internet-address-buyer": [
+  "http://www.gov.pl/ias-rzeszow/"
+ ],
+ "BT-22-Procedure": "1801-ILZ.260.36.2026",
+ "BT-36-Lot-Unit": [
+  "DAY",
+  "DAY",
+  "DAY"
+ ],
+ "procedure-type": "open",
+ "organisation-street-buyer": [
+  "ul. Geodetów 1"
+ ],
+ "BT-115-Lot": [
+  true,
+  true,
+  true
+ ],
+ "BT-702-notice": [
+  "POL"
+ ],
+ "organisation-email-buyer": [
+  "przetargi.ias.400000@mf.gov.pl"
+ ],
+ "notice-identifier": "53cdf025-7e4f-4d80-bbe6-37d7f79aa254",
+ "BT-18-Lot": [
+  "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c",
+  "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c",
+  "https://ezamowienia.gov.pl/mp-client/search/list/ocds-148610-28f13fc0-087d-435a-845c-66890917622c"
+ ],
+ "public-opening-time-lot": [
+  "11:00:00+02:00",
+  "11:00:00+02:00",
+  "11:00:00+02:00"
+ ],
+ "BT-300-Lot": {
+  "pol": [
+   "1. W zakresie części I zamówienia Zamawiający nie dopuszcza złożenia ofert dotyczących pistoletów kompaktowych pochodzących z państw trzecich niebędących stroną umów międzynarodowych. 2. Za państwa trzecie niebędące stronami umów międzynarodowych uznaje się państwa inne niż wskazane w art. 16b ustawy z 11.09.2019 r. Prawo zamówień publicznych (Dz.U. z 2026 r. poz. 793), uznaje się państwa, za niebędące stronami Porozumienia Światowej Organizacji Handlu w sprawie zamówień rządowych lub innych umów międzynarodowych, których stroną jest Unia Europejska gwarantujących na zasadzie wzajemności i równości dostęp do rynku zamówień publicznych. 3. Za kraj pochodzenia pistoletu kompaktowego, zgodnie z art. 60 rozporządzenia Parlamentu Europejskiego i Rady (UE) nr 952/2013 z 9.10.2013 r. ustanawiającego unijny kodeks celny uznaje się kraj, w którym: 3.1. pistolet kompaktowy został całkowicie wyprodukowany, 3.2. pistolet kompaktowy został poddany ostatniemu istotnemu, ekonomicznie uzasadnionemu przetwarzaniu lub obróbce, w przedsiębiorstwie przystosowanym do tego celu, co spowodowało wytworzenie nowego produktu lub stanowiło istotny etap wytwarzania, w przypadku gdy w produkcję pistoletu kompaktowego zaangażowany był więcej niż jeden kraj."
+  ]
+ },
+ "exclusion-grounds-description": {
+  "pol": [
+   "art. 108 ust. 1 pkt 6 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 1 lit. c oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 1 lit. g oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 1 lit. h oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 3 oraz art. 109 ust. 1 pkt 1 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 3 oraz art. 109 ust. 1 pkt 1 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 1 lit. g oraz pkt 4 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych; art. 7 ust. 1 ustawy z dnia 13 kwietnia 2022 r. o szczególnych rozwiązaniach w zakresie przeciwdziałania wspieraniu agresji na Ukrainę oraz służących ochronie bezpieczeństwa narodowego",
+   "art. 108 ust. 1 pkt 5 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 1 lit. e oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 1 lit. a oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 1 lit. b i f oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 108 ust. 1 pkt 1 lit. d oraz pkt 2 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 109 ust. 1 pkt 8 i 10 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych",
+   "art. 109 ust. 1 pkt 7 ustawy z dnia 11 września 2019 r. Prawo zamówień publicznych"
+  ]
+ },
+ "main-classification-proc": [
+  "35000000"
+ ],
+ "organisation-email-addinfo-lot": [
+  "przetargi.ias.400000@mf.gov.pl"
+ ],
+ "notice-preferred-publication-date": "2026-09-03T00:00:00+02:00",
+ "BT-5101(a)-Procedure": [
+  "ul. Sielecka 9"
+ ],
+ "main-classification-type-lot": [
+  "cpv",
+  "cpv",
+  "cpv"
+ ],
+ "notice-subtype": "16",
+ "BT-300-procedure": {
+  "pol": "1. Zamawiający precyzuje, że termin realizacji przedmiotu zamówienia (dot. każdej części) wynosi: 1.1) 60 dni licząc od dnia zawarcia umowy – dla gwarantowanego zakresu zamówienia; 1.2) 30 dni licząc od dnia złożenia przez Zamawiającego oświadczenia woli w przedmiocie skorzystania z opcji – dla zakresu objętego prawem opcji 1.3) W przypadku skorzystania z prawa opcji maksymalny zakładany czas realizacji Umowy może wynieść do 90 dni od zawarcia Umowy. 2.1) W zakresie części I zamówienia Zamawiający nie dopuszcza złożenia ofert dotyczących pistoletów kompaktowych pochodzących z państw trzecich niebędących stroną umów międzynarodowych. 2.2) Za państwa trzecie niebędące stronami umów międzynarodowych uznaje się państwa inne niż wskazane w art. 16b ustawy z 11.09.2019 r. Prawo zamówień publicznych (Dz.U. z 2026 r. poz. 793), uznaje się państwa, za niebędące stronami Porozumienia Światowej Organizacji Handlu w sprawie zamówień rządowych lub innych umów międzynarodowych, których stroną jest Unia Europejska gwarantujących na zasadzie wzajemności i równości dostęp do rynku zamówień publicznych. 2.3) Za kraj pochodzenia pistoletu kompaktowego, zgodnie z art. 60 rozporządzenia Parlamentu Europejskiego i Rady (UE) nr 952/2013 z 9.10.2013 r. ustanawiającego unijny kodeks celny uznaje się kraj, w którym: 2.3.1) pistolet kompaktowy został całkowicie wyprodukowany, 2.3.2) pistolet kompaktowy został poddany ostatniemu istotnemu, ekonomicznie uzasadnionemu przetwarzaniu lub obróbce, w przedsiębiorstwie przystosowanym do tego celu, co spowodowało wytworzenie nowego produktu lub stanowiło istotny etap wytwarzania, w przypadku gdy w produkcję pistoletu kompaktowego zaangażowany był więcej niż jeden kraj."
+ },
+ "title-lot": {
+  "pol": [
+   "1. Dostawa broni",
+   "2. Dostawa amunicji",
+   "3. Dostawa środków przymusu bezpośredniego"
+  ]
+ },
+ "BT-131(t)-Lot": [
+  "10:00:00+02:00",
+  "10:00:00+02:00",
+  "10:00:00+02:00"
+ ],
+ "review-deadline-description-lot": {
+  "pol": [
+   "Odwołanie wnosi się w terminie 10 dni od dnia przekazania informacji o czynności zamawiającego stanowiącej podstawę jego wniesienia, jeżeli informacja została przekazana przy użyciu środków komunikacji elektronicznej. Odwołanie wobec treści ogłoszenia wszczynającego postępowanie o udzielenie zamówienia lub wobec treści dokumentów zamówienia wnosi się w terminie 10 dni od dnia zamieszczenia ogłoszenia w Dzienniku Urzędowym Unii Europejskiej lub dokumentów zamówienia na stronie internetowej, Odwołanie w przypadkach innych niż określone wyżej wnosi się w terminie 10 dni od dnia, w którym powzięto lub przy zachowaniu należytej staranności można było powziąć wiadomość o okolicznościach stanowiących podstawę jego wniesienia.",
+   "Odwołanie wnosi się w terminie 10 dni od dnia przekazania informacji o czynności zamawiającego stanowiącej podstawę jego wniesienia, jeżeli informacja została przekazana przy użyciu środków komunikacji elektronicznej. Odwołanie wobec treści ogłoszenia wszczynającego postępowanie o udzielenie zamówienia lub wobec treści dokumentów zamówienia wnosi się w terminie 10 dni od dnia zamieszczenia ogłoszenia w Dzienniku Urzędowym Unii Europejskiej lub dokumentów zamówienia na stronie internetowej, Odwołanie w przypadkach innych niż określone wyżej wnosi się w terminie 10 dni od dnia, w którym powzięto lub przy zachowaniu należytej staranności można było powziąć wiadomość o okolicznościach stanowiących podstawę jego wniesienia.",
+   "Odwołanie wnosi się w terminie 10 dni od dnia przekazania informacji o czynności zamawiającego stanowiącej podstawę jego wniesienia, jeżeli informacja została przekazana przy użyciu środków komunikacji elektronicznej. Odwołanie wobec treści ogłoszenia wszczynającego postępowanie o udzielenie zamówienia lub wobec treści dokumentów zamówienia wnosi się w terminie 10 dni od dnia zamieszczenia ogłoszenia w Dzienniku Urzędowym Unii Europejskiej lub dokumentów zamówienia na stronie internetowej, Odwołanie w przypadkach innych niż określone wyżej wnosi się w terminie 10 dni od dnia, w którym powzięto lub przy zachowaniu należytej staranności można było powziąć wiadomość o okolicznościach stanowiących podstawę jego wniesienia."
+  ]
+ },
+ "BT-5071-Lot": [
+  "PL822",
+  "PL822",
+  "PL822"
+ ],
+ "duration-period-value-lot": [
+  "90",
+  "90",
+  "90"
+ ],
+ "BT-262-Procedure": [
+  "35000000"
+ ]
+}

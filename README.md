@@ -33,6 +33,8 @@ The database is kept between starts, so bid runs and won/lost results stay. Demo
 - `server/Api`: one .NET 10 minimal-API host. EF Core on Postgres, OpenRouter (any OpenAI-compatible endpoint)
   through Microsoft.Extensions.AI.
 - `web`: Vue 3 + PrimeVue 4 + vue-i18n (Polish, English, German).
+- `ingest`: Python tender ingestion pipeline. Pulls notices from TED, e-Zamówienia and 24 more EU sources into
+  one database and keeps them up to date; see [ingest/README.md](ingest/README.md).
 - **Demo sign-in**: the "Acting as" switcher picks the company; the API scopes every private query to it
   (EF Core query filters in `AppDb`, so isolation lives in the data layer).
 - **Agent activity log**: every agent action is written through `ActivityLog` with agent, action and reason, and

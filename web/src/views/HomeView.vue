@@ -32,7 +32,6 @@ const days = computed(() => (featured.value ? daysLeft(featured.value.deadline) 
 const tools = [
   { key: 'tenders', to: '/tenders', icon: 'pi pi-search' },
   { key: 'evidence', to: '/evidence', icon: 'pi pi-id-card' },
-  { key: 'partners', to: '/partners', icon: 'pi pi-users' },
   { key: 'deals', to: '/deals', icon: 'pi pi-briefcase' },
   { key: 'compliance', to: '/compliance', icon: 'pi pi-shield' },
   { key: 'intelligence', to: '/intelligence', icon: 'pi pi-chart-line' },

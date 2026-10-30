@@ -29,7 +29,7 @@ const nav = computed(() => [
     items: [
       { to: '/tenders', icon: 'pi pi-search', label: t('nav.tenders') },
       { to: '/evidence', icon: 'pi pi-id-card', label: t('nav.evidence') },
-      { to: '/partners', icon: 'pi pi-users', label: t('nav.partners') },
+      // Partners is hidden from the menu for now; the gap check and autopilot still open it.
       { to: '/deals', icon: 'pi pi-briefcase', label: t('nav.deals') },
     ],
   },

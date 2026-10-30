@@ -1,0 +1,10 @@
+bin/
+obj/
+node_modules/
+dist/
+*.user
+.vs/
+.idea/
+appsettings.Local.json
+.env
+server/Api/wwwroot/

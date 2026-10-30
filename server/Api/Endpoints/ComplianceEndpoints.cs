@@ -26,9 +26,11 @@ public static class ComplianceEndpoints
     {
         var api = app.MapGroup("/api/compliance");
 
-        api.MapGet("/", async (AppDb db, OrgContext org, TelegramBot bot) =>
+        api.MapGet("/", async (AppDb db, OrgContext org, TelegramBot bot, SupplierChanges changes) =>
         {
             var orgId = org.Require();
+            // A failing check sends its sign requests to Telegram by itself; nothing in the BOM changes until a person signs.
+            await changes.AutoPrepareAsync();
             var me = await db.Organizations.FirstAsync(o => o.Id == orgId);
             var bom = await db.Boms.FirstOrDefaultAsync();
             var profile = await db.Profiles.FirstOrDefaultAsync();
@@ -80,7 +82,9 @@ public static class ComplianceEndpoints
             bom.Components = bom.Components
                 .Select(c => c.Id == component.Id
                     // Alternatives keep their original notes, so swapping back (undo) loses nothing.
-                    ? c with { Supplier = alt.Supplier, Country = alt.Country, CostEur = alt.CostEur, Change = null,
+                    // An undo keeps the change on record as "undone", so the agent does not ask to switch again on its own.
+                    ? c with { Supplier = alt.Supplier, Country = alt.Country, CostEur = alt.CostEur,
+                        Change = alt.Note == BuyEuropean.PreviousSupplier && c.Change is { } done ? done with { Stage = "undone", DecidedAt = DateTimeOffset.UtcNow } : null,
                         Alternatives = c.Alternatives.Any(a => a.Supplier == old.Supplier) ? c.Alternatives : [.. c.Alternatives, old] }
                     : c)
                 .ToList();

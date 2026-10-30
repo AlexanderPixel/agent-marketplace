@@ -282,7 +282,7 @@ export default {
     replaceWith: 'Zamień na',
     prepare: 'Przygotuj zmianę',
     noOption: 'Brak kwalifikowanego zamiennika z UE. Dodaj go albo poszukaj dostawcy.',
-    prepareExplain: '„Przygotuj zmianę” tworzy zamówienie dla nowego dostawcy, wypowiedzenie dla obecnego i uzasadnienie zmiany, i wysyła je do podpisu na Telegram. Nic się nie zmienia i nic nie trafia do dostawców, dopóki nie podpiszesz.',
+    prepareExplain: 'Gdy sprawdzenie nie przechodzi, agent zgodności sam przygotowuje potrzebną zmianę i wysyła ją do podpisu na Telegram; jeśli ją odrzucisz lub cofniesz, nie zapyta ponownie, a „Przygotuj zmianę” pozwala wybrać inną. Każda zmiana tworzy zamówienie dla nowego dostawcy, wypowiedzenie dla obecnego i uzasadnienie zmiany. Nic się nie zmienia i nic nie trafia do dostawców, dopóki nie podpiszesz.',
     awaitingSign: 'Czeka na Twój podpis',
     sentTelegram: 'Prośba o podpis wysłana na Telegram. Możesz też zdecydować tutaj.',
     noTelegram: 'Telegram nie jest połączony, więc zdecyduj tutaj.',

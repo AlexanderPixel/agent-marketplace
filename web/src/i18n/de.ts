@@ -282,7 +282,7 @@ export default {
     replaceWith: 'Ersetzen durch',
     prepare: 'Wechsel vorbereiten',
     noOption: 'Kein qualifizierter EU-Ersatz hinterlegt. Fügen Sie einen hinzu oder suchen Sie einen Lieferanten.',
-    prepareExplain: '„Wechsel vorbereiten“ entwirft eine Bestellung für den neuen Lieferanten, eine Kündigung für den bisherigen und die Begründung und schickt sie Ihnen zur Unterschrift auf Telegram. Bis Sie unterschreiben, ändert sich nichts und nichts geht an Lieferanten.',
+    prepareExplain: 'Schlägt eine Prüfung fehl, bereitet der Compliance-Agent den nötigen Wechsel selbst vor und schickt ihn Ihnen zur Unterschrift auf Telegram; lehnen Sie ab oder machen ihn rückgängig, fragt er nicht erneut, und mit „Wechsel vorbereiten“ wählen Sie einen anderen. Jeder Wechsel entwirft eine Bestellung für den neuen Lieferanten, eine Kündigung für den bisherigen und die Begründung. Bis Sie unterschreiben, ändert sich nichts und nichts geht an Lieferanten.',
     awaitingSign: 'Wartet auf Ihre Unterschrift',
     sentTelegram: 'Unterschriftsanfrage an Telegram gesendet. Sie können auch hier entscheiden.',
     noTelegram: 'Telegram ist nicht verbunden, entscheiden Sie hier.',

@@ -22,7 +22,7 @@ public record ComponentSource(string Document, string Location, string Quote);
 /// Switching one component to another supplier, prepared by the compliance agent: drafts for both suppliers and the
 /// reason, sent to a person to sign. The BOM only changes once that person signs (rule 5); sending stays with them.
 /// </summary>
-/// <param name="Stage">"awaiting" until a person signs, then "signed". A declined change is removed.</param>
+/// <param name="Stage">"awaiting" until a person signs, then "signed"; "declined" or "undone" when a person said no, so the agent does not ask again.</param>
 public record SupplierChange(
     Guid Id, string FromSupplier, string FromCountry, decimal FromCostEur, BomAlternative To,
     decimal EuBefore, decimal EuAfter, List<ChangeDocument> Documents, string Stage,

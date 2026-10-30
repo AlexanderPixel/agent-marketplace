@@ -17,7 +17,39 @@ public class SupplierChanges(AppDb db, OrgContext org, ActivityLog log, TimeProv
 {
     private const string Agent = "Compliance agent";
 
-    public async Task<SupplierChange?> PrepareAsync(string componentId, string supplier, CancellationToken ct = default)
+    /// <summary>
+    /// Prepares the switches a failing check needs without waiting for a click, so the sign request reaches Telegram on its own:
+    /// every part from a sanctioned supplier, and the cheapest single switch that clears the EU-content threshold.
+    /// Parts with any change on record (awaiting, signed, declined or undone) are left alone: a person already decided.
+    /// </summary>
+    public async Task AutoPrepareAsync(CancellationToken ct = default)
+    {
+        // Two page loads at once must not send the same sign request twice.
+        await AutoGate.WaitAsync(ct);
+        try { await AutoPrepareOnceAsync(ct); }
+        finally { AutoGate.Release(); }
+    }
+
+    private static readonly SemaphoreSlim AutoGate = new(1, 1);
+
+    private async Task AutoPrepareOnceAsync(CancellationToken ct)
+    {
+        var bom = await db.Boms.FirstOrDefaultAsync(ct);
+        if (bom is null) return;
+        bool Open(string id) => bom.Components.First(c => c.Id == id).Change is null;
+        var swaps = BuyEuropean.Swaps(bom);
+
+        foreach (var c in bom.Components.Where(c => BuyEuropean.Sanctioned(c.Supplier)).ToList())
+            if (Open(c.Id) && swaps.FirstOrDefault(s => s.ComponentId == c.Id) is { } fix)
+                await PrepareAsync(c.Id, fix.To.Supplier, auto: true, ct);
+
+        var fixedByPending = bom.Components.Any(c => c.Change is { Stage: "awaiting" } p && p.EuAfter >= BuyEuropean.Threshold);
+        if (BuyEuropean.EuContent(bom.Components) >= BuyEuropean.Threshold || fixedByPending) return;
+        if (swaps.Where(s => s.ReachesThreshold && Open(s.ComponentId)).MinBy(s => s.CostDelta) is { } best)
+            await PrepareAsync(best.ComponentId, best.To.Supplier, auto: true, ct);
+    }
+
+    public async Task<SupplierChange?> PrepareAsync(string componentId, string supplier, bool auto = false, CancellationToken ct = default)
     {
         var orgId = org.Require();
         var bom = await db.Boms.FirstOrDefaultAsync(ct);
@@ -48,6 +80,7 @@ public class SupplierChanges(AppDb db, OrgContext org, ActivityLog log, TimeProv
             (reason == "sanctions"
                 ? $"{component.Supplier} is on the EU sanctions list: no orders or payments may go to them. "
                 : $"{bom.Product} has {before}% EU content; SAFE/EDIP need {BuyEuropean.Threshold}%. This change brings it to {after}%. ") +
+            (auto ? "Prepared on its own because the check failed, so the sign request goes out without waiting for a click. " : "") +
             "Drafted: order for the new supplier, termination for the current one, internal reason. Nothing changes and nothing is sent until a person signs.",
             Trace.Change(change.Id),
             new
@@ -92,7 +125,8 @@ public class SupplierChanges(AppDb db, OrgContext org, ActivityLog log, TimeProv
         }
         else
         {
-            Replace(bom, component.Id, c => c with { Change = null });
+            // Kept as "declined" so the agent does not send the same request again on its own.
+            Replace(bom, component.Id, c => c with { Change = change with { Stage = "declined", DecidedBy = who, DecidedAt = now } });
             await db.SaveChangesAsync(ct);
             await log.WriteAsync(bom.OrgId, Agent, $"{who} declined the supplier change for {component.Name} ({change.To.Supplier})",
                 "A person decided not to go ahead. The BOM is unchanged and nothing was sent.", Trace.Change(change.Id), ct: ct);

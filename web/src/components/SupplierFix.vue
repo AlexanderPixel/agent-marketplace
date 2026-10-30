@@ -6,7 +6,7 @@ import { flag } from '@/lib/flags'
 import { eur } from '@/lib/tenders'
 
 interface Alt { supplier: string; country: string; costEur: number; note: string }
-interface Change { stage: 'awaiting' | 'signed'; to: Alt; euAfter: number; documents: unknown[] }
+interface Change { stage: 'awaiting' | 'signed' | 'declined' | 'undone'; to: Alt; euAfter: number; documents: unknown[] }
 interface Swap { to: Alt; costDelta: number; newEuContent: number; reachesThreshold: boolean }
 
 /** What to do about one part: its best replacement, or the change already waiting for a signature. */

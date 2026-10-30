@@ -20,7 +20,7 @@ interface Alt { supplier: string; country: string; costEur: number; note: string
 interface ChangeDoc { kind: 'order' | 'termination' | 'memo'; title: string; recipient: string; body: string }
 interface Change {
   id: string; fromSupplier: string; fromCountry: string; fromCostEur: number; to: Alt; euBefore: number; euAfter: number
-  documents: ChangeDoc[]; stage: 'awaiting' | 'signed'; createdAt: string; decidedBy?: string; decidedAt?: string; telegramMessageId?: number
+  documents: ChangeDoc[]; stage: 'awaiting' | 'signed' | 'declined' | 'undone'; createdAt: string; decidedBy?: string; decidedAt?: string; telegramMessageId?: number
 }
 interface Source { document: string; location: string; quote: string }
 interface Part { id: string; name: string; supplier: string; country: string; costEur: number; alternatives?: Alt[]; change?: Change | null; source?: Source | null }

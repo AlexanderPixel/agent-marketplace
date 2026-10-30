@@ -282,7 +282,7 @@ export default {
     replaceWith: 'Replace with',
     prepare: 'Prepare change',
     noOption: 'No qualified EU alternative on file. Add one or look for a supplier.',
-    prepareExplain: '"Prepare change" drafts an order for the new supplier, a termination for the current one and the reason for the change, and sends them to you on Telegram to sign. Nothing changes and nothing is sent to suppliers until you sign.',
+    prepareExplain: 'When a check fails, the compliance agent prepares the needed switch by itself and sends it to you on Telegram to sign; if you decline or undo it, it will not ask again, and "Prepare change" lets you pick another. Each switch drafts an order for the new supplier, a termination for the current one and the reason for the change. Nothing changes and nothing is sent to suppliers until you sign.',
     awaitingSign: 'Waiting for your signature',
     sentTelegram: 'Sign request sent to Telegram. You can also decide here.',
     noTelegram: 'Telegram is not connected, so decide here.',

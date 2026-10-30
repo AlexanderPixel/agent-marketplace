@@ -173,6 +173,7 @@ export default {
     termsOnly: 'Only deal terms are exchanged: price, quantity, delivery.',
     perUnit: '€{p}/unit',
     accepts: 'Accepts',
+    closedNote: 'All terms are inside your pre-approved limits.',
     closedAuto: 'Deal closed by the agents with no human in the loop',
     closedHuman: 'Deal approved by a person',
     awaiting: 'Terms agreed. Your approval is needed',

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref, watch } from 'vue'
+import { nextTick, onMounted, ref, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import Button from 'primevue/button'
@@ -7,7 +7,7 @@ import Tag from 'primevue/tag'
 import ActivityFeed from '@/components/ActivityFeed.vue'
 import EcertisBox from '@/components/EcertisBox.vue'
 import { post } from '@/lib/api'
-import { advance, autopilotAt, beat, stopAutopilot } from '@/lib/autopilot'
+import { advance, autopilotAt, beat, pointAt, showSection, stopAutopilot } from '@/lib/autopilot'
 import { session } from '@/lib/session'
 import {
   criteriaNames, outcomeIcon, outcomeSeverity, units, verdictIcon, verdictSeverity, type Analysis, type Tender,
@@ -36,13 +36,17 @@ const unitName = (u: string | undefined | null) => (u ? (units[u] ?? u) : '')
 const router = useRouter()
 onMounted(async () => {
   if (!autopilotAt('check')) return
-  await beat(1200)
+  await beat(800)
+  await pointAt('[data-ap="check"]', { click: true })
   if (!autopilotAt('check')) return
   await run()
+  await nextTick()
+  await showSection('[data-ap="verdict"]', 'start')
   const gapLot = analysis.value?.lots.find((l) => l.gap)
   if (!gapLot) return stopAutopilot(analysis.value?.verdict === 'can-supply' ? 'noGap' : 'notQualified')
   advance('partner', 'partner')
-  await beat(3500)
+  await beat(2500)
+  await pointAt('[data-ap="find-partner"]', { click: true })
   if (!autopilotAt('partner')) return
   router.push({ path: '/partners', query: { tender: props.tender.id, lot: gapLot.lot.id, gap: gapLot.gap } })
 })
@@ -56,11 +60,11 @@ onMounted(async () => {
           <h2>{{ t('qual.run') }}</h2>
           <p class="muted">{{ t('qual.runHint') }}</p>
         </div>
-        <Button class="run" :label="t('qual.run')" icon="pi pi-bolt" :loading="running" @click="run" />
+        <Button class="run" data-ap="check" :label="t('qual.run')" icon="pi pi-bolt" :loading="running" @click="run" />
       </div>
 
       <template v-else>
-        <div class="ink-panel verdict" :class="analysis.verdict">
+        <div class="ink-panel verdict" data-ap="verdict" :class="analysis.verdict">
           <div class="verdict-head">
             <div class="verdict-text">
               <h2><span class="idx">01</span> {{ t('qual.column') }}</h2>
@@ -86,7 +90,7 @@ onMounted(async () => {
                 <div class="fig-label">{{ t('qual.short', { gap: '' }).trim() }}</div>
                 <div class="fig-num">{{ l.gap }}</div>
                 <RouterLink :to="{ path: '/partners', query: { tender: tender.id, lot: l.lot.id, gap: l.gap } }">
-                  <Button :label="t('qual.findPartner', { gap: l.gap, unit: unitName(l.lot.unit) })" icon="pi pi-users" />
+                  <Button data-ap="find-partner" :label="t('qual.findPartner', { gap: l.gap, unit: unitName(l.lot.unit) })" icon="pi pi-users" />
                 </RouterLink>
               </div>
             </div>

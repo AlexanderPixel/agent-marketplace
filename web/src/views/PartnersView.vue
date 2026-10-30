@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import BidSteps from '@/components/BidSteps.vue'
-import { computed, ref, watch } from 'vue'
+import { computed, nextTick, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute, useRouter } from 'vue-router'
 import Button from 'primevue/button'
@@ -8,7 +8,7 @@ import Tag from 'primevue/tag'
 import Message from 'primevue/message'
 import ActivityFeed from '@/components/ActivityFeed.vue'
 import { api, post } from '@/lib/api'
-import { advance, autopilotAt, beat, stopAutopilot } from '@/lib/autopilot'
+import { advance, autopilotAt, beat, pointAt, showSection, stopAutopilot } from '@/lib/autopilot'
 import { flag } from '@/lib/flags'
 import { session } from '@/lib/session'
 import { localTitle, units, type TenderLot, type TenderSummary } from '@/lib/tenders'
@@ -59,7 +59,10 @@ async function autoNegotiate() {
   if (!autopilotAt('partner')) return
   const best = [...(result.value?.candidates ?? [])].filter((c) => c.gatesPassed).sort((a, b) => b.score - a.score)[0]
   if (!best) return stopAutopilot('noPartner')
-  await beat(3000)
+  await nextTick()
+  await showSection(`[data-ap="candidate-${best.partner.orgId}"]`, 'start')
+  await beat(2200)
+  await pointAt(`[data-ap="negotiate-${best.partner.orgId}"]`, { click: true })
   if (!autopilotAt('partner')) return
   advance('negotiate', 'negotiate')
   await negotiate(best)
@@ -103,7 +106,7 @@ const status = (c: Candidate) => (!c.gatesPassed ? 'failed' : c.score >= thresho
           </div>
           <p v-if="searching" class="muted"><i class="pi pi-spin pi-spinner" /> {{ t('partners.searching') }}</p>
 
-          <div v-for="c in result?.candidates ?? []" :key="c.partner.orgId" class="card candidate" :class="status(c)">
+          <div v-for="c in result?.candidates ?? []" :key="c.partner.orgId" class="card candidate" :class="status(c)" :data-ap="`candidate-${c.partner.orgId}`">
             <div class="cand-head">
               <div class="ring" :style="{ '--p': c.score }"><span>{{ c.score }}%</span></div>
               <div class="cand-main">
@@ -141,7 +144,7 @@ const status = (c: Candidate) => (!c.gatesPassed ? 'failed' : c.score >= thresho
                 {{ status(c) === 'autonomous' ? t('partners.autonomous') : status(c) === 'approval' ? t('partners.needsApproval', { threshold }) : t('partners.gateFailed') }}
               </span>
               <Button :label="t('partners.negotiate')" icon="pi pi-comments" :disabled="!c.gatesPassed" :loading="starting === c.partner.orgId"
-                :severity="status(c) === 'autonomous' ? undefined : 'secondary'" @click="negotiate(c)" />
+                :severity="status(c) === 'autonomous' ? undefined : 'secondary'" :data-ap="`negotiate-${c.partner.orgId}`" @click="negotiate(c)" />
             </div>
           </div>
           <Message severity="secondary" icon="pi pi-lock">{{ t('partners.privacy') }}</Message>

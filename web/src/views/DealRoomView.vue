@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import BidSteps from '@/components/BidSteps.vue'
-import { computed, onBeforeUnmount, ref, watch } from 'vue'
+import { computed, nextTick, onBeforeUnmount, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute, useRouter } from 'vue-router'
 import Button from 'primevue/button'
 import Tag from 'primevue/tag'
 import ActivityFeed from '@/components/ActivityFeed.vue'
 import { api, post } from '@/lib/api'
-import { advance, autopilotAt, beat, stopAutopilot } from '@/lib/autopilot'
+import { advance, autopilotAt, beat, pointAt, showSection, stopAutopilot } from '@/lib/autopilot'
 import { flag } from '@/lib/flags'
 import { session } from '@/lib/session'
 import { dealSeverity, eur, formatDate, units, type Deal, type Party } from '@/lib/tenders'
@@ -43,9 +43,37 @@ watch(() => deal.value?.status, async (status) => {
   if (status === 'AwaitingApproval') return stopAutopilot('needsApproval')
   if (status !== 'Closed') return stopAutopilot('dealFailed')
   advance('documents', 'documents')
-  await beat(4000)
+  await nextTick()
+  await showSection('[data-ap="outcome"]', 'start')
+  await beat(3200)
+  await pointAt('[data-ap="documents"]', { click: true })
   if (autopilotAt('documents')) router.push(`/deals/${route.params.id}/documents`)
 })
+
+// While the agents talk, keep the newest offer on screen and the pointer on it.
+watch(() => deal.value?.offers.length, async (n, before) => {
+  if (!autopilotAt('negotiate') || !n || n === before) return
+  await nextTick()
+  const offers = document.querySelectorAll('.messages .msg')
+  await pointAt(offers[offers.length - 1])
+})
+
+// The closing figures count up once when the deal closes; reduced motion shows them straight away.
+const shown = ref({ quantity: 0, price: 0, value: 0, match: 0 })
+watch(() => deal.value?.unitPrice, () => {
+  const d = deal.value
+  if (!d?.unitPrice) return
+  const target = { quantity: d.quantity ?? 0, price: d.unitPrice, value: value.value ?? 0, match: d.matchScore ?? 0 }
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return void (shown.value = target)
+  const started = performance.now()
+  const tick = (now: number) => {
+    const p = Math.min(1, (now - started) / 900)
+    const e = 1 - (1 - p) ** 3
+    shown.value = { quantity: target.quantity * e, price: target.price * e, value: target.value * e, match: target.match * e }
+    if (p < 1) requestAnimationFrame(tick)
+  }
+  requestAnimationFrame(tick)
+}, { immediate: true })
 
 async function approve() {
   approving.value = true
@@ -63,10 +91,10 @@ async function approve() {
     <BidSteps :current="deal.status === 'Closed' ? 5 : 4" />
     <RouterLink to="/deals" class="back"><i class="pi pi-arrow-left" /> {{ t('deals.title') }}</RouterLink>
 
-    <div class="card head">
+    <div class="card head" :class="{ negotiating: deal.status === 'Negotiating' }">
       <div class="parties">
         <div class="party"><span class="pflag">{{ flag(data.bidder.country) }}</span><div><strong>{{ data.bidder.name }}</strong><div class="muted">{{ data.bidder.city }}</div></div></div>
-        <i class="pi pi-arrow-right-arrow-left link-icon" />
+        <i class="pi pi-arrow-right-arrow-left link-icon" :class="{ busy: deal.status === 'Negotiating' }" aria-hidden="true" />
         <div class="party"><span class="pflag">{{ flag(data.partner.country) }}</span><div><strong>{{ data.partner.name }}</strong><div class="muted">{{ data.partner.city }}</div></div></div>
       </div>
       <div class="head-meta">
@@ -76,28 +104,35 @@ async function approve() {
       </div>
     </div>
 
-    <div v-if="deal.status !== 'Negotiating'" class="ink-panel outcome" :class="deal.status">
-      <i :class="deal.status === 'Closed' ? (deal.autonomous ? 'pi pi-bolt' : 'pi pi-user') : deal.status === 'AwaitingApproval' ? 'pi pi-hourglass' : 'pi pi-times-circle'" />
-      <div class="outcome-main">
-        <div class="outcome-title">
-          {{ deal.status === 'Closed' ? (deal.autonomous ? t('deals.closedAuto') : t('deals.closedHuman')) : deal.status === 'AwaitingApproval' ? t('deals.awaiting') : t('deals.failed') }}
+    <Transition name="reveal" appear>
+      <div v-if="deal.status !== 'Negotiating'" class="ink-panel outcome" data-ap="outcome" :class="deal.status">
+        <div class="outcome-head">
+          <span class="stamp" aria-hidden="true">
+            <i :class="deal.status === 'Closed' ? (deal.autonomous ? 'pi pi-bolt' : 'pi pi-user') : deal.status === 'AwaitingApproval' ? 'pi pi-hourglass' : 'pi pi-times'" />
+          </span>
+          <div class="outcome-heading">
+            <div class="outcome-title">
+              {{ deal.status === 'Closed' ? (deal.autonomous ? t('deals.closedAuto') : t('deals.closedHuman')) : deal.status === 'AwaitingApproval' ? t('deals.awaiting') : t('deals.failed') }}
+            </div>
+            <!-- The terms grid already states the numbers, so a closed deal gets a short line instead of repeating them. -->
+            <div class="muted">{{ deal.unitPrice ? t('deals.closedNote') : deal.outcome }}</div>
+          </div>
+          <div class="outcome-actions">
+            <Button v-if="deal.status === 'AwaitingApproval'" :label="t('deals.approve')" icon="pi pi-check" :loading="approving" @click="approve" />
+            <RouterLink v-if="deal.status === 'Closed'" :to="`/deals/${deal.id}/documents`">
+              <Button data-ap="documents" :label="t('deals.documents')" icon="pi pi-file-edit" />
+            </RouterLink>
+          </div>
         </div>
-        <div class="muted">{{ deal.outcome }}</div>
-        <div v-if="deal.unitPrice" class="terms">
-          <div><span class="muted">{{ t('deals.quantity') }}</span><strong>{{ deal.quantity }} {{ unit }}</strong></div>
-          <div><span class="muted">{{ t('deals.price') }}</span><strong>{{ eur(deal.unitPrice) }}</strong></div>
-          <div><span class="muted">{{ t('deals.value') }}</span><strong>{{ eur(value, 0) }}</strong></div>
-          <div><span class="muted">{{ t('deals.delivery') }}</span><strong>{{ formatDate(deal.delivery) }}</strong></div>
-          <div><span class="muted">{{ t('deals.match') }}</span><strong>{{ deal.matchScore }}%</strong></div>
-        </div>
+        <dl v-if="deal.unitPrice" class="terms">
+          <div style="--i: 0"><dt>{{ t('deals.quantity') }}</dt><dd>{{ Math.round(shown.quantity) }} {{ unit }}</dd></div>
+          <div style="--i: 1"><dt>{{ t('deals.price') }}</dt><dd>{{ eur(shown.price) }}</dd></div>
+          <div style="--i: 2"><dt>{{ t('deals.value') }}</dt><dd>{{ eur(shown.value, 0) }}</dd></div>
+          <div style="--i: 3"><dt>{{ t('deals.delivery') }}</dt><dd>{{ formatDate(deal.delivery) }}</dd></div>
+          <div style="--i: 4"><dt>{{ t('deals.match') }}</dt><dd>{{ Math.round(shown.match) }}%</dd></div>
+        </dl>
       </div>
-      <div class="outcome-actions">
-        <Button v-if="deal.status === 'AwaitingApproval'" :label="t('deals.approve')" icon="pi pi-check" :loading="approving" @click="approve" />
-        <RouterLink v-if="deal.status === 'Closed'" :to="`/deals/${deal.id}/documents`">
-          <Button :label="t('deals.documents')" icon="pi pi-file-edit" />
-        </RouterLink>
-      </div>
-    </div>
+    </Transition>
 
     <div class="layout">
       <div class="card room">
@@ -139,18 +174,40 @@ async function approve() {
 .link-icon { color: var(--accent); font-size: 18px; padding: 8px; border: 1px dashed var(--dash); }
 .head-meta { display: flex; flex-direction: column; gap: 4px; align-items: flex-end; text-align: right; }
 .small { font-size: 12.5px; }
-.outcome { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
-.outcome > i { font-size: 26px; color: var(--accent-on-dark); }
-.outcome.Closed > i { color: #6fd39b; }
-.outcome.AwaitingApproval > i { color: #ffc46b; }
-.outcome.Failed > i { color: #ff8a80; }
-.outcome-main { flex: 1 1 420px; display: flex; flex-direction: column; gap: 8px; }
-.outcome-title { font-size: 30px; font-weight: 500; letter-spacing: -0.03em; }
-.terms { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); border: 1px dashed var(--ink-line); margin-top: 10px; }
-.terms div { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border-right: 1px dashed var(--ink-line); }
+.outcome { display: flex; flex-direction: column; gap: 24px; }
+.outcome-head { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+.stamp { width: 48px; height: 48px; flex: none; display: grid; place-items: center; background: var(--accent); color: #fff; clip-path: var(--chamfer-sm); font-size: 20px; }
+.outcome.Closed .stamp { background: var(--good); }
+.outcome.AwaitingApproval .stamp { background: #b07a00; }
+.outcome.Failed .stamp { background: var(--bad); }
+.outcome-heading { flex: 1 1 360px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.outcome-title { font-size: 28px; font-weight: 500; letter-spacing: -0.03em; line-height: 1.15; }
+.outcome-actions { flex: none; }
+.terms { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); margin: 0; border: 1px dashed var(--ink-line); }
+.terms div { display: flex; flex-direction: column; gap: 8px; padding: 16px 20px; border-right: 1px dashed var(--ink-line); }
 .terms div:last-child { border-right: 0; }
-.terms .muted { font-size: 13px; color: var(--ink-muted); }
-.terms strong { font-size: 26px; font-weight: 500; letter-spacing: -0.03em; }
+.terms dt { font-size: 13px; color: var(--ink-muted); }
+.terms dd { margin: 0; font-size: 28px; font-weight: 500; letter-spacing: -0.03em; white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+/* One orchestrated reveal when the deal resolves: panel rises in, the stamp lands, the figures follow. */
+.reveal-enter-active { transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.reveal-enter-from { opacity: 0; transform: translateY(10px); }
+.reveal-enter-active .stamp { animation: stamp 0.5s 0.15s cubic-bezier(0.2, 0.8, 0.2, 1.4) both; }
+.reveal-enter-active .terms div { animation: rise 0.4s calc(0.25s + var(--i) * 0.06s) ease both; }
+@keyframes stamp { from { transform: scale(0.4) rotate(-12deg); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* While negotiating: a thin running line under the parties and a gently moving link icon. */
+.head { position: relative; overflow: hidden; }
+.head.negotiating::after { content: ''; position: absolute; left: 0; bottom: 0; height: 2px; width: 30%; background: var(--accent); animation: scan 1.6s ease-in-out infinite; }
+@keyframes scan { from { transform: translateX(-100%); } to { transform: translateX(340%); } }
+.link-icon.busy { animation: sway 1.4s ease-in-out infinite; }
+@keyframes sway { 50% { transform: translateX(3px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-enter-active, .reveal-enter-active .stamp, .reveal-enter-active .terms div, .msg-enter-active { transition: none; animation: none; }
+  .head.negotiating::after, .link-icon.busy, .typing span, .live i { animation: none; }
+}
 .layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 16px; align-items: start; }
 @media (max-width: 1100px) { .layout { grid-template-columns: 1fr; } }
 .side { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow: auto; }

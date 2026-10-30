@@ -173,6 +173,7 @@ export default {
     termsOnly: 'Wymieniane są tylko warunki: cena, ilość, termin dostawy.',
     perUnit: '{p} €/szt.',
     accepts: 'Akceptuje',
+    closedNote: 'Wszystkie warunki mieszczą się w Twoich zatwierdzonych limitach.',
     closedAuto: 'Umowa zamknięta przez agentów bez udziału człowieka',
     closedHuman: 'Umowa zatwierdzona przez człowieka',
     awaiting: 'Warunki uzgodnione. Potrzebna Twoja akceptacja',

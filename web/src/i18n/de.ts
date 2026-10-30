@@ -173,6 +173,7 @@ export default {
     termsOnly: 'Ausgetauscht werden nur Konditionen: Preis, Menge, Lieferung.',
     perUnit: '{p} €/Stk.',
     accepts: 'Nimmt an',
+    closedNote: 'Alle Bedingungen liegen innerhalb Ihres freigegebenen Rahmens.',
     closedAuto: 'Deal von den Agenten ohne Menschen abgeschlossen',
     closedHuman: 'Deal von einem Menschen freigegeben',
     awaiting: 'Konditionen vereinbart. Ihre Freigabe ist nötig',

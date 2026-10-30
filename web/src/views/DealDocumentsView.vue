@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import BidSteps from '@/components/BidSteps.vue'
-import { computed, ref, watch } from 'vue'
+import { computed, nextTick, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import { marked } from 'marked'
@@ -10,7 +10,7 @@ import Checkbox from 'primevue/checkbox'
 import Tag from 'primevue/tag'
 import Message from 'primevue/message'
 import { api, post } from '@/lib/api'
-import { advance, autopilotAt, beat } from '@/lib/autopilot'
+import { advance, autopilotAt, beat, pointAt, showSection } from '@/lib/autopilot'
 import { flag } from '@/lib/flags'
 import { session } from '@/lib/session'
 import type { AgreementDocument, Deal, Party } from '@/lib/tenders'
@@ -32,9 +32,16 @@ watch(() => [route.params.id, session.orgId], load, { immediate: true })
 // Autopilot step 5: draft the documents, then hand over to a person to review and sign.
 watch(() => data.value?.deal.status, async (status) => {
   if (!autopilotAt('documents') || status !== 'Closed') return
-  await beat(1500)
+  await beat(1200)
   if (!autopilotAt('documents')) return
-  if (!docs.value.length) await generate()
+  if (!docs.value.length) {
+    await pointAt('[data-ap="generate"]', { click: true })
+    await generate()
+  }
+  await nextTick()
+  await showSection('[data-ap="checklist"]', 'start')
+  await beat(3500)
+  await showSection('[data-ap="viewer"]', 'start')
   advance('done', 'done')
 })
 
@@ -78,7 +85,7 @@ function download(d: AgreementDocument) {
         <h1>{{ t('docs.title') }}</h1>
         <p class="muted">{{ flag(data.bidder.country) }} {{ data.bidder.name }} ⇄ {{ flag(data.partner.country) }} {{ data.partner.name }} · {{ data.deal.lotId }} · TED {{ data.deal.tenderRef }}</p>
       </div>
-      <Button v-if="data.deal.status === 'Closed'" :label="docs.length ? t('docs.regenerate') : t('docs.generate')"
+      <Button v-if="data.deal.status === 'Closed'" data-ap="generate" :label="docs.length ? t('docs.regenerate') : t('docs.generate')"
         :icon="docs.length ? 'pi pi-refresh' : 'pi pi-file-edit'" :severity="docs.length ? 'secondary' : undefined" :outlined="!!docs.length"
         :loading="generating" @click="generate" />
     </div>
@@ -86,7 +93,7 @@ function download(d: AgreementDocument) {
     <Message v-if="data.deal.status !== 'Closed'" severity="info">{{ t('docs.notClosed') }}</Message>
 
     <template v-if="docs.length">
-      <div class="card">
+      <div class="card" data-ap="checklist">
         <h2>{{ t('docs.checklist') }}</h2>
         <table class="checklist">
           <thead>
@@ -107,7 +114,7 @@ function download(d: AgreementDocument) {
         <p class="human"><i class="pi pi-user-edit" /> {{ t('docs.humanSigns') }}</p>
       </div>
 
-      <div class="viewer">
+      <div class="viewer" data-ap="viewer">
         <div class="card doc-list">
           <button v-for="d in docs" :key="d.id" class="doc-item" :class="{ active: d.id === selected }" @click="selected = d.id">
             <i class="pi pi-file" />

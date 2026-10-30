@@ -6,6 +6,7 @@ import Select from 'primevue/select'
 import Button from 'primevue/button'
 import Drawer from 'primevue/drawer'
 import ActivityFeed from '@/components/ActivityFeed.vue'
+import AutopilotCursor from '@/components/AutopilotCursor.vue'
 import { autopilot, autopilotRunning, dismissAutopilot, stopAutopilot } from '@/lib/autopilot'
 import { api } from '@/lib/api'
 import { session, type Org } from '@/lib/session'
@@ -105,6 +106,7 @@ watch(() => session.language, (lang) => (locale.value = lang), { immediate: true
         <RouterView :key="session.orgId" />
       </main>
     </div>
+    <AutopilotCursor />
     <Drawer v-model:visible="showActivity" position="right" :header="t('activity.title')" class="activity-drawer">
       <ActivityFeed />
     </Drawer>

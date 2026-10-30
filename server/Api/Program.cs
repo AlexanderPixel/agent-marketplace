@@ -58,6 +58,7 @@ app.MapIntelligenceEndpoints();
 app.MapProfileEndpoints();
 app.MapAutoBidEndpoints();
 app.MapProductCatalogEndpoints();
+app.MapDemoEndpoints();
 app.MapFallbackToFile("index.html");
 
 app.Run();

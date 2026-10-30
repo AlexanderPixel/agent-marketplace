@@ -12,27 +12,33 @@ public static class DemoProfiles
 
     private static readonly List<string> RifleKeywords = ["ak-47", "ak47", "broni", "broń", "kałasznikow", "kalashnikov", "karabinek", "karabin", "assault rifle", "rifle", "sturmgewehr", "gewehr", "útočná puška", "samopal"];
 
-    /// <summary>Pre-approved mandates. Bidder buys up to €420/set; Moravia sells from €385; Váh from €400.</summary>
+    /// <summary>
+    /// Pre-approved mandates. Bidder buys up to €420/set, from 100 sets per partner; Moravia sells up to 220 sets from €385,
+    /// Váh up to 200 from €398. The demo gap is 320 sets, so it takes both: Moravia 220, then Váh the remaining 100.
+    /// </summary>
     public static IEnumerable<Mandate> Mandates() =>
     [
         new Mandate
         {
             OrgId = DemoOrgs.Bidder, Product = "Leaf springs (Blattfedern), sets", Buying = true, TargetPrice = 380, LimitPrice = 420,
-            MinQuantity = 300, MaxQuantity = 400, DeliveryLimit = new(2027, 3, 15), AutonomyThreshold = 85, AutonomousValueCapEur = 200_000,
+            MinQuantity = 100, MaxQuantity = 400, DeliveryLimit = new(2027, 3, 15), AutonomyThreshold = 85, AutonomousValueCapEur = 200_000,
         },
         new Mandate
         {
             OrgId = DemoOrgs.Partner, Product = "Leaf springs, sets", Buying = false, TargetPrice = 430, LimitPrice = 385,
-            MinQuantity = 100, MaxQuantity = 400, DeliveryLimit = new(2027, 2, 1), AutonomyThreshold = 85, AutonomousValueCapEur = 250_000,
+            MinQuantity = 100, MaxQuantity = 220, DeliveryLimit = new(2027, 2, 1), AutonomyThreshold = 85, AutonomousValueCapEur = 250_000,
         },
         new Mandate
         {
-            OrgId = DemoOrgs.WeakPartner, Product = "AK-47 assault rifles, 7.62×39 mm, pieces", Buying = false, TargetPrice = 850, LimitPrice = 720,
-            MinQuantity = 50, MaxQuantity = 300, DeliveryLimit = new(2027, 3, 7), AutonomyThreshold = 85, AutonomousValueCapEur = 250_000,
+            OrgId = DemoOrgs.WeakPartner, Product = "Leaf springs, sets", Buying = false, TargetPrice = 440, LimitPrice = 398,
+            MinQuantity = 50, MaxQuantity = 200, DeliveryLimit = new(2027, 2, 15), AutonomyThreshold = 85, AutonomousValueCapEur = 250_000,
         },
     ];
 
-    /// <summary>Cost per leaf-spring set: 58% from the EU, so short of the 65% SAFE/EDIP rule until one supplier is swapped.</summary>
+    /// <summary>
+    /// Cost per leaf-spring set: 58.7% from the EU, so short of the 65% SAFE/EDIP rule. One supplier causes it: the Indian eye
+    /// forgings (21.6% of cost). Swapping them to Kuźnia Jawor (PL) is the only single change that clears the rule (→ 80.6%).
+    /// </summary>
     public static BillOfMaterials Bom() => new()
     {
         OrgId = DemoOrgs.Bidder,
@@ -42,8 +48,7 @@ public static class DemoProfiles
             new("steel", "Spring steel flat bar 51CrV4", "Ovako Hofors AB", "SE", 83, []),
             new("eye-forging", "Spring eye forging blanks", "Bharat Forge Ltd", "IN", 44,
                 [new("Kuźnia Jawor S.A.", "PL", 47, "Qualified 2024; 3 weeks lead time")]),
-            new("bushing", "Rubber-metal bushings", "Ningbo Tuopu Group", "CN", 18,
-                [new("Trelleborg Antivibration Solutions", "SE", 19, "Qualified for military vehicles; same drawing")]),
+            new("bushing", "Rubber-metal bushings", "Ningbo Tuopu Group", "CN", 18, []),
             new("u-bolts", "U-bolts M22 with nuts", "Kuźnia Jawor S.A.", "PL", 16, []),
             new("coating", "Zinc-flake corrosion coating", "NOF Metal Coatings North America", "US", 9,
                 [new("Dörken Coatings GmbH", "DE", 9.5m, "Same spec class; DIN EN ISO 10683")]),
@@ -53,9 +58,7 @@ public static class DemoProfiles
             new("bolt", "Centre bolt M16 with nut", "Norm Cıvata", "TR", 6, []),
             new("clips", "Rebound clips", "Kuźnia Jawor S.A.", "PL", 5, []),
             new("packaging", "Packaging and pallet", "Drewpal sp. z o.o.", "PL", 4, []),
-            // Demo: a supplier on the EU sanctions list (fictional), to show the screen catching it.
-            new("shot", "Shot-peening media S330", "Severo-Ural Steel Shot LLC", "RU", 3,
-                [new("Vulkan Inox GmbH", "DE", 3.4m, "Same grade S330; EN ISO 11124")]),
+            new("shot", "Shot-peening media S330", "Vulkan Inox GmbH", "DE", 3.4m, []),
         ],
     };
 
@@ -72,6 +75,7 @@ public static class DemoProfiles
                 new("pl-us", "tax", "Zaświadczenie o niezaleganiu w podatkach", "Urząd Skarbowy w Radomiu", "PL", new(2026, 9, 25), new(2026, 12, 25)),
                 new("pl-iso", "iso9001", "ISO 9001:2015", "TÜV NORD Polska", "PL", new(2025, 4, 1), new(2028, 3, 31)),
                 new("pl-aqap", "aqap2110", "AQAP 2110:2016", "Wojskowe Centrum Normalizacji, Jakości i Kodyfikacji", "PL", new(2024, 6, 1), new(2027, 5, 31)),
+                new("pl-iso14001", "iso14001", "ISO 14001:2015", "Polskie Centrum Badań i Certyfikacji S.A. (PCBC)", "PL", new(2025, 9, 15), new(2028, 9, 14)),
                 new("pl-ref-1", "reference", "Referencje: 1 200 kpl. resorów dla 2. Regionalnej Bazy Logistycznej (2025)", "2. RBLog", "PL", new(2025, 12, 10), null,
                     Delivery: new("2. Regionalna Baza Logistyczna", "Resory piórowe", 1200, "SE", null, new(2025, 11, 30), null, "Reference letter")),
                 new("pl-ref-2", "reference", "Referencje: resory do Jelcz 442 dla Jelcz sp. z o.o. (2024)", "Jelcz sp. z o.o.", "PL", new(2024, 11, 5), null,
@@ -121,6 +125,8 @@ public static class DemoProfiles
                 new("cz-rt", "criminal-record", "Výpis z evidence Rejstříku trestů právnických osob", "Rejstřík trestů", "CZ", new(2026, 9, 20), new(2027, 3, 20)),
                 new("cz-iso", "iso9001", "ISO 9001:2015", "TÜV SÜD Czech", "CZ", new(2025, 2, 1), new(2028, 1, 31)),
                 new("cz-aqap", "aqap2110", "AQAP 2110:2016", "Úřad pro obrannou standardizaci, katalogizaci a státní ověřování jakosti", "CZ", new(2025, 3, 1), new(2028, 2, 28)),
+                new("cz-iatf", "iatf16949", "IATF 16949:2016", "TÜV SÜD Czech s.r.o.", "CZ", new(2025, 5, 20), new(2028, 5, 19)),
+                new("cz-iso3834", "iso3834", "ČSN EN ISO 3834-2:2022", "Český svářečský ústav s.r.o.", "CZ", new(2024, 11, 4), new(2027, 11, 3)),
                 new("cz-ref", "reference", "Reference: leaf springs for Tatra T815 (2025)", "Tatra Trucks a.s.", "CZ", new(2025, 9, 1), null,
                     Delivery: new("Tatra Trucks a.s.", "Leaf springs for Tatra T815", null, null, null, new(2025, 8, 31), null, "Reference letter")),
             ],
@@ -130,7 +136,7 @@ public static class DemoProfiles
                 new("Moravia Holding a.s.", "CZ", 100, "parent"),
                 new("Petr Novák (natural person)", "CZ", 64, "ultimate"),
             ],
-            Products = [new("leaf-spring", "Listové pružiny (leaf springs)", LeafSpringKeywords, "34320000", 400, "SE", 395m, 75, "leaf-spring", "CZ")],
+            Products = [new("leaf-spring", "Listové pružiny (leaf springs)", LeafSpringKeywords, "34320000", 220, "SE", 395m, 75, "leaf-spring", "CZ")],
         },
         new CompanyProfile
         {
@@ -140,16 +146,20 @@ public static class DemoProfiles
                 new("sk-or", "trade-register", "Výpis z obchodného registra", "Okresný súd Trenčín", "SK", new(2026, 8, 10), null),
                 new("sk-rt", "criminal-record", "Výpis z registra trestov právnických osôb", "Generálna prokuratúra SR", "SK", new(2026, 9, 1), new(2027, 3, 1)),
                 new("sk-iso", "iso9001", "ISO 9001:2015", "SGS Slovakia", "SK", new(2024, 5, 1), new(2027, 4, 30)),
+                new("sk-aqap", "aqap2110", "AQAP 2110:2016", "Úrad pre obranné štandardy, kodifikáciu a štátne overovanie kvality MO SR", "SK", new(2025, 1, 15), new(2028, 1, 14)),
+                new("sk-iso45001", "iso45001", "ISO 45001:2018", "SGS Slovakia spol. s r.o.", "SK", new(2025, 3, 10), new(2028, 3, 9)),
+                new("sk-iso27001", "iso27001", "ISO/IEC 27001:2022", "Bureau Veritas Slovakia spol. s r.o.", "SK", new(2025, 7, 1), new(2028, 6, 30)),
                 new("sk-lic", "export-licence", "Povolenie na obchodovanie s výrobkami obranného priemyslu", "Ministerstvo hospodárstva SR", "SK", new(2025, 6, 1), new(2030, 5, 31)),
             ],
             Ownership =
             [
                 new("Váh Komponenty s.r.o.", "SK", 100, "partner"),
-                new("Tianrun Europe Holding B.V.", "NL", 100, "parent"),
-                new("Shandong Tianrun Auto Parts Co., Ltd.", "CN", 51, "ultimate"),
+                new("Považská Strojárska Skupina a.s.", "SK", 100, "parent"),
+                new("Martin Horváth (natural person)", "SK", 71, "ultimate"),
             ],
             Products =
             [
+                new("leaf-spring", "Listové pružiny (leaf springs)", LeafSpringKeywords, "34320000", 200, "SE", 405m, 90, "leaf-spring", "SK"),
                 // Published AK-47 figures: gas-operated, 7.62×39 mm, 30-round magazine, iron sights.
                 new("ak-47", "AK-47 assault rifles (7.62×39 mm)", RifleKeywords, "35321200", 300, "EA", 780m, 120,
                     "assault-rifle", "SK", "Select-fire assault rifle in 7.62×39 mm with iron sights, for infantry and police.",

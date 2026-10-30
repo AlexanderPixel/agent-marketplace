@@ -14,6 +14,19 @@ public static class DealEndpoints
 
     public record MandateUpdate(decimal TargetPrice, decimal LimitPrice, int MinQuantity, int MaxQuantity, DateOnly DeliveryLimit, int AutonomyThreshold, decimal AutonomousValueCapEur);
 
+    /// <summary>The bidder first, then partners with a closed deal for the same tender, oldest deal first.</summary>
+    private static async Task<List<ConsortiumMember>> ConsortiumAsync(AppDb db, Deal deal)
+    {
+        var partnerIds = await db.Deals.IgnoreQueryFilters()
+            .Where(x => x.TenderId == deal.TenderId && x.BidderOrgId == deal.BidderOrgId && x.Status == DealStatus.Closed)
+            .OrderBy(x => x.CreatedAt).Select(x => x.PartnerOrgId).ToListAsync();
+        var ids = partnerIds.Distinct().Prepend(deal.BidderOrgId).ToList();
+        var orgs = await db.Organizations.Where(o => ids.Contains(o.Id)).ToDictionaryAsync(o => o.Id);
+        var profiles = await db.Profiles.IgnoreQueryFilters().Where(p => ids.Contains(p.OrgId)).ToDictionaryAsync(p => p.OrgId);
+        return ids.Where(id => orgs.ContainsKey(id) && profiles.ContainsKey(id))
+            .Select((id, i) => new ConsortiumMember(orgs[id], profiles[id], i == 0 ? "bidder" : "partner")).ToList();
+    }
+
     public static void MapDealEndpoints(this WebApplication app)
     {
         var api = app.MapGroup("/api");
@@ -52,10 +65,12 @@ public static class DealEndpoints
             if (d is null) return TypedResults.NotFound();
             var orgs = await db.Organizations.Where(o => o.Id == d.BidderOrgId || o.Id == d.PartnerOrgId).ToDictionaryAsync(o => o.Id);
             var names = orgs.ToDictionary(o => o.Key, o => new { o.Value.Name, o.Value.Country, o.Value.City });
-            // The viewer's own certificates only: the profile is scoped to the calling organisation, and the partner attaches its own.
+            // Certificates for the bid. The consortium is the bidder plus every partner whose deal for this tender closed: once a
+            // deal is signed off, the certificates the bid needs from a partner are shared with the bidder (titles, issuers and
+            // the certificate copy only). A partner sees only the certificates it covers itself.
             var tender = await db.Tenders.FirstOrDefaultAsync(t => t.Id == d.TenderId);
             var profile = await db.Profiles.FirstOrDefaultAsync();
-            var certificates = tender is null || profile is null ? [] : TenderCertificates.For(tender, profile, orgs[orgId]);
+            var certificates = tender is null || profile is null ? [] : TenderCertificates.For(tender, profile, orgs[orgId], await ConsortiumAsync(db, d));
             return TypedResults.Ok(new { deal = d, bidder = names[d.BidderOrgId], partner = names[d.PartnerOrgId], certificates });
         });
 

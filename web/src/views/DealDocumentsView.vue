@@ -56,6 +56,17 @@ const certs = computed(() => data.value?.certificates ?? [])
 const doc = computed<AgreementDocument | TenderCertificate | undefined>(() =>
   docs.value.find((d) => d.id === selected.value) ?? certs.value.find((c) => c.id === selected.value))
 const cert = computed(() => certs.value.find((c) => c.id === selected.value))
+// The tender's required certificates, and which consortium member covers each.
+const required = computed(() => certs.value.filter((c) => c.demoRequirement))
+const split = computed(() => {
+  const by = new Map<string, { label: string; n: number }>()
+  for (const c of required.value) {
+    const key = c.providedBy?.orgId ?? '-'
+    const label = c.providedBy ? `${flag(c.providedBy.country)} ${c.providedBy.name}` : t('docs.matrixMissing')
+    by.set(key, { label, n: (by.get(key)?.n ?? 0) + 1 })
+  }
+  return [...by.values()].map((x) => `${x.n} × ${x.label}`).join(' · ')
+})
 // The other company in the deal, from the viewer's side: it attaches its own certificates.
 const otherParty = computed(() => (data.value && session.orgId === data.value.deal.bidderOrgId ? data.value.partner : data.value?.bidder))
 const title = (d: AgreementDocument | TenderCertificate) => d.title[session.language] ?? d.title.pl ?? Object.values(d.title)[0]
@@ -93,6 +104,36 @@ function download(d: AgreementDocument | TenderCertificate) {
     <Message v-if="data.deal.status !== 'Closed'" severity="info">{{ t('docs.notClosed') }}</Message>
 
     <template v-if="docs.length">
+      <div v-if="required.length" class="card" data-ap="certificates">
+        <h2>{{ t('docs.matrixTitle') }}</h2>
+        <p class="muted small">{{ t('docs.matrixHint', { n: required.length, split }) }}</p>
+        <table class="checklist matrix">
+          <thead>
+            <tr><th>{{ t('docs.matrixNeed') }}</th><th>{{ t('docs.matrixBy') }}</th><th>{{ t('docs.matrixCert') }}</th><th>{{ t('docs.matrixWhy') }}</th></tr>
+          </thead>
+          <tbody>
+            <tr v-for="c in required" :key="c.id" :class="{ missing: !c.providedBy }">
+              <td lang="de"><strong>{{ c.need }}</strong></td>
+              <td>
+                <template v-if="c.providedBy">
+                  {{ flag(c.providedBy.country) }} {{ c.providedBy.name }}
+                  <Tag v-if="c.providedBy.orgId === session.orgId" :value="t('docs.you')" severity="info" class="mini" />
+                </template>
+                <span v-else class="expired">{{ t('docs.matrixMissing') }}</span>
+              </td>
+              <td>
+                <a v-if="c.providedBy" href="#" @click.prevent="selected = c.id">{{ title(c) }}</a>
+                <div class="muted small">{{ c.issuer }}<template v-if="c.validUntil"> · {{ t('docs.certValid', { date: c.validUntil }) }}</template></div>
+              </td>
+              <td class="small">
+                <Tag v-if="c.country && c.country !== 'DE'" :value="`${flag(c.country)} → 🇩🇪`" severity="success" class="mini" />
+                {{ c.equivalence }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="card" data-ap="checklist">
         <h2>{{ t('docs.checklist') }}</h2>
         <table class="checklist">
@@ -128,10 +169,11 @@ function download(d: AgreementDocument | TenderCertificate) {
               <strong>{{ t('docs.certificates') }}</strong>
               <span v-if="otherParty" class="muted small">{{ t('docs.certificatesHint', { partner: otherParty.name }) }}</span>
             </div>
-            <button v-for="c in certs" :key="c.id" class="doc-item" :class="{ active: c.id === selected }" @click="selected = c.id">
+            <button v-for="c in certs.filter((x) => !x.id.startsWith('missing-'))" :key="c.id" class="doc-item" :class="{ active: c.id === selected }" @click="selected = c.id">
               <i class="pi pi-verified" />
               <div>
                 <div class="doc-title">{{ title(c) }}</div>
+                <div v-if="c.providedBy" class="muted small">{{ flag(c.providedBy.country) }} {{ c.providedBy.name }}</div>
                 <div class="muted small" :class="{ expired: !c.validAtDeadline }">
                   {{ !c.validAtDeadline ? t('docs.certExpired') : c.validUntil ? t('docs.certValid', { date: c.validUntil }) : t('docs.certNoExpiry') }}
                 </div>
@@ -152,6 +194,7 @@ function download(d: AgreementDocument | TenderCertificate) {
             <strong>{{ t('docs.certRequired', { need: cert.need }) }}</strong>
             <Tag v-if="cert.demoRequirement" :value="t('docs.certDemoRequirement')" severity="secondary" />
             <div class="muted small">{{ cert.why }}</div>
+            <div v-if="cert.equivalence" class="small">{{ cert.equivalence }}</div>
           </div>
           <div class="pages" :class="{ both: view === 'both' }">
             <!-- PL first, in the same order as the language switch. -->
@@ -187,8 +230,12 @@ function download(d: AgreementDocument | TenderCertificate) {
 .doc-title { font-weight: 600; }
 .group-head { display: flex; flex-direction: column; gap: 2px; padding: 16px 12px 6px; margin-top: 6px; border-top: 1px solid var(--border); }
 .expired { color: var(--bad); }
+.matrix td { font-size: 14px; }
+.matrix a { color: var(--accent); }
+.matrix tr.missing td { background: var(--warn-soft); }
+.mini { font-size: 11px; padding: 1px 6px; margin-left: 4px; }
 .cert-need { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; padding: 10px 12px; background: var(--ground); border: 1px solid var(--border); }
-.cert-need .muted { flex-basis: 100%; }
+.cert-need .muted, .cert-need .small { flex-basis: 100%; }
 .doc-view { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
 .doc-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
 .tools { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }

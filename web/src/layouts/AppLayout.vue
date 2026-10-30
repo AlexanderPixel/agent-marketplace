@@ -10,7 +10,7 @@ import AutopilotCursor from '@/components/AutopilotCursor.vue'
 import LoadingMark from '@/components/LoadingMark.vue'
 import { autopilot, autopilotRunning, dismissAutopilot, resumeAutopilot, stopAutopilot } from '@/lib/autopilot'
 import { useRouter } from 'vue-router'
-import { api } from '@/lib/api'
+import { api, post } from '@/lib/api'
 import { session, type Org } from '@/lib/session'
 import { flag } from '@/lib/flags'
 import { languages } from '@/i18n'
@@ -57,6 +57,30 @@ onMounted(async () => {
 })
 
 watch(() => session.language, (lang) => (locale.value = lang), { immediate: true })
+
+const resetting = ref(false)
+async function resetDemo() {
+  if (!window.confirm(t('demo.confirm'))) return
+  resetting.value = true
+  try {
+    await post('/demo/reset')
+    try {
+      localStorage.removeItem('autopilotRun')
+    } catch {
+      // Private mode: nothing stored.
+    }
+    session.orgId = session.orgs.find((o) => o.country === 'PL')?.id ?? session.orgId
+    try {
+      // Written now: the session watcher would only save it after this page is gone.
+      localStorage.setItem('session', JSON.stringify({ orgId: session.orgId, language: session.language }))
+    } catch {
+      // Private mode: the company choice just isn't remembered.
+    }
+    window.location.assign('/')
+  } finally {
+    resetting.value = false
+  }
+}
 </script>
 
 <template>
@@ -96,6 +120,7 @@ watch(() => session.language, (lang) => (locale.value = lang), { immediate: true
           <Select v-model="session.language" :options="languages" option-label="label" option-value="code" />
         </div>
         <Button :label="t('activity.open')" icon="pi pi-list" severity="secondary" outlined @click="showActivity = true" />
+        <Button :label="t('demo.reset')" icon="pi pi-refresh" severity="danger" text :loading="resetting" @click="resetDemo" />
       </header>
       <div v-if="autopilot.stage" class="autopilot" :class="autopilot.stage" role="status" aria-live="polite">
         <span class="ap-mark" aria-hidden="true"><i :class="autopilotRunning() ? 'pi pi-spin pi-spinner' : autopilot.stage === 'done' ? 'pi pi-check' : 'pi pi-pause'" /></span>

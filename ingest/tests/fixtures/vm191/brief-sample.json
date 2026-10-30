@@ -1,0 +1,701 @@
+{
+ "built_at": "2026-10-30T16:30:00+00:00",
+ "errors": {},
+ "summary": {
+  "title": "1/DLII6/VM191 - RV Tubus, divers und Katheter, divers",
+  "buyer": "Bundesamt für Infrastruktur, Umweltschutz und Dienstleistungen der Bundeswehr",
+  "country": "DE",
+  "procedure": "open",
+  "cpv": [
+   "33000000"
+  ],
+  "deadline": "2026-11-20T08:00:00+01:00",
+  "value": null,
+  "currency": null,
+  "platform_url": "https://www.evergabe-online.de/tenderdetails.html?id=900460",
+  "lots": 3,
+  "documents": 30,
+  "latest_version": 3
+ },
+ "lots": [
+  {
+   "lot": "1",
+   "title": "Endobronchialblocker-Set, 9Fr",
+   "quantity": 2400,
+   "unit": "EA",
+   "description": "Mindestabnahme 1.800 Stück (1. Abruf 01/2027: 600, 2. Abruf 01/2028: 1.200); Mindesthaltbarkeit 28 Monate; Richtfabrikat Arndt Endobronchialblocker-Set (Cook Medical) oder gleichwertig",
+   "cite": {
+    "file": "Leistungsverzeichnis.pdf",
+    "folder": "Vergabeunterlagen/Version 3",
+    "page": 1,
+    "quote": "LOS 1 - 2.400 EA Endobronchialblocker-Set, 9Fr"
+   }
+  },
+  {
+   "lot": "2",
+   "title": "Epistaxis-Ballonkatheter, Doppelballon",
+   "quantity": 4480,
+   "unit": "EA",
+   "description": "gemäß Preis- und Produktblatt Los 2",
+   "cite": {
+    "file": "Leistungsverzeichnis.pdf",
+    "folder": "Vergabeunterlagen/Version 3",
+    "page": 2,
+    "quote": "LOS 2 - 4.480 EA Epistaxis-Ballonkatheter, Doppelballon"
+   }
+  },
+  {
+   "lot": "3",
+   "title": "Tubus, Endotracheal-, spiralverstärkt, ID3,0",
+   "quantity": 130,
+   "unit": "EA",
+   "description": "gemäß Preis- und Produktblatt Los 3",
+   "cite": {
+    "file": "Leistungsverzeichnis.pdf",
+    "folder": "Vergabeunterlagen/Version 3",
+    "page": 3,
+    "quote": "LOS 3 - 130 EA Tubus, Endotracheal-, spiralverstärkt, ID3,0"
+   }
+  }
+ ],
+ "deadlines": [
+  {
+   "label": "Versendung der Aufforderung zur Angebotsabgabe",
+   "at": "2026-10-20",
+   "kind": "other",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 7,
+    "quote": "Versendung der Aufforderung zur Abgabe eines Angebotes 20.10.2026"
+   }
+  },
+  {
+   "label": "Letzter Termin für Bieterfragen",
+   "at": "2026-11-13",
+   "kind": "questions",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 7,
+    "quote": "Letzter Termin zur Einreichung von Bieter-fragen 13.11.2026"
+   }
+  },
+  {
+   "label": "Angebotsfrist (offer deadline)",
+   "at": "2026-11-20T08:00:00+01:00",
+   "kind": "offer",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 7,
+    "quote": "Angebote, die nicht fristgerecht eingegan-gen sind, werden vom Vergabeverfahren ausgeschlossen"
+   }
+  },
+  {
+   "label": "Geplanter Zuschlagstermin",
+   "at": "2026-12-16",
+   "kind": "other",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 7,
+    "quote": "Geplanter Zuschlagstermin 16.12.2026"
+   }
+  },
+  {
+   "label": "Zuschlags- und Bindefrist",
+   "at": "2027-02-28",
+   "kind": "binding_period",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 7,
+    "quote": "Zuschlags- und Bindefrist 28.02.2027"
+   }
+  }
+ ],
+ "submission": [
+  {
+   "label": "Form der Angebotsabgabe",
+   "value": "elektronisch in Textform über die e-Vergabe-Plattform des Bundes",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 2,
+    "quote": "elektronisch (in Textform) über die e-Vergabe-Plattform des Bundes"
+   }
+  },
+  {
+   "label": "Sprache",
+   "value": "Deutsch; fremdsprachigen Dokumenten ist eine Übersetzung beizufügen",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 2,
+    "quote": "Das Angebot ist in allen seinen Teilen in deutscher Sprache einzureichen."
+   }
+  },
+  {
+   "label": "Preise",
+   "value": "Nettopreise in EUR",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 2,
+    "quote": "Preise sind an der dazu vorgesehenen Stelle grundsätzlich als Nettopreise in EUR anzugeben."
+   }
+  },
+  {
+   "label": "Lose",
+   "value": "Angebot auf ein, mehrere oder alle Lose möglich",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 2,
+    "quote": "Es kann auf ein einzelnes, mehrere oder alle Lose geboten wer-den."
+   }
+  },
+  {
+   "label": "Nebenangebote",
+   "value": "nicht zugelassen; mehrere Hauptangebote ebenfalls nicht zugelassen",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 1,
+    "quote": "Nebenangebote sind: nicht zugelassen"
+   }
+  },
+  {
+   "label": "Bieterfragen",
+   "value": "ausschließlich über www.evergabe-online.de (Fr 14:00 bis Sa 23:59 keine Kommunikation)",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 6,
+    "quote": "Bieterfragen sind ausschließlich über die e- Vergabe Plattform des Bundes www.evergabe-online.de zu stellen"
+   }
+  },
+  {
+   "label": "Werkzeuge",
+   "value": "Angebots-Assistent (AnA) und Signatur-Client der e-Vergabe",
+   "cite": {
+    "file": "https://www.evergabe-online.de/tenderdetails.html?id=900460",
+    "folder": null,
+    "page": null,
+    "quote": "Hierzu gehören für Unternehmen der Angebots-Assistenten (AnA) und der Signatur-Client für Bieter (Sig-Client)"
+   }
+  },
+  {
+   "label": "Muster / Proben",
+   "value": "nicht vorgesehen",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 5,
+    "quote": "Muster/Proben sind im Vergabeverfahren nicht vorgesehen."
+   }
+  }
+ ],
+ "criteria": [
+  {
+   "name": "Preis",
+   "weight": 60,
+   "weight_unit": "%",
+   "lot": null,
+   "description": "Preisquotientenmethode: (1-w) · Pmin/P · Lmax mit w = 0,4",
+   "cite": {
+    "file": "VM191_18_Bewertungsmatrix.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 1,
+    "quote": "S = w * L + (1-w) * Pmin/P * Lmax"
+   }
+  },
+  {
+   "name": "Leistung",
+   "weight": 40,
+   "weight_unit": "%",
+   "lot": null,
+   "description": "Leistungspunkte aus der Matrix, maximal 40 (Lmax)",
+   "cite": {
+    "file": "VM191_18_Bewertungsmatrix.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 1,
+    "quote": "w 0,4 Lmax 40"
+   }
+  },
+  {
+   "name": "Verfalldatum übertrifft die Mindestanforderung",
+   "weight": 20,
+   "weight_unit": "points",
+   "lot": null,
+   "description": "1–6 Monate = 4, 7–12 Monate = 12, mehr als 12 Monate = 20 Punkte; Nachweis per Eigenerklärung",
+   "cite": {
+    "file": "VM191_18_Bewertungsmatrix.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 1,
+    "quote": "d) um mehr als 12 Monate übertroffen. = 20 Leistungspunkte"
+   }
+  },
+  {
+   "name": "Zertifiziertes Qualitätsmanagementsystem",
+   "weight": 10,
+   "weight_unit": "points",
+   "lot": null,
+   "description": "liegt vor = 10 Punkte; Nachweis per Eigenerklärung",
+   "cite": {
+    "file": "VM191_18_Bewertungsmatrix.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 1,
+    "quote": "Nachweislich eingerichtetes und zertifiziertes Qualitätsmanagementsystem"
+   }
+  },
+  {
+   "name": "Recyclingfähige Grundpackung (§ 21 Abs. 3 VerpackG)",
+   "weight": 10,
+   "weight_unit": "points",
+   "lot": null,
+   "description": "erfüllt die Mindeststandards = 10 Punkte; Nachweis per Eigenerklärung",
+   "cite": {
+    "file": "VM191_18_Bewertungsmatrix.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 1,
+    "quote": "Die Grundpackung erfüllt die Mindeststandards für die Bemessung der Recyclingfähigkeit"
+   }
+  }
+ ],
+ "checklist": [
+  {
+   "document": "Formular Angebot",
+   "obligation": "mandatory",
+   "when": "with_offer",
+   "template": "VM191_02_Angebot.docx",
+   "lot": null,
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 3,
+    "quote": "02  Formular Angebot (EinkaufBw IUD 03/2025) ☒"
+   }
+  },
+  {
+   "document": "Entwurf Individualvertrag (Rahmenvereinbarung)",
+   "obligation": "mandatory",
+   "when": "with_offer",
+   "template": "VM191_03_Entwurf_RV Tubus u. Katheter_ divers.pdf",
+   "lot": null,
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 3,
+    "quote": "03  Entwurf Individualvertrag (IV) ☒"
+   }
+  },
+  {
+   "document": "Leistungsbeschreibung (Anlage 1 zum Vertrag)",
+   "obligation": "mandatory",
+   "when": "with_offer",
+   "template": "VM191_04_RV_Anlage 1_Leistungsbeschreibung_.pdf",
+   "lot": null,
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 3,
+    "quote": "04  Leistungsbeschreibung (LB) – Anlage 1 zum Vertrag ☒"
+   }
+  },
+  {
+   "document": "Preis- und Produktblatt Los 1",
+   "obligation": "mandatory",
+   "when": "with_offer",
+   "template": "VM191_05_Anlage 2_LOS 1_Preis- und Produktblatt_Endobronchialblocker-Set_ 9Fr.pdf",
+   "lot": "1",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 3,
+    "quote": "05  Preis- und Produktblatt Los/e XX – Anlage 2 zum Vertrag ☒"
+   }
+  },
+  {
+   "document": "Preis- und Produktblatt Los 2",
+   "obligation": "mandatory",
+   "when": "with_offer",
+   "template": "VM191_05_Anlage 2_LOS 2_Preis- und Produktblatt_Epistaxis-Ballonkatheter_Doppelballon.pdf",
+   "lot": "2",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 3,
+    "quote": "05  Preis- und Produktblatt Los/e XX – Anlage 2 zum Vertrag ☒"
+   }
+  },
+  {
+   "document": "Preis- und Produktblatt Los 3",
+   "obligation": "mandatory",
+   "when": "with_offer",
+   "template": "VM191_05_Anlage 2_LOS 3_Preis- und Produktblatt_Tubus_ Endotracheal-_ spiralverstärkt_ ID3_0.pdf",
+   "lot": "3",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 3,
+    "quote": "05  Preis- und Produktblatt Los/e XX – Anlage 2 zum Vertrag ☒"
+   }
+  },
+  {
+   "document": "Eigenerklärung zum Nichtvorliegen von Ausschlussgründen §§ 123, 124 GWB (B-V034)",
+   "obligation": "mandatory",
+   "when": "with_offer",
+   "template": "VM191_12_B-V034_Eigenerklaerung Nichtvorliegen Ausschlussgruende.pdf",
+   "lot": null,
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 3,
+    "quote": "Eigenerklärung zum Nichtvorliegen zwingender und fakultativer Aus-schlussgründe gemäß §§ 123 + 124 GWB"
+   }
+  },
+  {
+   "document": "Eigenerklärung RUS-Sanktionen",
+   "obligation": "mandatory",
+   "when": "with_offer",
+   "template": "VM191_15_Eigenerklaerung_RUS-Sanktionen.pdf",
+   "lot": null,
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 3,
+    "quote": "15  Eigenerklärung RUS-Sanktionen ☒"
+   }
+  },
+  {
+   "document": "Angebotsdatenblatt Medizinprodukte",
+   "obligation": "mandatory",
+   "when": "with_offer",
+   "template": "VM191_19_Angebotsdatenblatt Medizinprodukte.pdf",
+   "lot": null,
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 4,
+    "quote": "19 Angebotsdatenblatt Medizinprodukte  ☒"
+   }
+  },
+  {
+   "document": "Berufs- oder Handelsregisterauszug (nicht älter als 6 Monate)",
+   "obligation": "mandatory",
+   "when": "with_offer",
+   "template": null,
+   "lot": null,
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 4,
+    "quote": "Aktueller Berufs- oder Handelsregisterauszug in Kopie (nicht älter als 6 Monate, gerechnet ab Angebotsfrist)"
+   }
+  },
+  {
+   "document": "Nachweis der Konformität mit EN ISO 13485",
+   "obligation": "mandatory",
+   "when": "with_offer",
+   "template": null,
+   "lot": null,
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 4,
+    "quote": "Nachweis über die Konformität mit den Anforderungen nach EN ISO 13485"
+   }
+  },
+  {
+   "document": "Nachweis der Produktkonformität mit MDR 2017/745",
+   "obligation": "mandatory",
+   "when": "with_offer",
+   "template": null,
+   "lot": null,
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 4,
+    "quote": "Nachweis über die Konformität des Produkts mit den Vorgaben der MDR 2017/745"
+   }
+  },
+  {
+   "document": "Produktspezifikationen",
+   "obligation": "mandatory",
+   "when": "with_offer",
+   "template": null,
+   "lot": null,
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 4,
+    "quote": "Produktspezifikationen"
+   }
+  },
+  {
+   "document": "Eigenerklärungen zu den Leistungskriterien der Bewertungsmatrix (lfd. Nr. 1–3)",
+   "obligation": "if_applicable",
+   "when": "with_offer",
+   "template": "VM191_18_Bewertungsmatrix.pdf",
+   "lot": null,
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 4,
+    "quote": "Ggf. Eigenerklärungen gem. Anlage 10 „Bewertungsmatrix“ (Pkt. 3. lfd. Nr.  1-3)"
+   }
+  },
+  {
+   "document": "Erklärung bevorzugte Berücksichtigung (B-V044)",
+   "obligation": "if_applicable",
+   "when": "with_offer",
+   "template": "VM191_14_B-V044_Erklaerung bevorzugte Beruecksichtigung.pdf",
+   "lot": null,
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 3,
+    "quote": "sofern zutreffend: Erklärung bevorzugte Berücksichtigung (BAAINBw-B-V 044/04.2016) ☒"
+   }
+  },
+  {
+   "document": "Erklärung Bietergemeinschaft (B-V047), von allen Mitgliedern unterschrieben",
+   "obligation": "if_applicable",
+   "when": "with_offer",
+   "template": "VM191_13_B-V047_Erklaerung Bietergemeinschaft.pdf",
+   "lot": null,
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 8,
+    "quote": "Die Erklärung ist von allen Mitgliedern der Bietergemeinschaft zu unterschrei-ben."
+   }
+  },
+  {
+   "document": "Beglaubigte Übersetzung fremdsprachiger Dokumente",
+   "obligation": "on_request",
+   "when": "on_request",
+   "template": null,
+   "lot": null,
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 2,
+    "quote": "Dokumenten in Fremdsprachen ist eine (auf Aufforderung auch beglaubigte) Über-setzung ins Deutsche beizufügen."
+   }
+  },
+  {
+   "document": "Katalogdaten nach Vorlage eClass 10.1",
+   "obligation": "on_request",
+   "when": "after_award",
+   "template": "VM191_11_Vorlage-Katalogdaten_eClass10_1.xlsx",
+   "lot": null,
+   "cite": {
+    "file": "VM191_03_Entwurf_RV Tubus u. Katheter_ divers.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 6,
+    "quote": "aktuelle Lieferantenhandbuch sowie die Anforderungen an Katalogdaten werden dieser"
+   }
+  }
+ ],
+ "requirements": [
+  {
+   "category": "quality",
+   "requirement": "Qualitätsmanagementsystem nach DIN EN ISO 13485 beim Hersteller",
+   "cite": {
+    "file": "VM191_06_RV_Anlage 3_TS-QMA Stand 10.03.2025.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 12,
+    "quote": "gementsystem nach DIN EN ISO 13485 vorhanden sein muss und für Medizinprodukte der Bundeswehr"
+   }
+  },
+  {
+   "category": "quality",
+   "requirement": "Qualitätssicherung nach TS-QMA (keine amtliche Güteprüfung)",
+   "cite": {
+    "file": "Leistungsverzeichnis.pdf",
+    "folder": "Vergabeunterlagen/Version 3",
+    "page": 1,
+    "quote": "Prüfart: keine amtliche Qualitätssicherung (Güteprüfung)"
+   }
+  },
+  {
+   "category": "product",
+   "requirement": "Alle MDR- und IVDR-Produkte mit gültigem CE-Kennzeichen",
+   "cite": {
+    "file": "VM191_06_RV_Anlage 3_TS-QMA Stand 10.03.2025.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 10,
+    "quote": "Alle MDR Produkte und alle IVDR Produkte müssen über ein gültiges CE Kennzeichen verfügen."
+   }
+  },
+  {
+   "category": "product",
+   "requirement": "Los 1: 9 Fr, Katheterlänge 78 cm, Ballonfüllvolumen 4–8 ml, latexfrei, steril, Einmalgebrauch",
+   "cite": {
+    "file": "VM191_05_Anlage 2_LOS 1_Preis- und Produktblatt_Endobronchialblocker-Set_ 9Fr.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 1,
+    "quote": "Katheter: 9 Fr Katheterlänge: 78cm Ballonfüllvolumen: 4-8ml"
+   }
+  },
+  {
+   "category": "product",
+   "requirement": "Los 1: Mindesthaltbarkeit 28 Monate ab Wareneingang bei der Bundeswehr",
+   "cite": {
+    "file": "VM191_05_Anlage 2_LOS 1_Preis- und Produktblatt_Endobronchialblocker-Set_ 9Fr.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 1,
+    "quote": "28 Monate 1.800"
+   }
+  },
+  {
+   "category": "eligibility",
+   "requirement": "Keine Ausschlussgründe nach §§ 123, 124 GWB",
+   "cite": {
+    "file": "VM191_12_B-V034_Eigenerklaerung Nichtvorliegen Ausschlussgruende.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 1,
+    "quote": "Eigenerklärung zum Nichtvorliegen zwingender und fakultativer Ausschlussgründe gemäß §§ 123, 124 GWB"
+   }
+  },
+  {
+   "category": "eligibility",
+   "requirement": "Keine Beteiligung russischer Personen oder Unternehmen gemäß EU-Sanktionen",
+   "cite": {
+    "file": "VM191_15_Eigenerklaerung_RUS-Sanktionen.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 1,
+    "quote": "Der Auftragnehmer gehört nicht zu den in Artikel 5k) Absatz 1 der Verordnung (EU) Nr. 833/2014"
+   }
+  },
+  {
+   "category": "legal",
+   "requirement": "Vertragsstrafe bei Verzug: 0,2 % des Netto-Abrechnungspreises je Werktag, höchstens 5 %",
+   "cite": {
+    "file": "VM191_03_Entwurf_RV Tubus u. Katheter_ divers.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 11,
+    "quote": "beträgt die Vertragsstrafe für jeden Werktag des Verzugs 0,2 % des Netto-Abrechnungspreises"
+   }
+  },
+  {
+   "category": "legal",
+   "requirement": "Vergabeunterlagen vertraulich behandeln (Schutzvermerk DIN ISO 16016)",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 5,
+    "quote": "Die Dokumente und darin enthaltenes Know -how sind i.S. des Schutzvermer-kes nach DIN ISO 16016 vertraulich zu behandeln"
+   }
+  },
+  {
+   "category": "delivery",
+   "requirement": "Rahmenvereinbarung, Laufzeit 2 Jahre + 1 Jahr Option; Abrufe Q1 2027 und Januar 2028",
+   "cite": {
+    "file": "VM191_1. Hinweisblatt.pdf",
+    "folder": "Vergabeunterlagen/Version 2",
+    "page": 1,
+    "quote": "Rahmenvereinbarung mit einer geplanten Laufzeit von 2 Jahren (+ 1 Jahr Option)"
+   }
+  },
+  {
+   "category": "delivery",
+   "requirement": "Lieferung frei Haus innerhalb von 5 bis 14 Werktagen; Mo–Do 7–15 Uhr, Fr 7–11 Uhr",
+   "cite": {
+    "file": "VM191_04_RV_Anlage 1_Leistungsbeschreibung_.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 4,
+    "quote": "Die Lieferung hat innerhalb von 5 bis 14 Werktagen außerhalb gesetzlicher Feiertage"
+   }
+  },
+  {
+   "category": "delivery",
+   "requirement": "Lieferschein mit Auftragsnummer, Artikelname, Menge und Bezugseinheit",
+   "cite": {
+    "file": "VM191_04_RV_Anlage 1_Leistungsbeschreibung_.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 4,
+    "quote": "er Lieferschein ist in die Versandpackung oben auf den Inhalt zu legen"
+   }
+  },
+  {
+   "category": "catalogue",
+   "requirement": "Katalogdaten gemäß Lieferantenhandbuch und Anforderungen Katalogdaten (eClass 10.1)",
+   "cite": {
+    "file": "VM191_09_RV_Anlage 6_Anforderungen Katalogdaten.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 1,
+    "quote": "Welche inhaltlichen und technischen Anforderungen wir an die Daten - und Bildqualität stellen"
+   }
+  },
+  {
+   "category": "invoicing",
+   "requirement": "E-Rechnung im Standard XRechnung nach E-Rechnungsverordnung",
+   "cite": {
+    "file": "VM191_16_Information eRechnungsstellung.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 7,
+    "quote": "XRechnung ist eine nationale Ausgestaltung der Europäischen Norm EN 16931"
+   }
+  }
+ ],
+ "amendments": [
+  {
+   "version": 2,
+   "date": "2026-10-27",
+   "title": "1. Hinweisblatt",
+   "changes": [
+    "Rahmenvereinbarung mit 2 Jahren Laufzeit (+ 1 Jahr Option); keine Pflicht zur Abnahme der Höchstmenge",
+    "1. Abruf im 1. Quartal 2027, 2. Abruf im Januar 2028; Teillieferungen zulässig"
+   ],
+   "files_changed": [
+    "VM191_1. Hinweisblatt.pdf",
+    "Leistungsverzeichnis.pdf",
+    "Leistungsverzeichnis.aidf"
+   ],
+   "cite": {
+    "file": "VM191_1. Hinweisblatt.pdf",
+    "folder": "Vergabeunterlagen/Version 2",
+    "page": 1,
+    "quote": "1. Hinweisblatt (Stand 27.10.2026)"
+   }
+  },
+  {
+   "version": 3,
+   "date": "2026-10-28",
+   "title": "2. Hinweisblatt",
+   "changes": [
+    "1. Abrufmengen ergeben sich aus den Preis- und Produktblättern",
+    "Lieferung innerhalb von 5 bis 14 Werktagen nach Zugang des Einzelauftrags (§ 5 (1) RV)"
+   ],
+   "files_changed": [
+    "VM191_2. Hinweisblatt.pdf",
+    "Leistungsverzeichnis.pdf",
+    "Leistungsverzeichnis.aidf"
+   ],
+   "cite": {
+    "file": "VM191_2. Hinweisblatt.pdf",
+    "folder": "Vergabeunterlagen/Version 3",
+    "page": 1,
+    "quote": "2. Hinweisblatt (Stand 28.10.2026)"
+   }
+  }
+ ],
+ "contacts": [
+  {
+   "role": "Vergabestelle (BAIUDBw DL II 6)",
+   "name": "Frau Döhrer",
+   "email": "BAIUDBwDLII6EinkaufSanitaetsmaterial@bundeswehr.org",
+   "phone": "0261-896 61152",
+   "cite": {
+    "file": "VM191_01_Aufforderung zur Angebotsabgabe_Version 1.pdf",
+    "folder": "Vergabeunterlagen/Version 1",
+    "page": 1,
+    "quote": "1/DLII6/VM191 Frau Döhrer 0261-896 61152"
+   }
+  }
+ ]
+}

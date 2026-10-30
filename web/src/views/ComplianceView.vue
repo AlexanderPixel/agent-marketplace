@@ -147,12 +147,6 @@ async function savePart() {
   }
 }
 
-async function removePart(c: Part) {
-  if (!confirm(t('compliance.confirmRemove', { name: c.name }))) return
-  await api(`/compliance/components/${c.id}`, { method: 'DELETE' })
-  await load()
-}
-
 function editProduct() {
   productDraft.value = report.value?.product ?? ''
   editingProduct.value = true
@@ -434,9 +428,9 @@ async function undo(c: Part) {
         </div>
         <p class="muted small">{{ t('compliance.originNote', { t: report.threshold }) }}</p>
         <table class="bom">
-          <thead><tr><th>{{ t('compliance.component') }}</th><th>{{ t('compliance.supplier') }}</th><th>{{ t('compliance.origin') }}</th><th class="num">{{ t('compliance.cost') }}</th><th class="num">{{ t('compliance.share') }}</th><th>{{ t('compliance.counts') }}</th><th /></tr></thead>
+          <thead><tr><th>{{ t('compliance.component') }}</th><th>{{ t('compliance.supplier') }}</th><th>{{ t('compliance.origin') }}</th><th class="num">{{ t('compliance.cost') }}</th><th class="num">{{ t('compliance.share') }}</th><th>{{ t('compliance.counts') }}</th></tr></thead>
           <tbody>
-            <tr v-if="!report.components.length"><td colspan="7" class="muted">{{ t('compliance.noParts') }}</td></tr>
+            <tr v-if="!report.components.length"><td colspan="6" class="muted">{{ t('compliance.noParts') }}</td></tr>
             <tr v-for="c in report.components" :key="c.component.id" :class="{ non: !c.eligible }">
               <td>
                 {{ c.component.name }}
@@ -453,10 +447,6 @@ async function undo(c: Part) {
               <td class="num">{{ eur(c.component.costEur) }}</td>
               <td class="num">{{ c.share }}%</td>
               <td class="nowrap"><span :class="c.eligible ? 'good' : 'bad'"><i :class="c.eligible ? 'pi pi-check' : 'pi pi-times'" /> {{ c.eligible ? t('compliance.yes') : t('compliance.no') }}</span></td>
-              <td class="actions">
-                <Button icon="pi pi-pencil" text rounded size="small" :aria-label="t('compliance.edit')" @click="openPart(c.component)" />
-                <Button icon="pi pi-trash" text rounded size="small" severity="danger" :aria-label="t('compliance.remove')" @click="removePart(c.component)" />
-              </td>
             </tr>
           </tbody>
         </table>
@@ -573,7 +563,6 @@ h3 { margin: 18px 0 4px; font-size: 15px; font-weight: 600; }
 .form label { display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 500; color: var(--muted); }
 .counts { align-self: flex-start; margin-top: -6px; }
 .nowrap { white-space: nowrap; }
-.actions { white-space: nowrap; text-align: right; width: 1%; }
 .good { color: var(--good); }
 .bad { color: var(--bad); }
 .warn-text { color: var(--warn); }
